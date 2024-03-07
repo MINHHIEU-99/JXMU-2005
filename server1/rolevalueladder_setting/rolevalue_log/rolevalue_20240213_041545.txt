@@ -1,0 +1,18 @@
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu TiÒm Long Yªu §¸i(0,1,92,0,2,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Phi Long §Çu hoµn(0,1,90,5,3,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Gi¸ng Long C¸i Y(0,1,91,5,4,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu KiÕn Long Ban ChØ (0,1,94,0,4,10), unbind = 0, bind = 50
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
+[Normal]Item: V« TrÇn Thanh T©m H­íng ThiÖn Ch©u(0,1,41,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« TrÇn PhËt T©m Tõ H÷u Yªu Phèi(0,1,43,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma ¤ Kim NhuyÔn §iÒu(0,1,7,0,3,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Tiªu Bæng(0,0,0,2,3,5), unbind = 0, bind = 0

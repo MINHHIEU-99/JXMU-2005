@@ -1,0 +1,1 @@
+Include("\\script\\taythuydao\\trap\\trapswitch4.lua");

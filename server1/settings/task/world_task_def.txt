@@ -1,0 +1,96 @@
+TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	VALUE
+B¾t_®Çu_ID(Kh«ng_liªn_tôc_th×_®Ó_trèng)	KÕt_thóc_ID	Tªn_nhiÖm_vô	Gi¸_trŞ
+1		Phôc_vô_sù_kiÖn_bao_z«ng	
+2		HuÊn_luyÖn_chiÕn_tr­êng	
+3		Sù_kiÖn_Olympic	
+4		Sù_kiÖn_Olympic	
+5		Sù_kiÖn_Olympic	
+6		Sù_kiÖn_xæ_sè	
+7		(Kh«ng_lµm_g×)	
+8		(Kh«ng_lµm_g×)	
+9		(Kh«ng_lµm_g×)	
+10		(Kh«ng_lµm_g×)	
+11		(Kh«ng_lµm_g×)	
+12		(Kh«ng_lµm_g×)	
+13		(Kh«ng_lµm_g×)	
+14		(Kh«ng_lµm_g×)	
+15		(Kh«ng_lµm_g×)	
+16		(Kh«ng_lµm_g×)	
+17		(Kh«ng_lµm_g×)	
+18		(Kh«ng_lµm_g×)	
+19		(Kh«ng_lµm_g×)	
+20			
+21			
+22			
+23			
+24			
+25			
+26			
+27			
+28			
+29			
+30		TrËn_chiÕn_Song_Kim	
+31		Cho_phĞp_t¹m_dõng_trËn_chiÕn_Song_Kim	
+32		HÖ_thèng_trang_bŞ_mµu_tİm	
+33		HÖ_thèng_trang_bŞ_mµu_tİm	
+34		HÖ_thèng_trang_bŞ_mµu_tİm	
+35		ChiÕn_tranh_b¶o_vÖ_quèc_gia	
+36		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(Hoa_S¬n)	<=560
+37		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(Thanh_Thµnh_S¬n)	<=1100
+38		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(§iÓm_Th­¬ng_S¬n)	<=660
+39		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(Ngù_øng_S¬n)	<=680
+40		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
+41		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
+42		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
+43		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
+44		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
+45		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
+46		Sù_kiÖn_trung_thu	
+47		(Kh«ng_lµm_g×)	
+48		(Kh«ng_lµm_g×)	
+49	800	Ghi_nhËn_d÷_liÖu_trËn_chung_kÕt_TiÓu_khóc_Vâ_l©m	
+801	810	Sù_kiÖn_trung_thu_2005_lµm_b¸nh_trung_thu	
+811		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_boss_Thiªn_ThÓ_Tö_tö_danh(60-89)	
+812		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_boss_Thiªn_ThÓ_Tö_tö_danh(90-119)	
+813		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_boss_Thiªn_ThÓ_Tö_tö_danh(120_trë_lªn)	
+814		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_trém_Kh¶_B¶o_Kho(60-89)	
+815		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_trém_Kh¶_B¶o_Kho(90-119)	
+816		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_trém_Kh¶_B¶o_Kho(120_trë_lªn)	
+817		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_chiÕn_®ao_Tö_tö_danh(60-89)	
+818		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_chiÕn_®ao_Tö_tö_danh(90-119)	
+819		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_chiÕn_®ao_Tö_tö_danh(120_trë_lªn)	
+820		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
+821		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
+822		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
+823		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
+824		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
+825		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m_Bé_®Õm_thêi_gian_-_TriÖu_V¨n_NguyÔn	
+830		NhiÖm_vô_kŞch_b¶n_®ång_hµnh_-_Th­¬ng_b¶o_s­_-_§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_BOSS(ChØnh_söa_tïy_thİch)	
+840	847	§·_nhËn_quµ_tÆng_thµnh_ı_chiÕn_tr­êng_(B¶y_thµnh_phè)	
+848		Sù_kiÖn_Giang_sinh	
+849		Sù_kiÖn_TÕt	
+850		NhiÖm_vô_Liªn_®oµn_hµng_®Çu_Vâ_l©m	
+851		NhiÖm_vô_Liªn_®oµn_hµng_®Çu_Vâ_l©m	
+852		Sù_kiÖn_tuyÓn_dông_®å_tö_®Ö	
+853		Sù_kiÖn_chiÕn_tranh_n¨m_thó	
+854		Sù_kiÖn_LÔ_tÕt_D??	
+855		Bé_®Öm_tæng_sè_l­îng_thÎ_®éi_bãng_sù_kiÖn_Cóp_thÕ_giíi	
+856	916	Khu_vùc_dïng_cho_viÖc_x©y_dùng_b¶ng_phÇn_th­ëng_sù_kiÖn_Cóp_thÕ_giíi	
+917		Sè_thø_tù_ng­êi_nhËn_th­ëng_sù_kiÖn_Cóp_thÕ_giíi	
+918		Sù_kiÖn_thu_thËp_vËt_phÈm_Liªn_®oµn	
+919		Chøc_n¨ng_tinh_chÊt_kim_c­¬ng: _Ngµy_gi¶i_phãng_trang_bŞ_cuèi_cïng	
+920		Chøc_n¨ng_tinh_chÊt_kim_c­¬ng: _Sè_lÇn_gi¶i_phãng_trang_bŞ_trong_ngµy	
+921		Chøng_thùc_nhiÖm_vô_®Æc_biÖt	
+930	933	Khu_vùc_cho_gi¶i_th­ëng_nh×_b¶ng_Cóp_thÕ_giíi	
+934	1034	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_nh×_b¶ng_Cóp_thÕ_giíi_100_khãa_(50_ng­êi_×_2)	
+1035	1038	Khu_vùc_cho_gi¶i_th­ëng_ba_b¶ng_Cóp_thÕ_giíi	
+1039	1099	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_ba_b¶ng_Cóp_thÕ_giíi_60_khãa_(30_ng­êi_×_2)	
+1100	1103	Khu_vùc_cho_gi¶i_th­ëng_bèn_b¶ng_Cóp_thÕ_giíi	
+1104	1144	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_bèn_b¶ng_Cóp_thÕ_giíi_40_khãa_(20_ng­êi_×_2)	
+1145	1148	Khu_vùc_cho_gi¶i_th­ëng_n¨m_b¶ng_Cóp_thÕ_giíi	
+1149	1179	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_n¨m_b¶ng_Cóp_thÕ_giíi_30_khãa_(15_ng­êi_×_2)	
+1180	1183	Khu_vùc_cho_gi¶i_th­ëng_s¸u_b¶ng_Cóp_thÕ_giíi	
+1184	1204	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_s¸u_b¶ng_Cóp_thÕ_giíi_20_khãa_(10_ng­êi_×_2)	
+1205	1208	Khu_vùc_cho_gi¶i_th­ëng_b¶y_b¶ng_Cóp_thÕ_giíi	
+1209	1219	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_b¶y_b¶ng_Cóp_thÕ_giíi_10_khãa_(5_ng­êi_×_2)	
+1230		Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_nh×_b¶ng_Cóp_thÕ_giíi		

@@ -1,0 +1,14 @@
+[Normal]Item: S­¬ng Tinh Thiªn Niªn Hµn ThiÕt(0,1,125,1,2,10), unbind = 0, bind = 50
+[Normal]Item: U Lung MÆc Thï NhuyÔn Lý (0,1,59,1,1,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu TiÒm Long Yªu §¸i(0,1,92,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn(0,1,79,0,2,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn NguyÖt ¶nh Ngoa(0,1,74,0,2,10), unbind = 0, bind = 50
+[Normal]Item: U Lung Kim Xµ Ph¸t ®¸i(0,1,55,2,1,10), unbind = 0, bind = 50
+[Normal]Item: §Þa Ph¸ch TÝch LÞch L«i Háa Giíi(0,1,87,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éng S¸t B¹ch Ngäc Cµn Kh«n Béi(0,1,143,1,4,10), unbind = 0, bind = 100
+[Normal]Item: §éng S¸t B¹ch Kim Tó Phông Giíi(0,1,144,0,0,10), unbind = 0, bind = 100
+[Normal]Item: §éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn(0,1,145,1,2,10), unbind = 0, bind = 100
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,1,10), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
+[Normal]Item: U Lung MÆc Thï NhuyÔn Lý (0,1,59,1,1,10), unbind = 0, bind = 50
+[Normal]Item: U Lung MÆc Thï NhuyÔn Lý (0,1,59,1,1,10), unbind = 0, bind = 50

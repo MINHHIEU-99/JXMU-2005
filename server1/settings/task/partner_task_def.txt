@@ -1,0 +1,88 @@
+TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	VALUE	TASK_DESCRIBE
+B¾T_§ÇU_ID (NÕu ID kh«ng liªn tiÕp, vui lßng ®Ó trèng dßng nµy)	KÕT_THóC_ID	T£N_NHIÖM_Vô	GI¸_TRŞ	M¤_T¶_NHIÖM_Vô
+1		NhiÖm vô d¹y dç b¹n ®ång hµnh		
+2		NhiÖm vô tu luyÖn b¹n ®ång hµnh		
+3		NhiÖm vô kŞch b¶n b¹n ®ång hµnh [ChÕt cña thõa lang]		BËt/T¾t
+4		NhiÖm vô kŞch b¶n b¹n ®ång hµnh [Bİ mËt cña ng­êi kiÓm tra r¾n]		
+5		NhiÖm vô kŞch b¶n b¹n ®ång hµnh [Ng­êi bu«n ®¸ quı]		
+6		NhiÖm vô kŞch b¶n b¹n ®ång hµnh [ChiÕn binh cña d©n téc kh¸c]		
+7		Ghi l¹i sè l­îng vËt phÈm Cá §Şa Hoµng [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
+8		Ghi l¹i sè l­îng vËt phÈm L¸ L­ìi Hæ [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
+9		Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Tr¸i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
+10		Ghi l¹i sè l­îng vËt phÈm X­¬ng Cæng Tr¾ng [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
+11		Kü n¨ng kh¸ng ngò hµnh cña b¹n ®ång hµnh		Ghi l¹i sè l­îng s¸ch kü n¨ng kh¸ng ngò hµnh b¹n ®ång hµnh ®· häc
+12		Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Ph¶i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
+13		Ghi l¹i thêi gian chê 5 phót [ChÕt cña thõa lang]		
+14		NhiÖm vô kŞch b¶n b¹n ®ång hµnh [NhiÖm vô Èn]		
+				
+16		NhiÖm vô kŞch b¶n KiÓm tra R¾n [NhiÖm vô kŞch b¶n - NhiÖm vô §iÒu h­íng Giã]		
+17		NhiÖm vô kŞch b¶n KiÓm tra R¾n [NhiÖm vô kŞch b¶n - NhiÖm vô Kho B¸u Thiªn]		
+18		NhiÖm vô kŞch b¶n KiÓm tra R¾n [NhiÖm vô kŞch b¶n - NhiÖm vô §Òn ThÇn Nói]		
+				
+20		NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+21		NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+22		NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+23		NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+				
+25		NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+26		NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+27		NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+28		NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+29		NhiÖm vô kŞch b¶n - Ghi l¹i ®iÒu kiÖn hoµn thµnh nhiÖm vô Èn		
+				
+30		NhiÖm vô tu luyÖn kŞch b¶n [ChÕt cña thõa lang]		
+31		NhiÖm vô tu luyÖn kŞch b¶n [Ng­êi bu«n ®¸ quı]		
+32		NhiÖm vô tu luyÖn kŞch b¶n [ChiÕn binh cña d©n téc kh¸c]		
+				
+33		Tu luyÖn kŞch b¶n - Ghi l¹i sè l­îng vËt phÈm Cá §Şa Hoµng [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
+34		Tu luyÖn kŞch b¶n - Ghi l¹i sè l­îng vËt phÈm L¸ L­ìi Hæ [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
+35		Tu luyÖn kŞch b¶n - Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Tr¸i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
+36		Tu luyÖn kŞch b¶n - Ghi l¹i sè l­îng vËt phÈm X­¬ng Cæng Tr¾ng [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
+37		Tu luyÖn kŞch b¶n - Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Ph¶i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
+38		Tu luyÖn kŞch b¶n - Ghi l¹i thêi gian chê 5 phót [ChÕt cña thõa lang]		
+				
+39		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+40		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+41		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+42		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô ®Õm qu¸i]		
+				
+43		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+44		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+45		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+46		Tu luyÖn kŞch b¶n - NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+				
+50		NhiÖm vô kŞch b¶n [ChÕt cña thõa lang] - Ghi l¹i phÇn th­ëng		
+		1~8 bit: PhÇn th­ëng b­íc 1~8		
+				
+51		NhiÖm vô kŞch b¶n KiÓm tra R¾n [NhiÖm vô kŞch b¶n - Ghi l¹i phÇn th­ëng]		
+		1~5 bit: PhÇn th­ëng b­íc 1~5		
+				
+52		NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô kŞch b¶n - Ghi l¹i phÇn th­ëng]		
+		1~8 bit: PhÇn th­ëng b­íc 1~8		
+				
+53		NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô kŞch b¶n - Ghi l¹i phÇn th­ëng]		
+		1~4 bit: PhÇn th­ëng b­íc 1~4		
+				
+54		NhiÖm vô kŞch b¶n Èn - Ghi l¹i phÇn th­ëng		
+		1~1 bit: PhÇn th­ëng b­íc 1~1		
+				
+55		NhiÖm vô kŞch b¶n [ChÕt cña thõa lang] - Ghi l¹i phÇn th­ëng tu luyÖn		
+		1~8 bit: PhÇn th­ëng b­íc 1~8		
+				
+56		NhiÖm vô kŞch b¶n Bu«n ®¸ quı [NhiÖm vô kŞch b¶n - Ghi l¹i phÇn th­ëng tu luyÖn]		
+		1~8 bit: PhÇn th­ëng b­íc 1~8		
+				
+57		NhiÖm vô kŞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô kŞch b¶n - Ghi l¹i phÇn th­ëng tu luyÖn]		
+		1~4 bit: PhÇn th­ëng b­íc 1~4		
+				
+61		Ghi l¹i ngµy b¾t ®Çu kŞch b¶n tu luyÖn [ChÕt cña thõa lang]		
+62		Ghi l¹i ngµy b¾t ®Çu kŞch b¶n tu luyÖn [Ng­êi bu«n ®¸ quı]		
+63		Ghi l¹i ngµy b¾t ®Çu kŞch b¶n tu luyÖn [ChiÕn binh cña d©n téc kh¸c]		
+64		Ghi l¹i sè lÇn hoµn thµnh kŞch b¶n tu luyÖn [ChÕt cña thõa lang]		
+65		Ghi l¹i sè lÇn hoµn thµnh kŞch b¶n tu luyÖn [Ng­êi bu«n ®¸ quı]		
+66		Ghi l¹i sè lÇn hoµn thµnh kŞch b¶n tu luyÖn [ChiÕn binh cña d©n téc kh¸c]		
+				
+68		Ghi l¹i sè lÇn hoµn thµnh nhiÖm vô tu luyÖn cña ng­êi ch¬i cho nhiÖm vô Èn		
+				
+80		Ghi l¹i ngµy ch¬i thÎ b¶o vÖ khi ®Şnh vŞ b¶o vËt		
+81		Ghi l¹i sè lÇn ch¬i thÎ b¶o vÖ trong ngµy khi ®Şnh vŞ b¶o vËt		

@@ -1,0 +1,382 @@
+[IP : 192.168.1.1 : 61180 ] - Thêi gian : 01/31/2024_21:38:23  - Tµi kho¶n [ skendy1] - Nh©n vËt : [Skendy2 ] lÊy 1 item magic 4850
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:32:16  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:32:47  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:34:13  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 1 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:34:48  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 1 item magic 2
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:42:20  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:43:18  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 2 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:44:02  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 10 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:44:43  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 30 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:45:17  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 100 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:45:43  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 999 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:46:38  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 9999 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:46:58  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 9990 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:47:20  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 1900 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:47:39  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 1850 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:47:58  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 888 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:48:45  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 777 item  Hoµng Kim
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:49:28  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:50:15  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:51:23  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:54:47  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy item gold 1
+[IP : 116.111.184.97 : 18561 ] - Thêi gian : 02/11/2024_12:55:06  - Tµi kho¶n [ damme] - Nh©n vËt : [DM00010 ] lÊy 1 item magic 1
+[IP : 1.53.50.181 : 1682 ] - Thêi gian : 02/11/2024_19:25:39  - Tµi kho¶n [ toan1] - Nh©n vËt : [123xdfsdf ] lÊy item gold 7125
+[IP : 1.53.50.181 : 5546 ] - Thêi gian : 02/11/2024_19:31:07  - Tµi kho¶n [ toan1] - Nh©n vËt : [34123sdfv ] lÊy §å Xanh
+[IP : 1.53.50.181 : 5546 ] - Thêi gian : 02/11/2024_19:31:39  - Tµi kho¶n [ toan1] - Nh©n vËt : [34123sdfv ] lÊy 1 item magic 2426
+[IP : 1.53.50.181 : 5546 ] - Thêi gian : 02/11/2024_19:31:43  - Tµi kho¶n [ toan1] - Nh©n vËt : [34123sdfv ] lÊy 1 item magic 2425
+[IP : 1.53.50.181 : 5546 ] - Thêi gian : 02/11/2024_19:31:48  - Tµi kho¶n [ toan1] - Nh©n vËt : [34123sdfv ] lÊy 1 item magic 2424
+[IP : 1.53.50.181 : 5546 ] - Thêi gian : 02/11/2024_19:32:10  - Tµi kho¶n [ toan1] - Nh©n vËt : [34123sdfv ] lÊy item gold 7125
+[IP : 1.53.50.181 : 5546 ] - Thêi gian : 02/11/2024_19:38:19  - Tµi kho¶n [ toan1] - Nh©n vËt : [34123sdfv ] lÊy 1 item magic 1144
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_19:58:02  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 1163
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_19:58:22  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 1338
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_19:58:43  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 1413
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_19:59:22  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 1713
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_19:59:31  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 1734
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_20:00:32  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 30395
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_20:01:09  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 1535
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_20:42:52  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 2394
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_20:43:26  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 30082
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_20:43:42  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 30003
+[IP : 1.53.50.181 : 23952 ] - Thêi gian : 02/11/2024_20:44:43  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 3054
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:11:41  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4908
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:12:08  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4908
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:12:14  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4809
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:12:22  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4909
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:12:45  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4910
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:12:54  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4911
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:12:58  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4912
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:14:24  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 400
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:14:31  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy item gold 400
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:14:42  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy item gold 401
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:17:07  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4912
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:17:17  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 1 item magic 4907
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:17:30  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 4907 item  MaGic
+[IP : 1.53.50.181 : 30384 ] - Thêi gian : 02/11/2024_21:29:23  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸d123 ] lÊy 4905 item  MaGic
+[IP : 1.53.50.181 : 31090 ] - Thêi gian : 02/11/2024_22:14:35  - Tµi kho¶n [ toan1] - Nh©n vËt : [¸d1223 ] lÊy 1 item magic 4907
+[IP : 1.53.50.181 : 15518 ] - Thêi gian : 02/11/2024_22:17:46  - Tµi kho¶n [ toan1] - Nh©n vËt : [123xdfsd ] lÊy item gold 164
+[IP : 116.111.184.97 : 11082 ] - Thêi gian : 02/12/2024_00:11:41  - Tµi kho¶n [ damme] - Nh©n vËt : [252513252 ] lÊy §å Xanh
+[IP : 1.53.50.181 : 7435 ] - Thêi gian : 02/12/2024_10:08:32  - Tµi kho¶n [ toan1] - Nh©n vËt : [123¸®¸3 ] lÊy item gold 7125
+[IP : 1.53.50.181 : 3849 ] - Thêi gian : 02/12/2024_10:35:28  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy item gold 121
+[IP : 1.53.50.181 : 3849 ] - Thêi gian : 02/12/2024_10:36:52  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4852
+[IP : 1.53.50.181 : 5631 ] - Thêi gian : 02/12/2024_11:21:57  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 797 item  QuestKey
+[IP : 1.53.50.181 : 5631 ] - Thêi gian : 02/12/2024_11:22:28  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 543
+[IP : 1.53.50.181 : 5631 ] - Thêi gian : 02/12/2024_11:22:58  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 757
+[IP : 1.53.50.181 : 5631 ] - Thêi gian : 02/12/2024_11:23:48  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 713
+[IP : 1.53.50.181 : 5631 ] - Thêi gian : 02/12/2024_11:32:01  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1124
+[IP : 1.53.50.181 : 5631 ] - Thêi gian : 02/12/2024_11:34:43  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1420
+[IP : 1.53.50.181 : 17018 ] - Thêi gian : 02/12/2024_11:47:01  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4913
+[IP : 1.53.50.181 : 17018 ] - Thêi gian : 02/12/2024_11:47:42  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4887
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:02:26  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4913
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:18:18  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 49913 item  MaGic
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:18:26  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 4913 item  MaGic
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:27:07  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 4913 item  QuestKey
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:28:49  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 4913 item  MaGic
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:37:03  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 4907 item  MaGic
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:39:30  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 4908 item  MaGic
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:41:03  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4908
+[IP : 116.111.184.97 : 31137 ] - Thêi gian : 02/12/2024_14:41:04  - Tµi kho¶n [ damme] - Nh©n vËt : [123ád123 ] lÊy 1 item magic 4908
+[IP : 1.53.50.181 : 11510 ] - Thêi gian : 02/12/2024_14:41:10  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4907
+[IP : 116.111.184.97 : 31137 ] - Thêi gian : 02/12/2024_14:41:45  - Tµi kho¶n [ damme] - Nh©n vËt : [123ád123 ] lÊy 1 item magic 4907
+[IP : 116.111.184.97 : 31137 ] - Thêi gian : 02/12/2024_14:42:25  - Tµi kho¶n [ damme] - Nh©n vËt : [123ád123 ] lÊy 4907 item  MaGic
+[IP : 1.53.50.181 : 24315 ] - Thêi gian : 02/12/2024_14:50:52  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4913
+[IP : 116.111.184.97 : 22720 ] - Thêi gian : 02/12/2024_14:51:30  - Tµi kho¶n [ damme] - Nh©n vËt : [123ád123 ] lÊy 2426 item  MaGic
+[IP : 116.111.184.97 : 22720 ] - Thêi gian : 02/12/2024_14:52:32  - Tµi kho¶n [ damme] - Nh©n vËt : [123ád123 ] lÊy §å Xanh
+[IP : 1.53.50.181 : 24315 ] - Thêi gian : 02/12/2024_14:56:09  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 2426
+[IP : 116.111.184.97 : 22720 ] - Thêi gian : 02/12/2024_14:56:40  - Tµi kho¶n [ damme] - Nh©n vËt : [123ád123 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:00:40  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:02:04  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:02:58  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:03:55  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy 2426 item  MaGic
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:05:40  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:07:04  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:08:26  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 23107 ] - Thêi gian : 02/12/2024_15:09:22  - Tµi kho¶n [ damme] - Nh©n vËt : [25252525 ] lÊy §å Xanh
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:37:14  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1427
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:37:26  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 2127
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:37:55  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 2427
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:41:53  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4905
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:42:14  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4913
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:42:41  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4903
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:42:52  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4905
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:44:37  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1051
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:46:09  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1760
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:46:42  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1826
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:46:57  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1920
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:47:20  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 2151
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:47:35  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 2221
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:54:16  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 2339
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:59:41  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 489
+[IP : 1.53.50.181 : 19798 ] - Thêi gian : 02/12/2024_15:59:48  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 1793
+[IP : 1.53.50.181 : 19298 ] - Thêi gian : 02/12/2024_16:03:51  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 2425
+[IP : 1.53.50.181 : 6784 ] - Thêi gian : 02/12/2024_16:05:06  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4913
+[IP : 1.53.50.181 : 6784 ] - Thêi gian : 02/12/2024_16:05:33  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4888
+[IP : 1.53.50.181 : 17464 ] - Thêi gian : 02/12/2024_16:30:15  - Tµi kho¶n [ toan1] - Nh©n vËt : [TestVD1 ] lÊy 1 item magic 4913
+[IP : 116.111.184.97 : 29811 ] - Thêi gian : 02/12/2024_17:34:18  - Tµi kho¶n [ damme] - Nh©n vËt : [25251352 ] lÊy 2625 item  MaGic
+[IP : 116.111.184.97 : 29811 ] - Thêi gian : 02/12/2024_17:34:46  - Tµi kho¶n [ damme] - Nh©n vËt : [25251352 ] lÊy 1 item  Ngùa
+[IP : 116.111.184.97 : 29811 ] - Thêi gian : 02/12/2024_17:35:03  - Tµi kho¶n [ damme] - Nh©n vËt : [25251352 ] lÊy 12625 item  MaGic
+[IP : 116.111.184.97 : 29811 ] - Thêi gian : 02/12/2024_17:35:17  - Tµi kho¶n [ damme] - Nh©n vËt : [25251352 ] lÊy 2625 item  MaGic
+[IP : 116.111.184.97 : 29811 ] - Thêi gian : 02/12/2024_17:35:29  - Tµi kho¶n [ damme] - Nh©n vËt : [25251352 ] lÊy 2525 item  MaGic
+[IP : 116.111.184.97 : 29811 ] - Thêi gian : 02/12/2024_17:35:47  - Tµi kho¶n [ damme] - Nh©n vËt : [25251352 ] lÊy 2626 item  MaGic
+[IP : 1.53.50.181 : 10679 ] - Thêi gian : 02/12/2024_18:54:30  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4913 item  MaGic
+[IP : 1.53.50.181 : 26884 ] - Thêi gian : 02/12/2024_20:02:13  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4914 item  MaGic
+[IP : 1.53.50.181 : 26884 ] - Thêi gian : 02/12/2024_20:20:00  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4914 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:35:18  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4914 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:35:41  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4915 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:35:48  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4916 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:36:01  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4916 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:36:10  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4917 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:36:23  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4918 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:37:31  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4919 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:37:41  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4920 item  MaGic
+[IP : 1.53.50.181 : 21335 ] - Thêi gian : 02/12/2024_20:40:08  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4920 item  MaGic
+[IP : 1.53.50.181 : 12518 ] - Thêi gian : 02/12/2024_20:42:01  - Tµi kho¶n [ toan1] - Nh©n vËt : [szdfsdf234 ] lÊy 4920 item  MaGic
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:54:20  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy 1 item magic 1125
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:57:05  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 112
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:57:26  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 115
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:57:56  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 111
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:58:08  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 112
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:58:14  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 113
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:58:24  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 114
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:59:26  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 106
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_20:59:50  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 102
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_21:03:46  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 104
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_21:03:55  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy 1 item  Ngùa
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_21:04:09  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy 22 item  Ngùa
+[IP : 1.53.50.181 : 23110 ] - Thêi gian : 02/12/2024_21:07:36  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy item gold 101
+[IP : 116.111.184.97 : 21883 ] - Thêi gian : 02/12/2024_22:38:27  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 21883 ] - Thêi gian : 02/12/2024_22:39:03  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 13212 ] - Thêi gian : 02/12/2024_22:40:40  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 13212 ] - Thêi gian : 02/12/2024_22:41:10  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 13212 ] - Thêi gian : 02/12/2024_22:42:01  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 13212 ] - Thêi gian : 02/12/2024_22:42:45  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy §å Xanh
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_22:55:07  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:02:31  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4173 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:04:26  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:06:51  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:12:05  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4910 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:14:45  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:18:15  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:18:29  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:24:47  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:30:49  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 14914 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:31:11  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 5252 ] - Thêi gian : 02/12/2024_23:34:10  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 17818 ] - Thêi gian : 02/12/2024_23:49:59  - Tµi kho¶n [ damme] - Nh©n vËt : [252513523 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/12/2024_23:57:01  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:11:41  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:17:34  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 1.52.34.204 : 34174 ] - Thêi gian : 02/13/2024_00:19:44  - Tµi kho¶n [ mrchubo3] - Nh©n vËt : [313112222 ] lÊy item gold 42
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:19:49  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 4
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:20:05  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 44
+[IP : 1.52.34.204 : 34174 ] - Thêi gian : 02/13/2024_00:20:06  - Tµi kho¶n [ mrchubo3] - Nh©n vËt : [313112222 ] lÊy item gold 44
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:27:34  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:30:01  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4884 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:32:53  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:36:49  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 8
+[IP : 1.52.34.204 : 34174 ] - Thêi gian : 02/13/2024_00:36:52  - Tµi kho¶n [ mrchubo3] - Nh©n vËt : [313112222 ] lÊy item gold 8
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:43:56  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:46:06  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 8442 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:46:24  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:49:35  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:51:17  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:53:48  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 372
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:54:08  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 372
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:55:01  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 372
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:55:46  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 136
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:56:33  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 136
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:57:22  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 134
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:57:43  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 131
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_00:58:49  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_01:03:55  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_01:11:41  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy §å Xanh
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_01:12:22  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 126
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_01:21:19  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_01:22:01  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 1332 ] - Thêi gian : 02/13/2024_01:23:16  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4889 item  MaGic
+[IP : 116.111.184.97 : 24969 ] - Thêi gian : 02/13/2024_01:33:13  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 1 item magic 4905
+[IP : 116.111.184.97 : 24969 ] - Thêi gian : 02/13/2024_01:33:52  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4905 item  MaGic
+[IP : 116.111.184.97 : 24969 ] - Thêi gian : 02/13/2024_01:34:38  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 24969 ] - Thêi gian : 02/13/2024_01:36:05  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4889 item  MaGic
+[IP : 116.111.184.97 : 6490 ] - Thêi gian : 02/13/2024_01:51:05  - Tµi kho¶n [ damme] - Nh©n vËt : [rtjhtjbdf ] lÊy 4905 item  MaGic
+[IP : 116.111.184.97 : 6490 ] - Thêi gian : 02/13/2024_02:07:58  - Tµi kho¶n [ damme] - Nh©n vËt : [rtjhtjbdf ] lÊy 4905 item  MaGic
+[IP : 116.111.184.97 : 11867 ] - Thêi gian : 02/13/2024_02:11:57  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 81
+[IP : 116.111.184.97 : 11867 ] - Thêi gian : 02/13/2024_02:18:52  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 94
+[IP : 116.111.184.97 : 11867 ] - Thêi gian : 02/13/2024_02:22:49  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 61
+[IP : 116.111.184.97 : 11867 ] - Thêi gian : 02/13/2024_02:24:47  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy item gold 56
+[IP : 116.111.184.97 : 23875 ] - Thêi gian : 02/13/2024_02:37:57  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4918 item  MaGic
+[IP : 116.111.184.97 : 23875 ] - Thêi gian : 02/13/2024_02:40:02  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4918 item  MaGic
+[IP : 116.111.184.97 : 23875 ] - Thêi gian : 02/13/2024_02:42:25  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4882 item  MaGic
+[IP : 116.111.184.97 : 23875 ] - Thêi gian : 02/13/2024_02:51:11  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4910 item  MaGic
+[IP : 116.111.184.97 : 23875 ] - Thêi gian : 02/13/2024_02:51:55  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4910 item  MaGic
+[IP : 116.111.184.97 : 23875 ] - Thêi gian : 02/13/2024_02:52:41  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4910 item  MaGic
+[IP : 116.111.184.97 : 12244 ] - Thêi gian : 02/13/2024_03:45:59  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 12244 ] - Thêi gian : 02/13/2024_03:47:21  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 12244 ] - Thêi gian : 02/13/2024_03:48:43  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 12244 ] - Thêi gian : 02/13/2024_03:56:35  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 12244 ] - Thêi gian : 02/13/2024_03:58:57  - Tµi kho¶n [ damme] - Nh©n vËt : [werweytut ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 30788 ] - Thêi gian : 02/13/2024_04:09:21  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 91
+[IP : 116.111.184.97 : 30788 ] - Thêi gian : 02/13/2024_04:09:56  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 92
+[IP : 116.111.184.97 : 30788 ] - Thêi gian : 02/13/2024_04:10:05  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 93
+[IP : 116.111.184.97 : 30788 ] - Thêi gian : 02/13/2024_04:10:15  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 94
+[IP : 116.111.184.97 : 30788 ] - Thêi gian : 02/13/2024_04:10:26  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 95
+[IP : 116.111.184.97 : 31297 ] - Thêi gian : 02/13/2024_04:16:48  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 1 item magic 2424
+[IP : 116.111.184.97 : 31297 ] - Thêi gian : 02/13/2024_04:19:36  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 1 item magic 2425
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:37:27  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 16
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:37:58  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 17
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:38:11  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 19
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:38:25  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 18
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:38:42  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 20
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:39:01  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 27
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:39:25  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 30
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:43:58  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 189
+[IP : 116.111.184.97 : 13067 ] - Thêi gian : 02/13/2024_04:44:43  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 194
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:52:49  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 36
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:53:28  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 11
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:53:54  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 12
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:54:02  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 13
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:54:12  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 14
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:54:45  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 15
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:55:08  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 4
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:55:23  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 1
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:56:00  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 8
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:56:18  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 10
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:57:03  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 9
+[IP : 116.111.184.97 : 16276 ] - Thêi gian : 02/13/2024_04:57:43  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 164
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:04:04  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 131
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:04:18  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 132
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:04:26  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 133
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:04:35  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 134
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:04:44  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 135
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:05:00  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 126
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:05:09  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 127
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:05:27  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 140
+[IP : 116.111.184.97 : 30658 ] - Thêi gian : 02/13/2024_05:09:51  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy item gold 129
+[IP : 1.53.50.181 : 1231 ] - Thêi gian : 02/13/2024_10:26:26  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy 1 item magic 4224
+[IP : 1.53.50.181 : 1231 ] - Thêi gian : 02/13/2024_10:27:06  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy 1 item magic 4224
+[IP : 1.53.50.181 : 4354 ] - Thêi gian : 02/13/2024_17:57:05  - Tµi kho¶n [ toan1] - Nh©n vËt : [¸d22342 ] lÊy 1 item magic 1068
+[IP : 1.53.50.181 : 4354 ] - Thêi gian : 02/13/2024_17:57:18  - Tµi kho¶n [ toan1] - Nh©n vËt : [¸d22342 ] lÊy 1 item magic 1070
+[IP : 1.53.50.181 : 4354 ] - Thêi gian : 02/13/2024_17:57:37  - Tµi kho¶n [ toan1] - Nh©n vËt : [¸d22342 ] lÊy 1 item magic 1162
+[IP : 1.53.50.181 : 4354 ] - Thêi gian : 02/13/2024_17:57:53  - Tµi kho¶n [ toan1] - Nh©n vËt : [¸d22342 ] lÊy 1 item magic 1255
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:30:40  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:30:51  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:31:02  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:35:52  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:36:04  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:36:20  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:37:03  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:37:15  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 16634 ] - Thêi gian : 02/13/2024_23:37:47  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4913 item  MaGic
+[IP : 116.111.184.97 : 23203 ] - Thêi gian : 02/13/2024_23:42:49  - Tµi kho¶n [ damme] - Nh©n vËt : [25254325 ] lÊy 4914 item  MaGic
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_00:52:36  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 36
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_00:53:00  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 37
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_00:53:52  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 38
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_00:54:21  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 39
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_00:55:53  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 40
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_00:58:49  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 44
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_00:59:56  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 42
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_01:07:52  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 34
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_01:08:17  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 33
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_01:14:25  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy 2424 item  MaGic
+[IP : 116.111.184.97 : 8040 ] - Thêi gian : 02/14/2024_01:14:49  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy 2425 item  MaGic
+[IP : 42.119.99.137 : 25048 ] - Thêi gian : 02/14/2024_01:19:55  - Tµi kho¶n [ mrchubo3] - Nh©n vËt : [313112222 ] lÊy 1 item magic 4910
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:22:02  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 51
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:22:11  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 52
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:22:20  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 53
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:22:31  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 54
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:23:12  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 55
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:28:00  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 47
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:28:32  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 49
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:33:02  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 194
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:33:18  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 184
+[IP : 116.111.184.97 : 8868 ] - Thêi gian : 02/14/2024_01:33:38  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 201
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:39:08  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 56
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:39:19  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 57
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:39:32  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 58
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:39:40  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 58
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:39:48  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 59
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:39:56  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 60
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:42:55  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 67
+[IP : 116.111.184.97 : 2319 ] - Thêi gian : 02/14/2024_01:43:11  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 68
+[IP : 116.111.184.97 : 32942 ] - Thêi gian : 02/14/2024_02:05:51  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 91
+[IP : 116.111.184.97 : 32942 ] - Thêi gian : 02/14/2024_02:05:58  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 92
+[IP : 116.111.184.97 : 32942 ] - Thêi gian : 02/14/2024_02:06:05  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 93
+[IP : 116.111.184.97 : 32942 ] - Thêi gian : 02/14/2024_02:06:11  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 94
+[IP : 116.111.184.97 : 32942 ] - Thêi gian : 02/14/2024_02:06:16  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 95
+[IP : 116.111.184.97 : 32942 ] - Thêi gian : 02/14/2024_02:06:23  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 96
+[IP : 116.111.184.97 : 18660 ] - Thêi gian : 02/14/2024_02:33:11  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 91
+[IP : 116.111.184.97 : 18660 ] - Thêi gian : 02/14/2024_02:33:26  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 92
+[IP : 116.111.184.97 : 18660 ] - Thêi gian : 02/14/2024_02:33:48  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 95
+[IP : 116.111.184.97 : 18660 ] - Thêi gian : 02/14/2024_02:34:05  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 97
+[IP : 116.111.184.97 : 18660 ] - Thêi gian : 02/14/2024_02:34:24  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 98
+[IP : 116.111.184.97 : 18660 ] - Thêi gian : 02/14/2024_02:34:36  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 99
+[IP : 116.111.184.97 : 18660 ] - Thêi gian : 02/14/2024_02:34:50  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 100
+[IP : 116.111.184.97 : 23761 ] - Thêi gian : 02/14/2024_02:43:34  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy 1 item magic 2424
+[IP : 116.111.184.97 : 14380 ] - Thêi gian : 02/14/2024_02:57:28  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy 1 item magic 4910
+[IP : 116.111.184.97 : 14380 ] - Thêi gian : 02/14/2024_02:57:42  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy 1 item magic 4910
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:02:22  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 131
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:02:41  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 132
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:02:50  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 133
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:03:13  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 134
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:03:28  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 135
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:04:42  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 140
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:04:58  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 129
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:05:09  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 128
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:05:19  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 127
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:05:59  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 127
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:06:06  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy 1 item magic 126
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:06:19  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy item gold 126
+[IP : 116.111.184.97 : 18449 ] - Thêi gian : 02/14/2024_03:08:47  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙNMC ] lÊy §å Xanh
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:46:51  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 76
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:47:10  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 77
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:47:21  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 78
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:47:43  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 79
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:48:04  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 72
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:48:59  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 295
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:49:19  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 295
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:50:27  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 296
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:50:37  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 297
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:50:44  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 298
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:50:57  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 299
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:51:39  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 294
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:52:31  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 77
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:52:42  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 78
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:52:50  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 79
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:53:25  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 86
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:53:40  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 75
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:54:01  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 72
+[IP : 116.111.184.97 : 16159 ] - Thêi gian : 02/14/2024_03:54:18  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 84
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:02:25  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 75
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:02:46  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 77
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:03:04  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 78
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:03:13  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 79
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:03:44  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 80
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:03:58  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 76
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:05:15  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 295
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:11:47  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 294
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:13:49  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 72
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:14:32  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 86
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:16:49  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 84
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:17:49  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy 1 item magic 2424
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:17:58  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy 1 item magic 2424
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:18:03  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy 1 item magic 2424
+[IP : 116.111.184.97 : 31752 ] - Thêi gian : 02/14/2024_04:20:42  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy 1 item magic 2425
+[IP : 116.111.184.97 : 19766 ] - Thêi gian : 02/14/2024_04:45:26  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 360
+[IP : 116.111.184.97 : 7043 ] - Thêi gian : 02/14/2024_05:49:18  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy 1 item magic 2424
+[IP : 116.111.184.97 : 7043 ] - Thêi gian : 02/14/2024_05:49:25  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy 1 item magic 2425
+[IP : 116.111.184.97 : 7469 ] - Thêi gian : 02/15/2024_01:05:39  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy 1 item magic 4910
+[IP : 116.111.184.97 : 7469 ] - Thêi gian : 02/15/2024_01:18:06  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙDMBV ] lÊy item gold 61
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:12:48  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy 1 item magic 2424
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:12:59  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy 1 item magic 2425
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:13:41  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 56
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:13:51  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 57
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:13:57  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 58
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:14:03  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 59
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:14:36  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 60
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:15:00  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 68
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:17:34  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 67
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:18:29  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 212
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:27:36  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy item gold 61
+[IP : 116.111.184.97 : 21784 ] - Thêi gian : 02/15/2024_02:30:09  - Tµi kho¶n [ damme] - Nh©n vËt : [TestÙÙÙ5doc ] lÊy 1 item magic 2424
+[IP : 42.119.99.75 : 40399 ] - Thêi gian : 02/15/2024_06:38:36  - Tµi kho¶n [ mrchubo3] - Nh©n vËt : [1212121 ] lÊy 1 item magic 2424
+[IP : 42.119.99.75 : 40399 ] - Thêi gian : 02/15/2024_07:05:08  - Tµi kho¶n [ mrchubo3] - Nh©n vËt : [1212121 ] lÊy 1 item magic 2425
+[IP : 1.53.50.181 : 21590 ] - Thêi gian : 02/15/2024_14:56:43  - Tµi kho¶n [ toan1] - Nh©n vËt : [Test5doc ] lÊy §å Xanh

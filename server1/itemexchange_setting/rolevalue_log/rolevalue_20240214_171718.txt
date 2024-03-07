@@ -1,0 +1,30 @@
+[Normal]Item: V« Danh Giíi ChØ (0,1,141,0,3,10), unbind = 0, bind = 3000
+[Normal]Item: Tª Hoµng B¨ng Tung CÈm uyÓn(0,1,48,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Phông Nghi ®ao(0,1,45,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng TuÖ T©m Khinh Sa Y(0,1,46,18,4,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Phong TuyÕt B¹ch V©n Thóc §¸i(0,1,47,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Thóy Ngäc ChØ Hoµn(0,1,49,0,2,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Hoµn Ch©u Vò Liªn(0,1,51,0,0,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Hång L¨ng Ba(0,1,53,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Kim Quang Thiªn Tµm Ngoa(0,1,200,1,2,10), unbind = 0, bind = 100
+[Normal]Item: Kim Quang Ngò S¾c Ngäc Béi(0,1,199,1,3,5), unbind = 0, bind = 100
+[Normal]Item: Kim Quang Thiªn Tµm Hé UyÓn(0,1,198,1,3,10), unbind = 0, bind = 100
+[Normal]Item: Kim Quang B¹ch Kim Yªu §¸i(0,1,197,1,2,10), unbind = 0, bind = 100
+[Normal]Item: Kim Quang Lôc PhØ Thóy Hé Th©n Phï(0,1,195,1,2,10), unbind = 0, bind = 100
+[Normal]Item: Kim Quang §­êng Nghª Gi¸p(0,1,194,4,2,10), unbind = 0, bind = 100
+[Normal]Item: Kim Quang TrÝch Tinh Hoµn(0,1,193,5,3,10), unbind = 0, bind = 100
+[Normal]Item: Ma ThÞ LÖ Ma PhÖ T©m Liªn(0,1,111,1,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Danh Giíi ChØ (0,1,141,0,3,10), unbind = 0, bind = 3000
+[Normal]Item: V« Danh ChØ Hoµn(0,1,140,0,2,10), unbind = 0, bind = 3000
+[Normal]Item: Ma S¸t Cö Háa Liªu Thiªn uyÓn(0,1,103,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ s¬n  H¶i Phi Hång Lý (0,1,114,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ HuyÕt Ngäc ThÊt S¸t Béi(0,1,113,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t Tµn D­¬ng ¶nh HuyÕt Gi¸p(0,1,101,16,0,10), unbind = 0, bind = 50
+[Normal]Item: ChiÕu D¹ Ngäc S­ Tö (0,0,10,5,0,10), unbind = 0, bind = 80
+[Normal]Item: Ma ThÞ LiÖt DiÖm Qu¸n MiÖn(0,1,110,2,3,10), unbind = 0, bind = 50
+[Normal]Item: ChiÕu D¹ Ngäc S­ Tö (0,0,10,5,0,5), unbind = 0, bind = 80
+[Normal]Item: Méng Long ChÝnh Hång T¨ng M·o(0,1,0,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long Kim Ti ChÝnh Hång Cµ Sa(0,1,1,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long §¹t Ma T¨ng hµi(0,1,4,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long HuyÒn Ti Ph¸t ®¸i(0,1,2,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long PhËt Ph¸p HuyÒn Béi(0,1,3,1,4,10), unbind = 0, bind = 50

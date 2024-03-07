@@ -1,0 +1,96 @@
+TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	TASK_DESCRIBE
+B¾t ®Çu ID (NÕu ID kh«ng liÒn m¹ch, h·y ®Ó trèng dßng)	KÕt thóc ID	Tªn nhiÖm vô	M« t¶ nhiÖm vô
+1		T¹m tr÷ nhiÖm vô lµm míi kü n¨ng	
+2		T¹m tr÷ nhiÖm vô cËp nhËt kü n¨ng cña c¸c m«n ph¸i	
+3		T¹m tr÷ nhiÖm vô göi th­	
+4		NhiÖm vô cÊp 40 cña §­êng M«n	
+5		Ghi chó liÖu cã ®Ò xuÊt kÕt h«n (hoÆc bŞ ®Ò xuÊt kÕt h«n) kh«ng	
+6		Ghi chó ID trùc tuyÕn cña ng­êi ®Ò xuÊt kÕt h«n	
+7		Ghi chó ID trùc tuyÕn cña ng­êi bŞ ®Ò xuÊt kÕt h«n	
+8		T¹m tr÷ nhiÖm vô röa tiÒm n¨ng (bao gåm gi¸ vµ sè lÇn ®· röa)	
+9		NhiÖm vô thÕ giíi ë khu vùc T©y Nam B¾c	
+10		NhiÖm vô cÊp 20 cña Thiªn V­¬ng Bang	
+11		T¹m tr÷ phİ huÊn luyÖn ra khái Bang	
+12		T¹m tr÷ viÖc gi¶m ®iÓm uy tİn khi rêi Bang	
+13		NhiÖm vô thÕ giíi ë khu vùc L­ìng Hå	
+14		NhiÖm vô cÊp 10 cña Vâ §ang Ph¸i	
+15		Ghi chó biÓu t­îng ®¨ng kı cho trËn c«ng thµnh (Wang Xibei)	
+16		NhiÖm vô cÊp 40 cña Vâ §ang Ph¸i	
+17		T¹m tr÷ mua ngùa tr¾ng cÊp 80: liÖu cã ®ñ ®iÒu kiÖn mua kh«ng	
+18		T¹m tr÷ biÕn chuyÓn ®æi ngåi xe	
+19		Tra tr¶ ®iÓm kü n¨ng sau sù kiÖn tÈy ®iÓm miÔn phİ vµo ngµy 03-07-2004	
+20		T¹m tr÷ biÕn cËp nhËt kü n¨ng (®Æc biÖt cho kü n¨ng cÊp 90)	
+21		T¹m tr÷ biÕn cËp nhËt kü n¨ng (l­u sè ®iÓm kü n¨ng ban ®Çu)	
+22		NhiÖm vô ra m«n Thiªn NhÉn Gi¸o (bŞ hñy)	
+23		NhiÖm vô ra m«n Thiªn NhÉn Gi¸o (bŞ hñy)	
+24		NhiÖm vô ra m«n Thiªn NhÉn Gi¸o (bŞ hñy)	
+25		NhiÖm vô luyÖn tËp Thanh C«n: GËy tre/Bao c¸t/§µn gç	
+26		NhiÖm vô míi ë lµng C¶nh C­: §¸nh bao c¸t (bŞ hñy)	
+27		NhiÖm vô míi ë lµng C¶nh C­: §¸nh ng­êi gç (bŞ hñy)	
+28		NhiÖm vô míi ë huyÖn Ba L¨ng: §¸nh gËy tre (bŞ hñy)	
+29		NhiÖm vô míi ë huyÖn Ba L¨ng: §¸nh bao c¸t (bŞ hñy)	
+30		NhiÖm vô míi ë huyÖn Ba L¨ng: §¸nh ng­êi gç (bŞ hñy)	
+31		NhiÖm vô míi ë thŞ trÊn Dung L¹c: §¸nh gËy tre (bŞ hñy)	
+32		NhiÖm vô míi ë thŞ trÊn Dung L¹c: §¸nh bao c¸t (bŞ hñy)	
+33		NhiÖm vô míi ë thŞ trÊn Dung L¹c: §¸nh ng­êi gç (bŞ hñy)	
+34		NhiÖm vô míi ë thŞ trÊn Chu Tiªn: §¸nh gËy tre (bŞ hñy)	
+35		NhiÖm vô míi ë thŞ trÊn Chu Tiªn: §¸nh bao c¸t (bŞ hñy)	
+36		NhiÖm vô míi ë thŞ trÊn Chu Tiªn: §¸nh ng­êi gç (bŞ hñy)	
+37		NhiÖm vô míi ë lµng §Ëu H­¬ng: §¸nh gËy tre (bŞ hñy)	
+38		NhiÖm vô míi ë lµng §Ëu H­¬ng: §¸nh bao c¸t (bŞ hñy)	
+39		NhiÖm vô míi ë lµng §Ëu H­¬ng: §¸nh ng­êi gç (bŞ hñy)	
+40		NhiÖm vô cÊp 50 cña Th«i Yªn Ph¸i (bŞ hñy)	
+41		NhiÖm vô cÊp 50 cña C«n Lu©n Ph¸i (bŞ hñy)	
+42		NhiÖm vô cÊp 20 cña ThiÕu L©m Ph¸i	
+43		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (HuyÒn Nh©n)	
+44		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (NPC TrËn ChiÕn Kİn)	
+45		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (Cöa lín Kİn)	
+46		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (Cöa nhá Kİn)	
+47		NhiÖm vô cÊp 50 cña ThiÕu L©m Ph¸i (§¸)	
+48		NhiÖm vô nhËp m«n §­êng M«n	
+49		T¹m tr÷ mua ngùa tr¾ng cÊp 80	
+50		T¹m tr÷ röa tiÒm n¨ng (bao gåm gi¸ chuyÓn ®æi b»ng ngäc)	
+51		T¹m tr÷ biÕn t¹m thêi cho nhiÖm vô lµm b¸nh bao	
+52			
+100		Ghi chó phe cña ng­êi ch¬i trong trËn c«ng thµnh	
+101	110	????	
+111		Ghi chó cuéc trß chuyÖn cña ng­êi d©n ë Nam NguyÖt ThŞ	
+112		Ghi chó n¨m h¹ng n¨m cña ®éi h×nh vÖ binh kü n¨ng bang héi	
+113			
+114			
+120		Ghi chó täa ®é cña ng­êi ch¬i trong trËn ®Êu cña Bang Héi Hoa S¬n (DËu H¹o)	
+121		Ghi chó täa ®é cña ng­êi ch¬i trong trËn ®Êu cña Bang Héi Hoa S¬n (DËu H¹o)	
+122		Ghi chó täa ®é cña ng­êi ch¬i trong trËn ®Êu cña Bang Héi Hoa S¬n (DËu H¹o)	
+151		Ghi chó chØ môc lo¹i hµng hãa ®· chän cña th­¬ng nh©n bİ Èn L­u Êt	
+152		Ghi chó chØ môc hµng hãa ®· chän cña th­¬ng nh©n bİ Èn L­u Êt	
+153		Ghi chó biÕn phô hç trî ghi l¹i sè ®iÓm mµ ng­êi ch¬i nhËn ®­îc trong c¸c sù kiÖn nh­ ®æi tiÒn, ®æi vµng	
+154		Ghi chó gi¸ trŞ nhiÖm vô cña c¸c t¸c nh©n yªu tè	
+160		Ghi chó thêi gian lÇn cuèi nhËn quµ lÔ héi tõ quan phßng ngµy Ngäc NguyÖt	
+180		Ghi chó ng­êi ghi l¹i chØ sè cña boss gi÷a ë tÇng 180 trong thÕ giíi cña phong ngù ®iÖn cña Nghªnh Giã Kş	
+181		Ghi chó biÕn nhiÖm vô ghi l¹i gi¸ trŞ t­¬ng øng gi÷a ng­êi b¶o vÖ vµ hßm b¶o vËt trong nhiÖm vô kho b¶o khè Qianbao	
+182		Ghi chó sè thø tù cña c©u hái	
+183		-- BiÕn t¹m thêi 182 ghi l¹i sè lÇn tr¶ lêi ®óng cña c©u hái	
+184		-- BiÕn t¹m thêi 183 ghi l¹i sè thø tù c©u hái nhá nhÊt	
+185		-- BiÕn t¹m thêi 184 ghi l¹i sè thø tù c©u hái lín nhÊt	
+186		-- BiÕn t¹m thêi 185 ghi l¹i sè lÇn tr¶ lêi c©u hái	
+187		-- BiÕn t¹m thêi 186 ghi l¹i biÕn nhiÖm vô më khãa c©u hái	
+188		-- BiÕn t¹m thêi 187 ghi l¹i byte më khãa c©u hái	
+189		Ghi chó sè lÇn ®¸nh bao c¸t t¹i vïng h¾c hµ trong nhiÖm vô gi¸o dôc	
+190		Ghi chó chÕ ®é xö lı ®óng/sai cña hµm tr¶ lêi c©u hái	
+191		Ghi chó m¶ng hµm gäi l¹i cña hµm tr¶ lêi c©u hái	
+192		Ghi chó sè thø tù b¶n ®å mµ ng­êi kia ®ang ë sau khi sö dông hép quµ Ngµy T×nh Nh©n	
+193		H¹n chÕ viÖc nhËn phÇn th­ëng cña Bang Héi §Çu Tiªn ThÕ Giíi	
+194		Ho¹t ®éng chuyÓn ®æi ng­êi ch¬i hiÖn cã trong BiÓn V« T×nh	
+195			
+196			
+197			
+198			
+199			
+200		Ghi chó xem liÖu hiÖn t¹i cã thÓ chuyÓn ®æi phe cña ng­êi ch¬i kh«ng, sö dông cho trËn chiÕn PK vµ c¸c lÜnh vùc t­¬ng tù	
+240		Ghi chó tæng sè trËn PK hiÖn t¹i cña ng­êi ch¬i trong trËn ®Êu PK	
+241		Ghi chó tæng sè lÇn chÕt hiÖn t¹i cña ng­êi ch¬i trong trËn ®Êu PK	
+245		Ghi chó biÕn t¹m thêi cho viÖc tra cøu th«ng tin trong trËn c«ng thµnh. Sö dông trong InfoCenter.lua	
+246		Sö dông cho Liªn TrËn - Zhang Fan	
+250		Sè thø tù c©u hái ®è vÒ Hoµng §¹o Trung Thu	
+251		Sè thø tù c©u tr¶ lêi ®óng cña c©u hái ®è vÒ Hoµng §¹o Trung Thu	
+256(end)			

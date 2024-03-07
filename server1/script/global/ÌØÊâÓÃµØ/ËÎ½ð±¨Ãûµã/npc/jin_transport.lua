@@ -1,0 +1,1 @@
+Include("\\script\\tongkim\\npc\\jin_transport.lua")

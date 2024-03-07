@@ -1,0 +1,2 @@
+--ThuyÒn Phu §¹i Lý
+Include("\\script\\global\\mrt\\npc\\thuyenphu\\thanhthi\\daily.lua")

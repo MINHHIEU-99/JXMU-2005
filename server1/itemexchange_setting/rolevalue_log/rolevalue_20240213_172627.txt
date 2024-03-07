@@ -1,0 +1,19 @@
+[Normal]Item: Cang KiÕm(0,0,0,0,4,2), unbind = 0, bind = 0
+[Normal]Item: Tô TiÔn(0,0,1,2,0,1), unbind = 0, bind = 0
+[Normal]Item: Cang Phi §ao(0,0,1,1,4,2), unbind = 0, bind = 0
+[Normal]Item: §iÓm Cang Th­¬ng(0,0,0,3,2,3), unbind = 0, bind = 0
+[Normal]Item: Cang KiÕm(0,0,0,0,3,2), unbind = 0, bind = 0
+[Normal]Item: ThiÕt Trñy thñ (0,0,0,0,1,1), unbind = 0, bind = 0
+[Normal]Item: Cang KiÕm(0,0,0,0,1,2), unbind = 0, bind = 0
+[Normal]Item: Kim TiÒn tiªu(0,0,1,0,1,1), unbind = 0, bind = 0
+[Normal]Item: ThiÕt Th­¬ng(0,0,0,3,1,1), unbind = 0, bind = 0
+[Normal]Item: Phi §ao(0,0,1,1,0,1), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
+[Normal]Item: V« TrÇn Thanh T©m H­íng ThiÖn Ch©u(0,1,41,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« TrÇn PhËt T©m Tõ H÷u Yªu Phèi(0,1,43,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma ¤ Kim NhuyÔn §iÒu(0,1,7,0,3,10), unbind = 0, bind = 50
+[Normal]Item: ThiÕu L©m T¸o Nh©n Tiªu(0,0,1,0,3,2), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh §ao(0,0,0,1,2,4), unbind = 0, bind = 0
+[Normal]Item: TÝch LÞch chïy(0,0,0,4,3,4), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
+[Normal]Item: Nh¹n VÜ §ao(0,0,1,1,1,4), unbind = 0, bind = 0
