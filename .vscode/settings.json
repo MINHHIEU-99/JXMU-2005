@@ -1,0 +1,13 @@
+{
+    "Lua.diagnostics.globals": [
+        "Event1000_ActiveDate",
+        "Msg2SubWorld",
+        "AskClientForString",
+        "DoiTenNV",
+        "CreateNewSayEx",
+        "Msg2Player",
+        "GetNpcAroundPlayerList",
+        "PlayerFunLib",
+        "AddPlayerExp"
+    ]
+}
