@@ -208,7 +208,7 @@ TinSuSonThanMieu = 0
 Mo3LoaiTinSuNhuVNG = 1 --(Phong Kú: BiÖn Kinh - D­¬ng Ch©u, Th­¬ng B¶o Khè: Thµnh §« - T­¬ng D­¬ng, S¬n ThÇn MiÕu: L©m An - Ph­îng T­êng, §¹i Lý random 3 map)																										
 ---Boss Hoµng Kim------																										
 SoLuongBossHoangKimGoiRa = 10  --sè l­îng boss hoµng kim gäi ra mçi ngµy, max lµ 20																										
-KinhNghiemGietBoss = 20000000
+KinhNghiemGietBoss = 2000000
 KinhNghiemNguoiChoiDungXungQuanh = 1000000
 TyLeRotDoPho = 1 ---100 t­¬ng øng víi 100%																										
 TyLeRotTrangBiHoangKim = 1 ---100 t­¬ng øng víi 100%																										

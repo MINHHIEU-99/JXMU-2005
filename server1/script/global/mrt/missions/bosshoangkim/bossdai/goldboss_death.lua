@@ -27,6 +27,8 @@ function OnDeath(nBossIndex)
 	AddDropItemBlue(nBossIndex,totaldrop,nNpcSeries,random(8,9),GetLuckyPlayer());
 	DropQuestItemBoss(nBossIndex,OrgPlayer)
 	local szMsgWorld = format("§¹i hiÖp <color=yellow>%s <color>t¹i <color=yellow>%s <color>®· tiªu diÖt thµnh c«ng <color=yellow>%s <color>",szNamePlayer,SubWorldName(SubWorldID2Idx(nW)),szBossName);
+	-- PlayerIndex = szNamePlayer;
+	-- AddPlayerExp(2000000);
 	Msg2SubWorld(szMsgWorld);
 	AddGlobalNews(szMsgWorld);
 	

@@ -851,9 +851,9 @@ end;
 
 
 function tuimautanthu()
-local idex = AddItem(6,1,4335,1,0,0,0)
-SyncItem(idex);
-SetItemBindState(idex,-2) -- Khoa bao hiem vinh vien
+	local idex = AddItem(6,1,4335,1,0,0,0)
+	SyncItem(idex);
+	SetItemBindState(idex,-2) -- Khoa bao hiem vinh vien
 end
 
 
@@ -867,12 +867,12 @@ function AdminGame()
 end
 
 function ChucNangGM()
-player = GetPlayerCount()
-if AdminGame() == 1 then
-MoChucNangGM()
-else
-Msg2Player("ChØ Cã <color=pink>Ban Qu¶n TrÞ <color>Míi Cã QuyÒn Sö Dông Chøc N¨ng Nµy")
-end
+	player = GetPlayerCount()
+	if AdminGame() == 1 then
+		MoChucNangGM()
+	else
+		Msg2Player("ChØ Cã <color=pink>Ban Qu¶n TrÞ <color>Míi Cã QuyÒn Sö Dông Chøc N¨ng Nµy")
+	end
 end
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function MoChucNangGM()
@@ -884,9 +884,9 @@ function MoChucNangGM()
 end
 -----------------------------------------------------------------------------------------------------------------------------------
 function LBAdmin()
-local index = AddItem(6,1,4906,0,0,0,0) SyncItem(index) SetItemBindState(index,-2) -- -2:khoa 0: k bi khoa 
-local index = AddItem(6,1,4890,0,0,0,0) SyncItem(index) SetItemBindState(index,-2)
-Msg2Player("Chóc Mõng <color=green>§¹i HiÖp <color> NhËn §­îc <color=yellow>LÖnh Bµi <color> <color=pink>ADMIN <color>")	
+	local index = AddItem(6,1,4906,0,0,0,0) SyncItem(index) SetItemBindState(index,-2) -- -2:khoa 0: k bi khoa 
+	local index = AddItem(6,1,4890,0,0,0,0) SyncItem(index) SetItemBindState(index,-2)
+	Msg2Player("Chóc Mõng <color=green>§¹i HiÖp <color> NhËn §­îc <color=yellow>LÖnh Bµi <color> <color=pink>ADMIN <color>")	
 end
 
 

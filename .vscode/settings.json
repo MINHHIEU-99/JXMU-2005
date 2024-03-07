@@ -8,6 +8,7 @@
         "Msg2Player",
         "GetNpcAroundPlayerList",
         "PlayerFunLib",
-        "AddPlayerExp"
+        "AddPlayerExp",
+        "GetLastDiagNpc"
     ]
 }
