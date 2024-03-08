@@ -1,6 +1,8 @@
--- VÖ binh nha m«n ë c¸c thµnh thŞ - Editor by AloneScript (Linh Em)
+--ÖĞÔ­±±Çø ãê¾©¸® ³ÇÃÅÎÀ±ø4¶Ô»°£¨ÉÙÁÖÈëÃÅÈÎÎñ£©
+-- by£ºDan_Deng(2003-08-01)
 
 Include("\\script\\global\\map_helper.lua")
+npc_name = "<#> VÖ binh Thµnh m«n"
 
 function default_talk()
 	Uworld38 = GetByte(GetTask(38),2)

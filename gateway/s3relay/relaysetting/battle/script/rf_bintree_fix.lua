@@ -49,12 +49,8 @@ function battle_StartNewRound( nBattleID, nBattleLevel )
 	nBattleMapID, arynRuleID = Battle_GetMapPatternInfo( nBattleID, nMapPatternID );
 	nWorldMapID, arystrMapName = Battle_GetBattleMapInfo( nBattleID, nBattleMapID, nBattleLevel );
 	strMapName = arystrMapName[ Random( getn( arystrMapName ) ) + 1 ];
-	-- nRuleID = arynRuleID[ Random( getn( arynRuleID ) ) + 1 ]; -- random theo tıng th’ loπi , 
-	local tbRule = {
-		-- 3, 		-- Bao Ve Nguyen Soai
-		7, 		-- Cuu Sat
-	}
-	nRuleID = tbRule[random(1, getn(tbRule))]
+	nRuleID = arynRuleID[ Random( getn( arynRuleID ) ) + 1 ];
+	
 	battle_SaveRoundInfo( nBattleID, nBattleLevel, nLatestIssueID, nRoundCount, nRoundID, nMapPatternID, strMapName, nRuleID, 0 );
 	
 	battle_Msg_NewRound( nBattleID, nBattleLevel, nLatestIssueID, nRoundCount, nRoundID, nMapPatternID, nBattleMapID, nWorldMapID, strMapName, nRuleID );

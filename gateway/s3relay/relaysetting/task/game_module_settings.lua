@@ -1,35 +1,63 @@
--- ¶¨Ê±ÏòÒ»×é·þÎñÆ÷µÄËùÓÐGameserver·¢ÏµÍ³¹«¸æ
-Include("\\script\\gb_modulefuncs.lua")
-tab_GameSetting = 
-{
-"Vuot Ai",--ÄêÊÞ
-"Phong Lang Do",--ÉÌ³Ç
-"Tong Kim",--Msg2SubWorld
-"Boss Hoang Kim",--AddLocalNews
-"Boss Tieu Hoang Kim", 
---"Cong Thanh Chien 3 Tru",
-"That Thanh Dai Chien",
-"Doan Hoa Dang",--AddLocalNews and AddGift
---"Dau Nguu",
---"Loan Chien Cuu Chau Coc",
---"Tin Su",
-"Lien Dau",
-}
+	-- ®óng giê h­íng mét tæ phôc vô khÝ së h÷u Gameserver ph¸t hÖ thèng th«ng c¸o
 
-function TaskShedule()
-	TaskName("ThiÕt kÕ  hÖ thèng trß ch¬i");
+	Include( "\\script\\gb_modulefuncs.lua")
+
+	tab_GameSetting =
+
+	{
+
+	"mua Xuan 2006 hoat dong",-- niªn thó
+
+	"OpenShop",-- th­¬ng thµnh
+
+	"Thiep chuc mung",--Msg2SubWorld
+
+	"Do pho",--AddLocalNews
+
+	"Phuc duyen - Phao Hoa",
+
+	"Truyen Cong",
+
+	"Le Vat tinh nhan ",--AddLocalNews and AddGift
+
+	"YANDIBAOZANG",
+
+	"YANDIBAOZANG_TALK",
+
+	"SWITH_DAIYITOUSHI",
+
+	"chunjie2009_dangboss",
+
+	}
+
+	function TaskShedule()
+
+	TaskName( "ThiÕt kÕ trß ch¬i hÖ thèng ");
+
 	TaskInterval(1000000);
+
 	TaskCountLimit(0);
-	OutputMsg("=====> BAT DAU KHOI DONG CAC TINH NANG CUA GAME VO LAM TRUYEN KY <=====");
-end
 
-function TaskContent()
-	for i = 1, getn(tab_GameSetting) do 
-		gb_AutoStartModule(tab_GameSetting[i])
+	OutputMsg( "Khoi dong chuc nang he thong trong tro choi. . .");
+
 	end
-end
 
-function GameSvrConnected(dwGameSvrIP)
-end
-function GameSvrReady(dwGameSvrIP)
-end
+	function TaskContent()
+
+	for i = 1, getn(tab_GameSetting) do
+
+	gb_AutoStartModule(tab_GameSetting[i])
+
+	end
+
+	end
+
+	function GameSvrConnected(dwGameSvrIP)
+
+	end
+
+	function GameSvrReady(dwGameSvrIP)
+
+	end
+
+

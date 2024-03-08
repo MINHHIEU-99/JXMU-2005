@@ -1,0 +1,6 @@
+-- ¥ÛµÌ°°¢∑»À°°æ∆ø›1
+-- by£∫Dan_Deng(2003-09-16)
+
+function main()
+	Talk(1,"","Ti”u nhﬁ, ch©m r≠Óu...")
+end;

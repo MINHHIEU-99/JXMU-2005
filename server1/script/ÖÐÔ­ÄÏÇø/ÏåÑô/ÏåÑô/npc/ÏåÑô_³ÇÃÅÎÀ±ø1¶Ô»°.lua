@@ -1,9 +1,10 @@
--- V÷ binh nha m´n Î c∏c thµnh thﬁ - Editor by AloneScript (Linh Em)
+--÷–‘≠ƒœ«¯ œÂ—Ù∏Æ ≥«√≈Œ¿±¯1∂‘ª∞
 
 Include("\\script\\global\\map_helper.lua")
+npc_name = "<#>Cˆa thµnh v÷ binh"
 
 function default_talk()
-	Talk(1,"", "N®m x≠a Nhπc t≠Ìng qu©n tıng k›ch lui qu©n Kim ra kh·i T≠¨ng D≠¨ng, tı Æ„ v“ sau, n¨i nµy trÎ thµnh Æi”m thi’t y’u b∂o v÷ cho ßπi TËng, T≠¨ng D≠¨ng mµ m t, ßπi TËng sœ l©m vµo th’ hi”m nguy Æ y.")
+	Talk(1,"",npc_name.."<#>:  N®m Æ„ Nhπc t≠Ìng qu©n tıng Æ∏nh hπ ng≠Íi Kim tr n thÒ T≠¨ng D≠¨ng, tı Æ„ v“ sau, T≠¨ng D≠¨ng lµ y’u Æﬁa cÒa ßπi TËng. T≠¨ng D≠¨ng m t, ßπi TËng æt l©m nguy.")
 end;
 
 

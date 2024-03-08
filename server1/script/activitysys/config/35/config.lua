@@ -1,4 +1,3 @@
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 Include("\\script\\activitysys\\config\\35\\variables.lua")
 tbConfig = {}
 tbConfig[1] = --Ò»¸öÏ¸½Ú
@@ -17,7 +16,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,40,EVENT_LOG_TITLE,"TongKimDat3000DiemNhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "TongKimDat3000DiemNhanHatGiong", "40 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TongKimDat3000DiemNhanHatGiong", "40 H¹t Gièng", 1}},
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
@@ -35,7 +34,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"VuotQuaAi17NhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "VuotQuaAi17NhanHatGiong", "10 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "VuotQuaAi17NhanHatGiong", "10 H¹t Gièng", 1}},
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -53,7 +52,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"VuotQuaAi28NhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "VuotQuaAi28NhanHatGiong", "10 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "VuotQuaAi28NhanHatGiong", "10 H¹t Gièng", 1}},
 	},
 }
 tbConfig[4] = --Ò»¸öÏ¸½Ú
@@ -72,7 +71,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinhNhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "TieuDietThuyTacDauLinhNhanHatGiong", "10 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietThuyTacDauLinhNhanHatGiong", "10 H¹t Gièng", 1}},
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
@@ -91,7 +90,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinhNhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "TieuDietThuyTacDaiDauLinhNhanHatGiong", "20 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietThuyTacDaiDauLinhNhanHatGiong", "20 H¹t Gièng", 1}},
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
@@ -109,7 +108,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"VuotQuaAi10ViemDeNhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "VuotQuaAi10ViemDeNhanHatGiong", "20 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "VuotQuaAi10ViemDeNhanHatGiong", "20 H¹t Gièng", 1}},
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -128,7 +127,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,50,EVENT_LOG_TITLE,"TieuDietBossHoangKimNhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "TieuDietBossHoangKimNhanHatGiong", "50 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietBossHoangKimNhanHatGiong", "50 H¹t Gièng", 1}},
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
@@ -146,7 +145,7 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,3,EVENT_LOG_TITLE,"TieuDietBossSatThuNhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "TieuDietBossSatThuNhanHatGiong", "3 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietBossSatThuNhanHatGiong", "3 H¹t Gièng", 1}},
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
@@ -164,7 +163,7 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"NpcFunLib:DropSingleItem",	{{szName="M©m B¹c",tbProp={6,1,3103,1,0,0},nExpiredTime=20240201,},1,"5"} },
+		{"NpcFunLib:DropSingleItem",	{{szName="M©m B¹c",tbProp={6,1,3103,1,0,0},nExpiredTime=20120201,},1,"5"} },
 	},
 }
 tbConfig[10] = --Ò»¸öÏ¸½Ú
@@ -184,14 +183,14 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"TongKimDat1000DiemNhanHatGiong"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "TongKimDat1000DiemNhanHatGiong", "20 H¹t Gièng", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TongKimDat1000DiemNhanHatGiong", "20 H¹t Gièng", 1}},
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
 {
 	nId = 11,
 	szMessageType = "ClickNpc",
-	szName = "BÊm Vµo §¹i ThÇn Tµi",
+	szName = "click npc named plutus",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"§¹i ThÇn Tµi"},
@@ -213,7 +212,7 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 {
 	nId = 12,
 	szMessageType = "CreateDialog",
-	szName = "SUDUNGMAMBACNGUQUA select",
+	szName = "wuguobaiyinpan select",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"Hîp thµnh M©m B¹c Ngò Qu¶ cã hai c¸ch, c¸ch thø 1: 1 N¶i Chuèi + 1 Tr¸i Cam + 1 Tr¸i B­ëi + 1 Tr¸i Hång + 1 Tr¸i Lª + 1 M©m B¹c; C¸ch 2 lµ: 1 Tr¸i Dõa + 1 Tr¸i §u §ñ +1 Tr¸i M¶ng Cçu + 1 Tr¸i Sung + 1 Tr¸i Xoµi + 1 M©m Vµng. §¹i hiÖp muèn sö dông c¸ch nµo. ",0},
@@ -230,7 +229,7 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "CreateCompose",
-	szName = "SUDUNGMAMBACNGUQUA plan_1",
+	szName = "wuguobaiyinpan plan_1",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"M©m B¹c Ngò Qu¶",1,1,1,0.02,0,50},
@@ -246,14 +245,14 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{szName="M©m B¹c Ngò Qu¶",tbProp={6,1,3105,1,0,0},nExpiredTime=20240201,},1,EVENT_LOG_TITLE,"GhepMamBacNguQua"} },
+		{"PlayerFunLib:GetItem",	{{szName="M©m B¹c Ngò Qu¶",tbProp={6,1,3105,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"GhepMamBacNguQua"} },
 	},
 }
 tbConfig[14] = --Ò»¸öÏ¸½Ú
 {
 	nId = 14,
 	szMessageType = "CreateCompose",
-	szName = "SUDUNGMAMBACNGUQUA plan_2",
+	szName = "wuguobaiyinpan plan_2",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"M©m B¹c Ngò Qu¶",1,1,1,0.02,0,50},
@@ -269,14 +268,14 @@ tbConfig[14] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{szName="M©m B¹c Ngò Qu¶",tbProp={6,1,3105,1,0,0},nExpiredTime=20240201,},1,EVENT_LOG_TITLE,"GhepMamBacNguQua"} },
+		{"PlayerFunLib:GetItem",	{{szName="M©m B¹c Ngò Qu¶",tbProp={6,1,3105,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"GhepMamBacNguQua"} },
 	},
 }
 tbConfig[15] = --Ò»¸öÏ¸½Ú
 {
 	nId = 15,
 	szMessageType = "CreateDialog",
-	szName = "SUDUNGMAMNGUQUA select",
+	szName = "wuguohuangjinpan select",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"Hîp thµnh M©m Vµng Ngò Qu¶ cã hai c¸ch, c¸ch thø 1: 1 N¶i Chuèi + 1 Tr¸i Cam + 1 Tr¸i B­ëi + 1 Tr¸i Hång + 1 Tr¸i Lª + 1 M©m Vµng; C¸ch thø 2: 1 Tr¸i Dõa + 1 §u §ñ + 1 M·ng CÇu + 1 Tr¸i Sung + 1 Tr¸i Xoµi + M©m Vµng. §¹i hiÖp muèn sö dông c¸ch nµo.",0},
@@ -293,7 +292,7 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 {
 	nId = 16,
 	szMessageType = "CreateCompose",
-	szName = "SUDUNGMAMNGUQUA plan_1",
+	szName = "wuguohuangjinpan plan_1",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"M©m Vµng Ngò Qu¶",1,1,1,0.02,0,50},
@@ -309,14 +308,14 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20240201,},1,EVENT_LOG_TITLE,"GhepMamVangNguQua"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"GhepMamVangNguQua"} },
 	},
 }
 tbConfig[17] = --Ò»¸öÏ¸½Ú
 {
 	nId = 17,
 	szMessageType = "CreateCompose",
-	szName = "SUDUNGMAMNGUQUA plan_2",
+	szName = "wuguohuangjinpan plan_2",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"M©m Vµng Ngò Qu¶",1,1,1,0.02,0,50},
@@ -332,14 +331,14 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20240201,},1,EVENT_LOG_TITLE,"GhepMamVangNguQua"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"GhepMamVangNguQua"} },
 	},
 }
 tbConfig[18] = --Ò»¸öÏ¸½Ú
 {
 	nId = 18,
 	szMessageType = "CreateCompose",
-	szName = "handin BAOLIXI",
+	szName = "handin redbag",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"",0,0,0,0},
@@ -348,13 +347,13 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 		{"AddOneMaterial",	{"Bao L× X× N¨m Míi (nhá)",{tbProp={6,1,3108,1,0,0},},1} },
 		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},100000} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_BAOLIXI_DAILY,MAX_BAOLIXI_DAILY,"H«m nay ®¹i hiÖp ®· giao ®ñ råi, ®îi ngµy mai h·y tiÕp tôc nhÐ!","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_REDBAG_DAILY,MAX_REDBAG_DAILY,"H«m nay ®¹i hiÖp ®· giao ®ñ råi, ®îi ngµy mai h·y tiÕp tôc nhÐ!","<"} },
 	},
 	tbActition = 
 	{
 		{"PlayerFunLib:AddExp",	{1000000,1,EVENT_LOG_TITLE,"NopBaoLiXiNamMoiTaiNPCDaiThanTai"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "NopBaoLiXiNamMoiTaiNPCDaiThanTai", "1000000 §iÓm kinh nghiÖm", 1}},
-		{"ThisActivity:AddTaskDaily",	{TSK_BAOLIXI_DAILY,1} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "NopBaoLiXiNamMoiTaiNPCDaiThanTai", "1000000 §iÓm kinh nghiÖm", 1}},
+		{"ThisActivity:AddTaskDaily",	{TSK_REDBAG_DAILY,1} },
 	},
 }
 tbConfig[19] = --Ò»¸öÏ¸½Ú
@@ -362,48 +361,48 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 	nId = 19,
 	szMessageType = "ItemScript",
 	szName = "use wuguodebaiyinpan",
-	nStartDate = NewYearEventMamNguQua.nStartDate,
-	nEndDate  = NewYearEventMamNguQua.nEndDate,
+	nStartDate = 201201010000,
+	nEndDate  = 201202010000,
 	tbMessageParam = {{tbProp={6,1,3105,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
-		{"ThisActivity:CheckTask",	{TSK_USED_SUDUNGMAMBACNGUQUA,MAX_USED_SUDUNGMAMBACNGUQUA,"§¹i hiÖp ®· nhËn qu¸ nhiÒu phÇn th­ëng råi, hay lµ thö c¸i kh¸c xem sao!","<"} },
+		{"ThisActivity:CheckTask",	{TSK_USED_WUGUOBAIYINPAN,MAX_USED_WUGUOBAIYINPAN,"§¹i hiÖp ®· nhËn qu¸ nhiÒu phÇn th­ëng råi, hay lµ thö c¸i kh¸c xem sao!","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
-		{"ThisActivity:UseSUDUNGMAMBACNGUQUA",	{nil} },
+		{"ThisActivity:UseWuguobaiyinpan",	{nil} },
 	},
 }
 tbConfig[20] = --Ò»¸öÏ¸½Ú
 {
 	nId = 20,
 	szMessageType = "ItemScript",
-	szName = "use mamvangnguqua",
-	nStartDate = NewYearEventMamNguQua.nStartDate,
-	nEndDate  = NewYearEventMamNguQua.nEndDate,
+	szName = "use wuguodehuangjinpan",
+	nStartDate = 201201010000,
+	nEndDate  = 201202010000,
 	tbMessageParam = {{tbProp={6,1,3106,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
-		{"ThisActivity:CheckTask",	{TSK_USED_SUDUNGMAMNGUQUA,MAX_USED_SUDUNGMAMNGUQUA,"§¹i hiÖp ®· nhËn qu¸ nhiÒu phÇn th­ëng råi, hay lµ thö c¸i kh¸c xem sao!","<"} },
+		{"ThisActivity:CheckTask",	{TSK_USED_WUGUOHUANGJINPAN,MAX_USED_WUGUOHUANGJINPAN,"§¹i hiÖp ®· nhËn qu¸ nhiÒu phÇn th­ëng råi, hay lµ thö c¸i kh¸c xem sao!","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
-		{"ThisActivity:UseSUDUNGMAMNGUQUA",	{nil} },
+		{"ThisActivity:UseWuguohuangjinpan",	{nil} },
 	},
 }
 tbConfig[21] = --Ò»¸öÏ¸½Ú
 {
 	nId = 21,
 	szMessageType = "ItemScript",
-	szName = "use hatgiongcaybachqua",
-	nStartDate = NewYearEventMamNguQua.nStartDate,
-	nEndDate  = NewYearEventMamNguQua.nEndDate,
+	szName = "use zhongzi",
+	nStartDate = 201201010000,
+	nEndDate  = 201202010000,
 	tbMessageParam = {{tbProp={6,1,3107,1,0,0},}},
 	tbCondition = 
 	{
@@ -527,7 +526,7 @@ tbConfig[27] = --Sö dông bao l× x× ®á
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{250000000,1,EVENT_LOG_TITLE,"SuDungBaoLiXiDo"} },
+		{"PlayerFunLib:AddExp",	{2500000,1,EVENT_LOG_TITLE,"SuDungBaoLiXiDo"} },
 	},
 }
 tbConfig[28] =
@@ -537,7 +536,7 @@ tbConfig[28] =
 	szName = "§èi tho¹i nhËn phÇn th­ëng free exp",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Vµo lóc 0:00-16-1-2024 ®Õn 24:00-17-1-2024, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (Relife kh«ng giíi h¹n) cã thÓ ®Õn gÆp ta ®Ó nhËn mãn quµ  lµ 100 triÖu ®iÓm kinh nghiÖm kh«ng céng dån, mçi nh©n vËt chØ cã thÓ nhËn mét lÇn duy nhÊt.",0},
+	tbMessageParam = {"Vµo lóc 0:00-16-1-2012 ®Õn 24:00-17-1-2012, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (trïng sinh kh«ng giíi h¹n) cã thÓ ®Õn gÆp ta ®Ó nhËn mãn quµ  lµ 100 triÖu ®iÓm kinh nghiÖm kh«ng céng dån, mçi nh©n vËt chØ cã thÓ nhËn mét lÇn duy nhÊt.",0},
 	tbCondition = 
 	{		
 	},
@@ -564,7 +563,7 @@ tbConfig[29] =
 	{
 		{"tbVNG_BitTask_Lib:setBitTask", {{nTaskID = 2912,nStartBit = 21,nBitCount = 1,nMaxValue = 1}, 1}},
 		{"PlayerFunLib:AddExp",	{100e6,0,EVENT_LOG_TITLE,"MienPhiNhanThuongDiemKinhNghiem"} },
-		{"tbVngTransLog:Write", {"202401_event_tet/", 22, "MienPhiNhanThuongDiemKinhNghiem", "100000000 §iÓm kinh nghiÖm", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "MienPhiNhanThuongDiemKinhNghiem", "100000000 §iÓm kinh nghiÖm", 1}},
 	},
 }
 tbConfig[30] = --nép mÆt n¹ rång
@@ -587,22 +586,5 @@ tbConfig[30] = --nép mÆt n¹ rång
 	tbActition = 
 	{
 		{"ThisActivity:ComposeDragonMask",	{nil} },		
-	},
-}
-tbConfig[31] = --Ò»¸öÏ¸½Ú
-{
-	nId = 31,
-	szMessageType = "ServerStart",
-	szName = "server start",
-	nStartDate = NewYearEventMamNguQua.nStartDate,
-	nEndDate = NewYearEventMamNguQua.nEndDate,
-	tbMessageParam = {nil},
-	tbCondition = 
-	{
-	},
-	tbActition = 
-	{
-		{"ThisActivity:ServerStart",	{nil} },
-		{"NpcFunLib:AddDialogNpc",	{"§¹i ThÇn Tµi",1528,{{78,1584,3216}}} },
 	},
 }

@@ -48,7 +48,7 @@ function main(sel)
 		tbDailog:AddOptEntry("Kh«ng! Ta kh«ng muèn trong lóc bång bét ®­a ra quyÕt ®Þnh c¶ ®êi ng­êi m×nh.", female_cancel)
 	else
 		tbDailog.szTitleMsg = "<#><npc>Thùc ra l·o giµ nµy suèt ngµy bËn rén, nh­ng cã thÓ xem vµ gi¶i quyÕt ®­îc t×nh duyªn cña ng­êi trÎ tuæi."
-		tbDailog:AddOptEntry("Ta ®· cã ý trung nh©n, muèn cÇu h«n víi c« Êy", Qmarry)
+		tbDailog:AddOptEntry("Ta ®· cã ý trung nh©n, muèn cÇu h«n víi c« Êy.", Qmarry)
 		tbDailog:AddOptEntry("TÝnh cña chóng ta kh«ng hîp nhau, muèn li h«n cho råi.", divorce)
 		tbDailog:AddOptEntry("Phu Thª chóng t«i c·i v· suèt ngµy, xin NguyÖt L·o gióp t«i vµi lêi khuyªn.", fix_marry)
 		tbDailog:AddOptEntry("Xin ®¬n ph­¬ng ly h«n", singlediv_apply)
@@ -502,7 +502,7 @@ function female_yes()			-- Å®·½£º½ÓÊÜÌáÇ×
 		OtherPlayer_talk(His_ID, "Chóc mõng hai vÞ, d©y t¬ hång ®· th¾t chÆt mèi l­¬ng duyªn nµy råi!")
 		OtherPlayer_talk(Her_ID, "Chóc mõng hai vÞ, d©y t¬ hång ®· th¾t chÆt mèi l­¬ng duyªn nµy råi!")
 		AddGlobalCountNews("<#> chóng ta cïng chóc mõng"..His_Name.."<#> víi"..GetName().."<#> hai vÞ t©n nh©n vÜnh kÕt ®ång t©m, b¸ch niªn giai l·o!",3)
-		
+		Msg2SubWorld("<#> chóng ta cïng chóc mõng"..His_Name.."<#> víi"..GetName().."<#> hai vÞ t©n nh©n vÜnh kÕt ®ång t©m, b¸ch niªn giai l·o!")
 	end
 end
 
@@ -525,8 +525,11 @@ function present_ring(PlayerId)			-- ËÍ½äÖ¸£¨ÅÐ¶Ï¡¢ÖÃ±äÁ¿ÒÑÒÆÖÁ½á»é¹ý³ÌÖÐ£©
 			p[i] = item_level - i - 2
 		end
 	end
-	AddItem(0,3,0,item_level,random(0,4),5,p[1],p[2],p[3],p[4],p[5],p[6])
-	Msg2Player("NguyÖt L·o tÆng cho b¹n mét chiÕc nhÉn ")
+	--AddItem(0,3,0,item_level,random(0,4),5,p[1],p[2],p[3],p[4],p[5],p[6])
+	AddItem(6,1,18,1,0,0,0)			-- tam tam tuong anh phu
+	--Msg2Player("NguyÖt L·o tÆng cho b¹n mét chiÕc nhÉn ")
+		Msg2Player("Xin lçi d¹o nµy vµng b¹c lªn gi¸ ta kh«ng thÓ tÆng nhÉn ®­îc.")
+
 	PlayerIndex = OldPlayer
 end
 
@@ -575,7 +578,7 @@ function divorce()
 			Talk(1,"","Rèt cuéc ng­¬i muèn ly h«n víi ai? Ng­êi nµy vèn kh«ng ph¶i lµ ng­êi phèi ngÉu cña ng­¬i!")
 		end
 	else
-		Talk(1,"","NÕu nhÊt ®Þnh muèn ly h«n, ph¶i cïng vî ng­¬i ®Õn lµm thñ tôc ly h«n!")
+		Talk(1,"","NÕu nhÊt ®Þnh muèn ly h«n, ph¶i cïng phu qu©n ng­¬i ®Õn lµm thñ tôc ly h«n!")
 	end
 end
 

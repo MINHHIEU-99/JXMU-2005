@@ -5,7 +5,7 @@ function OnDeath( Launcher )
 	local org_player = PlayerIndex
 	local org_name = GetName() --死者名字
 	PlayerIndex = NpcIdx2PIdx( Launcher )
-	Msg2Player("B筺  nh b筰 i phng <color=yellow>"..org_name.."<color>")
+	Msg2Player("B筺  nh b筰 i phng<color=yellow>"..org_name.."<color>")
 	PlayerIndex = org_player
 	
 	DelMSPlayer(WLLS_MSID_COMBAT, 0)	--强制该玩家离开Mission

@@ -8,7 +8,7 @@
 
 	LGNAME_STAT_GOODS_SALE 		= "stat_goodssale" -- chiÕn ®éi tªn gäi
 
-	LOGNAME_GOODS_SALE			= "Logs/stat_goodssale_"
+	LOGNAME_GOODS_SALE			= "Logs/stat_goodssale_ "
 
 	---------------------------------------------------------
 
@@ -50,7 +50,7 @@
 
 	function TaskContent()
 
-	local logName = LOGNAME_GOODS_SALE..(date("%Y%m%d%H%M%s"))..".log";
+	local logName = LOGNAME_GOODS_SALE. . date( "%Y%m%d%H%M%s ")..". log ";
 
 	local szMsg = "";
 
@@ -92,7 +92,7 @@
 
 	local nToDay = LG_GetMemberTask(LGTYPE_STATINFO, LGNAME_STAT_GOODS_SALE, szMemberName, LG_STATITEM_TASKID_TODAY);
 
-	szMsg = szMemberName.."\t "..nTotal.."\t "..nToDay.."\r\n "; -- vËt phÈm danh 	Tæng thèng kÕ 	Cïng ngµy c«ng t¸c thèng kª
+	szMsg = szMemberName. ."\t ".. nTotal.."\t ".. nToDay.."\r\n "; -- vËt phÈm danh 	Tæng thèng kÕ 	Cïng ngµy c«ng t¸c thèng kª
 
 	OutputMsg( "C«ng t¸c thèng kª vËt phÈm sè l­îng: ".. szMsg);
 

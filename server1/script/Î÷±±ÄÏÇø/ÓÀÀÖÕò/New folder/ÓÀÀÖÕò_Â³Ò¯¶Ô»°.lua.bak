@@ -1,0 +1,56 @@
+--description: ĞÂÊÖ´å_Â³Ò¯
+--author: wangzg	
+--date: 2003/7/21
+---70	UTask_world42
+--update 2003/7/24 yuanlan
+-- Update: Dan_Deng(2003-08-07)
+-- Update: Dan_Deng(2003-09-09) ĞŞ¸Ä×°±¸ÊôĞÔÉú³É·½Ê½
+
+Include("\\script\\global\\itemhead.lua")
+
+function main()
+	UTask_world42=GetTask(70)
+	if (UTask_world42==0) then
+		Say("LMT49»îÔÚÊÀÉÏÃ»ÓĞºÃÊé¿´ÕæÊÇÎŞÁÄ£¬ÕòÄÏµÄÀÏ¸ğ¼ÒÓĞÒ»±¾ºÃÊé£¬µ«ÊÇÎÒÀ­²»ÏÂÀÏÁ³È¥½è", 2, "ÎÒÈ¥°ïÄã½è/yes", "Ïë¿´Êé¾ÍÒªÈ¥½è. /no")
+	elseif (UTask_world42==2) then
+		Talk(1,"","LMT50ÕâÑùµÄ»°¾ÍÏÈĞ»Ğ»ÄãÁË£¬¸ğÀÏÍ·ÔÚÕòÉÏµÄÄÏ±ß.")
+	elseif (UTask_world42==4) then
+		Talk(2, "step2", "LMT51¸ğÀÏËµÏëÓÃÒÄ¼áÖ¾»»»üÉñÂ¼.","Õâ¸öÀÏºüÀê£¬ÏëÎªÄÑÎÒ£¡ºÃ°É£¬Âé·³Äã´øÈ¥¸øËû")
+	elseif ((UTask_world42 == 6) and (HaveItem(189) == 0)) then		-- Êé¶ªÁË
+		Talk(1,"","LMT52Ğ¡×Ó£¬¸ÒÕâÑù£¬ÎªÊ²Ã´ÄÃ×ÅÊé¾ÍÅÜ£¿")
+		AddEventItem(189)
+		Msg2Player("LMT53µÃµ½ÒÄ¼áÖ¾")
+	elseif ((UTask_world42==8) and  (HaveItem(188) == 1)) then
+		Talk(3, "WTask70_prise", "Â³LMT54´óÊå£¬ÕâÊÇÄãÒªµÄÊé.", "Ì«ºÃÁË","ÕâÊÇÅ£Æ¤Ñü´ø£¬ÎÒÓÃ²»×Å£¬ËÍ¸øÄã°É¡£")
+	else
+		Talk(1,"","ÄLMT55êÇáÈË£¬»îÔÚÊÀÉÏÒª¶à¶ÁÊé£¬²»Òª³ÉÌìÄ¥µ¶Ä¥½£µÄ")
+	end
+end;
+
+function yes()
+	Talk(1,"","LMT56ÕâÑùµÄ»°¾ÍÏÈĞ»Ğ»ÄãÁË£¬¸ğÀÏÍ·ÔÚÕòÉÏµÄÄÏ±ß.")
+	SetTask(70,2)
+	AddNote("LMT57½ÓÈÎÎñ°ïÖúÂ³ÀÏÍ·µ½ÕòÄÏÕÒ¸ğÀÏÍ·½èÊé. ")
+	Msg2Player("½ÓÈÎÎñ°ïÖúÂ³ÀÏÍ·µ½ÕòÄÏÕÒ¸ğÀÏÍ·½èÊé. ")
+end
+
+function no()
+end
+
+function step2()
+	AddEventItem(189)
+	Msg2Player("LMT58µÃµ½ÒÄ¼áÖ¾")
+	SetTask(70,6)
+	AddNote("´LMT59ÓÂ³ÀÏ´¦µÃµ½ÒÄ¼áÖ¾")
+end
+
+function WTask70_prise()
+	DelItem(188)
+	p1,p2,p3,p4,p5,p6 = RndItemProp(6,10)
+	AddItem(0,6,0,1,random(0,4),GetLucky(), p1,p2,p3,p4,p5,p6)
+	SetTask(70,10)
+	AddRepute(5)		-- ¼ÓÉùÍû5µã
+	AddNote("°LMT60Ñ»üÉñÂ¼¸øÂ³Ò¯£¬Íê³ÉÈÎÎñ£¬µÃµ½Ò»ÌõÅ£Æ¤Ñü´ø©u. ")
+	Msg2Player("µÃµ½Ò»ÌõÅ£Æ¤Ñü´ø©u. ")
+	Msg2Player("ÄãµÄÉùÍûÔö¼Ó5µã")
+end

@@ -13,7 +13,7 @@ CommonMaterial =
 	{szName="B¹ch Hæ Kim Bµi", tbProp={6, 1, 3183}, nCount = 1},
 	{szName="HuyÒn Viªn Th¹ch", tbProp={6, 1, 2713}, nCount = 3},
 	{szName="Tö M·ng Th¹ch", tbProp={6, 1, 3000}, nCount = 2},
-	-- {szName="B¹ch Hæ LÖnh", tbProp={6, 1, 2357}, nCount = 1},	
+	{szName="B¹ch Hæ LÖnh", tbProp={6, 1, 2357}, nCount = 1},	
 	{szName="HuyÒn tinh kho¸ng th¹ch cÊp 9", tbProp={6, 1, 147, 9}, nCount = 1},
 	{szName=" l­îng", nJxb=1, nCount = 200000000},
 	

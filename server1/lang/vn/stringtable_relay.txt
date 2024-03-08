@@ -24,7 +24,7 @@ K_PR_MATE	Phèi ngÉu\n
 K_PR_ENEMY	Cõu nh©n\n
 
 U_RELAY	Relay
-U_ERROR_ON_SHUTDOWN	Relay -- Relay luc dong lai bi sai.
+U_ERROR_ON_SHUTDOWN	Relay¹Ø±ÕÊ±³ö´í¡£ Relay luc dong lai bi sai.
 U_LOAD_AUCTION_FILE_FAIL	¶ÁÈ¡ÅÄÂôÄ£¿éÅäÖÃÎÄ¼şÊ§°Ü£¡ Doc cac file ve nhung Mo-dun phat mai that bai! 
 U_INIT_AUCTION_DATA_FAIL	³õÊ¼»¯×·É±Êı¾İÊ§°Ü Du lieu truy sat that bai 
 U_FAIL_TO_OPEN_AUCTION_DB	´ò¿ªÅÄÂôÊı¾İ¿âÊ§°Ü Mo du lieu phat mai that bai
@@ -267,8 +267,8 @@ L_RELAY_LOG_START	\r\n*\r\n***** S3Relay Start (@ %04d/%02d/%02d %02d:%02d:%02d.
 L_RELAY_LOG_END	\r\n*\r\n***** S3Relay Stop (@ %04d/%02d/%02d %02d:%02d:%02d.%03d) <<<<<\r\n*\r\n\r\n
 
 L_S3RELAY_INIT_ALREADY	¾¯¸æ: S3RelayÒÑ¾­Æô¶¯£¡ Canh bao:S3Relay da Khoi dong! 
-L_S3RELAY_INIT_START	S3Relay -- Bat dau Khoi dong! 
-L_S3RELAY_INIT_FINISHED	S3Relay -- S3Relay- Khoi dong hoan tat! 
+L_S3RELAY_INIT_START	S3Relay-¿ªÊ¼Æô¶¯£¡ S3Relay- Bat dau Khoi dong! 
+L_S3RELAY_INIT_FINISHED	S3Relay-Æô¶¯Íê±Ï£¡ S3Relay- Khoi dong hoan tat! 
 L_S3RELAY_INIT_FAIL	FAIL: S3RelayÆô¶¯Ê§°Ü£¡ S3Relay Khoi dong that bai! 
 L_S3RELAY_LOGIN_FAIL	FAIL: ***ÕÊºÅÃÜÂë´íÎó!*** *** mat ma Account bi sai! ***
 L_S3RELAY_UNINIT_START	S3Relay-¿ªÊ¼¹Ø±Õ£¡ S3Relay- bat dau dong lai! 
@@ -305,8 +305,8 @@ L_TONGSRV_START_FAIL	FAIL: °ïÅÉ·şÎñ-Æô¶¯Ê§°Ü£¡ phôc vô bang ph¸i - Khëi ®éng thÊ
 L_TONGSET_INIT_OK	°ïÅÉÄ£¿é-³õÊ¼»¯³É¹¦ bang phai Mo-dun -so khoi thanh cong 
 L_TONGSET_INIT_FAILED	FAIL: °ïÅÉÄ£¿é-³õÊ¼»¯Ê§°Ü£¡ bang phai Mo-dun - so khoi that bai! 
 
-L_DUNGEONMAP_INIT_OK	Reset map pho ban thanh cong
-L_DUNGEONMAP_INIT_FAILED	Reset map pho ban that bai!
+L_DUNGEONMAP_INIT_OK	Reset map phã b¶n thµnh c«ng
+L_DUNGEONMAP_INIT_FAILED	Reset map phã b¶n thÊt b¹i!
 
 L_TONGSVR_NEW_CONNECT	°ïÅÉ·şÎñ-Óëip:%s½¨Á¢Á¬½Ó¡£  Phuc vu bang phai - cung voi ip:  lap lien tiep. 
 L_TONGSVR_CLOSE_CONNECT	°ïÅÉ·şÎñ-¹Ø±ÕÓëip:%sµÄÁ¬½Ó¡£ Phuc vu bang phai - dong lai cung voi ip:  lien tiep. 

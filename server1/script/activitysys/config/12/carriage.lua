@@ -3,11 +3,12 @@ Include("\\script\\activitysys\\config\\12\\extend.lua")
 Include("\\script\\lib\\droptemplet.lua")
 Include("\\script\\lib\\log.lua")
 
+--------------------------------------------
 NPC_PARAM_POS = 1
 NPC_PARAM_DEATH = 2
 NPC_PARAM_TASK_ID = 3
 
-TRACK_LIST =
+TRACK_LIST = 
 {
 	{1564*32,2759*32},
 	{1581*32,2758*32},
@@ -30,11 +31,8 @@ TRACK_LIST =
 
 tbCarriage = {}
 
-
 function add_carriage(nMapId, nTaskId, szName, nCamp)
-
 	local szScriptPath = "\\script\\activitysys\\config\\12\\carriage.lua"
-
 	local nMapIndex = SubWorldID2Idx(nMapId)
 	if nMapIndex >= 0 then
 		local nNpcIndex = AddNpcEx(1903, 1, random(0,4), nMapIndex, %TRACK_LIST[1][1], %TRACK_LIST[1][2], 1, szName, 0)
@@ -55,21 +53,21 @@ end
 function OnTimer(nNpcIndex, nTimeOut)
 	local nPosId = GetNpcParam(nNpcIndex, %NPC_PARAM_POS)
 	local tbPos =  %TRACK_LIST[nPosId]
-
+	
 	if not tbPos then
 		return
 	end
-
+	
 	if GetNpcParam(nNpcIndex, %NPC_PARAM_DEATH) == 1 then
-		return
+		return 
 	end
-
+	
 	if is_arrive_at(nNpcIndex, tbPos[1], tbPos[2]) then
 		nPosId = nPosId + 1
 		SetNpcParam(nNpcIndex, %NPC_PARAM_POS, nPosId)
 		tbPos =  %TRACK_LIST[nPosId]
 	end
-
+	
 	if nPosId > getn(%TRACK_LIST) then
 		SetNpcParam(nNpcIndex, %NPC_PARAM_DEATH, 1)
 		local nTaskId = GetNpcParam(nNpcIndex, %NPC_PARAM_TASK_ID)
@@ -78,7 +76,7 @@ function OnTimer(nNpcIndex, nTimeOut)
 	else
 		NpcWalk(nNpcIndex, tbPos[1]/32, tbPos[2]/32)
 	end
-
+	
 	SetNpcTimer(nNpcIndex, 18)
 end
 
@@ -95,27 +93,29 @@ function OnDeath(nNpcIndex)
 	if GetNpcParam(nNpcIndex, %NPC_PARAM_DEATH) == 1 then
 		return
 	end
-
+	
 	SetNpcParam(nNpcIndex, %NPC_PARAM_DEATH, 1)
-
-	if (PlayerId and PlayerId > 0) and (PlayerIndex and PlayerIndex > 0) then
+	
+	if (PlayerId and PlayerId > 0) and (PlayerIndex and PlayerIndex > 0) then 
 		local szPlayerName = ""
 		szPlayerName = GetName()
-		local szAction = format("%s ®· c­íp tiªu %s", szPlayerName, GetNpcName(nNpcIndex))
-		AddGlobalCountNews(szAction, 2)
-		Msg2SubWorld("Sù KiÖn VËn Tiªu : cao thñ <color=yellow>"..szPlayerName.."<color> ®· C­íp Tiªu cña <color=yellow>"..GetNpcName(nNpcIndex).."<color> thµnh c«ng!")
-		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, szAction)
+		local szAction = format("%s ®· tiªu diÖt %s", szPlayerName, GetNpcName(nNpcIndex))
+		
+		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, szAction)		
 	end
-
+	
 	local nTaskId = GetNpcParam(nNpcIndex, %NPC_PARAM_TASK_ID)
 	pActivity:TaskFailed(nTaskId, nNpcIndex)
-	local tbAward = {[1]={szName="Hé Tiªu LÖnh",tbProp={6,1,4203,1,0,0},},}
-	if (PlayerId and PlayerId > 0) and (PlayerIndex and PlayerIndex > 0) then
+       szNews = format("§¹i HiÖp <color=green>"..GetName().."<color>§·  C­íp Tiªu<color=Cyan> Thµnh C«ng Cña TiÓu Tö Gµ Kia Råi<color=green>, Kh«ng Uæng C«ng Khæ LuyÖn Vµ §· NhËn PhÇn Th­ëng VËn Tiªu Cña TiÓu Tö Kia <color>!");
+	Msg2SubWorld(szNews);
+       local tbAward = {
+				{nExp_tl=1e9},
+			-- {szName="TiÒn §ång",tbProp={4,417,1,1,0,0},nCount=50},
+			}
+	if (PlayerId and PlayerId > 0) and (PlayerIndex and PlayerIndex > 0) then 
 		tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, tbAward, "Carriage Drop Item", 1)
 	else
 		tbDropTemplet:GiveAwardByList(nNpcIndex, -1, tbAward, "Carriage Drop Item", 1)
-		str = "<color=green>Chóc mõng cao thñ <color=yellow>"..GetName().." ®· NhËn §­îc "..tbAward.." Tõ ViÖc VËn Tiªu thµnh c«ng!"
-		AddGlobalCountNews(str, 2)
 	end
-
+	
 end

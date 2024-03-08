@@ -19,7 +19,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 								{szName = "B„ Hoa HÂng", tbProp = {6,1,30102,1,0,0}, nCount = 1},
 								{szName = "Chi’c N¨", tbProp = {6,1,30099,1,0,0}, nCount = 1},
 							},
-						tbProduct = {szName = "Hπt Mµu Sæc", tbProp = {6,1,30100,1,0,0}, nExpiredTime=20240314},
+						tbProduct = {szName = "Hπt Mµu Sæc", tbProp = {6,1,30100,1,0,0}, nExpiredTime = 20110314},
 					},
 					pCompos = nil;
 			},
@@ -36,7 +36,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 								{szName = "Hoa HÂng", tbProp = {6,1,30097,1,0,0}, nCount = 1},
 								{szName = "D©y CÈt Hoa", tbProp = {6,1,30098,1,0,0}, nCount = 1},
 							},
-						tbProduct = {szName = "B„ Hoa HÂng", tbProp = {6,1,30102,1,0,0}, nExpiredTime=20240314},
+						tbProduct = {szName = "B„ Hoa HÂng", tbProp = {6,1,30102,1,0,0}, nExpiredTime = 20110314},
 					},
 					pCompos = nil;
 			},
@@ -79,7 +79,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 									[1]=
 										{
 											{pFun = function (tbItem, nItemCount, szLogTitle) %tbVNGWD2011_NpcHead:GetExpBM(1000000)end,},
-											{szName="Hoa HÂng",tbProp={6,1,30097,1,0,0},nCount=2,nExpiredTime=20240314},											
+											{szName="Hoa HÂng",tbProp={6,1,30097,1,0,0},nCount=2,nExpiredTime=20110314},											
 										},
 									nRate = 50,
 								},
@@ -87,7 +87,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 									[1]=
 										{
 											{pFun = function (tbItem, nItemCount, szLogTitle) %tbVNGWD2011_NpcHead:GetExpBM(2000000)end,},
-											{szName="Hoa HÂng",tbProp={6,1,30097,1,0,0},nCount=1,nExpiredTime=20240314},
+											{szName="Hoa HÂng",tbProp={6,1,30097,1,0,0},nCount=1,nExpiredTime=20110314},
 										},
 									nRate = 50,
 								},
@@ -107,7 +107,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 							{
 								{szName="Ng©n l≠Óng",nJxb=100000, nCount = 1},
 							},
-						tbProduct = {szName = "D©y CÈt Hoa", tbProp = {6,1,30098,1,0,0}, nExpiredTime=20240314},
+						tbProduct = {szName = "D©y CÈt Hoa", tbProp = {6,1,30098,1,0,0}, nExpiredTime = 20110314},
 					},
 					pCompos = nil;
 			},

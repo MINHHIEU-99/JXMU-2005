@@ -2,16 +2,15 @@ Include("\\script\\activitysys\\config\\30\\head.lua")
 Include("\\script\\activitysys\\config\\30\\config.lua")
 Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\lib\\log.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 
 szEventName = "Event_NhaGiaoVN"
 
 tbItem = {
-	[1]={szName="C©y BÛt",tbProp={6,1,3040,1,0,0},nExpiredTime=EventNhaGiaoVN2011.ItemExpiredTime},
+	[1]={szName="C©y BÛt",tbProp={6,1,3040,1,0,0},nExpiredTime=20111201},
 }
 
 tbBaizhi = {
-	[1]={szName="Gi y Træng",tbProp={6,1,3039,1,0,0},nExpiredTime=EventNhaGiaoVN2011.ItemExpiredTime,nRate=5,}, 
+	[1]={szName="Gi y Træng",tbProp={6,1,3039,1,0,0},nExpiredTime=20111201,nRate=5,}, 
 }
 
 	

@@ -1,10 +1,9 @@
 Include("\\script\\activitysys\\activity.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 pActivity = ActivityClass:new()
 pActivity.nId = 1005
-pActivity.szName = PhongVanLenhBai.Name
-pActivity.nStartDate = PhongVanLenhBai.StartDate
-pActivity.nEndDate = PhongVanLenhBai.EndDate
+pActivity.szName = "Phong V©n LÖnh Bµi"
+pActivity.nStartDate = 201109280000
+pActivity.nEndDate = 201207312400
 pActivity.szDescription = "Phong V©n LÖnh Bµi"
 pActivity.nGroupId = nil
 pActivity.nVersion = nil

@@ -14,8 +14,8 @@ San H« Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck12.spr	36	2	1	Lo¹i San h«
 Miªu Nh·n Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck13.spr	36	2	1	Hæ Tinh Méc, Cã mét chót gi¸ trÞ 		2700	3	0																						36	14	38	0								
 Hæ T×nh Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck14.spr	36	2	1	Nh¹n Tinh Méc khã mµ t×m thÊy. 		4800	4	0																						36	20	38	0								
 Thñy Tinh Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck15.spr	36	2	1	Thñy Tinh chÊt ®Þa, gi¸ trÞ cùc cao. 		7500	5	0																						36	27	38	0								
-Hæ Ph¸ch Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck16.spr	36	2	1	Hæ Ph¸ch chÕ thµnh, Cã gi¸ trÞ cùc cao. 		10800	6	0																						36	34	38	0
-B¹ch PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck17.spr	36	2	1	ChÕ t¸c tõ B¹ch PhØ Thóy quý hiÕm. 		14700	7	0																						36	40	38	0
-Hång PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck18.spr	36	2	1	ChÕ t¸c tõ Hång PhØ Thóy quý hiÕm		19200	8	0																						36	47	38	0
-Tö PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck19.spr	36	2	1	ChÕ t¸c tõ Tö PhØ Thóy quý hiÕm		24300	9	0																						36	54	38	0
-Lôc PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck20.spr	36	2	1	ChÕ t¸c tõ Lôc PhØ Thóy quý hiÕm, chØ PhËt quèc Quèc s­ míi cã nã 		30000	10	0																						36	60	38	0
+Hæ Ph¸ch Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck16.spr	36	2	1	Hæ Ph¸ch chÕ thµnh, Cã gi¸ trÞ cùc cao. 		10800	6	0																						36	34	38	0								
+B¹ch PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck17.spr	36	2	1	ChÕ t¸c tõ B¹ch PhØ Thóy quý hiÕm. 		14700	7	0																						36	40	38	0								
+Hång PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck18.spr	36	2	1	ChÕ t¸c tõ Hång PhØ Thóy quý hiÕm		19200	8	0																						36	47	38	0								
+Tö PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck19.spr	36	2	1	ChÕ t¸c tõ Tö PhØ Thóy quý hiÕm		24300	9	0																						36	54	38	0								
+Lôc PhØ Thóy Hé Th©n phï 	0	4	1	\spr\item\equip\nick\obj-neck20.spr	36	2	1	ChÕ t¸c tõ Lôc PhØ Thóy quý hiÕm, chØ PhËt quèc Quèc s­ míi cã nã 		30000	10	0																						36	60	38	0								

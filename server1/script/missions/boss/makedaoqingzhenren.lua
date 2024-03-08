@@ -1,4 +1,4 @@
---道清真人(562)，生于每天20：05，在224,1596,2978
+---------------------------------***Edit*By*Heart*Doldly***------------------------------------
 function main()
 	mapindex = SubWorldID2Idx(224)
 	if (mapindex < 0 ) then

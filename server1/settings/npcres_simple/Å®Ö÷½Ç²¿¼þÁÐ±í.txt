@@ -3,3 +3,4 @@
 1	Trang bÞ 	Shoulder	Body	LeftHand	RightHead
 2	Vò khÝ 	LeftWeapon	RightWeapon		
 3	Ngùa	HorseFront	HorseMiddle	HorseBack	
+4	Phi Phong	Mantle

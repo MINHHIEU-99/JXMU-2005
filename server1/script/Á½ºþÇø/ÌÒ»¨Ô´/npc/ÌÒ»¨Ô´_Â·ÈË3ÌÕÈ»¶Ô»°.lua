@@ -1,8 +1,7 @@
--- §µo Nhiªn ë §µo Hoa Nguyªn - Editor by AloneScript (Linh Em)
+-- script viet hoa By http://tranhba.com  hai hå khu hoa ®µo nguyªn ng­êi ®i ®­êng 3 ®µo nhiªn ®èi tho¹i 
 
-Include("\\script\\lib\\alonelib.lua");
+function main(sel) 
 
-function main(sel)
-	Say("<color=green>§µo Nhiªn<color>: Cuéc sèng tuy thanh bÇn, nh­ng so víi nh÷ng cuéc giao tranh x« bå ngoµi kia, th× thËt lµ thanh b×nh!"..Note("daonhien_daohoanguyen"),0)
-end;
+Say("§µo nhiªn # ngµy mÆc dï nghÌo khã , nh­ng lµ cïng phÝa ngoµi binh hoang m· lo¹n so víi , cßn lµ n¬i nµy th¸i b×nh ngµy h¶o a #",0) 
 
+end; 

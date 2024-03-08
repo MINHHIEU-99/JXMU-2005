@@ -1,30 +1,25 @@
--- ¹úÕ½ËÎ½ð
--- DongZhi
+-----------***Heart*Doldly***------------
 Include( "\\RelaySetting\\battle\\script\\rf_header.lua" )
 
 function TaskShedule()
 	
-	TaskName( "Tèng Kim Quèc ChiÕn tæng ®iÒu ®éng" );	--ÈÎÎñÃû³Æ
-	TaskTime( 19, 00 );				--Æô¶¯Ê±¼ä
-	TaskInterval(1440);				--¼ä¸ôÊ±¼ä:Ò»Ìì
-	TaskCountLimit(0);				--ÎÞ´ÎÊýÏÞÖÆ
-	
-	OutputMsg("**************** Tèng Kim Quèc ChiÕn nhiÖm vô khëi ®éng thµnh c«ng****************")	
+	TaskName( "Tèng Kim Quèc ChiÕn" );	
+	TaskTime( 20, 50 );				
+	TaskInterval(1440);				
+	TaskCountLimit(0);	
 end
 
 function TaskContent()
-	
 	local nWeekday = tonumber(date("%w"));
-	
 	if nWeekday == 1 then
-		OutputMsg("**************** Create GUOZHAN New Battle ****************")	
+		OutputMsg("===========> KHOI DONG QUOC CHIEN TONG KIM <============")	
 		battle_StartNewIssue(2, 3);	
-	zMsg2SubWorld  = "<color=yellow>ChiÕn Tr­êng Quèc ChiÕn<color> <color=green>Thiªn Tö<color> ®· khëi ®éng, c¸c anh hïng 2 bang chiÕm L©m An - BiÖn Kinh h·y chuÈn bÞ tinh thÇn s½n sµng ®Õn<color=pink> 21h<color> chiÕn ®Êu."
-	GlobalExecute(format("dw Msg2SubWorld([[%s]])",zMsg2SubWorld))
 	end
+
 end
 
 function GameSvrConnected(dwGameSvrIP)
 end
+
 function GameSvrReady(dwGameSvrIP)
 end

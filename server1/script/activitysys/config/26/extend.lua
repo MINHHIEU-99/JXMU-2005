@@ -1,284 +1,508 @@
 Include("\\script\\activitysys\\config\\26\\head.lua")
-Include("\\script\\activitysys\\playerfunlib.lua")
-Include("\\script\\lib\\awardtemplet.lua")
-Include("\\script\\task\\task_addplayerexp.lua")
-Include("\\script\\dailogsys\\dailogsay.lua")
-Include("\\script\\lib\\log.lua")
-Include("\\script\\activitysys\\config\\26\\give_toplist.lua")
 Include("\\script\\activitysys\\config\\26\\variables.lua")
-Include("\\script\\activitysys\\npcdailog.lua") -- thªm vµo file ®Î chØ cÇn ghi name npc lµ activitiysys tù kÝch ho¹t npc
------------------------------------------------------------------
-function pActivity:CheckTongKim()
-	local nTime = tonumber(date("%H%M"))
-	if (nTime >= 2100 and nTime < 2205) then
-		tbAwardTemplet:GiveAwardByList({tbProp = {6,1,4921,1,0,0},nCount = 20,nBindState = -2,nExpiredTime = 2880}, "§¹t ®­îc phÇn th­ëng")
-	end
-end
-function pActivity:AddInitNpc()
-	local tbNpcPos = {
-		[1] = {53,1627,3182,},
-		[2] = {99,1625,3202,},
-		[3] = {20,3543,6223,},
-		[4] = {153,1627,3232,},
-	}
-	local tbNpc = {
-			szName = "Tæng Qu¶n Sù KiÖn", 
-			nLevel = 95,
-			nNpcId = 1932,
-			nIsboss = 0,
-			szScriptPath = "\\script\\activitysys\\npcdailog.lua",
-	}
-	for i=1,getn(tbNpcPos) do
-		local nMapId, nPosX, nPosY = unpack(tbNpcPos[i])
-		basemission_CallNpc(tbNpc, nMapId, nPosX * 32, nPosY * 32)	
-	end
-end
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-function pActivity:ShowItemThuong()
-	Say("<color=yellow>"..GetName().." §· Sö Dông <color=red>"..GetTask(%TSK_GIVE_ITEM_QUADACTHUONG).."<color> Quµ Quèc Kh¸nh Th­êng")
-end
-function pActivity:ShowItemDacBiet()
-	Say("<color=yellow>"..GetName().." §· Sö Dông <color=red>"..GetTask(%TSK_GIVE_ITEM_QUADACBIET).."<color> Quµ Quèc Kh¸nh §Æc BiÖt")
-end
-function pActivity:ShowReset()
-	Say("<color=yellow>"..GetName().." §· Reset <color=red>"..GetTask(%TSK_GIVE_ITEM_RESET).."<color> lÇn")
-end
-----------------------------------------------------Moc Thuong 10000-------------------------------------------------------------------------------------------------------------------
-function pActivity:GetAwardThuong_10000()
-	if (tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_T10000) == 0) then
-		if (GetTask(%TSK_GIVE_ITEM_QUADACTHUONG) >= 10000) then
-			tbAwardTemplet:GiveAwardByList(%tbAward[3],"NhËn Th­ëng Mèc 10000 Quµ Quèc Kh¸nh Th­êng")
-			tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_T10000, 1)
-			Msg2Player("Chóc Mõng <color=yellow>"..GetName().."<color> §· NhËn Th­ëng Quµ Quèc Kh¸nh Th­êng Mèc 10000 Thµnh C«ng")
-		else
-			local szTitle = "<color=yellow>"..GetName().." Ch­a Sö Dông §ñ <color=red>"..GetTask(%TSK_GIVE_ITEM_QUADACTHUONG).."/10000<color> Quµ Quèc Kh¸nh Th­êng\n"
-			Say(szTitle)
-		end
-	else
-		Say("<color=red>"..GetName().." §· NhËn Th­ëng Mèc Nµy Råi")
-	end
-end
-----------------------------------------------------------Dac Biet 5000-------------------------------------------------------------------------------------------------------------------------------------------
-function pActivity:GetAwardDacBiet_5000()
-	if (tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB5000) == 0) then
-		if (GetTask(%TSK_GIVE_ITEM_QUADACBIET) >= 5000) then
-			tbAwardTemplet:GiveAwardByList(%tbAward[4],"NhËn Th­ëng Mèc 5000 Quèc Kh¸nh §Æc BiÖt")
-			tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB5000, 1)
-			Msg2Player("Chóc Mõng <color=yellow>"..GetName().."<color> §· NhËn Th­ëng Quèc Kh¸nh §Æc BiÖt Mèc 5000 Thµnh C«ng")
-		else
-			local szTitle = "<color=yellow>"..GetName().." Ch­a Sö Dông §ñ <color=red>"..GetTask(%TSK_GIVE_ITEM_QUADACBIET).."/5000<color> Quèc Kh¸nh §Æc BiÖt\n"
-			Say(szTitle)
-		end
-	else
-		Say("<color=red>"..GetName().." §· NhËn Th­ëng Mèc Nµy Råi")
-	end
-end
------------------------------------------------------------------Dac Biet 10000-------------------------------------------------------------------------------------------------------------------------------------
-function pActivity:GetAwardDacBiet_10000()
-	if (tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB10000) == 0) then
-		if (GetTask(%TSK_GIVE_ITEM_QUADACBIET) >= 10000) then
-			tbAwardTemplet:GiveAwardByList(%tbAward[5],"NhËn Th­ëng Mèc 10000 Quèc Kh¸nh §Æc BiÖt")
-			tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB10000, 1)
-			Msg2Player("Chóc Mõng <color=yellow>"..GetName().."<color> §· NhËn Th­ëng Quèc Kh¸nh §Æc BiÖt Mèc 10000 Thµnh C«ng")
-		else
-			local szTitle = "<color=yellow>"..GetName().." Ch­a Sö Dông §ñ <color=red>"..GetTask(%TSK_GIVE_ITEM_QUADACBIET).."/10000<color> Quèc Kh¸nh §Æc BiÖt\n"
-			Say(szTitle)
-		end
-	else
-		Say("<color=red>"..GetName().." §· NhËn Th­ëng Mèc Nµy Råi")
-	end
-end
--------------------------------------------------------------------Dac Biet 15000------------------------------------------------------------------------------------------------------------------------------------
-function pActivity:GetAwardDacBiet_15000()
-	if (tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB15000) == 0) then
-		if (GetTask(%TSK_GIVE_ITEM_QUADACBIET) >= 15000) then
-			tbAwardTemplet:GiveAwardByList(%tbAward[6],"NhËn Th­ëng Mèc 15000 Quèc Kh¸nh §Æc BiÖt")
-			tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB15000, 1)
-			Msg2Player("Chóc Mõng <color=yellow>"..GetName().."<color> §· NhËn Th­ëng Quèc Kh¸nh §Æc BiÖt Mèc 15000 Thµnh C«ng")
-		else
-			local szTitle = "<color=yellow>"..GetName().." Ch­a Sö Dông §ñ <color=red>"..GetTask(%TSK_GIVE_ITEM_QUADACBIET).."/15000<color> Quèc Kh¸nh §Æc BiÖt\n"
-			Say(szTitle)
-		end
-	else
-		Say("<color=red>"..GetName().." §· NhËn Th­ëng Mèc Nµy Råi")
-	end
-end
----------------------------------------------------------------------Dac Biet 35000--------------------------------------------------------------------------------------------------------------------------------
-function pActivity:GetAwardDacBiet_35000()
-	if (tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB35000) == 0) then
-		if (GetTask(%TSK_GIVE_ITEM_QUADACBIET) >= 35000) then
-			tbAwardTemplet:GiveAwardByList(%tbAward[7],"NhËn Th­ëng Mèc 35000 Quèc Kh¸nh §Æc BiÖt")
-			tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_DB35000, 1)
-			Msg2Player("Chóc Mõng <color=yellow>"..GetName().."<color> §· NhËn Th­ëng Quèc Kh¸nh §Æc BiÖt Mèc 35000 Thµnh C«ng")
-		else
-			local szTitle = "<color=yellow>"..GetName().." Ch­a Sö Dông §ñ <color=red>"..GetTask(%TSK_GIVE_ITEM_QUADACBIET).."/35000<color> Quèc Kh¸nh §Æc BiÖt\n"
-			Say(szTitle)
-		end
-	else
-		Say("<color=red>"..GetName().." §· NhËn Th­ëng Mèc Nµy Råi")
+Include("\\script\\activitysys\\playerfunlib.lua")
+Include("\\script\\lib\\objbuffer_head.lua")
+Include("\\script\\dailogsys\\g_dialog.lua")
+local szRemoteScript = "\\script\\event\\2011dayanqunxia\\event.lua"
+
+function pActivity:ResetTaskA(TSK_EXP_A, TSK_DATE_A)
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	local nRecordDate = self:GetTask(TSK_DATE_A)
+	
+	if nCurDate ~= nRecordDate then
+		self:SetTask(TSK_DATE_A, nCurDate)
+		self:SetTask(TSK_EXP_A, 0)
 	end
 end
 
+function pActivity:AddTaskA(TSK_EXP_A, TSK_DATE_A, nAddValue)
+	self:ResetTaskA(TSK_EXP_A, TSK_DATE_A)
+	return self:AddTask(TSK_EXP_A, nAddValue)	
+end
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-function pActivity:UseQuocKhanhThuong()
-local nUserCount = GetTask(%TSK_GIVE_ITEM_QUADACTHUONG)
-	if (nUserCount < 10000) then
-		SetTask(%TSK_GIVE_ITEM_QUADACTHUONG,nUserCount+1) tbAwardTemplet:GiveAwardByList(%tbAward[1],"PhÇn Th­ëng Sö Dông Quµ Quèc Kh¸nh Th­êng")
-	else
-		Talk(1,"","Mçi Nh©n VËt ChØ Sö Dông 10000 Quµ Quèc Kh¸nh Th­êng")
+function pActivity:GetTaskA(TSK_EXP_A, TSK_DATE_A)
+	self:ResetTaskA(TSK_EXP_A, TSK_DATE_A)
+	return self:GetTask(TSK_EXP_A)
+end
+
+function pActivity:CheckTaskA(TSK_EXP_A, TSK_DATE_A, nUpExpA, szMsgA, nNumber)
+	local nCurExpA = self:GetTaskA(TSK_EXP_A, TSK_DATE_A)
+	if nCurExpA >= nUpExpA then
+		if szMsgA ~= nil then
+			Talk(1, "", szMsgA)
+		end
+		return
+	end
+	return 1
+end
+
+function pActivity:CheckTaskB(TSK_B, szMsg, szOption)
+	local nValue = self:GetTask(TSK_B)
+	if szOption == "==" then
+		if nValue == 0 then
+			return 1
+		end
+	elseif szOption == "~=" then
+		if nValue ~= 0 then
+			return 1
+		end
+	end
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	return self:CheckTask(TSK_B, nCurDate, szMsg, szOption)
+end
+
+function pActivity:GiveEatAward(TSK_EXP_A, TSK_DATE_A, TSK_EXP_B, nNumber)
+	local tbAward = 
+	{
+		{nExp_tl = 1000000, nRate = 40, 
+			pFun = function(tbItem, nItemCount, szLogTitle)
+				Talk(1, "", "Ng­¬i ¨n mét miÕng ' S­ên Xµo Chua Ngät'  nhËn ®­îc  1.000.000 kinh nghiÖm")
+				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 1000000 / %nNumber)
+				%self:AddTask(%TSK_EXP_B, nItemCount * 1000000 / %nNumber)
+			end
+		},
+		{nExp_tl = 2000000, nRate = 30,
+			pFun = function(tbItem, nItemCount, szLogTitle)
+				Talk(1, "", "Ng­¬i g¾p mét miÕng 'C¸ ChÐp Kho Om' ¨n ngon lµnh, nhËn ®­îc 2.000.000 kinh nghiÖm")
+				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 2000000 / %nNumber)
+				%self:AddTask(%TSK_EXP_B, nItemCount * 2000000 / %nNumber)
+			end
+		},
+		{nExp_tl = 3000000, nRate = 20,
+			pFun = function(tbItem, nItemCount, szLogTitle)
+				Talk(1, "", "Ng­¬i lÊy mét miÕng 'Gµ Trèng T¬' ¨n ngon lµnh, nhËn ®­îc 3.000.000 kinh nghiÖm")
+				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 3000000 / %nNumber)
+				%self:AddTask(%TSK_EXP_B, nItemCount * 3000000 / %nNumber)
+			end
+		},
+		{nExp_tl = 5000000, nRate = 10, 
+			pFun = function(tbItem, nItemCount, szLogTitle)
+				Talk(1, "", "Ng­¬i cÇm lªn mét miÕng ' Heo S÷a Quay' ¨n mét miÕng ngon lµnh, nhËn ®­îc 5.000.000 kinh nghiÖm")
+				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 5000000 / %nNumber)
+				%self:AddTask(%TSK_EXP_B, nItemCount * 5000000 / %nNumber)
+			end
+		},
+	}
+	tbAwardTemplet:GiveAwardByList(tbAward, "§¹i YÕn QuÇn HiÖp n¨m 2011, ¨n thøc ¨n nhËn ®­îc kinh nghiÖm.", 1)
+end
+
+function pActivity:CheckNotGetDrunk(nSkillId, szMsg)
+	if GetSkillState(nSkillId) == -1 then
 		return 1
 	end
-	return 1
+	Talk(1, "", szMsg)
 end
-------------------------------------------------------------------------------------------------------------------
-function pActivity:UserQuocKhanhDacBiet()
---local nLastCount = GetTask(%TSK_GIVE_ITEM_TICHLUY)
-local nUserCount = GetTask(%TSK_GIVE_ITEM_QUADACBIET)
-	local nCurCount = GetTask(%TSK_GIVE_ITEM_TICHLUY)
-	SetTask(%TSK_GIVE_ITEM_TICHLUY, nUserCount+1)
-	%tbTop10:GiveItem(GetName(), GetAccount(), nUserCount)
-	SetTask(%TSK_GIVE_ITEM_QUADACBIET,nUserCount+1) tbAwardTemplet:GiveAwardByList(%tbAward[2],"PhÇn Th­ëng Sö Dông Quèc Kh¸nh §Æc BiÖt")
-end
------------------------------------------------------------------------------------------------------------------
-function pActivity:LeBaoQuocKhanh()
-	local tbAward = {
-		{szName="Chµo",tbProp={6,1,4923,1,0,0},nCount = 1, nRate = 20, nExpiredTime=%DATE_END},
-		{szName="Mõng",tbProp={6,1,4924,1,0,0},nCount = 1, nRate = 20, nExpiredTime=%DATE_END},
-		{szName="Ngµy",tbProp={6,1,4925,1,0,0},nCount = 1, nRate = 20, nExpiredTime=%DATE_END},
-		{szName="Quèc",tbProp={6,1,4926,1,0,0},nCount = 1, nRate = 20, nExpiredTime=%DATE_END},
-		{szName="Kh¸nh",tbProp={6,1,4927,1,0,0},nCount = 1, nRate = 20, nExpiredTime=%DATE_END},
-	}
-	tbAwardTemplet:GiveAwardByList(tbAward,"LÔ bao quèc kh¸nh")
-end
----------------------------------------------------------------------------------------------------------------
-function pActivity:ResetEvent()
-local nUserCount = GetTask(%TSK_GIVE_ITEM_QUADACTHUONG)
-local nUserRSCount = GetTask(%TSK_GIVE_ITEM_RESET)
-if (CalcEquiproomItemCount(4, 417, 1, -1) < 1000) then
-	Say("B¹n ch­a ®ñ 1000 TiÒn §ång !") 
-return
-end 
-	if (nUserRSCount < 3) then
-	if (tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_T10000) == 1) then
-	if (nUserCount >= 10000) then
-	if (ConsumeEquiproomItem(1000, 4,417, 1, -1) == 1) then
-		SetTask(%TSK_GIVE_ITEM_QUADACTHUONG,0)
-		SetTask(%TSK_GIVE_ITEM_RESET,nUserRSCount+1)
-		tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_MOC_T10000, 0)
-		Say("<color=red>"..GetName().." B¹n ®· reset thµnh c«ng!")
+
+function pActivity:CheckGetDrunk(nSkillId, szMsg)
+	local nValue = self:CheckNotGetDrunk(nSkillId)
+	if nValue ~= 1 then
+		return 1
 	end
+	Talk(1, "", szMsg)
+end
+
+function pActivity:DrinkOneRound(TSK_A, TSK_B, TSK_Time, TSK_Round, TSK_AwardB, TSK_AwardC, TSK_Date, nSkillId, szKind, nDetailId)
+
+	local nAddValueA = nil
+	local nAddValueB = nil
+	if szKind == "small" then
+		nAddValueA = random(1, 6)
+		nAddValueB = 3
+	elseif szKind == "middle" then
+		nAddValueA = random(2, 12)
+		nAddValueB = 7
+	elseif szKind == "big" then
+		nAddValueA = random(3, 18)
+		nAddValueB = 11
+	end
+	--TSK_AwardB:¶·¾Æ³É¹¦½±  TSK_AwardC:°²Î¿½±
+	self:AddTask(TSK_A, nAddValueA)--¾ÆÒâ
+	self:AddTask(TSK_B, nAddValueB)--¾ÆÁ¿
+	
+	local nValueA = self:GetTask(TSK_A)
+	local nValueB = self:GetTask(TSK_B)
+	
+	if nValueA >= 100 then
+		self:SetTask(TSK_AwardC, 1) --ÓÐ°²Î¿½±ÒªÁì
+		self:AddTaskDaily(TSK_Time, 1)--³¡Êý¼Ó1
+		self:SetTask(TSK_Round, 0)--ÂÖÊýÇåÁã
+		self:SetTask(TSK_A, 0)--¾ÆÒâÇåÁã
+		self:SetTask(TSK_B, 0)--¾ÆÁ¿ÇåÁã
+		PlayerFunLib:AddSkillState(nSkillId, 1, 3, 30 * 60 * 18, 1)
+		Talk(1, "", "Ng­¬i ®· uèng say råi, ãi möa ra c¶ ®Êt kia k×a, nhanh ®i nhËn th­ëng an ñi ®i")
 	else
-		Talk(1,"","Mçi Nh©n VËt ChØ Sö Dông 10000 Quµ Quèc Kh¸nh Th­êng")
-	end
-	else
-		Say("<color=red>"..GetName().." Ch­a NhËn Th­ëng Mèc 10000 Quµ Quèc Kh¸nh Th­êng")
-	end
-	else
-		Say("<color=red>"..GetName().." chØ ®­îc reset tèi ®a 3 lÇn!")
-	end
-end
---------------------------------------------------------------------------------------------------------------------------------
-function pActivity:ShowTopList()
-	%tbTop10:ShowTopList()
-end
-
-function pActivity:UpdateTopList()
-	%tbTop10:UpdateTopList()
-end
-
-function pActivity:CheckDateTime()
-local nDate = tonumber(GetLocalDate("%d"))
-	if (GetTask(%TSK_GIVE_DATE_AWARDS) ~= nDate) then
-		SetTask(%TSK_GIVE_DATE_AWARDS, nDate)
-		--SetTask(%TSK_GIVE_NANGDONG_AWARDS,0)
-		tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_DAY, 0)
-	end
-	return 1
-end
-
-function pActivity:GiveItemCheckTime()
-	if %tbTop10:CheckTime() == 1 then
-		Talk(1,"","HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau")		
-		return nil
-	end
-	return 1
-end
-
-
-
----------------------------------------------------------------------------------PhÇn Th­ëng Top 10------------------------------------------------------------------------------------------------------			
-function pActivity:GetTopListAward()
-	if %tbTop10:CheckTime() == 1 then
-		Talk(1,"","HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau")		
-		return nil
-	end
-	local nRank = %tbTop10:GetCurRank(GetName(), GetAccount())
-	local szTitle = "<color=fire>PhÇn Th­ëng Top Sù KiÖn Toµn Server<color>\n"
-	if %tbTop10:CheckTimeTop() ~= 1 then
-		Talk(1,"","HiÖn t¹i kh«ng ph¶i thêi gian nhËn Top, xin h·y quay l¹i sau")		
-		return nil
-	end
-	if (nRank >= 1 and nRank <= 10) then
-
-		if tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_TOP) ~= 1 then
-				szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n ", nRank)
-		for i = 1, getn(%tbAwardRank[nRank]) do
-		szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[nRank][i].nCount, %tbAwardRank[nRank][i].szName)
-		end
-		tbAwardTemplet:GiveAwardByList(%tbAwardRank[nRank],"PhÇn Th­ëng Top") %tbTop10:GiveAward(nRank)
-		tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ITEM_ACTIVITY_AWARD_TOP,1)
+		self:AddTask(TSK_Round, 1)--ÂÖÊý¼Ó1
+		local nRound = self:GetTask(TSK_Round)
+		if nRound >= 12 then
+			self:SetTask(TSK_AwardB, 1) --ÓÐ¶·¾Æ³É¹¦½±ÒªÁì
+			self:AddTaskDaily(TSK_Time, 1)--³¡Êý¼Ó1
+			self:SetTask(TSK_Round, 0)--ÂÖÊýÇåÁã
+			self:SetTask(TSK_A, 0)--¾ÆÒâÇåÁã
+			self:AddJiuLiang(nValueB)
+			self:SetTask(TSK_B, 0)--¾ÆÁ¿ÇåÁã
+			local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+			self:SetTask(TSK_Date, nCurDate)			
+			Talk(1, "", "TrËn ®Êu r­îu lÇn nµy ng­¬i thµnh c«ng råi!")
 		else
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------\n---------------B¹n ®· nhËn th­ëng-------------<color>\n", nRank)
-		for i = 1, getn(%tbAwardRank[nRank]) do
-		szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[nRank][i].nCount, %tbAwardRank[nRank][i].szName)
+			self:ExecActivityDetail(nDetailId)
 		end
-		end
-		CreateNewSayEx(szTitle,{{"Hñy Bá"}})
-	else
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","1")
-		for i = 1, getn(%tbAwardRank[1]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[1][i].nCount, %tbAwardRank[1][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","2")
-		for i = 1, getn(%tbAwardRank[2]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[2][i].nCount, %tbAwardRank[2][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","3")
-		for i = 1, getn(%tbAwardRank[3]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[3][i].nCount, %tbAwardRank[3][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","4")
-		for i = 1, getn(%tbAwardRank[4]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[4][i].nCount, %tbAwardRank[4][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","5")
-		for i = 1, getn(%tbAwardRank[5]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[5][i].nCount, %tbAwardRank[5][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","6")
-		for i = 1, getn(%tbAwardRank[6]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[6][i].nCount, %tbAwardRank[6][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","7")
-		for i = 1, getn(%tbAwardRank[7]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[7][i].nCount, %tbAwardRank[7][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","8")
-		for i = 1, getn(%tbAwardRank[8]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[8][i].nCount, %tbAwardRank[8][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","9")
-		for i = 1, getn(%tbAwardRank[9]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[9][i].nCount, %tbAwardRank[9][i].szName)
-		end
-		szTitle = szTitle..format("<color=yellow>--------------------Top %s--------------------<color>\n","10")
-		for i = 1, getn(%tbAwardRank[10]) do
-			szTitle = szTitle..format("\t\t\t\t\t\t\t\t\t\t<bclr=blue>%s %s<bclr>\n", %tbAwardRank[10][i].nCount, %tbAwardRank[10][i].szName)
-		end
-		CreateNewSayEx(szTitle,{{"Hñy Bá"}})
+	end
+	
+end
+
+function pActivity:AddJiuLiang(nValue)
+	local obj = ObjBuffer:New()
+	local szName = GetName()
+	obj:Push(szName)
+	obj:Push(nValue)
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	obj:Push(nCurDate)
+	RemoteExecute(%szRemoteScript, "tbQunXia:g2s_AddJiuLiang", obj.m_Handle)
+	obj:Destroy()	
+end
+
+function pActivity:GetTitle(TSK_A, TSK_B, TSK_C)
+	local nValueA = self:GetTask(TSK_A)
+	local nValueB = self:GetTask(TSK_B)
+	local nValueC = self:GetTask(TSK_C)
+	local szTitle = "TrËn ®Êu r­îu lÇn nµy ng­¬i ph¶i uèng hÕt 12 l­ît r­îu, ng­¬i ®· uèng %d l­ît r­îu, ®é say xØn tr­íc m¾t cña ng­¬i lµ %d, trËn ®Êu r­îu lÇn nµy ng­¬i ®· nhËn ®­îc töu l­îng lµ %d, uèng 1 b¸t r­îu nhá sÏ lµm t¨ng 1-6 ®é say xØn, uèng mét b¸t rùîu trung sÏ lµm t¨ng 2-12 ®é say xØn, t¨ng 7 l­îng töu l­îng, uèng mét b¸t r­îu lín sÏ lµm t¨ng 3-18 ®é say xØn, t¨ng 11 l­îng töu l­îng."
+	szTitle = format(szTitle, nValueA, nValueB, nValueC)
+	return szTitle
+end
+
+function pActivity:Lose(TSK_A, TSK_B, TSK_C, TSK_D, TSK_E)
+	--TSK_A:³¡Êý  TSK_B£ºÂÖÊý   TSK_C£º×íÒâ  TSK_D: °²Î¿½±
+	self:AddTaskDaily(TSK_A, 1)--³¡Êý¼Ó1
+	self:SetTask(TSK_B, 0)--ÂÖÊýÇåÁã
+	self:SetTask(TSK_C, 0)--×íÒâÇåÁã
+	self:SetTask(TSK_D, 1)--ÓÐ°²Î¿½±Áì
+	self:SetTask(TSK_E, 1)--¾ÆÁ¿ÇåÁã
+end
+
+function pActivity:AddDialogNpc(szNpcName, nNpcId, tbNpcPos)
+	self:AddNpc(szNpcName, nNpcId, tbNpcPos,  "\\script\\activitysys\\npcdailog.lua")
+end
+
+function pActivity:AddNpc(szNpcName, nNpcId, tbNpcPos, szLuaFile)
+	for i=1, getn(tbNpcPos) do
+		local pPos = tbNpcPos[i]
+		local nMapIndex = SubWorldID2Idx(pPos[1])
+		if nMapIndex > 0 then
+			local nNpcIndex = AddNpc(nNpcId, 1, nMapIndex, pPos[2] * 32, pPos[3] * 32, 0, szNpcName);
+			if szLuaFile ~= nil then
+				SetNpcScript(nNpcIndex, szLuaFile)
+			end
+		end		
 	end
 end
+
+function pActivity:AddNpcFromFile(szNpcName, nNpcId, szPosPath, nMapId)
+	if (TabFile_Load(szPosPath, szPosPath) == 0) then
+		print("Load TabFile Error!"..szPosPath)
+		return 0
+	end	
+	local tbNpcPos = {}
+	local nRowCount = TabFile_GetRowCount(szPosPath)
+	for nRow = 2, nRowCount do
+		tbNpcPos[nRow - 1] = {}
+		tbNpcPos[nRow - 1][1] = nMapId
+		local nX = TabFile_GetCell(szPosPath, nRow, 1)
+		local nY = TabFile_GetCell(szPosPath, nRow, 2)
+		tbNpcPos[nRow - 1][2] = nX
+		tbNpcPos[nRow - 1][3] = nY
+	end
+	self:AddNpc(szNpcName, nNpcId, tbNpcPos)
+end
+
+function pActivity:AddMulNpc(tbNpcInfos, szNpcName, nNpcId)
+	local nCount = getn(tbNpcInfos)
+	for i = 1, nCount do
+		self:AddNpcFromFile(szNpcName, nNpcId, tbNpcInfos[i]["szPosPath"], tbNpcInfos[i]["nMapId"])
+	end
+end
+
+function pActivity:DisplayCurJiuLiang()
+	local obj = ObjBuffer:New()
+	local szName = GetName()
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	obj:Push(szName)	
+	obj:Push(nCurDate)
+	DynamicExecute("\\script\\activitysys\\config\\26\\extend.lua",
+		"RemoteExecute", %szRemoteScript, "tbQunXia:g2s_QueryPlayerJiuLiang", obj.m_Handle, "pActivity:ReceiveCurJiuLiang", 0)
+	obj:Destroy()
+end
+
+function pActivity:ReceiveCurJiuLiang(nParam, ResultHandle)
+	local szName = ObjBuffer:PopObject(ResultHandle)
+	local nJiuLiang = ObjBuffer:PopObject(ResultHandle)
+	local szMsg = format("%-32s%-10d\n", szName, nJiuLiang)
+	local nPlayerIndex = SearchPlayer(szName)
+	if nPlayerIndex > 0 then
+		local szTitle = format("%-32s%-10s\n", "Tªn", "Töu L­îng h«m nay")
+		CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle..szMsg, {{"KÕt thóc ®èi tho¹i"}})
+	end
+end
+
+function pActivity:JieJiu(nSkillId)
+	RemoveSkillState(nSkillId)
+end
+
+function pActivity:CheckDrinkTime(nStartHour, nEndHour, szMsg)
+	local nCurHour = tonumber(GetLocalDate("%H"))
+	if (nCurHour >= nStartHour and nCurHour <= nEndHour) then
+		return 1
+	end
+	Talk(1, "", szMsg)
+end
+
+function pActivity:GetDrinkAward(TSK_EXP_A, nUpExpA, nAddExpA, szMsg, szOption, nNumber, szLogTitle)
+	if self:CheckTask(TSK_EXP_A, nUpExpA, szMsg, szOption) ~= 1 then
+		return
+	end
+	PlayerFunLib:AddExp(nAddExpA, 1, szLogTitle)
+	self:AddTask(TSK_EXP_A, nAddExpA / nNumber)
+	return 1
+end
+
+function pActivity:GetPaiMingAward()
+	local nDate = self:GetTask(%TSK_LastTimeDate)
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	if nDate == 0 or nDate >= nCurDate then
+		Talk(1, "", "ThiÕu HiÖp tr­íc m¾t ng­¬i vÉn ch­a cã phÇn th­ëng ®Ó nhËn")
+		return
+	end
+	self:GetFixCountData(nDate, 10, GetName())
+end
+
+function pActivity:GetFixCountData(nDate, nCount, szName)
+	local obj = ObjBuffer:New()
+	obj:Push(nDate)
+	obj:Push(nCount)
+	obj:Push(szName)
+	DynamicExecute("\\script\\activitysys\\config\\26\\extend.lua",
+		"RemoteExecute", %szRemoteScript, "tbQunXia:g2s_LoadFixCountData", obj.m_Handle, "pActivity:ReceiveFixCountData", 0)
+	obj:Destroy()	
+end
+
+function pActivity:ReceiveFixCountData(nParam, ResultHandle)
+	local szName = ObjBuffer:PopObject(ResultHandle)
+	local nPlayerIndex = SearchPlayer(szName)
+	if nPlayerIndex == nil or nPlayerIndex <= 0 then
+		return
+	end
+	local nResult = DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:CheckTaskB", %TSK_LastTimeDate, "ThiÕu HiÖp ng­¬i ®· nhËn phÇn th­ëng xÕp h¹ng råi", "~=")
+	if  nResult ~= 1 then
+		return
+	end
+	
+	local tbTopTen = ObjBuffer:PopObject(ResultHandle)
+	local nCount = 0
+	if tbTopTen ~= nil then
+		nCount = getn(tbTopTen)
+	end
+	if nCount == 0 then
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ThiÕu HiÖp ng­¬i t¹m thêi ch­a cã phÇn th­ëng ®Ó nhËn")
+		return
+	end
+	local nPos = -1
+	for i = 1, nCount do
+		if tbTopTen[i] ~= nil and tbTopTen[i][1] ~= nil then
+			if tbTopTen[i][1] == szName then
+				nPos = i
+				break
+			end
+		end
+	end
+	if nPos == -1 then
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ThiÕu HiÖp ng­¬i t¹m thêi ch­a cã phÇn th­ëng ®Ó nhËn")
+		return
+	end
+	local nAddExpA = 0
+	if nPos == 1 then
+		nAddExpA = %tbPaiMingExp[1]
+	elseif nPos == 2 then
+		nAddExpA = %tbPaiMingExp[2]
+	elseif nPos == 3 then
+		nAddExpA = %tbPaiMingExp[3]
+	else
+		nAddExpA = %tbPaiMingExp[4]
+	end
+	local bFlag = DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:GetDrinkAward", 
+		%TSK_TotalDrinkExp, %nTotalDrinkUpExp, nAddExpA, "ThiÕu HiÖp ng­¬i tham gia ®Êu r­îu nhËn ®­îc kinh nghiÖm ®· ®¹t ®Õn giíi h¹n, kh«ng thÓ tiÕp tôc nhËn nh÷ng phÇn th­ëng cã liªn quan ®Õn ®Êu r­îu", "<", %nNumber, "§¹i YÕn QuÇn HiÖp n¨m 2011, nhËn phÇn th­ëng xÕp h¹ng ®Êu r­îu.")
+	DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:SetTask", %TSK_LastTimeDate, 0)
+	if bFlag == 1 then
+		local szMsg = ""
+		if nPos >= 4 then
+			szMsg = "§· nhËn phÇn th­ëng xÕp h¹ng ®Êu r­îu xÕp h¹ng tõ 4-10 thµnh c«ng."
+		else
+			szMsg = format("§· nhËn phÇn th­ëng xÕp h¹ng ®Êu r­îu xÕp h¹ng cÊp thø %d( xÕp h¹ng thø %d) thµnh c«ng", nPos, nPos)
+		end
+		CallPlayerFunction(nPlayerIndex, Msg2Player, szMsg)
+	end
+end
+
+function pActivity:GetYDate()
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	local nTime = GetCurServerTime() - 24*60*60
+	local tbYDate = Time2Tm(nTime)
+	local nYDate = tbYDate[1] * 10000 + tbYDate[2] * 100 + tbYDate[3]
+	return nYDate
+end
+
+function pActivity:DisplayCurTopTen()
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	local szName = GetName()
+	local obj = ObjBuffer:New()
+	obj:Push(nCurDate)
+	obj:Push(szName)
+	DynamicExecute("\\script\\activitysys\\config\\26\\extend.lua",
+		"RemoteExecute", %szRemoteScript, "tbQunXia:g2s_QueryTopTen", obj.m_Handle, "pActivity:ReceiveTopTen", 0)
+	obj:Destroy()	
+end
+
+function pActivity:DisplayYTopTen()
+	local nTime = tonumber(GetLocalDate("%H%M"))
+	if nTime >= 0 and nTime <= 5 then
+		Talk(1, "", "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng")
+		return
+	end	
+	local nYDate = self:GetYDate()
+	local szName = GetName()
+	local obj = ObjBuffer:New()
+	obj:Push(nYDate)
+	obj:Push(szName)
+	DynamicExecute("\\script\\activitysys\\config\\26\\extend.lua",
+		"RemoteExecute", %szRemoteScript, "tbQunXia:g2s_QueryTopTen", obj.m_Handle, "pActivity:ReceiveTopTen", 0)
+	obj:Destroy()		
+end
+
+function pActivity:ReceiveTopTen(nParam, ResultHandle)
+	local szName = ObjBuffer:PopObject(ResultHandle)
+	local tbTopTen = ObjBuffer:PopObject(ResultHandle)
+	local nPlayerIndex = SearchPlayer(szName)
+	if nPlayerIndex == nil or nPlayerIndex <= 0 then
+		return
+	end
+	local szMsg = "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng"
+	if tbTopTen ~= nil then
+		local nCount = getn(tbTopTen)
+		if nCount == 0 then
+			CallPlayerFunction(nPlayerIndex, Talk, 1, "", szMsg)
+			return
+		end
+		local szPaiMing = format("%-32s%-10s\n", "Tªn", "Töu L­îng")
+		for i = 1, nCount do
+			local szTemp = format("%-32s%-10d\n", tbTopTen[i][1], tbTopTen[i][2])
+			szPaiMing = szPaiMing..szTemp
+		end
+		CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szPaiMing, {{"KÕt thóc ®èi tho¹i"}})
+	else
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", szMsg)
+	end
+end
+
+function pActivity:DisplayPlayerPaiMing(nDate, szFun)
+	local szName = GetName()
+	local obj = ObjBuffer:New()
+	obj:Push(szName)	
+	obj:Push(nDate)
+	DynamicExecute("\\script\\activitysys\\config\\26\\extend.lua",
+		"RemoteExecute", %szRemoteScript, "tbQunXia:g2s_QueryPlayerPaiMing", obj.m_Handle, szFun, 0)
+	obj:Destroy()		
+end
+
+function pActivity:DisplayYPlayerPaiMing()
+	local nTime = tonumber(GetLocalDate("%H%M"))
+	if nTime >= 0 and nTime <= 5 then
+		Talk(1, "", "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng")
+		return
+	end	
+	local nYDate = self:GetYDate()	
+	self:DisplayPlayerPaiMing(nYDate, "pActivity:ReceivePlayerPaiMing")
+end
+
+function pActivity:ReceivePlayerPaiMing(nParam, ResultHandle)
+	local szName = ObjBuffer:PopObject(ResultHandle)
+	local nPaiMing = ObjBuffer:PopObject(ResultHandle)
+	local nPlayerIndex = SearchPlayer(szName)
+	if nPlayerIndex == nil or nPlayerIndex <= 0 then
+		return
+	end
+	if nPaiMing == nil then
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ThiÕu HiÖp tr­íc m¾t ng­¬i ch­a cã xÕp h¹ng Töu L­îng cña ngµy h«m tr­íc")
+		return
+	end
+	local szPaiMing = format("%-32s%-10d\n", szName, nPaiMing)
+	local szTitle = format("%-32s%-10s\n", "Tªn", "XÕp h¹ng ngµy h«m tr­íc")
+	CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle..szPaiMing, {{"KÕt thóc ®èi tho¹i"}})
+end
+
+function pActivity:CheckPaiMing()
+	local nResult = self:CheckTaskB(%TSK_LastTimeDate, nil, "==")
+	if nResult ~= 1 then
+		local nDate = self:GetTask(%TSK_LastTimeDate)
+		self:DisplayPlayerPaiMing(nDate, "pActivity:CheckRePaiMing")
+	else
+		self:pCreateDialog()
+	end
+end
+
+function pActivity:CheckRePaiMing(nParam, ResultHandle)
+	local szName = ObjBuffer:PopObject(ResultHandle)
+	local nPaiMing = ObjBuffer:PopObject(ResultHandle)
+	local nPlayerIndex = SearchPlayer(szName)
+	if nPlayerIndex == nil or nPlayerIndex <= 0 then
+		return
+	end
+	if nPaiMing ~= nil and nPaiMing >= 1 and nPaiMing <= 10 then
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Tr­íc khi tham gia trËn ®Êu r­îu nµy cÇn ph¶i nhËn hÕt tÊt c¶ phÇn th­ëng cña trËn ®Êu r­îu tr­íc( phÇn th­ëng an ñi, phÇn th­ëng ®Êu r­îu thµnh c«ng, phÇn th­ëng xÕp h¹ng ) xin h·y ®i nhËn hÕt nh÷ng phÇn th­ëng nµy ®i råi h·y ®Õn tham gia nhÐ")	
+	else
+		DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:SetTask", %TSK_LastTimeDate, 0)
+		DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:pCreateDialog")
+	end
+end
+
+function pActivity:pCreateDialog()
+	local tbDailog = DailogClass:new()
+	tbDailog.szTitleMsg = self:GetTitle(%TSK_DrinkRound, %TSK_ZuiYi, %TSK_JiuLiang)
+	tbDailog:AddOptEntry("Uèng mét b¸t r­îu nhá", self.GotoDetail, {self, 6, {tbDailog}})
+	tbDailog:AddOptEntry("Uèng 1 B¸t R­îu Trung", self.GotoDetail, {self, 7, {tbDailog}})
+	tbDailog:AddOptEntry("Uèng mét b¸t r­îu lín", self.GotoDetail, {self, 8, {tbDailog}})
+	tbDailog:AddOptEntry("Ta uèng hÕt nçi råi, trËn §Êu R­îu nµy ta chÞu thua", self.GotoDetail, {self, 9, {tbDailog}})
+	tbDailog:Show()
+end
+
+function pActivity:BeginDrink()
+	if self:CheckDate() ~= 1 then
+		return
+	end
+		
+	if self:CheckDrinkTime(9, 23, "ThiÕu HiÖp b©y giê kh«ng ph¶i lµ thêi gian ®Êu r­îu, ngµy mai vµo lóc 9h-24h h·y ®Õn chç cña ta ®Êu r­îu nhÐ") ~= 1 then
+		return
+	end
+	
+	if self:CheckTaskDaily(%TSK_DrinkTimes, 3, "H«m nay ®· uèng ®ñ 3 trËn r­îu råi, ngµy mai h·y quay l¹i nhÐ", "<") ~= 1 then
+		return
+	end
+	
+	if self:CheckNotGetDrunk(1020, "ThiÕu HiÖp ng­¬i ®· uèng say råi, ®îi tØnh r­îu råi l¹i ®Õn nhÐ") ~= 1 then
+		return
+	end
+	
+	if self:CheckTask(%TSK_WinDrink, 0, "Tr­íc khi tham gia trËn ®Êu r­îu nµy cÇn ph¶i nhËn hÕt tÊt c¶ phÇn th­ëng cña trËn ®Êu r­îu tr­íc( phÇn th­ëng an ñi, phÇn th­ëng ®Êu r­îu thµnh c«ng, phÇn th­ëng xÕp h¹ng ) xin h·y ®i nhËn hÕt nh÷ng phÇn th­ëng nµy ®i råi h·y ®Õn tham gia nhÐ", "==") ~= 1 then
+		return
+	end
+	
+	if self:CheckTask(%TSK_AnWei, 0, "Tr­íc khi tham gia trËn ®Êu r­îu nµy cÇn ph¶i nhËn hÕt tÊt c¶ phÇn th­ëng cña trËn ®Êu r­îu tr­íc( phÇn th­ëng an ñi, phÇn th­ëng ®Êu r­îu thµnh c«ng, phÇn th­ëng xÕp h¹ng ) xin h·y ®i nhËn hÕt nh÷ng phÇn th­ëng nµy ®i råi h·y ®Õn tham gia nhÐ", "==") ~= 1 then
+		return
+	end
+	
+	self:CheckPaiMing()
+end
+
+
+
+
 
 
 

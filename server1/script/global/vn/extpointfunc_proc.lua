@@ -1,3 +1,4 @@
+--------------------------***Heqart*Doldly***-----------------------------------------------------
 G_COIN = 20 -- 1 lan rut duoc bao nhieu tien dong, mac dinh 20, by Giangleloi
 function OnExtPointChange_Proc(nExtPointIndex, nChangeValue)
 	if (ExtFunTab[nExtPointIndex + 1] == nil) then

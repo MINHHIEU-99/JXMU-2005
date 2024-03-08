@@ -107,30 +107,6 @@ function wlls_buildup_vs( tb_camp , tbLGs )
 	end
 end
 
-FactionVietvsCn = 
-{
-	{"shaolin", "ThiÕu L©m ph¸i"},
-	{"tianwang", "Thiªn V­¬ng Bang"},
-	{"tangmen", "§­êng M«n"},
-	{"wudu", "Ngò §éc Gi¸o"},
-	{"emei", "Nga My ph¸i"},
-	{"cuiyan", "Thóy Yªn m«n"},
-	{"gaibang", "C¸i Bang"},
-	{"tianren", "Thiªn NhÉn Gi¸o"},
-	{"wudang", "Vâ §ang ph¸i"},
-	{"kunlun", "C«n L«n ph¸i"},
-	{"huashan", "Hoa S¬n ph¸i"},
-}
-
-function VietFactionWithCnInput(FactionCn)
-	-- for i = 1, 11 do
-		-- if  FactionVietvsCn[i][1] == FactionCn then
-			-- return FactionVietvsCn[i][2];
-		-- end
-	-- end
-	return FactionVietvsCn[FactionCn+1][2]
-end
-
 --curmscampÕóÓªµÄÍæ¼Ò½øÈë±ÈÈü³¡
 function wlls_addplayer_combat(tbLGs, nOrgCamp, nEmyCamp, nNewCamp, tbNewPos)
 	_M("wlls_addplayer_combat", nOrgCamp, nEmyCamp, nNewCamp, "{"..join(tbNewPos).."}")
@@ -152,12 +128,12 @@ function wlls_addplayer_combat(tbLGs, nOrgCamp, nEmyCamp, nNewCamp, tbNewPos)
 		ST_StartDamageCounter()	--¿ªÊ¼¼ÆËãÉËº¦
 	end
 
-	-- local szMsg	= "<color=pink>Tin tøc chiÕn sù: §èi thñ [<color=yellow>"..tbLGs[nEmyCamp].szName.."<color>] chiÕn ®éi cã <color=yellow>"..getn(tbLGs[nEmyCamp].tbPlayer).."<color> ng­êi vµo thi ®Êu"
-	-- Msg2MSGroup(WLLS_MSID_COMBAT, szMsg, nNewCamp)
+	local szMsg	= "<color=pink>Tin tøc chiÕn sù: §èi thñ [<color=yellow>"..tbLGs[nEmyCamp].szName.."<color>] chiÕn ®éi cã <color=yellow>"..getn(tbLGs[nEmyCamp].tbPlayer).."<color> ng­êi vµo thi ®Êu"
+	Msg2MSGroup(WLLS_MSID_COMBAT, szMsg, nNewCamp)
 	szMsg	= "Tin tøc ®èi thñ nh­ sau: "
 	for _, nIdx in tbLGs[nEmyCamp].tbPlayer do
 		PlayerIndex = nIdx
-		szMsg	= szMsg..format("\n<color=white>%16s <color=green>%3d cÊp <color=yellow>%s", GetName(), GetLevel(), VietFactionWithCnInput(GetLastFactionNumber()))
+		szMsg	= szMsg..format("\n<color=white>%16s <color=green>%3d cÊp <color=yellow>%s", GetName(), GetLevel(), GetLastAddFaction())
 	end
 	Msg2MSGroup(WLLS_MSID_COMBAT, szMsg, nNewCamp)
 
@@ -180,7 +156,7 @@ function wlls_addtroop_combat( tb_vscamp , tbLGs )
 		
 	end
 	
-	Msg2MSAll(WLLS_MSID_COMBAT, "B¹n ®· vµo khu vùc ®Êu tr­êng, thi ®Êu chÝnh thøc b¾t ®Çu sau <color=yellow>"..(WLLS_TIMER_FIGHT_FREQ * WLLS_TIMER_FIGHT_PREP).."<color> gi©y ")
+	Msg2MSAll(WLLS_MSID_COMBAT, "B¹n ®· vµo khu vùc thi ®Êu, thi ®Êu sau <color=yellow>"..(WLLS_TIMER_FIGHT_FREQ * WLLS_TIMER_FIGHT_PREP).."<color> gi©y chÝnh thøc b¾t ®Çu")
 	
 	SubWorld	= nOldWorld
 end
@@ -198,7 +174,7 @@ function OnTimer()
 		SetGlbValue(GLB_WLLS_PHASE, 5)
 		SetGlbValue(GLB_WLLS_TIME, 0)
 		StartGlbMSTimer(WLLS_MSID_GLB, WLLS_TIMERID_COMBAT, WLLS_TIMER_FIGHT_FREQ*WLLS_FRAME2TIME)
-		Msg2SubWorld("<color=yellow>B¸o danh Vâ l©m liªn ®Êu ®· kÕt thóc, thi ®Êu chÝnh thøc b¾t ®Çu!")
+		Msg2SubWorld("B¸o danh Vâ l©m kiÖt xuÊt liªn ®Êu ®· kÕt thóc, thi ®Êu chÝnh thøc b¾t ®Çu!")
 		
 		--´¦ÀíÃ¿¸ö×¼±¸³¡
 		for n_idx, nGroupIdx in tb_sub do
@@ -206,10 +182,10 @@ function OnTimer()
 			
 			local tb_mstroop = wlls_get_ms_troop()
 			_M("getn(tb_mstroop)="..getn(tb_mstroop))
-			-- if (getn(tb_mstroop) < WLLS_MIN_TEAM) then
-				-- Msg2SubWorld("§éi tham gia thi ®Êu qu¸ Ýt, "..wlls_get_desc(3).."Hñy bá thi ®Êu tr©n nµy")
-				-- tb_mstroop = {}
-			-- end
+			if (getn(tb_mstroop) < WLLS_MIN_TEAM) then
+				Msg2SubWorld("§éi tham gia thi ®Êu qu¸ Ýt, "..wlls_get_desc(3).."Hñy bá thi ®Êu tr©n nµy")
+				tb_mstroop = {}
+			end
 			
 			--»ñÈ¡Ã¿¸öÕóÓªÕ½¶ÓÐÅÏ¢
 			local nOldPLIdx = PlayerIndex
@@ -262,23 +238,10 @@ function OnTimer()
 		for n_idx, nGroupIdx in tb_sub do
 			tbGroup[getn(tbGroup)+1]	= nGroupIdx
 			-- 1·ÖÖÓÒ»´Î£¬Í¨Öªµ±Ç°Ê£ÓàÊ±¼ä
-			-- if (bReport) then
-				-- SubWorld = n_idx
+			if (bReport) then
+				SubWorld = n_idx
 				Msg2MSAll(WLLS_MSID_SCHEDULE, "Thêi gian b¸o danh cßn <color=yellow>"..(n_timer*WLLS_TIMER_PREP_FREQ/60).."<color> phót")
-				-- Msg2SubWorld("Thêi gian b¸o danh Liªn §Êu cßn <color=yellow>"..(n_timer*WLLS_TIMER_PREP_FREQ/60).."<color> phót")
-			-- end
-		end
-		if (bReport) then
-			SubWorld = n_idx
-			Msg2SubWorld("Thêi gian b¸o danh Liªn §Êu cßn <color=yellow>"..(n_timer*WLLS_TIMER_PREP_FREQ/60).."<color> phót")
-		end
-		local ReportSec = ((n_timer*WLLS_TIMER_PREP_FREQ/60)*60)
-		if ReportSec == 30 then
-			Msg2SubWorld("Thêi gian b¸o danh Liªn §Êu cßn <color=yellow>"..ReportSec.."<color> gi©y")
-		elseif ReportSec == 20 then
-			Msg2SubWorld("Thêi gian b¸o danh Liªn §Êu cßn <color=yellow>"..ReportSec.."<color> gi©y")
-		elseif ReportSec == 10 then
-			Msg2SubWorld("Thêi gian b¸o danh Liªn §Êu cßn <color=yellow>"..ReportSec.."<color> gi©y")
+			end
 		end
 		if (getn(tbGroup) > 0) then
 			local szParam = GetPlayerCount().." "..join(tbGroup)

@@ -1,7 +1,11 @@
+--Qua huy hoang config thap trung cao
 IncludeLib("ITEM");
 Include("\\script\\lib\\award.lua")
+Include("\\script\\global\\g7vn\\g7configall.lua")
+Include("\\script\\lib\\awardtemplet.lua")
+
 --huihuangzhiguo_level
-MX_LANTERN_COUNT = 5
+MX_LANTERN_COUNT = 5 --so luong qua HH an max trong ngay, so luong tra loi Hoa Dang max trong ngay
 function main(ItemIndex)
 	--if (GetLevel() < 90 and huihuangzhiguo_level > 1) then
 	--	Say("<#>ÄúµÄÀúÁ·»¹²»×ãÒÔÏû»¯ÕâÃ¶¹ûÊµ¡£", 0)
@@ -10,21 +14,28 @@ function main(ItemIndex)
 	--	Say("<#>ÄúµÄÀúÁ·»¹²»×ãÒÔÏû»¯ÕâÃ¶¹ûÊµ¡£", 0)
 	--	return 1
 	--end
+
+	dofile("script/item/huihuangzhiguo.lua")
+
+	if SuDungQuaHH == 0 then
+		--Say("TÝnh n¨ng Qu¶ Huy Hoµng t¹m khãa ch­a sö ®ông d­îc")
+		--return 1
+	end
 	local szfruitlevel = ""
 	local nPlayerLevel = GetLevel();	
-	if (nPlayerLevel < 90) then
+	if (nPlayerLevel < 80) then
 		nGetSeedLevel = 1;
-		szfruitlevel = "S¬ cÊp"
-	elseif (nPlayerLevel >= 90 and nPlayerLevel < 120) then
+		szfruitlevel = "cÊp thÊp"
+	elseif (nPlayerLevel >= 80 and nPlayerLevel < 90) then
 		nGetSeedLevel = 2;
 		szfruitlevel = "Trung cÊp"
-	elseif (nPlayerLevel >= 120) then
+	elseif (nPlayerLevel >= 90) then
 		nGetSeedLevel = 3;
 		szfruitlevel = "Cao cÊp"
 	end
 	
 	if (nGetSeedLevel ~= huihuangzhiguo_level) then
-		Say(format("B¹n chØ cã thÓ ¨n Qu¶ Huy Hoµng (%s).",szfruitlevel), 0)
+		Say(format("<#>B¹n chØ cã thÓ ¨n qu¶ Huy hoµng %s.",szfruitlevel), 0)
 		return 1
 	end;
 	local nDate = tonumber(GetLocalDate("%m%d"))
@@ -41,21 +52,27 @@ function main(ItemIndex)
 	end
 	
 	if ( GetTask(2313) >= MX_LANTERN_COUNT ) then
-		local szMsg = format("H«m nay b¹n ®· ¨n %d Qu¶ Huy Hoµng, vâ c«ng th¨ng tiÕn qu¸ nhanh dÔ g©y t¸c dông ph¶n nghÞch, ngµy mai h·y tiÕp tôc vËy.",MX_LANTERN_COUNT);
+		local szMsg = format("<#>H«m nay b¹n ®· ¨n %d qu¶ Huy hoµng, vâ c«ng th¨ng tiÕn qu¸ nhanh dÔ g©y t¸c dông ph¶n nghÞch, ngµy mai h·y tiÕp tôc vËy.",MX_LANTERN_COUNT);
 		Say(szMsg, 0)
 		return 1
 	end
 	
 	local award_exp = 0
 	if (huihuangzhiguo_level == 1) then
-		award_exp = 50000
+		award_exp = 500000
+		--Dieu chinh qua Huy Hoang G7VN cho cap 60 va 70
 	elseif (huihuangzhiguo_level == 2) then
-		award_exp = 100000
+		award_exp = 2000000
 	elseif (huihuangzhiguo_level == 3) then
-		award_exp = 200000
+		award_exp = 5000000
 	end
 	AddOwnExp(award_exp)
 	SetTask(2313, GetTask(2313) + 1)
+	SetTask(3336,1)
+	end
+local G,D,P,nLevel = GetItemProp(ItemIndex);
+if P == 906 then
+--tbAwardTemplet:GiveAwardByList({{szName="Xu",tbProp={4,417,1,1},nCount=1,},}, "test", 1);
 end
 
 function huihuang_checkdate(ItemIndex)

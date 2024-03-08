@@ -1,6 +1,6 @@
 tbVNG_WomenDay2011 = {}
-tbVNG_WomenDay2011.nStartDay = 20230307
-tbVNG_WomenDay2011.nEndDay = 20250314
+tbVNG_WomenDay2011.nStartDay = 20110307
+tbVNG_WomenDay2011.nEndDay = 20110314
 tbVNG_WomenDay2011.tbTaskList =
 	{
 		TSK100ROSE = 
@@ -98,7 +98,7 @@ function tbVNG_WomenDay2011:IsActive()
 end
 function tbVNG_WomenDay2011:CheckCondition()
 	if(GetExtPoint(0) >= 1) then		
-		if ST_GetTransLifeCount() > 0 or GetLevel() >= 1 then
+		if ST_GetTransLifeCount() > 0 or GetLevel() >= 150 then
 			return 1		
 		end
 	end

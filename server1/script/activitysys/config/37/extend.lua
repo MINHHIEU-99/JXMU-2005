@@ -3,7 +3,6 @@ Include("\\script\\activitysys\\config\\37\\variables.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
 Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\lib\\log.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 
 
 function pActivity:AddInitNpc()
@@ -11,11 +10,9 @@ function pActivity:AddInitNpc()
 		[1] = {176,1566,2944,},
 		[2] = {78,1572,3232,},
 		[3] = {162,1588,3145,},
-		[4] = {99,1621,3203,},
-		[5] = {53,1628,3183,},
 	}
 	local tbNpc = {	
-			szName = "¤ng Giµ Noel",
+			szName = "¤ng Giµ Noel", 
 			nLevel = 95,
 			nNpcId = 1880,
 			nIsboss = 0,
@@ -25,23 +22,6 @@ function pActivity:AddInitNpc()
 		local nMapId, nPosX, nPosY = unpack(tbNpcPos[i])
 		basemission_CallNpc(tbNpc, nMapId, nPosX * 32, nPosY * 32)	
 	end
-
-	-- local tbNpcPosTree = {
-	-- 	[1] = {176,1567,2945,},
-	-- 	[2] = {78,1573,3233,},
-	-- 	[3] = {162,1589,3146,},
-	-- }
-	-- local tbNpcTree = {	
-	-- 		szName = "§¹i Tïng Gi¸ng Sinh",
-	-- 		nLevel = 95,
-	-- 		nNpcId = 1879,
-	-- 		nIsboss = 0,
-	-- 		szScriptPath = "\\script\\activitysys\\npcdailog.lua",
-	-- }
-	-- for i=1,getn(tbNpcPosTree) do
-	-- 	local nMapId, nPosX, nPosY = unpack(tbNpcPos[i])
-	-- 	basemission_CallNpc(tbNpcTree, nMapId, nPosX * 32, nPosY * 32)	
-	-- end
 end
 
 function pActivity:YDBZ_GiveStar(YDBZ_mission_match, nTeam)
@@ -54,7 +34,7 @@ function pActivity:YDBZ_GiveStar(YDBZ_mission_match, nTeam)
 		idx , pidx = GetNextPlayer(YDBZ_mission_match, idx, nTeam )
 		if pidx > 0 then
 			PlayerIndex = pidx
-			if PlayerFunLib:CheckTotalLevel(20, "", ">=") == 1 then
+			if PlayerFunLib:CheckTotalLevel(150, "", ">=") == 1 then
 				nPlayerCount = nPlayerCount + 1
 				tbPlayer[nPlayerCount] = {pidx, 1}
 			end
@@ -113,8 +93,8 @@ function pActivity:GiveXmasTrousers()
 	self:SetTask(TSK_LAST_ONLINEDATA,nNowDate)
 
 	PlayerFunLib:GetItem(ITEM_XMAS_TROUSERS,nMaxCount, EVENT_LOG_TITLE, "GiveXmasTrousers")
-	--Ho¹t ®éng 3 -  - 20111215
-	local tbPumpkinPie = {szName="B¸nh bÝ ®á",tbProp={6,1,30166,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,}
+	--Ho¹t ®éng 3 - modified by DinhHQ - 20111215
+	local tbPumpkinPie = {szName="B¸nh bÝ ®á",tbProp={6,1,30166,1,0,0},nExpiredTime=20120101,}
 	PlayerFunLib:GetItem(tbPumpkinPie,floor(nMaxCount/10)*40, EVENT_LOG_TITLE, "GivePumpkinPie")
 	self:AddTaskDaily(TSK_XMAS_TROUSERS_DAILY, nMaxCount)
 end
@@ -137,7 +117,7 @@ function pActivity:ComposeXmasGift(nCount)
 	for i=1,nCount do
 		local nSuccess = 70
 		if self:CheckRandom(nSuccess,"GhepHopQuaNoelThatBai") == 1 then
-			PlayerFunLib:GetItem({szName = "Hép quµ gi¸ng sinh", tbProp={6,1,3080,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1, EVENT_LOG_TITLE, "GhepHopQuaNoelThanhCong")
+			PlayerFunLib:GetItem({szName = "Hép quµ gi¸ng sinh", tbProp={6,1,3080,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepHopQuaNoelThanhCong")
 		end
 	end
 end
@@ -145,10 +125,10 @@ end
 -- ºÏ³ÉÊ¥µ®ÀÏÈË£¨Ð¡£©
 function pActivity:ComposeXmasPerson_S(nCount)
 	for i=1,nCount do
-	--Change request Event Noel -  - 20111129
+	--Change request Event Noel - Modified by DinhHQ - 20111129
 		local nSuccess = 70
 		if self:CheckRandom(nSuccess, "GhepNguoiTuyet(nho)ThatBai") == 1 then
-			PlayerFunLib:GetItem({szName = "¤ng Giµ Noel (nhá)", tbProp={6,1,3077,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1, EVENT_LOG_TITLE, "GhepNguoiTuyet(nho)ThanhCong")
+			PlayerFunLib:GetItem({szName = "¤ng Giµ Noel (nhá)", tbProp={6,1,3077,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepNguoiTuyet(nho)ThanhCong")
 		end
 	end
 end
@@ -266,7 +246,7 @@ function pActivity:UseXmasPerson_L()
 		[700] = {nExp=60000000,},
 		[800] = {nExp=100000000,},
 	}
-	--Bæ sung phÇn th­ëng ®¹t mèc sö dông ng­êi tuyÕt lín -  - 20111129
+	--Bæ sung phÇn th­ëng ®¹t mèc sö dông ng­êi tuyÕt lín - Modified By DinhHQ - 20111129
 	local nCount = self:GetTask(TSK_XMAS_PERSON_L_LIMIT) + 1
 	if tbExtAward[nCount] then
 		tbAwardTemplet:Give(tbExtAward[nCount], 1 , {EVENT_LOG_TITLE, tbUseLog[nCount]})
@@ -287,58 +267,15 @@ function pActivity:UseXmasGift()
 end
 
 function pActivity:UseXmasCake()
-	-- local tbAward = 
-	-- {
-	-- 	nExp=500000,
-	-- }
+	local tbAward = 
+	{
+		nExp=500000,
+	}
 	local tbUseLog = {
-		[10000] = "SuDung10000BanhGiangSinh",
-		[20000] = "SuDung20000BanhGiangSinh",
-		[30000] = "SuDung30000BanhGiangSinh",
-		[40000] = "SuDung40000BanhGiangSinh",
-		[50000] = "SuDung50000BanhGiangSinh",
+		[1000] = "SuDung1000BanhGiangSinh",
 		}
 		
-	-- self:GiveItemAward(tbAward, tbUseLog, "UseXmasCake", TSK_XMAS_CAKE_LIMIT)	
-
-	local tbItemAward = {
-		{szName="§iÓm Kinh NghiÖm",nExp=10000000,nRate=35},
-		{szName="§iÓm Kinh NghiÖm",nExp=20000000,nRate=20},
-		{szName="§iÓm Kinh NghiÖm",nExp=30000000,nRate=6},
-		{szName="§iÓm Kinh NghiÖm",nExp=50000000,nRate=5},
-		{szName="Ng©n L­îng",nJxb=100000,nRate=10},
-		{szName="Ng©n L­îng",nJxb=200000,nRate=5},
-		{szName="Tói m¶nh vôn HKMP",tbProp={6,1,4900,1,0,0},nCount=1,nRate=2},
-		{szName="Thiªn s¬n  B¶o Lé",tbProp={6,1,72,1,0,0},nCount=1,nRate=1},
-		{szName="Tiªn Th¶o Lé (x3)",tbProp={6,1,4887,1,0,0},nCount=1,nRate=1},
-		{szName="Tiªn Th¶o Lé (x4)",tbProp={6,1,4888,1,0,0},nCount=1,nRate=1},
-		{szName="QuÕ Hoa Töu",tbProp={6,1,125,1,0,0},nCount=1,nRate=1},
-		{szName="Lam Thñy Tinh",tbProp={4,238,1,1,0,0},nRate=2.2},
-		{szName="Tö Thñy Tinh",tbProp={4,239,1,1,0,0},nRate=2.2},
-		{szName="Lôc Thñy Tinh",tbProp={4,240,1,1,0,0},nRate=2.2},
-		{szName="Tinh Hång B¶o Th¹ch",tbProp={4,353,1,1,0,0},nRate=1},
-		{szName="M· bµi - XÝch thè", tbProp={6,1,2328,1,0,0},nRate=0.01,nExpiredTime=43200},
-		{szName="M· bµi - §Ých L«", tbProp={6,1,2329,1,0,0},nRate=0.01,nExpiredTime=43200},
-		{szName="M· bµi - TuyÖt ¶nh", tbProp={6,1,2330,1,0,0},nRate=0.01,nExpiredTime=43200},	
-		{szName="M· bµi - ¤ V©n §¹p TuyÕt", tbProp={6,1,2331,1,0,0},nRate=0.01,nExpiredTime=43200},
-		{szName="M· bµi - ChiÕu D¹ Ngäc S­ Tö", tbProp={6,1,2332,1,0,0},nRate=0.01,nExpiredTime=43200},
-		{szName="Nhu T×nh Phông Nghi Giíi ChØ ",nCount=1,nQuality=1,tbProp={0,192},nRate=0.1},
-		{szName="Nhu T×nh Thôc N÷ H¹ng Liªn",nCount=1,nQuality=1,tbProp={0,191},nRate=0.1},
-		{szName="HiÖp Cèt §a T×nh Hoµn",nCount=1,nQuality=1,tbProp={0,187},nRate=0.1},
-		{szName="HiÖp Cèt §an T©m Giíi",nCount=1,nQuality=1,tbProp={0,188},nRate=0.1},
-		{szName="Nhu T×nh TuÖ T©m Ngäc Béi",nCount=1,nQuality=1,tbProp={0,193},nRate=0.05},
-		{szName="HiÖp Cèt ThiÕt HuyÕt Sam",nCount=1,nQuality=1,tbProp={0,186},nRate=0.05},
-		{szName="Tói Ng©n l­îng",tbProp={6,1,4892,1,0,0,},nRate=0.01},
-		{szName="Vâ L©m MËt TÞch",tbProp={6,1,26,1,0,0},nCount=1,nRate=0.01},
-		{szName="TÈy Tñy Kinh",tbProp={6,1,22,1,0,0},nCount=1,nRate=0.01},
-	}
-	
-	tbAwardTemplet:Give(tbItemAward, 1 , {EVENT_LOG_TITLE, "SuDungBanhGiangSinh"})
-	local nCount = self:GetTask(TSK_XMAS_CAKE_LIMIT) + 1
-	self:SetTask(TSK_XMAS_CAKE_LIMIT, nCount)
-	if tbUseLog[nCount] then
-		tbLog:PlayerActionLog(tbUseLog[nCount], EVENT_LOG_TITLE)
-	end
+	self:GiveItemAward(tbAward, tbUseLog, "UseXmasCake", TSK_XMAS_CAKE_LIMIT)	
 end
 
 function pActivity:PlayerOnLogin()
@@ -360,7 +297,7 @@ function pActivity:CheckTimeGetCompensation()
 	end
 	return 1
 end
---Ho¹t ®éng thø 3 -  - 20111215
+--Ho¹t ®éng thø 3 - Modified By DinhHQ - 20111215
 function pActivity:CheckTimeGetFreeExp()
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nNowDate < 201112240000 or nNowDate >= 201112252400 then
@@ -373,7 +310,7 @@ end
 function pActivity:UseXmasPerson_Pink()
 	local nUsedCount = GetTask(2916)
 	local nCurCount = nUsedCount + 1
-	if nCurCount > 50000 then
+	if nCurCount > 1500 then
 		Talk(1, "", "Sö dông vËt phÈm ®¹t giíi h¹n, kh«ng thÓ sö dông thªm.")
 		return nil
 	end
@@ -382,120 +319,66 @@ function pActivity:UseXmasPerson_Pink()
 		return nil
 	end
 	local tbExpAward = {
-		[1] = {szName = "§iÓm kinh nghiÖm", nExp = 10e6},
-		-- [2] = {{szName="Ng«i Sao",tbProp={6,1,3081,1,0,0},nCount=1,nRate=40, nExpiredTime = EventNoel2011.ItemExpiredTime},},
+		[1] = {szName = "§iÓm kinh nghiÖm", nExp = 6e6},
+		[2] = {{szName="Ng«i Sao",tbProp={6,1,3081,1,0,0},nCount=1,nRate=40, nExpiredTime = 20120101},},
 	}
 	tbAwardTemplet:Give(tbExpAward, 1 , {EVENT_LOG_TITLE, "SuDungOngGiaNoelHong"})
 	local tbBonusAward = {
-		-- [100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 5e6}, "PhanThuongSuDung100OngGiaNoelHong"},
-		-- [200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung200OngGiaNoelHong"},
-		-- [300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung300OngGiaNoelHong"},
-		-- [400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung400OngGiaNoelHong"},
-		-- [500] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung500OngGiaNoelHong"},
-		-- [600] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung600OngGiaNoelHong"},
-		-- [700] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung700OngGiaNoelHong"},
-		-- [800] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung800OngGiaNoelHong"},
-		-- [900] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung900OngGiaNoelHong"},
-		-- [1000] = {{szName = "MÆt n¹ V­¬ng Gi¶", tbProp = {0,11,561,1,0,0}, nExpiredTime = 20160, nCount=1}, "PhanThuongSuDung1000OngGiaNoelHong"},
-		-- [1100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1100OngGiaNoelHong"},
-		-- [1200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1200OngGiaNoelHong"},
-		-- [1300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1300OngGiaNoelHong"},
-		-- [1400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 50e6}, "PhanThuongSuDung1400OngGiaNoelHong"},
-		-- [1500] = {{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1}, "PhanThuongSuDung1500OngGiaNoelHong"},
-		-- [5000] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung5000OngGiaNoelHong"},
-		[10000] = {{szName="Phi phong L¨ng V©n",nQuality=1,tbProp={0,3465},nCount = 1}, "PhanThuongSuDung10000OngGiaNoelHong"},
-		[20000] = {{szName="Phi phong TuyÖt ThÕ",nQuality=1,tbProp={0,3466},nCount = 1}, "PhanThuongSuDung20000OngGiaNoelHong"},
-		[30000] = {{szName="Phi phong cÊp Ph¸ Qu©n",nQuality=1,tbProp={0,3467},nCount = 1}, "PhanThuongSuDung30000OngGiaNoelHong"},
-		[40000] = {{szName="Phi phong Ngao tuyÕt ( DÞch chuyÓn tøc thêi )",nQuality=1,tbProp={0,3468},nCount = 1}, "PhanThuongSuDung40000OngGiaNoelHong"},
-		[50000] = {{szName="Phi phong Ng¹o TuyÕt ( X¸c suÊt hãa gi¶i s¸t th­¬ng )",nQuality=1,tbProp={0,3469},nCount = 1}, "PhanThuongSuDung50000OngGiaNoelHong"},
+		[100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 5e6}, "PhanThuongSuDung100OngGiaNoelHong"},
+		[200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung200OngGiaNoelHong"},
+		[300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung300OngGiaNoelHong"},
+		[400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung400OngGiaNoelHong"},
+		[500] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung500OngGiaNoelHong"},
+		[600] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung600OngGiaNoelHong"},
+		[700] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung700OngGiaNoelHong"},
+		[800] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung800OngGiaNoelHong"},
+		[900] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung900OngGiaNoelHong"},
+		[1000] = {{szName = "MÆt n¹ V­¬ng Gi¶", tbProp = {0,11,561,1,0,0}, nExpiredTime = 20160, nCount=1}, "PhanThuongSuDung1000OngGiaNoelHong"},
+		[1100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1100OngGiaNoelHong"},
+		[1200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1200OngGiaNoelHong"},
+		[1300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1300OngGiaNoelHong"},
+		[1400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 50e6}, "PhanThuongSuDung1400OngGiaNoelHong"},
+		[1500] = {{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1}, "PhanThuongSuDung1500OngGiaNoelHong"},
 	}
 	if tbBonusAward[nCurCount] then
 		tbAwardTemplet:Give(tbBonusAward[nCurCount][1], 1 , {EVENT_LOG_TITLE, tbBonusAward[nCurCount][2]})
 		Msg2Player(format("Chóc mõng c¸c h¹ sö dông ®Õn %d vËt phÈm ¤ng giµ Noel hång, nhËn ®­îc phÇn th­ëng %s", nCurCount, tbBonusAward[nCurCount][1].szName))
 	end
 	local tbItemAward = {
-		-- {szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.1},
-		-- {szName="Kim ¤ Kim Bµi",tbProp={6,1,3001,1,0,0},nCount=1,nRate=0.3},
-		-- {szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.2},
-		-- {szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.2},
-		-- {szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.2},
-		-- {szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.2},
-		-- {szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.1},
-		-- {szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.2},
-		-- {szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.2},
-		-- {szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.1},
-		-- {szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.1},
-		-- {szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.05},
-		-- {szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.3},
-		-- {szName="PhØ Thóy Chi B¶o",tbProp={6,1,3003,1,0,0},nCount=1,nRate=0.2},
-		-- {szName="Phong V©n Chi B¶o",tbProp={6,1,3004,1,0,0},nCount=1,nRate=0.03},
-		-- {szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
-		-- {szName="B¹ch C©u Hoµn ®Æc biÖt",tbProp={6,1,1157,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
-		-- {szName="KÝch C«ng Trî Lùc Hoµn",tbProp={6,1,2952,1,0,0},nCount=1,nRate=1.2},
-		-- {szName="Ngäc Qu¸n",tbProp={6,1,2311,1,0,0},nCount=1,nRate=1.5},
-		-- {szName="Phiªn Vò ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=259200},
-		-- {szName="Phiªn Vò ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=129600},
-		-- {szName="¢m D­¬ng Ho¹t HuyÕt §¬n",tbProp={6,1,2953,1,0,0},nCount=1,nRate=1.2},
-		-- {szName="Håi thiªn t¸i t¹o lÔ bao",tbProp={6,1,2527,1,0,0},nCount=1,nRate=1.6},
-		-- {szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3211},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
-		-- {szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3221},nCount=1,nRate=0.11,nQuality = 1,nExpiredTime=10080,},
-		-- {szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.1,nExpiredTime=43200},
-		-- {szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=20},
-		-- {szName = "§iÓm Kinh NghiÖm", nExp=5000000,nRate=40},
-		-- {szName = "§iÓm Kinh NghiÖm", nExp=8000000,nRate=13},
-		-- {szName = "§iÓm Kinh NghiÖm", nExp=10000000,nRate=10},
-		-- {szName = "§iÓm Kinh NghiÖm", nExp=15000000,nRate=5},
-		-- {szName = "§iÓm Kinh NghiÖm", nExp=20000000,nRate=1},
-		-- {szName = "§iÓm Kinh NghiÖm", nExp=50000000,nRate=0.5},
-		-- {szName = "§iÓm Kinh NghiÖm", nExp=100000000,nRate=0.01},
-		{szName="§iÓm Kinh NghiÖm",nExp=10000000,nRate=23},
-		{szName="§iÓm Kinh NghiÖm",nExp=20000000,nRate=14},
-		{szName="§iÓm Kinh NghiÖm",nExp=30000000,nRate=10},
-		{szName="§iÓm Kinh NghiÖm",nExp=50000000,nRate=4},
-		{szName="§iÓm Kinh NghiÖm",nExp=80000000,nRate=4},
-		-- {szName="§iÓm Kinh NghiÖm",nExp=500000000,nRate=1},
-		{szName="Ng©n L­îng",nJxb=100000,nRate=10},
-		{szName="Ng©n L­îng",nJxb=200000,nRate=5},
-		{szName="Tói m¶nh vôn HKMP",tbProp={6,1,4900,1,0,0},nCount=1,nRate=4},
-		{szName="Phi Phong",tbProp={6,1,15,1,0,0},nCount=1,nRate=1},
-		{szName="Thiªn s¬n  B¶o Lé",tbProp={6,1,72,1,0,0},nCount=1,nRate=1},
-		{szName="Tiªn Th¶o Lé (x3)",tbProp={6,1,4887,1,0,0},nCount=1,nRate=1},
-		{szName="Tiªn Th¶o Lé (x4)",tbProp={6,1,4888,1,0,0},nCount=1,nRate=1},
-		{szName="QuÕ Hoa Töu",tbProp={6,1,125,1,0,0},nCount=1,nRate=1},
-		{szName="Lam Thñy Tinh",tbProp={4,238,1,1,0,0},nRate=5},
-		{szName="Tö Thñy Tinh",tbProp={4,239,1,1,0,0},nRate=5},
-		{szName="Lôc Thñy Tinh",tbProp={4,240,1,1,0,0},nRate=5},
-		{szName="Tinh Hång B¶o Th¹ch",tbProp={4,353,1,1,0,0},nRate=2},
-		{szName="M· bµi - XÝch thè", tbProp={6,1,2328,1,0,0},nRate=0.05,nExpiredTime=43200},
-		{szName="M· bµi - §Ých L«", tbProp={6,1,2329,1,0,0},nRate=0.05,nExpiredTime=43200},
-		{szName="M· bµi - TuyÖt ¶nh", tbProp={6,1,2330,1,0,0},nRate=0.05,nExpiredTime=43200},	
-		{szName="M· bµi - ¤ V©n §¹p TuyÕt", tbProp={6,1,2331,1,0,0},nRate=0.05,nExpiredTime=43200},
-		{szName="M· bµi - ChiÕu D¹ Ngäc S­ Tö", tbProp={6,1,2332,1,0,0},nRate=0.05,nExpiredTime=43200},
-		{szName="M· bµi - Phi V©n", tbProp={6,1,2396,1,0,0},nRate=0.01,nExpiredTime=43200},	
-		-- {szName="Nhu T×nh Phông Nghi Giíi ChØ ",nCount=1,nQuality=1,tbProp={0,192},nRate=0.1},
-		-- {szName="Nhu T×nh Thôc N÷ H¹ng Liªn",nCount=1,nQuality=1,tbProp={0,191},nRate=0.1},
-		-- {szName="Nhu T×nh TuÖ T©m Ngäc Béi",nCount=1,nQuality=1,tbProp={0,193},nRate=0.05},
-		{szName="Nhu T×nh C©n Quèc Nghª Th­êng",nCount=1,nQuality=1,tbProp={0,190},nRate=0.01},
-		-- {szName="HiÖp Cèt §a T×nh Hoµn",nCount=1,nQuality=1,tbProp={0,187},nRate=0.1},
-		-- {szName="HiÖp Cèt §an T©m Giíi",nCount=1,nQuality=1,tbProp={0,188},nRate=0.1},
-		-- {szName="HiÖp Cèt ThiÕt HuyÕt Sam",nCount=1,nQuality=1,tbProp={0,186},nRate=0.05},
-		-- {szName="HiÖp Cèt T×nh ý KÕt",nCount=1,nQuality=1,tbProp={0,189},nRate=0.05},
-		{szName="§Þnh Quèc Thanh Sa Tr­êng Sam",nCount=1,nQuality=1,tbProp={0,159},nRate=0.05},
-		{szName="§Þnh Quèc ¤ Sa Ph¸t Qu¸n",nCount=1,nQuality=1,tbProp={0,160},nRate=0.05},
-		{szName="§Þnh Quèc XÝch Quyªn NhuyÔn Ngoa",nCount=1,nQuality=1,tbProp={0,161},nRate=0.05},
-		{szName="§Þnh Quèc Tö §»ng Hé uyÓn",nCount=1,nQuality=1,tbProp={0,162},nRate=0.05},
-		{szName="§Þnh Quèc Ng©n Tµm Yªu ®¸i",nCount=1,nQuality=1,tbProp={0,163},nRate=0.05},
-		{szName="An Bang B¨ng Tinh Th¹ch H¹ng Liªn",nCount=1,nQuality=1,tbProp={0,164},nRate=0.005},
-		{szName="An Bang Kª HuyÕt Th¹ch Giíi ChØ ",nCount=1,nQuality=1,tbProp={0,167},nRate=0.01},
-		{szName="An Bang Cóc Hoa Th¹ch ChØ hoµn",nCount=1,nQuality=1,tbProp={0,165},nRate=0.01},
-		{szName="An Bang §iÒn Hoµng Th¹ch Ngäc Béi",nCount=1,nQuality=1,tbProp={0,166},nRate=0.01},
-		{szName="Tói Ng©n l­îng",tbProp={6,1,4892,1,0,0,},nRate=0.25},
-		{szName="Vâ L©m MËt TÞch",tbProp={6,1,26,1,0,0},nCount=1,nRate=0.2},
-		{szName="TÈy Tñy Kinh",tbProp={6,1,22,1,0,0},nCount=1,nRate=0.2},
-		{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2339,1,0,0},nCount=1,nRate=0.5,nExpiredTime=43200},
-		{szName="TÝn vËt m«n ph¸i",tbProp={6,1,1670,1,0,0},nCount=0.05,nRate=0.01},
-		{szName="NhÊt Kû Cµn Kh«n Phï",tbProp={6,1,2126,1,0,0},nCount=1,nRate=0.01,nExpiredTime=43200},
-		{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.01,nExpiredTime=43200},
+		{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.1},
+		{szName="Kim ¤ Kim Bµi",tbProp={6,1,3001,1,0,0},nCount=1,nRate=0.3},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.1},
+		{szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.1},
+		{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.1},
+		{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.05},
+		{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.3},
+		{szName="PhØ Thóy Chi B¶o",tbProp={6,1,3003,1,0,0},nCount=1,nRate=0.2},
+		{szName="Phong V©n Chi B¶o",tbProp={6,1,3004,1,0,0},nCount=1,nRate=0.03},
+		{szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
+		{szName="B¹ch C©u Hoµn ®Æc biÖt",tbProp={6,1,1157,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
+		{szName="KÝch C«ng Trî Lùc Hoµn",tbProp={6,1,2952,1,0,0},nCount=1,nRate=1.2},
+		{szName="Ngäc Qu¸n",tbProp={6,1,2311,1,0,0},nCount=1,nRate=1.5},
+		{szName="Phiªn Vò ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=259200},
+		{szName="Phiªn Vò ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=129600},
+		{szName="¢m D­¬ng Ho¹t HuyÕt §¬n",tbProp={6,1,2953,1,0,0},nCount=1,nRate=1.2},
+		{szName="Håi thiªn t¸i t¹o lÔ bao",tbProp={6,1,2527,1,0,0},nCount=1,nRate=1.6},
+		{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3211},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
+		{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3221},nCount=1,nRate=0.11,nQuality = 1,nExpiredTime=10080,},
+		{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.1,nExpiredTime=43200},
+		{szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=20},
+		{szName = "§iÓm Kinh NghiÖm", nExp=5000000,nRate=40},
+		{szName = "§iÓm Kinh NghiÖm", nExp=8000000,nRate=13},
+		{szName = "§iÓm Kinh NghiÖm", nExp=10000000,nRate=10},
+		{szName = "§iÓm Kinh NghiÖm", nExp=15000000,nRate=5},
+		{szName = "§iÓm Kinh NghiÖm", nExp=20000000,nRate=1},
+		{szName = "§iÓm Kinh NghiÖm", nExp=50000000,nRate=0.5},
+		{szName = "§iÓm Kinh NghiÖm", nExp=100000000,nRate=0.01},
 	}
 	tbAwardTemplet:Give(tbItemAward, 1 , {EVENT_LOG_TITLE, "SuDungOngGiaNoelHong"})
 	

@@ -5,7 +5,7 @@ Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\missions\\basemission\\lib.lua")
 Include("\\script\\activitysys\\config\\29\\head.lua")
 
---Fix bug missing LanHuan positions -  - 20110425
+--Fix bug missing LanHuan positions - Modified by DinhHQ - 20110425
 tbLanHuanCaoPos = 
 	{
 		{153,1745,3213,},
@@ -74,7 +74,7 @@ local _GetFruit = function(nNpcIdx, dwNpcId)
 end
 
 function _GenLanHuaCao(nNpcParam)
---Fix bug missing LanHuan positions -  - 20110425
+--Fix bug missing LanHuan positions - Modified by DinhHQ - 20110425
 	for i=1, 1 do
 		local nMapId, nPosX, nPosY = unpack(%tbLanHuanCaoPos[nNpcParam])
 		%tbLanHuaCao.tbNpcParam[1] = nNpcParam

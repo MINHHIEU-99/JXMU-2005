@@ -1,1 +1,0 @@
-[Normal]Item: LiÖt T©m chïy(0,0,0,4,3,7), unbind = 0, bind = 0

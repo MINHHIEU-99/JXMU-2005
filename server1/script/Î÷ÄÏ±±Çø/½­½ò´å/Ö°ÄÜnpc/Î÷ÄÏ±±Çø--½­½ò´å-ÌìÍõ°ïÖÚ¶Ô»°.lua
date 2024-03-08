@@ -5,7 +5,7 @@
 -- Update：Dan_Deng(2003-09-05) 重新整理任务变量控制
 -- Update: Dan Deng(2003-10-30) 重新打开“根据技能重设任务变量”功能
 
-Include("\\script\\npcmonphai\\detuthienvuong.lua")
+Include("\\script\\global\\各派接引弟子\\天王接引弟子.lua")
 
 function main(sel)
 	default_talk()

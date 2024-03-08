@@ -3,24 +3,20 @@ Include("\\script\\lib\\pay.lua")
 
 local tbData = 
 {
-	-- ["6,1,2213"] = {nTaskId = 1803, nExp = 50000000},
-	-- ["6,1,2214"] = {nTaskId = 1804, nExp = 120000000},
-	-- ["6,1,2215"] = {nTaskId = 1805, nExp = 200000000},
-	-- ["6,1,2216"]= {nTaskId = 1806, nExp = 280000000},
-	-- ["6,1,2217"] = {nTaskId = 1807, nExp = 400000000},
+	["6,1,2213"] = {nTaskId = 1803, nExp = 50000000},
+	["6,1,2214"] = {nTaskId = 1804, nExp = 120000000},
+	["6,1,2215"] = {nTaskId = 1805, nExp = 200000000},
+	["6,1,2216"]= {nTaskId = 1806, nExp = 280000000},
+	["6,1,2217"] = {nTaskId = 1807, nExp = 400000000},
 
 }
 
---TaskId ÓÃ·¨£¬ 0~15Î»¼ÇÂ¼µÚ¼¸½ìÁªÈü£¬16~32Î»¼ÇÂ¼Ê¹ÓÃ´ÎÊý
 local _AddBitTask = function (nTaskId, nBitPos, nBitCount, nValue)
 	local nOldValue = GetBitTask(nTaskId, nBitPos, nBitCount)
 	SetBitTask(nTaskId, nBitPos, nBitCount, nOldValue + nValue)
 end
 
 function main(nItemIndex)
-do 
-	return Msg2Player("VËt phÈm ®· bÞ hñy bëi ng­êi qu¶n lý!")
-end
 	local nG,nD,nP = GetItemProp(nItemIndex)
 	local nMaxCount = 5
 	local szKey = format("%d,%d,%d", nG,nD,nP)

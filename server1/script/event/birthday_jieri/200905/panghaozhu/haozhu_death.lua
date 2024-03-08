@@ -96,7 +96,7 @@ function OnDeath( nNpcIndex )
 		return
 	end
 	
-	if (tbBirthday0905.tbTask:get_shoulie_count() >= 10) then
+	if (tbBirthday0905.tbTask:get_shoulie_count() >= 20) then
 		Msg2Player("H«m nay ®· s¨n b¾t 20 NhÝm bÐo ph× råi, ngµy mai h·y ®Õn l¹i nhÐ.");
 		return
 	end
@@ -107,7 +107,7 @@ function OnDeath( nNpcIndex )
 	%tbDropItem:DropItemByList(%tbAwardItem, "Birthday_0905_PangHaozhu_death", SubWorldIdx2ID(nMapIndex),x, y, nSeries);
 	
 	if (tbBirthday0905.tbTask:get_task(tbBirthday0905.tbTask.tsk_shoulie_curexp) < tbBirthday0905.tbTask.nmaxexpfromshoulie) then
-		tl_addPlayerExp(1000000);
+		tl_addPlayerExp(3000000);
 		tbBirthday0905.tbTask:add_task(tbBirthday0905.tbTask.tsk_shoulie_curexp, 3000);
 	end
 	

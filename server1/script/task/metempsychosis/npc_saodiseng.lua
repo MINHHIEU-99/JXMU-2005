@@ -32,7 +32,7 @@ function zhuansheng_ondialog()
 	
 	local n_date = tonumber(GetLocalDate("%Y%m%d"));
 	
-	if (n_transcount == 0 and n_level == 200 and (n_date >= ZHUANSHENG_ITEM_BEGIN and n_date <= ZHUANSHENG_ITEM_ENDLE)) then --ÐèÒª¼ÓÈëÊ±¼äÏÞÖÆ
+	if (n_transcount == 0 and n_level == 199 and (n_date >= ZHUANSHENG_ITEM_BEGIN and n_date <= ZHUANSHENG_ITEM_ENDLE)) then --ÐèÒª¼ÓÈëÊ±¼äÏÞÖÆ
 		tinsert(tbOpp, "Ta muèn t×m hiÓu vÒ B¾c §Èu Tiªn §¬n/zhuansheng_xiandan");
 	end
 	

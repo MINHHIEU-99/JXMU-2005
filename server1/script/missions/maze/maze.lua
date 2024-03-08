@@ -1,4 +1,3 @@
-Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\lib\\common.lua")
 Include("\\script\\lib\\timerlist.lua")
 Include("\\script\\shop\\shop_checkmap.lua")
@@ -404,8 +403,6 @@ function Maze:FinalAward(room)
 		-- ∑…ÀŸÕË
 		--player:AddItem(6, 0, 6, 1, 0, 0)
 		--self:NotifyAllMates(format("ChÛc mıng %s nhÀn Æ≠Óc Phi TËc hoµn!", player:GetName()))
-		-- Ph«n th≠Îng khi hoµn thµnh v≠Ót ∂i Ki’m Gia - by AloneScript
-		tbAwardTemplet:GiveAwardByList({szName="Hµnh Hi÷p L÷nh", tbProp={6,1,2566,1,0,0}, nCount=100}, "Ph«n th≠Îng hoµn thµnh v≠Ót ∂i Ki’m Gia")
 	end
 end
 

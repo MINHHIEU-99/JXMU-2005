@@ -156,7 +156,7 @@ tbConfig[9] = --“ª∏ˆœ∏Ω⁄
 	tbActition = 
 	{
 		{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,2743,1,0,0},},9,"100"} },
-		--ßi“u chÿnh ph«n th≠Îng r¨i ra tı boss thu˚ t∆c Æπi Æ«u l‹nh -  - 20120523
+		--ßi“u chÿnh ph«n th≠Îng r¨i ra tı boss thu˚ t∆c Æπi Æ«u l‹nh - Modified By DinhHQ - 20120523
 		{"ThisActivity:VnFFBigBossDrop",	{nil}}
 	},
 }
@@ -176,7 +176,7 @@ tbConfig[10] = --“ª∏ˆœ∏Ω⁄
 	tbActition = 
 	{
 		{"NpcFunLib:DropSingleItem",	{{tbProp={6,1,2743,1,0,0},},3,"100"} },
-		--ßi“u chÿnh ph«n th≠Îng r¨i ra tı boss thu˚ t∆c Æπi Æ«u l‹nh -  - 20120523
+		--ßi“u chÿnh ph«n th≠Îng r¨i ra tı boss thu˚ t∆c Æπi Æ«u l‹nh - Modified By DinhHQ - 20120523
 		{"ThisActivity:VnFFBigBossDrop",	{nil},}
 	},
 }

@@ -1,4 +1,3 @@
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 function GetSkillLevelData(levelname, data, level)
 
 if (levelname == "lifereplenish_v") then
@@ -20,10 +19,10 @@ end;
 
 function Getlifereplenish_v(level)
 result = floor(level/2)+1
-return Param2String(TocDoHoiPhucMauVongSangHoTro,20,0)
+return Param2String(result,20,0)
 end;
 
 function Getmanareplenish_v(level)
 result = floor(level/3)+1
-return Param2String(TocDoHoiPhucManaVongSangHoTro,25,0)
+return Param2String(result,25,0)
 end;

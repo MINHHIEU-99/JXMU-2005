@@ -33,18 +33,7 @@ local Def =
 		"proc_protocol",
 		{OBJTYPE_NUMBER, OBJTYPE_NUMBER}
 	},
-	{
-		"emSCRIPT_PROTOCOL_BINGO_MACHINE",
-		"\\script\\event\\bingo_machine\\bingo_machine_gs.lua",
-		"BingoMachine:ProcProtocol",
-		{OBJTYPE_STRING, OBJTYPE_NUMBER, OBJTYPE_NUMBER},
-	},
-	{
-		"emSCRIPT_PROTOCOL_BINGO_GET_COIN",
-		"\\script\\event\\bingo_machine\\bingo_machine_gs.lua",
-		"BingoMachine:GetCoin",
-		{OBJTYPE_STRING},
-	},
+	
 	{
 		"emSCRIPT_PROTOCAL_HuoYueDu_Award",
 		"\\script\\huoyuedu\\award.lua",
@@ -71,6 +60,12 @@ local Def =
 		{OBJTYPE_NUMBER, OBJTYPE_TABLE},
 		
 	},
+	--{
+	--	"emSCRIPT_PROTOCOL_ANTICLIENT",
+	--	"\\script\\global\\anti_client.lua",
+	--	"pPlayerHandle:ProcessProtocol",
+	--	{OBJTYPE_STRING,OBJTYPE_STRING},
+	--},	
 }
 
 ScriptProtocol:RegProtocolSet(Def)

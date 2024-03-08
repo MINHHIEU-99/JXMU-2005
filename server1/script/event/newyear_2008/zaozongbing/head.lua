@@ -5,7 +5,7 @@ newyear2008_makezongzi = {}
 tbclassname = newyear2008_makezongzi
 tbclassname.TITLE = "L祄 b竛h ch璶g"
 tbclassname.DA_START = 0802020000	--开始时间
-tbclassname.DA_END 	= 2003022400	--结束时间
+tbclassname.DA_END 	= 0803022400	--结束时间
 tbclassname.LIMIT_LEVEL = 50		--等级限制
 
 --月饼制作需要材料

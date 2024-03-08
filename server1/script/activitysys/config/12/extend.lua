@@ -1,54 +1,57 @@
 Include("\\script\\activitysys\\config\\12\\head.lua")
+Include("\\script\\activitysys\\config\\12\\variables.lua")
 Include("\\script\\activitysys\\npcfunlib.lua")
+Include("\\script\\activitysys\\g_activity.lua");
 Include("\\script\\lib\\log.lua")
 Include("\\script\\lib\\awardtemplet.lua")
-Include("\\script\\activitysys\\config\\12\\variables.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
-
+-----------------------------------------------
 pActivity.nPak = curpack()
-MAX_TASK_COUNT = 2
 pActivity.tbTaskList = {}
 pActivity.nAutoId = 0
 pActivity.nTaskCount = 0
 pActivity.tbWinners = {}
 
-
+local MAX_TASK_COUNT = 20
 
 function pActivity:GiveTask()
-
-	local szName = GetName()
-
-	if self.nTaskCount >= MAX_TASK_COUNT then
+local szName = GetName()
+local nHour = tonumber(GetLocalDate("%H%M"))
+	-- if( nHour < 0900 or nHour > 1855) then
+		-- Talk(1, "", "Thêi gian nhËn VËn Tiªu tõ 09:00 vµ kÕt thóc vµo lóc 18:55 H«m Sau, v× s·y ra chiÕn biÕn. Ngµy mai ng­¬i h·y quay l¹i.")
+		-- return
+	-- end
+	
+	if self.nTaskCount >= %MAX_TASK_COUNT then
 		return Talk(1, "", "Ng­êi ®i chuyÓn hµng nhiÒu qu¸, xin ®¹i hiÖp h·y chê ®îi.")
 	end
-
+	
 	for k,v in self.tbTaskList do
 		if v.szPlayerName == szName then
 			return Talk(1, "", "Ng­¬i ®· tiÕp nhËn nhiÖm vô, kh«ng ®­îc nhËn tiÕp.")
 		end
 	end
-
+	
 	for k,v in self.tbWinners do
 		if k == szName then
 			return Talk(1, "", "PhÇn th­ëng lÇn tr­íc ng­¬i vÉn ch­a nhËn.")
 		end
 	end
-
+	
 	if self.pCompose:Compose() == 0 then
-		return
+		return 
 	end
-
+	
 	local pTask = {}
 	pTask.nId = self:NewId()
 	pTask.szPlayerName = szName
 	pTask.nState = 0
 	local nMapId = GetWorldPos()
-	local szNpcName = format("Tiªu xa Cao CÊp cña %s", szName)
-
+	local szNpcName = format("%s Tiªu Xa Cao CÊp", szName),
 	DynamicExecute("\\script\\activitysys\\config\\12\\carriage.lua", "add_carriage", nMapId, pTask.nId, szNpcName, GetCurCamp())
+	Msg2SubWorld("<color=green>Chóc Mõng <color=yellow>"..GetName().."<color> §· NhËn Tiªu Thµnh C«ng T¹i Ph­îng T­êng.<color>")
+	AddGlobalNews("<color=green>Chóc Mõng <color=yellow>"..GetName().."<color> §· NhËn Tiªu Thµnh C«ng T¹i Ph­îng T­êng.<color>")
 	self:AddEscortTask(pTask.nId, pTask)
-
-	return
+	return 
 end
 
 function pActivity:NewId()
@@ -109,64 +112,63 @@ function pActivity:IsWinner()
 		Talk(1, "", "§¹i hiÖp vÉn ch­a giao hµng cho ta, nhanh ®i chuyÓn hµng ®Õn ®©y ®i.")
 		return
 	end
-
+	
 	return 1
 end
 
 function pActivity:CheckCamp(nCamp, szFailMsg)
 
 	nLevel = lib:NumberParamTrans(nCamp)
-
+	
 	if GetCurCamp() ~= nCamp then
 		return 1
 	elseif szFailMsg then
 		lib:ShowMessage(szFailMsg)
 	end
-
+	
 end
 
 function pActivity:ServerStart()
-	local tbNpcId = {1607, 1608, 1609}
-
+	local tbNpcId = {1607, 1608, 1609,740}
+	--local tbNpcId = {740, 1607, 1608, 1609, 583, 1365, 743}
+	
 	for i=1,getn(%MOSTER_POS) do
 		local nIndex = random(1, 3)
-		NpcFunLib:AddFightNpc({szName="GiÆc Cá",nNpcId=tbNpcId[nIndex],nLevel=60,bNoRevive=0},{%MOSTER_POS[i]})
+		NpcFunLib:AddFightNpc({szName="C­íp BiÓn",nNpcId=tbNpcId[nIndex],nLevel=95,bNoRevive=0},{%MOSTER_POS[i]})
 	end
-
-end
-
-
+	
+end 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function pActivity:GiveAward()
-	local tbAward = {
-		[1]={nExp_tl=30e6},
+	local tbAward = {	  
+        [1]={nExp_tl=2e9},
+        [2]={szName="Xu ",tbProp={4,417,1,1,0,0},nCount = 50 },
+        [3]={szName="Ng©n L­îng",nJxb=1000,nCount=50},
+        --[2]={szName="Xu ",tbProp={6,1,30332,1,1},nCount = 1 },
 	}
-	tbAwardTemplet:Give(tbAward, 1, {%EVENT_LOG_TITLE, "NhËn phÇn th­ëng tõ Th­¬ng Bu«n"})
-	if (GetTask(1309) == 0) then
-	-- tbAwardTemplet:GiveAwardByList({tbProp={6,1,4666,1,0,0},nCount =1,nExpiredTime=720,nBindState = -2}, "§¹t ®­îc phÇn th­ëng")
-	SetTask(1309,1)
-	end
+	tbAwardTemplet:Give(tbAward, 1, {%EVENT_LOG_TITLE, "NhËn phÇn th­ëng tõ Th­¬ng Bu«n"}) G_ACTIVITY:OnMessage("NhiemVuVanTieu");
 end
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local tbFormula = {
 	nWidth = 0,
 	nHeight = 0,
-	szComposeTitle = "Hé Tiªu LÖnh",
-	szFailMsg = "Ng­¬i kh«ng cã Hé Tiªu LÖnh"
+	szComposeTitle = "TiÒn §ång",
+	szFailMsg = "Muèn VËn ChuyÕn Hµng Nµy CÇn <color=yellow>5<color> TiÒn §ång §Æt C­îc §Ó §¶m B¶o Hµng Hãa Sau Khi Hoµn Thµnh Ta SÏ Hoµn L¹i Sè TiÒn §Æt C­îc Cho Ng­¬i Cã §ång ý Tham Gia ¸p Tiªu ChuyÕn Hµng Nµy Kh«ng...!"
 }
 
 tbFormula.tbMaterial = {
 	{
-	szName="Hé Tiªu LÖnh",
-	tbProp={6,1,4203},
-	nCount=1,
-	--pBindLimit = function(tbItem, nItemIndex)
-	--	if GetItemBindState(nItemIndex) == 0 then
-	--		return 1
-	--	end
-	--end
+	szName="TiÒn §ång",
+	tbProp={4,417,1,1,0,0},
+	nCount=5,
+	pBindLimit = function(tbItem, nItemIndex)
+		if GetItemBindState(nItemIndex) == 0 then
+			return 1
+		end
+	end
 	},
 }
-
-pActivity.pCompose = tbActivityCompose:new(tbFormula, "Giao Hé Tiªu LÖnh")
+	
+pActivity.pCompose = tbActivityCompose:new(tbFormula, "Giao TiÒn §ång")
 
 

@@ -420,15 +420,22 @@ function offlineCheckPermitRegion()
 			szDirection, nDistance = getDirection({nX, nY}, {nLimitX, nLimitY});
 			-- Èç¹û¾àÀëÈÎºÎÒ»µãĞ¡ÓÚ 10£¬ÔòËµÃ÷ÔÚ½ûÖ¹ÇøÓòÄÚ
 			if nDistance<=NUM_OFFLINE_PERMITREGION_MAX then
-			return 0; end;
+				return 0;
+			end;
 		end;
 		return 1;
 	else
-	return 1; end;
+		return 1;
+	end;
 end;
 
 
 function StallCheckPermitRegion()
+local knb= CalcEquiproomItemCount(4,1496,1,1);
+if knb>0 then
+Talk(1, "", "KNB kh«ng thÓ bµy b¸n")
+return
+end
 	if offlineCheckPermitRegion() == 1 then
 		return 1
 	else
@@ -438,14 +445,22 @@ end
 
 -- »ñµÃÒ»¸öÎ»ÖÃÏà¶ÔÓÚÍæ¼ÒÎ»ÖÃµÄ´óÌå·½Î»
 function getDirection(posOrigin, posTarget)
+	
 	local tbStr = {"T©y Nam", "Nam", "§«ng Nam", "§«ng", "§«ng B¾c", "b¾c ", "T©y B¾c", "T©y"};
+	
 	local nX	= posOrigin[2] - posTarget[2];
 	local nY	= posTarget[1] - posOrigin[1];
+	
 	local nDeg	= atan2(posOrigin[2] - posTarget[2], posTarget[1] - posOrigin[1]);
 	local nDirection = floor(nDeg/45+4.5);
+	
 	if (nDirection == 0) then
 		nDirection = 8;
 	end;
+	
 	-- ¾ßÌåµÄ¾àÀë£¬È¡ÕûÊı
 	local nDistance = floor(sqrt(nX*nX + nY*nY));
-return tbStr[nDirection], nDistance; end;
+	
+	return tbStr[nDirection], nDistance;
+	
+end;

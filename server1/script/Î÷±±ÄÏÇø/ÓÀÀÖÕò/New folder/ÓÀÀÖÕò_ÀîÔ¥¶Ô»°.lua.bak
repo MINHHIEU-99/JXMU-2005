@@ -1,0 +1,64 @@
+--description: ĞÂÊÖ´å_ÀîÔ¥
+--author: wangzg	
+--date: 2003/7/21
+--update 2003/7/25 yuanlan
+-- Update: Dan_Deng(2003-08-09)
+-- Update: Dan_Deng(2003-09-09) ĞŞ¸Ä×°±¸ÊôĞÔÉú³É·½Ê½
+-- Update: Dan_Deng(2003-09-20) ÎªºÎVSSÉÏÎ´¸üĞÂ£¿ÖØĞ´ĞŞ¸ÄÈÎÎñÁ÷³Ì
+
+Include("\\script\\global\\itemhead.lua")
+
+function main()
+	UTask_world69=GetTask(69)
+	if ((UTask_world69 == 0) and (GetLevel() >= 5)) then
+		Talk(3, "select", "°LMT62¦£¬ÒÂ´ø½¥¿íÖÕ²»»Ú£¬ÎªÒÁÏûµÃÈËã¾ã²","ÕâÎ»´ó¸ç£¬ÄãÓĞĞÄÉÏÈËÁË?","°¦£¬Ö»¿ÉÏ§Ëı´ÓÀ´²»¶ÔÎÒÓĞÈÎºÎ±íÊ¾£¬ÎªÊ²Ã´Õâ¸öÊÀ½çÉÏÓĞÎÒÕâÃ´±¯²ÒµÄÈË?")
+	elseif (UTask_world69 == 4) then
+		Talk(4,"W69_step2","´ºLMT63Ïã³öÒ»¸öÌá¸øÄã£ºÒÂ´ø½¥¿íÖÕ²»»Ú£¬Õâ¾äÊ«µÄ×÷ÕßÁøÓÀÓÖ½ĞÊ²Ã´?","ÎÒÊµÔÚÊÇÏë²»³öÀ´!","ÔõÃ´»áÕâÃ´¼òµ¥µÄÎÊÌâÒ²²»»á?","Õæ²»ºÃÒâË¼£¬Äã¿ÉÒÔ°ïÎÒÂğ?")
+	elseif (UTask_world69 == 8) then
+		Talk(2, "prise", "´LMT64ºÏã¹ÃÄïÒÑ¾­½ÓÊÜÁËÄãµÄĞÅÎï£¬»¹ÇëÄãµ½Ëı¼Ò×ö¿Í£¬¹§Ï²¹§Ï²!","Õâ¸ö½äÖ¸ÊÇÎÒµÄÒ»µãĞÄÒâ£¬ÇëÄãÊÕÏÂ£¡")
+	elseif (UTask_world69 == 2) then
+		Talk(1,"","LMT65Ëı½Ğ´ºÏã£¬×¡ÔÚÕò×ÓµÄ¶«±ß¡£Õâ°ÑºÉ»¨ÉÈÊÇÎÒµÄĞÅÎï£¬Âé·³Äã°ïÎÒ½»¸øËı.")
+	elseif (UTask_world41==10) then
+		Talk(1,"","´LMT66ºÏã¼ÈÎÂÈáÓÖÏÍ»İ£¬ÄÜÈ¢µ½ËıÊÇÊ²Ã´¶¼±È²»ÉÏµÄ!")
+	else
+		Talk(1,"","LMT67ÊÂ¼şË­ÕâÃ´¶àÇé!")
+	end
+end
+
+function select()
+	Say("LMT68ÄãÄÜ°ïÎÒÏòËı×ª´ïĞÄÒâÂğ?", 2, "ÎÒ¿ÉÒÔ°ïÄãºÍËıËµ. /yes", "Õâ¸öÃ¦ÎÒ°ï²»ÉÏ. /no")
+end;
+
+function yes()
+	Talk(1,"","LMT69Ëı½Ğ´ºÏã£¬×¡ÔÚÕò×ÓµÄ¶«±ß¡£Õâ°ÑºÉ»¨ÉÈÊÇÎÒµÄĞÅÎï£¬Âé·³Äã°ïÎÒ½»¸øËı.")
+	AddEventItem(190)
+	Msg2Player("LMT70½ÓÈÎÎñ£º°ïÀîÔ¥´«´ïĞÄÒâ¸ø´ºÏã£¬´øÀîÔ¥µÄĞÅÎïºÉ»¨ÉÈ¸ø´ºÏã. ")
+	SetTask(69,2)
+	AddNote("LMT71½ÓÈÎÎñ£º°ïÀîÔ¥´«´ïĞÄÒâ¸ø´ºÏã£¬´øÀîÔ¥µÄĞÅÎïºÉ»¨ÉÈ¸ø´ºÏã. ")
+end
+
+function no()
+end
+
+function W69_step2()
+	Talk(1,"","LMT72×ñÃü!")
+	SetTask(69,6)
+	AddNote("ÀLMT73îÔ¥»Ø´ğ²»³öÎÊÌâ£¬Äã°ïËû»Ø´ğ. ")
+	Msg2Player("ÀLMT74îÔ¥»Ø´ğ²»³öÎÊÌâ£¬Äã°ïËû»Ø´ğ. ")
+end
+
+function prise()
+	SetTask(69,10)
+	AddRepute(7)		-- ÉùÍû¼Ó7µã
+	AddNote("°LMT75Ñ´ºÏãµÄ»Ø´ğ´ø¸øÀîÔ¥£¬ÈÎÎñÍê³É. ")
+	Msg2Player("°Ñ´ºÏãµÄ»Ø´ğ´ø¸øÀîÔ¥£¬ÈÎÎñÍê³É. ")
+	p1,p2,p3,p4,p5,p6 = RndItemProp(6,10)
+	if (random(0,3) == 0) then
+		AddItem(0, 3, 0, 1, random(0,4), GetLucky(), p1,p2,p3,p4,p5,p6)
+		Msg2Player("LMT76µÃµ½»ÆÓñ½äÖ¸")
+	else
+		AddItem(0, 3, 0, 2, random(0,4), GetLucky(), p1,p2,p3,p4,p5,p6)
+		Msg2Player("LMT77µÃµ½Ê¯½äÖ¸")
+	end
+	Msg2Player("ÄLMT78ãµÄ½­ºşÃû½ÚÔö¼Ó7¸öµã ")
+end

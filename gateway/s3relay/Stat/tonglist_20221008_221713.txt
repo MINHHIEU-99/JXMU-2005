@@ -1,0 +1,6 @@
+TongCount=4, MemberCount=487, UnionCount=0
+TongName	MasterName	TongLevel	TongExp	SelfCamp	AllMemberCount	DirectorCount	ManagerCount	MemberCount	BuildLevel	MoneyFund	BuildFund	WarBuildFund	MaintainFund	StoredOffer	StoredBuildFund	UnionNum	UnionName	IsUnionLeader	UnionCamp
+ShowBiz	NMBtank5	0	0	1	2	0	0	1	0	0	200507	4	0	16	0	0		0	0
+Showbiz	AnhŸB«u	8	75240	1	178	4	15	158	0	9360200	310511	144846	0	150840	2987	0		0	0
+BﬁP	ThªngŸBÍm	4	19200	2	91	3	7	80	0	217200000	8788	405109	0	19679	517	0		0	0
+Nghi÷n	70ŸPinŸNguy‘n	8	74280	3	216	6	12	197	0	14052500	117378	13334	0	67096	3666	0		0	0

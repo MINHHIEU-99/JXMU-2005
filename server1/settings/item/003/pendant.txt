@@ -14,8 +14,8 @@ Kinh B¹ch Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist12.spr	36	1	2	Lo¹i ngäc
 §µo Hoa Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist13.spr	36	1	2	S¾c nh­ hoa §µo, thÝch hîp víi nh÷ng thiÕu n÷ nhu m×. 		900	3	0																						36	14	38	0								
 Mai Hoa  Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist14.spr	36	1	2	Trong ngäc cã kh¾c nh÷ng hoa v¨n hoa mai, rÊt khã t×m thÊy. 		1600	4	0																						36	20	38	0								
 Ngò S¾c Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist15.spr	36	1	2	Tuy ngò s¾c kh«ng thÓ hiÖn râ nÐt, nh­ng còng lµ mét lo¹i b¶o ngäc hiÕm thÊy. 		2500	5	0																						36	27	38	0								
-Thanh Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist16.spr	36	1	2	§­îc mµi tõ lo¹i Thanh Ngäc Quý hiÕm, c¸c v¨n nh©n Nho sÜ th­êng thÝch ®eo. 		3600	6	0																						36	34	38	0
-BÝch Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist17.spr	36	1	2	Lo¹i BÝch Ngäc Ngäc Béi tinh quý, V­¬ng T«n c«ng tö kh«ng ai lµ kh«ng thÝch. 		4900	7	0																						36	40	38	0
-MÆc Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist18.spr	36	1	2	Mµi tõ lo¹i MÆc Ngäc quý hiÕm, mµu s¾c thanh nh·, hµm chøa linh khÝ. 		6400	8	0																						36	47	38	0
-Hoµng Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist19.spr	36	1	2	Mµi tõ lo¹i Hoµng Ngäc quý hiÕm, mµu s¾c thanh nh·, hµm chøa linh khÝ. 		8100	9	0																						36	54	38	0
-D­¬ng Chi B¹ch Ngäc	0	9	1	\spr\item\equip\waist\obj-waist20.spr	36	1	2	Lo¹i ngäc quý hiÕm nhÊt trong c¸c lo¹i ngäc, chØ Hoµng ®Õ míi cã. 		10000	10	0																						36	60	38	0
+Thanh Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist16.spr	36	1	2	§­îc mµi tõ lo¹i Thanh Ngäc Quý hiÕm, c¸c v¨n nh©n Nho sÜ th­êng thÝch ®eo. 		3600	6	0																						36	34	38	0								
+BÝch Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist17.spr	36	1	2	Lo¹i BÝch Ngäc Ngäc Béi tinh quý, V­¬ng T«n c«ng tö kh«ng ai lµ kh«ng thÝch. 		4900	7	0																						36	40	38	0								
+MÆc Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist18.spr	36	1	2	Mµi tõ lo¹i MÆc Ngäc quý hiÕm, mµu s¾c thanh nh·, hµm chøa linh khÝ. 		6400	8	0																						36	47	38	0								
+Hoµng Ngäc Ngäc Béi 	0	9	1	\spr\item\equip\waist\obj-waist19.spr	36	1	2	Mµi tõ lo¹i Hoµng Ngäc quý hiÕm, mµu s¾c thanh nh·, hµm chøa linh khÝ. 		8100	9	0																						36	54	38	0								
+D­¬ng Chi B¹ch Ngäc	0	9	1	\spr\item\equip\waist\obj-waist20.spr	36	1	2	Lo¹i ngäc quý hiÕm nhÊt trong c¸c lo¹i ngäc, chØ Hoµng ®Õ míi cã. 		10000	10	0																						36	60	38	0								

@@ -1,40 +1,31 @@
 TAB_SKILL = {
-	-- ThienTu
+	-- 天子技能
 	emperor =
-	{	
-		lifemax_v = {1000, -1, 0},
-		allres_p = {10, -1, 0},
-		allresmax_p = {5, -1, 0},
+	{
+		allres_p 	= {5, -1, -1},		-- 提高全抗5%（无限时）
 		allskill_v  = {1, -1, 0},		-- 全系技能＋1
 	},
-	-- Quoc Chu
+	-- 皇帝（国主）技能
 	king =
 	{
-		lifemax_v = {800, -1, 0},
-		allres_p = {5, -1, 0},
-		allresmax_p = {4, -1, 0},
-		allskill_v  = {1, -1, 0},		-- 全系技能＋1
+		allskill_v = {1, -1, 0},		-- 全系技能＋1
 	},
-	-- 碩hua Tuong
+	-- 大丞相技能
 	minister =
 	{
-		lifemax_v = {800, -1, 0},
-		allres_p = {4, -1, 0},
-		allresmax_p = {4, -1, 0},
+		lifemax_p = {3, -1, -1},		-- 血量提升3%
+		manamax_p = {3, -1, -1},		-- 内力提升3%
 	},
-	-- Nguyen Soai
+	-- 兵马大元帅技能
 	marshal =
 	{
-		lifemax_v = {600, -1, 0},
-		allres_p = {3, -1, 0},
-		allresmax_p = {3, -1, 0},
+		physicsres_p = {20, -1, -1},	-- 提高普防20%
+		allskill_v	 = {1, -1, 0},		-- 全系技能＋1
 	},
-	-- Tien Phong
+	-- 先锋官技能
 	pioneer =
 	{
-		lifemax_v = {500, -1, 0},
-		allres_p = {2, -1, 0},
-		allresmax_p = {2, -1, 0},
+		allskill_v	= {1, -1, 0},		-- 全系技能＋1
 	},
 }
 

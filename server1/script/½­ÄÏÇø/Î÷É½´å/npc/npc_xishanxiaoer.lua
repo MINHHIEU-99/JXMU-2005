@@ -1,97 +1,103 @@
--- Î÷É½´å Î÷É½Ğ¡¶ş ¶Ô»°½Å±¾
--- ÀîĞÀ 2005-01-25
-
-Include("\\script\\task\\newtask\\newtask_head.lua")
-Include("\\script\\task\\newtask\\xishancun\\xishancun_head.lua")
-Include("\\script\\task\\system\\task_string.lua"); 
-Include("\\script\\activitysys\\g_activity.lua")
+-------------------------------------------------Script*By*Heart*Doldly***-----------------------------------------
+IncludeLib("LEAGUE");
+Include("\\script\\dailogsys\\dailogsay.lua")
+Include("\\script\\lib\\composeex.lua")
 Include("\\script\\dailogsys\\g_dialog.lua")
-Include("\\script\\activitysys\\playerfunlib.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
+Include("\\script\\activitysys\\npcdailog.lua")
+Include("\\script\\global\\g7vn\\g7configall.lua")
+----------------------------------------------------------------
+NhiemVuViSonDao			 = 5955
+TieuDietQuaiViSonDao			 = 5954
+TSK_NhiemVuViSonDao_TaskLimit	 = 5953
+TSKV_NhiemVuViSonDao_TaskLimit	 = 1;
+-------------------------------------------------------------------------------
+function myplayersex()
+	if GetSex() == 1 then 
+		return "N÷ HiÖp";
+	else
+		return "§¹i HiÖp";
+	end
+end
+--------------------------------------------------------------------------------
 function main()
---	Uworld1064 = nt_getTask(1064)
---	local name = GetName()
---	if	( Uworld1064 < 2) then  -- ÅĞ¶ÏÃ»ÓĞÍê³ÉÎ÷É½ÓìÈÎÎñ
---		Talk(1,"","Î÷É½Ğ¡¶ş£ºÕâ¼¸ÈÕÌìÆø·´¸´ÎŞ³££¬ÎÒ¶¼Ã»ĞÄË¼³öº£´òÓãÁË¡£")
---	elseif ( Uworld1064 == 2 ) then   -- ÅĞ¶ÏÒÑ¾­Íê³ÉÁËÎ÷É½ÓìÈÎÎñ£¬µ«ÉĞÎ´È¥Î÷É½Óì£¬²¢ÇÒÎ´ºÍÎ÷É½Ğ¡¶ş¶Ô»°¹ı
---		-- Say("Î÷É½Ğ¡¶ş£ºÄãÒªÈ¥Î÷É½Óì£¿¿ÉÏ§Î÷É½Óì»¹Ã»¿ª·Å£¬ÔİÊ±²»ÄÜ¹ıÈ¥¡£²»¹ıÄã·ÅĞÄ£¬ÎÒÒÑ¾­¼Ç×¡ÄãÁË£¬¹ıĞ©ÈÕ×ÓÄãÖ±½ÓÀ´ÕÒÎÒºÃÁË£¬ÎÒ´øÄãÉÏÎ÷É½Óì¡£",0)
---		Describe(DescLink_XiShanXiaoEr.."<#>£ºÕâÎ»¿Í¹Ù£¬ÕÒÎÒÓĞºÎ¹ó¸É£¿ÊÇ²»ÊÇÒªÂòÓãÄØ£¿<enter>"
---		..name.."<#>£º²»ÊÇµÄ£¬ÊÇ²»ĞÑÈËÊ¿ÈÃÎÒÀ´ÕÒÄãµÄ¡£<enter>Î÷É½Ğ¡¶ş£ºÊÇËû£¬ÎÒÖªµÀÁË¡£ÄãÒ²ÊÇÈ¥Î÷É½Óì°É£¬×ß°É£¬ÎÒÕâ¾Í´øÄãÈ¥¡£²»¹ıÎ÷É½ÓìÕâ¸öµØ·½À´È¥¿É²»ÊÇÄÇÃ´·½±ã£¬¶øÇÒĞ×ÏÕÒì³££¬ÄãÒª¶à¼ÓĞ¡ĞÄÓ´¡£<enter>",
---		2,"ÎÒÃÇÆô³Ì°É/task007","ÎÒ»¹ÊÇ¹ı»áÔÙÈ¥°É/task006")
---	elseif ( Uworld1064 == 3) then   -- ÅĞ¶ÏÒÑ¾­Íê³ÉÁËÎ÷É½ÓìÈÎÎñ£¬ÇÒºÍÎ÷É½Ğ¡¶ş¶Ô»°¹ıÒ»´Î£¬µ«ÉĞÎ´È¥Î÷É½Óì
---		Say("Î÷É½Ğ¡¶ş£ºÄãÏÖÔÚÒÑ¾­×¼±¸ºÃÈ¥Î÷É½ÓìÁËÂğ£¿",2,"ÎÒÃÇÆô³Ì°É/task007","ÎÒ»¹ÊÇ¹ı»áÔÙÈ¥°É/task006");
---	 end;
-	
-	local nNpcIndex = GetLastDiagNpc();
-	local szNpcName = GetNpcName(nNpcIndex);
-	if NpcName2Replace then szNpcName = NpcName2Replace(szNpcName) end
-	local tbDailog = DailogClass:new(szNpcName);
-	tbDailog.szTitleMsg = "T©y S¬n tiÓu nhŞ: §¹i hiÖp muèn ®i ®Õn Vi S¬n ®¶o? Tr­íc tiªn h·y giao nép 100 m·nh MËt §å ThÇn Bİ míi cã thÓ ®i ®Õn Vi S¬n ®¶o ®­îc."
-	
-	if DiViSonDao == 1 then
-	tbDailog:AddOptEntry("§ång ı! Ta sÏ t×m ngay.", task007, {}); 
-	end
-	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex);
-	
-	tbDailog:Show();
-	
-end;
-function task006()	
-	Uworld1064 = nt_getTask(1064)
-	nt_setTask(1064,3)
-end;
-	
-function task007()
-	if (GetLevel() < 100) then
-		Say("T©y S¬n tiÓu nhŞ: D­íi cÊp 100 kh«ng thÓ ®i Vi S¬n ®¶o ®­îc!",0);
-		return
-	end
-	
-	GiveItemUI("Giao diÖn tr¶ phİ.","Xin h·y bá MËt ®å vµo « bªn d­íi.", "task008", "no")
---	Uworld1064 = nt_getTask(1064)
---	nt_setTask(1064,0)
---	SetFightState(1);
---	NewWorld(342,1177,2410);
---	DisabledUseTownP(1)	--ÏŞÖÆÆäÔÚÎ÷É½ÓìÄÚÊ¹ÓÃ»Ø³Ç·û
---	SetRevPos(175,1);		--ÉèÖÃÖØÉúµã
-end;
+dofile("script/global/g7vn/g7configall.lua")
+dofile("script/½­ÄÏÇø/Î÷É½´å/npc/npc_xishanxiaoer.lua")
 
-function task008(ncount)
-	local scrollarray = {}
-	local scrollcount = 0
-	local scrollidx = {}
-	local y = 0
-	for i=1, ncount do
-		local nItemIdx = GetGiveItemUnit(i);
-		itemgenre, detailtype, parttype = GetItemProp(nItemIdx)
-		if (itemgenre == 6 and detailtype == 1 and parttype ==196) then	
-			y = y + 1
-			scrollidx[y] = nItemIdx;
-			scrollarray[i] = GetItemStackCount(nItemIdx)
-			scrollcount = scrollcount + scrollarray[i]
-		end
+	if GetLevel() < 150 and ST_IsTransLife() ~= 1 then
+		Talk(1,"","<bclr=violet>ChØ Nh÷ng "..myplayersex().." CÊp 150 Trë Lªn Trïng Sinh Th×\nKh«ng Giíi H¹n §¼ng CÊp Míi Cã ThÓ Tham Gia Ho¹t §éngNµy")
+		return 0;
 	end
-	if (y ~= ncount) then
-		Talk(1,"","MËt ®å thÇn bİ ch­a ®ñ, ng­¬i h·y kiÓm tra l¹i xem!")
-		return
-	end
-	if (scrollcount > 100) then
-		Talk(1,"","Ta chØ cÇn 100 MËt §å ThÇn Bİ, ng­¬i ®õng ®­a cho ta nhiÒu nh­ vËy")
-		return
-	end
-	if (scrollcount < 100) then
-		Talk(1,"","MËt ®å thÇn bİ ng­¬i giao cho ta kh«ng ®ñ th× ph¶i, kiÓm tra l¹i xem!")
-		return
-	end
-	if (scrollcount == 100) then
-		for i = 1, y do
-			RemoveItemByIndex(scrollidx[i])
-		end
-	end;
-	NewWorld(342,1178,2412)
-	SetFightState(1);
+	Say("<bclr=violet>"..myplayersex().." Ta Cã NhiÖm Vô Cho Ng­¬i Muèn Lµm Kh«ng",4,
+		"Ta Muèn Lªn §¶o H·y §­a Ta §i/LenVSD",
+		"Ta Muèn Lµm H·y Cho Ta BiÕt Kh¶o NghiÖm Cña Ng­¬i §i/NhanNhiemVu",
+		"Ta §· Hoµn Thµnh §Õn Tr¶ NhiÖm Vô Cho Ng­¬i §©y/TraNhiemVu",
+		"Th«i Ta BËn Råi/No")
 end
-
-function no()
+------------------------------------------------------------------------------------------------------------------
+function NhanNhiemVu()
+if NhiemVuViSonDao_CheckTaskLimit() == 0 then
+	return 1
+end
+	if GetTask(NhiemVuViSonDao) == 1 then
+		Talk(1,"","<bclr=violet>"..myplayersex().." §· NhËn NhiÖm Vô Nµy Råi\n                Mau §i Hoµn Thµnh §i Råi NhËn Th­ëng")
+		return
+	end
+	SetTask(NhiemVuViSonDao,1); Talk(1,"","<bclr=red>H·y §i Tiªu DiÖt 10 Con Qu¸i BÊt Kú")
+end
+------------------------------------------------------------------------------------------------------------------------------
+function NhiemVuViSonDao_CheckTaskLimit()
+	local nTaskLimit = GetTask(TSK_NhiemVuViSonDao_TaskLimit)
+	local nDate = tonumber(GetLocalDate("%y%m%d"))
+	if nDate ~= floor(nTaskLimit/256) then
+		nTaskLimit = nDate * 256
+		SetTask(TSK_NhiemVuViSonDao_TaskLimit, nTaskLimit)
+	end
+	if mod(nTaskLimit, 256) < TSKV_NhiemVuViSonDao_TaskLimit then
+		return 1;
+	else
+		Say(format("<bclr=violet>%s H«m Nay §· Hoµn Thµnh %s LÇn NhiÖm Vô Nµy Råi.\n<bclr=red>                               Ngµy Mai H·y Quay L¹i", myplayersex(), TSKV_NhiemVuViSonDao_TaskLimit))
+		return 0;
+	end
+	return 0;
+end
+--------------------------------------------------------------------------------------------------------------------------------
+function TraNhiemVu()
+if GetTask(NhiemVuViSonDao) == 0 then
+	Talk(1,"","<bclr=violet>"..myplayersex().." Ch­a NhËn NhiÖm Vô")
+	return
+end
+	if GetTask(TieuDietQuaiViSonDao) >= 10 then
+		Say("<bclr=violet>Chóc Mõng "..myplayersex().." §· Lµm Tèt L¾m Hay PhÇn Quµ Cña Ta",2,
+			"NhËn Th­ëng/NhanThuong",
+			"Th«i/No")
+	else
+		Talk(1,"","<bclr=violet>"..myplayersex().." Ch­a §¹t Kh¶o NghiÖm Cña Ta\n                                 H·y Cè G¾ng H¬n N÷a")
+	end
+end
+--------------------------------------------------------------------------------------------------------------
+function NhanThuong()
+local nCurtime = tonumber(GetLocalDate("%H%M"));
+local nWeekday = tonumber(date("%w"));
+local nRestMin = 24 * 60 - (floor(nCurtime/100)*60+floor(mod(nCurtime, 100)));
+	local tbAward = {
+	--	{nExp_tl=100e6},
+	--	{szName="TiÒn §ång",tbProp={4,417,1,1,0,0},nCount=20},
+		--{szName="B¶o r­¬ng Giíi H¹n Random(2 Ngµy)",tbProp={6,1,4365,1,0,0},nCount=1},	
+		{szName = "Kim Bµi Vi S¬n §¶o",tbProp={6,1,4984,1,0,0},nCount=1, nBindState = -2,nExpiredTime=ThoiHanHanhHiepKy},
+	}
+	SetTask(NhiemVuViSonDao,0); SetTask(TieuDietQuaiViSonDao,0);
+	SetTask(TSK_NhiemVuViSonDao_TaskLimit,GetTask(TSK_NhiemVuViSonDao_TaskLimit)+1)
+	DynamicExecuteByPlayer(PlayerIndex, "\\script\\huoyuedu\\huoyuedu.lua", "tbHuoYueDu:AddHuoYueDu", "NhiemVuViSonDao")
+	tbAwardTemplet:GiveAwardByList(tbAward, "PhÇn Th­ëng NhiÖm Vô Vi S¬n §¶o")
 
 end
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function LenVSD()
+local lbvsd = CalcEquiproomItemCount(6,1,2432,1)
+	if (lbvsd >= 1) then
+		NewWorld(342, 1177, 2409) SetFightState(1); ConsumeEquiproomItem(1,6,1,2432,-1)
+	else
+		Talk(1,"","<bclr=violet>"..myplayersex().." Kh«ng Cã LÖnh Bµi Vi S¬n §¶o")
+	end
+end
+----------------------------------------------------------------------------------------------------------------------------

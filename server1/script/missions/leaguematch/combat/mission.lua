@@ -12,7 +12,6 @@ function RunMission()
 	 	PlayerIndex = tbPlayer[ i ];
  		_M("PlayerIndex="..PlayerIndex)
 		SetPKFlag(2)	--ÍÀÉ±Ä£Ê½
-		-- SetPKFlag(1)	-- tr¹ng th¸i pk lµ chiÕn ®Êu, bá kh¶ n¨ng mÊt thÓ lùc
 		ForbidChangePK(1);	--½ûÖ¹¸ü»»PKÄ£Ê½
 		SetFightState(1);	--¿ªÊ¼Õ½¶·
 	end
@@ -40,16 +39,16 @@ function EndMission()
 				local str1	= "<color=yellow> §éi cña b¹n bÞ ®¸nh tróng tæng céng <color=red>"..n_dmg1.."<color> ®iÓm, ®èi ph­¬ng bÞ ®¸nh tróng<color=red>"..n_dmg2.."<color> ®iÓm"
 				local str2	= "<color=yellow> §éi cña b¹n bÞ ®¸nh tróng tæng céng <color=red>"..n_dmg2.."<color> ®iÓm, ®èi ph­¬ng bÞ ®¸nh tróng<color=red>"..n_dmg1.."<color> ®iÓm"
 				if (n_dmg1 < n_dmg2) then
-					Msg2MSGroup(WLLS_MSID_COMBAT, str1.." B¹n chiÕn th¾ng råi!", i)
-					Msg2MSGroup(WLLS_MSID_COMBAT, str2.." B¹n bÞ xö thua!", i + 1)
+					Msg2MSGroup(WLLS_MSID_COMBAT, str1.."B¹n chiÕn th¾ng råi!", i)
+					Msg2MSGroup(WLLS_MSID_COMBAT, str2.."B¹n bÞ xö thua!", i + 1)
 					wlls_matchresult(str_league1, str_league2, 1, n_usedtime)
 				elseif (n_dmg1 > n_dmg2) then
-					Msg2MSGroup(WLLS_MSID_COMBAT, str1.." B¹n bÞ xö thua!", i)
-					Msg2MSGroup(WLLS_MSID_COMBAT, str2.." B¹n chiÕn th¾ng råi!", i + 1)
+					Msg2MSGroup(WLLS_MSID_COMBAT, str1.."B¹n bÞ xö thua!", i)
+					Msg2MSGroup(WLLS_MSID_COMBAT, str2.."B¹n chiÕn th¾ng råi!", i + 1)
 					wlls_matchresult(str_league2, str_league1, 1, n_usedtime)
 				else
-					Msg2MSGroup(WLLS_MSID_COMBAT, str1.." Hßa nhau", i)
-					Msg2MSGroup(WLLS_MSID_COMBAT, str2.." Hßa nhau", i + 1)
+					Msg2MSGroup(WLLS_MSID_COMBAT, str1.."Hßa nhau", i)
+					Msg2MSGroup(WLLS_MSID_COMBAT, str2.."Hßa nhau", i + 1)
 					wlls_matchresult(str_league1, str_league2, 0, n_usedtime)
 				end
 			end
@@ -79,8 +78,7 @@ function OnLeave( org_player )
 
 	--·¢ËÍÀë³¡ÏûÏ¢
 	_M("Msg2MSAll")
-	-- Msg2MSAll(WLLS_MSID_COMBAT, "<color=yellow>chiÕn ®éi ["..str_lgname.."] cña"..org_playername.."§· rêi khái ®Êu tr­êng!")
-	Msg2MSAll(WLLS_MSID_COMBAT, "<color=yellow>chiÕn ®éi cña "..org_playername.." §· rêi khái ®Êu tr­êng!")
+	Msg2MSAll(WLLS_MSID_COMBAT, "<color=yellow>chiÕn ®éi ["..str_lgname.."] cña"..org_playername.."§· rêi khái ®Êu tr­êng!")
 
 	--µÃµ½¼º·½¡¢¶Ô·½MissionÕóÓª±àºÅ
 	local emy_camp
@@ -96,8 +94,8 @@ function OnLeave( org_player )
 	_M("OnLeave : "..org_camp.." VS "..emy_camp.."  "..org_count.."/"..emy_count)
 	if (emy_count > 0) then --Èç¹û¶Ô·½»¹ÓÐÈËµÄ»°
 		if ( org_count > 0 ) then	--ÎÒ·½»¹ÓÐ¶ÓÔ±ÔÚ±ÈÈüÖÐ
-			-- str = "<color=pink>Tin tøc chiÕn sù: §èi ph­¬ng cßn"..org_count.." ng­êi"
-			-- Msg2MSGroup(WLLS_MSID_COMBAT, str, emy_camp)
+			str = "<color=pink>Tin tøc chiÕn sù: §èi ph­¬ng cßn"..org_count.." ng­êi"
+			Msg2MSGroup(WLLS_MSID_COMBAT, str, emy_camp)
 			
 			--×ÔÉíÉËº¦×ÜÁ¿¼ÇÔÚ¶ÓÓÑÉíÉÏ 
 			local n_oldidx	= PlayerIndex
@@ -119,10 +117,10 @@ function OnLeave( org_player )
 			local n_oldidx = PlayerIndex
 			PlayerIndex	= org_player
 			local n_our_dmg	= ST_GetDamageCounter()
-			Msg2Player("<color=yellow>Phe ta bÞ ®¸nh tróng tæng céng<color=red> "..n_our_dmg.." <color> ®iÓm, ®èi ph­¬ng bÞ ®¸nh tróng<color=red> "..n_emy_dmg.." <color> ®iÓm")
+			Msg2Player("<color=yellow>Phe ta bÞ ®¸nh tróng tæng céng<color=red>"..n_our_dmg.."<color> ®iÓm, ®èi ph­¬ng bÞ ®¸nh tróng<color=red>"..n_emy_dmg.."<color> ®iÓm")
 			PlayerIndex	= n_oldidx
 			
-			Msg2MSGroup(WLLS_MSID_COMBAT, "<color=yellow>Phe ta bÞ ®¸nh tróng tæng céng<color=red> "..n_emy_dmg.."<color> ®iÓm, ®èi ph­¬ng bÞ ®¸nh tróng<color=red> "..n_our_dmg.."<color> ®iÓm", emy_camp)
+			Msg2MSGroup(WLLS_MSID_COMBAT, "<color=yellow>Phe ta bÞ ®¸nh tróng tæng céng<color=red>"..n_emy_dmg.."<color> ®iÓm, ®èi ph­¬ng bÞ ®¸nh tróng<color=red>"..n_our_dmg.."<color> ®iÓm", emy_camp)
 			
 			--µÃ³ö±ÈÈü½á¹û
 			local n_usedtime = (GetGlbValue(GLB_WLLS_TIME) + 1) * WLLS_TIMER_FIGHT_FREQ * WLLS_FRAME2TIME

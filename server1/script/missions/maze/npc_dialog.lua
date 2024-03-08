@@ -10,7 +10,7 @@ Include("\\script\\activitysys\\playerfunlib.lua")
 LEVEL_MIN = 120
 
 LIMITS = {
-	MIN_TEAMSIZE = 4,
+	MIN_TEAMSIZE = 2,
 	FLAG_CHECKTIME = 1,
 }
 
@@ -97,13 +97,21 @@ NpcXiaozhuzhu = {
 	m_Options = {
 		"Giíi thiÖu vÒ Phã B¶n KiÕm Gia",
 		"B¸o danh vµo KiÕm Gia",
-		"KiÓm tra sè lÇn h«m nay ta cã thÓ ®i vµo KiÕm Gia",
+		--"KiÓm tra sè lÇn h«m nay ta cã thÓ ®i vµo KiÕm Gia",
 		"Ta chØ ghÐ th¨m",
 	}
 }
 NpcXiaozhuzhu.tbTSK_JoinTotal = 3075
 function NpcXiaozhuzhu:Say(player)
-	return self.m_Caption, self.m_Options
+-- Talk(1,"","TÝnh N¨ng Nµy §· T¹m §ãng")
+		local nHour = tonumber(GetLocalDate("%H%M"))
+	if  (nHour >= 1000 and nHour < 1030) or (nHour >= 1200 and nHour < 1230) or (nHour >= 1200 and nHour < 1230) or (nHour >= 1400 and nHour < 1430) or (nHour >= 1600 and nHour < 1630) or (nHour >= 1800 and nHour < 1830) or (nHour >= 2000 and nHour < 2030) or (nHour >= 2200 and nHour < 2230)  then
+		return self.m_Caption, self.m_Options
+		else
+			Say("Thêi gian ho¹t  ®éng giê ch½n tõ 10h00 ®Õn 22h00 hµng ngµy !",0);
+			return
+	end
+	-- return self.m_Caption, self.m_Options
 end
 
 function NpcXiaozhuzhu:CheckTime()
@@ -121,7 +129,7 @@ end
 function NpcXiaozhuzhu:CheckTeam(player)
 	local count = player:GetTeamSize()
 	if (count < LIMITS.MIN_TEAMSIZE) then
-		player:Say("Tõ 4-8 ng­êi cÊp 120 trë lªn cïng nhau tæ ®éi míi ®­îc ®i vµo.")
+		player:Say("Tõ 1-2 ng­êi cÊp 120 trë lªn cïng nhau tæ ®éi míi ®­îc ®i vµo.")
 		return 0
 	elseif (self:CheckTime() == 0) then
 		player:Say("ChØ cã thÓ b¸o danh sau ®Çu mçi giê vµ tr­íc 30 phót.")
@@ -187,7 +195,7 @@ end
 function NpcXiaozhuzhu:OnAnswer(player, sel)
 	if (sel == 1) then
 		player:Describe(
-			"Tæ ®éi tõ 4-8 ng­êi cÊp 120 trë lªn, vµo ®Çu mçi giê vµ tr­íc 30 phót cã thÓ ®Õn chç cña ta ®Ó b¸o danh, sau khi b¸o danh tiÕn vµo phã b¶n. Sau khi tiÕn vµo phã b¶n ng­¬i sÏ ®­îc chuyÓn ®Õn mét c¨n phßng trong KiÕm Gia, chØ cÇn hoµn thµnh sù kiÖn cña c¨n phßng nµy, ng­¬i vµ tæ ®éi cña ng­¬i sÏ tiÕp tôc tham gia vµo mét c¨n phßng tiÕp theo, nh÷ng cao thñ cã thÓ thµnh c«ng ®i vµo c¨n phßng cuèi cïng th× cã thÓ gÆp ®­îc trang chñ cña Ngäc Long S¬n Trang vµ nhËn ®­îc t­ c¸ch thÝ luyÖn cuèi cïng. NÕu nh­ trong lóc chiÕn ®Êu ë trong c¨n phßng ph¸t sinh sù kiÖn cña KiÕm Gia mµ bÞ träng th­¬ng, ng­¬I cã thÓ ®Õn V¹n Hoa Tr× ®Ó trÞ th­¬ng, sau khi trÞ th­¬ng thµnh c«ng sÏ ®­îc quay trë l¹i trong c¨n phßng ®· tong ®­îc v­ît qua tr­íc ®ã, ®­¬ng nhiªn ng­¬i còng cã thÓ sö dông Phôc SÞnh Phï cã ë trªn Kú Tr©n C¸c ®Ó quay trë l¹i c¨n phßng mµ tæ ®éi ng­¬i ®ang chiÕn ®Êu ®Ó tiÕp tôc t¸c chiÕn. Mçi ng­êi mçi lÇn tham gia phã b¶n sÏ cã 3 lÇn c¬ héi ®i vµo vµo V¹n Hoa Tr× ®Ó trÞ th­¬ng. Mçi lÇn tham gia phã b¶n nhiÒu nhÊt lµ 30 phót. Chóc ng­¬i may m¾n",
+			"Tæ ®éi tõ 6-8 ng­êi cÊp 120 trë lªn, vµo ®Çu mçi giê vµ tr­íc 30 phót cã thÓ ®Õn chç cña ta ®Ó b¸o danh, sau khi b¸o danh tiÕn vµo phã b¶n. Sau khi tiÕn vµo phã b¶n ng­¬i sÏ ®­îc chuyÓn ®Õn mét c¨n phßng trong KiÕm Gia, chØ cÇn hoµn thµnh sù kiÖn cña c¨n phßng nµy, ng­¬i vµ tæ ®éi cña ng­¬i sÏ tiÕp tôc tham gia vµo mét c¨n phßng tiÕp theo, nh÷ng cao thñ cã thÓ thµnh c«ng ®i vµo c¨n phßng cuèi cïng th× cã thÓ gÆp ®­îc trang chñ cña Ngäc Long S¬n Trang vµ nhËn ®­îc t­ c¸ch thÝ luyÖn cuèi cïng. NÕu nh­ trong lóc chiÕn ®Êu ë trong c¨n phßng ph¸t sinh sù kiÖn cña KiÕm Gia mµ bÞ träng th­¬ng, ng­¬I cã thÓ ®Õn V¹n Hoa Tr× ®Ó trÞ th­¬ng, sau khi trÞ th­¬ng thµnh c«ng sÏ ®­îc quay trë l¹i trong c¨n phßng ®· tong ®­îc v­ît qua tr­íc ®ã, ®­¬ng nhiªn ng­¬i còng cã thÓ sö dông Phôc SÞnh Phï cã ë trªn Kú Tr©n C¸c ®Ó quay trë l¹i c¨n phßng mµ tæ ®éi ng­¬i ®ang chiÕn ®Êu ®Ó tiÕp tôc t¸c chiÕn. Mçi ng­êi mçi lÇn tham gia phã b¶n sÏ cã 3 lÇn c¬ héi ®i vµo vµo V¹n Hoa Tr× ®Ó trÞ th­¬ng. Mçi lÇn tham gia phã b¶n nhiÒu nhÊt lµ 30 phót. Chóc ng­¬i may m¾n",
 			1,
 			"BiÕt råi/Cancel")
 	elseif (sel == 2) then	

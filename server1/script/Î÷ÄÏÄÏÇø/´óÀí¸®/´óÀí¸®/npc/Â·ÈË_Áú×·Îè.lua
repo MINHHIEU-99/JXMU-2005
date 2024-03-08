@@ -1,27 +1,18 @@
 Include("\\script\\task\\newtask\\newtask_head.lua")
 Include("\\script\\task\\newtask\\branch\\zhongli\\branch_zhonglitasknpc.lua")
 
-function main()
-dofile("script/Î÷ÄÏÄÏÇø/´óÀí¸®/´óÀí¸®/npc/Â·ÈË_Áú×·Îè.lua")
-	Uworld42 = GetTask(42)
-	Uworld1057 = nt_getTask(1057)
-		branch_longzhuiwu()
-	if (Uworld42 == 50) then
-		Talk(12,"aaa","Long Truy Vò: Kh«ng cÇn ph¶i nãi, ta biÕt tÊt c¶ mäi chuyÖn. TiÓu huynh ®Ö, ba m­¬i n¨m tr­íc Trung NguyÖn ®· tõng cã bèn vâ nh©n, c¸c b»ng h÷u kh¸ch khÝ x­ng lµ 'Vâ l©m tø kú' ng­¬i cã tõng nghe nãi?","Ng­êi ch¬i: t¹i h¹ xuÊt ®¹o rÊt muén nªn kh«ng râ l¾m.","Long Truy Vò: Giang hå réng lín, kh«ng thÓ tr¸ch ng­¬i ®­îc. Trong bèn ng­êi ta bÐ nhÊt, lµm ®å long ®o¹t ph¸p. Cïng 2 huynh ®Ö §¹o Nh©n QuÌ vµ V« Danh ThÇn T¨ng. L·o §¹i cña chóng ta lµ Th­¬ng L­îng Kh¸ch, trong tay n¾m tuyÖt kü, lóc Êy kh«ng ®èi thñ.","Ng­êi ch¬i: Hãa ra tiÒn bèi tõng lµ Vò Môc T­íng lÜnh, thÊt kÝnh thÊt kÝnh","Long Truy Vò: Kh«ng cã g× ph¶i ng­ìng mé. Hoµng Th­îng dïng kim bµi lÖnh tiÔn chiªu giÕt nguyªn so¸i t¹i Phong Ba §×nh, chóng ta bÞ TÇn Qu¸i thñ h¹ truy s¸t. L·o ®¹i th¶m nhÊt, c¶ gia ®×nh ®· bÞ giÕt s¹ch, ph¶i r¬i vµo c¶nh c« ®éc mét m×nh.","Ng­êi ch¬i: ThÕ sù ®· râ L·o ®¹i cña huynh nh­ thÕ nµo råi?","Long Truy Vò:HiÖn giê l·o ®¹i ®· n÷a tØnh n÷a ®iªn, b¾t gi÷ con ng­êi kh¸c xem lµ con m×nh.Ng­êi kh«ng biÕt lÊy c¶i nÐm h¾n, h¾n còng kh«ng nÐ. Ng­êi kh«ng gièng ng­êi.­","Ng­êi ch¬i: H¼n lµ ®øa trÎ bÞ Th­¬ng L¹ng Kh¸ch b¾t ®i?","Long Truy Vò: §óng. §Ó kû niÖm sinh thÇn 90 cña m×nh, h¾n ®· b¾t mét vµi ®øa bÐ lµm con ch¸u, kh«ng cã ý ®Þnh lµm h¹i chóng. Ng­¬i ®i t×m ng­êi, kh«ng ®­îc lµm h¹i l·o ®¹i ta.","Ng­êi ch¬i: Long ®¹i hiÖp nãi ®ïa, vâ c«ng cña t¹i h¹ sao so s¸nh ®­îc víi Th­¬ng L¹ng Kh¸ch tiÒn bèi.","Long Truy Vò: C¸c h¹ qu¸ khiªm tèn, ta thÊy ng­¬i râ rµng lµ mét cao thñ. L·o ®¹i h«m ®ã v× th­¬ng t©m qu¸ ®é dÉn ®Õn tÈu háa nhËp ma, c«ng lùc suy gi¶m. Huynh Êy b©y giê ®ang Èn c­ ë §iÓm Th­¬ng S¬n. Ng­¬i cã thÓ ®i ®Õn ®ã.","Ng­êi ch¬i: ®a t¹ tiÒn bèi.")
-		SetTask(42,60)
-		AddNote("TiÕp nhËn nhiÖm vô: ®Õn §iÓm Th­¬ng S¬n t×m Th­¬ng L­îng Kh¸ch th¨m dß tin tøc ®øa bÐ mÊt tÝch.")
-		Msg2Player("TiÕp nhËn nhiÖm vô: ®Õn §iÓm Th­¬ng S¬n t×m Th­¬ng L­îng Kh¸ch th¨m dß tin tøc ®øa bÐ mÊt tÝch.")
-	elseif (Uworld42 >= 60) then
-		Talk(1,"","Long Truy Vò: Ng­¬i kh«ng lµm h¹i L·o §¹i cña ta chø?")
-	else
-		Talk(1,"","§õng cã suèt ngµy phiÒn ta.")
-	
-	end
-end
-
-
-
-function aaa()
-Talk(12,"","Long Truy Vò:...HiÖn giê l·o ®¹i ®· n÷a tØnh n÷a ®iªn, b¾t gi÷ con nÝt xem lµ con ch¸u m×nh...Ng­êi kh«ng biÕt lÊy c¶i nÐm h¾n, h¾n còng kh«ng nÐ. Ng­êi kh«ng gièng ng­êi..­","Ng­êi ch¬i: H¼n lµ ®øa trÎ bÞ Th­¬ng L¹ng Kh¸ch b¾t ®i?","Long Truy Vò: §óng. §Ó kû niÖm sinh thÇn 90 cña m×nh, h¾n ®· b¾t mét vµi ®øa bÐ lµm con ch¸u, kh«ng cã ý ®Þnh lµm h¹i chóng. Ng­¬i ®i t×m ng­êi, kh«ng ®­îc lµm h¹i l·o ®¹i ta.","Ng­êi ch¬i: Long ®¹i hiÖp nãi ®ïa, vâ c«ng cña t¹i h¹ sao so s¸nh ®­îc víi Th­¬ng L¹ng Kh¸ch tiÒn bèi.","Long Truy Vò: C¸c h¹ qu¸ khiªm tèn, ta thÊy ng­¬i râ rµng lµ mét cao thñ. L·o ®¹i h«m ®ã v× th­¬ng t©m qu¸ ®é dÉn ®Õn tÈu háa nhËp ma, c«ng lùc suy gi¶m. Huynh Êy b©y giê ®ang Èn c­ ë §iÓm Th­¬ng S¬n. Ng­¬i cã thÓ ®i ®Õn ®ã.","Ng­êi ch¬i: ®a t¹ tiÒn bèi.")
-end
-
+function main() 
+Uworld42 = GetTask(42) 
+Uworld1057 = nt_getTask(1057) 
+branch_longzhuiwu() 
+-- script viet hoa By http://tranhba.com elseif (Uworld42 == 50) then 
+-- script viet hoa By http://tranhba.com Talk(12,""," long ®uæi vò # kh«ng cÇn ph¶i nãi , ta c¸i g× còng biÕt …… tiÓu huynh ®Ö , ba m­¬i n¨m tr­íc Trung Nguyªn ®· tõng cã bèn vò nh©n , c¸c b»ng h÷u kh¸ch khÝ x­ng lµ “ vâ l©m bèn kú ” ng­¬i cã tõng nghe nãi ? ","Nhµ ch¬i # t¹i h¹ xuÊt ®¹o qu¸ møc v·n , kh«ng râ l¾m . "," long ®uæi vò # giang s¬n thay mÆt cã míi ng­êi ra , c¸i nµy còng kh«ng tr¸ch ng­¬i . trong bèn ng­êi ta lµ l·o yªu , khiÕn cho ®å long c­íp ph¸p . b¶ tö cïng hßa th­îng lµ Vâ §­¬ng # ThiÕu L©m cao thñ . mµ l·o ®¹i cña chóng ta th­¬ng l·ng kh¸ch , mét tay “ b«n l­u n¾m chÆt ” tuyÖt kû , lóc Êy h·n gÆp ®Þch thñ . n¨m ®ã bän ta theo ®uæi nh¹c Nguyªn so¸i chinh ph¹t kim tÆc , m­êi ®·ng m­êi tuyÖt , tung hoµnh thiªn h¹ ®ã lµ bùc nµo ®Ých kho¸i ý . ","Nhµ ch¬i # th× ra lµ tiÒn bèi tõng lµ vò môc tr­íng Trung t­íng dÉn , thÊt kÝnh thÊt kÝnh . "," long ®uæi vò # hõ , cã c¸i g× tèt kÝnh nÓ . Hoµng th­îng m­êi ba ®¹o kim bµi lÖnh tiÔn chiªu giÕt Nguyªn so¸i víi phong ba ®×nh , bän ta còng bÞ tÇn qu¸i thñ h¹ cao thñ ®uæi tËp . l·o ®¹i th¶m nhÊt , mét m«n anh liÖt mÊt hÕt nµy dÞch . ®¸ng tiÕc h¾n khi ®ã ®· n¨m du cæ tÝch , r¬i vµo kiÕt nhiªn mét th©n bi th­¬ng thu trµng . ","Nhµ ch¬i # v× vËy c¸c ng­¬i nh×n thÊu thÕ sù , c¸c ch¹y ®å ? "," long ®uæi vò #…… h«m nay l·o ®¹i ®· nöa ®iªn nöa ®iªn , c¶ ngµy n¾m nhµ kh¸c tiÓu tö khi m×nh nhi t«n …… kh«ng biÕt ng­êi cÇm chót l¹n th¸i diÖp tö háng bÐt khang nÐm h¾n , h¾n còng kh«ng tr¸nh . ng­êi kh«ng gièng ng­êi ……","Nhµ ch¬i # ch¼ng lÏ lao ®i tiÓu nhi ®Ých chÝnh lµ th­¬ng l·ng kh¸ch tiÒn bèi ? "," long ®uæi vò # chÝnh lµ . h¾n v× kh¸nh m×nh chÝn m­¬i thä thÇn , b¾t chót hµi tö gi¶ trang lµm m×nh nhi t«n , còng kh«ng tæn th­¬ng bän hä ý tø . ng­¬i lÇn ®i t×m ng­êi , thiÕt kh«ng thÓ g©y th­¬ng liÔu nhµ ta l·o ®¹i tÝnh mÖnh . ","Nhµ ch¬i # Long ®¹i hiÖp nãi ®ïa , t¹i h¹ mÊy tay tam gi¸c mÌo c«ng phu : thêi gian , cã thÓ nµo cïng th­¬ng l·ng kh¸ch tiÒn bèi so s¸nh . "," long ®uæi vò # c¸c h¹ qu¸ khiªm nh­êng , ta thÊy ng­¬i thÇn quang néi liÔm , ®Ýnh ng¹ch cao ®ét , râ rµng lµ mét nhµ cao thñ . l·o ®¹i h«m ®ã bëi v× th­¬ng t©m qu¸ ®é ®­a ®Õn tÈu háa nhËp ma , c«ng lùc thùc ®· tæn thÊt th¸i nöa . h¾n h«m nay ë §iÓm th­¬ng s¬n trung Èn c­ . ng­¬i c¸i nµy ®i ®i . ","Nhµ ch¬i # c¸m ¬n t¹ bèi . ") 
+-- script viet hoa By http://tranhba.com SetTask(42,60) 
+-- script viet hoa By http://tranhba.com AddNote("NhËn ®­îc nhiÖm vô : ®i §iÓm th­¬ng s¬n t×m th­¬ng l·ng kh¸ch hái th¨m ®øa trÎ mÊt tÝch tin tøc .") 
+-- script viet hoa By http://tranhba.com Msg2Player("NhËn ®­îc nhiÖm vô : ®i §iÓm th­¬ng s¬n t×m th­¬ng l·ng kh¸ch hái th¨m ®øa trÎ mÊt tÝch tin tøc .") 
+-- script viet hoa By http://tranhba.com elseif (Uworld42 >= 60) then 
+-- script viet hoa By http://tranhba.com Talk(1,""," long ®uæi vò # ng­¬i kh«ng cã th­¬ng tæn h¹i ta ®¹i ca ®i ? ") 
+-- script viet hoa By http://tranhba.com else 
+-- script viet hoa By http://tranhba.com Talk(1,""," long ®uæi vò # ba m­¬i t¸i rÐt nãng ………… thËt ch¼ng lÏ ®Ých kh«ng cã hy väng ? ") 
+-- script viet hoa By http://tranhba.com end 
+end; 

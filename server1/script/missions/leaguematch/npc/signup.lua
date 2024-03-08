@@ -14,7 +14,6 @@ function wlls_want2transback()
 	end
 end
 
---¼ì²éÊÇ·ñ¿ÉÒÔ½øÈë×¼±¸³¡£¬³É¹¦·µ»Ø£¨n_matchtype,leagueid£©£¬·ñÔò·µ»Ønil
 function wlls_ready2join()
 	local n_mtype, n_group = wlls_get_mapinfo()
 	local n_lid = wlls_check_player(GetName(), nil, n_mtype)
@@ -25,35 +24,31 @@ function wlls_ready2join()
 	
 	local n_matchphase = GetGlbValue(GLB_WLLS_PHASE)
 	if (n_matchphase < 3) then
-		-- Say("B©y giê b¹n ng­¬i ch­a thi ®Êu, cã cÇn ta ®­a ng­¬i vÒ?", 2, "§óng vËy!/wlls_transback", "Ta ch­a muèn vÒ!/OnCancel")
-		Say("HiÖn t¹i vÉn ch­a tíi giê thi ®Êu, cã cÇn ta ®­a ng­¬i vÒ?", 3, "§óng vËy!/wlls_transback", "Ta muèn kiÓm tra t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query", "Ta ch­a muèn vÒ!/OnCancel")
+		Say("B©y giê b¹n ng­¬i ch­a thi ®Êu, cã cÇn ta ®­a ng­¬i vÒ?", 2, "§óng vËy!/wlls_transback", "Ta ch­a muèn vÒ!/OnCancel")
 		return nil
 	end
 	
-	local tb_option = wlls_add_option({"Ta muèn kiÓm tra t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query"}, "Kh«ng cÇn")
-	if (n_matchphase == 3) then	--¼äÐªÊ±¼ä
-		--Èç¹û²»ÊÇ×îºóÒ»³¡£¿
+	local tb_option = wlls_add_option({}, "Kh«ng cÇn")
+	if (n_matchphase == 3) then
 		Say("Xin h·y t¹m nghØ ë ®©y! HiÖn vÉn ch­a b¾t ®Çu thi ®Êu, ng­¬i cßn yªu cÇu nµo kh«ng?", getn(tb_option), tb_option)
-		-- Say("Xin h·y t¹m nghØ ë ®©y! HiÖn vÉn ch­a b¾t ®Çu thi ®Êu, ng­¬i cßn yªu cÇu nµo kh«ng?", 3, "Ta muèn kiÓm tra t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query", "Kh«ng cÇn/OnCancel")
 		return nil
 	end
 	
-	--ÅÐ¶ÏÊÇ·ñÔ½¼¶
 	local str = wlls_levelcheck(n_lid)
 	if (str) then
 		Say("Quan viªn héi tr­êng:"..str, 2, "Ta muèn rêi khái héi tr­êng!/wlls_want2transback", "Kh«ng cÇn!/OnCancel")
 		return nil
 	end
 
-	if (n_matchphase == 5) then	--±ÈÈüÊ±¼ä
+	if (n_matchphase == 5) then
 		local n_combatmap = wlls_get_mapid(3, n_mtype, n_group)
 		local n_resttime = WLLS_TIMER_FIGHT_TOTAL - GetGlbValue(GLB_WLLS_TIME)
 		n_resttime = ceil(n_resttime*WLLS_TIMER_FIGHT_FREQ/60)
-		Say("VÉn ®ang tiÕn hµnh thi ®Êu! Thêi gian kÕt thóc cßn <color=yellow>"..n_resttime.." phót<color>, b¹n cÇn gióp ®ì g× kh«ng?", getn(tb_option), tb_option)
+		Say("VÉn ®ang tiÕn hµnh thi ®Êu! Thêi gian kÕt thóc cßn"..n_resttime.."phót, b¹n cÇn gióp ®ì g× kh«ng?", getn(tb_option), tb_option)
 		return nil
 	end
 
-	if (n_matchphase == 4) then	--×¼±¸Ê±¼ä
+	if (n_matchphase == 4) then
 		return n_mtype, n_lid
 	end
 	
@@ -61,10 +56,6 @@ function wlls_ready2join()
 end
 
 function main()
-	if (GetSkillState(314) == 1) then
-		RemoveSkillState(314);
-		Msg2Player("§· xãa hiÖu øng <enter>           [<color=white>Håi m¸u, håi n¨ng l­îng<color>] <enter>           trªn nh©n vËt.")
-	end
 	local n_mtype, n_lid = wlls_ready2join()
 	if (FALSE(n_mtype)) then
 		return
@@ -75,13 +66,9 @@ function main()
 		return
 	end
 	
-	local tb_option = 
-	{	
-		"Ta muèn tham chiÕn!/wlls_en1",
-		"Kh«ng cÇn/OnCancel",
-	}
-	-- wlls_add_option(tb_option, "Kh«ng cÇn")
-	Say("HiÖn liªn ®Êu ®ang trong giai ®o¹n b¸o danh, muèn tham gia thi ®Êu ph¶i kh«ng?", getn(tb_option), tb_option)
+	local tb_option = {"Ta muèn tham chiÕn!/wlls_en1"}
+	wlls_add_option(tb_option, "Kh«ng cÇn")
+	Say("HiÖn thi ®Êu ®ang trong giai ®o¹n b¸o danh, muèn tham gia thi ®Êu ph¶i kh«ng?", getn(tb_option), tb_option)
 	
 	local _, _, n_count = LG_GetLeagueInfo(n_lid)
 	local n_type = GetGlbValue(GLB_WLLS_TYPE)

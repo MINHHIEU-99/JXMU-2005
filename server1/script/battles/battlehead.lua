@@ -1,22 +1,23 @@
 		IncludeLib("FILESYS");
 		IncludeLib("TITLE");
 		IncludeLib("SETTING");
+		IncludeLib("LEAGUE")
 Include("\\script\\event\\storm\\function.lua")	--Storm
 Include("\\script\\event\\great_night\\huangzhizhang\\event.lua")	--HUANGZHIZHANG
 Include("\\script\\missions\\boss\\bigboss.lua")	-- big boss
 Include("\\script\\battles\\lang.lua")
 Include("\\script\\lib\\common.lua");
 Include("\\script\\battles\\battle_rank_award.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
+
+
+
 Include("\\script\\bonusvlmc\\head.lua");
 Include("\\script\\misc\\vngpromotion\\ipbonus\\ipbonus_2_head.lua")
 Include("\\script\\event\\jiefang_jieri\\200904\\qianqiu_yinglie\\head.lua");
 
 Include("\\script\\battles\\doubleexp.lua")
-
-
 FRAME2TIME = 18;	--18÷°”Œœ∑ ±º‰œ‡µ±”⁄1√Î÷”
-BAOMING_TIME = 10		-- 10∑÷÷”±®√˚ ±º‰	
+BAOMING_TIME = 10	-- 10∑÷÷”±®√˚ ±º‰	
 FIGHTING_TIME = 60		-- 60∑÷÷”±»»¸ ±º‰
 ANNOUNCE_TIME = 20		-- 20√Îπ´≤º“ªœ¬’Ωøˆ
 
@@ -25,8 +26,7 @@ TIMER_2 = (FIGHTING_TIME + BAOMING_TIME) * 60  * FRAME2TIME; -- Ωª’Ω ±º‰Œ™1–° ±
 RUNGAME_TIME = BAOMING_TIME * 60 * FRAME2TIME / TIMER_1; --±®√˚10∑÷÷”÷Æ∫Û£¨◊‘∂ØΩ¯»Î’Ω∂∑Ω◊∂Œ
 GO_TIME =  BAOMING_TIME * 60 * FRAME2TIME  / TIMER_1; -- ±®√˚ ±º‰Œ™10∑÷÷”
 
--- SONGJIN_SIGNUP_FEES = 200000  -- ±®√˚∑—
-SONGJIN_SIGNUP_FEES = 20000  -- ±®√˚∑—
+SONGJIN_SIGNUP_FEES = 3000  -- ±®√˚∑—
 
 JUNGONGPAI = 1773 --ÀŒΩæ¸π¶≈∆ID 6£¨1£¨1477
 EXPIRED_TIME = 24*60  --ÀŒΩæ¸π¶≈∆π˝∆⁄
@@ -210,17 +210,32 @@ end
 	
 	BONUS_KILLPLAYER = 75
 	BONUS_SNAPFLAG = 600
-	BONUS_KILLNPC = 1
-	BONUS_KILLRANK1 = 5
-	BONUS_KILLRANK2 = 30
-	BONUS_KILLRANK3 = 150
-	BONUS_KILLRANK4 = 250
-	BONUS_KILLRANK5 = 500
-	BONUS_KILLRANK6 = 1000
-	BONUS_KILLRANK7 = 500
-	BONUS_MAXSERIESKILL = 150
-	BONUS_GETITEM = 25
-	BONUS_1VS1 = 400
+			local nHour = tonumber(GetLocalDate("%H%M"))
+			if (nHour >= 2100 and nHour <= 2300) or (nHour >= 1300 and nHour <= 1500) then
+					BONUS_KILLNPC = 0
+					BONUS_KILLRANK1 = 0
+					BONUS_KILLRANK2 = 0
+					BONUS_KILLRANK3 = 0
+					BONUS_KILLRANK4 = 0
+					BONUS_KILLRANK5 = 0
+					BONUS_KILLRANK6 = 0
+					BONUS_KILLRANK7 = 0
+					BONUS_MAXSERIESKILL = 0
+					BONUS_GETITEM = 0
+					BONUS_1VS1 = 0
+			else
+					BONUS_KILLNPC = 1
+					BONUS_KILLRANK1 = 2
+					BONUS_KILLRANK2 = 5
+					BONUS_KILLRANK3 = 10
+					BONUS_KILLRANK4 = 20
+					BONUS_KILLRANK5 = 500
+					BONUS_KILLRANK6 = 1000
+					BONUS_KILLRANK7 = 500	
+					BONUS_MAXSERIESKILL = 150
+					BONUS_GETITEM = 25
+					BONUS_1VS1 = 400
+			end
 	
 	RA_KILL_PL_RANK = {10, 2.334, 0.934, 0.84, 0.56, 0.35}	
  	--7 ÕÊº“ ø±¯	--7/3 ÕÊº“–£Œæ	--14/15 ÕÊº“Õ≥¡Ï	--21/25 ÕÊº“∏±Ω´	--14/25 ÕÊº“¥ÛΩ´	--7/20 ÕÊº“‘™Àß
@@ -242,7 +257,7 @@ end
 		{0,0,1,1,1},
 	};
 	
-	BALANCE_MAMCOUNT = 5;	--ÀŒΩÀ´∑Ω»À ˝≤Óµ˜’˚Œ™5»À
+	BALANCE_MAMCOUNT = 4;	--ÀŒΩÀ´∑Ω»À ˝≤Óµ˜’˚Œ™5»À
 	BALANCE_GUOZHAN_MAXCOUNT = 100; -- π˙’ΩÀŒΩ◊Ó∂‡‘ –Ìµƒµ•±ﬂ»À ˝
 	TAB_RANKBONUS = {0, 1000, 3000, 6000,10000};
 	RANK_SKILL = 661;
@@ -275,7 +290,7 @@ end
 	tbSIGNMAP_POS = {{1541, 3178} , {1570, 3085}}
 	szGAME_GAMELEVEL = {"Chi’n tr≠Íng S¨ c p", "Chi’n tr≠Íng Trung c p", "Chi’n tr≠Íng Cao c p"}
 	
-	tbBATTLEMAP = {44, 326, 327, 328, 329, 330, 331, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 868, 869, 870,876,877,878,879,880,881,883,884,885, 898, 899, 900, 902, 903, 904,970,971};--À˘”–’Ω“€”√µΩµƒµÿÕº¡–±Ì
+	tbBATTLEMAP = {44, 326, 327, 328, 329, 330, 331, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 868, 869, 870,876,877,878,879,880,881,883,884,885, 898, 899, 900, 902, 903, 904,970,971};--À˘”–’Ω“€”√µΩµƒµÿÕº¡–±Ì
 	tbNPCPOS = {"npcpos1", "npcpos2"}
 	TNPC_DOCTOR1 = 55;--æ¸“ΩµƒNpcƒ£∞ÂID∫≈
 	TNPC_DOCTOR2 = 49;
@@ -313,12 +328,9 @@ function bt_camp_getbonus(camp, bonus,strmsg, percent)
 		idx, pidx = GetNextPlayer(MISSIONID, idx, camp);
  		if (pidx > 0) then
    			PlayerIndex = pidx;
-			
 			local n_bonus = bt_addtotalpoint(bonus)
-
-			Msg2Player("K’t thÛc TËng kim nhÀn Æ≠Óc <color=yellow>"..n_bonus.."<color> Æi”m t›ch lÚy) ")
-			Say("ßÓt nµy bπn nhÀn Æ≠Óc <color=yellow> "..n_bonus.."<color> Æi”m t›ch lÚy", 0)			
-			
+	   		Msg2Player(strmsg..n_bonus.."<color> Æi”m t›ch lÚy) ")
+			Say("ßÓt nµy bπn nhÀn Æ≠Óc <color=yellow> "..n_bonus.."<color> Æi”m t›ch lÚy", 0)
 		end
  		if (idx <= 0) then 
 			break
@@ -589,7 +601,7 @@ function sf_callnpc(usedtime, totaltime)
 				npcfile = GetIniFileData(mapfile, "Area_"..s_area, tbNPCPOS[random(2)]);
 				bt_addrandfightnpc(npcfile, GetMissionV(MS_TRANK1_S + i - 1), GetMissionV(MS_RANK1LVL_S + i - 1), 1, nowadd, tabFILE_NPCDEATH[i], 1)
 				if (i == 6) then
-					Msg2MSAll(MISSIONID, "TËng Kim b∏o c∏o: Nguy™n So∏i qu©n TËng Æ∑ xu t hi÷n!");
+					Msg2MSAll(MISSIONID, "Phong V©n LuÀn Ki’m b∏o c∏o: Nguy™n So∏i qu©n TËng Æ∑ xu t hi÷n!");
 				end
 			end
 		end
@@ -605,7 +617,7 @@ function sf_callnpc(usedtime, totaltime)
 				npcfile = GetIniFileData(mapfile, "Area_"..j_area, tbNPCPOS[random(2)]);
 				bt_addrandfightnpc(npcfile, GetMissionV(MS_TRANK1_J + i - 1), GetMissionV(MS_RANK1LVL_J + i - 1), 2, nowadd, tabFILE_NPCDEATH[i], 1)
 				if (i == 6) then
-					Msg2MSAll(MISSIONID, "TËng Kim b∏o c∏o: Nguy™n So∏i qu©n Kim Æ∑ xu t hi÷n!");
+					Msg2MSAll(MISSIONID, "Phong V©n LuÀn Ki’m b∏o c∏o: Nguy™n So∏i qu©n Kim Æ∑ xu t hi÷n!");
 				end
 			end
 		end
@@ -657,6 +669,12 @@ function sf_buildfightnpcdata()
 
 end
 ------------------------------------------------------------------------------------------
+function GetPureIP()
+local tbOwnIP = split(GetIP()," ")
+local szStr = tbOwnIP[1]
+return szStr
+end
+
 function GetIniFileData(mapfile, sect, key)
 	if (IniFile_Load(mapfile, mapfile) == 0) then 
 		print("Load IniFile Error!"..mapfile)
@@ -687,13 +705,20 @@ function bt_addtotalpoint(point)
 	if (point == 0) then
 		return
 	end
+	local tbEquip = GetAllEquipment()
+	for i=1, getn(tbEquip) do
+		local nG, nD, nP = GetItemProp(tbEquip[i])
+		if nP == 647 or nP == 806 or nP == 839 or nP == 840 or nP == 841 then
+			point = point*2
+		end
+	end
 
 	local nWeekDay = tonumber(GetLocalDate("%w"));
-	if nWeekDay ~= 2 and nWeekDay ~= 4 and nWeekDay ~= 6 then
+--	if nWeekDay ~= 2 and nWeekDay ~= 4 and nWeekDay ~= 6 then
 		point = BigBoss:AddSongJinPoint(point);	
 		point = TB_QIANQIU_YINGLIE0904:add_sj_point(point);
 		point = TB_QIANQIU_YINGLIE0904:add_sj_point_ex(point);
-	else
+--	else
 		local nHour = tonumber(GetLocalDate("%H%M"))
 		--DinhHQ
 		--20110406: kh´ng k›ch hoπt hi÷u ¯ng x2 x3 Æi”m khi sˆ dÙng m∆t nπ  trong TK  Thi™n tˆ 
@@ -702,7 +727,7 @@ function bt_addtotalpoint(point)
 			point = TB_QIANQIU_YINGLIE0904:add_sj_point(point);
 			point = TB_QIANQIU_YINGLIE0904:add_sj_point_ex(point);
 		end
-	end
+--	end
 	-- µ˜’˚’Ω≥°”¢–€√Êæﬂ
 --	local nHour = tonumber(GetLocalDate("%H"));
 --	if nWeekDay ~=1 and nHour ~= 21 then
@@ -710,23 +735,25 @@ function bt_addtotalpoint(point)
 --	end
 	
 	--tinhpn 20100706: Vo Lam Minh Chu
-	local nHour = tonumber(date("%H%M"))
 	local nDate = tonumber(GetLocalDate("%y%m%d"))	
-	if (GetTask(TSK_Get2ExpTK) == nDate) then
-		if (nHour >= 2100 and nHour <= 2300) then
-			if nWeekDay ~= 2 and nWeekDay ~= 4 and nWeekDay ~= 6 then
-				point = point*2
-			end
-		end
-	end
-	
+--	if (GetTask(TSK_Get2ExpTK) == nDate) then
+--		if (nHour >= 2100 and nHour <= 2300) then
+--			if nWeekDay ~= 2 and nWeekDay ~= 4 and nWeekDay ~= 6 then
+--				point = point*2
+--			end
+--		end
+--	end
+
+		if( nHour > 1700 and nHour <= 1805) or ( nHour >=1900 and nHour <= 2005) or ( nHour >=2300 and nHour <= 2359) then
+			point = point*2
+		end	
 	--tinhpn 20100804: IPBonus
 	local nDay = tonumber(date("%w"))
-	if nDay == 0 or nDay == 5 or nDay == 6  then
-		if (GetTask(TASKID_RECIEVE_BONUS_TK) == 1) then
-			point = floor(point*1.5)
-		end
-	end
+--	if nDay == 0 or nDay == 5 or nDay == 6  then
+--		if (GetTask(TASKID_RECIEVE_BONUS_TK) == 1) then
+--			point = floor(point*1.5)
+--		end
+--	end
 	point = Songjin_checkdoubleexp(point)
 	
 	-- ª˝∑÷ºÏ≤È
@@ -745,13 +772,15 @@ function bt_addtotalpoint(point)
 			szName, nGameLevel, nSubWorldID, nAddPoint, nTotalPoint, nBattlePoint, nKillPlayer));
 	end
 	
+
 	BT_SetData(PL_TOTALPOINT, BT_GetData(PL_TOTALPOINT) + point)
 	BT_SetData(PL_BATTLEPOINT, BT_GetData(PL_BATTLEPOINT) + point)
 	
 	bt_JudgePLAddTitle()
-	--Storm º”ª˝∑÷
 	storm_addpoint(1, point)
 	return point
+	--Storm º”ª˝∑÷
+
 end
 
 function bt_assignrank(camp)--∏√π¶ƒ‹“—Œﬁ–ß
@@ -814,17 +843,10 @@ function ResetBonus()
 		bonuscff1 = 1
 		bonuscff2 = 1
 	else
-		if KhongCoNguoiDanhLenDiemTongKim == 1 and (CAMP1CUN==0 and CAMP2CUN~=0) then
-			bonuscff1 = 1
-			bonuscff2 = 1
-		elseif KhongCoNguoiDanhLenDiemTongKim == 1 and (CAMP1CUN~=0 and CAMP2CUN==0) then
-			bonuscff1 = 1
-			bonuscff2 = 1
-		else
-			bonuscff1 = 1-(CAMP1CUN-AVRCUN)/AVRCUN
-			bonuscff2 = 1-(CAMP2CUN-AVRCUN)/AVRCUN
-		end
+		bonuscff1 = 1-(CAMP1CUN-AVRCUN)/AVRCUN
+		bonuscff2 = 1-(CAMP2CUN-AVRCUN)/AVRCUN
 	end
+	
 	-- π˙’ΩÀŒΩ∫ˆ¬‘À´∑Ω∆Ω∫‚
 	if BT_GetGameData(GAME_BATTLEID) == 2 then
 		bonuscff1 = 1
@@ -936,18 +958,18 @@ end
 
 
 function bt_exchangeexp(level, mark)
-		-- if (level < 40) then
-			-- return 0
-		-- end
-		-- local base_exp = (( 700 + floor(( level - 40 ) / 5 ) * 100 ) * 60 * 7 / 3000 );	-- 1∏ˆª˝∑÷µ„µƒª˘¥°æ≠—È÷µ
-		-- local bonus = floor( mark * base_exp )
-
-		-- if (level >= 120) then
-			-- bonus = floor( bonus * 2.5 * 2 )
-		-- end
+		if (level < 40) then
+			return 0
+		end
+		local base_exp = (( 700 + floor(( level - 40 ) / 5 ) * 100 ) * 60 * 7 / 3000 );	-- 1∏ˆª˝∑÷µ„µƒª˘¥°æ≠—È÷µ
+		local bonus = floor( mark * base_exp )
 		
-		-- return bonus
-		return 1
+		-- ÀŒΩµ˜’˚ By ≤Ø¡—∆ﬂœ“ 09/07/27
+		if (level >= 120) then
+			bonus = floor( bonus * 2.5 * 2 )
+		end
+		
+		return bonus
 end
 -----Ω´√Î¥´ªª≥…∑÷”Î√Î£¨±»»Á62s = 1m2s
 function GetMinAndSec(nSec)
@@ -987,9 +1009,7 @@ function bt_pop2signmap()	--≤ª‘ –ÌÕÊº“‘⁄∫Û”™Õ£¡Ù5∑÷÷”£¨‘⁄∂·∆Ïƒ£ Ω£¨∫Õ‘™Àßƒ£ Ω£¨…
 			SetCreateTeam(1);
 			SetDeathScript("");
 			SetFightState(0)		-- ¥ÚÕÍ’Ã∫Û∏ƒŒ™∑«’Ω∂∑◊¥Ã¨£®by Dan_Deng£©
-			SetPunish(1)
-			ForbidChangePK(0);
-			SetPKFlag(0)
+			
 			Msg2Player("ThÍi gian l≠u lπi trong Doanh trπi Æ∑ v≠Ót qu∏ 5 phÛt, bπn bﬁ Æ»y ra chi’n tuy’n")
 			if (l_curcamp == 1) then
 				SetRevPos(tbGAME_SIGNMAP[game_level], 1)
@@ -1009,22 +1029,24 @@ function bt_pop2signmap()	--≤ª‘ –ÌÕÊº“‘⁄∫Û”™Õ£¡Ù5∑÷÷”£¨‘⁄∂·∆Ïƒ£ Ω£¨∫Õ‘™Àßƒ£ Ω£¨…
 end
 
 function bt_getgn_awardtimes()
-	local nWeekDay = tonumber(GetLocalDate("%w"))
-	if nWeekDay == 0 or nWeekDay == 1 or nWeekDay == 2 or nWeekDay == 3 or nWeekDay == 4 or nWeekDay == 5 or nWeekDay == 6  then
-		local nHour = tonumber(GetLocalDate("%H%M"))
-		--DinhHQ
-		--20110409: kh´ng k›ch hoπt hi÷u ¯ng x4 Æi”m t›ch lÚy cÒa TK Thi™n Tˆ trong c∏c giÍ TK th≠Íng
-		if( nHour >= 1245 and nHour <= 1405) and ( nHour >= 1645 and nHour <= 1805) then
-			return 2
-		end
-		if( nHour >= 2045 and nHour <= 2205) then
-			return 4
-		end
+	local nWeekDay = tonumber(GetLocalDate("%w"  ))
+	--if nWeekDay == 0 or nWeekDay == 1 or nWeekDay == 2 or nWeekDay == 3 or nWeekDay == 4 or nWeekDay == 5 or nWeekDay == 6 or nWeekDay == 7 then
+	local nHour = tonumber(GetLocalDate("%H"  ))
+
+	--20110409: kh´ng k›ch hoπt hi÷u ¯ng x2 Æi”m t›ch lÚy trÀn 21h
+	if nHour == 21 or nHour == 13 then
+	return 4
 	end
+	if nHour == 11 or nHour == 23 then
+	--if nHour >= 11 then
+
+	return 2
+	end
+
 	if (GetMissionV(MS_HUANGZHIZHANG) == 0 or GetMissionV(MS_HAUNGZHIZHANG) == 1) then
-		return 1
+	return 1
 	else
-		return GetMissionV(MS_HUANGZHIZHANG)
+	return GetMissionV(MS_HUANGZHIZHANG)
 	end
 end
 
@@ -1146,27 +1168,110 @@ function bt_createleague(szlgname)
 	return ret
 end;
 
+-----------------------------------------------------------------------------Phan Thuong Top 10 Tong Kim---------------------------------------------------------------------------------------------------------------------------
 function bt_reportworldresult(tbPlayer)
 	local ncount = getn(tbPlayer);
 	if (ncount <= 0) then
 		return 0;
 	else
-		if (ncount > 3) then
-			ncount = 3;
+		if (ncount > 10) then
+			ncount = 10;
 		end;
 	
-		local szParam = "TËng Kim cao c p Æ∑ k’t thÛc, Top "..ncount.." gÂm: <enter>";
+		local szParam = "TËng Kim cao c p Æ∑ k’t thÛc, Top"..ncount.." gÂm: <enter>";
 		for i = 1, ncount do
 			if (tbPlayer[i][1]) then
 				szParam = format("%s   X’p hπng %d <color=green>%s<color>  %d<enter>",
 				szParam,i,safeshow(tbPlayer[i][1]),tbPlayer[i][3]);
 			end;
 		end;
+		for i = 1, ncount do
+			local szName = tbPlayer[i][1]
+			if szName ~= nil and szName ~= "" then
+				local nTopPlayerIdx = SearchPlayer(szName);
+				if (nTopPlayerIdx > 0) then
+				local nWeek = tonumber(GetLocalDate("%w"))
+				local nHour = tonumber(GetLocalDate("%H%M"))
+						if (nHour >= 1300 and nHour <= 1420) or (nHour >= 2100 and nHour <= 2210) then
+							PlayerIndex = nTopPlayerIdx
+							SetTask(TASKID_RECIEVE_TOP_TK,i)
+							--doFunByPlayer(nTopPlayerIdx, PhanThuongDuaTop,i)
+						end
+					end
+				end
+			end
+		end;
 		LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szParam , "", "")
 	end;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function PhanThuongDuaTop(nRank)
+	if not nRank then
+		return
+	end
+	local tbThuongTop = 
+	{
+		[1]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,1)
+			end,
+		},
+		[2]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,2)
+			end,
+		},
+		[3]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,3)
+			end,
+		},
+		[4]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,4)
+			end,
+		},
+		[5]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,5)
+			end,
+		},
+		[6]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,6)
+			end,
+		},
+		[7]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,7)
+			end,
+		},
+		[8]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,8)
+			end,
+		},
+		[9]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,9)
+			end,
+		},
+		[10]={
+			pFun = function (nItemCount, szLogTitle)
+				SetTask(TASKID_RECIEVE_TOP_TK,10)
+			end,
+		},
+		
+	
+	}
+	local slog = format("ThuongTop%dTongKim", nRank)
+	local tbAward = tbThuongTop[nRank]
+	if tbAward then
+		tbAwardTemplet:Give(tbAward, 1, {slog,slog})
+	end
 end
----–¬º”»ÎEnd
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Include("\\script\\lib\\awardtemplet.lua")
 
 --by zero 2007-7-30 ∑µªÿª˝∑÷∆Ω∫‚±»¿˝ ÀŒ£¨Ω
 function bonus_rate()
@@ -1192,21 +1297,21 @@ function mar_addmissionpoint(totalpoint, nCurCamp)
 	--tinhpn 20100706: Vo Lam Minh Chu
 	local nHour = tonumber(date("%H%M"))
 	local nDate = tonumber(GetLocalDate("%y%m%d"))	
-	if (GetTask(TSK_Get2ExpTK) == nDate) then
-		if (nHour >= 2100 and nHour <= 2300) then
-			if nWeekDay ~= 2 and nWeekDay ~= 4 and nWeekDay ~= 6 then	
+	--if (GetTask(TSK_Get2ExpTK) == nDate) then
+		if (nHour >= 2100 and nHour <= 2300) or (nHour >= 1300 and nHour <= 1500) or (nHour >= 0000 and nHour <= 0010)then
+			--if nWeekDay ~= 2 and nWeekDay ~= 4 and nWeekDay ~= 6 then	
 				totalpoint = totalpoint*2
-			end
+			--end
 		end
-	end
+	--end
 	
 	--tinhpn 20100804: IPBonus
 	local nDay = tonumber(date("%w"))
-	if nDay == 0 or nDay == 5 or nDay == 6  then
+	--if nDay == 0 or nDay == 5 or nDay == 6  then
 		if (GetTask(TASKID_RECIEVE_BONUS_TK) == 1) then
 			totalpoint = floor(totalpoint*1.5)
 		end
-	end
+--	end
 		
 	
 	if (not nCurCamp) then
@@ -1300,4 +1405,11 @@ function bt_announce (lsf_level, n_time)
 	
 	
 	PlayerIndex = old_player;
+end
+
+
+function GetPureIP()
+local tbOwnIP = split(GetIP()," ")
+local szStr = tbOwnIP[1]
+return szStr
 end

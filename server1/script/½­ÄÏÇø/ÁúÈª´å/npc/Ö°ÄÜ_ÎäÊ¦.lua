@@ -2,7 +2,7 @@
 -- 任务要求: 等级(>=2), 金钱(>=100两)
 -- By: Dan_Deng(2003-11-04)
 
-Include("\\script\\npcmonphai\\vosukhinhcong.lua")
+Include("\\script\\global\\各派接引弟子\\轻功_武师模板.lua")
 
 function main(sel)
 	learn()

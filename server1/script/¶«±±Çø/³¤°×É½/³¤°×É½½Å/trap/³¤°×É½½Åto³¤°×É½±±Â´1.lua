@@ -1,8 +1,23 @@
---东北区 长白山脚to长白山北麓1
---Trap ID：长白山脚 4
+-- script viet hoa By http://tranhba.com  ng b綾 khu Trng b筩h s琻 ch﹏ to Trng b筩h s琻 b綾 l閏 1 
+-- script viet hoa By http://tranhba.com Trap ID# Trng b筩h s琻 ch﹏ 4 
 
 function main(sel)
-	SetFightState(1);
-	NewWorld(322, 2048,4120);
-	AddTermini(200)
+SetFightState(1); 
+NewWorld(322, 2048,4120); 
+AddTermini(200) 
 end;
+
+function truongbachbac()
+SetFightState(1); 
+NewWorld(322, 2048,4120); 
+AddTermini(200) 
+end;
+
+function truongbachtay()
+SetFightState(1); 
+NewWorld(999, 2048,4120); 
+AddTermini(229) 
+end;
+
+function no()
+end

@@ -5,7 +5,7 @@
 -- ÔØÈë»Ô»ÍÖ®ÕÂµÄÍ·ÎÄ¼þ
 Include("\\script\\event\\great_night\\huangzhizhang\\event.lua");
 Include("\\script\\tong\\tong_award_head.lua");	--by zhishan
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
+
 
 -- ¸øÍæ¼Ò·¢½±ÀøµÄ×Üº¯Êý
 -- ´«Èë²ÎÊý£ºmyAwardType£¬1 ÎªÆÕÍ¨ÈÎÎñ½±Àø 2 ÎªÁ´½±Àø 3 Îª»·½±Àø
@@ -73,20 +73,20 @@ function tl_giveplayeraward(myGiveAwardType)
 				
 				-- 2005/9/20 ÈÕÐÞ¸ÄÁË½ðÇ®µÄ²úÉú±ÈÀý£¬Îª 60% ~ 100% ¸¡¶¯
 				-- 2006/8/23 ÎªÔ½ÄÏÐÞ¸ÄÁËÒ°ÛÅÈÎÎñµÄ½ðÇ®¼ÛÖµ£¬Ôö¼Ó 15%
-				myMainValue = floor((myMainValue * PhanThuongTienVan 	/	2) * (C_Random(60,100) * 0.01)) + myTaskValue1 -- ¼ÆËãºóµÃ³öµÄÊµ¼Ê½ðÇ®Á¿
+				myMainValue = floor((myMainValue * 0.05 * 1.15) * (C_Random(10,20) * 0.01)) + myTaskValue1 -- ¼ÆËãºóµÃ³öµÄÊµ¼Ê½ðÇ®Á¿
 				
 				--=======================================
-				
+				--print("test da tau")
 				myMainValue = TireReduce(myMainValue);  -- ½øÐÐÆ£ÀÍÏµÍ³´¦Àí£»
 				myMainValue = CountDoubleMode(myMainValue);  -- ½øÐÐË«±¶»î¶¯µÄ´¦Àí
 				SetTaskTemp(TASKID_TONG_TASKLINKTEMP, myMainValue); --¼ÇÂ¼¼ÛÖµÁ¿
 				
-				myAwardMoney = format(" %s %s",myMainValue,"tiÒn ");
+				myAwardMoney = format("%s%s",myMainValue," tiÒn ");
 				
 				myAwardArry[myAwardArryIndex] = {1,myMainValue,0,0,0,0,0,0,myAwardMoney,0}
 				myAwardArryIndex = myAwardArryIndex + 1
 				
-				tl_print("NhËn ®­îc tiÒn th­ëng: "..myAwardMoney);
+				tl_print("NhËn ®­îc  tiÒn th­ëng: "..myAwardMoney);
 				
 			elseif (myAwardType==2) then -- Èç¹û½±ÀøµÄÊÇ¾­Ñé
 			
@@ -94,9 +94,10 @@ function tl_giveplayeraward(myGiveAwardType)
 				myTaskValue2 = tonumber(TabFile_GetCell(tl_gettasktextID(myTaskType),tl_gettasktablecol(),"TaskValue2"))
 				-- ¾­¹ý¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ½±Àø¼ÛÖµ
 				myMainValue = myTaskValue1 + (myTaskValue2 * (1+(myCountLinks+myTimes)*0.1) + myLoops * 0.2)
+				
 				-- 2006/8/23 ÎªÔ½ÄÏÐÞ¸ÄÁËÒ°ÛÅÈÎÎñµÄ¾­Ñé¼ÛÖµ£¬¼õÉÙ 10%
-				-- myMainValue = floor((myMainValue * 0.36) * (C_Random(80,120) * 0.01)) -- ¼ÆËãºóµÃ³öµÄÊµ¼Ê¾­ÑéÖµÁ¿
-				myMainValue = floor((myMainValue * PhanThuongKinhNghiem) * (C_Random(1,10) * 0.01)) -- Fix by AloneScript
+				myMainValue = floor((myMainValue * 0.36) * (C_Random(80,120) * 0.01)) -- ¼ÆËãºóµÃ³öµÄÊµ¼Ê¾­ÑéÖµÁ¿
+				
 				--=======================================
 				myMainValue = TireReduce(myMainValue);--½øÐÐÆ£ÀÍÏµÍ³´¦Àí£»
 				myMainValue = CountDoubleMode(myMainValue);  -- ½øÐÐË«±¶»î¶¯µÄ´¦Àí
@@ -110,14 +111,16 @@ function tl_giveplayeraward(myGiveAwardType)
 						nTemExp = 1;
 					end;
 					myMainValue = nTemExp * 1000;
-					myAwardExp = format(" %s %s",myMainValue," ®iÓm tÝch lòy D· TÈu")
+					myAwardExp = format("%s%s",myMainValue," ®iÓm tÝch lòy D· TÈu")
+					
 					myAwardArry[myAwardArryIndex] = {3,myMainValue,0,6,1,1475,1,0,myAwardExp,0}
 					myAwardArryIndex = myAwardArryIndex + 1
 					SetTask(TSK_TASKLINK_SEANSONPOINT, nTemExp);
 					
-					tl_print("NhËn ®­îc mét phÇn th­ëng ®iÓm kinh nghiÖm: "..myAwardExp);
+					tl_print("NhËn ®­îc mét phÇn th­ëng ®iÓm kinh nghiÖm:"..myAwardExp);
 				else
-					myAwardExp = format(" %s %s",myMainValue,"®iÓm kinh nghiÖm")
+					myAwardExp = format("%s%s",myMainValue," ®iÓm kinh nghiÖm")
+					
 					myAwardArry[myAwardArryIndex] = {2,myMainValue,0,0,0,0,0,0,myAwardExp,0}
 					myAwardArryIndex = myAwardArryIndex + 1
 					
@@ -391,7 +394,6 @@ local n
 	
 	myMainValue = floor((myMainValue / 2) * (C_Random(80,120) * 0.01)) -- ¼ÆËãºóµÃ³öµÄÊµ¼Ê¾­ÑéÖµÁ¿
 	myAwardExp = myMainValue
-	print("=============>", myAwardExp)
 	
 	myMainValue = floor((myMainValue / 2) * (C_Random(80,120) * 0.01)) -- ¼ÆËãºóµÃ³öµÄÊµ¼ÊµÄ½ðÇ®Á¿
 	myAwardMoney = myMainValue
@@ -508,7 +510,7 @@ local nGoods = {"",0,0,0,0,0,0,0};
 		
 		if (nGoods[2]==1) then
 			AddGoldItem(0, nGoods[3]);
-			Msg2Player("Chóc mõng b¹n! Hoµn thµnh nhiÖm vô lÇn nµy "..nTask.." b¹n nhËn ®­îc"..nGoods[1].."!!!");
+			Msg2Player("Chóc mõng b¹n! Hoµn thµnh nhiÖm vô lÇn nµy  "..nTask.." b¹n nhËn ®­îc"..nGoods[1].."!!!");
 			Say("B¹n trÎ lµm tèt l¾m, tÆng ng­¬i <color=yellow>"..nGoods[1].."<color> nµy, sau nµy h·y cè g¾ng thªm nhÐ!", 0);
 			AddGlobalCountNews("Ng­êi ch¬i "..GetName().."B¹n hoµn thµnh nhiÖm vô nµy  "..nTask.." D· TÈu, nhËn ®­îc 1 bé Trang bÞ Hoµng Kim "..nGoods[1].." mét c¸i!!!", 3);
 			

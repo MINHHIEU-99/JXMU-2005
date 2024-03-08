@@ -25,13 +25,7 @@ local Uworld1082 = nt_getTask(TSKID_KILLTASKID)
 		kill_level20(nNpcIndex)
 	end
 end
-
-function OnNpcDeath( nNpcIndex )
-	-- print("Enter OnNpcDeath: "..nNpcIndex);
-	-- local nseries = NPCINFO_GetSeries(nNpcIndex)
-	-- local nNpcDropRateFile = GetNpcDropRateFile(nNpcIndex);
-	-- ITEM_DropRateItem(nNpcIndex, 1,"\\settings\\droprate\\npcdroprate10.ini", 0, 4, nseries);
-end
+ 
 -----------------------------------------------------------------------
 
 --¸ø·ûºÏÉ±ËÀbossµÄÍæ¼Ò·¢½±²¢¸Ä±äÈÎÎñ±äÁ¿
@@ -49,36 +43,28 @@ function kill_level20(nNpcIndex)
 		
 		if ( Uworld1082 >= 1 and Uworld1082 <= 20 ) then
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev20.ini", 0, 4, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ  ")
 		end
 		if ( Uworld1082 >= 21 and Uworld1082 <= 40 ) then
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev30.ini", 0, 5, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ")
 		end
 		if ( Uworld1082 >= 41 and Uworld1082 <= 60 ) then
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev40.ini", 0, 6, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ")
 		end
 		if ( Uworld1082 >= 61 and Uworld1082 <= 80 ) then
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev50.ini", 0, 7, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ")
 		end
 		if ( Uworld1082 >= 81 and Uworld1082 <= 100 ) then
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev60.ini", 0, 8, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ")
 		end
 		if ( Uworld1082 >= 101 and Uworld1082 <= 120 ) then
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev70.ini", 0, 9, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ")
 		end
 		if ( Uworld1082 >= 121 and Uworld1082 <= 140 ) then
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev80.ini", 0, 10, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ")
 		end
 		if ( Uworld1082 >= 141 and Uworld1082 <= 160 ) then
 			tbChangeDestiny:completeMission_Killer();	-- ÄæÌì¸ÄÃü
 			ITEM_DropRateItem(nNpcIndex, 8,"\\settings\\droprate\\boss\\bosstask_lev90.ini", 0, 10, nseries);
-			Msg2SubWorld("<color=green>Ng­ªi ch¬i <color=red> "..GetName().." <color=green> tiªu diÖt thµnh c«ng boss s¸t thñ")
 		end		
 		G_ACTIVITY:OnMessage("FinishKillerBoss", PlayerIndex, TSKID_KILLTASKID, Uworld1082, 0)
 		SetMemberTask(TSKID_KILLTASKID,Uworld1082,0,killbossall, nseries)
@@ -89,5 +75,5 @@ end
 
 function killbossall()
 	AddSkillState(541,1,0,54)
-	Msg2Player("S¸t thñ ®· bÞ tiªu diÖt, hoµn thµnh nhiÖm vô.") 
+	Msg2Player("S¸t thñ ®· bÞ tiªu diÖt, hoµn thµnh nhiÖm vô.")
 end

@@ -89,7 +89,7 @@ end
 function pActivity:OnGetMuTong()
 	PlayerFunLib:GetItem({tbProp={6,1,2736,1,0,0},nBindState = -2,nExpiredTime=20110405,},1,"TiÕt Trång C©y 2011, nhËn ®­îc Thïng Gç")
 	WriteLog(format("%s\tAccount:%s[Name:%s] nhËn 1 Thïng N­íc.",
-				GetLocalDate("%d- %m- %Y %H giê %M phót %S Gi©y"),
+				GetLocalDate("%Y-%m-%d %H:%M:%S"),
 				GetAccount(),
 				GetName())
 			);
@@ -117,7 +117,7 @@ function pActivity:OnGiveMuTong()
 	local nTsk = self:GetTask(%nTskIdx_DaylyGiveWater)
 	local nDaylyCount = nTsk - floor(nTsk/256) * 256
 	WriteLog(format("%s\tAccount:%s[Name:%s] giao[%d] c¸i Thïng N­íc §Çy , h«m nay ®· céng thªm [%d] c¸i.",
-				GetLocalDate("%d- %m- %Y %H giê %M phót %S Gi©y"),
+				GetLocalDate("%Y-%m-%d %H:%M:%S"),
 				GetAccount(),
 				GetName(),
 				nCount,
@@ -170,7 +170,7 @@ function pActivity:OnGiveLongYinShengShui(nCount)
 	self:AddTask(%nTskIdx_LastRecordDay, nCount)
 	local nTotalCount = self:GetTask(%nTskIdx_LastRecordDay)
 	WriteLog(format("%s\tAccount:%s[Name:%s] giao[%d] c¸i Long ¢m Th¸nh Thñy , h«m nay ®· céng thªm [%d] c¸i.",
-			GetLocalDate("%d- %m- %Y %H giê %M phót %S Gi©y"),
+			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
 			nCount,
@@ -222,7 +222,7 @@ function pActivity:_AddLongYinShengShuiStat(nCount)
 	end
 	
 	--local szMsg = format("%s\t thèng kª Long ¢m Th¸nh Thñy:map%d(%s)=%d"
-	--	,GetLocalDate("%d- %m- %Y %H giê %M phót %S Gi©y")
+	--	,GetLocalDate("%Y-%m-%d %H:%M:%S")
 	--	,nMapId,%tbPoolCount[nMapId].szName, %tbPoolCount[nMapId].nTotal)
 	--print(szMsg)
 	
@@ -251,7 +251,7 @@ function pActivity:_CallMuKeBoss(nMapId)
 	AddGlobalNews(szInfo)
 	
 	local szMsg = format("%s\tmap%d(%s) bªn ngoµi (%d,%d) xuÊt hiÖn boss [ Méc Kh¸ch ], khu vùc nµy ®· giao Long ¢m Th¸nh Thñy tæng sè l­îng lµ [%d]"
-		, GetLocalDate("%d- %m- %Y %H giê %M phót %S Gi©y")
+		, GetLocalDate("%Y-%m-%d %H:%M:%S")
 		, nMapId, %tbPoolCount[nMapId].szName, tbNpc.nPosX, tbNpc.nPosY
 		, %tbPoolCount[nMapId].nTotal)
 	WriteLog(szMsg)

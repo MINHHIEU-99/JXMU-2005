@@ -1,11 +1,8 @@
 Include("\\script\\missions\\challengeoftime\\include.lua")
 Include("\\script\\lib\\log.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
+
 Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
-
-
-
 function want_playboat()
 	OldSubWorld = SubWorld
 	OldPlayer = PlayerIndex
@@ -17,8 +14,8 @@ function want_playboat()
 		Say("Xin lÁi! C«n ph∂i lµ ßÈi tr≠Îng mÌi c„ t≠ c∏ch b∏o danh tham gia 'Nhi÷m vÙ Th∏ch th¯c thÍi gian'",0)
 		return
 	end
-	if (GetTeamSize() < SoNguoiThapNhatThamGiaVuotAi) then
-		Say("Xin lÁi! ßÈi tham gia 'Nhi÷m vÙ Th∏ch th¯c thÍi gian' c«n ph∂i c„ ›t nh t <color=red>"..SoNguoiThapNhatThamGiaVuotAi.."<color> ng≠Íi!",0)
+	if (GetTeamSize() < 2) then
+		Say("Xin lÁi! ßÈi tham gia 'Nhi÷m vÙ Th∏ch th¯c thÍi gian' c«n ph∂i c„ ›t nh t <color=red>2<color> ng≠Íi!",0)
 		return
 	end
 	if(GetLevel() < 50) then
@@ -114,8 +111,8 @@ function dragon_join()
 		Say("Xin lÁi! ßºng c p d≠Ìi 50 kh´ng th” tham gia 'Nhi÷m vÙ Th∏ch th¯c thÍi gian'.",0);
 		return
 	end
-	if (GetTeamSize() < SoNguoiThapNhatThamGiaVuotAi) then
-		Say("Xin lÁi! ßÈi tham gia 'Nhi÷m vÙ Th∏ch th¯c thÍi gian' c«n ph∂i c„ ›t nh t <color=red>"..SoNguoiThapNhatThamGiaVuotAi.."<color> ng≠Íi!",0)
+	if (GetTeamSize() < 2) then
+		Say("Xin lÁi! ßÈi tham gia 'Nhi÷m vÙ Th∏ch th¯c thÍi gian' c«n ph∂i c„ ›t nh t <color=red>2<color> ng≠Íi!",0)
 		return
 	end
 	
@@ -213,6 +210,8 @@ function dragon_join()
 
 				for i = 1 , getn(tabplayer) do 
 					PlayerIndex = tabplayer[i]
+					
+					-- µ˜’˚¥≥πÿ by wangjingjun 2011.03.01
 					if (blevel == 0) then
 						for i=20,80,10 do
 							if(CalcEquiproomItemCount( 6, 1, 400, i ) > 0) then
@@ -224,12 +223,15 @@ function dragon_join()
 						ConsumeEquiproomItem( 1, 6, 1, 400, 90)
 					end
 					
+					--print("player"..PlayerIndex)
+
+					-- ‘⁄’‚¿Ô≈–∂œ «∑Ò”–‘Ω”¸∆ÛÕº
 					w,x,y = GetWorldPos();
 					if w==208 then
 					else
 						local MemberNowDate = tonumber(GetLocalDate("%y%m%d"));
 						if(GetTask(1551) ~= MemberNowDate) then
-							SetTask(1550,SoLanVuotAiTrongNgay);  
+							SetTask(1550,COUNT_LIMIT);  
 							SetTask(1551,MemberNowDate);					
 						end
 						SetTask(1550,GetTask(1550)-1);
@@ -253,7 +255,7 @@ function dragon_join()
 					SetMissionV(VARV_BATCH_MODEL,0)
 				end
 				
-				tbLog:PlayerActionLog("EventChienThang042011","BaoDanhVuotAi")				
+				tbLog:PlayerActionLog("EventChienThang042011","BaoDanhVuotAi")-- ±®√˚»’÷æ				
 				return
 			end
 		end

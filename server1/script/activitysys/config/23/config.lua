@@ -17,7 +17,6 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Trong ngµy ®· hoµn thµnh 10 nhiÖm vô D· TÈu"} },
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,4096,1,0,0},nBindState = -2},1,"Trong ngµy ®· hoµn thµnh 10 nhiÖm vô D· TÈu"} },		
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_YeSou,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},
@@ -39,7 +38,6 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Trong ngµy cã trËn liªn ®Êu th¾ng ®Çu tiªn"} },
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,417,1,0,0},nBindState = -2},1,"Trong ngµy cã trËn liªn ®Êu th¾ng ®Çu tiªn"} },		
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_LeagueMatch,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},
@@ -69,7 +67,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
-	szMessageType = "FinishMail",
+	szMessageType = "nil",
 	szName = "Trong ngµy lÇn ®Çu tiªn hoµn thµnh tÝn sø Phong Chi Kú",
 	nStartDate = nil,
 	nEndDate  = nil,

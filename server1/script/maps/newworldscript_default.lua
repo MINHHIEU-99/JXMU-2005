@@ -4,6 +4,7 @@
 -- CreateTime	:	2005-09-02
 -- Desc			:  	µØÍ¼ÇÐ»»´¥·¢½Å±¾
 -------------------------------------------------------------------------
+
 local tbMapLevel = {
 [9] = 70,
 [27] = 70,
@@ -51,8 +52,17 @@ local tbMapLevel = {
 [341] = 90,
 [342] = 90,
 [336] = 90,
+[136] = 70,
+[131] = 70,
+[917] = 80,
+[918] = 80,
+[919] = 80,
+[920] = 80,
+[921] = 80,
+[922] = 80,
+[923] = 80,
+[924] = 80,
 }
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 Include("\\script\\lib\\string.lua")
 Include("\\script\\maps\\newworldscript_h.lua")
 Include("\\script\\item\\tianziyuxi.lua");	-- Ìì×ÓÓñçô
@@ -70,7 +80,7 @@ function PraseParam(szParam)
 		for i = 1,getn(aryFuns) do
 			local ExecFun = aryFuncStore[aryFuns[i]]
 			if (ExecFun == nil)then
-				print(format("Error: (Never world: %d) Ch­a ®Þnh nghÜ hµm sè %s", SubWorld, aryFuns[i]))
+				print("Error: (Ne v¹n v¹norld:%d) Ch­a ®Þnh nghÜ hµm sè%s", SubWorld, aryFuns[i])
 			else
 				aryChangeWorldExec[SubWorld][j] =  ExecFun;
 				j = j+1;
@@ -81,18 +91,33 @@ function PraseParam(szParam)
 end
 
 function OnNewWorldDefault(szParam)
---===================================================================================--
-if KiemTraCapDoTrainMapVuotCap == 1 then
-local nW,_,_ = GetWorldPos()
- if %tbMapLevel[nW] and %tbMapLevel[nW] > GetLevel() then
-	NewWorld(53,194*8,204*16)
-	Msg2Player("Ng­¬i ®ang ë map cã cÊp ®é qu¸i cao h¬n cÊp hiÖn t¹i cña ng­¬i. HiÖn t¹i ng­¬i tù ®éng trë vÒ tr¹ng th¸i luyÖn c«ng vµ kh«ng thÓ ®æi pk")
-	SetPKFlag(0)
-	ForbidChangePK(1)
-	return
- end
-end
---===================================================================================--
+	local nW,_,_ = GetWorldPos()
+	if (nW == 917 or  nW == 918 or  nW == 919 or  nW == 920 or  nW == 921 or  nW == 922 or  nW == 923 or  nW == 924) and GetTask(3203) <= 0 then
+			Say("Thêi gian cßn l¹i cña b¹n ë b¶n ®å luyÖn c«ng ®· hÕt. Vui lßng gia h¹n",0)
+			NewWorld(53,194*8,204*16)
+			return
+	end
+	if %tbMapLevel[nW] then
+		if (GetCamp() == 0 or GetCurCamp() == 0) then
+		-- Msg2Player("<color=green>Ng­¬i ®ang ë map cã cÊp ®é qu¸i cao h¬n cÊp hiÖn t¹i cña ng­¬i. HiÖn t¹i ng­¬i tù ®éng trë vÒ tr¹ng th¸i luyÖn c«ng vµ kh«ng thÓ ®æi pk")
+			Say("C¸c h¹ vui lßng gia nhËp m«n ph¸i råi míi ®i hµnh tÈu giang hå ®­îc",0)
+			NewWorld(53,194*8,204*16)
+			return
+		end
+		-- SetProtectTime(18*3) -- script viet hoa By http://tranhba.com  ba gi©y b¶o vÖ thêi gian 
+		-- AddSkillState(963, 1, 0, 18*3) 	
+	end
+--	if nW == 341 then
+	--NewWorld(53,194*8,204*16)
+	--end
+	-- if %tbMapLevel[nW] and %tbMapLevel[nW] > GetLevel() then
+	-- NewWorld(53,194*8,204*16)
+	-- Msg2Player("<color=green>Ng­¬i ®ang ë map cã cÊp ®é qu¸i cao h¬n cÊp hiÖn t¹i cña ng­¬i. HiÖn t¹i ng­¬i tù ®éng trë vÒ tr¹ng th¸i luyÖn c«ng vµ kh«ng thÓ ®æi pk")
+	-- SetPKFlag(0)	--ÍÀÉ±Ä£Ê½
+	-- ForbidChangePK(1);
+	-- Msg2Player("Map dang chay"..SubWorld)
+	-- return
+	-- end
 	if (PraseParam(szParam) == 1) then
 		for i = 1,getn(aryChangeWorldExec[SubWorld]) do	--Ö´ÐÐº¯ÊýÁ´
 			aryChangeWorldExec[SubWorld][i](1)
@@ -104,6 +129,10 @@ end
 end
 
 function OnLeaveWorldDefault(szParam)
+	local nW,_,_ = GetWorldPos()
+	if %tbMapLevel[nW] and %tbMapLevel[nW] > GetLevel() then
+		ForbidChangePK(0);
+	end
 	if (PraseParam(szParam) == 1) then
 		for i = 1,getn(aryChangeWorldExec[SubWorld]) do	--Ö´ÐÐº¯ÊýÁ´
 			aryChangeWorldExec[SubWorld][i](0)

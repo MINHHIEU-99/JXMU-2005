@@ -5,11 +5,11 @@ GOLD_SERIES = 4000;
 GOLD_COUNT = 4002; 
 FIRSTDAY = 816; 
 
-GLBID_GOLD_LOTTERY_COUNT = 6; -- script viet hoa By tuanglit  toµn côc thay ®æi l­îng ID of phôc vô khÝ th­îng ®· ph¸t ra hoµng kim vÐ sè ®Õm 
--- script viet hoa By tuanglit  b¶y ®¹i thµnh thÞ b¶n ®å 
--- script viet hoa By tuanglit  1- ph­îng t­êng , 2- thµnh ®« , 3- §¹i Lý , 4- biÖn kinh , 5- t­¬ng d­¬ng , 6- D­¬ng Ch©u , 7- tr­íc khi an 
+GLBID_GOLD_LOTTERY_COUNT = 6; -- script viet hoa By http://tranhba.com  toµn côc thay ®æi l­îng ID of phôc vô khÝ th­îng ®· ph¸t ra hoµng kim vÐ sè ®Õm 
+-- script viet hoa By http://tranhba.com  b¶y ®¹i thµnh thÞ b¶n ®å 
+-- script viet hoa By http://tranhba.com  1- ph­îng t­êng , 2- thµnh ®« , 3- §¹i Lý , 4- biÖn kinh , 5- t­¬ng d­¬ng , 6- D­¬ng Ch©u , 7- tr­íc khi an 
 arynCityMapID = { 1, 11, 162, 37, 78, 80, 176 } 
-nMaxGoldLottery = 100000; -- script viet hoa By tuanglit  mçi thai GameServer th­îng nh­ng ph¸t ra nhiÒu nhÊt hoµng kim vÐ sè ®Õm 
+nMaxGoldLottery = 100000; -- script viet hoa By http://tranhba.com  mçi thai GameServer th­îng nh­ng ph¸t ra nhiÒu nhÊt hoµng kim vÐ sè ®Õm 
 
 function onPayTicket() 
 if (IsCharged() ~= 1 ) then 
@@ -86,7 +86,7 @@ SetSpecItemParam(item , 4, P4)
 SetSpecItemParam(item, 5, nQuestion) 
 if (nQuestion == 1000) then 
 SetSpecItemParam(item, 5, 1000) 
-UpdateSDBRecord("GoldLottery0901", LotteryId, LotteryTime, 0) -- script viet hoa By tuanglit  hoµng kim ®¹i t­ëng ghi chÐp v× 9 th¸ng 1 ngµy ®Ých vÐ sè 
+UpdateSDBRecord("GoldLottery0901", LotteryId, LotteryTime, 0) -- script viet hoa By http://tranhba.com  hoµng kim ®¹i t­ëng ghi chÐp v× 9 th¸ng 1 ngµy ®Ých vÐ sè 
 else 
 UpdateSDBRecord("GoldLottery"..date("%m%d"),LotteryId, LotteryTime, 0) 
 end 
@@ -119,7 +119,7 @@ PayTab[i] = nMonth.." th¸ng "..nDay.." ngµy hoµng kim vÐ sè /doPayforGold"
 end; 
 	PayTab[nIntervalDay + 1] = "²»ÓÃ¶Ò½±ÁË/Cancel";
 Say("Ng­¬i muèn ®æi mét ngµy kia ®Ých hoµng kim vÐ sè ®¹i t­ëng ? ", getn(PayTab), PayTab); 
--- script viet hoa By tuanglit  Say("Vèn ngµy trung t­ëng ®Ých hoµng kim vÐ sè sè v× ["..GetGlbValue(GOLD_TIMESTEMP).."-"..GetGlbValue(GOLD_SERIES).."], lÊy ®­îc t­ëng ng­êi cã thÓ ph¶i ®Õn ngÉu nhiªn lÊy ®­îc hoµng kim trang bÞ mét mãn # ng­¬i muèn ®æi t­ëng sao ? ", 2,"Tèt /doPayforGold","Kh«ng cÇn /Cancel") 
+-- script viet hoa By http://tranhba.com  Say("Vèn ngµy trung t­ëng ®Ých hoµng kim vÐ sè sè v× ["..GetGlbValue(GOLD_TIMESTEMP).."-"..GetGlbValue(GOLD_SERIES).."], lÊy ®­îc t­ëng ng­êi cã thÓ ph¶i ®Õn ngÉu nhiªn lÊy ®­îc hoµng kim trang bÞ mét mãn # ng­¬i muèn ®æi t­ëng sao ? ", 2,"Tèt /doPayforGold","Kh«ng cÇn /Cancel") 
 end 
 
 function doPayforGold(nDay) 
@@ -201,7 +201,7 @@ function getGoldLotteryID()
 local nMapCount = getn( arynCityMapID ); 
 	local nCurrServerID = nMapCount + 1;
 for i = 1, nMapCount do 
-if( SubWorldID2Idx( arynCityMapID[i] ) >= 0 ) then -- script viet hoa By tuanglit  lîi dông b¶n ®å cã hay kh«ng tån t¹i ®Ó ph¸n ®o¸n tr­íc mÆt lµ ë ®©u mét m¸y phôc vô khÝ th­îng 
+if( SubWorldID2Idx( arynCityMapID[i] ) >= 0 ) then -- script viet hoa By http://tranhba.com  lîi dông b¶n ®å cã hay kh«ng tån t¹i ®Ó ph¸n ®o¸n tr­íc mÆt lµ ë ®©u mét m¸y phôc vô khÝ th­îng 
 nCurrServerID = i; 
 break; 
 end 

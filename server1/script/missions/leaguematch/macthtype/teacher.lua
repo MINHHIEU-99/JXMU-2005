@@ -1,16 +1,12 @@
 Include("\\script\\missions\\leaguematch\\tb_head.lua")
---==============Ê¦Í½Ë«ÈËÈüÏà¹ØÊı¾İ===============
 
 if (not tmp_process_data) then
 	return
 end
 
---È«²¿Ê¦Í½Ë«ÈËÈüÏà¹ØÊı¾İ
 WLLS_DATA = {
 	
 	name = "Song ®Êu s­ ®å",
-	
-	--µØÍ¼ĞÅÏ¢
 	match_type = {
 		{
 			name = "",
@@ -33,19 +29,19 @@ WLLS_DATA = {
 			ladder = 10222,
 			map = {
 				{540, 570, 541, "(1)"},
-				{542, 571, 543, "(2)"},
-				{544, 572, 545, "(3)"},
-				{546, 573, 547, "(4)"},
-				{548, 574, 549, "(5)"},
-				{550, 575, 551, "(6)"},
-				{552, 576, 553, "(7)"},
-				{554, 577, 555, "(8)"},
+				{540, 570, 541, "(2)"},
+				{540, 570, 541, "(3)"},
+				{540, 570, 541, "(4)"},
+				{540, 570, 541, "(5)"},
+				{540, 570, 541, "(6)"},
+				{540, 570, 541, "(7)"},
+				{540, 570, 541, "(8)"},
 			},
 		},
 	},
 	
 	award_rank = {
-		{	--ÅÅĞĞ½±Àø£¬ĞÂĞã
+		{
 			{1, 5000},	--µÚ1Ãû
 			{2, 4000},	--µÚ2Ãû
 			{3, 3500},	--µÚ3Ãû
@@ -55,7 +51,8 @@ WLLS_DATA = {
 			{32, 1000},	--µÚ17-32Ãû
 			{64, 500},	--µÚ33-64Ãû
 			{128, 250},	--µÚ65-128Ãû
-		}, {	--ÁªÈü
+		},
+		{
 			{1, 10000},	--µÚ1Ãû
 			{2, 8000},	--µÚ2Ãû
 			{3, 7000},	--µÚ3Ãû
@@ -68,9 +65,7 @@ WLLS_DATA = {
 		}
 	},
 	
-	max_member = 2,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
-	
-	--°ïÖúÎÄ×Ö£¨Ö÷ÒªµÄ°ïÖúÎÄ×ÖÔÚnormal.luaÖĞ£¬ÕâÀïÖ»Ğ´ÌØÒìµÄ²¿·Ö£©
+	max_member = 2,
 	help_msg = {
 		["Giíi thiÖu thi ®Êu Vâ l©m kiÖt xuÊt"]	=
 			{
@@ -89,8 +84,6 @@ WLLS_DATA = {
 	text_creat = "    Sau khi lËp chiÕn ®éi tham gia S­ ®å song ®Êu b¹n cã thÓ <color=red>tù m×nh lµ ®éi tr­ëng<color>. NÕu cã s­ phô th× ph¶i do <color=red>­ phô m×nh lµ ®éi tr­ëng<color>.<enter>"
 		.."    <color=red>nÕu ch­a ®Õn lóc thi ®Êu<color> vµ <color=red>ch­a ®Êu qua trËn nµo<color>, b¹n cß thÓ rêi khái chiÕn ®éi. NÕu S­ phô rêi khái chiÕn ®éi, ®éi ®ã lËp tøc bŞ gi¶i t¸n. Ng­¬i x¸c ®Şnh lËp chiÕn ®éi cho m×nh chø?",
 	
-	--====Functions====
-	--ÎÒµÄÕ½¶Ó
 	npc_mylg = function()
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
@@ -126,12 +119,11 @@ WLLS_DATA = {
 		wlls_descript(str, tb_option)
 	end,
 	
-	--¼ì²éµ±Ç°½ÇÉ«ÊÇ·ñ¿ÉÒÔ¼ÓÈëÖ¸¶¨µÄÕ½¶Ó
 	check_addmem = function(n_capidx, n_lid, n_mtype)
 		local n_oldidx = PlayerIndex
 		PlayerIndex = n_capidx
-		local n_lid = LG_GetLeagueObjByRole(1, GetName())	--Ê¦Í½¹ØÏµÕ½¶Ó
-		local n_num = GetTask(1403)	--TKID_APPRENTICE_COUNT = 1403 --ÊÕÍ½µÜ×ÜÊı
+		local n_lid = LG_GetLeagueObjByRole(1, GetName())
+		local n_num = GetTask(1403)	--TKID_APPRENTICE_COUNT = 1403
 		PlayerIndex = n_oldidx
 		if (FALSE(n_lid) or n_num <= 0) then	
 			return "Xin lçi! b¹n ch­a nhËn ®å ®Ö, kh«ng thÓ lËp nhãm víi bÊt kú ®éi viªn kh¸c."
@@ -146,8 +138,7 @@ WLLS_DATA = {
 			return "Xin lçi! "..GetName().."Ch­a ®ñ cÊp 50, kh«ng thÓ gia nhËp ®éi thi ®Êu."
 		end
 	end,
-	
-}	--WLLS_DATA
+}
 
 tmp_process_data(WLLS_DATA)	
 wllstab_additem(3,WLLS_DATA)

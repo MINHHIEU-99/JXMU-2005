@@ -5,36 +5,36 @@ Include([[\script\tong\tong_statistics.lua]]);
 
 tab_Workshop = {[1] = " binh gi¸p ", [2] = " thiªn c«ng ", [3] = " mÆt n¹ ", [4] = " thö luyÖn ", [5] = " thiªn ý ", [6] = " lÔ vËt ", [7] = " ho¹t ®éng "}; 
 
-TASK_LP_ITEMID = 1744; -- script viet hoa By http://tranhba.com  t¹m thêi ghi chÐp lÖnh bµi ®Ých vËt phÈm ID . 
-TASK_LP_COUNT = 1745; -- script viet hoa By http://tranhba.com  ghi chÐp cÇn tiÕn s¸ch ®Ých sè l­îng . 
-TASK_LP_ZONGGUANIDX = 1746; -- script viet hoa By http://tranhba.com  ghi chÐp lµ c¸i ®ã tæng qu¶n . 
-TASK_LP_ZONGGUANLEVEL = 1756; -- script viet hoa By http://tranhba.com  ghi chÐp viÕt tiÕn s¸ch tæng qu¶n cÇn cÊp bËc . 
-TASK_LP_TIMESLIMIT = 2566-- script viet hoa By http://tranhba.com  mçi ngµy hoµn thµnh 100 lÇn tíi h¹n #byte1# sè lÇn #byte2# nhËt kú #byte3# nguyÖt ph©n 
--- script viet hoa By http://tranhba.com # tËp ch#h nhi# v? r# pk - Modified by DinhHQ - 20110810 
--- script viet hoa By http://tranhba.com DAILY_MAX_TIMES = 2 -- script viet hoa By http://tranhba.com  söa ®æi mçi ngµy hoµn thµnh nhiÖm vô th­îng h¹n v× 2 lÇn by wangjingjun IB shop ®iÒu chØnh 
+TASK_LP_ITEMID = 1744; --   t¹m thêi ghi chÐp lÖnh bµi ®Ých vËt phÈm ID . 
+TASK_LP_COUNT = 1745; --   ghi chÐp cÇn tiÕn s¸ch ®Ých sè l­îng . 
+TASK_LP_ZONGGUANIDX = 1746; --   ghi chÐp lµ c¸i ®ã tæng qu¶n . 
+TASK_LP_ZONGGUANLEVEL = 1756; --   ghi chÐp viÕt tiÕn s¸ch tæng qu¶n cÇn cÊp bËc . 
+TASK_LP_TIMESLIMIT = 2566--   mçi ngµy hoµn thµnh 100 lÇn tíi h¹n #byte1# sè lÇn #byte2# nhËt kú #byte3# nguyÖt ph©n 
+--  # tËp ch#h nhi# v? r# pk - Modified by DinhHQ - 20110810 
+--  DAILY_MAX_TIMES = 2 --   söa ®æi mçi ngµy hoµn thµnh nhiÖm vô th­îng h¹n v× 2 lÇn by wangjingjun IB shop ®iÒu chØnh 
 DAILY_MAX_TIMES = 100 
-PER_ASSIGNMENT_PK = 1 -- script viet hoa By http://tranhba.com  mçi nhiÖm vô gi¶m bít pk trÞ gi¸ 1 ®iÓm by wangjingjun IB shop ®iÒu chØnh 
+PER_ASSIGNMENT_PK = 1 --   mçi nhiÖm vô gi¶m bít pk trÞ gi¸ 1 ®iÓm by wangjingjun IB shop ®iÒu chØnh 
 
-TASK_LP_IDX = {1747, 1748, 1749, 1750, 1751, 1752, 1753, 1754, 1755};-- script viet hoa By http://tranhba.com  ghi chÐp viÕt tiÕn s¸ch tæng qu¶n ®Ých bang héi . 
+TASK_LP_IDX = {1747, 1748, 1749, 1750, 1751, 1752, 1753, 1754, 1755};--   ghi chÐp viÕt tiÕn s¸ch tæng qu¶n ®Ých bang héi . 
 
--- script viet hoa By http://tranhba.com  kiÓm tra cã ph¶i lµ hay kh«ng t­¬ng øng tæng qu¶n ®Ých ®èi tho¹i 
+--   kiÓm tra cã ph¶i lµ hay kh«ng t­¬ng øng tæng qu¶n ®Ých ®èi tho¹i 
 function rwlp_taskcheck(nTongID, nWorkshopID) 
 local nWKSPType = TWS_GetType(nTongID, nWorkshopID); 
-if (nWKSPType ~= GetTask(TASK_LP_ZONGGUANIDX)) then -- script viet hoa By http://tranhba.com  tæng qu¶n kh«ng ®óng 
+if (nWKSPType ~= GetTask(TASK_LP_ZONGGUANIDX)) then --   tæng qu¶n kh«ng ®óng 
 return 2; 
 end 
-if (0 == rwlp_mapcheck()) then -- script viet hoa By http://tranhba.com  ë c«ng céng bang héi b¶n ®å 
+if (0 == rwlp_mapcheck()) then --   ë c«ng céng bang héi b¶n ®å 
 return 0; 
 end; 
 return 1; 
 end; 
 
--- script viet hoa By http://tranhba.com  cïng c¸c §¹i tæng qu¶n ®Ých ®èi tho¹i 
+--   cïng c¸c §¹i tæng qu¶n ®Ých ®èi tho¹i 
 function rwlp_dedaojianshu(nTongID, nWorkshopID) 
 local nCount = rwlp_getjuanshucount(); 
 local szLevel = "<color=yellow>"..GetTask(TASK_LP_ZONGGUANLEVEL).." cÊp <color>"; 
 local szZGName = "<color=yellow>"..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX)].." ph­êng tæng qu¶n <color>"; 
-if (nCount >= GetTask(TASK_LP_COUNT)) then -- script viet hoa By http://tranhba.com  nÕu nh­ nhiÖm vô ®· hoµn thµnh , trùc tiÕp trë vÒ 
+if (nCount >= GetTask(TASK_LP_COUNT)) then --   nÕu nh­ nhiÖm vô ®· hoµn thµnh , trùc tiÕp trë vÒ 
 Say("Ng­¬i ®· gãp nhÆt <color=yellow>"..nCount.."<color> c¸ tiÕn s¸ch , ®· vËy lµ ®ñ råi . nhanh ®i vÒ giao cho ®¾t gióp thiªn ý ph­êng tæng qu¶n ®i . ", 0) 
 return 
 end; 
@@ -56,7 +56,7 @@ Say("Nghe nãi ®¾t gióp <color=yellow>"..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX
 end; 
 
 tab_MapforAll = {586, 587, 688, 589, 590, 591, 592, 593, 594, 595, 596, 597}; 
--- script viet hoa By http://tranhba.com  kiÓm tr¾c cã hay kh«ng ë c«ng céng bang héi b¶n ®å 
+--   kiÓm tr¾c cã hay kh«ng ë c«ng céng bang héi b¶n ®å 
 function rwlp_mapcheck() 
 local ww = GetWorldPos(); 
 if (ww <= 597) then 
@@ -65,7 +65,7 @@ end;
 return 1; 
 end; 
 
--- script viet hoa By http://tranhba.com  xem mét chót cã hay kh«ng v× ®· dÉn tr«i qua bang héi 
+--   xem mét chót cã hay kh«ng v× ®· dÉn tr«i qua bang héi 
 function rwlp_tongcheck() 
 if (0 == rwlp_mapcheck()) then 
 return 0; 
@@ -79,10 +79,10 @@ end;
 return 1; 
 end; 
 
--- script viet hoa By http://tranhba.com  kiÓm tra x­ëng ®Ých cÊp bËc lµ hay kh«ng hîp c¸ch 
+--   kiÓm tra x­ëng ®Ých cÊp bËc lµ hay kh«ng hîp c¸ch 
 function rwlp_workshopcheck() 
 local ww = GetWorldPos(); 
-local tab_work = {}; -- script viet hoa By http://tranhba.com  phï hîp cÊp bËc ®iÒu kiÖn ®Ých x­ëng së t¹i ®å 
+local tab_work = {}; --   phï hîp cÊp bËc ®iÒu kiÖn ®Ých x­ëng së t¹i ®å 
 tab_work = get_tongmap_list(GetTask(TASK_LP_ZONGGUANIDX), GetTask(TASK_LP_ZONGGUANLEVEL)); 
 for i = 1, getn(tab_work) do 
 if (ww == tab_work[i]) then 
@@ -133,4 +133,4 @@ function OnCancel()
 
 end; 
 
-end; -- script viet hoa By http://tranhba.com // end of __TONGRANDOMTASK_H__
+end; --  // end of __TONGRANDOMTASK_H__

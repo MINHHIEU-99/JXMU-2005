@@ -1,8 +1,7 @@
--- L¹c Anh ë §µo Hoa Nguyªn - Editor by AloneScript (Linh Em)
+-- script viet hoa By http://tranhba.com  hai hå khu hoa ®µo nguyªn ng­êi ®i ®­êng 4 l¹c anh ®èi tho¹i 
 
-Include("\\script\\lib\\alonelib.lua");
+function main(sel) 
 
-function main(sel)
-	Say("<color=green>L¹c Anh<color>: B¹n trÎ tõ bªn ngoµi ®Õn ph¶i kh«ng? ë ®©y tõng c¸i c©y ngän cá ®Òu cã t×nh c¶m, xin ®õng lµm h¹i chóng."..Note("lacanh_daohoanguyen"),0)
-end;
+Say(" l¹c anh # ng­¬i lµ tõ bªn ngoµi tíi sao ? n¬i nµy tõng cäng c©y ngän cá ®Òu cã t×nh c¶m , ngµn v¹n kh«ng muèn ®i hao tæn bän hä . ",0) 
 
+end; 

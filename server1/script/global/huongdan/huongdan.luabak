@@ -1,0 +1,237 @@
+IncludeLib("SETTING")
+IncludeLib("FILESYS")
+IncludeLib("TASKSYS")
+IncludeLib("BATTLE")
+IncludeLib("RELAYLADDER");
+IncludeLib("TONG")
+Include("\\script\\dailogsys\\dailogsay.lua");
+
+function main1()
+dofile("script/global/huongdan/huongdan.lua");
+if GetPlayerCount() > 50 then
+menu2()
+else
+menu1()
+end
+end
+
+
+function main()
+dofile("script/global/huongdan/huongdan.lua");
+	local tbSay = {}	
+
+
+	tinsert(tbSay, "Mét vµi quy t¾c vµ l­u ı khi tham gia Vâ L©m Bİ Sö/huongdanthamgia")
+	tinsert(tbSay, "Danh S¸ch c¸c tİnh n¨ng ®ang ¸p dông/danhsachhoatdong")
+	tinsert(tbSay, "H­íng dÉn t©n thñ/huongdantanthu")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/no")
+	Say("<color=green>Fanpage: <color=yellow>Facebook.com/vlbisu/\n<color=green>Töu lÇu ®µm ®¹o : <color=yellow>Facebook.com/groups/groups/1509902665985904/", getn(tbSay), tbSay)
+end
+
+function danhsachhoatdong()
+	local tbSay = {}	
+    -- tinsert(tbSay, "L«i §µi Lo¹n ChiÕn/loidailoanchien")
+	tinsert(tbSay, "Tèng Kim §¹i ChiÕn/tongkimdaichien")
+	tinsert(tbSay, "NhiÖm vô D· tÈu/datau")	
+	-- tinsert(tbSay, "Qu¶ Huy Hoµng/sanhathoangkim")
+	-- tinsert(tbSay, "Trèng Kh¶i Hoµng/trongkhaihoang")
+
+	--tinsert(tbSay, "ThuyÒn Phong L¨ng §é/thuyenphonglangdo")
+	--tinsert(tbSay, "V­ît ¶i NhiÕp Thİ TrÇn/vuotai")
+	--tinsert(tbSay, "§Êu Ng­u Xu©n Phong §¶o/daunguu")
+	--tinsert(tbSay, "§ua Ngùa Sa M¹c/duanguasamac")
+	--tinsert(tbSay, "Boss §¹i Hoµng Kim/bosshoangkim")
+	--tinsert(tbSay, "Boss TiÓu Hoµng Kim/bosshoangkimtieu")
+	tinsert(tbSay, "BÇu Cua/choibaucua")
+	--tinsert(tbSay, "Viªm §Õ B¶o Tµng/viemde")
+	--tinsert(tbSay, "C«ng Thµnh ChiÕn/congthanhchien")
+	--tinsert(tbSay, "Thiªn Tö §¹i ChiÕn/thientu")
+	--tinsert(tbSay, "VËn Tiªu Long M«n/vantieu")
+	-- tinsert(tbSay, "C©u C¸ D­¬ng Ch©u/cauca")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/no")
+	Say("<color=green>Fanpage: <color=yellow>Facebook.com/vlbisu/\n<color=green>Töu lÇu ®µm ®¹o : <color=yellow>Facebook.com/groups/groups/1509902665985904/", getn(tbSay), tbSay)
+end
+
+function huongdanthamgia()
+	local tbSay = {}	
+	tinsert(tbSay, "H­íng t¹i céng ®ång v÷ng m¹nh VLBS cã mét vµi quy t¾c nhá/quytac")	
+	tinsert(tbSay, "Thñ tôc mua - b¸n vµ c¶nh gi¸c víi c¸c chiªu trß lõa ®¶o/muaban")
+    tinsert(tbSay, "NhËp Code T©n Thñ ë ®©u/nhapcode")
+	tinsert(tbSay, "ChuyÓn Ph¸i LÊy Skill/chuyenphai")
+	tinsert(tbSay, "Vßng S¸ng ë §©u/vongsang")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/no")
+	Say("<color=green>Fanpage: <color=yellow>Facebook.com/vlbisu/\n<color=green>Töu lÇu ®µm ®¹o : <color=yellow>Facebook.com/groups/groups/1509902665985904/", getn(tbSay), tbSay)
+end
+
+function huongdantanthu()
+	local tbSay = {}	
+	tinsert(tbSay, "VÊn ®Ò vÒ cÊp ®é/capdo")	
+	tinsert(tbSay, "VÊn ®Ò vÒ kü n¨ng cÊp 90/kynang90")
+    tinsert(tbSay, "C¸ch lËp bang héi/lapbang")
+	tinsert(tbSay, "C¸c vËt phÈm ®Æc biÖt khi ®¸nh qu¸i còng nh­ Boss xanh/vatphamdacbiet")
+	tinsert(tbSay, "Vßng S¸ng nhËn ë §©u/vongsang")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/no")
+	Say("<color=green>Fanpage: <color=yellow>Facebook.com/vlbisu/\n<color=green>Töu lÇu ®µm ®¹o : <color=yellow>Facebook.com/groups/groups/1509902665985904/", getn(tbSay), tbSay)
+end
+
+function quytac()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=green>§iÒu 1 : Nh»m x©y dùng mét céng ®ång VLBS v÷ng m¹nh nhÊt tõ tr­íc tíi nay , BQT ¸p dông ®iÒu luËt h¹n chÕ ng­êi ch¬i rao b¸n Nh©n vËt ( ACC ) trªn c¸c TÇn sè giao tiÕp trong game còng nh­ Group trao ®æi mua b¸n , h¹n chÕ nµy ®­îc hñy bá sau khi m¸y chñ míi ®i vµo ho¹t ®éng ®­îc 01 th¸ng. §iÒu 2 : Nghiªm cÊm sö dông c¸c lo¹i script tù ph¸t hoÆc c¸c phÇn mÒm thø 3 can thiÖp tíi qu¸ tr×nh vËn hµh game nh­ Tools , Mutilog v.v.. - BQT sÏ tiÕn hµnh lo¹i bá ng­êi ch¬i nµy ra khái céng ®ång vÜnh viÔn vµ kh«ng gi¶i quyÕt c¸c khiÕu n¹i liªn quan tíi vÊn ®Ò nµy ", getn(tbSay), tbSay)
+end
+
+function loidailoanchien()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian : 22h h»ng ngµy sau khi kÕt thóc tèng kim,chØ nh÷ng acc tham gia tèng kim cao cÊp míi ®­îc tham gia", getn(tbSay), tbSay)
+end
+
+function tongkimdaichien()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian : 11h - 15h - 21h - 23 - TrËn 21h cã th­ëng ®Æc biÖt ( §¹t trªn 500 ®iÓm tİch lòy sÏ nhËn ngay 2 triÖu ®iÓm kinh nghiÖm bÊt kÓ th¾ng thua", getn(tbSay), tbSay)
+end
+
+function sanhathoangkim()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian : 12h h»ng ngµy t¹i ®Êu tr­êng sinh tö", getn(tbSay), tbSay)
+end
+
+function thuyenphonglangdo()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>C¸c tİnh n¨ng míi cßn l¹i sÏ ®­îc update liªn tôc trong vµi ngµy tíi:\n<color=green>Thêi gian:<color=white> tÊt c¶ giê ch¼n riªng 2-16-20-22h lµ chuyÕn cã ®¹i thñy tÆc.\n<color=cyan>Tham gia: <color=white>ChØ cho phĞp ®i 1 bÕn 1 cã thÓ cõu ®å s¸t.\n<color=pink>PhÇn th­ëng:<color=white> hoµn thµnh ®Õn bê b¾c - tiªu diÖt thñy tÆc 1 m·nh HKMP + 1 thñy tinh - tiªu diÖt ®¹i thñy tÆc 2 m·nh HKMP + TTK", getn(tbSay), tbSay)
+end
+
+function vuotai()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>C¸c tİnh n¨ng míi cßn l¹i sÏ ®­îc update liªn tôc trong vµi ngµy tíi:\n<color=green>Thêi gian:<color=white>tÊt c¶ giê lÎ trõ 21h.\n<color=cyan>Tham gia: <color=white>t¹i nhiÕp thİ trÇn.\n<color=pink>PhÇn th­ëng:<color=white> hoµn thµnh v­ît ¶i x¸c xuÊt ra TTK + VLMT  + Thñy Tinh", getn(tbSay), tbSay)
+end
+
+function thientu()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>C¸c tİnh n¨ng míi cßn l¹i sÏ ®­îc update liªn tôc trong vµi ngµy tíi:\n<color=green>Thêi gian:<color=white>21h thø 2 - víi ®iÒu kiÖn lµ ph¶i cã 1 bang chiÕm l©m an 1 bang chiÕm biÖn kinh.NÕu 1 bang chiÕm 2 thµnh th× thø 2 tèng kim b×nh th­êng.\n<color=cyan>Tham gia: <color=white>Bang chñ tr­íc 21h ph¶i qua néi c¸t th­îng th­ ë L©m An vµ BiÖn Kinh nhËn 50 lÖnh bµi quèc chiÕn vµ chŞ nhËn 1 lÇn.\n<color=pink>PhÇn th­ëng:<color=white> NhËn t¹i 204/198 Ba L¨ng HuyÖn", getn(tbSay), tbSay)
+end
+
+function duanguasamac()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian :22h30 thø 7 vµ chñ nhËt.", getn(tbSay), tbSay)
+end
+
+function bosshoangkim()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian : 19h30 h»ng ngµy", getn(tbSay), tbSay)
+end
+
+function bosshoangkimtieu()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian : 12h35 vµ 23h05", getn(tbSay), tbSay)
+end
+
+function choibaucua()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=green>§Şa ®iÓm : NPC BÇu cua ®¹i nh©n t¹i trung t©m T­¬ng D­¬ng thµnh - Thêi gian tham gia vµo lóc : 22h - 23h mçi ngµy . Tèi ®a mçi lÇn ch¬i 10 TiÒn ®ång hoÆc 100 v¹n l­îng.", getn(tbSay), tbSay)
+end
+
+function vantieu()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>C¸c tİnh n¨ng míi cßn l¹i sÏ ®­îc update liªn tôc trong vµi ngµy tíi:\n<color=green>Thêi gian:<color=white>Thêi gian ®¸nh vµo lóc : tÊt c¶ c¸c giê.\n<color=cyan>Tham gia: NPC Long M«n Tiªu Côc 201/200 Ba L¨ng HuyÖn ®iÒu kiÖn ph¶i cã hé tiªu lÖnh tham gia tèng kim cã ®­îc<color=white>.\n<color=pink>PhÇn th­ëng:<color=white>vËn thµnh c«ng nhËn 1 m·nh HKMP :  vËn thÊt b¹i tøc bŞ c­íp sÏ r¬i ra hé tiªu lÖnh.", getn(tbSay), tbSay)
+end
+
+function viemde()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>C¸c tİnh n¨ng míi cßn l¹i sÏ ®­îc update liªn tôc trong vµi ngµy tíi:\n<color=green>Thêi gian:<color=white>Thêi gian ®¸nh vµo lóc : 18h30 vµ 23h hµng ngµy.\n<color=cyan>Tham gia: <color=white>B×nh B×nh C« N­¬ng BiÖn Kinh.\n<color=pink>PhÇn th­ëng:<color=white>Team th¾ng cuéc nhËn 1 VLMT trªn 1 ng­êi..", getn(tbSay), tbSay)
+end
+
+function trongkhaihoang()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian:20h10 ngµy thø 7..", getn(tbSay), tbSay)
+end
+
+function daunguu()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>C¸c tİnh n¨ng míi cßn l¹i sÏ ®­îc update liªn tôc trong vµi ngµy tíi:\n<color=green>Thêi gian:<color=white>Thêi gian ®¸nh vµo lóc : 20h30 c¸c ngµy thø 3-5-7.\n<color=cyan>Tham gia: <color=white>LÔ Quan B¸o Danh.\n<color=pink>PhÇn th­ëng:<color=white>Ng­u sinh tån hoÆc ng­êi sinh tån cuèi cïng nhËn vlmt ttk.Khi ng­u chÕt ng­êi ch¬i nhËt b¶o r­¬ng kim ng­u sÏ cã c¬ héi nhËn ®­îc xu..", getn(tbSay), tbSay)
+end
+
+function congthanhchien()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>C¸c tİnh n¨ng míi cßn l¹i sÏ ®­îc update liªn tôc trong vµi ngµy tíi:\n<color=green>Thêi gian:<color=white>Thêi gian ®¸nh vµo lóc : 20h30 c¸c ngµy thø 6.\n<color=cyan>Tham gia: bang chñ b¸o danh t¹i tiÕp ®Çu c«ng thµnh chiÕn chi phİ 100 v¹n thêi gian b¸o danh lµ tr­íc 19h30 nÕu sau 19h30 coi nh­ ko thÓ b¸o danh.Giíi h¹n acc 1 bang c«ng thµnh lµ 150 acc qu¸ sè l­îng kh«ng thÓ vµo.<color=white>.\n<color=pink>PhÇn th­ëng: <color=white>NhËn t¹i 204/198 Ba L¨ng HuyÖn.", getn(tbSay), tbSay)
+end
+
+function chuyenphai()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Nh»m gi÷ c©n b»ng còng nh­ æn ®Şnh tuyÖt ®èi cho server - VLBS sau 8 n¨m vËn hµnh kh«ng ¸p dông chøc n¨ng nµy.", getn(tbSay), tbSay)
+end
+
+function doxucxac()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=green>Tªn VËt PhÈm:<color=white>T©n Thñ Kim Bµi.\n<color=cyan>VŞ Trİ: <color=white>trong g­¬ng k×a pa.\n<color=pink>C¸ch Thøc: <color=white>tÊt c¶ ng­êi nµo ®¸nh th× pt nhau sau ®ã chñ pt dïng lÖnh bµi chän dßng ®¸nh b¹c chän ®æ xóc x¾c hÔ thèng sÏ ®æ ngÉu nhiªn ai lín ®iÓm nhÊt hèt hÕt tiÒn.", getn(tbSay), tbSay)
+end
+
+function nhatky()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=green>Tªn VËt PhÈm:<color=white>NhÊt Kû Cµn Kh«n Phï.\n<color=cyan>VŞ Trİ: <color=white>mua t¹i shop b¶o vËt.\n<color=pink>C«ng dông: <color=white>sö dông sÏ nhËn ®­îc 1 KNCV 30 ngµy.", getn(tbSay), tbSay)
+end
+
+function cauca()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Thêi gian : DiÔn ra tõ 12h00 tíi 21h00 t¹i cÇu D­¬ng Ch©u , mçi nh©n vËt chØ cã thÓ nhËn tèi ®· 20 triÖu ®iÓm kinh nghiÖm tõ ho¹t ®éng nµy mçi ngµy", getn(tbSay), tbSay)
+end
+
+function datau()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Giíi h¹n : Mçi nh©n vËt cã thÓ thùc hiÖn 30 nhiÖm vô mçi ngµy . Hoµn thµnh 6000 nhiÖm vô D· tÈu nhËn 10 ngµn v¹n l­îng vµ ngÉu nhiªn nhËn ®­îc 01 mãn trang bŞ Hoµng Kim M«n Ph¸i", getn(tbSay), tbSay)
+end
+
+function mua ban()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>HiÖn t¹i Admin trung gian duy nhÊt t¹i VLBS lµ b¹n §oµn Ngäc Phóc , §Şa chØ FB : https://www.facebook.com/phuc.doanngoc , S§T : 038.729.2209 , vui lßng liªn hÖ víi S§T nµy tr­íc khi giao dŞch nh»m tr¸nh tuyÖt ®èi c¸c thñ ®o¹n lõa ®¶o . Phİ trung gian : 5%", getn(tbSay), tbSay)
+end
+
+function nhapcode()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>HiÖn t¹i t©n thñ khi tham gia server sÏ ®­îc nhËn ­u ®·i v« cïng lín - 10 b×nh Tiªn th¶o lé 1h vµ 10 b×nh Thiªn s¬n b¶o lé 1h , ®Ó nhËn nh÷ng vËt phÈm nµy ng­êi ch¬i vui lßng nhËp Code ®­îc ph¸t t¹i NPC LÔ qu©n", getn(tbSay), tbSay)
+end
+
+function capdo()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>L©u dµi vµ æn ®Şnh - víi t«n chØ nµy c¸c server thuéc VLBS lu«n ¸p dông h­íng ®i nh­ sau : Tõ level 10 tíi 80 ch­ vŞ b»ng h÷u sÏ c¶m thÊy viÖc cµy cÊp kh«ng qu¸ chËm - Tõ level 80 trë ®i ch­ vŞ sÏ c¶m thÊy nhËn ®Şnh cña m×nh h¬i sai sai - Tõ level 90 trë lªn ch­ vŞ huynh ®Ô ch¾c ch¾n sÏ c¶m thÊy sai hoµn toµn vµ thùc sù muèn g¾n bã víi VLBS - mét t­îng ®µi. Qu¸i vËt trªn c¸c b¶n ®å thuéc VLBS xuÊt hiÖn kh¸ nhanh sau khi bŞ tiªu diÖt , thªm vµo ®ã chóng ta cã ­u ®·i vßng s¸ng t©n thñ tíi cÊp 80 , h·y tËn dông thËt tèt ®iÒu ®ã", getn(tbSay), tbSay)
+end
+
+function kynang()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Tham gia tiªu diÖt boss xanh t¹i c¸c b¶n ®å luyÖn cÊp ch­ vŞ sÏ cã c¬ héi nhËn Tói bİ kİp cÊp 90 ( LÔ bao chiÕn th¾ng ) , bªn c¹nh ®ã tham gia Tèng kim còng lµ mét c¸ch ®Ó kiÕm vËt phÈm nµy ( 5 ngµn ®iÓm tİch lòy cã thÓ ®æi ®­îc 01 Tói bİ kİp cÊp 90 hoÆc nÕu ch­ vŞ c¶m thÊy qu¸ khã , chóng ta hoµn toµn cã thÓ ®îi tíi level 90 ®Ó cã thÓ häc ®­îc c¸c lo¹i kü n¨ng nµy tõ NPC M«n ph¸i ", getn(tbSay), tbSay)
+end
+
+function lapbang()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>Tham gia tiªu diÖt boss xanh t¹i c¸c b¶n ®å luyÖn cÊp ch­ vŞ sÏ cã c¬ héi nhËn Nh¹c V­¬ng Hån Th¹ch ( hoÆc ®æi tõ ®iÓm tİch lòy tèng kim gi¸ 1000 ®iÓm tİch lòy ) , víi 100 vËt phÈm Nh¹c V­¬ng Hån Th¹ch chóng ta ®· cã thÓ së h÷u Nh¹c V­¬ng KiÕm , bang chñ khai lËp bang héi kh«ng cÇn tháa m·n bÊt cø ®iÒu kiÖn nµp vÒ danh väng còng nh­ tµi l·nh ®¹o. ", getn(tbSay), tbSay)
+end
+
+function vongsang()
+	local tbSay = {}	
+	tinsert(tbSay, "Ù/no")
+	Say("<color=yellow>HiÖn t¹i nh÷ng nh©n vËt cã ®¼ng cÊp 80 trë xuèng sÏ nhËn ®­îc hç trî vßng s¸ng t©n thñ , chøc n¨ng nµy nhËn ®­îc tõ vËt phÈm ThÇn Hµnh Phï hoÆc NPC Hç trî t©n thñ - Vßng s¸ng chØ biÕn mÊt khi nh©n vËt vÒ thµnh d­ìng søc ", getn(tbSay), tbSay)
+end

@@ -1,5 +1,3 @@
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
-
 SCRIPT_WARRIORDEATH = "\\script\\missions\\sevencity\\warrior_death.lua"	-- ÕÊº“À¿ÕˆΩ≈±æ
 SCRIPT_MONSTERDEATH	= "\\script\\missions\\sevencity\\monster_death.lua"	-- ¡˙÷˘À¿ÕˆΩ≈±æ
 
@@ -40,9 +38,9 @@ PARAM_LIST = {
 }
 
 CAMP_MONSTER 				= 1
-SIGNUP_MONEY 				= SoTienBaoDanhCanNop
-SIGNUP_TIAOZHANLINGCOUNT	= SoKhieuChienLenhCanNop
-TIMEAWARD_EXP				= 500000
+SIGNUP_MONEY 				= 10000000					--so tien bao danh tham gia cong thanh chien
+SIGNUP_TIAOZHANLINGCOUNT	= 0			--so khieu chien lenh bao danh tham gia cong thanh chien mac dinh 2000
+TIMEAWARD_EXP				= 300000
 TIMEAWARD_SCORE				= 1
 
 MAP_INFO = {

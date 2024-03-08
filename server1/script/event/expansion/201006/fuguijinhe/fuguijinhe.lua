@@ -248,22 +248,23 @@ tbBetInfo.nEndDate = 20200822;
 tbBetInfo.tbNormalAward =
 {
 	-- §iÒu ChØnh Phó Quý CÈm Hép - Created by AnhHH  20110919
-	{nExp_tl = 1000000},
-	{szName="Xu Khãa", tbProp={4,417,1,1,0,0,0},nBindState = -2,nCount=50},	
---	{szName="Kim Bµi", tbProp={6,1,1481,1,0,0}, nExpiredTime = 20080},
-
+	{nExp_tl = 3000000},
+	{szName="Tiªn thæ lé", tbProp={6,1,71,1,0,0}, nCount=1},
+	--{szName="Vo lam mat tich", tbProp={6,1,1477,1,1,0}, nCount=1},
 }
-
 tbBetInfo.tbSpecAward =
 {
 	-- §iÒu ChØnh Phó Quý CÈm Hép - Created by AnhHH  20110919
-	{nExp_tl = 5000000},
-	{szName="Xu Khãa", tbProp={4,417,1,1,0,0,0},nBindState = -2,nCount=500},
-	{szName="LÖnh Bµi Hoµng Kim", tbProp={6,1,4665,1,0,0},nCount=10},	
---	{szName="Thiªn Long LÖnh", tbProp={6,1,2256,1,0,0}, nExpiredTime = 20080},
---	{szName="NhÊt Kû Cµn Kh«n Phï", tbProp={6,1,2126,1,0,0}, nExpiredTime = 43200},
---	{szName="B¹ch Cèt LÖnh", tbProp={6,1,2255,1,0,0}, nExpiredTime = 20080},
+	{nExp_tl = 10000000},
+	--{szName="Vo lam mat tich", tbProp={6,1,22,1,0,0}, nCount=2},
+	--{szName="Tay tuy kinh", tbProp={6,1,26,1,0,0}, nCount=2},
+	--	{szName="nen may man", tbProp={6,1,4399,1,0,0}, nCount=1},
+	--{szName="nen hanh phuc", tbProp={6,1,4400,1,0,0}, nCount=1},
+		--{szName="ruong hk", tbProp={6,1,4435,1,0,0}, nCount=1},
 
+	{szName="Que hoa tuu", tbProp={6,1,125,1,0,0}, nCount=1},
+		--{szName="Vo lam mat tich", tbProp={6,1,1477,1,1,0}, nCount=2},
+--	{szName="ThÇn Hµnh To¸i PhiÕn", tbProp={6,1,2410,1,0,0}, nCount=18, nExpiredTime = 20100823},
 }
 
 function tbBetInfo:IsActive()
@@ -387,7 +388,7 @@ function tbBetInfo:Bet(nValue)
 		return 0;
 	end
 	
-	if ConsumeEquiproomItem(1, 6, 1, 2144, -1) ~= 1 then
+	if ConsumeEquiproomItem(1, 6, 1, 2402, -1) ~= 1 then
 		Talk(1,"","ña, sao ta kh«ng thÊy ng­¬i cÇm cÈm h¹p nhØ, kiÓm tra l¹i thö xem.");
 		return 0;
 	end
@@ -398,21 +399,21 @@ function tbBetInfo:Bet(nValue)
 
 	RemoteExecute("\\script\\event\\expansion\\201006\\fuguijinhe\\fuguijinhe.lua", "AddBetCount", 0);
 	
-	PlayerFunLib:AddExp(500000,0,format("fuguijinhe\tbet number%d",nValue));
-	Msg2Player(format("§· chän <color=green>%d<color> ®ång thêi nhËn ®­îc %d kinh nghiÖm",nValue,500000))
-	Msg2SubWorld("Chóc mõng cao thñ vâ l©m <color=yellow>"..GetName().."<color> <color=red>  ®· chän mét sè thêi gian<color=yellow> 8h30<color> th«ng b¸o kÕt qu¶ nhËn th­ëng t¹i <color=yellow>ThÇn Tµi <color>Ba L¨ng HuyÖn vµ nhËn ®­îc ë ho¹t ®éng nµy <color=yellow>5.00.000 <color>®iÓm kinh nghiÖm.")
+	PlayerFunLib:AddExp(1000000,0,format("fuguijinhe\tbet number%d",nValue));
+	Msg2Player(format("§· chän <color=green>%d<color> ®ång thêi nhËn ®­îc %d kinh nghiÖm",nValue,1000000))
+    SetTask(3333,GetTask(3333)+1)
 	return 1;
 end
 
 function tbBetInfo:UseJinhe()
-	if (PlayerFunLib:CheckLevel(50, "default", ">=") ~= 1) then
+	if (PlayerFunLib:CheckLevel(90, "default", ">=") ~= 1) then
 		return 0;
 	end
 	
 	local nCount = tbJinhe_tsk:GetCurBetCount();
 
-	if (nCount >= 5) then
-		Talk(1, "", format("Mçi ngµy chØ ®­îc sö dông %d lÇn, ngµy mai h·y dïng tiÕp.",5));
+	if (nCount >= 10) then
+		Talk(1, "", format("Mçi nh©n vËt mçi ®ît ho¹t ®éng chØ ®­îc sö dông %d lÇn.",10));
 		return 0;
 	end
 	
@@ -423,7 +424,7 @@ function tbBetInfo:UseJinhe()
 end
 
 function tbBetInfo:AddNpc()
-	local npcidx = AddNpc(1391, 1, SubWorldID2Idx(53), 1630 * 32, 3174 * 32, 1, "ThÇn Tµi");
+	local npcidx = AddNpc(455, 1, SubWorldID2Idx(37), 1762 * 32, 3049 * 32, 1, "ThÇn Tµi");
 	SetNpcScript(npcidx, "\\script\\activitysys\\npcdailog.lua");
 end
 
@@ -512,8 +513,8 @@ function tbBetInfo:GetNormalAward()
 		return
 	end
 	
-	if (tbJinhe_tsk:GetNormalAwardCount() >= 20) then
-		Talk(1, "", format("Mçi mét ®ît mçi nh©n vËt nhiÒu nhÊt chØ nhËn ®­îc %d lÇn th­ëng",20));
+	if (tbJinhe_tsk:GetNormalAwardCount() >= 10) then
+		Talk(1, "", format("Mçi mét ®ît mçi nh©n vËt nhiÒu nhÊt chØ nhËn ®­îc %d lÇn th­ëng",10));
 		return
 	end
 	

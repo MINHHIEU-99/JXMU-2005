@@ -1,7 +1,8 @@
--- VÖ binh nha m«n ë c¸c thµnh thŞ - Editor by AloneScript (Linh Em)
+--ÖĞÔ­ÄÏÇø ÏåÑô¸® ³ÇÃÅÎÀ±ø3¶Ô»°
 
 Include("\\script\\global\\map_helper.lua")
+npc_name = "<#>Cöa thµnh vÖ binh"
 
 function default_talk()
-	Talk(1,"","Ngµy nµo kh«ng ®øng g¸c th× ®i thao luyÖn, mÖt chÕt ®i mÊt!")
+	Talk(1,"",npc_name.."<#>:  Ngµy ngµy ph¶i ®øng canh nghiªm chØnh ë ®©y, thËt lµ mÖt chÕt ®i ®­îc !")
 end;

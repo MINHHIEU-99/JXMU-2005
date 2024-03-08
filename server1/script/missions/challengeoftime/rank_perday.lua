@@ -1,14 +1,14 @@
 Include("\\script\\lib\\gb_taskfuncs.lua")
 Include("\\script\\lib\\awardtemplet.lua")
 
-tsk_rank_lastdate	= 2636
-tsk_rank_lastscore 	= 2637
-tsk_rank_2thdate 	= 2638
-tsk_rank_2thscore 	= 2639
+tsk_rank_lastdate	= 2636	-- 玩家最近一次参加高级闯关的时间
+tsk_rank_lastscore 	= 2637	-- 玩家最近一次参加高级闯关的成绩
+tsk_rank_2thdate 	= 2638	-- 玩家最近第二次参加高级闯关的时间
+tsk_rank_2thscore 	= 2639	-- 玩家最近第二次参加高级闯关的成绩
 
 DailyRankLadderId	= 10235
 
-nTIMERANK = "challengeoftime_ranklist";
+nTIMERANK = "challengeoftime_ranklist";	-- 时间挑战每天的排名
 
 tbQiannianlingyao = {szName = "Thi猲 Ni猲 Linh Dc", tbProp = {6, 1, 2116, 1, 1, 0}, nExpiredTime = 24 * 60};
 

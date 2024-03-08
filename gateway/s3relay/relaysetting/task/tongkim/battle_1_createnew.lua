@@ -1,51 +1,22 @@
-	-- chiÕn dÞch hÖ thèng
-
-	-- Fanghao_Wu 2004-12-6
-
-	Include( "\\RelaySetting\\battle\\script\\rf_header.lua" )
-
-	function TaskShedule()
-
-	-- thiÕt trÝ ph­¬ng ¸n tªn gäi
-
-	TaskName( "Tèng kim chiÕn dÞch tæng chØ huy" );
-
+--------------------------------------------***Edit*By*Heart*Doldly***------------------------------------------------------
+Include( "\\RelaySetting\\battle\\script\\rf_header.lua" )
+function TaskShedule()
+	TaskName( "ChiÕn dÞch Tèng Kim" );
 	TaskSetMode(1);
-
-	-- mçi tuÇn (ngµy thø Hai) b¾t ®Çu míi mét vßng
-
 	TaskSetStartDay(1, 3);
-
-	-- mét vßng mét tuÇn hoµn
-
 	TaskInterval(7);
-
 	TaskTime(2, 0);
-
 	TaskCountLimit(0);
+end
 
-	end
-
-	function TaskContent()
-
-	OutputMsg( "****************Create XIANGYANG New Battle******** ")
-
-	battle_StartNewIssue(1, 1 );
-
-	battle_StartNewIssue(1, 2 );
-
+function TaskContent()
+--	battle_StartNewIssue(1, 1 );	
+--	battle_StartNewIssue(1, 2 );	
 	battle_StartNewIssue(1, 3 );
+	OutputMsg("=======> KHOI DONG CHIEN TRUONG TONG KIM <=======")	
+end
 
-	OutputMsg( "*************************************************** ")
-
-	end
-
-	function GameSvrConnected(dwGameSvrIP)
-
-	end
-
-	function GameSvrReady(dwGameSvrIP)
-
-	end
-
-
+function GameSvrConnected(dwGameSvrIP)
+end
+function GameSvrReady(dwGameSvrIP)
+end

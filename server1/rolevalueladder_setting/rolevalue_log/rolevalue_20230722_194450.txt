@@ -1,2 +1,0 @@
-[Normal]Item: Tô TiÔn(0,0,1,2,0,1), unbind = 0, bind = 0
-[Normal]Item: Yªu §ao(0,0,0,1,0,1), unbind = 0, bind = 0

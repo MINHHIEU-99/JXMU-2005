@@ -22,8 +22,8 @@ ScriptProtocol.KE_SCRIPT_PROTOCOL =
 	"emSCRIPT_PROTOCOL_OPEN_CREDITS_SHOP",
 	"emSCRIPT_PROTOCOL_SIGNUP_AREAN",
 	"emSCRIPT_PROTOCOL_QIANCHONGLOU",
-	"emSCRIPT_PROTOCOL_KICHCLIENT",
-	"emSCRIPT_PROTOCOL_OPEN_MNS",
+	"emSCRIPT_PROTOCOL_ACCOUNT",
+	"emSCRIPT_PROTOCOL_EVBRESV",
 }
 
 function ScriptProtocol:_InitProtocolEnum()
@@ -153,13 +153,6 @@ if MODEL_GAMECLIENT == 1 then
 			"\\script\\missions\\qianchonglou\\ui.lua",
 			"process_protocol",
 			{OBJTYPE_NUMBER, OBJTYPE_NUMBER},
-		},
-		
-		{
-			"emSCRIPT_PROTOCOL_OPEN_MNS",
-			"\\script\\miniskill\\ui.lua",
-			"open_miniskill",
-			{OBJTYPE_TABLE},
 		},
 	}
 	ScriptProtocol:RegProtocolSet(Def)

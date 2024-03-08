@@ -1,16 +1,12 @@
 Include("\\script\\missions\\leaguematch\\tb_head.lua")
---==============»˝»À»¸œ‡πÿ ˝æ›===============
 
 if (not tmp_process_data) then
 	return
 end
 
---»´≤ø»˝»À»¸œ‡πÿ ˝æ›
+
 WLLS_DATA = {
-	
 	name = "ß u ba ng≠Íi",
-	
-	--µÿÕº–≈œ¢
 	match_type = {
 		{
 			name = "",
@@ -33,13 +29,13 @@ WLLS_DATA = {
 			ladder = 10224,
 			map = {
 				{540, 570, 541, "(1)"},
-				{542, 571, 543, "(2)"},
-				{544, 572, 545, "(3)"},
-				{546, 573, 547, "(4)"},
-				{548, 574, 549, "(5)"},
-				{550, 575, 551, "(6)"},
-				{552, 576, 553, "(7)"},
-				{554, 577, 555, "(8)"},
+				{540, 570, 541, "(2)"},
+				{540, 570, 541, "(3)"},
+				{540, 570, 541, "(4)"},
+				{540, 570, 541, "(5)"},
+				{540, 570, 541, "(6)"},
+				{540, 570, 541, "(7)"},
+				{540, 570, 541, "(8)"},
 			},
 		},
 	},
@@ -68,15 +64,13 @@ WLLS_DATA = {
 		}
 	},
 	
-	max_member = 3,	--√ø∏ˆ’Ω∂”µƒ◊Ó¥Û»À ˝
+	max_member = 3,
 	
-	text_main = {	--officer÷˜∂‘ª∞£®ƒ©Œ≤≤Ó“Ï≤ø∑÷£©
+	text_main = {
 		"Thi Æ u v‚ l©m ki÷t xu t l«n nµy lµ <color=red>Tam nh©n Æ u<color>",
 		"Thi Æ u v‚ l©m ki÷t xu t l«n nµy lµ <color=red>Tam nh©n Æ u<color>",
 	},
 	
-	--====Functions====
-	--Œ“µƒ’Ω∂”
 	npc_mylg = function()
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
@@ -110,8 +104,7 @@ WLLS_DATA = {
 		tb_option[getn(tb_option)+1] = "Ta chÿ ti÷n gh– qua/OnCancel"
 		wlls_descript(str, tb_option)
 	end,
-	
-}	--WLLS_DATA
+}
 
 tmp_process_data(WLLS_DATA)	
 wllstab_additem(4,WLLS_DATA)

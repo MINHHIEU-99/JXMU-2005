@@ -1,109 +1,3 @@
-SKILLS={
-	chunniu =
-	{
-		seriesdamage_p = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		firedamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		poisondamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		physicsdamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		colddamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		lightingdamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-	},
-	
-	chunniuzidan =
-	{
-		seriesdamage_p = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		firedamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		poisondamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		physicsdamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		colddamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		lightingdamage_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-	},
-	
-	niumowang =
-	{
-		lifemax_v = {
-			{{1,99999},{20,99999}},
-			{{1,10*18},{2,20*18}}
-		},
-		lifereplenish_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		manareplenish_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		fasthitrecover_v = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		freezetimereduce_p = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		poisontimereduce_p = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		stuntimereduce_p = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		allres_p = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		allresmax_p = {
-			{{1,9999},{20,9999}},
-			{{1,10*18},{2,20*18}}
-		},
-		
-		fastwalkrun_p = {
-			{{1,300},{20,300}},
-			{{1,10*18},{2,20*18}}
-		},
-	},
-}
------------------------------------------------
---Create by yfeng 2004-05-20
------------------------------------------------
-
 -----------------------------------------------
 --根据2个点，求线形函数f(x)=k*x+b
 --y= (y2-y1)*(x-x1)/(x2-x1)+y1
@@ -188,89 +82,176 @@ function Link(x,points)
 	return points[c][3](x,points[c-1][1],points[c-1][2],points[c][1],points[c][2])
 end
 
-------------------------------------------------------
---技能设定格式如下：
---SKILLS={
---	技能名称=	{
---		魔法属性=	{
---			[1]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[2]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[3]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，	
---		}，
---		魔法属性=	{
---			[1]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[2]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[3]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，	
---		}，
---		。。。。。
---	}，
---	技能名称=	{
---		魔法属性=	{
---			[1]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[2]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[3]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，	
---		}，
---		魔法属性=	{
---			[1]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[2]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，
---			[3]={{级别,数值，曲线}，{级别，数值，曲线}，。。。。}，	
---		}，
---		。。。。。
---	}，
---	。。。。。
---}
---如：
---SKILLS={
---	Sanhuan-taoyue={
---		physicsenhance_p={
---			[1]={{1,50},{20,335}},--魔法属性physicsenhance_p参数1，1级时为35，20级时为335，曲线不填，默认线形
---			[2]={{1,0},{20,0}},
---		},--没有[3]，表示魔法属性physicsenhance_p参数2，默认为任何时候都是0
---		lightingdamage_v={
---			[1]={{1,65},{20,350}},
---			[3]={{1,65},{20,350}},
---		}
---	}
---}
---以上描述技能“三环套月”的魔法属性和数值
------------------------------------------------------------
---函数GetSkillLevelData(levelname, data, level)
---levelname：魔法属性名称
---data：技能名称
---level：技能等级
---return：当技能名称为data，技能等级为level
---			时的魔法属性levelname所需求的三个参数的具体值
------------------------------------------------------------
+--迭代函数，用于计算技能熟练度
+--具体方法：
+--根据1级熟练度，升级加速度，级数，重复伤害次数，范围，计算出相应等级熟练度
+-- SkillExp(i) = Exp1*a^(i-1)*time*range
+function SkillExpFunc(Exp0,a,Level,Time,Range)
+	return floor(Exp0*(a^(Level-1))*Time*Range/2)
+end
+
+
+SKILLS={
+	chunniu=
+	{ --春牛专用必杀技
+		seriesdamage_p=
+		{
+			{{1,5},{20,30}}
+		},
+		physicsenhance_p=
+		{
+			{{1,15},{20,75}}
+		},
+		firedamage_v=
+		{
+			[1]={{1,100},{20,6000}},
+			[3]={{1,100},{20,3000}}
+		},
+		poisondamage_v=
+		{
+			[1]={{1,20},{20,250}},
+			[2]={{1,50},{20,200}},
+			[3]={{1,10},{20,20}}
+		},
+		physicsdamage_v=
+		{
+			[1]={{1,100},{20,6000}},
+			[3]={{1,100},{20,6000}}
+		},
+		colddamage_v=
+		{
+			[1]={{1,100},{20,6000}},
+			[2]={{1,1},{20,18}},
+			[3]={{1,100},{20,6000}}
+		},
+		lightingdamage_v=
+		{
+			[1]={{1,100},{20,6000}},
+			[3]={{1,100},{20,6000}}
+		},
+		skill_cost_v=
+		{
+			{{1,0},{20,0}}
+		}
+	},
+	chunniuzidan=
+	{ --春牛专用必杀技子技能
+		seriesdamage_p=
+		{
+			{{1,5},{20,30}}
+		},
+		physicsenhance_p=
+		{
+			{{1,15},{20,75}}
+		},
+		firedamage_v=
+		{
+			[1]={{1,100},{20,3000}},
+			[3]={{1,100},{20,3000}}
+		},
+		poisondamage_v=
+		{
+			[1]={{1,20},{20,160}},
+			[2]={{1,50},{20,100}},
+			[3]={{1,10},{20,20}}
+		},
+		physicsdamage_v=
+		{
+			[1]={{1,100},{20,3000}},
+			[3]={{1,100},{20,3000}}
+		},
+		colddamage_v=
+		{
+			[1]={{1,100},{20,3000}},
+			[2]={{1,1},{20,18}},
+			[3]={{1,100},{20,3000}}
+		},
+		lightingdamage_v=
+		{
+			[1]={{1,100},{20,3000}},
+			[3]={{1,100},{20,3000}}
+		},
+		skill_cost_v=
+		{
+			{{1,0},{20,0}}
+		}
+	},
+	niumowang={ --牛魔王光环
+		lifemax_v={{{1,5000},{20,4000},{21,4000}},{{1,18},{2,18}}},
+		lifereplenish_v={{{1,30},{20,100}},{{1,18},{2,18}}},
+		manareplenish_v={{{1,30},{20,100}},{{1,18},{2,18}}},
+		fasthitrecover_v={{{1,10},{20,20},{31,20}},{{1,18},{2,18}}},
+		fatallystrikeres_p={{{1,10},{20,20},{31,20}},{{1,18},{2,18}}},
+		freezetimereduce_p={{{1,10},{20,20},{31,20}},{{1,18},{2,18}}},
+		poisontimereduce_p={{{1,10},{20,20},{31,20}},{{1,18},{2,18}}},
+		stuntimereduce_p={{{1,10},{20,20},{31,20}},{{1,18},{2,18}}},
+		addphysicsmagic_v={{{1,10},{20,20}},{{1,18},{2,18}}},
+		addphysicsdamage_v={{{1,10},{20,20}},{{1,18},{2,18}}},
+		allres_p={{{1,10},{20,10}},{{1,18},{2,18}}},
+		allresmax_p={{{1,5},{20,10},{21,10}},{{1,18},{2,18}}},
+	},
+	mengniu={ --猛牛光环
+		lifemax_v={{{1,35000},{20,350000}},{{1,18},{2,18}}},
+		lifereplenish_v={{{1,250},{20,600}},{{1,18},{2,18}}},
+		manareplenish_v={{{1,250},{20,600}},{{1,18},{2,18}}},
+		fasthitrecover_v={{{1,85},{20,100},{31,200},{32,200}},{{1,18},{2,18}}},
+		fatallystrikeres_p={{{1,85},{20,100}},{{1,18},{2,18}}},
+		freezetimereduce_p={{{1,85},{20,100}},{{1,18},{2,18}}},
+		poisontimereduce_p={{{1,85},{20,100}},{{1,18},{2,18}}},
+		stuntimereduce_p={{{1,85},{20,100}},{{1,18},{2,18}}},
+		addphysicsmagic_v={{{1,100},{20,1000}},{{1,18},{2,18}}},
+		addphysicsdamage_v={{{1,100},{20,1000}},{{1,18},{2,18}}},
+		allres_p={{{1,40},{20,70}},{{1,18},{2,18}}},
+		allresmax_p={{{1,3},{20,8},{21,8}},{{1,18},{2,18}}},
+	},
+		cainiu={ --菜牛光环
+		lifemax_v={{{1,10000},{20,100000}},{{1,18},{2,18}}},
+		lifereplenish_v={{{1,200},{20,450}},{{1,18},{2,18}}},
+		manareplenish_v={{{1,200},{20,450}},{{1,18},{2,18}}},
+		fasthitrecover_v={{{1,75},{20,100},{31,200},{32,200}},{{1,18},{2,18}}},
+		fatallystrikeres_p={{{1,75},{20,100}},{{1,18},{2,18}}},
+		freezetimereduce_p={{{1,75},{20,100}},{{1,18},{2,18}}},
+		poisontimereduce_p={{{1,75},{20,100}},{{1,18},{2,18}}},
+		stuntimereduce_p={{{1,75},{20,100}},{{1,18},{2,18}}},
+		addphysicsmagic_v={{{1,100},{20,1000}},{{1,18},{2,18}}},
+		addphysicsdamage_v={{{1,100},{20,1000}},{{1,18},{2,18}}},
+		allres_p={{{1,30},{20,55}},{{1,18},{2,18}}},
+		allresmax_p={{{1,1},{20,5},{21,5}},{{1,18},{2,18}}},
+	},
+}
+function Param2String(Param1, Param2, Param3)
+return Param1..","..Param2..","..Param3
+end;
+
 function GetSkillLevelData(levelname, data, level)
+	return GetSkillLevelDataByTable(levelname, data, level)
+end;
+
+
+function GetSkillLevelDataByTable(levelname, data, level)
 	if(data==nil) then
 		return ""
 	end
 	if(data == "") then
 		return ""
 	end
-	if(SKILLS[data]==nil) then
+	if(%SKILLS[data]==nil) then
 		return ""
 	end
-	if(SKILLS[data][levelname]==nil) then
+	if(%SKILLS[data][levelname]==nil) then
 		return ""
 	end
-	if(SKILLS[data][levelname][1]==nil) then
-		SKILLS[data][levelname][1]={{0,0},{20,0}}
+	if(%SKILLS[data][levelname][1]==nil) then
+		%SKILLS[data][levelname][1]={{0,0},{20,0}}
 	end
-	if(SKILLS[data][levelname][2]==nil) then
-		SKILLS[data][levelname][2]={{0,0},{20,0}}
+	if(%SKILLS[data][levelname][2]==nil) then
+		%SKILLS[data][levelname][2]={{0,0},{20,0}}
 	end
-	if(SKILLS[data][levelname][3]==nil) then
-		SKILLS[data][levelname][3]={{0,0},{20,0}}
+	if(%SKILLS[data][levelname][3]==nil) then
+		%SKILLS[data][levelname][3]={{0,0},{20,0}}
 	end
-	p1=floor(Link(level,SKILLS[data][levelname][1]))
-	p2=floor(Link(level,SKILLS[data][levelname][2]))
-	p3=floor(Link(level,SKILLS[data][levelname][3]))
+	p1=floor(Link(level,%SKILLS[data][levelname][1]))
+	p2=floor(Link(level,%SKILLS[data][levelname][2]))
+	p3=floor(Link(level,%SKILLS[data][levelname][3]))
 	return Param2String(p1,p2,p3)
 end;
-
-
-function Param2String(Param1, Param2, Param3)
-return Param1..","..Param2..","..Param3
-end;
-

@@ -1,6 +1,4 @@
-Include("script\\global\\mrt\\configserver\\configall.lua")
 Include("\\script\\activitysys\\config\\38\\variables.lua")
-
 tbConfig = {}
 tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
@@ -23,12 +21,12 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	nId = 2,
 	szMessageType = "ItemScript",
 	szName = "right click item named NewYear-Gift",
-	nStartDate = NewYearGhepPhao.StartDate,
-	nEndDate  = NewYearGhepPhao.EndDate,
+	nStartDate = 201201010000,
+	nEndDate  = 201202010000,
 	tbMessageParam = {"return {tbProp={6,1,3086,-1,-1,0},}"},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTaskDaily",	{TSK_USED_NEWYEAR_GIFT_DAILY,MAX_USED_NEWYEAR_GIFT_DAILY,"Sè lÇn sö dông cña ng­¬i h«m nay ®· ®ñ, ngµy mai h·y quay l¹i nh?","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_USED_NEWYEAR_GIFT_DAILY,MAX_USED_NEWYEAR_GIFT_DAILY,"Sè lÇn sö dông cña ng­¬i h«m nay ®· ®ñ, ngµy mai h·y quay l¹i nhÐ!","<"} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
@@ -43,8 +41,8 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	nId = 3,
 	szMessageType = "ItemScript",
 	szName = "right click item named NewYear-Fireworks",
-	nStartDate = NewYearGhepPhao.StartDate,
-	nEndDate  = NewYearGhepPhao.EndDate,
+	nStartDate = 201201010000,
+	nEndDate  = 201202010000,
 	tbMessageParam = {"return {tbProp={6,1,3087,-1,-1,0},}"},
 	tbCondition = 
 	{
@@ -57,24 +55,5 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	{
 		{"ThisActivity:UseNewYearFireworks",	{nil} },
 		{"ThisActivity:AddTask",	{TSK_USED_NEWYEAR_FIREWORKS,1} },
-	},
-}
-
-tbConfig[4] = --Ò»¸öÏ¸½Ú
-{
-	nId = 4,
-	szMessageType = "NpcOnDeath",
-	szName = "kill monster at field",
-	nStartDate = NewYearGhepPhao.StartDate,
-	nEndDate  = NewYearGhepPhao.EndDate,
-	tbMessageParam = {nil},
-	tbCondition = 
-	{
-		-- {"NpcFunLib:CheckInMap",	{"321,322,227,340"} },
-		-- {"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
-	},
-	tbActition = 
-	{
-		{"NpcFunLib:DropSingleItem",	{{szName="Bao l× x×",tbProp={6,1,1350,1,0,0},nExpiredTime=NewYearGhepPhao.ItemExpiredTime,},1,"2"} },
 	},
 }

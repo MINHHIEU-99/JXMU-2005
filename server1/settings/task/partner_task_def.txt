@@ -1,88 +1,88 @@
 TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	VALUE	TASK_DESCRIBE
-B¾T_§ÇU_ID (NÕu ID kh«ng liªn tiÕp, vui lßng ®Ó trèng dßng nµy)	KÕT_THóC_ID	T£N_NHIÖM_Vô	GI¸_TRÞ	M¤_T¶_NHIÖM_Vô
-1		NhiÖm vô d¹y dç b¹n ®ång hµnh		
-2		NhiÖm vô tu luyÖn b¹n ®ång hµnh		
-3		NhiÖm vô kÞch b¶n b¹n ®ång hµnh [ChÕt cña thõa lang]		BËt/T¾t
-4		NhiÖm vô kÞch b¶n b¹n ®ång hµnh [BÝ mËt cña ng­êi kiÓm tra r¾n]		
-5		NhiÖm vô kÞch b¶n b¹n ®ång hµnh [Ng­êi bu«n ®¸ quý]		
-6		NhiÖm vô kÞch b¶n b¹n ®ång hµnh [ChiÕn binh cña d©n téc kh¸c]		
-7		Ghi l¹i sè l­îng vËt phÈm Cá §Þa Hoµng [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
-8		Ghi l¹i sè l­îng vËt phÈm L¸ L­ìi Hæ [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
-9		Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Tr¸i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
-10		Ghi l¹i sè l­îng vËt phÈm X­¬ng Cæng Tr¾ng [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
-11		Kü n¨ng kh¸ng ngò hµnh cña b¹n ®ång hµnh		Ghi l¹i sè l­îng s¸ch kü n¨ng kh¸ng ngò hµnh b¹n ®ång hµnh ®· häc
-12		Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Ph¶i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
-13		Ghi l¹i thêi gian chê 5 phót [ChÕt cña thõa lang]		
-14		NhiÖm vô kÞch b¶n b¹n ®ång hµnh [NhiÖm vô Èn]		
+¿ªÊ¼ID£¨IDÕ¼ÓÃ²»Á¬ÐøÇë¿ÕÐÐ£©	½áÊøID	ÈÎÎñÃû³Æ	È¡Öµ	ÈÎÎñÃèÊö
+1		Í¬°é½ÌÓýÈÎÎñ		
+2		Í¬°éÐÞÁ·ÈÎÎñ		
+3		Í¬°é¾çÇéÈÎÎñ[ÊÌÀÉÖ®ËÀ]		¿ª¹Ø
+4		Í¬°é¾çÇéÈÎÎñ[¿ØÉßÈËÖ®ÃØ]		
+5		Í¬°é¾çÇéÈÎÎñ[Öé±¦ÉÌÈË]		
+6		Í¬°é¾çÇéÈÎÎñ[Òì×åÎäÊ¿]		
+7		¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]µØ»Æ²ÝµÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 50 ¸ö	
+8		¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]·ÑÒ¶µÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 50 ¸ö	
+9		¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]×óÔ¿³×µÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 1 ¸ö	
+10		¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]È¾ëÎ¹ÇµÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 1 ¸ö	
+11		Í¬°éÎåÐÐ¿¹ÐÔ¼¼ÄÜ		¼ÇÂ¼Í¬°é³ÔÎåÐÐ¿¹ÐÔ¼¼ÄÜÊéµÄÊýÁ¿
+12		¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]ÓÒÔ¿³×µÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 1 ¸ö	
+13		¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]µÄ 5 ·ÖÖÓµÈ´ýÊ±¼ä		
+14		Í¬°é¾çÇéÈÎÎñ[Òþ²ØÈÎÎñ]		
 				
-16		NhiÖm vô kÞch b¶n KiÓm tra R¾n [NhiÖm vô kÞch b¶n - NhiÖm vô §iÒu h­íng Giã]		
-17		NhiÖm vô kÞch b¶n KiÓm tra R¾n [NhiÖm vô kÞch b¶n - NhiÖm vô Kho B¸u Thiªn]		
-18		NhiÖm vô kÞch b¶n KiÓm tra R¾n [NhiÖm vô kÞch b¶n - NhiÖm vô §Òn ThÇn Nói]		
+16		¾çÇéÈÎÎñ¿ØÉßÈËÖ®ÃØ - ·çÖ®ÆïÈÎÎñ		
+17		¾çÇéÈÎÎñ¿ØÉßÈËÖ®ÃØ - Ç§±¦¿âÈÎÎñ		
+18		¾çÇéÈÎÎñ¿ØÉßÈËÖ®ÃØ - É½ÉñÃíÈÎÎñ		
 				
-20		NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
-21		NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
-22		NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
-23		NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
+20		¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
+21		¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
+22		¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
+23		¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
 				
-25		NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
-26		NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
-27		NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
-28		NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
-29		NhiÖm vô kÞch b¶n - Ghi l¹i ®iÒu kiÖn hoµn thµnh nhiÖm vô Èn		
+25		¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
+26		¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
+27		¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
+28		¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
+29		¾çÇéÈÎÎñ - Òþ²ØÈÎÎñÍê³ÉÌõ¼þ¼ÇÂ¼		
 				
-30		NhiÖm vô tu luyÖn kÞch b¶n [ChÕt cña thõa lang]		
-31		NhiÖm vô tu luyÖn kÞch b¶n [Ng­êi bu«n ®¸ quý]		
-32		NhiÖm vô tu luyÖn kÞch b¶n [ChiÕn binh cña d©n téc kh¸c]		
+30		¾çÇéÐÞÁ¶Æª - ÊÌÀÉÖ®ËÀ		
+31		¾çÇéÐÞÁ¶Æª - Öé±¦ÉÌÈË		
+32		¾çÇéÐÞÁ¶Æª - Òì×åÎäÊ¿		
 				
-33		Tu luyÖn kÞch b¶n - Ghi l¹i sè l­îng vËt phÈm Cá §Þa Hoµng [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
-34		Tu luyÖn kÞch b¶n - Ghi l¹i sè l­îng vËt phÈm L¸ L­ìi Hæ [ChÕt cña thõa lang]		CÇn thu thËp 50 vËt phÈm	
-35		Tu luyÖn kÞch b¶n - Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Tr¸i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
-36		Tu luyÖn kÞch b¶n - Ghi l¹i sè l­îng vËt phÈm X­¬ng Cæng Tr¾ng [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
-37		Tu luyÖn kÞch b¶n - Ghi l¹i sè l­îng vËt phÈm Ch×a Khãa Bªn Ph¶i [ChÕt cña thõa lang]		CÇn thu thËp 1 vËt phÈm	
-38		Tu luyÖn kÞch b¶n - Ghi l¹i thêi gian chê 5 phót [ChÕt cña thõa lang]		
+33		ÐÞÁ¶Æª - ¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]µØ»Æ²ÝµÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 50 ¸ö	
+34		ÐÞÁ¶Æª - ¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]·ÑÒ¶µÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 50 ¸ö	
+35		ÐÞÁ¶Æª - ¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]×óÔ¿³×µÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 1 ¸ö	
+36		ÐÞÁ¶Æª - ¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]È¾ëÎ¹ÇµÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 1 ¸ö	
+37		ÐÞÁ¶Æª - ¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]ÓÒÔ¿³×µÄÎïÆ·ÊýÁ¿	ÐèÒªÈ¡ 1 ¸ö	
+38		ÐÞÁ¶Æª - ¼ÇÂ¼[ÊÌÀÉÖ®ËÀ]µÄ 5 ·ÖÖÓµÈ´ýÊ±¼ä		
 				
-39		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
-40		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
-41		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
-42		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô ®Õm qu¸i]		
+39		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
+40		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
+41		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
+42		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÖé±¦ÉÌÈË - É±¹Ö¼ÆÊý		
 				
-43		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
-44		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
-45		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
-46		Tu luyÖn kÞch b¶n - NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô ®Õm qu¸i]		
+43		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
+44		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
+45		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
+46		ÐÞÁ¶Æª - ¾çÇéÈÎÎñÒì×åÎäÊ¿ - É±¹Ö¼ÆÊý		
 				
-50		NhiÖm vô kÞch b¶n [ChÕt cña thõa lang] - Ghi l¹i phÇn th­ëng		
-		1~8 bit: PhÇn th­ëng b­íc 1~8		
+50		ÊÌÀÉÖ®ËÀ¾çÇéÆª½±Àø¼ÇÂ¼		
+		1~8 bit: µÚ 1~8 ²½½±Àø		
 				
-51		NhiÖm vô kÞch b¶n KiÓm tra R¾n [NhiÖm vô kÞch b¶n - Ghi l¹i phÇn th­ëng]		
-		1~5 bit: PhÇn th­ëng b­íc 1~5		
+51		¿ØÉßÈËÖ®ÃØ¾çÇéÆª½±Àø¼ÇÂ¼		
+		1~5 bit: µÚ 1~5 ²½½±Àø		
 				
-52		NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô kÞch b¶n - Ghi l¹i phÇn th­ëng]		
-		1~8 bit: PhÇn th­ëng b­íc 1~8		
+52		Öé±¦ÉÌÈË¾çÇéÆª½±Àø¼ÇÂ¼		
+		1~8 bit: µÚ 1~8 ²½½±Àø		
 				
-53		NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô kÞch b¶n - Ghi l¹i phÇn th­ëng]		
-		1~4 bit: PhÇn th­ëng b­íc 1~4		
+53		Òì×åÎäÊ¿¾çÇéÆª½±Àø¼ÇÂ¼		
+		1~4 bit: µÚ 1~4 ²½½±Àø		
 				
-54		NhiÖm vô kÞch b¶n Èn - Ghi l¹i phÇn th­ëng		
-		1~1 bit: PhÇn th­ëng b­íc 1~1		
+54		Òþ²ØÈÎÎñ¾çÇéÆª½±Àø¼ÇÂ¼		
+		1~1 bit: µÚ 1~1 ²½½±Àø		
 				
-55		NhiÖm vô kÞch b¶n [ChÕt cña thõa lang] - Ghi l¹i phÇn th­ëng tu luyÖn		
-		1~8 bit: PhÇn th­ëng b­íc 1~8		
+55		ÊÌÀÉÖ®ËÀÐÞÁ¶Æª½±Àø¼ÇÂ¼		
+		1~8 bit: µÚ 1~8 ²½½±Àø		
 				
-56		NhiÖm vô kÞch b¶n Bu«n ®¸ quý [NhiÖm vô kÞch b¶n - Ghi l¹i phÇn th­ëng tu luyÖn]		
-		1~8 bit: PhÇn th­ëng b­íc 1~8		
+56		Öé±¦ÉÌÈËÐÞÁ¶Æª½±Àø¼ÇÂ¼		
+		1~8 bit: µÚ 1~8 ²½½±Àø		
 				
-57		NhiÖm vô kÞch b¶n ChiÕn binh d©n téc kh¸c [NhiÖm vô kÞch b¶n - Ghi l¹i phÇn th­ëng tu luyÖn]		
-		1~4 bit: PhÇn th­ëng b­íc 1~4		
+57		Òì×åÎäÊ¿ÐÞÁ¶Æª½±Àø¼ÇÂ¼		
+		1~4 bit: µÚ 1~4 ²½½±Àø		
 				
-61		Ghi l¹i ngµy b¾t ®Çu kÞch b¶n tu luyÖn [ChÕt cña thõa lang]		
-62		Ghi l¹i ngµy b¾t ®Çu kÞch b¶n tu luyÖn [Ng­êi bu«n ®¸ quý]		
-63		Ghi l¹i ngµy b¾t ®Çu kÞch b¶n tu luyÖn [ChiÕn binh cña d©n téc kh¸c]		
-64		Ghi l¹i sè lÇn hoµn thµnh kÞch b¶n tu luyÖn [ChÕt cña thõa lang]		
-65		Ghi l¹i sè lÇn hoµn thµnh kÞch b¶n tu luyÖn [Ng­êi bu«n ®¸ quý]		
-66		Ghi l¹i sè lÇn hoµn thµnh kÞch b¶n tu luyÖn [ChiÕn binh cña d©n téc kh¸c]		
+61		¼ÇÂ¼ÊÌÀÉÖ®ËÀÐÞÁ¶ÆªµÄ¿ªÊ¼ÈÕÆÚ		
+62		¼ÇÂ¼Öé±¦ÉÌÈËÐÞÁ¶ÆªµÄ¿ªÊ¼ÈÕÆÚ		
+63		¼ÇÂ¼Òì×åÎäÊ¿ÐÞÁ¶ÆªµÄ¿ªÊ¼ÈÕÆÚ		
+64		¼ÇÂ¼ÊÌÀÉÖ®ËÀÐÞÁ¶ÆªµÄÍê³É´ÎÊý		
+65		¼ÇÂ¼Öé±¦ÉÌÈËÐÞÁ¶ÆªµÄÍê³É´ÎÊý		
+66		¼ÇÂ¼Òì×åÎäÊ¿ÐÞÁ¶ÆªµÄÍê³É´ÎÊý		
 				
-68		Ghi l¹i sè lÇn hoµn thµnh nhiÖm vô tu luyÖn cña ng­êi ch¬i cho nhiÖm vô Èn		
+68		¼ÇÂ¼Òþ²ØÈÎÎñÍæ¼ÒµÄÐÞÁ¶ÈÎÎñÍê³É´ÎÊý		
 				
-80		Ghi l¹i ngµy ch¬i thÎ b¶o vÖ khi ®Þnh vÞ b¶o vËt		
-81		Ghi l¹i sè lÇn ch¬i thÎ b¶o vÖ trong ngµy khi ®Þnh vÞ b¶o vËt		
+80		¼ÇÂ¼Íæ¼Ò¼ø¶¨²Ø±¦Í¼Ê±µÄÈÕÆÚ		
+81		¼ÇÂ¼Íæ¼Ò¼ø¶¨²Ø±¦Í¼Ê±µÄµ±Ìì´ÎÊý		

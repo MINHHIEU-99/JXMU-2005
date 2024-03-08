@@ -21,19 +21,15 @@ function exchange_lingpai2goldequip()
 		format("Bé trang bÞ V©n Léc/#take_xp_equip_1(2,%d)", 1135),
 		format("Bé trang bÞ Th­¬ng Lang/#take_xp_equip_1(3,%d)", 1365),
 		format("Bé trang bÞ HuyÒn Viªn/#take_xp_equip_1(4, %d)", 1595),
-		format("Bé trang bÞ Tö M·ng/#take_xp_equip_1(5, %d)", 1825),
-		format("Bé trang bÞ Kim ¤/#take_xp_equip_1(6, %d)", 2055),
-		format("Bé trang bÞ B¹ch Hæ/#take_xp_equip_1(7, %d)", 2285),
-		format("Bé trang bÞ XÝch L©n/#take_xp_equip_1(8, %d)", 2515),
-		format("Bé trang bÞ Minh Ph­îng/#take_xp_equip_1(9, %d)", 2745),
-		format("Bé trang bÞ §»ng Long/#take_xp_equip_1(10, %d)", 2775),
-		format("Bé trang bÞ Tinh S­¬ng/#take_xp_equip_1(11, %d)", 5379),
-		format("Bé trang bÞ NguyÖt KhuyÕt/#take_xp_equip_1(12, %d)", 5670),
+--		format("Bé trang bÞ Tö M·ng/#take_xp_equip_1(5, %d)", 1825),
+--		format("½ðÎÚÌ××°/#take_xp_equip_1(6, %d)", 2055),
+--		format("°×»¢Ì××°/#take_xp_equip_1(7, %d)", 2285),
 		"L¸t n÷a quay l¹i /no",
 	};
 	
 	CreateTaskSay(aryDescribe);
 end
+
 
 function take_xp_equip_1(n_g, n_d)
 	
@@ -72,8 +68,6 @@ function take_xp_equip_11(n_g, n_d)
 						format("Vâ §ang kiÕm/#take_xp_equip_2(%d,%d, 21)", n_g, n_d),
 						format("§ao C«n L«n/#take_xp_equip_2(%d,%d, 22)", n_g, n_d),
 						format("KiÕm C«n L«n/#take_xp_equip_2(%d,%d, 23)", n_g, n_d),
-						format("Hoa S¬n KhÝ/#take_xp_equip_2(%d,%d, 24)", n_g, n_d),
-						format("Hoa S¬n KiÕm/#take_xp_equip_2(%d,%d, 25)", n_g, n_d),
 						format("Trang tr­íc/#take_xp_equip_1(%d,%d)", n_g, n_d),
 						"L¸t n÷a quay l¹i /no"});
 end
@@ -82,9 +76,9 @@ end
 function take_xp_equip_2(n_g, n_d, n_p)
 	local n_count = 10;
 	
-	--if (n_g == 1) then		
-	--	n_count = 1;
-	--end
+	if (n_g == 5) then		
+		n_count = 5;
+	end
 	
 	local n_s =(n_p - 1)*n_count + 1;
 	
@@ -133,7 +127,7 @@ function take_xp_equip_3(n_g, n_d, n_p, n_x)
 		SetItemBindState(nItemIdx, n_new_bindtime);
 	end
 	
-	Msg2Player("NhËn ®­îc <color=yellow>"..GetItemName(nItemIdx));
+	Msg2Player("NhËn ®­îc ——"..GetItemName(nItemIdx));
 	
 	local szLog = format("%s\t%s\t%u",tbLingpai[n_g].szName, GetItemName(nItemIdx), ITEM_GetItemRandSeed(nItemIdx))
 	

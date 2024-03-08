@@ -1,139 +1,91 @@
 IncludeLib("ITEM")
-Include("\\script\\tong\\tong_award_head.lua");
-Include("\\script\\tong\\tong_award_head.lua");
-Include("\\script\\lib\\progressbar.lua")
+Include("\\script\\tong\\tong_award_head.lua");-- by÷æ…Ω£¨∞Ôª·÷‹ƒø±Íπ±œ◊∂»
+Include("\\script\\item\\huihuangzhiguo_advance.lua")
+Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\lib\\awardtemplet.lua")
 
-local _Limit = function(nNpcIdx)
+function main()
 	
 	if (0 == GetCamp()) then
 		Msg2Player("Bπn ch≠a gia nhÀp m´n ph∏i, kh´ng th” h∏i qu∂.")
 		return
 	end
-
-	if (0 == GetFightState() or GetLife(0) <= 0 or GetProtectTime() > 0 ) then
+	if (0 == GetFightState() or GetLife(0) <= 0) then
 		Msg2Player("kh´ng th” h∏i qu∂.")
 		return
 	end
-	
+
+	local GREADSEED_SEEDID_TASKID = 2310;
+	local GREADSEED_TIME_TASKID = 2311;
+	local nTime = GetCurrentTime();
+	local nNpcIdx = GetLastDiagNpc();
 	local nPlayerLevel = GetLevel();
-	local nGetSeedLevel = nil;
-	if (nPlayerLevel < 80) then
+	local nGetSeedLevel;
+	
+	if (GetNpcParam(nNpcIdx, 4) == 1) then
+		return
+	end
+	
+	if (nPlayerLevel < 90) then
 		nGetSeedLevel = 1;
-	elseif (nPlayerLevel >= 80 and nPlayerLevel < 120) then
+	elseif (nPlayerLevel >= 80 and nPlayerLevel < 90) then
 		nGetSeedLevel = 2;
-	elseif (nPlayerLevel >= 120) then
+	elseif (nPlayerLevel >= 90) then
 		nGetSeedLevel = 3;
 	end
 	
 	if (nGetSeedLevel ~= GetNpcParam(nNpcIdx, 1)) then -- »Áπ˚º∂±≤ª∂‘,≤ªƒ‹Ω¯–– ∞»°
 		--’‚¿Ô∏ÊÀﬂÕÊº“º∂±≤ª∂‘,≤ªƒ‹ ∞»°
 		if (1 == GetNpcParam(nNpcIdx, 1)) then
-			Msg2Player("Loπi qu∂ nµy ng≠Íi ch¨i tı c p 80 trÎ xuËng c„ th” h∏i!")
+			Msg2Player("Loπi qu∂ nµy ng≠Íi ch¨i tı c p 90 trÎ xuËng c„ th” h∏i!")
 		elseif (2 == GetNpcParam(nNpcIdx, 1)) then
-			Msg2Player("Loπi qu∂ nµy ng≠Íi ch¨i tı c p 80 Æ’n c p 119 mÌi c„ th” h∏i.")
+			Msg2Player("Loπi qu∂ nµy ng≠Íi ch¨i tı c p 80 Æ’n c p 90 mÌi c„ th” h∏i.")
 		else
-			Msg2Player("Loπi qu∂ nµy ng≠Íi ch¨i tı c p 120 trÎ l™n mÌi c„ th” h∏i!")
+			Msg2Player("Loπi qu∂ nµy ng≠Íi ch¨i tı c p 90 trÎ l™n mÌi c„ th” h∏i!")
 		end
 		return
 	end;
 	
-	return nGetSeedLevel
-end
+	if (GetNpcParam(nNpcIdx, 2) == GetTask(GREADSEED_SEEDID_TASKID)) then
+		if (nTime >= GetTask(GREADSEED_TIME_TASKID) + 10) then
+			-- –¬π˚ µ
+			if (huihuangzhiguo_advance:GetGuoZiAvd() == 0) then
+				-- æ…π˚ µ
+				local nTimeSv = tonumber(GetLocalDate("%H%M"));
+				local w,x,y = GetWorldPos(); 
+				if nTimeSv>=2020 and nTimeSv<=2300 and (w==959 or w==355)  then
 
-local _GetFruit = function(nNpcIdx, dwNpcId)
-	
-	if nNpcIdx <= 0 or GetNpcId(nNpcIdx) ~= dwNpcId then
-		return 0
-	end
-	local nGetSeedLevel = %_Limit(nNpcIdx)
-	
-	if nGetSeedLevel == nil then
-		return 0
-	end
-	
-	
-	DelNpc(nNpcIdx)
-	
-	tbAwardTemplet:GiveAwardByList({tbProp = {6,1,904,1,0,0,0}, nExpiredTime = 10080}, "ß™m Huy Hoµng", 1);
-	--tongaward_goldenseed();
-	--AddGlobalNews(format("ßπi hi÷p %s Æ∑ h∏i Æ≠Óc qu∂ Hoµng Kim!!!",GetName()));
-	Msg2Player("ChÛc mıng Æπi hi÷p <color=green>"..GetName().."<color> Æ∑ nh∆t Æ≠Óc qu∂ Huy Hoµng!!!")
-end
+					tbAwardTemplet:GiveAwardByList({tbProp = {6,1,904 + nGetSeedLevel - 2,1,0,0,0}, nExpiredTime = 7*60*24}, "ß™m Huy Hoµng", 1);--905
+						Msg2Player("Bπn nhÀn Æ≠Óc mÈt qu∂ Hoµng Kim");
+						Msg2SubWorld("ChÛc mıng Æπi hi÷p <color=green>"..GetName().."<color> Æ∑ nh∆t Æ≠Óc <color=yellow>qu∂ Hoµng Kim<color>")
+					else 
+					tbAwardTemplet:GiveAwardByList({tbProp = {6,1,904 + nGetSeedLevel-1,1,0,0,0}, nExpiredTime = 7*60*24}, "ß™m Huy Hoµng", 1);--906
+						Msg2Player("Bπn nhÀn Æ≠Óc mÈt qu∂ Huy Hoµng");
+						Msg2SubWorld("ChÛc mıng Æπi hi÷p <color=green>"..GetName().."<color> Æ∑ nh∆t Æ≠Óc <color=yellow>qu∂ Huy Hoµng<color>")				
+					end
 
-local _GetFruit2 = function(nNpcIdx, dwNpcId)
-	
-	if nNpcIdx <= 0 or GetNpcId(nNpcIdx) ~= dwNpcId then
-		return 0
-	end
-	local nGetSeedLevel = %_Limit(nNpcIdx)
-	
-	if nGetSeedLevel == nil then
-		return 0
-	end
-	
-	
-	DelNpc(nNpcIdx)
-	
-	tbAwardTemplet:GiveAwardByList({tbProp = {6,1,905,1,0,0,0}, nExpiredTime = 10080}, "ß™m Huy Hoµng", 1);
-	--tongaward_goldenseed();
-	--AddGlobalNews(format("ßπi hi÷p %s Æ∑ h∏i Æ≠Óc qu∂ Hoµng Kim!!!",GetName()));
-	Msg2Player("ChÛc mıng Æπi hi÷p <color=green>"..GetName().."<color> Æ∑ nh∆t Æ≠Óc qu∂ Huy Hoµng!!!")
-end
+				--local _, nTongID = GetTongName()
+				--Msg2Tong(nTongID,"ßπi hi÷p "..GetName().." Æ∑ nh∆t Æ≠Óc qu∂ Huy Hoµng")
 
-local _GetFruit3 = function(nNpcIdx, dwNpcId)
-	
-	if nNpcIdx <= 0 or GetNpcId(nNpcIdx) ~= dwNpcId then
-		return 0
-	end
-	local nGetSeedLevel = %_Limit(nNpcIdx)
-	
-	if nGetSeedLevel == nil then
-		return 0
-	end
-	
-	
-	DelNpc(nNpcIdx)
-	
-	tbAwardTemplet:GiveAwardByList({tbProp = {6,1,906,1,0,0,0}, nExpiredTime = 10080}, "ß™m Huy Hoµng", 1);
-	--tongaward_goldenseed();
-	--AddGlobalNews(format("ßπi hi÷p %s Æ∑ h∏i Æ≠Óc qu∂ Hoµng Kim!!!",GetName()));
-	Msg2Player("ChÛc mıng Æπi hi÷p <color=green>"..GetName().."<color> Æ∑ nh∆t Æ≠Óc qu∂ Huy Hoµng!!!")
-end
+			end
+			SetTask(GREADSEED_TIME_TASKID, 0);
+			SetTask(GREADSEED_SEEDID_TASKID, 0);
+			DelNpc(nNpcIdx)
+			SetNpcParam(nNpcIdx, 4, 1)
+			tongaward_goldenseed();-- by÷æ…Ω£¨∞Ôª·÷‹ƒø±Íπ±œ◊∂»
+			
+			G_ACTIVITY:OnMessage("CaiJiHuiHuangZhiGuo");
 
-
-local _OnBreak = function()
-	local nNpcIdx = GetLastDiagNpc();
-	Msg2Player("Thu thÀp Æ¯t Æoπn")
-	SetNpcParam(nNpcIdx, 3, 0)
-end
-
-function main()
-dofile("script/event/great_night/npc_great_fruit.lua");
-	local nNpcIdx = GetLastDiagNpc();
-	local dwNpcId = GetNpcId(nNpcIdx)
-
-	if  GetNpcParam(nNpcIdx, 3) > 0 then
-	Msg2Player("ßang c„ ng≠Íi h∏i qu∂ nµy rÂi")
-	return
-	end
-	
-	if %_Limit(nNpcIdx) == nil then
-		return
-	end
-	--SetNpcParam(nNpcIdx, 3, 1)
-	local nPlayerLevel = GetLevel();
-	local nGetSeedLevel;
-	if (nPlayerLevel < 80) then
-	tbProgressBar:OpenByConfig(2, %_GetFruit, {nNpcIdx, dwNpcId}, %_OnBreak)
-	SetNpcParam(nNpcIdx, 3, 1)
-	elseif (nPlayerLevel >= 80 and nPlayerLevel < 120) then
-	tbProgressBar:OpenByConfig(2, %_GetFruit2, {nNpcIdx, dwNpcId}, %_OnBreak)
-	SetNpcParam(nNpcIdx, 3, 1)
-	elseif (nPlayerLevel >= 120) then
-	tbProgressBar:OpenByConfig(2, %_GetFruit3, {nNpcIdx, dwNpcId}, %_OnBreak)
-	SetNpcParam(nNpcIdx, 3, 1)
-	end
-SetPKFlag(1)
+		else	-- ±º‰√ªµΩ10√Î÷”;
+			Msg2Player(format("Bπn Æ∑ ch‰n qu∂ nµy, %d gi©y sau mÌi c„ th” h∏i qu∂!",
+						(10 - (nTime - GetTask(GREADSEED_TIME_TASKID)))
+							))
+			return
+		end;
+	else
+		Msg2Player("Bπn ch‰n qu∂ nµy, 10 gi©y sau qu∂ ch›n c„ th” h∏i Æ≠Óc.")
+		SetTask(GREADSEED_TIME_TASKID, nTime);
+		SetTask(GREADSEED_SEEDID_TASKID, GetNpcParam(nNpcIdx, 2));
+	end;
 end;
 

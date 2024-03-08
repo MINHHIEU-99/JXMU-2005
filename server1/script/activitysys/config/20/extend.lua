@@ -77,7 +77,7 @@ function pActivity:SignUp()
 		end
 		
 		if ST_IsTransLife() ~= 1  and GetLevel() < 150 then
-			return Talk(1, "", format("ch­a ®ñ cÊp %d hoÆc lµ ch­a Relife kh«ng thÓ tham gia ho¹t ®éng nµy", 150))
+			return Talk(1, "", format("ch­a ®ñ cÊp %d hoÆc lµ ch­a trïng sinh kh«ng thÓ tham gia ho¹t ®éng nµy", 150))
 		end
 		local nBagUsedCount = PlayerFunLib:GetTaskDailyCount(VN_TSK_USE_BAG_DAILY)
 		if PlayerHandle:GetSignUpCount() >= MAX_SIGNUP_COUNT + nBagUsedCount then

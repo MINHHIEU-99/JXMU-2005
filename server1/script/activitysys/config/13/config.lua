@@ -1,5 +1,4 @@
 
-Include("script\\global\\mrt\\configserver\\configall.lua")
 
 -------¾Ö²¿±äÁ¿¶¨Òå ¿ªÊ¼---------
 local TASK_TIME_LEFT_A		= 2662
@@ -14,8 +13,8 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	nId = 1,
 	szMessageType = "nil",
 	szName = "nil",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -29,8 +28,8 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	nId = 2,
 	szMessageType = "nil",
 	szName = "TÝch HuyÕt Cèc",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -47,8 +46,8 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	nId = 3,
 	szMessageType = "nil",
 	szName = "¸c Nh©n Cèc",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -65,8 +64,8 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	nId = 4,
 	szMessageType = "nil",
 	szName = "Thùc Cèt Nhai",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -83,8 +82,8 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	nId = 5,
 	szMessageType = "nil",
 	szName = "H¾c Méc Nhai",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -101,8 +100,8 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	nId = 6,
 	szMessageType = "nil",
 	szName = "Thiªn Phô S¬n",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -119,8 +118,8 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	nId = 7,
 	szMessageType = "nil",
 	szName = "Bµn Long S¬n",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -137,8 +136,8 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	nId = 8,
 	szMessageType = "nil",
 	szName = "§Þa MÉu S¬n",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -155,8 +154,8 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	nId = 9,
 	szMessageType = "nil",
 	szName = "UyÓn Phông S¬n",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
@@ -173,9 +172,9 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	nId = 10,
 	szMessageType = "ItemScript",
 	szName = "Sö dông B¹ch Cèt LÖnh",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
-	tbMessageParam = {"return {tbProp={6,1,2255,-1,-1,0},}"},
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"return {tbProp={6,1,2255,1,0,0},}"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckLevel",	{130,"Ph¶i lµ ng­êi ch¬i nép thÎ vµ cÊp 130 trë lªn míi cã thÓ sö dông",">="} },
@@ -195,9 +194,9 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	nId = 11,
 	szMessageType = "ItemScript",
 	szName = "Sö dông Thiªn Long LÖnh",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
-	tbMessageParam = {"return {tbProp={6,1,2256,-1,-1,0},}"},
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"return {tbProp={6,1,2256,1,0,0},}"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckLevel",	{130,"Ph¶i lµ ng­êi ch¬i nép thÎ vµ cÊp 130 trë lªn míi cã thÓ sö dông",">="} },
@@ -217,8 +216,8 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	nId = 12,
 	szMessageType = "ClickNpc",
 	szName = "BÊm vµo xa phu",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {"Xa phu"},
 	tbCondition = 
 	{
@@ -233,8 +232,8 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 	nId = 13,
 	szMessageType = "CreateDialog",
 	szName = "Chän dßng chän b¶n ®å",
-	nStartDate = 202401140000,
-	nEndDate  = 202405010000,
+	nStartDate = nil,
+	nEndDate  = nil,
 	tbMessageParam = {"Kh¸ch quan muèn ®i ®©u?"},
 	tbCondition = 
 	{

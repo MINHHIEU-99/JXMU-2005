@@ -106,10 +106,10 @@ PhongVanLenhBai2011.tbWeekendAward =
 
 function PhongVanLenhBai2011:ShowDialogDaily()
 	--KiÓm tra nhËp m· code Phong Van Lenh Bai
-	--if tbPVLB_Check:IsNewPlayer() ~= 1 then
-		--Talk(1, "", "C¸c h¹ kh«ng ®ñ ®iÒu kiÖn tham gia ch­¬ng tr×nh.")
-		--return
-	--end
+	if tbPVLB_Check:IsNewPlayer() ~= 1 then
+		Talk(1, "", "C¸c h¹ kh«ng ®ñ ®iÒu kiÖn tham gia ch­¬ng tr×nh.")
+		return
+	end
 	local nDay = tonumber(date("%w"))
 	local nTime =tonumber(GetLocalDate("%H%M"))
 	local szTitle = "PhÇn th­ëng hµng ngµy"
@@ -188,7 +188,7 @@ function PhongVanLenhBai2011:GetDailyAwardTimes2()
 	if (nTongID > 0) then
 		AddContribution(2000)
 		Msg2Player("B¹n nhËn ®­îc 2000 ®iÓm cèng hiÕn bang héi")
---		WriteLog(date("%d- %m- %Y %H giê %M phót %S Gi©y").."\t".."PhongVanLenhBai2011"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng ®­îc 2000 ®iÓm cèng hiÕn bang héi")
+--		WriteLog(date("%Y%m%d %H%M%S").."\t".."PhongVanLenhBai2011"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng ®­îc 2000 ®iÓm cèng hiÕn bang héi")
 		tbLog:PlayerActionLog("PhongVanLenhBai", "NhanThuongHangNgayLan2", "2000 ®iÓm cèng hiÕn bang héi")
 	end
 	

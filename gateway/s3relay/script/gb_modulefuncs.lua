@@ -20,12 +20,12 @@ function gb_GetModule(szModuleName)
 end
 
 function gb_StopModule(szModuleName)
-	OutputMsg("Tinh Nang Da Dung Lai-->"..szModuleName)
+	OutputMsg("Game Module Is Stopped. -->"..szModuleName)
 	gb_SetModule(szModuleName, 2)
 end
 
 function gb_StartModule(szModuleName)
-	OutputMsg("Tinh Nang Da Khoi Dong -->"..szModuleName)
+	OutputMsg("Game Module Is Started. -->"..szModuleName)
 	gb_SetModule(szModuleName, 1)
 end
 
@@ -37,11 +37,11 @@ function gb_AutoStartModule(szModuleName)
 	local nState = gb_GetModule(szModuleName)
 	if (nState == 0) then
 		gb_StartModule(szModuleName)
-		OutputMsg("Tinh Nang Moi Da Khoi Dong-->"..szModuleName)
+		OutputMsg("New Game Module Is Started. -->"..szModuleName)
 	elseif(nState == 1) then
-		OutputMsg("Tinh Nang Da Khoi Dong-->"..szModuleName)
+		OutputMsg("Game Module Is Started. -->"..szModuleName)
 	else
-		OutputMsg("Tinh Nang Da Dung Lai-->"..szModuleName)
+		OutputMsg("Game Module Is Stopped. -->"..szModuleName)
 	end
 end
 

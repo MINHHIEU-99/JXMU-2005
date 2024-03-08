@@ -2,67 +2,87 @@ Include("\\script\\missions\\arena\\player.lua")
 Include("\\script\\global\\titlefuncs.lua")
 Include("\\script\\dailogsys\\dailogsay.lua")
 Include("\\script\\maps\\checkmap.lua")
-Include("\\script\\dailogsys\\dailogsay.lua")
-Include("\\script\\lib\\awardtemplet.lua")
-Include("\\script\\activitysys\\functionlib.lua")
-Include("\\script\\lib\\log.lua")
-Include("\\script\\global\\dicegame.lua")
+IncludeLib("TITLE") 
 
-IncludeLib("TITLE")
+local tbTitle2Id = 
+{ 
+[" §éc c« cÇu b¹i "] = 237, 
+[" vâ l©m chÝ t«n "] = 238, 
+[" mét ®¹i t«ng s­ "] = 239, 
+[" tuyÖt thÕ cao thñ "] = 240, 
+[" næi tiÕng giang hå "] = 241, 
+[" hiÖp danh lan xa "] = 242, 
+[" vâ l©m t©n tó "] = 243, 
+[" míi vµo giang hå "] = 244, 
+[" nhËp m«n ®Ö tö "] = 245, 
+} 
+
+function want_get_title() 
+local szTitle = " ®¹i hiÖp mçi tuÇn tham gia ®ñ 20 trµng c¹nh kü chiÕn liÒn cã thÓ lÊy ®­îc c¹nh kü chiÕn danh hiÖu " 
+local tbOpt = 
+{ 
+{"Ta muèn dÉn danh hiÖu ", get_title, {}}, 
+
+{"Ta ch¼ng qua lµ xem mét chót "}, 
+} 
+CreateNewSayEx(szTitle, tbOpt) 
+end 
+
+function get_title() 
+if tbPlayer:GetTitleFlag() ~= 0 then 
+return Talk(1, "","Mét tuÇn chØ dÉn mét lÇn ") 
+end 
+
+if tbPlayer:GetCurCount() < tbPlayer.PER_WEEK_COUNT then 
+return Talk(1, "", format("Muèn tham gia ®ñ %d trµng míi cã thÓ nhËn lÊy ", tbPlayer.PER_WEEK_COUNT)) 
+end 
+
+local szTitle = tbPlayer:GetTitle() 
+local nTitleId = %tbTitle2Id[szTitle] 
+if not nTitleId then 
+return 
+end 
+
+tbPlayer:SetTitleFlag() 
+	local nTime = GetCurServerTime() + 60*60*24*7
+nTime = tonumber(FormatTime2String("%m%d%H%M", nTime)) 
+SetTask(TASK_ACTIVE_TITLE, nTitleId); 
+Title_AddTitle(nTitleId, 2, nTime) 
+Title_ActiveTitle(nTitleId) 
+end 
+
+function show_introduction() 
+local szTitle = " c¸c vÞ h¶o # s©n ®Êu ®· ë trong chèn giang hå réng r·i tuyªn truyÒn liÔu <enter> ghi danh # ®iÓm kÝch con chuét bªn ph¶i kiÖn tiÕn vµo ë vµo trang chÝnh mÆt bªn ph¶i th­îng gi¸c ®Ých s©n ®Êu b¶n khèi më ra ghi danh giíi mÆt ; <enter> s©n ®Êu vinh dù huy ch­¬ng : mçi th¸ng gÆp ®Çu 20 trµng cã thÓ nhËn lÊy vinh dù huy ch­¬ng , ®¹i hiÖp ®¸nh ®ñ 20 trµng còng cã thÓ nhËn lÊy nh÷ng kh¸c vinh dù huy ch­¬ng ; <enter> chiÕn ®éi cÊp bËc : c¨n cø ng­¬i ë ®©y chiÕn ®éi trung ®Ých ng­êi biÓu hiÖn sÏ ®Ò cao hoÆc rít xuèng ng­¬i chiÕn ®éi cÊp bËc ; <enter> vinh dù huy ch­¬ng cöa hµng # sö dông vinh dù huy ch­¬ng mua c¸c lo¹i quý träng ®¹o cô " 
+local tbOpt = 
+{ 
+{"Cã thÓ !", }, 
+} 
+CreateNewSayEx(szTitle, tbOpt) 
+end 
+
+function open_credits_shop() 
+local nMapId = GetWorldPos() 
+if (IsFreshmanMap(nMapId) == 1 or IsCityMap(nMapId) == 1) and GetFightState() == 0 then 
+Sale(175, 16) 
+else 
+Msg2Player("ChØ cã thÓ ë thµnh phè cïng n«ng th«n chê an toµn khu vùc khai cöa hµng .") 
+end 
+end 
 
 
-function open_credits_shop()
-	local szTitle = "<color=red>Muèn thö vËn may kh«ng nµo?<color>."
-	local tbOpt = {
-		{"C­îc 1 v¹n l­îng", motvluong},	
-		{"C­îc 5 v¹n l­îng", namvluong},
-		{"C­îc 10 v¹n l­îng", muoivluong},
-		{"C­îc 20 v¹n l­îng", haimuoivluong},
-		{"C­îc 50 v¹n l­îng", nammuoivluong},
-		{"C­îc 100 v¹n l­îng", mottramvluong},
-		{"Tho¸t"},
-	}
-	CreateNewSayEx(szTitle, tbOpt)	
-end
-
-function motvluong()	
-	if (GetCash() < 10000) then
-		Talk(1,"","B¹n kh«ng ®ñ tiÒn")
-	return end
-	OpenDice(10000)
-end
-
-function namvluong()	
-if (GetCash() < 50000) then
-		Talk(1,"","B¹n kh«ng ®ñ tiÒn")
-	return end
-	OpenDice(50000)
-end
-
-function muoivluong()
-if (GetCash() < 100000) then
-		Talk(1,"","B¹n kh«ng ®ñ tiÒn")
-	return end	
-	OpenDice(100000)
-end
-
-function haimuoivluong()	
-if (GetCash() < 200000) then
-		Talk(1,"","B¹n kh«ng ®ñ tiÒn")
-	return end
-	OpenDice(200000)
-end
-
-function nammuoivluong()
-if (GetCash() < 500000) then
-		Talk(1,"","B¹n kh«ng ®ñ tiÒn")
-	return end	
-	OpenDice(500000)
-end
-
-function mottramvluong()
-if (GetCash() < 1000000) then
-		Talk(1,"","B¹n kh«ng ®ñ tiÒn")
-	return end		
-	OpenDice(1000000)
+function main() 
+-- script viet hoa By http://tranhba.com  t¾t s©n ®Êu kü n¨ng - Modified By NgaVN - 20120305 
+do 
+Talk(1,"","Kü n¨ng t¹m ®ãng/nh¾m !") 
+return 
+end 
+local szTitle = " ®¹i hiÖp h¶o , b¶n th©n lµ s©n ®Êu quan viªn ." 
+local tbOpt = 
+{ 
+{"NhËn lÊy vèn chu s©n ®Êu chiÕn ®éi danh hiÖu ", want_get_title, {}}, 
+{"Khai s©n ®Êu vinh dù cöa hµng ", open_credits_shop, {}}, 
+{"Giíi thiÖu s©n ®Êu tÝnh n¨ng ", show_introduction, {}}, 
+{"Hñy bá "}, 
+} 
+CreateNewSayEx(szTitle, tbOpt) 
 end

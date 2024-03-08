@@ -1,9 +1,9 @@
---西北南区 华山to华山派
---Trap ID：西北南区 4
+-- script viet hoa By http://tranhba.com  t﹜ b綾 nam khu Hoa S琻 to ph竔 Hoa s琻 
+-- script viet hoa By http://tranhba.com Trap ID# t﹜ b綾 nam khu 4 
 
-function main(sel)
+function main(sel) 
 
-SetFightState(1);
-NewWorld(333, 1227, 3346);
-AddTermini(222);
+SetFightState(1); 
+NewWorld(333, 1227, 3346); 
+AddTermini(222); 
 end;

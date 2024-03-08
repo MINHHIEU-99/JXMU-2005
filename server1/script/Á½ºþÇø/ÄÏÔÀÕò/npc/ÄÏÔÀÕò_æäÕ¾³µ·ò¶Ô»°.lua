@@ -1,32 +1,32 @@
--- Xa phu ë Nam Nh¹c TrÊn - Editor by AloneScript (Linh Em)
+--xa phu nam nhac tran edit by mcteam
+-- script viet hoa By http://tranhba.com  hai hå khu nam nh¹c trÊn dÞch tr¹m phu xe ®èi tho¹i thÕ giíi nhiÖm vô 
+-- script viet hoa By http://tranhba.com  Update: Dan_Deng(2003-09-16) t¹m thêi che giÊu nhiÖm vô # sau nµy nÆng viÕt më l¹i ®Ó # 
 
-Include("\\script\\lib\\alonelib.lua");
-
-CurStation = 11;
+CurStation = 11; 
 Include("\\script\\global\\station.lua")
---Include("\\script\\global\\skills_table.lua")
+-- script viet hoa By http://tranhba.com Include("\\script\\global\\skills_table.lua")
 
-function main(sel)
---	check_update()					-- ¼¼ÄÜ¸üÐÂ¡¢ÃÅÅÉ¼Ó±êÊ¶£¨2004-05-31£©
---	UTask_world15 = GetTask(15)
---	if (UTask_world15 < 255) then	
---		Say("³µ·ò£º°¦£¬ÏÖÔÚµÄÉúÒâÔ½À´Ô½ÄÑ×öÁË£¬Ô­±¾»¹ÓÐ²»ÉÙ¸»ÉÌ´óÒ¯È¥ÉñÅ©¼ÜÄÇ¶ùÓÎÍæ£¬¿ÉÊÇ×î½ü²»Öª´ÓÄÄ¶ù´Ü³öÒ»ÈººÚÒ¶ºï£¬ÑØÂ·´ò½Ù¿ÍÈË£¬¸ãµÃÎÒÉúÒâ´óÊÜÓ°Ïì£¬Èç¹ûÓÐÈËÄÜ¸Ï×ßÕâÐ©ºÚÒ¶ºï¾ÍºÃÁË¡£Äã°ïÎÒ¸Ï×ßÊ®Ö»ºï×Ó£¬¾Í¿ÉÒÔÃâ·ÑÔÚÎÒÕâÀïÊ¹ÓÃÒ»´Î³µÂí¡£ÄúÒª×ø³µÂð£¿", 2, "°ïÃ¦/yes", "²»°ïÃ¦/no")
---		SetTask(15, 1)
---	else
-		Say("<color=green>Xa phu<color>: Lµm nghÒ xa phu thËt lµ khæ cùc, cã lóc ®Õn ch¸o tr¾ng còng kh«ng cã mµ ¨n!"..Note("xaphu_namnhactran"), 4, "Nh÷ng n¬i ®· ®i qua/WayPointFun", "Nh÷ng thµnh thÞ ®· ®i qua/StationFun", "Quay l¹i ®Þa ®iÓm cò /TownPortalFun", "Kh«ng cÇn ®©u/OnCancel");
---	end
-end;
+function main(sel) 
+-- script viet hoa By http://tranhba.com  check_update() -- script viet hoa By http://tranhba.com  kü n¨ng ®æi míi # m«n ph¸i thªm tiªu chÝ #2004-05-31# 
+-- script viet hoa By http://tranhba.com  UTask_world15 = GetTask(15) 
+-- script viet hoa By http://tranhba.com  if (UTask_world15 < 255) then 
+-- script viet hoa By http://tranhba.com  Say("Phu xe # ai , b©y giê lµm ¨n cµng ngµy cµng khã lµm , vèn lµ còng kh«ng cã thiÕu phó th­¬ng ®¹i gia ®i thÇn n«ng chiÕc kia mµ du ngo¹n , nh­ng lµ gÇn nhÊt kh«ng biÕt tõ ®©u mµ tho¸t ra mét ®¸m h¾c l¸ hÇu , däc theo ®­êng ®¸nh c­íp kh¸ch nh©n , lµm ta lµm ¨n ®¹i bÞ ¶nh h­ëng , nÕu nh­ cã ng­êi cã thÓ ®uæi ®i nh÷ng thø nµy h¾c l¸ hÇu lµ tèt . ng­¬i gióp ta ®uæi ®i m­êi con con khØ , liÒn cã thÓ miÔn phÝ ë chç nµy cña ta sö dông mét lÇn xe ngùa . ngµi muèn ngåi xe sao ? ", 2,"Gióp mét tay /yes","Kh«ng gióp mét tay /no") 
+-- script viet hoa By http://tranhba.com  SetTask(15, 1) 
+-- script viet hoa By http://tranhba.com  else 
+Say("Phu xe # chóng ta phu xe lµm lµ khÝ lùc ho¹t , ¨n lµ khæ cùc c¬m , ngµi kháe t©m gióp ®ë mét chót ®i ? ", 4,"Nh÷ng n¬i ®· ®i qua /WayPointFun","Thµnh thÞ ®· ®i qua /StationFun","Trë vÒ ®Þa ®iÓm cò /TownPortalFun","Kh«ng cÇn /OnCancel"); 
+-- script viet hoa By http://tranhba.com  end 
+end; 
 
-function yes()
-	Task0013 = GetTaskTemp(13);
-	if (Task0013 < 10) then			--Ã»ÓÐÉ±µ½Ê®Ö»ºÚÒ¶ºï
-		Say("Lµm nghÒ xa phu thËt lµ khæ cùc, cã lóc ®Õn ch¸o tr¾ng còng kh«ng cã mµ ¨n!", 4, "Nh÷ng n¬i ®· ®i qua/WayPointFun", "Nh÷ng thµnh thÞ ®· ®i qua/StationFun", "Quay l¹i ®Þa ®iÓm cò /TownPortalFun", "Kh«ng cÇn ®©u/OnCancel");
-	else
-		SetTaskTemp(13, 0)
-		Say("C¶m ¬n ng­¬i ®· b¾t dïm ta H¾c DiÖp HÇu! Ta ®­a ng­¬i ®i miÔn phÝ!", 4, "Nh÷ng n¬i ®· ®i qua/WayPointFun", "Nh÷ng thµnh thÞ ®· ®i qua/StationFun", "Quay l¹i ®Þa ®iÓm cò /TownPortalFun", "Kh«ng cÇn ®©u/OnCancel")
-	end
-end;
+function yes() 
+Task0013 = GetTaskTemp(13); 
+if (Task0013 < 10) then -- script viet hoa By http://tranhba.com  kh«ng cã s¸t ®¸o m­êi con h¾c l¸ hÇu 
+Say(" lµm phu xe thËt lµ cùc khæ , cã lóc ngay c¶ ch¸o tr¾ng còng uèng kh«ng h¬n !", 4,"Nh÷ng n¬i ®· ®i qua /WayPointFun","Thµnh thÞ ®· ®i qua /StationFun","Trë l¹i ®Þa ®iÓm cò /TownPortalFun","Kh«ng cÇn /OnCancel"); 
+else 
+SetTaskTemp(13, 0) 
+Say("C¸m ¬n ng­¬i gióp ta ®uæi ®i h¾c l¸ hÇu # ta miÔn phÝ t¸i ng­¬i !", 4,"Nh÷ng n¬i ®· ®i qua /WayPointFun","Thµnh thÞ ®· ®i qua /StationFun","Trë l¹i ®Þa ®iÓm cò /TownPortalFun","Kh«ng cÇn /OnCancel") 
+end 
+end; 
 
-function  OnCancel()
-	Say("Kh«ng tiÒn kh«ng thÓ ngåi xe!",0)
-end;
+function OnCancel() 
+Say("Phu xe # cã tiÒn trë l¹i ngåi xe ®i . ",0) 
+end; 

@@ -2,8 +2,6 @@ Include("\\script\\leaguematch\\head.lua")
 Include("\\script\\gb_taskfuncs.lua")
 Include("\\script\\leaguematch\\switch.lua")
 
--- leaguematch.lua
-
 --计算当前的时间是否在比赛时段，如果是返回是一天的第几场比赛，否则返回nil
 function wlls_calc_loop(tb_calendar, n_mins)
 	local tb_cal, n
@@ -35,8 +33,7 @@ function wlls_calc_phase()
 		local n_loop
 		if tb[5].weekend then	--有周末特别安排
 			local n_wday = tonumber(date("%w"))
-			-- if (n_wday == 0 or n_wday >= 5) then	--现在是周末
-			if (n_wday == 0 or n_wday >= 6) then	--th? 7 vμ ch? nh?t ?êu m?i ngμy 8 tr?n
+			if (n_wday == 0 or n_wday >= 5) then	--现在是周末
 				n_loop = wlls_calc_loop(tb[5].weekend, n_time)
 				if n_loop then
 					return 4, n_date*100 + n_loop, n_sid
@@ -60,10 +57,8 @@ end
 function wlls_match_stat(n_mtype, n_matchid, n_sid)
 	_M("wlls_match_stat+", n_mtype, n_matchid, n_sid)
 	local tb_order = {}
-	local a = 240*10
 	
-	-- for i = 1, 48*10 do	--初始化一次
-	for i = 1, a do	--初始化一次
+	for i = 1, 48*10 do	--初始化一次
 		tb_order[i] = {}
 	end
 	tb_order[0] = {}
@@ -71,42 +66,18 @@ function wlls_match_stat(n_mtype, n_matchid, n_sid)
 	local n_point, n_lastmatch
 	local n_lid = LG_GetFirstLeague(WLLS_LGTYPE)
 	local n_minid = WLLS_SEASON_TB[n_sid][2]*100	--本赛季MatchID基础值
-	----------------------------- DEBUG ----------------------------
-	local point_1 = 0
-	----------------------------- DEBUG ----------------------------
 	while( not FALSE(n_lid) ) do
 		if (n_mtype == LG_GetLeagueTask(n_lid, WLLS_LGTASK_MTYPE)) then
 			n_lastmatch = LG_GetLeagueTask(n_lid, WLLS_LGTASK_LAST)
 			if (n_lastmatch ~= 0 and n_lastmatch <= n_minid) then	--不是本赛季进来的，要清空数据
 				wlls_lg_clear_one(n_lid)
-				print("Call - wlls_lg_clear_one(n_lid)")
 			elseif (n_lastmatch > 0) then	--只排名本赛季参赛的
 				n_point = LG_GetLeagueTask(n_lid, WLLS_LGTASK_POINT)
-				----------------------------- DEBUG ----------------------------
-				if n_point > point_1 then point_1 = n_point end
-				
-				if not(tb_order[n_point]) then
-					tb_order[n_point] = {}
-					
-					if n_point > a then
-						for _i = 1, n_point do
-							if not(tb_order[_i]) then
-								tb_order[_i] = {}
-							end
-						end
-					end
-				end
-				
-				----------------------------- DEBUG ----------------------------
 				tb_order[n_point][getn(tb_order[n_point])+1] = n_lid
 			end
 		end
 		n_lid = LG_GetNextLeague(WLLS_LGTYPE, n_lid)
 	end
-	----------------------------- DEBUG ----------------------------
-	print(format("n_point: %d", point_1))
-	point_1 = nil
-	----------------------------- DEBUG ----------------------------
 	local n_type = WLLS_SEASON_TB[n_sid][1]
 	local n_ladder = WLLS_TYPE[n_type].ladder + n_mtype - 1
 	Ladder_ClearLadder(n_ladder)	--mmm
@@ -248,9 +219,6 @@ function TaskShedule()
 	else
 		TaskTime(tonumber(date("%H")), 30)
 	end
-	
-	-- TaskTime(tonumber(date("%H")), 57)
-	
 	TaskCountLimit(0);	--无限启动
 	TaskInterval(15);	--间隔15分钟
 	
@@ -262,16 +230,13 @@ function TaskShedule()
 	local n_phase, _, n_sid = wlls_calc_phase()
 	SetGblInt(RLGLB_WLLS_PHASE, n_phase)
 	wlls_set_mid(n_sid, 0)	--刚刚启动Relay不能进入比赛
-	OutputMsg(" ========================================================================================")
-	OutputMsg("                Tinh nang Lien Dau (Don dau tu do) Start: Phase="..n_phase.."  SeasonID="..n_sid.." ")
-	OutputMsg("                           tu thu 2 den thu 6: 19h00 ~ 19h45, 4 tran ")
-	OutputMsg("                   2 ngay cuoi tuan 18h00 ~ 18h45 va 20h00 ~ 20h45, 8 tran ")
-	-- OutputMsg(" ========================================================================================")
+	OutputMsg("=====> League Match Start: Phase="..n_phase.."  SeasonID="..n_sid.." <=====")
 end
 
 function TaskContent()
 	local n_phase, n_matchid, n_sid = wlls_calc_phase()
-	OutputMsg("============ League Match: Phase="..n_phase.."  MatchID="..n_matchid.."  SeasonID="..n_sid.." =============")
+	
+	OutputMsg("=====> League Match: Phase="..n_phase.."  MatchID="..n_matchid.."  SeasonID="..n_sid.." <=====")
 
 	local n_oldphase = GetGblInt(RLGLB_WLLS_PHASE)
 	local n_oldmid = GetGblInt(RLGLB_WLLS_MATCHID)
@@ -297,7 +262,7 @@ function GameSvrReady(dwGameSvrIP)
 	local n_phase = GetGblInt(RLGLB_WLLS_PHASE)
 	local n_matchid = 0	--不能立即开始
 	local n_sid = GetGblInt(RLGLB_WLLS_SEASONID)
-	OutputMsg("============ League Match GSReady("..dwGameSvrIP.."): Phase="..n_phase.."  MatchID="..n_matchid.."  SeasonID="..n_sid.." =============")
+	OutputMsg("=====> League Match GSReady("..dwGameSvrIP.."): Phase="..n_phase.."  MatchID="..n_matchid.."  SeasonID="..n_sid.." <=====")
 	
 	--通知GameServer当前状态
 	wlls_set_phase(n_phase, n_matchid, n_sid)

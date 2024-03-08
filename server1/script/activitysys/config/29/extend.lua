@@ -5,7 +5,7 @@ Include("\\script\\lib\\awardtemplet.lua")
 
 --添加活动NPC
 function pActivity:AddInitNpc()
---Move soldier's action to soldier statue -  - 20110425
+--Move soldier's action to soldier statue - Modified by DinhHQ - 20110425
 --	local tbSoldierPos = {
 --		{2,2613,3499,},
 --	}
@@ -22,7 +22,7 @@ function pActivity:AddInitNpc()
 --		%basemission_CallNpc(tbSoldier, nMapId, nPosX*32, nPosY*32)	
 --	end
 	--print('Add 军兵')
---Fix bug missing LanHuan positions -  - 20110425
+--Fix bug missing LanHuan positions - Modified by DinhHQ - 20110425
 	local tbLanHuanCaoPos = {
 		{153,1745,3213,},
 		{153,1724,3192,},
@@ -36,7 +36,7 @@ function pActivity:AddInitNpc()
 		tbNpcParam = {},
 		szScriptPath = "\\script\\activitysys\\config\\29\\lanhuacao.lua",
 	}
---Fix bug missing LanHuan positions -  - 20110425
+--Fix bug missing LanHuan positions - Modified by DinhHQ - 20110425
 	--for i=1,3 do
 	--	local nMapId, nPosX, nPosY = unpack(tbLanHuanCaoPos[1])
 	for i=1, getn(tbLanHuanCaoPos) do

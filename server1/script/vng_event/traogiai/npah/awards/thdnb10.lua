@@ -80,7 +80,7 @@ tbCurSeason.tbPrizeList = {
 	[6]={szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3222},nCount=1,nQuality = 1,nExpiredTime=259200,},
 	[7]={szName="Hång bao An khang",tbProp={6,1,2105,1,0,0},nCount=1},
 	[8]={szName="HuyÒn Ch©n §¬n",tbProp={6,1,1678,1,0,0},nCount=1,tbParam={1500000000}},
-	-- [9]=--{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1},
+	[9]={szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1},
 	[10]={szName="MÆt n¹ - Anh hïng chiÕn tr­êng",tbProp={0,11,482,1,0,0},nCount=1,nExpiredTime=259200,nUsageTime=-1},
 	[11]={szName="Phi phong Ngù Phong (X¸c suÊt hãa gi¶i s¸t th­¬ng)",tbProp={0,3474},nCount=1,nQuality = 1,nExpiredTime=259200,},
 	[12]={szName="Phi phong Ngù Phong (Träng kÝch)",tbProp={0,3475},nCount=1,nQuality = 1,nExpiredTime=259200,},

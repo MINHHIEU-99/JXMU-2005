@@ -5,7 +5,7 @@ tbVNGWD2011_GongNV = {}
 
 function tbVNGWD2011_GongNV:addDialog(tbDialog)	
 	local now = tonumber(GetLocalDate("%Y%m%d"));
-	if (now >= 20250321 or now < 20230307) then
+	if (now >= 20110321 or now < 20110307) then
 		return
 	end	
 	tbDialog:AddOptEntry("Ho¹t ®éng mõng ngµy Quèc TÕ Phô N÷",tbVNGWD2011_GongNV.main,{tbVNGWD2011_GongNV})				

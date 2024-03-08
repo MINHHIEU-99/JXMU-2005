@@ -36,7 +36,7 @@ function wlls_want2join(szParam)
 
 	if (n_lastmatch == n_matchid) then	--进入过本场比赛
 		_M("wlls_want2join = already in!")
-		nGroupID = LG_GetLeagueTask(n_leagueid, WLLS_LGTASK_SVRID) ---------------------------------------------------------------------------------------------- nGroupID
+		nGroupID = LG_GetLeagueTask(n_leagueid, WLLS_LGTASK_SVRID)
 		_M("wlls_want2join in nGroupID="..nGroupID)
 		local n_join = LG_GetLeagueTask(n_leagueid, WLLS_LGTASK_JOIN)
 		_M("wlls_want2join in n_join="..n_join)
@@ -50,7 +50,7 @@ function wlls_want2join(szParam)
 				wlls_SetMemberTask(str_lgname, str_playername, WLLS_LGMTASK_STATE, 1)
 				LG_ApplyAppendLeagueTask(WLLS_LGTYPE, str_lgname, WLLS_LGTASK_JOIN, 1)
 			end
-			wlls_send_join(str_playername, n_mtype, nGroupID, n_mscamp) ---------------------------------------------------------------------------------------------- nGroupID
+			wlls_send_join(str_playername, n_mtype, nGroupID, n_mscamp)
 			return
 		end
 		--队友不在，尝试分配到上一次的服务器
@@ -117,7 +117,7 @@ function wlls_want2join(szParam)
 	wlls_SetLeagueTask(str_lgname, WLLS_LGTASK_LAST, n_matchid)
 	wlls_SetLeagueTask(str_lgname, WLLS_LGTASK_SVRID, nGroupID)
 	wlls_SetLeagueTask(str_lgname, WLLS_LGTASK_MSCAMP, 0)
-	wlls_send_join(str_playername, n_mtype, nGroupID, 0) ---------------------------------------------------------------------------------------------- nGroupID
+	wlls_send_join(str_playername, n_mtype, nGroupID, 0)
 end
 
 --供GameServer调用的，离开准备场的函数

@@ -1,0 +1,12 @@
+TongCount=10, MemberCount=173, UnionCount=0
+TongName	MasterName	TongLevel	TongExp	SelfCamp	AllMemberCount	DirectorCount	ManagerCount	MemberCount	BuildLevel	MoneyFund	BuildFund	WarBuildFund	MaintainFund	StoredOffer	StoredBuildFund	UnionNum	UnionName	IsUnionLeader	UnionCamp
+Showbiz	pinpin	0	0	1	162	6	23	132	0	0	104975	3312	0	11555	0	0		0	0
+THwindow	BaoTran	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0		0	0
+English	Changeste	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0		0	0
+tuladao	zzztieuthuyzzz	0	0	3	1	0	0	0	0	0	300000	0	0	0	0	0		0	0
+STAR	TocBaMuoi	0	0	3	1	0	0	0	0	0	400000	0	0	0	0	0		0	0
+Ae81	ssssssssssss	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0		0	0
+test	gohfjhhghfh	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0		0	0
+X›ŸNg«uŸ	B–ŸHÈtŸLu	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0		0	0
+TËngŸ	L∏ŸChµŸBÂnŸ	0	0	3	2	1	0	0	0	0	202240	0	0	22400	0	0		0	0
+ß’	PsŸLuci	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0		0	0

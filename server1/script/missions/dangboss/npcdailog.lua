@@ -1,7 +1,18 @@
+
 Include("\\script\\missions\\dangboss\\dangbaossclass.lua")
+
 Include("\\script\\lib\\composeclass.lua")
 Include("\\script\\event\\qingren_jieri\\200902\\event.lua");	
-Include("\\script\\global\\mrt\\configserver\\phanthuonghoatdong.lua")
+IncludeLib("LEAGUE")
+Include("\\script\\activitysys\\playerfunlib.lua")
+Include("\\script\\lib\\awardtemplet.lua")
+Include("\\script\\dailogsys\\dailogsay.lua")
+Include("\\script\\lib\\awardtemplet.lua")
+Include("\\script\\global\\Â·ÈË_Àñ¹Ù.lua")
+Include("\\script\\lib\\composelistclass.lua")
+Include("\\script\\lib\\composeex.lua")
+Include("\\script\\lib\\awardtemplet.lua")
+
 
 if not tbDangBossDailog then
 	tbDangBossDailog = tbBaseClass:new()
@@ -14,7 +25,7 @@ function tbDangBossDailog:_init(tbTaskCtrl)
 	self.szClassName = "tbDangBossDailog"
 	self.tbTask = tbTaskCtrl
 	self.nStartDate = 090117
-	self.nEndDate = 200218
+	self.nEndDate = 200217
 end
 
 function tbDangBossDailog:IsActDay()
@@ -24,15 +35,15 @@ function tbDangBossDailog:IsActDay()
 end
 
 function tbDangBossDailog:Main()
-	--Talk(1, "", "Ho¹t ®éng t¹m  ®ãng.")
-	--do return end
+	Talk(1, "", "Ho¹t ®éng t¹m  ®ãng.")
+	do return end
 	--if self:IsOpenModule() ~= 1 then
-		--return Talk(1, "", "Ho¹t ®éng t¹m  ®ãng.")
+	--	return Talk(1, "", "Ho¹t ®éng t¹m  ®ãng.")
 	--end
 	
-	if self:IsActDay() ~= 1 then
-		return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
-	end
+	--if self:IsActDay() ~= 1 then
+		--return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
+	--end
 	
 	local tbSay = 
 	{
@@ -50,7 +61,7 @@ end
 function tbDangBossDailog:Explain(nStep)
 	local tbSay = 
 	{
-		"<dec><npc>Mçi tèi tõ 21:00-22:00 ho¹t ®éng sÏ b¾t ®Çu. Tõ 21:00 ng­êi ch¬i cÊp 80 cã thÓ ®Õn ®©y b¸o danh, mçi ®ît chØ ®­îc 100 ng­êi. Mét ng­êi sÏ biÕn th©n thµnh kim ng­u, nh÷ng ng­êi kh¸c sÏ ®Êu ng­u. NÕu nh­ trong vßng 5 phót ®¸nh b¹i kim ng­u th× sÏ ®­îc th­ëng kim ng­u b¶o r­¬ng. NÕu kh«ng th× nh©n vËt biÕn thµnh kim ng­u sÏ ®­îc quan phñ träng th­ëng.",
+		"<dec><npc>ng­êi ch¬i cÊp 80 vµ ®· nép thÎ cã thÓ ®Õn ®©y b¸o danh, mçi ®ît chØ ®­îc 100 ng­êi. Mét ng­êi sÏ biÕn th©n thµnh kim ng­u, nh÷ng ng­êi kh¸c sÏ ®Êu ng­u. NÕu nh­ trong vßng 5 phót ®¸nh b¹i kim ng­u th× sÏ ®­îc th­ëng kim ng­u b¶o r­¬ng. NÕu kh«ng th× nh©n vËt biÕn thµnh kim ng­u sÏ ®­îc quan phñ träng th­ëng.",
 		"Ta ®· hiÓu råi/OnCancel",
 	}
 	
@@ -59,7 +70,13 @@ end
 
 
 function tbDangBossDailog:DailogSignUp(nStep)
-	
+	local nMapId = 895
+	local nMissionState = tbDangBoss:GetMissionState(nMapId)
+if GetCash() < 300000 and nStep == 1 and nMissionState == 1 and GetTask(5440) ~=1 then
+Talk(1, "", "Xin lçi lÇn ®Êu ng­u ®Çu tiªn nay cÇn cã 30 v¹n míi cã thÓ thi ®Êu.Trong thêi gian ch­a b¾t ®Çu thi ®Êu víi ng­u nÕu tho¸t ra vµo l¹i sÏ kh«ng bÞ trõ phÝ")
+return
+end
+
 	local nMapId = 895
 	local nMoney = 0
 	
@@ -69,7 +86,7 @@ function tbDangBossDailog:DailogSignUp(nStep)
 	local nPlayerCount = tbDangBoss:GetMSPlayerCount(0, nMapId)
 	if nStep == 1 then
 		if nMissionState == 2 then
-			nMoney = nContinueCount * 1e5
+			nMoney = nContinueCount * 3e5 
 			local tbSay = 
 			{
 				format("<dec><npc>Thêi gian b¸o danh ®· qua, hiÖn t¹i ph¶i chi tr¶ %d ng©n l­îng míi cã thÓ vµo. X¸c nhËn muèn chi tr¶?", nMoney),
@@ -81,7 +98,7 @@ function tbDangBossDailog:DailogSignUp(nStep)
 		
 	elseif nStep == 2 then
 		if nMissionState == 2 then
-			nMoney = nContinueCount * 1e5
+			nMoney = nContinueCount * 3e5
 		end
 		
 		if GetCash() < nMoney then
@@ -96,19 +113,48 @@ function tbDangBossDailog:DailogSignUp(nStep)
 	
 	if nMissionState ~= tbDangBoss.READY_STATE and nMissionState ~= tbDangBoss.BATTLE_STATE then
 		Talk(1, "", "RÊt tiÕc thêi gian b¸o danh ®· qua. Xin h·y ®îi ®ît sau")
+		SetTask(5440,0)
 		return 0
 	end
 	if nPlayerCount >= tbDangBoss.nMaxPlayerCount then
 		Talk(1, "", format("Sè ng­êi b¸o danh ®· ®¹t ®Õn %d. RÊt tiÕc, xin h·y ®îi ®ît sau", tbDangBoss.nMaxPlayerCount))
 		return 0
 	end
-	
-	
-	
+	local nMapId = 895
+	local nMissionState = tbDangBoss:GetMissionState(nMapId)
+if nStep == 1 and nMissionState == 1 and GetTask(5440) ~=1 then
+Pay(300000)
+SetTask(5440,1)
+end
+	local nMapId = 895
+	local nMissionState = tbDangBoss:GetMissionState(nMapId)
+if nStep == 1 and nMissionState == 2 then
+SetTask(5440,0)
+end
 	local nMapId, nPosX16, nPosY16 = GetWorldPos()
 	self.tbTask:SetLastPos(nMapId, nPosX16, nPosY16)
 	tbDangBoss:GotoBattlePlace()
+		local szNews = format("§¹i hiÖp <color=green>"..GetName().."<color=yellow> §· vµo xu©n phong ®¶o ®Ó §Êu Ng­u<color=blue> (B¸o Danh T¹i L©m An §«ng 201/201)");
+	--LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szNews , "", "");
 end
+local  _Message =  function (nItemIndex)
+	local handle = OB_Create()
+	local msg = format("<color=white>§Êu sÜ <color>%s<color=white> May m¾n nhËn ®­îc <color=green><%s><enter><color=white>< khi chiÕn th¾ng cuéc ®Êu ng­u ngµy h«m nay><color>" ,GetName(),GetItemName(nItemIndex))
+	ObjBuffer:PushObject(handle, msg)
+	--RemoteExecute("\\script\\event\\msg2allworld.lua", "broadcast", handle)
+	AddGlobalNews(msg);
+	OB_Release(handle)
+end
+local tbItem = 
+{
+		{szName="ThiÕt La H¸n LÔ Bao", tbProp={6, 1, 1665, 1, 0, 0}, nCount = 2,CallBack= _Message,},  -- phÇn th­ëng cho nguoi chiÕn th»ng cuèi cïng ®Êu ng÷u v
+		{szName="NÕn", tbProp={6, 1, 4399, 1, 0, 0}, nCount = 1,CallBack= _Message,},  -- phÇn th­ëng cho nguoi chiÕn th»ng cuèi cïng ®Êu ng÷u v
+			{szName="NÕn", tbProp={6, 1, 4400, 1, 0, 0}, nCount = 1,CallBack= _Message,},  -- phÇn th­ëng cho nguoi chiÕn th»ng cuèi cïng ®Êu ng÷u v
+						{szName="MËt th­ vâ l©m", tbProp={6,1,1477,1,1,0}, nCount = 1,CallBack= _Message,},  -- phÇn th­ëng cho nguoi chiÕn th»ng cuèi cïng ®Êu ng÷u v
+												{szName="MËt th­ vâ l©m", tbProp={6,1,1477,1,1,0}, nCount = 2,},  -- phÇn th­ëng cho nguoi chiÕn th»ng cuèi cïng ®Êu ng÷u v
+	--	{szName="Xu", tbProp={4, 417, 1, 1, 0, 0}, nCount = 1,CallBack= _Message,},  -- phÇn th­ëng cho nguoi chiÕn th»ng cuèi cïng ®Êu ng÷u v
+	--	{szName="Xu", tbProp={4, 417, 1, 1, 0, 0}, nCount = 99,},  -- phÇn th­ëng cho nguoi chiÕn th»ng cuèi cïng ®Êu ng÷u v
+}
 
 function tbDangBossDailog:GetAward(nStep, nCurCount)
 	local nTotalCount = self.tbTask:GetAwardCount()
@@ -121,14 +167,17 @@ function tbDangBossDailog:GetAward(nStep, nCurCount)
 		local tbSay = 
 		{
 			format("<dec><npc>H«m nay cã thÓ nhËn %d phÇn th­ëng, <color=red>(NÕu nh­ h«m nay kh«ng nhËn ngµy mai sÏ mÊt ®i)<color>Ng­¬i muèn:", nTotalCount),
-			format("NhËn tÊt c¶/#%s:GetAward(2, %d)", self.szClassName, nTotalCount),
-			format("ChØ nhËn 1 phÇn/#%s:GetAward(2, 1)", self.szClassName, 1),
+		--	format("NhËn tÊt c¶/#%s:GetAward(2, %d)", self.szClassName, nTotalCount),
+			format("NhËn th­ëng/#%s:GetAward(2, 1)", self.szClassName, 1),
 			"KÕt thóc ®èi tho¹i/OnCancel"
 		}
 		CreateTaskSay(tbSay)
 	elseif nStep == 2 then
 		if CalcFreeItemCellCount() >= nCurCount then
-			tbAwardTemplet:GiveAwardByList(%PhanThuongNguoiThangCuocDauNguu, "NhËn phÇn th­ëng kim ng­u sinh tån", nCurCount)
+		AddOwnExp(20000000)
+		tbAwardTemplet:GiveAwardByList({{szName = "M¶nh",tbProp={4,random(1326,1329),1,1,0},nCount=1,},}, "test", 1);
+
+			tbAwardTemplet:GiveAwardByList(%tbItem, "NhËn phÇn th­ëng kim ng­u sinh tån", nCurCount)
 			self.tbTask:PayAwardCount(nCurCount)
 		else
 			Talk(1, "", format("Hµnh trang kh«ng ®ñ nhËn %d phÇn th­ëng", nTotalCount))

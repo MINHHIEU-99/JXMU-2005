@@ -1,6 +1,5 @@
 Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\misc\\taskmanager.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 
 
 -------局部变量定义 开始---------

@@ -1,56 +1,61 @@
 tbAmbienceNpc = 
 {
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1388,3328}, {1435,3280}}, szChat = "Chóc Mõng N¨m Míi" },
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1388,3328}, {1435,3280}}, szChat = "HAPPY NEW YEAR!" },
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1385,3330}, {1432,3281}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1380,3332}, {1428,3282}} },
 	{nNpcId = 1661, szName = "Nam S­ 3", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1383,3336}, {1430,3287}} },
 	
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1535,2991}, {1599,2927}}, szChat = "Chóc Mõng N¨m Míi"},
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1535,2991}, {1599,2927}}, szChat = "HAPPY NEW YEAR!"},
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1531,2994}, {1595,2930}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1526,2995}, {1589,2931}} },
 	{nNpcId = 1661, szName = "Nam S­ 3", nMapId = 176, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1530,2999}, {1593,2937}} },
 
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1592,3228}, {1631,3189}}, szChat = "Chóc Mõng N¨m Míi"},
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1592,3228}, {1631,3189}}, szChat = "HAPPY NEW YEAR!"},
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1589,3231}, {1627,3192}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1584,3232}, {1622,3193}} },
 	{nNpcId = 1661, szName = "Nam S­ 3", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1587,3237}, {1627,3198}} },
 
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 1,nTime = 30, nSkillId = 1175, nRate = 100,  tbPos = {{1551,3222}, {1602,3170}}, szChat = "Chóc Mõng N¨m Míi"},
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 1,nTime = 30, nSkillId = 1175, nRate = 100,  tbPos = {{1551,3222}, {1602,3170}}, szChat = "HAPPY NEW YEAR!"},
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1548,3224}, {1599,3171}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1543,3225}, {1594,3173}} },
 	{nNpcId = 1661, szName = "Nam S­ 3", nMapId = 1, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1546,3230}, {1598,3178}} },
 	
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1643,3183}, {1699,3128}}, szChat = "Chóc Mõng N¨m Míi"},
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1643,3183}, {1699,3128}}, szChat = "HAPPY NEW YEAR!"},
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1639,3184}, {1694,3128}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1642,3188}, {1698,3132}} },
 
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1709,3118}, {1753,3074}}, szChat = "Chóc Mõng N¨m Míi"},
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1709,3118}, {1753,3074}}, szChat = "HAPPY NEW YEAR!"},
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1705,3120}, {1749,3075}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 37, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1707,3122}, {1751,3078}} },
 
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1620,3183}, {1664,3138}}, szChat = "Chóc Mõng N¨m Míi" },
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1620,3183}, {1664,3138}}, szChat = "HAPPY NEW YEAR!" },
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1615,3183}, {1659,3139}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1619,3188}, {1663,3143}} },
 
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1583,3140}, {1624,3188}}, szChat = "Chóc Mõng N¨m Míi" },
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1583,3140}, {1624,3188}}, szChat = "HAPPY NEW YEAR!" },
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1582,3133}, {1623,3181}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 162, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1578,3137}, {1619,3185}} },
 	
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1563,3200}, {1617,3257}}, szChat = "Chóc Mõng N¨m Míi" },
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1563,3200}, {1617,3257}}, szChat = "HAPPY NEW YEAR!" },
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1562,3194}, {1615,3251}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1558,3198}, {1611,3256}} },
 	
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1575,3276}, {1534,3235}}, szChat = "Chóc Mõng N¨m Míi" },
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1575,3276}, {1534,3235}}, szChat = "HAPPY NEW YEAR!" },
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1573,3278}, {1535,3240}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 78, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1575,3276}, {1538,3236}} },
 	
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3115,5055}, {3157,5101}}, szChat = "Chóc Mõng N¨m Míi" },
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3115,5055}, {3157,5101}}, szChat = "HAPPY NEW YEAR!" },
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3111,5054}, {3153,5100}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3114,5049}, {3156,5094}} },
 	
-	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3120,5118}, {3174,5174}}, szChat = "Chóc Mõng N¨m Míi" },
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3120,5118}, {3174,5174}}, szChat = "HAPPY NEW YEAR!" },
 	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3116,5116}, {3170,5173}} },
 	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 11, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{3120,5112}, {3173,5168}} },
+	
+	{nNpcId = 1660, szName = "§Çu «ng ®Þa", nMapId = 934, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1587,3219}, {1603,3232}}, szChat = "HAPPY NEW YEAR!" },
+	{nNpcId = 1661, szName = "Nam S­ 1", nMapId = 934, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1578,3215}, {1598,3224}} },
+	{nNpcId = 1661, szName = "Nam S­ 2", nMapId = 934, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1581,3210}, {1595,3230}} },
+	{nNpcId = 1661, szName = "Nam S­ 3", nMapId = 934, nTime = 30, nSkillId = 1175, nRate = 100, tbPos = {{1583,3215}, {1600,3230}} },
 	
 	{nNpcId = 1249, szName = "C¸t T­êng B¶o B¶o", nMapId =176, tbPos = {{1583,2957}} },
 	{nNpcId = 1249, szName = "C¸t T­êng B¶o B¶o", nMapId =1, tbPos = {{1582,3195}} },

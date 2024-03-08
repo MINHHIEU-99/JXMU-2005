@@ -626,5 +626,5 @@ function pActivity:Give5SHB(nEXP_Give_NSHB, TSK_Date_Give_NSHB)
 	PlayerFunLib:AddTaskDaily(TSK_Date_Give_NSHB,1)
 	AddOwnExp(nEXP_Give_NSHB)
 	Msg2Player("Ban nhËn ®­îc 8000000 ®iÓm kinh nghiÖm")
-	WriteLog(date("%d- %m- %Y %H giê %M phót %S Gi©y").."\t".."Event 20112010"..GetAccount().."\t"..GetName().."\t".."TÆng Ngò S¾c H­¬ng Bao ")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 20112010"..GetAccount().."\t"..GetName().."\t".."TÆng Ngò S¾c H­¬ng Bao ")
 end

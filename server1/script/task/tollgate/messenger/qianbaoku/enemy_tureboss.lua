@@ -23,7 +23,7 @@ function messenger_turego()
 	local name = GetName()
 	local Uworld1201 = nt_getTask(1203)  --Ç§±¦¿âÈÎÎñµÄÈÎÎñ±äÁ¿
 	local Uworld1204 = nt_getTask(1204)  --ËÍÐÅÈÎÎñËùµ½µØµãÈÎÎñ±äÁ¿
-	local Uworld3000 = nt_getTask(3000)  --ÐÅÊ¹»ý·Ö
+	local Uworld1205 = nt_getTask(1205)  --ÐÅÊ¹»ý·Ö
 	local Uworld1206 = nt_getTask(1206)  --ÐÅÊ¹³ÆºÅ
 	local Uworld1207 = nt_getTask(1207)  --ÐÅÊ¹ÈÎÎñµ±Ç°É±¹Ö¼ÇÊýÆ÷
 	local Uworld1208 = nt_getTask(1210)  --Ç§±¦¿âÉ±¹Ö¼ÇÊýÆ÷
@@ -83,13 +83,13 @@ function messenger_turego()
 				Msg2Player("Ng­¬i thµnh c«ng më thµnh c«ng mét b¸o r­¬ng.")
 			end
 		elseif ( messenger_choice == 11 ) then  --Ôö¼Ó»ý·Ö10 
-			nt_setTask(3000,Uworld3000+20)
+			nt_setTask(1205,Uworld1205+20)
 			tongaward_message(20);	--by Ð¡É½
 			Msg2Player("Ng­¬i ë ®©y nhiÖm vô tÝn sø ®· tÝch lòy ®iÓm t¨ng thªm 20 ®iÓm!")
 		
 		elseif ( messenger_choice == 13 ) then  --¼õÉÙ»ý·Ö10
-			if ( Uworld3000 >= 10 ) then 
-			nt_setTask(3000,Uworld3000-10)
+			if ( Uworld1205 >= 10 ) then 
+			nt_setTask(1205,Uworld1205-10)
 			Msg2Player("Ng­¬i nhiÖm vô tÝn sø ®· bÞ gi¶m ®i 10 ®iÓm tÝch lòy")
 			
 			end
@@ -213,7 +213,7 @@ function messenger_turego()
 		--print("123");
 		tbAwardTemplet:GiveAwardByList({szName="Thñy MÆc", tbProp={6,1,2175,1,0,0},nExpiredTime=20091203,}, "2009 Teacher's Day Messenger's Box give ink");
 	end
-	local Uworld3000 = nt_getTask(3000)
+	local Uworld1205 = nt_getTask(1205)
 	local Uworld1207 = nt_getTask(1207)
 	local Uworld1207 = nt_getTask(1210)
 	

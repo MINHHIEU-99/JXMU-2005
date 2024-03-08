@@ -1,1 +1,1 @@
-Include("\\script\\tongkim\\npc\\song_signup.lua")
+Include("\\script\\battles\\battlejoin1.lua");

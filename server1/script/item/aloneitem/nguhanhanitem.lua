@@ -1,1 +1,0 @@
-Include("\\script\\global\\mrt\\hotrotanthu\\item\\tuinguhanhan.lua")

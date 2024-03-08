@@ -1,0 +1,6 @@
+-- ´óµí¡¡Ö°ÄÜ¡¡Óæ·ò2
+-- by£ºDan_Deng(2003-09-16)
+
+function main()
+	Talk(14,"","Mét ngµy kh«ng ca T©y S¬n §iÒu, cuéc sèng thËt nhµm ch¸n lµm sao.","Lo¹i nµo ®©y?","Chİnh lµ loµi c¸ b¹ch cung ng­ thŞ.","C¸ g× vµo mïa hÌ?","Nã chİnh lµ lo¹i c¸ mang tªn kim ng­.","ThËp yªu ng­ thŞ thu thiªn ®İch ng­?","TiÓu du ng­ thŞ thu thiªn ®İch ng­","ThËp yªu ng­ thŞ ®«ng thiªn ®İch ng­?","Th¹ch loa ng­ thŞ ®«ng thiªn ®İch ng­ ","ThËp yªu ng­ t¹i thñy lı ?","BØ môc ng­ t¹i thñy lı","ThËp yªu ng­ t¹i ng¹n th­îng","L­ ng­ thŞ t¹i ng¹n th­îng ®İch ng­","Tr¶ lêi rÊt tèt, hahaha ")
+end;

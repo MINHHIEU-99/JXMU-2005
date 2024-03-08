@@ -3,7 +3,7 @@
 -- Update: Dan_Deng(2003-11-04)改为模板方式，全服统一调用一个函数以利于维护、扩展
 
 Include("\\script\\global\\itemhead.lua")
-Include("\\script\\npcmonphai\\vosukhinhcong.lua")
+Include("\\script\\global\\各派接引弟子\\轻功_武师模板.lua")
 
 function main(sel)
 	UTask_world22 = GetTask(22)		-- 送饭任务

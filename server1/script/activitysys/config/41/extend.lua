@@ -1,5 +1,3 @@
---HÖ thèng nh©n ®«i ®iÓm kinh nghiÖm cho c¸c ho¹t ®éng - Edit by JXMU.VN 
-
 Include("\\script\\activitysys\\config\\41\\head.lua")
 Include("\\script\\activitysys\\config\\41\\variables.lua")
 Include("\\script\\activitysys\\config\\41\\data.lua")
@@ -99,7 +97,7 @@ function pActivity:GetOnLineAward()
 end
 
 -- Íæ¼ÒµÇÂ¼
---Change online award -  - 20120330
+--Change online award - Modified By DinhHQ - 20120330
 function pActivity:PlayerOnLogin()
 --	self:UpdateLastLoginTime()
 --	local nCurrDate, nCurrTime = self:GetCurrentDateTime()
@@ -209,7 +207,7 @@ function pActivity:GetZhuShuaiAward_1()
 end
 
 function pActivity:GetZhuShuaiAward_2(nParam, ResultHandle)
-	local nExp = 5000000
+	local nExp = 50000000
 	local nPlayerIndex,nResult,_ = self:IsZhuShuai(ResultHandle)
 	if nResult == 0 then
 		CallPlayerFunction(nPlayerIndex,Say,format("Ng­¬i kh«ng ph¶i chñ so¸i cña tuÇn nµy, kh«ng thÓ nhËn %s nµy","PhÇn th­ëng"))

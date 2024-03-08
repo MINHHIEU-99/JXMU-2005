@@ -1,1 +1,0 @@
-[Normal]Item: §éc C¬ §ao(0,0,1,1,3,9), unbind = 0, bind = 0

@@ -27,7 +27,7 @@ Tree.Decoration =
 	[5] = ITEM_XMAS_STAR,
 }
 Tree.PARAM_STATE = 1
---Avoid npc name too long -  - 20111201
+--Avoid npc name too long - Modified By DinhHQ - 20111201
 --Tree.szNameSuffix = "%s C©y Th«ng Gi¸ng Sinh"
 Tree.szNameSuffix = "%s"
 function Tree:Create(szOwner, nMapIndex, nX32, nY32)
@@ -78,7 +78,7 @@ function Tree:Dialog()
 	else
 		tinsert(tbOpt, 1, {"NhËn phÇn th­ëng Gi¸ng Sinh", self.GetAward, {self, nNpcIndex}})
 	end
-	CreateNewSayEx("Gi¸ng Sinh vui vÎ! <enter> Qu¶ Gi¸ng Sinh, §Ìn Lång Gi¸ng Sinh, qu? Gi¸ng Sinh, Chu«ng Gi¸ng Sinh, Sao Gi¸ng Sinh cã thÓ t×m thÊy t¹i Tr­êng B¹ch S¬n B¾c, ®¹i hiÖp cã thÓ ®Õn Tr­êng B¹ch S¬n Nam, Khá Lang §éng, Sa M¹c TÇng 3, M¹c Cao QuËt, TiÕn Cóc §éng, mçi ngµy vµo lóc 19:00-23:00, ®¹i hiÖp cã thÓ ®Õn §Ønh Tr­êng B¹ch (T­¬ng D­¬ng-ThÇn BÝ Th­¬ng Nh©n LiÔu Êt-§Ønh Tr­êng B¹ch) NhËn ®­îc LÔ VËt Gi¸ng Sinh.", tbOpt)
+	CreateNewSayEx("Gi¸ng Sinh vui vÎ! <enter> Qu¶ Gi¸ng Sinh, §Ìn Lång Gi¸ng Sinh, Kño Gi¸ng Sinh, Chu«ng Gi¸ng Sinh, Sao Gi¸ng Sinh cã thÓ t×m thÊy t¹i Tr­êng B¹ch S¬n B¾c, ®¹i hiÖp cã thÓ ®Õn Tr­êng B¹ch S¬n Nam, Khá Lang §éng, Sa M¹c TÇng 3, M¹c Cao QuËt, TiÕn Cóc §éng, mçi ngµy vµo lóc 19:00-23:00, ®¹i hiÖp cã thÓ ®Õn §Ønh Tr­êng B¹ch (T­¬ng D­¬ng-ThÇn BÝ Th­¬ng Nh©n LiÔu Êt-§Ønh Tr­êng B¹ch) NhËn ®­îc LÔ VËt Gi¸ng Sinh.", tbOpt)
 end
 
 function Tree:Decorate(nNpcIndex)
@@ -97,7 +97,7 @@ function Tree:Decorate(nNpcIndex)
 		Talk(1, "", format("Ng­¬i kh«ng mang theo %s.", tbItem.szName))
 		return 
 	end
-	ConsumeEquiproomItem(100, tbProp[1], tbProp[2], tbProp[3], tbProp[4])
+	ConsumeEquiproomItem(1, tbProp[1], tbProp[2], tbProp[3], tbProp[4])
 	local nFeatureId = self.STATE2FEATURE[nState + 1]
 	if nFeatureId then
 		self:ChangeFeature(nNpcIndex, nFeatureId)

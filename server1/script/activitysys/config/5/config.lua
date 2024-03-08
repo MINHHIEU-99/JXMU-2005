@@ -209,7 +209,7 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
---Change request 04/06/2011, ®ãng chÕ t¹o trang bÞ b¹ch kim -  - 20110605
+--Change request 04/06/2011, ®ãng chÕ t¹o trang bÞ b¹ch kim - Modified by DinhHQ - 20110605
 --		{"AddDialogOpt",	{"§æi kim bµi thµnh trang bÞ hoµng kim",6} },
 --		{"AddDialogOpt",	{"§æi cùc phÈm hång ¶nh",7} },
 --		{"AddDialogOpt",	{"§æi hoµn mü hång ¶nh",1} },

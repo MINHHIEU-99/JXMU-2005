@@ -30,9 +30,6 @@ function PlayerFunLib:GetTaskDailyCount(nTaskId)
 	return mod(nTaskValue, 256)
 end
 
-
---主角有关的 判断
-
 function PlayerFunLib:CheckInMap(szMapList, szFailMsg)
 	
 	local nMapId = GetWorldPos();

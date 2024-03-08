@@ -17,6 +17,4 @@ function main(sel)
 		SetFightState(0);
 		Msg2Player( "ß’n n¨i b∏o danh Chi’n Tr≠Íng TËng Kim Cao C p" );
 	end
-SetProtectTime(18*3)
-	AddSkillState(963, 1, 0, 18*3) 
 end;

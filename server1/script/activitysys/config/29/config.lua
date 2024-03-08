@@ -7,7 +7,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	szName = "Click vµo ng­êi lÝnh",
 	nStartDate = nil,
 	nEndDate  = nil,
---Move soldier's action to soldier statue -  - 20110425
+--Move soldier's action to soldier statue - Modified by DinhHQ - 20110425
 	tbMessageParam = {"T­îng §µi"},
 	tbCondition = 
 	{

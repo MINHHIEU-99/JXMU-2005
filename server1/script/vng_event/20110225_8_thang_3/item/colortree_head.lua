@@ -24,8 +24,8 @@ MEIGUIHUAZI					 = 2
 
 ACTIVITY_NPC_ID 			= {1252, 1253, 1254, 1255} 	-- NPCµÄID
 
-ACTIVITY_STARTTIME = 20240213
-ACTIVITY_ENDTIME   = 20250223
+ACTIVITY_STARTTIME = 20110213
+ACTIVITY_ENDTIME   = 20110223
 ACTIVITY_MAP = {1,11,37,176,162,78,80, 174,121,153,101,99,100,20,53}
 
 COLOR_TREE_NPC_DATA = {}
@@ -262,7 +262,7 @@ function IsInValentine()
 end
 
 function CheckPlayerCondition()
-	if GetLevel() < 50 and ST_IsTransLife() ~= 1 then
+	if GetLevel() < 150 and ST_IsTransLife() ~= 1 then
 		Msg2Player("§¼ng cÊp kh«ng ®ñ!")
 		return 0
 	end

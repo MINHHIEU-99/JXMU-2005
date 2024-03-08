@@ -1,4 +1,4 @@
-ChØ môc vËt phÈm (Gi¶m ®i 1)	 Giíi h¹n sè l­îng tèi ®a cña vËt phÈm	 Yªu cÇu cïng cÊp	 Yªu cÇu cïng Ngò Hµnh	 Yªu cÇu cïng May M¾n	 Yªu cÇu cïng Magic Level 1	 Yªu cÇu cïng Magic Level 2	 Yªu cÇu cïng Magic Level 3	 Yªu cÇu cïng Magic Level 4	 Yªu cÇu cïng Magic Level 5	 Yªu cÇu cïng Magic Level 6
+ÎïÆ·Ë÷Òı£¨ĞĞÊı¼õ1£©	ÎïÆ·×î´óµş·ÅÖµ	ÒªÇóµÈ¼¶ÏàÍ¬	ÒªÇóÎåĞĞÏàÍ¬	ÒªÇóĞÒÔËÏàÍ¬	ÒªÇóMagicLevel1ÏàÍ¬	ÒªÇóMagicLevel2ÏàÍ¬	ÒªÇóMagicLevel3ÏàÍ¬	ÒªÇóMagicLevel4ÏàÍ¬	ÒªÇóMagicLevel5ÏàÍ¬	ÒªÇóMagicLevel6ÏàÍ¬
 197	100	0	0	0	0	0	0	0	0	0
 198	50	0	0	0	0	0	0	0	0	0
 199	50	0	0	0	0	0	0	0	0	0

@@ -11,11 +11,11 @@ tbVNG_RedCandle.nTask_DailyLimit = 2923
 tbVNG_RedCandle.nTask_Limit_Candle_At_1Time = 2924
 tbVNG_RedCandle.nTask_OverLoad_IDRole= 2928
 tbVNG_RedCandle.tbPlayerList = {}
-tbVNG_RedCandle.nStartDate = 202402130000
-tbVNG_RedCandle.nEndDate = 202402232400
+tbVNG_RedCandle.nStartDate = 201202130000
+tbVNG_RedCandle.nEndDate = 201202232400
 function main(nItemIdx)
 	if tbVNG_RedCandle:IsActive() ~= 1 then
-		Talk(1, "", "VËt phÈm nµy chØ ®­îc sö dông trong kho¶ng thêi gian: 0h 13 th¸ng 02 n¨m 2024 ®Õn 24h ngµy 23 th¸ng 02 n¨m 2024")
+		Talk(1, "", "VËt phÈm nµy chØ ®­îc sö dông trong kho¶ng thêi gian: 0h 13 th¸ng 02 n¨m 2012 ®Õn 24h ngµy 23 th¸ng 02 n¨m 2012")
 		return 1
 	end
 	if PlayerFunLib:CheckTaskDaily(tbVNG_RedCandle.nTask_DailyLimit, 5, "Sö dông vËt phÈm ®¹t giíi h¹n ngµy, mai råi h·y sö dông tiÕp", "<") == nil then
@@ -37,7 +37,7 @@ function main(nItemIdx)
 		PlayerFunLib:AddTaskDaily(tbVNG_RedCandle.nTask_DailyLimit, 1)
 		local nCount = PlayerFunLib:GetTaskDailyCount(tbVNG_RedCandle.nTask_DailyLimit)
 		if nCount == 5 then
-			tbLog:PlayerActionLog("EventTinhNhan2024", "SuDung5LanVatPhamNenDo")
+			tbLog:PlayerActionLog("EventTinhNhan2012", "SuDung5LanVatPhamNenDo")
 		end
 		SetTask(tbVNG_RedCandle.nTask_Limit_Candle_At_1Time, GetCurServerTime())
 		return 0
@@ -83,7 +83,7 @@ function tbVNG_RedCandle:OnTime(nNameID)
 		if nWorld ~= player.nMapID or GetFightState() ~= 0 then			
 			Msg2Player("VËt phÈm nÕn ®á chØ cã t¸c dông trong khu vùc phi chiÕn ®Êu cña thµnh thÞ n¬i b¹n sö dông.")
 		else
-			tbAwardTemplet:Give(self.tbAward, 1,{"EventTinhNhan2024","SuDungNenDoNhanThuong"})
+			tbAwardTemplet:Give(self.tbAward, 1,{"EventTinhNhan2012","SuDungNenDoNhanThuong"})
 		end		
 	
 	end

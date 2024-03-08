@@ -1,96 +1,102 @@
 TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	TASK_DESCRIBE
-B¾t ®Çu ID (NÕu ID kh«ng liÒn m¹ch, h·y ®Ó trèng dßng)	KÕt thóc ID	Tªn nhiÖm vô	M« t¶ nhiÖm vô
-1		T¹m tr÷ nhiÖm vô lµm míi kü n¨ng	
-2		T¹m tr÷ nhiÖm vô cËp nhËt kü n¨ng cña c¸c m«n ph¸i	
-3		T¹m tr÷ nhiÖm vô göi th­	
-4		NhiÖm vô cÊp 40 cña §­êng M«n	
-5		Ghi chó liÖu cã ®Ò xuÊt kÕt h«n (hoÆc bÞ ®Ò xuÊt kÕt h«n) kh«ng	
-6		Ghi chó ID trùc tuyÕn cña ng­êi ®Ò xuÊt kÕt h«n	
-7		Ghi chó ID trùc tuyÕn cña ng­êi bÞ ®Ò xuÊt kÕt h«n	
-8		T¹m tr÷ nhiÖm vô röa tiÒm n¨ng (bao gåm gi¸ vµ sè lÇn ®· röa)	
-9		NhiÖm vô thÕ giíi ë khu vùc T©y Nam B¾c	
-10		NhiÖm vô cÊp 20 cña Thiªn V­¬ng Bang	
-11		T¹m tr÷ phÝ huÊn luyÖn ra khái Bang	
-12		T¹m tr÷ viÖc gi¶m ®iÓm uy tÝn khi rêi Bang	
-13		NhiÖm vô thÕ giíi ë khu vùc L­ìng Hå	
-14		NhiÖm vô cÊp 10 cña Vâ §ang Ph¸i	
-15		Ghi chó biÓu t­îng ®¨ng ký cho trËn c«ng thµnh (Wang Xibei)	
-16		NhiÖm vô cÊp 40 cña Vâ §ang Ph¸i	
-17		T¹m tr÷ mua ngùa tr¾ng cÊp 80: liÖu cã ®ñ ®iÒu kiÖn mua kh«ng	
-18		T¹m tr÷ biÕn chuyÓn ®æi ngåi xe	
-19		Tra tr¶ ®iÓm kü n¨ng sau sù kiÖn tÈy ®iÓm miÔn phÝ vµo ngµy 03-07-2004	
-20		T¹m tr÷ biÕn cËp nhËt kü n¨ng (®Æc biÖt cho kü n¨ng cÊp 90)	
-21		T¹m tr÷ biÕn cËp nhËt kü n¨ng (l­u sè ®iÓm kü n¨ng ban ®Çu)	
-22		NhiÖm vô ra m«n Thiªn NhÉn Gi¸o (bÞ hñy)	
-23		NhiÖm vô ra m«n Thiªn NhÉn Gi¸o (bÞ hñy)	
-24		NhiÖm vô ra m«n Thiªn NhÉn Gi¸o (bÞ hñy)	
-25		NhiÖm vô luyÖn tËp Thanh C«n: GËy tre/Bao c¸t/§µn gç	
-26		NhiÖm vô míi ë lµng C¶nh C­: §¸nh bao c¸t (bÞ hñy)	
-27		NhiÖm vô míi ë lµng C¶nh C­: §¸nh ng­êi gç (bÞ hñy)	
-28		NhiÖm vô míi ë huyÖn Ba L¨ng: §¸nh gËy tre (bÞ hñy)	
-29		NhiÖm vô míi ë huyÖn Ba L¨ng: §¸nh bao c¸t (bÞ hñy)	
-30		NhiÖm vô míi ë huyÖn Ba L¨ng: §¸nh ng­êi gç (bÞ hñy)	
-31		NhiÖm vô míi ë thÞ trÊn Dung L¹c: §¸nh gËy tre (bÞ hñy)	
-32		NhiÖm vô míi ë thÞ trÊn Dung L¹c: §¸nh bao c¸t (bÞ hñy)	
-33		NhiÖm vô míi ë thÞ trÊn Dung L¹c: §¸nh ng­êi gç (bÞ hñy)	
-34		NhiÖm vô míi ë thÞ trÊn Chu Tiªn: §¸nh gËy tre (bÞ hñy)	
-35		NhiÖm vô míi ë thÞ trÊn Chu Tiªn: §¸nh bao c¸t (bÞ hñy)	
-36		NhiÖm vô míi ë thÞ trÊn Chu Tiªn: §¸nh ng­êi gç (bÞ hñy)	
-37		NhiÖm vô míi ë lµng §Ëu H­¬ng: §¸nh gËy tre (bÞ hñy)	
-38		NhiÖm vô míi ë lµng §Ëu H­¬ng: §¸nh bao c¸t (bÞ hñy)	
-39		NhiÖm vô míi ë lµng §Ëu H­¬ng: §¸nh ng­êi gç (bÞ hñy)	
-40		NhiÖm vô cÊp 50 cña Th«i Yªn Ph¸i (bÞ hñy)	
-41		NhiÖm vô cÊp 50 cña C«n Lu©n Ph¸i (bÞ hñy)	
-42		NhiÖm vô cÊp 20 cña ThiÕu L©m Ph¸i	
-43		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (HuyÒn Nh©n)	
-44		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (NPC TrËn ChiÕn KÝn)	
-45		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (Cöa lín KÝn)	
-46		NhiÖm vô cÊp 40 cña ThiÕu L©m Ph¸i (Cöa nhá KÝn)	
-47		NhiÖm vô cÊp 50 cña ThiÕu L©m Ph¸i (§¸)	
-48		NhiÖm vô nhËp m«n §­êng M«n	
-49		T¹m tr÷ mua ngùa tr¾ng cÊp 80	
-50		T¹m tr÷ röa tiÒm n¨ng (bao gåm gi¸ chuyÓn ®æi b»ng ngäc)	
-51		T¹m tr÷ biÕn t¹m thêi cho nhiÖm vô lµm b¸nh bao	
+¿ªÊ¼ID£¨IDÕ¼ÓÃ²»Á¬ÐøÇë¿ÕÐÐ£©	½áÊøID	ÈÎÎñÃû³Æ	ÈÎÎñÃèÊö
+1		Ï´µãÈÎÎñÔÝ´æ	
+2		¸÷ÃÅÅÉ¸üÐÂ¼¼ÄÜ	
+3		ËÍÐÅÈÎÎñÔÝ´æ	
+4		ÌÆÃÅ40¼¶ÈÎÎñ	
+5		¼ÇÂ¼ÊÇ·ñÒÑÌáÇ×£¨»ò±»ÌáÇ×£©	
+6		¼ÇÂ¼ÌáÇ×ÕßµÄÍæ¼ÒÔÚÏßID	
+7		¼ÇÂ¼±»ÌáÇ×ÕßµÄÍæ¼ÒÔÚÏßID	
+8		Ï´Ç±ÄÜÔÝ´æ(´Ó¶¨¼ÛºÍµÚ¼¸´ÎÏ´¼ÇÂ¼¼Û¸ñ)	
+9		Î÷ÄÏ±±ÇøÊÀ½çÈÎÎñ	
+10		ÌìÍõ°ï20¼¶ÈÎÎñ	
+11		ÅÑ°ïÔÝ´æ¡°ÅàÑø·Ñ¡±	
+12		ÅÑ°ïÔÝ´æ½µÉùÍû	
+13		Á½ºþÇøÊÀ½çÈÎÎñ	
+14		Îäµ±ÅÉ10¼¶ÈÎÎñ	
+15		¹¥³ÇÕ½±¨ÃûÓÃ£¨ÍõÏ£±¸£©	
+16		Îäµ±ÅÉ40¼¶ÈÎÎñ	
+17		Âò80¼¶°×ÂíÔÝ´æ£ºÊÇ·ñ·ûºÏÂòÂíÌõ¼þ	
+18		×ø³µµÄÁÙÊ±±äÁ¿	
+19		2004-07-03Ãâ·ÑÏ´µãÖ®·µ»¹¼¼ÄÜµã	
+20		¼¼ÄÜ¸üÐÂµÄÔÝ´æ±äÁ¿£¨µ¥¶À´¦ÀíÍ¶µã·½Ê½µÄ90¼¼ÄÜ£©	
+21		¼¼ÄÜ¸üÐÂµÄÔÝ´æ±äÁ¿£¨¼Ç×¡Ô­ÓÐ¼¼ÄÜµãÊý£©	
+22		ÌìÈÌ½Ì³öÊ¦ÈÎÎñ	£¨È¡Ïû£©
+23		ÌìÈÌ½Ì³öÊ¦ÈÎÎñ	£¨È¡Ïû£©
+24		ÌìÈÌ½Ì³öÊ¦ÈÎÎñ	£¨È¡Ïû£©
+25		Á·Çá¹¦ÈÎÎñ£ºÄ¾×®/É³´ü/Ä¾ÈË	
+26		½­½ò´åÐÂÊÖÈÎÎñ£º´òÉ³´ü(È¡Ïû)	£¨È¡Ïû£a
+27		½­½ò´åÐÂÊÖÈÎÎñ£º´òÄ¾ÈË(È¡Ïû)	£¨È¡Ïû£©
+28		°ÍÁêÏØÐÂÊÖÈÎÎñ£º´òÄ¾×®(È¡Ïû)	£¨È¡Ïû£©
+29		°ÍÁêÏØÐÂÊÖÈÎÎñ£º´òÉ³´ü(È¡Ïû)	£¨È¡Ïû£©
+30		°ÍÁêÏØÐÂÊÖÈÎÎñ£º´òÄ¾ÈË(È¡Ïû)	£¨È¡Ïû£©
+31		ÓÀÀÖÕòÐÂÊÖÈÎÎñ£º´òÄ¾×®(È¡Ïû)	£¨È¡Ïû£©
+32		ÓÀÀÖÕòÐÂÊÖÈÎÎñ£º´òÉ³´ü(È¡Ïû)	£¨È¡Ïû£©
+33		ÓÀÀÖÕòÐÂÊÖÈÎÎñ£º´òÄ¾ÈË(È¡Ïû)	£¨È¡Ïû£©
+34		ÖìÏÉÕòÐÂÊÖÈÎÎñ£º´òÄ¾×®(È¡Ïû)	£¨È¡Ïû£©
+35		ÖìÏÉÕòÐÂÊÖÈÎÎñ£º´òÉ³´ü(È¡Ïû)	£¨È¡Ïû£©
+36		ÖìÏÉÕòÐÂÊÖÈÎÎñ£º´òÄ¾ÈË(È¡Ïû)	£¨È¡Ïû£©
+37		µ¾Ïã´åÐÂÊÖÈÎÎñ£º´òÄ¾×®(È¡Ïû)	£¨È¡Ïû£©
+38		µ¾Ïã´åÐÂÊÖÈÎÎñ£º´òÉ³´ü(È¡Ïû)	£¨È¡Ïû£©
+39		µ¾Ïã´åÐÂÊÖÈÎÎñ£º´òÄ¾ÈË(È¡Ïû)	£¨È¡Ïû£©
+40		´äÑÌ50¼¶ÈÎÎñ	£¨È¡Ïû£©
+41		À¥ÂØ50¼¶ÈÎÎñ	£¨È¡Ïû£©
+42		ÉÙÁÖ20¼¶ÈÎÎñ	
+43		ÉÙÁÖ40¼¶ÈÎÎñ£¨ÐþÒò£©	
+44		ÉÙÁÖ40¼¶ÈÎÎñ£¨ÃÜÊÒÕ½¶·NPC£©	
+45		ÉÙÁÖ40¼¶ÈÎÎñ£¨ÃÜÊÒ´óÃÅ£©	
+46		ÉÙÁÖ40¼¶ÈÎÎñ£¨ÃÜÊÒ¶þÃÅ£©	
+47		ÉÙÁÖ50¼¶ÈÎÎñ£¨Ê¯Í·£©	
+48		ÌÆÃÅÈëÃÅÈÎÎñ	
+49		Âò80¼¶°×ÂíÔÝ´æ	
+50		Ï´Ç±ÄÜÔÝ´æ£¨ÊÇ·ñÓÃ±¦Ê¯Ï´µÄ£©	
+51		×öôÕ×ÓÁÙÊ±±äÁ¿	
 52			
-100		Ghi chó phe cña ng­êi ch¬i trong trËn c«ng thµnh	
-101	110	????	
-111		Ghi chó cuéc trß chuyÖn cña ng­êi d©n ë Nam NguyÖt ThÞ	
-112		Ghi chó n¨m h¹ng n¨m cña ®éi h×nh vÖ binh kü n¨ng bang héi	
+100		¹¥³ÇÕ½Ê±£¬¼ÇÂ¼Íæ¼ÒÊôÓÚÄÄ¸öÕóÓª	
+101	110	ÀµÁ¢¸ßÕ¼ÓÃ	
+111		ÄÏÔÀÕòÕòÃñ¶Ô»°¼ÇÔØ	
+112		°ï»áÌØ¼¼ÊÌÎÀÓª£¬Í¬°éÎåÐÐ	
 113			
 114			
-120		Ghi chó täa ®é cña ng­êi ch¬i trong trËn ®Êu cña Bang Héi Hoa S¬n (DËu H¹o)	
-121		Ghi chó täa ®é cña ng­êi ch¬i trong trËn ®Êu cña Bang Héi Hoa S¬n (DËu H¹o)	
-122		Ghi chó täa ®é cña ng­êi ch¬i trong trËn ®Êu cña Bang Héi Hoa S¬n (DËu H¹o)	
-151		Ghi chó chØ môc lo¹i hµng hãa ®· chän cña th­¬ng nh©n bÝ Èn L­u Êt	
-152		Ghi chó chØ môc hµng hãa ®· chän cña th­¬ng nh©n bÝ Èn L­u Êt	
-153		Ghi chó biÕn phô hç trî ghi l¹i sè ®iÓm mµ ng­êi ch¬i nhËn ®­îc trong c¸c sù kiÖn nh­ ®æi tiÒn, ®æi vµng	
-154		Ghi chó gi¸ trÞ nhiÖm vô cña c¸c t¸c nh©n yªu tè	
-160		Ghi chó thêi gian lÇn cuèi nhËn quµ lÔ héi tõ quan phßng ngµy Ngäc NguyÖt	
-180		Ghi chó ng­êi ghi l¹i chØ sè cña boss gi÷a ë tÇng 180 trong thÕ giíi cña phong ngù ®iÖn cña Nghªnh Giã Kþ	
-181		Ghi chó biÕn nhiÖm vô ghi l¹i gi¸ trÞ t­¬ng øng gi÷a ng­êi b¶o vÖ vµ hßm b¶o vËt trong nhiÖm vô kho b¶o khè Qianbao	
-182		Ghi chó sè thø tù cña c©u hái	
-183		-- BiÕn t¹m thêi 182 ghi l¹i sè lÇn tr¶ lêi ®óng cña c©u hái	
-184		-- BiÕn t¹m thêi 183 ghi l¹i sè thø tù c©u hái nhá nhÊt	
-185		-- BiÕn t¹m thêi 184 ghi l¹i sè thø tù c©u hái lín nhÊt	
-186		-- BiÕn t¹m thêi 185 ghi l¹i sè lÇn tr¶ lêi c©u hái	
-187		-- BiÕn t¹m thêi 186 ghi l¹i biÕn nhiÖm vô më khãa c©u hái	
-188		-- BiÕn t¹m thêi 187 ghi l¹i byte më khãa c©u hái	
-189		Ghi chó sè lÇn ®¸nh bao c¸t t¹i vïng h¾c hµ trong nhiÖm vô gi¸o dôc	
-190		Ghi chó chÕ ®é xö lý ®óng/sai cña hµm tr¶ lêi c©u hái	
-191		Ghi chó m¶ng hµm gäi l¹i cña hµm tr¶ lêi c©u hái	
-192		Ghi chó sè thø tù b¶n ®å mµ ng­êi kia ®ang ë sau khi sö dông hép quµ Ngµy T×nh Nh©n	
-193		H¹n chÕ viÖc nhËn phÇn th­ëng cña Bang Héi §Çu Tiªn ThÕ Giíi	
-194		Ho¹t ®éng chuyÓn ®æi ng­êi ch¬i hiÖn cã trong BiÓn V« T×nh	
+120		»ªÉ½°ï»áÕ½Íæ¼Ò×ø±êW£¨ñ¼ê»£©	
+121		»ªÉ½°ï»áÕ½Íæ¼Ò×ø±êX£¨ñ¼ê»£©	
+122		»ªÉ½°ï»áÕ½Íæ¼Ò×ø±êY£¨ñ¼ê»£©	
+151		ÉñÃØÉÌÈËÁøÒÒ_ËùÑ¡ÎïÆ·Àà±ðË÷Òý	
+152		ÉñÃØÉÌÈËÁøÒÒ_ËùÑ¡ÎïÆ·Ë÷Òý	
+153		ÓÃÓÚ¼ÇÂ¼ËÎ½ðµÈ»î¶¯µÄÍæ¼Ò»ñµÃµÄ»ý·Ö¸¨Öú±äÁ¿	
+154		ÓÃÓÚ¼ÇÂ¼Ò°ÛÅÈÎÎñ¼ÛÖµÁ¿	
+			
+160		ÆßÏ¦»î¶¯Àñ¹ÙµÄ½ÚÈÕÀñÎïµÄÉÏ´ÎÁìÈ¡Ê±¼ä	
+180		·çÖ®ÆïÖÐ¼ä±êÖ¾bossµÄindex¼ÇÂ¼Æ÷	
+181		Ç§±¦¿âÈÎÎñ¼ÇÂ¼ÊØ»¤ÕßÓë±¦ÏäÖ®¼ä¶ÔÓ¦ÖµÊÇ·ñÏàÍ¬µÄÈÎÎñ±äÁ¿	
+182		¼ÇÂ¼ÌâÄ¿ºÅ	
+183		--ÁÙÊ±±äÁ¿182¼ÇÂ¼ÎÊÌâµÄ´ð¶Ô´ÎÊý	
+184		--ÁÙÊ±±äÁ¿183¼ÇÂ¼ÎÊÌâµÄÌâºÅ×îÐ¡Öµ	
+185		--ÁÙÊ±±äÁ¿184¼ÇÂ¼ÎÊÌâµÄÌâºÅ×î´óÖµ	
+186		--ÁÙÊ±±äÁ¿185¼ÇÂ¼ÎÊÌâµÄ»Ø´ð´ÎÊý	
+187		--ÁÙÊ±±äÁ¿186¼ÇÂ¼ÎÊÌâµÄ¿ª¹ØÈÎÎñ±äÁ¿	
+188		--ÁÙÊ±±äÁ¿187¼ÇÂ¼ÎÊÌâµÄ¿ª¹Ø×Ö½Ú	
+189		¼ÇÂ¼½ÌÓýÈÎÎñÖÐºÚÉ·´¦É³´ü»÷´ò´ÎÊý	
+190		¼ÇÂ¼»Ø´ðÎÊÌâº¯ÊýµÄ¶Ô´í´¦ÀíÄ£Ê½	
+191		¼ÇÂ¼»Ø´ðÎÊÌâº¯ÊýµÄ»Øµ÷º¯ÊýÊý×é	
+192		ÇéÈË½ÚÀñºÐÊ¹ÓÃºó¼ÇÂ¼¶Ô·½ËùÔÚµÄµØÍ¼±àºÅ	
+193		ÌìÏÂµÚÒ»°ïÁì½±·ÀÖ¹Ë¢	
+194		ÃèÊö£º»Æ½ðÖØÖýÒª½»»»µÄËéÆ¬Ë÷Òýby Îâ·½ºÆ	
 195			
 196			
 197			
 198			
 199			
-200		Ghi chó xem liÖu hiÖn t¹i cã thÓ chuyÓn ®æi phe cña ng­êi ch¬i kh«ng, sö dông cho trËn chiÕn PK vµ c¸c lÜnh vùc t­¬ng tù	
-240		Ghi chó tæng sè trËn PK hiÖn t¹i cña ng­êi ch¬i trong trËn ®Êu PK	
-241		Ghi chó tæng sè lÇn chÕt hiÖn t¹i cña ng­êi ch¬i trong trËn ®Êu PK	
-245		Ghi chó biÕn t¹m thêi cho viÖc tra cøu th«ng tin trong trËn c«ng thµnh. Sö dông trong InfoCenter.lua	
-246		Sö dông cho Liªn TrËn - Zhang Fan	
-250		Sè thø tù c©u hái ®è vÒ Hoµng §¹o Trung Thu	
-251		Sè thø tù c©u tr¶ lêi ®óng cña c©u hái ®è vÒ Hoµng §¹o Trung Thu	
+200		¼ÇÂ¼µ±Ç°ÊÇ·ñ¿ÉÒÔ±äÍæ¼ÒÕóÓª£¬ÓÃÓÚPKÕ½Ö®ÀàµÄµØ·½¡£	
+240		CS_PKÕ½³¡¼ÇÂ¼Íæ¼Òµ±Ç°PK×ÜÊý	
+241		CS_PKÕ½³¡¼ÇÂ¼Íæ¼Òµ±Ç°ËÀÍö×ÜÊý	
+245		¹¥³ÇÕ½£¬²éÑ¯ÐÅÏ¢µÄÁÙÊ±±äÁ¿¡£InfoCenter.luaÊ¹ÓÃ	
+246		ÁªÈüÊ¹ÓÃ ¡ª¡ª ÕÅ·«	
+250		ÖÐÇï»î¶¯ÃÕÓïÌâÄ¿µÄ±àºÅ	
+251		ÖÐÇï»î¶¯ÃÕÓïÌâÄ¿µÄ´ð°¸±àºÅ	
+255		Task Timer Delay HDD				
 256(end)			
+			
+			
+			
+			

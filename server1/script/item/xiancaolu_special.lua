@@ -2,21 +2,20 @@
 --8–° ±æ≠—ÈÀ´±∂
 IncludeLib("SETTING"); --‘ÿ»ÎSETTINGΩ≈±æ÷∏¡Óø‚
 
---function main()
---	if (GetNpcExpRate() <= 100) then
-		AddSkillState(440, 1, 1, 64800 * 8);
---	else
---		Say("ThÀt Æ∏ng ti’c, tπm thÍi kh´ng s?dÙng Æ≠Óc Ti™n Th∂o L?Æ∆c bi÷t.", 0)
---		return 1;
---	end;
---	return 0;
---end;
 
 function main()
-	if (GetSkillState(440) == 1) then
-			Say("Hieu luc Tien Thao Lo Dac Biet van con , nen khong su dung duoc them .", 0)
-		return 1	
-		else
-			AddSkillState(440, 1, 1, 64800 * 8);
+	if GetLevel()  < 60 then
+		Say("C p ÆÈ nh· h¨n 60, kh´ng th” sˆ dÙng Ti™n Th∂o LÈ")
+		return 1
+	end
+
+	if GetSkillState(440) == 1 then 
+		Say("C∏c hπ v…n thÍi gian tı hi÷u ¯ng Ti™n th∂o lÈ, kh´ngth” dÔng nhi“u b◊nh cÔng lÛc xin h∑y chÍ ÆÓi cho Æ’n h’t t∏c dÙng.!", 0, "Ta bi’t rÂi!/OnCancel")
+		return 1
+	else
+		AddSkillState(440, 1, 1, 64800 * 8, 1);
+		return 0
 	end
 end;
+
+function OnCancel() return end

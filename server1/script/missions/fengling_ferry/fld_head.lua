@@ -1,7 +1,7 @@
 --AddEventItem(489)·çÁê¶ÉÁìÅÆ
 IncludeLib("FILESYS")
 Include("\\script\\lib\\log.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
+
 MISSIONID = 15			--Î´¶¨
 FRAME2TIME = 18;		--18Ö¡ÓÎÏ·Ê±¼äÏàµ±ÓÚ1ÃëÖÓ
 boatMAPS = {337, 338, 339};		--ÄÏ°¶¶É´¬µØÍ¼ÒÀË³ĞòÎª£¬337ÄÏ°¶ÉÏÓÎ¡¢338ÖĞÓÎ¡¢339ÏÂÓÎ
@@ -12,8 +12,8 @@ TNPC_THIEF = {724, 725}
 TNPC_THIEF_COUNT = 30
 npcthiefpos = "\\settings\\maps\\ÖĞÔ­±±Çø\\¶É´¬\\¶É´¬Ë¢¹Öµã.txt"
 FLD_TIMER_1 = 20 * FRAME2TIME	--Ã¿20Ãë¹«²¼Ò»ÏÂÕ½¿ö
-FLD_TIMER_2 = 39 * 60 * FRAME2TIME		--´Ó±¨Ãûµ½½øÈë´ò±¦µØÍ¼40·ÖÖÓ --- test 1
-ENDSIGN_TIME = 10 * 60 * FRAME2TIME/FLD_TIMER_1		--±¨ÃûÊ±¼ä½áÊø --- test 2
+FLD_TIMER_2 = 39 * 60 * FRAME2TIME		--´Ó±¨Ãûµ½½øÈë´ò±¦µØÍ¼40·ÖÖÓ
+ENDSIGN_TIME = 10 * 60 * FRAME2TIME/FLD_TIMER_1		--±¨ÃûÊ±¼ä½áÊø
 UPBOSS_TIME = 25 * 60 * FRAME2TIME/FLD_TIMER_1		--¿ª´ò15·ÖÖÓÊ±²úÉúµÚ1¸öBOSS
 UPBOSS_TIME2 = 30 * 60 * FRAME2TIME/FLD_TIMER_1		--¿ª´ò20·ÖÖÓÊ±²úÉúµÚ2¸öBOSS
 UPBOSS_TIME3 = 35 * 60 * FRAME2TIME/FLD_TIMER_1		--¿ª´ò25·ÖÖÓÊ±²úÉúµÚ3¸öBOSS
@@ -24,16 +24,49 @@ MS_STATE = 1
 MS_TIMEACC_1MIN = 2
 MS_TIMEACC_20SEC = 3
 
+
+function fld_cancel()
+end
+
+Include("\\script\\global\\g7vn\\g7configall.lua")
+
 function fld_wanttakeboat(addr)
+
+	--do Say("Theo lé tr×nh TOP 10 thÕ giíi ®¹t LV 100 míi më tİnh n¨ng nµy") return end
 	
-	if PhongLangDo ~= 1 then
-		Msg2Player("<color=yellow>Tİnh N¨ng nµy t¹m ®ãng!<color>")
-		return 0
+	if DangDuaTop == 1 then
+		Say("§ang trong qu¸ tr×nh ®ua top, kh«ng thÓ thùc hiÖn thao t¸c nµy")
+		return 1
 	end
 
+	if(phonglangdo == 0) then
+		Say("Phong L¨ng §é t¹m thêi ch­a më.")
+		return 1;
+	end
+
+	local SoLanDiPLD = 24
+	local nDate = tonumber(GetLocalDate("%m%d"))
+	if ( GetTask(1408) ~= nDate ) then
+		SetTask(1408, nDate)
+		SetTask(1409, 0)
+	end
+
+	--Msg2Player("GetTask(1408): "..GetTask(1408))
+	--Msg2Player("GetTask(1409): "..GetTask(1409))
+
+	if ( GetTask(1409) >= SoLanDiPLD ) then
+		Say("Mçi ngµy chØ ®­îc tham gia "..SoLanDiPLD.." lÇn. Sè lÇn tha gia cña b¹n "..GetTask(1409).." lÇn h«m nay ®· ®ñ! Ngµy mai trë l¹i nhĞ!")
+		return 1
+	end
+	
 	-- Gia nhËp m«n ph¸i míi lªn thuyÒn Modified - by AnhHH - 20110724
 	if (GetLastFactionNumber() == -1)then
 		Talk(1,"","§¹i hiÖp ch­a gia nhËp m«n ph¸i kh«ng thÓ lªn thuyÒn")
+		return
+	end
+
+	if (GetLevel() < 80) then
+		Say("§¼ng cÊp d­íi 80 kh«ng thÓ tham gia ho¹t ®éng nµy")
 		return
 	end
 	
@@ -54,15 +87,15 @@ function fld_wanttakeboat(addr)
 	local sz_msg = "Muèn ®ãn thuyÒn ®Õn bê B¾c Phong L¨ng §é ph¶i cã Phong L¨ng §é lÖnh bµi hoÆc ng­¬i ®­a ta <color=red>200<color> cuèn MËt ®å thÇn bİ, ta sÏ cho ng­¬i lªn thuyÒn!";
 	local str = {	
 		"Ta cã lÖnh bµi Phong L¨ng §é/use_lingpai",
-		"Ta ®· thu thËp ®ñ 200 cuèn MËt ®å thÇn bİ/use_juanzhou",
+		--"Ta ®· thu thËp ®ñ 200 cuèn MËt ®å thÇn bİ/use_juanzhou",
 		"§Ó ta suy nghÜ l¹i!/fld_cancel",
 			};
 	--§iÒu chØnh thêi gian phong l¨ng ®é tèn phİ - Modified by DinhHQ - 20110504
+	--Di phong lang do ton lenh bai thuy tac
 	if (check_new_shuizeitask() == 1) then
-		sz_msg = "Muèn ®ãn thuyÒn ®Õn bê B¾c Phong L¨ng §é ph¶i cã Phong L¨ng §é lÖnh bµi hoÆc ng­¬i ®­a ta <color=red>200<color> cuèn MËt ®å thÇn bİ, ta sÏ cho ng­¬i lªn thuyÒn!";
-		local str = {	
-		"Ta cã lÖnh bµi Phong L¨ng §é/use_lingpai",
-		"Ta ®· thu thËp ®ñ 200 cuèn MËt ®å thÇn bİ/use_juanzhou",
+		sz_msg = format("Mçi ngµy vµo lóc 10:00,14:00,16:00,18:00,20:00,22:00 cÇn ph¶i cã %s míi cã thÓ ®i tham gia Bê B¾c Phong L¨ng §é, sau khi thuËn lîi v­ît qua sÏ cã phÇn th­ëng", "LÖnh Bµi Thñy TÆc");
+		str = {	
+		format("Ta cã %s/use_suizeilingpai", "LÖnh Bµi Thñy TÆc"),
 		"§Ó ta suy nghÜ l¹i!/fld_cancel",
 			};
 	end
@@ -110,24 +143,33 @@ function fld_TakeBoat(plindex)
 	--20110405: Fix bug, ngoµi thêi gian 13h, 15h, 17h, 19h bÕn 2 3 cã thÓ pk cõu s¸t
 	if (check_new_shuizeitask() == 1) then
 		if ( BOATID ~= 1 ) then
-			SetTaskTemp(200,1);
-			ForbidEnmity(1);			
+			SetTaskTemp(200,0);--mac dinh la 1 chuyen ve 0
+			ForbidEnmity(0);	-- 0 cho phep cuu sat	 1 cam cuu sat mac dinh la 1
 		end		
 	end
-	SetCurCamp(1);	
+	SetCurCamp(1);	--chuyen mau thanh mau vang
+	SetTask(1409, GetTask(1409) + 1)--G7VN so lan di PLD trong ngay tang them 1
 --	if ( BOATID ~= 1 ) then
 --		ForbidEnmity(1);
 --		SetCurCamp(1);
 --	end
 	
 --	SetTaskTemp(200,1);
+	if (BOATID==1) then
+	SetTaskTemp(200,1);--mac dinh la 1 chuyen ve 0
+	ForbidEnmity(0);	-- 0 cho phep cuu sat	 1 cam cuu sat mac dinh la 1
+	SetPKFlag(0)	-- chuyen pk chien dau
+	--SetPunish(0);	-- khong len pk
+	ForbidChangePK(1);	-- khong duoc doi pk
+	end
+	
 	SetFightState(0)
 	posx, posy = fld_getadata(npcthiefpos)
 	posx = floor(posx/32)
 	posy = floor(posy/32)
 	AddMSPlayer(MISSIONID,1)
 	NewWorld(boatmapid, posx, posy)
-	Msg2Player("cßn"..t.." phót thuyÒn rêi bÕn, ®Õn bê B¾c Phong L¨ng §é")
+	Msg2Player("cßn "..t.." phót thuyÒn rêi bÕn, ®Õn bê B¾c Phong L¨ng §é")
 	DisabledUseTownP(1)	--ÏŞÖÆÆäÔÚ¶É´¬ÄÚÊ¹ÓÃ»Ø³Ç·û
 	SetRevPos(175,1);		--ÉèÖÃÖØÉúµãÔÚÎ÷É½´å
 	SetLogoutRV(1)
@@ -233,7 +275,7 @@ end;
 
 -- ·çÁê¶ÉÁîÅÆ½»¸¶½çÃæ
 function	use_lingpai()	--Ê¹ÓÃ·çÁê¶ÉÁîÅÆ
-	GiveItemUI( format("Giao diÖn giao phİ %s LÖnh Bµi", "LÖnh bµi Phong L¨ng §é"), format("Dïng 1 c¸i %s ®Æt vµo « trèng phİa d­íi. N?u ng­¬i lÊy nh÷ng thø r¸c r­ëi kh¸c ®Æt vµo, ta sÏ kh«ng thÌm nhËn", "LÖnh bµi Phong L¨ng §é"), "exchange_lingpai_1", "no" );
+	GiveItemUI( format("Giao diÖn giao phİ %s LÖnh Bµi", "LÖnh bµi Phong L¨ng §é"), format("Dïng 1 c¸i %s ®Æt vµo « trèng phİa d­íi. N?u ng­¬i lÊy nh÷ng thø r¸c r­ëi kh¸c ®Æt vµo, ta sÏ kh«ng thÌm nhËn", "LÖnh bµi Phong L¨ng §é"), "exchange_lingpai_1", "no",1 );
 end;
 
 function use_suizeilingpai()
@@ -304,12 +346,15 @@ end;
 function check_new_shuizeitask()
 	local nHour = tonumber(GetLocalDate("%H"));
 	--§iÒu chØnh thêi gian phong l¨ng ®é tèn phİ - Modified by DinhHQ - 20110504
+	--Di phong lang do ton lenh bai thuy tac
 	local tb_sptime = {
-		[10] = 1,
-		[14] = 1,
-		[16] = 1,
-		[18] = 1,
-		[20] = 1,
+		-- [10] = 1,
+		-- [12] = 1,
+		-- [14] = 1,
+		-- [16] = 1,
+		-- [18] = 1,
+		-- [20] = 1,
+		-- [22] = 1,
 	};
 	if (tb_sptime[nHour] and tb_sptime[nHour] == 1) then
 		return 1
@@ -317,9 +362,6 @@ function check_new_shuizeitask()
 		return 0
 	end
 end	
-
-function fld_cancel()
-end
 
 function no()
 end;

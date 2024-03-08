@@ -1,0 +1,397 @@
+
+-- Include("\\script\\dailogsys\\dailogsay.lua")
+-- IncludeLib("FILESYS");-- thu vien doc file
+-- IncludeLib("ITEM")
+-- function main()
+-- -- do return end
+-- if GetTask(2998) ~= 1 then
+-- Say("Ng­¬i kh«ng ®ñ t­ c¸ch nhËn hç trî nµy. Vui lßng lªn facebook/volamduky2014 ®Ó biÕt thªm chi tiÕt")
+-- return
+-- end
+-- -- dofile("script/global/supportnpc.lua")
+-- Reset()
+-- local szTitle = "<npc>Chç ta kiªm b¸n ®ång n¸t. ThØnh tho¶ng còng nhÆt ®­îc mÊy mãn ®å tÝm vøt ®i nh­ng ta thÊy cßn dïng ®­îc. Ng­¬i muèn lÊy ?"
+-- local tbOpt ={
+-- }
+ -- -- "ARMOR",
+ -- -- "BOOT",
+ -- -- "BELT",
+ -- -- "HELM",
+ -- -- "CUFF",
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- tinsert(tbOpt, 1, {"Vò khÝ tÇm gÇn",Step1,{"MELEE"}})
+-- tinsert(tbOpt, 1, {"Vò khÝ tÇm xa",Step1,{"RANGE"}})
+-- tinsert(tbOpt, 1, {"Y phôc",Step1,{"ARMOR"}})
+-- tinsert(tbOpt, 1, {"Mò",Step1,{"BOOT"}})
+-- tinsert(tbOpt, 1, {"§ai l­ng",Step1,{"BELT"}})
+-- tinsert(tbOpt, 1, {"Giµy",Step1,{"HELM"}})
+-- tinsert(tbOpt, 1, {"Bao tay",Step1,{"CUFF"}})
+-- -- tinsert(tbOpt, 1, {"Ta muèn lÊy bé ®å phæ 1",getdopho,{1}})
+-- -- tinsert(tbOpt, 1, {"Ta muèn lÊy bé ®å phæ 2",getdopho,{2}})
+-- CreateNewSayEx(szTitle, tbOpt)
+
+-- end
+-- function Reset()
+-- local szName = GetName()
+-- -- if not tbPlayer[szName] then
+-- tbPlayer[szName] = {}
+-- -- return
+-- -- end
+-- -- tbPlayer[szName] = 
+-- end
+-- tbPlayer = {
+
+-- }
+
+-- function Step1(szChoice)
+-- local szTitle = "<npc>Chç ta kiªm b¸n ®ång n¸t. ThØnh tho¶ng còng nhÆt ®­îc mÊy mãn ®å tÝm vøt ®i nh­ng ta thÊy cßn dïng ®­îc. Ng­¬i muèn lÊy ?"
+-- local tbOpt ={
+-- }
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- if szChoice == "MELEE" then
+-- tinsert(tbOpt, 1, {"KiÕm",Step2,{"SWORD"}})
+-- tinsert(tbOpt, 1, {"Yªu §ao",Step2,{"BLADE"}})
+-- tinsert(tbOpt, 1, {"C«n",Step2,{"WAND"}})
+-- tinsert(tbOpt, 1, {"Th­¬ng",Step2,{"SPEAR"}})
+-- tinsert(tbOpt, 1, {"Chïy",Step2,{"HAMMER"}})
+-- tinsert(tbOpt, 1, {"Song §ao",Step2,{"DUALBLADES"}})
+-- elseif szChoice == "RANGE" then
+-- tinsert(tbOpt, 1, {"Phi tiªu",Step2,{"DARTS"}})
+-- tinsert(tbOpt, 1, {"Phi ®ao",Step2,{"KNIFE"}})
+-- tinsert(tbOpt, 1, {"Tô tiÔn",Step2,{"CROSSBOW"}})
+-- -- return
+-- elseif szChoice == "ARMOR" then
+-- tinsert(tbOpt, 1, {"Bé ¸o 1",GetExtraItem,{"ARMOR",1}})
+-- tinsert(tbOpt, 1, {"Bé ¸o 2",GetExtraItem,{"ARMOR",2}})
+-- -- return
+-- else
+-- tbOpt = GetExtraItem(szChoice)
+-- end
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- function GetExtraItem(szChoice,nSpecial)
+-- local szTitle = "<npc>Chç ta kiªm b¸n ®ång n¸t. ThØnh tho¶ng còng nhÆt ®­îc mÊy mãn ®å tÝm vøt ®i nh­ng ta thÊy cßn dïng ®­îc. Ng­¬i muèn lÊy ?"
+-- local tbOpt = {}
+-- local nTotalKind = getn(Violet_Item[szChoice])-- so kieu do
+-- local szMsg = ""
+-- if not nSpecial then
+-- for i=1,nTotalKind do
+-- szMsg = format("KiÓu ®å %d",i)
+-- tinsert(tbOpt,1,{szMsg,Step2,{szChoice,i}})
+-- end
+-- elseif nSpecial == 1 then-- truong hop dac biet cua ao
+-- for i=1,15 do
+-- szMsg = format("KiÓu ®å %d",i)
+-- tinsert(tbOpt,1,{szMsg,Step2,{szChoice,i}})
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- elseif nSpecial == 2 then
+-- for i=16,nTotalKind do
+-- szMsg = format("KiÓu ®å %d",i)
+-- tinsert(tbOpt,1,{szMsg,Step2,{szChoice,i}})
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- -- end
+-- end
+-- return tbOpt
+-- end
+-- function Step2(szChoice,nKind)
+-- local szTitle = "<npc>Chç ta kiªm b¸n ®ång n¸t. ThØnh tho¶ng còng nhÆt ®­îc mÊy mãn ®å tÝm vøt ®i nh­ng ta thÊy cßn dïng ®­îc. Ng­¬i muèn lÊy ?"
+-- local tbOpt ={
+-- }
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- local szName = GetName()
+-- tbPlayer[szName].szKind = szChoice
+-- -- if szChoice == "SWORD" then
+-- if not nKind then
+-- for _,tbItem in Violet_Item[szChoice] do
+	-- for szItemName,v in tbItem do
+		-- -- tbPlayer[szName].nDetail = v.nDetail
+		-- -- tbPlayer[szName].nParti = v.nParti
+		-- tinsert(tbOpt, 1, {szItemName,Step3, {v.nDetail,v.nParti,v.nLevel}})
+	-- end
+-- end
+-- else
+-- for _,tbItem in Violet_Item[szChoice][nKind] do
+	-- for szItemName,v in tbItem do
+		-- -- tbPlayer[szName].nDetail = v.nDetail
+		-- -- tbPlayer[szName].nParti = v.nParti
+		-- tinsert(tbOpt, 1, {szItemName,Step3, {v.nDetail,v.nParti,v.nLevel}})
+	-- end
+-- end
+-- end
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- function Step3(nDetail,nParti,nLevel)
+-- -- print("nDetail"..nDetail)
+-- local szName = GetName()
+-- tbPlayer[szName].nDetail = nDetail
+-- tbPlayer[szName].nParti = nParti
+-- tbPlayer[szName].nLevel = nLevel
+-- local szTitle = "<npc>Chç ta kiªm b¸n ®ång n¸t. ThØnh tho¶ng còng nhÆt ®­îc mÊy mãn ®å tÝm vøt ®i nh­ng ta thÊy cßn dïng ®­îc. Ng­¬i muèn lÊy ?"
+-- local tbOpt ={
+-- }
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- tinsert(tbOpt, 1, {"Kim",Step4,{0}})
+-- tinsert(tbOpt, 1, {"Méc",Step4,{1}})
+-- tinsert(tbOpt, 1, {"Thñy",Step4,{2}})
+-- tinsert(tbOpt, 1, {"Háa",Step4,{3}})
+-- tinsert(tbOpt, 1, {"Thæ",Step4,{4}})
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- function Step4(nSeries)
+
+-- local szName = GetName()
+-- local szTitle = "<npc>Vui lßng chän dßng hiÖn 1?"
+-- local tbOpt ={
+-- }
+-- local pPlayer = tbPlayer[szName]
+-- pPlayer.nSeries = nSeries
+-- local tbResult1  = Violet_Item:GetOption(tbPlayer[szName].szKind ,tbPlayer[szName].nSeries)
+-- -- local tbResult2 = Violet_Item:GetOption(tbPlayer[szName].szKind ,tbPlayer[szName].nSeries,1)
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- for _,value in tbResult1 do
+-- if type(value) =="table" then
+-- tinsert(tbOpt, 1, {value[1],Step5,{value[2],tbResult1,pPlayer}})
+-- end
+-- end
+-- CreateNewSayEx(szTitle, tbOpt)
+-- -- local szName = GetName()
+-- -- tbPlayer[szName].nSerie = nSeries
+-- -- AddItem(0,tbPlayer[szName].nDetail,tbPlayer[szName].nParti,tbPlayer[szName].nLevel,nSeries,200,10)
+-- end
+-- function Step5(nId,tbOption,pPlayer)
+-- pPlayer.nOpt1 = nId
+-- local szTitle = "<npc>Vui lßng chän dßng hiÖn 2?"
+-- local tbOpt ={
+
+-- }
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- for _,value in tbOption do
+-- if type(value) =="table" and CheckId(value[2],pPlayer)  then
+-- tinsert(tbOpt, 1, {value[1],Step6,{value[2],tbOption,pPlayer}})
+-- end
+-- end
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- function Step6(nId,tbOption,pPlayer)
+-- pPlayer.nOpt3 = nId
+-- local szTitle = "<npc>Vui lßng chän dßng hiÖn 3?"
+-- local tbOpt ={
+
+-- }
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- -- tinsert(tbOpt, 1, {value[1],Step7,{value[2],tbResult1,pPlayer}})
+-- for _,value in tbOption do
+-- if type(value) =="table" and CheckId(value[2],pPlayer)  then
+-- tinsert(tbOpt, 1, {value[1],Step7,{value[2],tbOption,pPlayer}})
+-- end
+-- end
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- function Step7(nId,tbOption,pPlayer)
+-- pPlayer.nOpt5 = nId
+-- local szTitle = "<npc>Vui lßng chän dßng Èn 1?"
+-- local tbOpt ={
+
+-- }
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- local tbResult2 = Violet_Item:GetOption(pPlayer.szKind ,pPlayer.nSeries,1)
+-- for _,value in tbResult2 do
+-- if type(value) =="table" and CheckId(value[2],pPlayer)  then
+-- tinsert(tbOpt, 1, {value[1],Step8,{value[2],tbResult2,pPlayer}})
+-- end
+-- end
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- function Step8(nId,tbOption,pPlayer)
+-- pPlayer.nOpt2 = nId
+-- local szTitle = "<npc>Vui lßng chän dßng Èn 2?"
+-- local tbOpt ={
+
+-- }
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- -- tinsert(tbOpt, 1, {value[1],Step7,{value[2],tbResult1,pPlayer}})
+-- for _,value in tbOption do
+-- if type(value) =="table" and CheckId(value[2],pPlayer)  then
+-- tinsert(tbOpt, 1, {value[1],Step9,{value[2],tbOption,pPlayer}})
+-- end
+-- end
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- function Step9(nId,tbOption,pPlayer)
+-- pPlayer.nOpt4 = nId
+-- local szTitle = "<npc>Vui lßng chän dßng Èn 3?"
+-- local tbOpt ={
+
+-- }
+
+-- -- tinsert(tbOpt, 1, {value[1],Step7,{value[2],tbResult1,pPlayer}})
+-- for _,value in tbOption do
+-- if type(value) =="table" and CheckId(value[2],pPlayer)  then
+-- tinsert(tbOpt, 1, {value[1],Step10,{value[2],tbOption,pPlayer}})
+-- end
+-- end
+-- if getn(tbOpt) == 0 then
+-- Step10(nil,nil,pPlayer)
+-- return
+-- end
+-- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- CreateNewSayEx(szTitle, tbOpt)
+-- end
+-- -- function Step11(nId,tbOption,pPlayer)
+-- -- pPlayer.nOpt6 = nId
+-- -- local szTitle = "<npc>Vui lßng chän dßng hiÖn 3?"
+-- -- local tbOpt ={
+
+-- -- }
+-- -- tinsert(tbOpt, 1, {"Tho¸t",no})
+-- -- tinsert(tbOpt, 1, {value[1],Step7,{value[2],tbResult1,pPlayer}})
+-- -- for _,value in tbOption do
+-- -- if type(value) =="table" and CheckId(value[2],pPlayer)  then
+-- -- tinsert(tbOpt, 1, {value[1],Step12,{value[2],tbOption,pPlayer}})
+-- -- end
+-- -- end
+-- -- CreateNewSayEx(szTitle, tbOpt)
+-- -- end
+-- function Step10(nId,_,pPlayer)
+	-- if CountFreeRoomByWH(5, 5) < 1 then
+		-- Say("Vui long ®Ó trèng 5x5 « trèng",0)
+		-- return
+	-- end
+-- local nItemIndex = AddQualityItem(2,0,pPlayer.nDetail,pPlayer.nParti,pPlayer.nLevel,pPlayer.nSeries,0,pPlayer.nOpt1 or -1,pPlayer.nOpt2 or -1,pPlayer.nOpt3 or -1,pPlayer.nOpt4 or -1,pPlayer.nOpt5 or -1,nId or -1)
+-- -- ITEM_SetExpiredTime(nItemIndex, 20150705);
+-- -- SyncItem(nItemIndex);
+-- SetItemBindState(nItemIndex,-2)
+-- Reset()
+-- -- tbPlayer[szName].nDetail = nDetail
+-- -- tbPlayer[szName].nParti = nParti
+-- -- tbPlayer[szName].nLevel = nLevel
+-- end
+-- function CheckId(nId,pPlayer)
+-- local szStr
+-- for i=1,6 do
+-- szStr = format("nOpt%d",i)
+-- if pPlayer[szStr]  and pPlayer[szStr]== nId then
+-- return 
+-- end
+-- end
+-- return 1
+-- end
+-- Violet_Item = {
+-- -- ["SWORD"] = {
+-- -- [1] = {
+-- -- ["Tªn"] = {0,4,....}--Load tu file vao
+-- -- }--Level1
+	-- -- ["Kim"] = {["T¨ng S¸t Th­¬ng VËt Lý"] = 126,....}
+-- -- }
+-- -- [126] = {
+
+
+-- -- }
+-- }
+-- function Violet_Item:InitData()
+-- local tbFile = {
+-- "\\settings\\item\\004\\meleeweapon.txt",
+-- "\\settings\\item\\004\\rangeweapon.txt",
+-- "\\settings\\item\\004\\armor.txt",
+-- "\\settings\\item\\004\\boot.txt",
+-- "\\settings\\item\\004\\belt.txt",
+-- "\\settings\\item\\004\\helm.txt",
+-- "\\settings\\item\\004\\cuff.txt",
+-- }
+-- local MeleeWeapon ="\\settings\\item\\004\\meleeweapon.txt"
+-- -- tbFile = {
+-- -- ["SWORD"] = 
+
+-- -- }
+-- for i=1,getn(tbFile) do
+-- if (TabFile_Load(tbFile[i], tbFile[i]) == 0) then
+-- print("Khong load duoc file IP! xin kiem tra lai")
+-- return 0
+-- end
+-- end
+-- -- if (TabFile_Load(MeleeWeapon, MeleeWeapon) == 0) then
+-- -- print("Khong load duoc file IP! xin kiem tra lai")
+-- -- return 0
+-- -- end
+-- local nRow
+-- local tbEquip  ={
+ -- {"SWORD","BLADE","WAND","SPEAR","HAMMER","DUALBLADES"},
+ -- {"DARTS","KNIFE","CROSSBOW",},
+ -- "ARMOR",
+ -- "BOOT",
+ -- "BELT",
+ -- "HELM",
+ -- "CUFF",
+-- }
+-- -- self.SWORD = {}
+-- for k=1,getn(tbEquip) do
+	-- if k <=2 then-- vu khi cau truc khac voi cac file kia
+		-- for i=1,getn(tbEquip[k]) do
+			-- if not self[tbEquip[k][i]] then
+			-- self[tbEquip[k][i]] ={}
+			-- end
+			-- for j=1,10 do
+				-- nRow = 10*(i - 1)+ j + 1
+				-- -- print(TabFile_GetCell(tbFile[k],nRow,"Ãû³Æ"))
+				-- self[tbEquip[k][i]][j] = {
+				-- [TabFile_GetCell(tbFile[k],nRow,"Ãû³Æ")] = { nDetail = TabFile_GetCell(tbFile[k],nRow,"DetailType"), nParti = TabFile_GetCell(tbFile[k],nRow,"ParticularType"),nLevel = TabFile_GetCell(tbFile[k],nRow,"µÈ¼¶")},
+				-- }
+			-- end
+		-- end
+	-- else-- cac mon trang bi con lai
+		-- if not self[tbEquip[k]] then
+			-- self[tbEquip[k]] = {}
+		-- end
+		-- local nRound = (TabFile_GetRowCount(tbFile[k]) - 1) / 10
+		-- for i=1,nRound do
+			-- for j=1,10 do
+			-- if not self[tbEquip[k]][i] then
+			-- self[tbEquip[k]][i] = {}
+			-- end
+			-- nRow = 10*(i - 1)+ j + 1
+			-- -- print(TabFile_GetCell(tbFile[k],nRow,"Ãû³Æ"))
+			-- self[tbEquip[k]][i][j] = {
+			-- [TabFile_GetCell(tbFile[k],nRow,"Ãû³Æ")] = { nDetail = TabFile_GetCell(tbFile[k],nRow,"DetailType"), nParti = TabFile_GetCell(tbFile[k],nRow,"ParticularType"),nLevel = TabFile_GetCell(tbFile[k],nRow,"µÈ¼¶")},
+			-- }
+			-- end
+		-- end
+	-- end
+-- end
+-- self.Violet_File = "\\settings\\item\\004\\magicattriblevel_extra.txt"
+-- if (TabFile_Load(self.Violet_File, self.Violet_File) == 0) then
+-- print("Khong load duoc file IP! xin kiem tra lai")
+-- return 0
+-- end
+-- end
+
+-- function Violet_Item:GetOption(szKind,nSeries,nOpt)
+-- local nRow,nSeri,nValue
+-- local tbSeries = {"METAL","WOOD","WATER","FIRE","EARTH"}
+-- local tbOpt = {}
+	-- for i=1,48 do-- tong cong co 48 option
+		-- nRow = 10*(i -1)+ 5
+		-- nSeri = tonumber(TabFile_GetCell(self.Violet_File,nRow,"SERIES"))
+		-- nValue = tonumber(TabFile_GetCell(self.Violet_File,nRow,szKind))
+		-- -- nIsSerie = tonumber(TabFile_GetCell(self.Violet_File,nRow,tbSeries[nSeries]))
+		-- if nValue then
+		-- -- print("Gia tri doc duo"..nValue)
+		-- end
+		-- -- if  ((nSeri and nSeri == nSeries and nOpt) or not nOpt) and nValue and nValue > 0 then
+		-- if ((nOpt and (nSeri == nSeries or (nRow < 272 and nRow > 261) ))or (not nOpt and not nSeri)) and nValue and nValue > 0 then
+			-- tinsert(tbOpt,1,{
+			-- TabFile_GetCell(self.Violet_File,nRow,"NAME"),
+			-- nRow - 1,
+			-- })
+			-- -- print(TabFile_GetCell(self.Violet_File,nRow,"NAME"))
+		-- end
+			-- -- if TabFile_Load(self.Violet_File,nRow,szKind) and tonumber()hen
+		-- -- else
+		
+		-- -- end
+		
+	-- end
+-- return tbOpt
+-- end
+-- Violet_Item:InitData()

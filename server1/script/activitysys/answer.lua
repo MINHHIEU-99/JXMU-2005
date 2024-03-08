@@ -1,13 +1,9 @@
 IncludeLib("FILESYS")
 
---show_riddle(0, "谜题如下：<enter>" )
-
 tbRiddle = {}
 
--- 显示灯谜问题
 tbRiddle.PlayerData = {}
 function tbRiddle:Show(szFile, nTotalCount, caption, szMsg, szFunFinalOk, szFunStepOk, szFunStepFail, count)
---	print(format("g_count:%d", g_count))
 
 	if szFile then
 		self.PlayerData[PlayerIndex] = 
@@ -73,7 +69,6 @@ function tbRiddle:ReSort(options)
 	end
 end
 
--- 灯谜回答正确
 function tbRiddle:answer_ok(count)
 	if not self.PlayerData[PlayerIndex] then
 		return
@@ -104,7 +99,6 @@ function tbRiddle:answer_ok(count)
 	end
 end
 
--- 灯谜回答错误
 function tbRiddle:answer_fail()
 	if (self.PlayerData[PlayerIndex].pFunStepFail ~= nil) then  
 			self.PlayerData[PlayerIndex].pFunStepFail:GetGlobal()

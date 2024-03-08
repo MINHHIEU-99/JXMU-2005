@@ -1,24 +1,18 @@
--- ====================== ÎÄ¼þÐÅÏ¢ ======================
-
--- ½£ÏÀÇéÔµÍøÂç°æÔ½ÄÏÊÕ·Ñ°æ - Õ½Ê¤Àñ°ü
--- ÎÄ¼þÃû¡¡£ºzhansheng_libao.lua
--- ´´½¨Õß¡¡£º×Ó·Çô~
--- ´´½¨Ê±¼ä£º2009-04-14 14:08:44
-
--- ======================================================
+--Tong kim le bao phan thuong khi dat top 1,2,3 tong kim edit by mcteam
 
 Include("\\script\\lib\\pay.lua");
 Include("\\script\\lib\\awardtemplet.lua");
 IncludeLib("ITEM")
 
 SONGJIN_LIBAO_TASK_NO = 2619
-SONGJIN_LIBAO_LIMIT   = 20
+SONGJIN_LIBAO_LIMIT   = 5
 
 
 if not TB_QIANQIU_YINGLIE0904 then
 	Include("\\script\\event\\jiefang_jieri\\200904\\qianqiu_yinglie\\head.lua");
 end
 
+Include("\\script\\global\\g7vn\\g7configall.lua")
 
 function main(nItemIdx)
 	local n_item_date = tonumber(FormatTime2String("%Y%m%d%H%M",ITEM_GetExpiredTime(nItemIdx)));
@@ -28,10 +22,17 @@ function main(nItemIdx)
 		return 0;
 	end
 	
---	TB_QIANQIU_YINGLIE0904:reset_task()
+	--TB_QIANQIU_YINGLIE0904:reset_task()
+
+	--dofile("script/global/g7vn/g7configall.lua")
+
+	if DangDuaTop == 1 then
+		Say("§ang trong qu¸ tr×nh ®ua top, kh«ng thÓ thùc hiÖn thao t¸c nµy")
+		return 1
+	end
 	
-	if IsCharged() == 0 or GetLevel() < 50 then
-		Say("ChØ cã ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ míi cã thÓ sö dông.", 0)
+	if IsCharged() == 0 or GetLevel() < 90 then
+		Say("ChØ cã ng­êi ch¬i cÊp trªn 90  míi cã thÓ sö dông.", 0)
 		return 1;
 	end
 	
@@ -39,35 +40,20 @@ function main(nItemIdx)
 		Say(format("§Ó tr¸nh mÊt m¸t tµi s¶n, h·y b¶o ®¶m hµnh trang cßn ®ñ %d « trèng.", 5), 0);
 		return 1;
 	end
-	
+			local checkexp = GetExpPercent()
+if checkexp < -50 then
+Say("HiÖn t¹i ®iÓm kinh nghiÖm v­ît -50% chØ cã thÓ sö dông bµn nh­îc råi h·y tiÕp tôc.")
+return 1
+end
 	local tb_award = {
-		{szName = "Khiªu chiÕn LÔ bao", tbProp = {6,1,2006,1,1,0}, nRate = 25},
---		{szName = "ThÇn bÝ kho¸ng th¹ch", tbProp = {6,1,398,1,0,0}, nRate = 0.05},
-		{szName = "Lam Thñy Tinh", tbProp = {4,238,1,1,1,0}, nRate = 10},
-		{szName = "Tö Thñy Tinh", tbProp = {4,239,1,1,1,0}, nRate = 10},
-		{szName = "Lôc Thñy Tinh", tbProp = {4,240,1,1,1,0}, nRate = 10},
-		{szName = "Qu¶ Hoµng Kim", tbProp = {6,1,907,1,0,0}, nRate = 5,nExpiredTime=10800},
---		{szName = "Thiªn V­¬ng Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,907,1,0,0}, nRate = 0.5},
---		{szName = "Ngò §éc Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4640,1,0,0}, nRate = 0.5},
---		{szName = "Thóy Yªn Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4641,1,0,0}, nRate = 0.5},
---		{szName = "C«n L«n Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4642,1,0,0}, nRate = 0.5},
---		{szName = "Thiªn NhÉn Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4643,1,0,0}, nRate = 0.5},
---		{szName = "ThiÕu L©m Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4644,1,0,0}, nRate = 0.5},
---		{szName = "§­êng M«n Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4645,1,0,0}, nRate = 0.5},
---		{szName = "Nga Mi Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4645,1,0,0}, nRate = 0.5},
---		{szName = "Vâ §ang Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4646,1,0,0}, nRate = 0.5},
---		{szName = "C¸i Bang Hoµng Kim Trang BÞ B¶o R­¬ng", tbProp = {6,1,4647,1,0,0}, nRate = 0.5},		
---		{szName = "Lam Thñy Tinh", tbProp = {4,238,1,1,1,0}, nRate = 10},
---		{szName = "Tinh Hång B¶o Th¹ch", tbProp = {4,353,1,1,1,0}, nRate = 20},
-		-- {szName = "Vinh DiÖu Kim Bµi", tbProp = {6,1,4657,1,0,0}, nRate = 70},
---		{szName = "B¹ch Ch©n §¬n", tbProp = {6,1,1676,1,0,0}, nRate = 0.03, tbParam = {500000000}},
---		{szName = "HuyÕt Ch©n §¬n", tbProp = {6,1,1677,1,0,0}, nRate = 0.02, tbParam = {1000000000}},
---		{szName = "HuyÒn Ch©n §¬n", tbProp = {6,1,1678,1,0,0}, nRate = 0.01, tbParam = {1500000000}},
---		{szName = "An Bang B¨ng Tinh Th¹ch H¹ng Liªn", nQuality=1, tbProp = {0,164}, nRate = 5,nExpiredTime=42800},
---		{szName = "An Bang Kª HuyÕt Th¹ch Giíi ChØ ", nQuality=1, tbProp = {0,167}, nRate = 5,nExpiredTime=42800},
---		{szName = "An Bang Cóc Hoa Th¹ch ChØ hoµn", nQuality=1, tbProp = {0,165}, nRate = 5,nExpiredTime=42800},
---		{szName = "An Bang §iÒn Hoµng Th¹ch Ngäc Béi", nQuality=1, tbProp = {0,166}, nRate = 5,nExpiredTime=42800},
---		{szName = "Hai tr¨m v¹n ®iÓm kinh nghiÖm", nExp = 1000000, nRate = 50},
+			{szName="Ng©n l­îng", nJxb=100000, nRate = 5},
+			{szName="Ng©n l­îng", nJxb=200000, nRate = 5},
+
+		{szName = "ThiÕt la h¸n", tbProp = {6,1,23,1,1,0}, nRate = 0.1},
+		{szName = "§iÓm kinh nghiÖm", nExp = 1000000, nRate = 40},
+		{szName = "§iÓm kinh nghiÖm", nExp = 3000000, nRate = 40},
+		--{szName = "§iÓm kinh nghiÖm", nExp = 3000000, nRate = 10},
+		{szName = "tiªn thæ lé", tbProp={6,1,71,1,0,0}, nCount=1, nRate=0.1},
 	}
 	
 	local rtotal = 10000000
@@ -106,4 +92,6 @@ function main(nItemIdx)
 	SetBitTask(SONGJIN_LIBAO_TASK_NO, 8, 24, nLastUseDate);
 	
 	tbAwardTemplet:GiveAwardByList(tb_award[n_award_idx], "Tèng Kim lÔ bao");
+
+	Msg2SubWorld("§¹i hiÖp <color=white>"..GetName().."<color> ®· sö dông Tèng Kim LÔ Bao nhËn ®­îc rÊt nhiÒu phÇn quµ hÊp dÉn.")
 end

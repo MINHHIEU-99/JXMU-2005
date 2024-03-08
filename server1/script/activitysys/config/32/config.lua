@@ -7,7 +7,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	szName = "§èi tho¹i Vâ L©m Minh Chñ",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Tè Hoµn Ch©n"},
+	tbMessageParam = {"Minh Chñ - ThÈmTh¨ngY"},
 	tbCondition = 
 	{
 		{"ThisActivity:IsOpen",	{nil} },
@@ -42,7 +42,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	szName = "Ta ®Õn nhËn nhiÖm vô hµng ngµy",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"nh÷ng ®¹i hiÖp cÊp 120 trë lªn hoÆc ®· Relife mçi ngµy cã thÓ ®Õn chç cña ta ®©y nhËn nhiÖm vô Vâ L©m Minh Chñ, mçi lo¹i nhiÖm vô mçi ngµy cã thÓ hoµn thµnh 1 lÇn, sau khi hoµn thµnh nhiÖm vô ta sÏ cho ng­¬i phÇn th­ëng xøng ®¸ng!",0},
+	tbMessageParam = {"nh÷ng ®¹i hiÖp cÊp 120 trë lªn hoÆc ®· trïng sinh mçi ngµy cã thÓ ®Õn chç cña ta ®©y nhËn nhiÖm vô Vâ L©m Minh Chñ, mçi lo¹i nhiÖm vô mçi ngµy cã thÓ hoµn thµnh 1 lÇn, sau khi hoµn thµnh nhiÖm vô ta sÏ cho ng­¬i phÇn th­ëng xøng ®¸ng!",0},
 	tbCondition = 
 	{
 		{"ThisActivity:IsOpen",	{nil} },
@@ -62,7 +62,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	szName = "Ta ®Õn nhËn th­ëng nhiÖm vô",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"nh÷ng ®¹i hiÖp cÊp 120 trë lªn hoÆc ®· Relife mçi nagyf cã thÓ ®Õn chç cña ta ®©y nhËn nhiÖm vô hµng ngµy, mçi lo¹i nhiÖm vô mçi ngµy cã thÓ hoµn thµnh 1 lÇn, sau khi hoµn thµnh nhiÖm vô ta sÏ cho ng­¬i phÇn th­ëng xøng ®¸ng!",0},
+	tbMessageParam = {"nh÷ng ®¹i hiÖp cÊp 120 trë lªn hoÆc ®· trïng sinh mçi nagyf cã thÓ ®Õn chç cña ta ®©y nhËn nhiÖm vô hµng ngµy, mçi lo¹i nhiÖm vô mçi ngµy cã thÓ hoµn thµnh 1 lÇn, sau khi hoµn thµnh nhiÖm vô ta sÏ cho ng­¬i phÇn th­ëng xøng ®¸ng!",0},
 	tbCondition = 
 	{
 		{"ThisActivity:IsOpen",	{nil} },

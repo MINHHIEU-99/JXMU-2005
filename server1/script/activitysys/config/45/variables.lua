@@ -1,7 +1,4 @@
-TKSG_HandinStringCount		= 1
-TSKG_ConvertFireworksCount		= 2
-TKSG_ConvertMooncakeCount		= 3
-TKSG_UseFireworksCount		= 4
-TKSG_UseMooncakeCount		= 5
-strQK_TranslogFolder = "201109_QuocKhanh/"
-nQK_PromotionID = 9
+nItemExpiredTime = 20210901
+nPromotionID = 7
+nTSK_DAILY_TK_NHAN_BANG_THACH = 2708
+nTSK_DAILY_SU_DUNG_BANG_THACH_LE_HOP = 2707

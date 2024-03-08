@@ -5,7 +5,7 @@
 
 Include("\\script\\lib\\objbuffer_head.lua")
 
-tbPos = {
+local tbPos = {
 	[1] = -- boss 张宣
 	{
 		[1] = {176,1754,2799},
@@ -33,7 +33,7 @@ tbPos = {
 	},
 }
 
-tbMapName = {
+local tbMapName = {
 	[176] = "临安",
 	[80] = "扬州",
 	[78] = "襄阳",
@@ -42,7 +42,7 @@ tbMapName = {
 	[959] = "战龙洞",
 }
 
-tbBossInfomation = {
+local tbBossInfomation = {
 	-- bossid, bosslvl, bossname
 	[1] = {1873,95,"张宣",},		
 	[2] = {1874,95,"金弑亮",},		
@@ -52,17 +52,17 @@ tbBossInfomation = {
 function makeboss_onlyone_pos(nKind)
 	local szFile = "\\script\\missions\\boss\\goldboss_adjust_2011\\callboss.lua"
 	
-	local nIndex = random(1,getn(tbPos[nKind]))
-	local nMapId = tbPos[nKind][nIndex][1]
-	local nPosX = tbPos[nKind][nIndex][2]
-	local nPosY = tbPos[nKind][nIndex][3]
+	local nIndex = random(1,getn(%tbPos[nKind]))
+	local nMapId = %tbPos[nKind][nIndex][1]
+	local nPosX = %tbPos[nKind][nIndex][2]
+	local nPosY = %tbPos[nKind][nIndex][3]
 	
-	local nBossId = tbBossInfomation[nKind][1]
-	local nBossLevel = tbBossInfomation[nKind][2]
+	local nBossId = %tbBossInfomation[nKind][1]
+	local nBossLevel = %tbBossInfomation[nKind][2]
 	local nSeries = random(0,4)
 	
-	local szBossname = tbBossInfomation[nKind][3]
-	local szWorldname = tbMapName[nMapId]
+	local szBossname = %tbBossInfomation[nKind][3]
+	local szWorldname = %tbMapName[nMapId]
 	local szWorldMsg = format("江湖相传%s已出现在%s，江湖将有一场血战!",szBossname, szWorldname)
 	
 --	OutputMsg("nIndex = " .. nIndex .. " nMapId = " .. nMapId .. " nPosX = " .. nPosX .. " nPosY = " .. nPosY)

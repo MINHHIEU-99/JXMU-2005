@@ -1,3 +1,5 @@
+-- ´³¹Ø±¦ÏäÎïÆ·£¨Ëæ»ú»ñµÃÒ»ÑùÎïÆ·£©
+-- By: Wangjingjun(2011-03-02)
 
 Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\vng_event\\change_request_baoruong\\exp_award.lua")
@@ -13,7 +15,7 @@ end
 
 tbCOT_Key_Require = {
 	["chiakhoanhuy"] = {6, 1, 2744},
-	["chiakhoavang"] = {6, 1, 30191},
+	["chiakhoavang"] = {6, 1, 4877},
 }
 tbCOT_Box_Award = 
 {
@@ -52,81 +54,32 @@ tbCOT_Box_Award =
 	},	
 	["chiakhoavang"] = 
 	{
-		-- {szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=2},
-		-- {szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=2},
-		-- {szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=2},
-		-- {szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=2},
-		-- {szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=2},
-		-- {szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=2},
-		-- {szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=2},
-		-- {szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.5},
-		-- {szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.5},
-		-- {szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.2},
-		--{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.02},		
-		-- {szName="B¶o R­¬ng Kim ¤ Kh«i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.004, CallBack = _Message},
-		-- {szName="B¶o R­¬ng Kim ¤ Th­îng Giíi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=0.002, CallBack = _Message},
-		-- {szName="B¶o R­¬ng Kim ¤ Hµi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.002, CallBack = _Message},
-		-- {szName="B¶o R­¬ng Kim ¤ Yªu §¸i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.002, CallBack = _Message},
-		-- {szName="B¶o R­¬ng Kim ¤ Hé UyÓn",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.002, CallBack = _Message},		
-		{szName="Thanh C©u Th¹ch",tbProp={6,1,2710,1,0,0},nCount=1,nRate=0.5},
+		--{szName="B¶o R­¬ng Tinh S­¬ng Kh«i",tbProp={6,1,6021,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.004, CallBack = _Message},
+		--{szName="B¶o R­¬ng Tinh S­¬ng Th­îng Giíi",tbProp={6,1,6022,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=0.002, CallBack = _Message},
+		--{szName="B¶o R­¬ng Tinh S­¬ng Hµi",tbProp={6,1,6027,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.002, CallBack = _Message},
+		--{szName="B¶o R­¬ng Tinh S­¬ng Yªu §¸i",tbProp={6,1,6024,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.002, CallBack = _Message},
+		{szName="B¶o R­¬ng Tinh S­¬ng Hé UyÓn",tbProp={6,1,6023,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.002, CallBack = _Message},		
 		{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.005,nExpiredTime=43200},
-		{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.2},
-		{szName="Tiªn Th¶o Lé ®Æc biÖt",tbProp={6,1,1181,1,0,0},nCount=1,nRate=2.666,nExpiredTime=43200},
-		-- {szName="§å Phæ B¹ch Hæ Kh«i",tbProp={6,1,3173,1,0,0},nCount=1,nRate=0.008},
-		-- {szName="§å Phæ B¹ch Hæ Béi",tbProp={6,1,3179,1,0,0},nCount=1,nRate=0.008},
-		-- {szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.001},
-		{szName="§iÓm kinh nghiÖm 1", 
+              -- {szName="Xu  ",tbProp={4,417,1,1,0,0},nCount=100,nRate=35, CallBack = _Message},
+		-- {szName="Xu  ",tbProp={4,417,1,1,0,0},nCount=200,nRate=20, CallBack = _Message},
+              -- {szName="Xu  ",tbProp={4,417,1,1,0,0},nCount=500,nRate=10, CallBack = _Message},		
+		--{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,4881},nCount=1,nRate=0.15,nQuality = 1,nExpiredTime=10080,},
+		--{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,4892},nCount=1,nRate=0.15,nQuality = 1,nExpiredTime=10080,},
+              {szName="§iÓm kinh nghiÖm 1", 
 					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(3000000, "B¶o r­¬ng v­ît ¶i")
+						%tbvng_ChestExpAward:ExpAward(1000000000, "B¶o r­¬ng v­ît ¶i")
 					end,
-					nRate = 35,
+					nRate = 35, CallBack = _Message,
 		},
 		{szName="§iÓm kinh nghiÖm 2", 
 					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(5000000, "B¶o r­¬ng v­ît ¶i")
+						%tbvng_ChestExpAward:ExpAward(3000000000, "B¶o r­¬ng v­ît ¶i")
 					end,
-					nRate = 25,
+					nRate = 25, CallBack = _Message,
 		},
-		{szName="§iÓm kinh nghiÖm 3", 
-					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(8000000, "B¶o r­¬ng v­ît ¶i")
-					end,
-					nRate = 10,
-		},
-		{szName="§iÓm kinh nghiÖm 4", 
-					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(10000000, "B¶o r­¬ng v­ît ¶i")
-					end,
-					nRate = 5,
-		},
-		{szName="§iÓm kinh nghiÖm 5", 
-					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(15000000, "B¶o r­¬ng v­ît ¶i")
-					end,
-					nRate = 3,
-		},
-		{szName="§iÓm kinh nghiÖm 6", 
-					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(20000000, "B¶o r­¬ng v­ît ¶i")
-					end,
-					nRate = 2,
-		},
-		{szName="§iÓm kinh nghiÖm 7", 
-					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(50000000, "B¶o r­¬ng v­ît ¶i")
-					end,
-					nRate = 1,
-		},		
-		{szName="Tö M·ng Chi B¶o (¸o)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.02,tbParam={5,0,0,0,0,0}, CallBack = _Message},
-		{szName="Tö M·ng Chi B¶o (Ngäc Béi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.02,tbParam={8,0,0,0,0,0}, CallBack = _Message},
-		{szName="Tö M·ng Chi B¶o (NhÉn D­íi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.02,tbParam={9,0,0,0,0,0}, CallBack = _Message},
-		{szName="Tö M·ng Chi B¶o (§ai L­ng)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.01,tbParam={4,0,0,0,0,0}, CallBack = _Message},
-		{szName="Tö M·ng Chi B¶o (Vò KhÝ)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.01,tbParam={6,0,0,0,0,0}, CallBack = _Message},		
-		{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3211},nCount=1,nRate=0.15,nQuality = 1,nExpiredTime=10080,},
-		{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3221},nCount=1,nRate=0.15,nQuality = 1,nExpiredTime=10080,},
+
 	},
 }
-
 nWidth = 1
 nHeight = 1
 nFreeItemCellLimit = 1

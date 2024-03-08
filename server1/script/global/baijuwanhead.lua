@@ -33,8 +33,8 @@ AEXP_SMALL_PARTYPE		= 74;
 --加经验的等级限制
 AEXP_NEEDLEVEL					= 50;
 AEXP_NEEDLEVEL_PARTNER	= 10;	--同伴在托管时获得经验的最低等级
-AEXP_OFFLINE_PLAYERCOUNT_LIMIT	= 600;				-- 当一台服务器的人数超过此数目，则不允许玩家在这台服务器内进行离线托管
-AEXP_OFFLINE_PLAYERCOUNT_SPECIAL = 750;				--专用托管服务器允许托管的人数
+AEXP_OFFLINE_PLAYERCOUNT_LIMIT	= 1000;				-- 当一台服务器的人数超过此数目，则不允许玩家在这台服务器内进行离线托管
+AEXP_OFFLINE_PLAYERCOUNT_SPECIAL = 1500;				--专用托管服务器允许托管的人数
 AEXP_INVALIDTIMEBEGIN 			= 18;		        --离线挂机无效的起始时间
 AEXP_INVALIDTIMEEND 			= 24;		        --离线挂机无效的终止时间
 
@@ -43,7 +43,8 @@ AEXP_TEMPOFFLINETASKID 			= 170;				--使用白驹丸时的任务变量
 AEXP_120SKILL_UPGRADE_EXP = 137500;					--120技能熟练度提升为定值
 
 --离线挂技能各技能级别对应的熟练度提升比例
-ARY_UPGRADE_SKILL_EXP_PERCENT = {	0.0775,	0.0388,	0.0258,	0.0194,	0.0155,	0.013,	0.0111,	0.0097,	0.0086,	0.0039,	0.0035,	0.0032,	0.0030,	0.0028,	0.0026,	0.0024,	0.0023,	0.0022,	0.0020	};
+ARY_UPGRADE_SKILL_EXP_PERCENT = {	0.0775,	0.0388,	0.0258,	0.0194,	0.0155,	0.013,	0.0111,	0.0097,	0.0086,	0.0039,
+									0.0035,	0.0032,	0.0030,	0.0028,	0.0026,	0.0024,	0.0023,	0.0022,	0.0020	};
 --离线挂技能可提升的技能ID
 ARY_UPGRADE_SKILL = { 318, 319, 321, 322, 323, 325, 339, 302, 342, 353, 355, 328, 380, 336, 337, 357, 359, 362, 361, 368, 365, 375, 372, 709, 708, 710, 711, 712, 713, 714, 715, 716, 717 };
 
@@ -90,15 +91,15 @@ function get_left_time()
 	local nTianxingExpSpareTime_Hours, nTianxingExpSpareTime_Minutes = getFrame2MinAndSec(nTianxingExpSpareTime);
 	
 
-	if (GetProductRegion() == "cn_ib") then
-		--摆摊
-		local restStall = GetTask(AEXP_STALL_TIME_TASKID)
-		local nStall_Hour, nStall_Min = getFrame2MinAndSec(restStall)
+if (GetProductRegion() == "cn_ib") then
+	--摆摊
+	local restStall = GetTask(AEXP_STALL_TIME_TASKID)
+	local nStall_Hour, nStall_Min = getFrame2MinAndSec(restStall)
 
-		--蓬莱仙草露
-		local nXianCaoTime = GetTask(AEXP_XIANCAO_TIME_TASKID);
-		local nXianCao_Hour, nXianCao_Min = getFrame2MinAndSec(nXianCaoTime);
-	end	
+	--蓬莱仙草露
+	local nXianCaoTime = GetTask(AEXP_XIANCAO_TIME_TASKID);
+	local nXianCao_Hour, nXianCao_Min = getFrame2MinAndSec(nXianCaoTime);
+end	
 
 	local nSkillExpID = GetTask(AEXP_SKILL_ID_TASKID);
 	local szSkillExpName = "";
@@ -183,9 +184,7 @@ end
 -- 设置离线托管技能
 function onSetUpgradeSkill(nUpgradeSkillID, funcCallBack)
 	SetTask(AEXP_SKILL_ID_TASKID, nUpgradeSkillID);
-	if funcCallBack~= nil then
-		funcCallBack();
-	end
+	funcCallBack();
 end
 
 -- 根据技能级别熟练度自动设置离线挂技能升级的技能ID

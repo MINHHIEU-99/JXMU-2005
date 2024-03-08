@@ -1,13 +1,15 @@
 IncludeLib("ITEM");
+Include("\\script\\lib\\awardtemplet.lua")
 --huihuangzhiguo_level
-MX_LANTERN_COUNT = 2;
+MX_LANTERN_COUNT = 1;
 GOLDFRUIT_MX_COUNT = 365;
 TASKIDDAY = 2321;
 TASKMAXEAT = 2314;
 TASKEATCOUNT = 2322;
 
 function main(ItemIndex)
-	if (GetLevel() < 90) then
+-- dofile("script/item/goldenseed.lua")
+	if (GetLevel() < 120) then
 		Say("<#> §é rÌn luyÖn cña ng­¬i ch­a ®ñ ®Ó ¨n qu¶ nµy.", 0)
 		return 1
 	end
@@ -17,12 +19,12 @@ function main(ItemIndex)
 		SetTask(TASKEATCOUNT, 0);
 	end
 	
-	if (huihuang_checkdate(ItemIndex) == -1) then
-		local szMsg = "Thêi h¹n sö dông qu¶ Hoµng Kim lµ 1 tuÇn."
-		Say(szMsg, 0)
-		Msg2Player()
-		return 0
-	end
+--	if (huihuang_checkdate(ItemIndex) == -1) then
+	--	local szMsg = "Thêi h¹n sö dông qu¶ Hoµng Kim lµ 1 tuÇn."
+	--	Say(szMsg, 0)
+	--	Msg2Player()
+	--	return 0
+	--end
 	
 	if ( GetTask(TASKIDDAY) == nDate and MX_LANTERN_COUNT <= GetTask(TASKEATCOUNT)) then
 		local szMsg = format("<#>H«m nay b¹n ®· ¨n %d qu¶ Hoµng Kim, vâ c«ng th¨ng tiÕn qu¸ nhanh dÔ g©y t¸c dông ph¶n nghÞch, ngµy mai h·y tiÕp tôc vËy.",MX_LANTERN_COUNT)
@@ -40,8 +42,12 @@ function main(ItemIndex)
 	
 	SetTask(TASKMAXEAT, GetTask(TASKMAXEAT) + 1)	--ÈçºÎ±£Ö¤´Ó1¿ªÊ¼¼ÆÊýÄØ£¿£¿
 	SetTask(TASKEATCOUNT, GetTask(TASKEATCOUNT) + 1)
-	local award_exp = 10000000
-	AddOwnExp(award_exp)
+	--local award_exp = 20000000
+	--AddOwnExp(award_exp)
+	tbAwardTemplet:GiveAwardByList({{nExp_tl = 20e9}}, "test", 1);
+	-- Earn(5000000)
+	tbAwardTemplet:GiveAwardByList({{szName = "Xu",tbProp={4,417,1,1,0,0},nCount=5000,},}, "test", 1);
+	Msg2SubWorld("Chóc mõng ®¹i hiÖp <color=green>"..GetName().."<color> ®· sö dông <color=yellow>Qu¶ Hoµng Kim<color> nhËn ®­îc rÊt nhiÒu ®iÓm kinh nghiÖm + 1000 Xu")
 	return 0
 end
 

@@ -41,53 +41,53 @@ WLLS_MAX_COUNT	= 200	--Ã¿¸ö×¼±¸³¡×î¶àÈİÄÉ¶àÉÙÕ½¶Ó
 
 WLLS_MATCHTIME	= 15	--Ã¿³¡±ÈÈüµÄÊ±¼ä£¨·ÖÖÓ£©
 
-WLLS_LEVEL_DESC = {"ÎäÁÖÁªÈü", "ÎäÁÖÁªÈü"}
+WLLS_LEVEL_DESC = {"Vâ l©m liªn ®Êu", "Vâ l©m liªn ®Êu"}
 WLLS_LingQi_PerCOUNT = 4
 WLLS_TYPE = {
 	{
-		name = "Ë«ÈËÈü",	-- ÁªÈüÀàĞÍÃû³Æ
+		name = "Song ®Êu tù do",	-- ÁªÈüÀàĞÍÃû³Æ
 		max_member = 2,		-- Õ½¶Ó×î´ó³ÉÔ±Êı
 		ladder = 10196,		-- ÅÅÃûÆğÊ¼ID
 		mtypes = 2,			-- ¸ÃÁªÈüÀàĞÍÖĞµÄÕ½¶ÓÀàĞÍÊıÄ¿£¨¼´ÊÇ×îÖÕÅÅĞĞ°ñÊıÁ¿£©
 		groups = 8,			-- Í¬ÀàĞÍµÄÕ½¶Ó¿ÉÒÔ±»·ÖÅäµ½¶àÉÙÌ×²»Í¬µÄ³¡µØ
 	},
 	{
-		name = "µ¥ÈËÈü",
-		max_member = 1, --??n ?¨ºu m?n ph?i
+		name = "§¬n ®Êu m«n ph¸i",
+		max_member = 1,
 		ladder = 10201,
 		mtypes = 20,
 		groups = 1,
 	},
 	{
-		name = "Ê¦Í½Ë«ÈËÈü",
+		name = "Song ®Êu s­ ®å",
 		max_member = 2,
 		ladder = 10221,
 		mtypes = 2,
 		groups = 8,
 	},
 	{
-		name = "ÈıÈËÈü",
-		max_member = 3, -- tam ?¨ºu
+		name = "Tam ®Êu tù do",
+		max_member = 3,
 		ladder = 10223,
 		mtypes = 2,
 		groups = 8,
 	},
 	{
-		name = "×ÔÓÉµ¥ÈËÈü",
-		max_member = 1, -- ??n ?¨ºu t¨´ do
+		name = "§¬n ®Êu tù do",
+		max_member = 1,
 		ladder = 10235,
 		mtypes = 2,
 		groups = 8,
 	},
 	{
-		name = "Ë«ÈËÈü£¨Í¬Ïµ£©",
+		name = "Song ®Êu cïng hÖ",
 		max_member = 2,
 		ladder = 10238,
 		mtypes = 10,
 		groups = 1,
 	},
 	{
-		name = "Ë«ÈËÈü",
+		name = "Song ®Êu tù do", -- ch­a biet dŞch sao
 		max_member = 2,
 		ladder = 10248,
 		mtypes = 2,

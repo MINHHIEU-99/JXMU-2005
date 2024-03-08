@@ -1,0 +1,27 @@
+--description: сююжуР_еёеёбХ
+--author: wangzg
+--date: 2003/7/18
+--modify 2003/7/21 wangzg
+--update 2003/7/22 yuanlan
+-- Update: Dan_Deng(2003-08-07)
+
+function main(sel)
+	UTask_world37=GetTask(65)
+	if ((UTask_world37==0) and (GetLevel() >= 2)) then		-- р╙гС╣х╪╤Ё╛╧Щ2╪╤
+		Say("LMT43нр╪реёеёр╩лЛ╣╫мМк╣р╙х╔╣╠╢Союё╛ожтзсж╡╩ж╙╣юеэ╣╫ддх╔акё╛уФйг╪╠кюхкакнр╪реёеёр╩лЛ╣╫мМк╣р╙х╔╣╠╢Союё╛ожтзсж╡╩ж╙╣юеэ╣╫ддх╔акё╛уФйг╪╠кюхкак",2,"╢Си╘╠П╣ёпдё╛нр╟ОдЦур/yes", "╡╩х╔ур/no")
+	elseif (UTask_world37==2) then
+		Talk(1,"","LMT44╢Си╘╠П╣ёпдё╛нр╟ОдЦур")
+	else
+		Talk(1,"","LMT45╣╫╢╕╤╪╡╩л╚ф╫ё╛╨╒вссж╡╩лЩ╩╟ё╛уФйг╡ыпд╟║!")
+	end
+end;
+
+function yes()
+	Talk(1,"","дLMT46ЦуФйг╨цхкё╛╬мбИ╥ЁдЦ╟Оц╕ак")
+	SetTask(65,2)
+	AddNote("LMT47╫схннЯё╨╟ОеёеёбХур╨╒вс")
+	Msg2Player("╫схннЯё╨╟ОеёеёбХур╨╒вс")
+end
+
+function no()
+end

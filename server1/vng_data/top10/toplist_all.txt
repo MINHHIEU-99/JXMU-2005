@@ -1,2 +1,0 @@
-Name	CurrentLevel	CurrentExpPercent	TotalExp	MonPhai	Time
-

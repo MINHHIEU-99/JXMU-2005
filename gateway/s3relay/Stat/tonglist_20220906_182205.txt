@@ -1,0 +1,8 @@
+TongCount=6, MemberCount=542, UnionCount=0
+TongName	MasterName	TongLevel	TongExp	SelfCamp	AllMemberCount	DirectorCount	ManagerCount	MemberCount	BuildLevel	MoneyFund	BuildFund	WarBuildFund	MaintainFund	StoredOffer	StoredBuildFund	UnionNum	UnionName	IsUnionLeader	UnionCamp
+hoangkim	g45ggfd	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0		0	0
+H¾cÙLong	VoLamHoangKim	15	242880	2	42	0	0	41	0	542431210	211952	7936	0	323144	0	0		0	0
+Long	Ù§·ÙB¸ng	6	36360	3	31	0	3	27	0	0	263610	2405	0	31405	0	0		0	0
+ÙT	PaNaDol	8	65160	3	27	3	8	15	0	3785000	12922	5478	0	61203	0	0		0	0
+Ph¸	…Trïm•Xãm•§Ü…Ù	10	114480	1	257	4	29	223	0	1305469174	5910377	11729031	0	370169	108969	0		0	0
+HïngB¸	•QuúnhÄTrang•	14	207120	2	184	6	12	165	0	1452690130	755647	156864	0	517941	192198	0		0	0

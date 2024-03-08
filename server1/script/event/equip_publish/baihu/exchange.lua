@@ -21,10 +21,10 @@ local tbFormula2 =
 {
 	szName = "B¹ch Hæ LÖnh",
 	tbMaterial = {{szName="Phong V©n Th¹ch",tbProp={6,1,30224,1,0,0},nCount = 10,},},
-	tbProduct =0, -- {szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},},
+	tbProduct = {szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},},
 	nWidth = 1,
 	nHeight = 1,
 	nFreeItemCellLimit = 1,
 }
 local tbCompose_PVT2BHL = tbActivityCompose:new(tbFormula2, "DungPhongVanThachDoiBachHoLenh")
--- pEventType:Reg("Hµng rong", "§æi B¹ch Hæ LÖnh", tbCompose_PVT2BHL.ComposeDailog, {tbCompose_PVT2BHL})
+--pEventType:Reg("Hµng rong", "§æi B¹ch Hæ LÖnh", tbCompose_PVT2BHL.ComposeDailog, {tbCompose_PVT2BHL})

@@ -1,96 +1,145 @@
--- ∆Ê’‰∏Û¥Ú∞¸ŒÔ∆∑
--- Last edited by Giangleloi WwW.ClbGamesVN.Com
+-- Script edit by McTeam mo vat pham ky tran cac
+IncludeLib("SETTING")
+Include("\\script\\dailogsys\\dailogsay.lua")
+Include("\\script\\lib\\awardtemplet.lua")
+Include("\\script\\global\\fuyuan.lua")
 
+Include("\\script\\lib\\awardtemplet.lua");
 Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\task\\system\\task_string.lua");
+
+
+Include("\\script\\global\\tieungao\\quanlygame.lua");
+Include("\\script\\global\\tieungao\\superquanlygame.lua");
+
 IncludeLib("ITEM")
+
+Include("\\script\\global\\tieungao\\hotrothemtieungao.lua");
+
 function main(nItemIndex)
+	
+	
+	--dofile("script/item/market_pack.lua");
+	--dofile("script/global/tieungao/quanlygame.lua");
+	--dofile("script/global/tieungao/superquanlygame.lua");
+	--dofile("script/global/tieungao/hotrothemtieungao.lua");
+
 	local G,D,P,nLevel = GetItemProp(nItemIndex);
 	local nExPiredTime = ITEM_GetExpiredTime(nItemIndex);
 	local nLeftTime = nExPiredTime - GetCurServerTime();
+
+
+	--Msg2Player("G= "..G.." D= "..D.." P= "..P.." nLevel ="..nLevel.." nExPiredTime= "..nExPiredTime.."nLeftTime="..nLeftTime.."")
+
+
 	if nExPiredTime ~= 0 and nLeftTime <= 60 then
-		Msg2Player("VÀt ph»m Æ∑ h’t hπn sˆ dÙng!")
+		Msg2Player("VÀt ph»m Æ∑ qu∏ hπn sˆ dÙng")
 		return 0;
 	end
 	nLeftTime = floor((nLeftTime)/60);
+	
 	if (G ~= 6) then
 		return 1;
 	end
+	
 	if CalcFreeItemCellCount() < 6 then
-		CreateTaskSay({"C«n ›t nh t 6 ´ trËng mÌi c„ th” nhÀn vÀt ph»m",  "ß” ta sæp x’p lπi./Cancel",});
+		CreateTaskSay({"Xin h∑y sæp x’p lπi hµnh trang! NhÌ Æ” trËng 6 ´ trÎ l™n nh–!",  "ß≠Óc rÂi./Cancel",});
 		return 1;
 	end
+	
 	-- ‘¿ÕıΩ£
-	if P == 2340 then -- Nhπc V≠¨ng Ki’m l‘ bao
+	if P == 2340 then
 		local tbAwardItem = {tbProp={4,195,1,1,0,0}}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end	
+	
 	-- —™’Ω¡Ó∆Ï
-	if P == 2401 then -- Huy’t Chi’n L÷nh K˙ L‘ HÈp
+	if P == 2401 then
 		local tbAwardItem = {tbProp={6,1,2212,1,0,0},nExpiredTime=nLeftTime,}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end	
-	-- …± ÷Ôµ Ω⁄»’¿Ò∑˛
-	if P == 2335 or P == 2336 or P == 2337 or P == 2338 or P == 2339 then -- Thanh Tuy÷t Y l‘ hÈp, B®ng Tinh Qu«n l‘ hÈp, Kinh Thi™n Gi∏p l‘ hÈp, Kh p ßﬁa Qu«n l‘ hÈp, S∏t ThÒ Gi∂n l‘ hÈp
+	
+	-- Mo sat thu gian le hop
+	if P == 2339 then
 		SelectSeries(P)
 		return 1;
 	end
-	-- ±ºœ¸
-	if P == 2328 then -- M∑ bµi - X›ch thË
-		local tbAwardItem = {tbProp={0,10,5,2,5,0}}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+
+	-- Phi van
+	if P == 2396 then
+		local tbAwardItem = {tbProp={0,10,8,1,5,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 2329 then -- M∑ bµi - ß›ch L´
-		local tbAwardItem = {tbProp={0,10,5,4,5,0}}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+
+	-- Xich tho
+	if P == 2328 then
+		local tbAwardItem = {tbProp={0,10,5,2,0,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 2330 then -- M∑ bµi - Tuy÷t ∂nh
-		local tbAwardItem = {tbProp={0,10,5,8,5,0}}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+	
+	--  Bon tieu
+	if P == 2333 then
+		local tbAwardItem = {tbProp={0,10,6,1,5,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 2331 then -- M∑ bµi - § V©n ßπp Tuy’t
-		local tbAwardItem = {tbProp={0,10,5,6,5,0}}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+	-- sat thu gian
+	if P == 4348 then
+		local tbAwardItem = {tbProp={6,1,400,90,nSeries,0}, nCount = 5}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 2332 then -- M∑ bµi - Chi’u Dπ Ng‰c S≠ Tˆ
-		local tbAwardItem = {tbProp={0,10,5,10,5,0}}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+	-- O van dap tuyet
+	if P == 2331 then
+		local tbAwardItem = {tbProp={0,10,5,1,5,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 2333 then -- M∑ bµi - B´n Ti™u
-		local tbAwardItem = {tbProp={0,10,6,10,5,0}, nExpiredTime = 42800}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+
+	-- Chieu da ngoc su tu
+	if P == 2332 then
+		local tbAwardItem = {tbProp={0,10,5,5,0,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 2334 then -- M∑ bµi - Phi™n VÚ
-		local tbAwardItem = {tbProp={0,10,7,10,5,0}, nExpiredTime = 42800}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+
+	-- Ngua Phien vu
+	if P == 2334 then
+		local tbAwardItem = {tbProp={0,10,7,1,5,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	-- ∑…‘∆
-	if P == 2396 then -- M∑ bµi - Phi V©n
-		local tbAwardItem = {tbProp={0,10,8,10,5,0}, nExpiredTime = 42800}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+
+	-- Dich lo
+	if P == 2338 then
+		local tbAwardItem = {tbProp={0,10,5,4,0,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 3416 then -- M∑ Bµi - Xich long cau
-		local tbAwardItem = {tbProp={0,10,15,10,5,0}, nExpiredTime = 42800}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+
+	-- Tuyet anh
+	if P == 2330 then
+		local tbAwardItem = {tbProp={0,10,5,3,0,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
-	if P == 3483 or P == 4064 then -- M∑ Bµi - Si™u Quang
-		local tbAwardItem = {tbProp={0,10,13,10,5,0}, nExpiredTime = 42800}
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
+
+	-- Dich lo
+	if P == 2329 then
+		local tbAwardItem = {tbProp={0,10,5,4,0,0}}
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "MÎ ra vÀt ph»m mua Î K˙ Tr©n C∏c");
 		return 0;
 	end
+
+	return 1
 end
+
 -- —°‘ÒŒÂ––
+
 function SelectSeries(nP)
 	local tbTaskSay = {"<dec>Vui lﬂng ch‰n thuÈc t›nh:",
 						format("Kim/#GetSeries(%d, %d)", nP, 0),
@@ -103,8 +152,17 @@ function SelectSeries(nP)
 end
 
 function GetSeries(nP, nSeries)
-	if ConsumeItem(3, 1, 6, 1, nP, -1) ~= 1 then
-		Msg2Player("Kh u trı vÀt ph»m th t bπi.")
+	local tbTaskSay = {}
+	local result_isgm = isgm();
+	local result_super_isgm = issupergm();
+	if result_super_isgm == 1 or result_isgm == 1 then
+		tinsert(tbTaskSay,"GM V´ h÷ ./gmhotro")
+		tinsert(tbTaskSay,"Super GM V´ h÷ ./supergmhotro")
+	tinsert(tbTaskSay,"ß” sau ./Quit")
+	Say("Ch‰n ngÚ hµnh:", getn(tbTaskSay), tbTaskSay)
+end
+	if ConsumeItem(3, 1, 6, 1, nP, 1) ~= 1 then
+		Msg2Player("Kh u trı vÀt ph»m th t bπi")
 		return
 	end
 	-- «Âæ¯“¬
@@ -136,7 +194,7 @@ function GetSeries(nP, nSeries)
 		
 	-- …± ÷Ôµ
 	if nP == 2339 then -- S∏t ThÒ Gi∂n l‘ hÈp
-		local tbAwardItem = {tbProp={6,1,400,90,nSeries,0}, nCount = 1}
+		local tbAwardItem = {tbProp={6,1,400,90,nSeries,0}, nCount = 5}
 		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhÀn Æ≠Óc vÀt ph»m!");
 		return
 	end	

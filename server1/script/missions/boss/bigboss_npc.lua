@@ -1,6 +1,5 @@
-
+---------------------------------***Edit*By*Heart*Doldly***------------------------------------
 function OnDeath()
---AddEnergy(1000)
 end
 
 function OnTimer(nNpcIndex, nTimeOut) 

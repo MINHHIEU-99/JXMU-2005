@@ -8,7 +8,6 @@
 
 --Include("\\script\\task\\newtask\\newtask_head.lua")
 Include("\\script\\task\\task_award_extend.lua")		--ÈÎÎñÖĞ½±ÀøµÄÀ©Õ¹½Å±¾
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 
 -- DescribÍ¼Æ¬ÃèÊö
 DescLink_NieShiChen = "<#><link=image[147,167]:\\spr\\npcres\\enemy\\enemy154\\enemy154_pst.spr>NhiÕp Thİ TrÇn:<link>";
@@ -18,8 +17,8 @@ TSKID_KILLERMAXCOUNT =	1193;	--Ã¿ÌìÉ±ÈË´ÎÊı
 TSKID_KILLTASKID_SPE =	1793;	-- ÊÇ·ñ½ÓÊÜ¸ß¼¶É±ÊÖÈÎÎñ	-- ÊÕ·Ñ°æ²»ÓÃ
 TSKID_KILLERDATE_SPE =	1794;	--½Ó¸ß¼¶É±ÊÖÈÎÎñÊ±µÄÈÕÆÚºÍ´ÎÊı	-- ÊÕ·Ñ°æ²»ÓÃ
 
+KILLER_MAXCOUNT		= 8;	--Ã¿ÌìÉ±ÈËÉÏÏŞ8ÈË
 
-KILLER_MAXCOUNT		= SoLuongBossSatThuTrongNgay;	--Ã¿ÌìÉ±ÈËÉÏÏŞ8ÈË
 
 -- ÕıÖĞĞ°ÕóÓª¶¨Òå
 NT_Camp_Zheng 	= 0
@@ -80,5 +79,6 @@ function AddGoldItem(index)
 	elseif (index == 174) then
 	elseif (index == 175) then
 	elseif (index == 176) then
+
 	end
 end;

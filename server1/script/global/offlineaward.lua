@@ -145,7 +145,7 @@ function OfflineAward:CalcExp(type, itr, level, tran_count)
 		return 0
 	end
 	local exp = tb[index] * itr
-	return exp
+	return 0
 end
 
 function dlg_menu(player)
@@ -233,7 +233,7 @@ function action_takefreeexp()
 					lowtime,
 					player:GetLevel(),
 					player:GetTransLifeCount())
-	player:StackExp(exp)
+	-- player:StackExp(exp)
 	player:ClearOfflineLowTime()
 end
 
@@ -322,7 +322,7 @@ end
 	end
 	local use_time = inf.Time * count
 	local exp = OfflineAward:CalcExp(type, use_time, player:GetLevel(), player:GetTransLifeCount())
-	player:StackExp(exp)
+	-- player:StackExp(exp)
 	player:ReduceOfflineAdvTime(use_time)
 	WriteLog(format("[OFFLINEAWARD]%s(%s) use %s(%d), get exp(%d)",
 		player:GetAccount(),
@@ -348,6 +348,9 @@ function apply_usejiutianyunyou(count)
 end
 
 function login(playerindex, exchange)
+	if 1==1 then
+	return
+	end
 	local player = Player:New(playerindex)
 	if (exchange == 0) then
 		OfflineAward:Login(player)
@@ -362,5 +365,5 @@ function logout(playerindex)
 end
 
 if GetTripMode() ~= TRIP_MODE_SERVER then
-	--AddLoginFileFunction("\\script\\global\\offlineaward.lua", "login")
+	AddLoginFileFunction("\\script\\global\\offlineaward.lua", "login")
 end

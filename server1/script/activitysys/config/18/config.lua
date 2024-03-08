@@ -1,12 +1,11 @@
 Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\misc\\taskmanager.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 
 
 -------局部变量定义 开始---------
-local nCloseDate		= 20240816
-local nCloseTime		= 202408160000
-local nItemUseDate		= 20240823
+local nCloseDate		= 20100816
+local nCloseTime		= 201008160000
+local nItemUseDate		= 20100823
 local nTask_LittleWord		= 1
 local nTask_MiddleWord		= 2
 local nTask_FightToken_ChenDu		= 3
@@ -24,7 +23,7 @@ tbConfig[1] = --一个细节
 	nId = 1,
 	szMessageType = "ServerStart",
 	szName = "Loading NPC",
-	nStartDate = TrungThu2010.nStartDate,
+	nStartDate = nil,
 	nEndDate  = nCloseTime,
 	tbMessageParam = {nil},
 	tbCondition = 

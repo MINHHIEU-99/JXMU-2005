@@ -1,9 +1,3 @@
--- Ñ×µÛ±¦²Ø
--- by Ð¡ÀË¶à¶à
--- 2007.10.24
--- ÎÒ..
--- ÕýÔÚ³¢ÊÔ×Å..
--- Ñ°ÕÒ×ÅÊôÓÚÎÒµÄÌìµØ..
 Include("\\script\\missions\\yandibaozang\\npc.lua")
 Include("\\script\\missions\\yandibaozang\\include.lua")
 Include("\\script\\missions\\yandibaozang\\saizi.lua")
@@ -11,10 +5,8 @@ Include("\\script\\missions\\yandibaozang\\readymap\\include.lua")
 Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
 Include("\\script\\lib\\awardtemplet.lua")
-Include("\\script\\missions\\yandibaozang\\doubleexp.lua")
---Phong V©n LÖnh Bµi tæ ®éi hæ trî t©n thñ - Modified By DinhHQ - 20110916
---Include("\\script\\activitysys\\config\\1005\\partysupport.lua")
-
+Include("\\script\\task\\task_addplayerexp.lua")
+--------------------------------------------------------------------
 function YDBZ_award(index,ntype,nplayindex)
 	local x, y, world = GetNpcPos(index);
 	for x1,y1 in YDBZ_tbaward_item[ntype] do
@@ -48,13 +40,10 @@ function YDBZ_fun_award_byCount(nCount, szMsg)
 	szMsg = szMsg or ""
 	local szLogTitle = format("%s award",szMsg)
 	tbAwardTemplet:Give(tbAward, nCount, {"YDBZ", szLogTitle})
+	Msg2Player("<color=yellow>Chóc mõng "..GetName().."nhËn ®­îc<color=yellow><Viªm §Õ BÝ B¶o><color>")
 end
 
--- 2011.03.23 ´³Ò»¹Ø»ñµÃ1Ñ×µÛ±¦Ïä
 function YDBZ_fun_award_ydmibao(camp, nnpcway)
-	--Phong V©n LÖnh Bµi tæ ®éi hæ trî t©n thñ - Modified By DinhHQ - 20110916
-	local tbAllPlayers = {}
-	
 	local idx= 0
 	local nCount = 1
 	local pidx,nj, nTeamSize = GetTeamSize()
@@ -67,20 +56,13 @@ function YDBZ_fun_award_ydmibao(camp, nnpcway)
 			if (mod(nnpcway,2) == 0) then
 				CallPlayerFunction(pidx,YDBZ_fun_award_byCount, nCount, sMsg)
 			end
-			
-			--Phong V©n LÖnh Bµi tæ ®éi hæ trî t©n thñ - Modified By DinhHQ - 20110916
-			tbAllPlayers[getn(tbAllPlayers) + 1] = pidx
-			
 		end
 		if (idx == 0) then
 			break
 		end
 	end
-	
-	--Phong V©n LÖnh Bµi tæ ®éi hæ trî t©n thñ - Modified By DinhHQ - 20110916
---	tbPVLB_PtSpprt:YDBZAward(nnpcway, tbAllPlayers)
 end
-
+--------------------------------------------------------------PhÇn Th­ëng Qua ¶i---------------------------------------------------------------------------------------------
 function YDBZ_fun_award_exp(camp,ns)
 	local idx= 0
 	local pidx,nj
@@ -91,26 +73,34 @@ function YDBZ_fun_award_exp(camp,ns)
 				PlayerIndex = pidx
 				if ns == 1 then
 					local nexp = YDBZ_AWARD_EXP
+					for i = 1, getn(Master.tbAward[10][1][1]) do
+						tbAwardTemplet:GiveAwardByList(Master.tbAward[10][1][1][i],"PhÇn Th­ëng Qua ¶i Viªm §Õ")
+					end
 					local szdstr = ""
 					if YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,1) == 1 then
-						 nexp = YDBZ_AWARD_EXP * 2 
-						 szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
+						nexp = YDBZ_AWARD_EXP*2
+						for i = 1, getn(Master.tbAward[10][1][2]) do
+							tbAwardTemplet:GiveAwardByList(Master.tbAward[10][1][2][i],"PhÇn Th­ëng X2 Qua ¶i Viªm §Õ")
+						end 
+						szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
 					end
-					nexp = YDBZ_checkdoubleexp(nexp)
-					AddOwnExp(nexp)
-					Msg2Player(format("%s chóc mõng v­ît ¶i thø nhÊt, thu ®­îc <color=yellow>%s<color> kinh nghiÖm",szdstr,nexp))
-					Msg2SubWorld(format("V­ît ¶i <color=yellow>Viªm §Õ<color> ®ang giao tranh quyÕt liÖt. Chóc mõng tæ ®éi ®· qua ¶i"))					
+					--tl_addPlayerExp(nexp)
+					Msg2Player(format("%s Chóc Mõng Tæ §éi §· V­ît Qua 1 ¶i B¶o Tµng Viªm §Õ",szdstr))
 				elseif ns == 2 then
 					local nexp = YDBZ_Faninl_AWARD_EXP
+					for i = 1, getn(Master.tbAward[10][2][1]) do
+						tbAwardTemplet:GiveAwardByList(Master.tbAward[10][2][1][i],"PhÇn Th­ëng Boss ¶i 10 Viªm §Õ")
+					end
 					local szdstr = ""
 					if YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,1) == 1 then
-						 nexp = YDBZ_Faninl_AWARD_EXP * 2 
-						 szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
+						nexp = YDBZ_Faninl_AWARD_EXP*2 
+						for i = 1, getn(Master.tbAward[10][2][2]) do
+							tbAwardTemplet:GiveAwardByList(Master.tbAward[10][2][2][i],"PhÇn Th­ëng Boss ¶i 10 Viªm §Õ")
+						end
+						szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
 					end
-					nexp = YDBZ_checkdoubleexp(nexp)
-					AddOwnExp(nexp)
-					Msg2Player(format("%s chóc mõng tæ ®éi ®· giÕt thµnh c«ng 1 boss cã né khÝ, thu ®­îc <color=yellow>%s<color> kinh nghiÖm",szdstr,nexp))
-					Msg2SubWorld(format("Chóc mõng tæ ®æi ®· giÕt thµnh c«ng boss trong <color=yellow>Viªm §Õ B¶o Tµng<color>"))					
+					--tl_addPlayerExp(nexp)
+					Msg2Player(format("%s Chóc Mõng Tæ §éi §· Tiªu DiÖt Thµnh C«ng 1 Boss Cã Né KhÝ T¹i ¶i 10 B¶o Tµng Viªm §Õ",szdstr))
 				end
 		end
 		if (idx == 0) then
@@ -119,14 +109,12 @@ function YDBZ_fun_award_exp(camp,ns)
 	end
 	PlayerIndex = oldplayer
 end
---ÅÅÐÐ°ñ
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function YDBZ_savepaihang(camp)
-	
 	local teamname = GetMissionS(camp)
 	local nstate = GetMissionV(YDBZ_VARV_STATE)
 	local laddertime = YDBZ_LIMIT_FINISH - ( ((nstate-4)* YDBZ_LIMIT_BOARDTIME) + floor(GetMSRestTime(YDBZ_MISSION_MATCH,YDBZ_TIMER_MATCH)/18) )
 	local bfind = 0
-	--print("ÅÅÐÐ°ñ:"..laddertime.." state:"..nstate.."relast:"..GetMSRestTime(YDBZ_MISSION_MATCH,YDBZ_TIMER_MATCH))
 	local nteamsum = GetMissionV(YDBZ_TEAM_SUM)
 	if nteamsum < 3 then
 		return laddertime
@@ -151,8 +139,6 @@ function YDBZ_savepaihang(camp)
 	return laddertime
 end
 
--- todo
--- ½«40¸öÑ×µÛÃØ±¦Ëæ»ú·ÖÅä£¬·¢¸ø¶ÓÎéÀïµÄÈË
 function YDBZ_award_finalboss_ex(camp, nTotalCount)
 	local nNum = {}
 	local nSize = GetMSPlayerCount(YDBZ_MISSION_MATCH, camp)
@@ -179,135 +165,56 @@ function YDBZ_award_finalboss_ex(camp, nTotalCount)
 	end
 	
 end
-
-function YDBZ_award_finalboss(camp)
+---------------------------------------------------------PhÇn Th­ëng Boss Cuèi---------------------------------------------------------
+function YDBZ_award_finalboss(camp)	
 	local idx= 0
 	local pidx,nj
 	local nplaynum = 0
-	
-	-- GiÕt Boss cuèi tÝnh n¨ng viªm ®Õ - Modified - by DinhHQ 20120314
-	local tbAward = YDBZ_tbaward_item[4]
-	local szLogTitle = "GietBossCuoiTinhNangViemDe"
+	local tbAward_Item = YDBZ_tbaward_item[4]
+	local szLogTitle = "PhÇn Th­ëng Tiªu DiÖt L­­ìng Mi Nhi"
 	local oldplayer = PlayerIndex
 	for nj = 1, 10 do
 		idx , pidx = GetNextPlayer(YDBZ_MISSION_MATCH, idx,camp );
 		if (pidx > 0) then
 			PlayerIndex = pidx
-			tbAwardTemplet:Give(tbAward, 1, {"YDBZ", szLogTitle})
-			nexp = YDBZ_checkdoubleexp(20e6)
-			AddOwnExp(nexp)
-			AddItem(6,1,4690,1,0,0)
---			AddItem(6,1,4690,1,0,0)			
-			Msg2Player(format("<color=red>V­ît ¶i Viªm §Õ ®ang diÔn ra hÕt søc c¨ng th¼ng ®éi ngò ®· hoµn thµnh v­ît ¶i nhËn ®­îc vËt phÈm quý <color><color=yellow>LÖnh Bµi ChiÕn M·<color> %s kinh nghiÖm<color=yellow>.<color>",nexp))	
-			Msg2SubWorld(format("<color=red>V­ît ¶i Viªm §Õ ®ang diÔn ra hÕt søc c¨ng th¼ng ®éi ngò ®· hoµn thµnh v­ît ¶i nhËn ®­îc vËt phÈm quý <color><color=yellow>LÖnh Bµi ChiÕn M·<color> %s kinh nghiÖm<color=yellow>.<color>",nexp))					
+			for i = 1, getn(Master.tbAward[10][4]) do
+				tbAwardTemplet:GiveAwardByList(Master.tbAward[10][4][i],"PhÇn Th­ëng Boss Cuèi L­ìng Mi Nhi")
+                                 SetTask(5138,GetTask(5138)+1)
+			end
+			
 		end
 		if (idx == 0) then
 			break;
 		end;
 	end
 	PlayerIndex = oldplayer
---	local oldplayer = PlayerIndex
---	for nj = 1, 10 do
---		idx , pidx = GetNextPlayer(YDBZ_MISSION_MATCH, idx,camp );
---		if (pidx > 0) then
---				PlayerIndex = pidx
---				nplaynum = nplaynum + 1
---				--AddOwnExp(YDBZ_AWARD_EXP)
---				local tbawarditem = {}
---				local y = YDBZ_tbaward_item[4]
---				local nitem = 0
---				for nx,ny in y do 
---					local ncount = 0
---					for i=1,ny[2] do
---						local p = random(1,100)
---						if p <= ny[1] then
---							nitem = nitem + 1
---							local ndoubel = 1
---							if ny[6] == 1 then 
---								if YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,1) == 1 then
---									ndoubel = 2 
---								end
---							end
---							for nx =1 ,ndoubel do
---								local nidx = AddItem(ny[3][1], ny[3][2], ny[3][3], ny[3][4], ny[3][5], ny[3][6]);
---								YDBZ_sdl_writeLog("V­ît ¶i b¶o tµng viªm ®Õ",format("Lóc v­ît ¶i thu ®­îc 1 %s",GetItemName(nidx)))
---							end
---							ncount = ncount + ndoubel
---							--tbawarditem[nx]={}
---							--tbawarditem[nx][1] = ny[5]
---						end
---					end
---					if ncount > 0 then
---						tbawarditem[nitem] = {}
---						tbawarditem[nitem][1] = ny[5]
---						tbawarditem[nitem][2] = ncount
---					end
---					
---				end
---				local szstr = ", <color=yellow> thu ®­îc <color>"
---				for nx,ny in tbawarditem do
---					szstr = szstr .. ny[2] .."c¸i"..ny[1]
---					if nx ~= getn(tbawarditem) then
---						szstr = szstr .."<color=yellow>, <color>" 
---					end
---				end
---				local nexp = YDBZ_KILLLASTBOSS_EXP
---				local szdstr = ""
---				if YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,1) == 1 then
---							nexp = YDBZ_KILLLASTBOSS_EXP * 2 
---							szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
---				end
-		--		nexp = YDBZ_checkdoubleexp(nexp)
---				AddOwnExp(nexp)
---				Msg2Player(format("%s<color=yellow>chóc mõng hoµn thµnh v­ît ¶i viªm ®Õ, thu ®­îc <color>%s kinh nghiÖm %s<color=yellow>.<color>",szdstr,nexp,szstr))
---				Msg2Player(format("Chóc mõng c¸c vÞ ®¹i hiÖp v­ît ¶i Viªm §Õ thµnh c«ng, <color=yellow>30 gi©y<color> sau sÏ ®Èy ra khái b¶n ®å b¶o tµng."))
---		end
---		if (idx == 0) then
---			break;
---		end;
---	end
 	SetMissionV(YDBZ_STATE_SIGN,4)
 	local pname = GetMissionS(camp)
 	local nmapid = SubWorldIdx2ID(SubWorld)
 	broadcast(format("Chóc mõng tæ ®éi %s ®· v­ît ¶i viªm ®Õ thµnh c«ng, thu ®­îc phÇn th­ëng v« cïng quý gi¸.",pname))
 	local ntime = YDBZ_savepaihang(camp)
-	--print(pname,nplaynum,nmapid,camp,ntime)
 	local szstr = format("[V­ît ¶i b¶o tµng viªm ®Õ] thêi gian %s, chiÕn ®éi %s cßn l¹i sè ng­êi %s, sè hiÖu b¶n ®å %s, trËn doanh lµ %s giÕt BOSS cuèi, d­ thêi gian %s gi©y",GetLocalDate("%y-%m-%d %H:%M:%S"),pname,nplaynum,nmapid,camp,ntime) 
 	WriteLog(szstr)
---	PlayerIndex = oldplayer
 	StopMissionTimer(YDBZ_MISSION_MATCH, YDBZ_TIMER_MATCH);	
 	StartMissionTimer(YDBZ_MISSION_MATCH,YDBZ_TIMER_FIGHTSTATE,YDBZ_TIME_WAIT_STATE3 * 18)
-	--
-	--CloseMission(YDBZ_MISSION_MATCH)
 end
---1	1 -10 AÐ¡¹ØÐ¡Boss
---1 11-20 BÐ¡¹ØÐ¡Boss
---1 21-30 CÐ¡¹ØÐ¡Boss
---1 40		 Õù¶áµØ10¸öboss
---1 50		 ×îÖÕ´óboss
---2 1-10		 A¸÷Ð¡¹ØÐ¡¹Ö
---2 11-20		 B¸÷Ð¡¹ØÐ¡¹Ö
---2 21-30		 C¸÷Ð¡¹ØÐ¡¹Ö
+
 function OnDeath(index)
 	local oldworld = SubWorld
 	local x, y,world = GetNpcPos(index);
 	SubWorld = world
 	local nband = GetNpcParam(index,1)
 	local nband2 = GetNpcParam(index,2)
-	--print("mon npc dead! param:"..nband)
-	--print("mon npc dead! param2:"..nband2)
 	local npccount = 0
-	if nband == 0 then												--Ð¡¹Ö
-		local nteam = floor((nband2-1)/10)+1		--¶ÓÎé
-		local npctype = nband2 - 10*(nteam-1)		--ÃÅÅÉ
+	if nband == 0 then
+		local nteam = floor((nband2-1)/10)+1
+		local npctype = nband2 - 10*(nteam-1)
 		local npcallsum = 0
-		--print(nteam,npctype,YDBZ_NPC_ATTRIDX_COUNT,world,YDBZ_NPC_COUNT[nteam])
 		npcallsum = YDBZ_map_npc[npctype][1][YDBZ_NPC_ATTRIDX_COUNT]
 
 		local npccount = GetMissionV(YDBZ_NPC_COUNT[nteam])
 		local npcway = GetMissionV(YDBZ_NPC_WAY[nteam])
 
-		--print(npcallsum,npccount,nteam)
 		if npccount + 1 == npcallsum then
 			SetMissionV(YDBZ_NPC_COUNT[nteam],0)
 			local file = YDBZ_map_posfiles[1][nteam][npcway+1]
@@ -322,9 +229,9 @@ function OnDeath(index)
 			SetMissionV(YDBZ_NPC_COUNT[nteam],(npccount + 1))
 		end
 
-	elseif nband >= 1 and nband <= 30 then	--Ç°10Ð¡¹ØµÄboss¹Ö		
-			local nteam = (floor((nband-1)/10))+1					--¶ÓÎé
-			local npcway = nband - 10*(nteam-1)			--¹Ø
+	elseif nband >= 1 and nband <= 30 then		
+			local nteam = (floor((nband-1)/10))+1
+			local npcway = nband - 10*(nteam-1)
 			
 			local nCount = GetMissionV(YDBZ_NPC_COUNT[nteam])
 			if nCount == 1 then
@@ -336,15 +243,15 @@ function OnDeath(index)
 					return 
 					end
 				end
-			--print("teams:"..nteam.." way:"..npcway)
+			
 			local mapfile = YDBZ_mapfile_trap[nteam][4].."trap"..npcway..".txt"
 			YDBZ_bt_clearzhangai(mapfile)
 			YDBZ_fun_award_exp(nteam,1)
 			
---			YDBZ_fun_award_ydmibao(nteam,npcway)	-- 2011.03.23 Ñ×µÛµ÷Õû
+			-- YDBZ_fun_award_ydmibao(nteam,npcway)
 			YDBZ_award(index,2,PlayerIndex)
 			local teamname = GetMissionS(YDBZ_TEAM_NAME[nteam])
-			local szstr = format("<color=yellow>%s<color>®· thµnh c«ng v­ît ¶i <color=yellow>thø %s<color>.",teamname,npcway)
+			local szstr = format("<color=yellow>%s<color> ®· thµnh c«ng v­ît ¶i <color=yellow>thø %s<color>.",teamname,npcway)
 			if npcway == 10 then
 				szstr = szstr .. "TiÕn vµo n¬i s©u nhÊt cña s¬n ®éng."	
 				else				
@@ -358,7 +265,7 @@ function OnDeath(index)
 				SetMissionV(YDBZ_NPC_COUNT[nteam], nCount-1) 
 			end
 			
-	elseif nband == 40 then							--Õù¶áµØ10¸öboss
+	elseif nband == 40 then
 			npccount = GetMissionV(YDBZ_NPC_BOSS_COUNT)
 			local nteam = GetCurCamp()
 			SetMissionV(YDBZ_NPC_BOSS_COUNT,npccount-1)
@@ -374,17 +281,68 @@ function OnDeath(index)
 				StartMissionTimer(YDBZ_MISSION_MATCH,YDBZ_TIMER_FIGHTSTATE,YDBZ_TIME_WAIT_STATE1*18)
 			end
 
-	elseif nband == 50 then							--×îÖÕ´óboss
-			--local oldplayer = PlayerIndex 
-			--PlayerIndex = index
+	elseif nband == 50 then
 			nteam = GetCurCamp()
-			--print(nteam)
 			YDBZ_award_finalboss(nteam)
-			-- §ãng phÇn th­ëng Viªm §Õ B¶o R­¬ng khi kÕt thóc  Viªm §Õ- Modified - by AnhHH 20110726
-		--	YDBZ_award_finalboss_ex(nteam, 40)	-- É±ËÀ×îÖÕboss£¬ÁìÈ¡±¦Ïä½±Àø£¬Ëæ»ú·ÖÅä40Ñ×µÛÃØ±¦
 			G_ACTIVITY:OnMessage("YDBZ_KillMaxBoss", YDBZ_MISSION_MATCH, nteam);
-		--	PlayerIndex = oldplayer
 	end
 	SubWorld = oldworld
 end
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Master = {}
+Master.tbAward = {
+	[10] = {--PhÇn Th­ëng B¶o Tµng Viªm §Õ
+		[1] = {--PhÇn Th­ëng Qua ¶i
+			[1] = {--x1
+				{szName="TriÖu Kinh NghiÖm",nExp_tl=1000000,nCount=500},
+				-- {szName="Tinh Ngoc",tbProp={6,1,4807,1,0,0},nCount=5},
+				-- {szName="xu",tbProp={4,417,1,1,0,0},nCount=5},
+			},
+			[2] = {--x2
+				{szName="TriÖu Kinh NghiÖm",nExp_tl=2000000,nCount=500},
+		        -- {szName="Tinh Ngoc",tbProp={6,1,4807,1,0,0},nCount=5},
+			},
+		},
+		[2] = {--3 Boss ¶i 10
+			[1] = {--x1
+				{szName="TriÖu Kinh NghiÖm",nExp_tl=1000000,nCount=500},
+		        -- {szName="Tinh Ngoc",tbProp={6,1,4807,1,0,0},nCount=10},
+                 {szName="xu",tbProp={4,417,1,1,0,0},nCount=5},
+			},
+			[2] = {--x2
+				{szName="TriÖu Kinh NghiÖm",nExp_tl=2000000,nCount=500},
+		        -- {szName="Tinh Ngoc",tbProp={6,1,4807,1,0,0},nCount=10},
+                {szName="xu",tbProp={4,417,1,1,0,0},nCount=10},
+			},
+		},
+		[3] = {--GiÕt 1 M¹ng
+			[1] = {--x1
+				{szName="TriÖu Kinh NghiÖm",nExp_tl=1000000,nCount=500},
+			},
+			[2] = {--x2
+				{szName="TriÖu Kinh NghiÖm",nExp_tl=2000000,nCount=500},
+			},
+		},
+		[4] = {--phan thuong boss cuoi
+			--{szName="even fee",tbProp={6,1,30335,1,0,0},nCount=10,nExpiredTime=20220729},
+			{szName="TriÖu Kinh NghiÖm",nExp_tl=2e9,nCount=1},
+			 {szName="xu",tbProp={4,417,1,1,0,0},nCount=1000},
+			-- {szName="Tinh Ngoc",tbProp={6,1,4807,1,0,0},nCount=150},
+			-- {szName="knb",tbProp={4,1496,1,1,0,0},nCount=50},
+			-- {szName = "B¸ch NghÖ Tinh Ngäc",tbProp={6,1,49004,1,0,0},nCount=50},
+			{
 
+		--{szName="§¹i thµnh bÝ kÝp 150 lªn CÊp 21",tbProp={6,1,4345,1,0,0},nCount=1,nRate=5,CallBack= _Message},
+
+		--{szName="§¹i thµnh bÝ kÝp 150 lªn CÊp 22",tbProp={6,1,4346,1,0,0},nCount=1,nRate=2,CallBack= _Message},
+		
+                     }
+             
+		},
+	},
+
+}
+local _Message =  function (nItemIndex)
+local Msg = format("<color=green>Chóc Mõng Cao Thñ <color=yellow>%s<color> §· May M¾n NhËn §­îc <color=violet>[%s]<color>", GetName(), GetItemName(nItemIndex))
+Msg2SubWorld(Msg)
+end

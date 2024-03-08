@@ -1,0 +1,10 @@
+VinhÙSª	=1
+§ÖÙanhÙBÇu	=2
+ÙTigerÙ	=3
+BÇuÙDM4	=4
+AnhÙBÇu	=5
+VinhÙSÖÙVD	=6
+VinhÙSÖÙNM	=7
+NeverÙGiveÙUpÙ1	=8
+VinhÙSÖÙTN	=9
+ShockLaBup	=10

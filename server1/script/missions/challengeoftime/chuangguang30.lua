@@ -1,3 +1,4 @@
+-- ´³¹Øµ÷Õû 2011.03.01
 Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\misc\\eventsys\\eventsys.lua")
 Include("\\script\\missions\\challengeoftime\\npc.lua")
@@ -15,18 +16,16 @@ ChuangGuan30 =
 	tbRegist = {},
 	tbMapList = {[CHUANGGUAN30_MAP_ID] = 1,},
 	nCount = 0,
-	bActive = 0,
+	bActive = 0,			-- bossÊÇ·ñ³öÏÖ
 	nChuangguan30Timeid = nil
 } 
 
-ChuangGuan30.tbForbitItemType =
+ChuangGuan30.tbForbitItemType = --ÖØÔØ Î¥½ûµÀ¾ß
 {
 	"TRANSFER","MATE"
 }
-ChuangGuan30.szMapType = "MËt Phßng cöa ¶i"
+ChuangGuan30.szMapType = "MËt Phßng cöa ¶i" --¸Ä±äµØÍ¼±íÊ¾
 
---Drop Item when kill final boss - Modified By DinhHQ - 20120312
---Give message to all player in map about the lucky award - Modifed by DinhHQ - 20110510
 function AnnounceLuckyAward(strAwardName)		
 	local strMsg = format("Tæ ®éi cña <color=yellow>%s<color> ®· tiªu diÖt thµnh c«ng boss %s, giµnh ®­îc phÇn th­ëng ®Æc biÖt lµ <color=yellow>%s<color>", GetName(), "trong MËt Phßng Cöa ¶i", strAwardName)
 	Msg2Team(strMsg)			
@@ -34,29 +33,17 @@ function AnnounceLuckyAward(strAwardName)
 	AddGlobalNews(strMsg)	
 end
 tbVnItemAwardEx = {
-	-- [1]={-- {szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.5},},
-	-- [2]={-- {szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.5},},
-	-- [3]={-- {szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.5},},
-	-- [4]={-- {szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.5},},
-	-- [5]={-- {szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.5},},
-	-- [6]={-- {szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.5},},
-	-- [7]={-- {szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.5},},
-	-- [8]={-- {szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.3},},
-	-- [9]={-- {szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.3},},
-	-- [10]={-- {szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.2},},
-	-- [11]={--{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.2},},
-	-- [12]={-- {szName="B¶o R­¬ng Kim ¤ Kh«i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.01, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Kh«i") end},},
-	-- [13]={-- {szName="B¶o R­¬ng Kim ¤ Th­îng Giíi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=0.013, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Th­îng Giíi") end},},
-	-- [14]={-- {szName="B¶o R­¬ng Kim ¤ Hµi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.01, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Hµi") end},},
-	-- [15]={-- {szName="B¶o R­¬ng Kim ¤ Yªu §¸i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.0125, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Yªu §¸i") end},},
-	-- [16]={-- {szName="B¶o R­¬ng Kim ¤ Hé UyÓn",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.008, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Hé UyÓn") end},},
-	-- [17]={-- {szName="§å Phæ B¹ch Hæ Kh«i",tbProp={6,1,3173,1,0,0},nCount=1,nRate=0.2},},
-	-- [18]={-- {szName="§å Phæ B¹ch Hæ Béi",tbProp={6,1,3179,1,0,0},nCount=1,nRate=0.2},},
-	-- [19]={-- {szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.05},},
-	[20]={{szName="Long HuyÕt Hoµn",tbProp={6,1,2117,1,0,0},nCount=1,nRate=3,nExpiredTime=20160},},
-	[21]={{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2339,1,0,0},nCount=1,nRate=5,nExpiredTime=10080},},
-	[22]={{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=8,nExpiredTime=20160},},
-	[23]={{szName="Thiªn Long LÖnh",tbProp={6,1,2256,1,0,0},nCount=1,nRate=7.5},},
+	--[1]={{szName="Kim ¤ LÖnh",tbProp={6,1,4837,1,0,0},nCount=100,nRate=0.2},},
+	--[2]={{szName="B¶o R­¬ng Kim ¤ Kh«i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.01, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Kh«i") end},},
+	--[3]={{szName="B¶o R­¬ng Kim ¤ Th­îng Giíi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=0.013, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Th­îng Giíi") end},},
+	--[4]={{szName="B¶o R­¬ng Kim ¤ Hµi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.01, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Hµi") end},},
+	--[5]={{szName="B¶o R­¬ng Kim ¤ Yªu §¸i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.0125, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Yªu §¸i") end},},
+	--[6]={{szName="B¶o R­¬ng Kim ¤ Hé UyÓn",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.008, CallBack = function(nItemIdx, nPlayerIdx)AnnounceLuckyAward("B¶o R­¬ng Kim ¤ Hé UyÓn") end},},
+	--[7]={{szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.05},},
+	--[8]={{szName="Long HuyÕt Hoµn",tbProp={6,1,2117,1,0,0},nCount=1,nRate=3,nExpiredTime=20160},},
+	--[9]={{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2339,1,0,0},nCount=1,nRate=5,nExpiredTime=10080},},
+	--[10]={{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=8,nExpiredTime=20160},},
+	--[11]={{szName="Thiªn Long LÖnh",tbProp={6,1,2256,1,0,0},nCount=1,nRate=7.5},},
 }
 
 function ChuangGuan30:Init()
@@ -69,6 +56,7 @@ end
 function ChuangGuan30:Regist(szType, pFun, ...)
 	local nRegId = EventSys:GetType(szType):Reg(CHUANGGUAN30_MAP_ID, pFun, unpack(arg))
 	self.tbRegist[szType] = self.tbRegist[szType] or {}
+
 	tinsert(self.tbRegist[szType], nRegId)
 end
 
@@ -101,10 +89,14 @@ function ChuangGuan30:SetState()
 end
 
 function ChuangGuan30:OnEnterMap()
+	
+	-- Èç¹ûbossÒÑ¾­³öÏÖÁË£¬Ôò½«Íæ¼ÒÌß»Ø±¨Ãûµã
 	if self.bActive == 1 then
 		self.KickOut()
 	end
-
+	
+	-- ½øÐÐ·Ö×é
+	-- todo£ºµÃµ½½ÇÉ«ÆðÊ¼µØÍ¼£¬¾ßÌåµÄ½Ó¿ÚÊÇÉ¶»¹²»ÖªµÀ wangjingjun
 	local nMapId = GetTask(PLAYER_MAP_TASK)
 	local szName = GetName()
 	self.tbGroup[nMapId] = self.tbGroup[nMapId] or {}
@@ -119,18 +111,24 @@ function ChuangGuan30:OnEnterMap()
 end
 --Add exp award - Modified By DinhHQ - 20120313
 function ChuangGuan30:GiveAward(nGroupId, nCount)
-	if GetTask(PLAYER_MAP_TASK) == nGroupId then
 		local tbPro = {			
-			{szName="§iÓm Kinh NghiÖm",nExp = 10e6},
+		{szName="§iÓm Kinh NghiÖm",nExp = 2e8},
+              
+		-- {szName="Tinh Ngoc",tbProp={6,1,4807,1,0,0},nCount=50},
+                -- {szName="knb",tbProp={4,1496,1,1,0,0},nCount=50},
+                --{szName = "B¸ch NghÖ Tinh Ngäc",tbProp={6,1,49004,1,0,0},nCount=50},
+		--{szName = "B¸ch NghÖ Thiªn Th¹ch",tbProp={6,1,30355,1,0,0},nCount=50},
 		}
-		tbAwardTemplet:GiveAwardByList(tbPro, "jixuchuangguang award", 1)
-		tbAwardTemplet:GiveAwardByList(tbVnItemAwardEx, "jixuchuangguang item award", 1)
-	end
+                --SetTask(5138,GetTask(5138)+1)
+		-- tbAwardTemplet:GiveAwardByList(tbPro, "jixuchuangguang award", 1)
+		-- tbAwardTemplet:GiveAwardByList(tbVnItemAwardEx, "jixuchuangguang item award", 1)
+	        
 end
 
 function ChuangGuan30:KickOut()
+	-- Ìß»Ø±¨Ãûµã
 	SetLogoutRV(0)
-	NewWorld(11,3207,4978)
+	NewWorld(11,3207,4978) -- ³É¶¼Äôß±³¾
 end
 
 function ChuangGuan30:OnLeaveMap()
@@ -138,7 +136,7 @@ function ChuangGuan30:OnLeaveMap()
 	self.tbPlayer[szName] = 0
 	self.nCount = self.nCount - 1
 	SetCurCamp(GetCamp())
-	SetTmpCamp(0)
+	SetTmpCamp(0)							--È¡ÏûÁÙÊ±ÕóÓª
 	SetTaskTemp(200,0)
 	SetFightState(0)
 	SetPunish(1)
@@ -167,6 +165,7 @@ function ChuangGuan30:OnNpcDeath(nNpcIndex, nPlayerIndex)
 
 	local nGroup = CallPlayerFunction(nPlayerIndex, GetTask, PLAYER_MAP_TASK)
 	local nMemberNumber = 0
+	-- ·¢½±£¬ÌßÈË
 	local nCount = AWARD_COUNT	
 
 	for _, szName in(self.tbGroup[nGroup]) do
@@ -174,14 +173,15 @@ function ChuangGuan30:OnNpcDeath(nNpcIndex, nPlayerIndex)
 			local nPlayerIndex = SearchPlayer(szName)
 			if nPlayerIndex > 0 then
 				local nNowCount = random(0, nCount)
-				if nMemberNumber == 1 then
+				if nMemberNumber == 1 then		-- Èôµ±Ç°Îª×îºóÒ»¸öÈË£¬Ôò½«Ê£ÏÂµÄ±¦Ïä¶¼¸øÓë
 					nNowCount = nCount
 				end
+				--Adjust number of awards to 2 - Modified by DinhHQ - 20110504
 				--CallPlayerFunction(nPlayerIndex, self.GiveAward, self, nGroup, nNowCount)
-				CallPlayerFunction(nPlayerIndex, self.GiveAward, self, nGroup, 2)
+				-- CallPlayerFunction(nPlayerIndex, self.GiveAward, self, nGroup, 2)
 			
-				nCount = nCount - nNowCount	
-				nMemberNumber = nMemberNumber - 1
+				nCount = nCount - nNowCount	-- Ê£Óà¿É·ÖÅäµÄ±¦ÏäÊý
+				nMemberNumber = nMemberNumber - 1  -- Ê£ÓàÎ´·ÖÅäµÄÈËÔ±
 			end
 		end
 	end
@@ -213,12 +213,15 @@ function ChuangGuan30:KickOutAll()
 			CallPlayerFunction(nPlayerIndex, self.KickOut, self)
 		end
 	end
+	-- ½«×´Ì¬ÉèÖÃÎªbossÎ´³öÏÖ
 	self.bActive = 0
 	self.tbGroup = {}
 end
 
 function ChuangGuan30:OnAddBoss()
 	local nBossid = random(2,11)
+	-- ´³¹Øµ÷Õû by wangjingjun 2011.03.02
+	-- Ìí¼ÓÐÂµÄnpc£¬¾ßÌåÎ»ÖÃµÄ×ø±ê»¹²»ÖªµÀ
 	local szFile = "\\settings\\maps\\liandandong\\npc_3.txt"
 	local x,y = get_file_pos(szFile, random(2,50), 1)
 	basemission_CallNpc(map_new_Ncp[nBossid], CHUANGGUAN30_MAP_ID, x, y)
@@ -238,6 +241,7 @@ end
 
 function ChuangGuan30:GameTime()
 	if self.nCount == 0 then
+--		WriteLog("µ±Ç°µØÍ¼Ã»ÓÐÍæ¼Ò")
 		return 0
 	end
 	self:OnAddBoss()
@@ -260,6 +264,7 @@ function ChuangGuan30:SetForbitItem()
 end
 
 function ChuangGuan30:AddTime()
+--	WriteLog("ÉèÖÃ¼ÆÊ±Æ÷******************")
 	local nTimeOut = CHUANGGUAN30_TIME_LIMIT + LIMIT_SIGNUP + 60;
 	local nId = SubWorldID2Idx(CHUANGGUAN30_MAP_ID)
 	if (SubWorldID2Idx(CHUANGGUAN30_MAP_ID) >= 0) then
@@ -267,6 +272,8 @@ function ChuangGuan30:AddTime()
 			DelTimer(self.nChuangguan30Timeid)		
 		end
 		self.nChuangguan30Timeid = AddTimer(nTimeOut * 18,"ChuangGuan30:GameTime",0)
+		 
+--		 WriteLog("id = " .. tostring(id) .. "################")
 	end
 end
 

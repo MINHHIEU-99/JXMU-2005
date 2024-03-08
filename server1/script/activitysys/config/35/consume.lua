@@ -7,28 +7,28 @@ pActivity.nPak = curpack()
 pActivity.nTreeCount = 0
 pActivity.MAXTREECOUNT = 5000
 
-function pActivity:UseSUDUNGMAMBACNGUQUA()
-	tbAwardTemplet:Give(tbAwardList["SUDUNGMAMBACNGUQUA"], 1, {EVENT_LOG_TITLE, tbAwardLog["SUDUNGMAMBACNGUQUA"]})
-	tbAwardTemplet:Give(tbAwardList["SUDUNGMAMBACNGUQUA_BAOLIXI"], 1, {EVENT_LOG_TITLE, tbAwardLog["SUDUNGMAMBACNGUQUA_BAOLIXI"]})
+function pActivity:UseWuguobaiyinpan()
+	tbAwardTemplet:Give(tbAwardList["WUGUOBAIYINPAN"], 1, {EVENT_LOG_TITLE, tbAwardLog["WUGUOBAIYINPAN"]})
+	tbAwardTemplet:Give(tbAwardList["WUGUOBAIYINPAN_REDBAG"], 1, {EVENT_LOG_TITLE, tbAwardLog["WUGUOBAIYINPAN_REDBAG"]})
 	
-	self:AddTask(%TSK_USED_SUDUNGMAMBACNGUQUA, 1)
-	local nCount = self:GetTask(%TSK_USED_SUDUNGMAMBACNGUQUA)
-	if tbAwardLog["SUDUNGMAMBACNGUQUA_USED"][nCount] then
-		tbLog:PlayerActionLog(EVENT_LOG_TITLE,tbAwardLog["SUDUNGMAMBACNGUQUA_USED"][nCount])
-		tbVngTransLog:Write("jxmu_event_tet/", 22, tbAwardLog["SUDUNGMAMBACNGUQUA_USED"][nCount], "N/A", 1)
+	self:AddTask(%TSK_USED_WUGUOBAIYINPAN, 1)
+	local nCount = self:GetTask(%TSK_USED_WUGUOBAIYINPAN)
+	if tbAwardLog["WUGUOBAIYINPAN_USED"][nCount] then
+		tbLog:PlayerActionLog(EVENT_LOG_TITLE,tbAwardLog["WUGUOBAIYINPAN_USED"][nCount])
+		tbVngTransLog:Write("201201_event_tet/", 22, tbAwardLog["WUGUOBAIYINPAN_USED"][nCount], "N/A", 1)
 	end
 end
 
-function pActivity:UseSUDUNGMAMNGUQUA()
-	local tbTranslog = {strFolder = "202401_event_tet/", nPromID = 22, nResult = 1}
-	tbAwardTemplet:Give(tbAwardList["SUDUNGMAMNGUQUA"], 1, {EVENT_LOG_TITLE, tbAwardLog["SUDUNGMAMNGUQUA"], tbTranslog})
-	tbAwardTemplet:Give(tbAwardList["SUDUNGMAMNGUQUA_BAOLIXI"], 1, {EVENT_LOG_TITLE, tbAwardLog["SUDUNGMAMNGUQUA_BAOLIXI"]})
+function pActivity:UseWuguohuangjinpan()
+	local tbTranslog = {strFolder = "201201_event_tet/", nPromID = 22, nResult = 1}
+	tbAwardTemplet:Give(tbAwardList["WUGUOHUANGJINPAN"], 1, {EVENT_LOG_TITLE, tbAwardLog["WUGUOHUANGJINPAN"], tbTranslog})
+	tbAwardTemplet:Give(tbAwardList["WUGUOHUANGJINPAN_REDBAG"], 1, {EVENT_LOG_TITLE, tbAwardLog["WUGUOHUANGJINPAN_REDBAG"]})
 	
-	self:AddTask(%TSK_USED_SUDUNGMAMNGUQUA, 1)
-	local nCount = self:GetTask(%TSK_USED_SUDUNGMAMNGUQUA)
-	if tbAwardList["SUDUNGMAMNGUQUA_USED"][nCount] then
-		tbAwardTemplet:Give(tbAwardList["SUDUNGMAMNGUQUA_USED"][nCount], 1, {EVENT_LOG_TITLE, tbAwardLog["SUDUNGMAMNGUQUA_USED"][nCount]})
-		tbVngTransLog:Write("jxmu_event_tet/", 22, "TL"..tbAwardLog["SUDUNGMAMNGUQUA_USED"][nCount], "N/A", 1)
+	self:AddTask(%TSK_USED_WUGUOHUANGJINPAN, 1)
+	local nCount = self:GetTask(%TSK_USED_WUGUOHUANGJINPAN)
+	if tbAwardList["WUGUOHUANGJINPAN_USED"][nCount] then
+		tbAwardTemplet:Give(tbAwardList["WUGUOHUANGJINPAN_USED"][nCount], 1, {EVENT_LOG_TITLE, tbAwardLog["WUGUOHUANGJINPAN_USED"][nCount]})
+		tbVngTransLog:Write("201201_event_tet/", 22, "TL"..tbAwardLog["WUGUOHUANGJINPAN_USED"][nCount], "N/A", 1)
 	end
 end
 
@@ -70,7 +70,7 @@ function pActivity:CheckComposeRedEvelopLimit(nCount)
 		return nil
 	end
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
-	if nNowDate < 202401050000 or nNowDate >= 202401262400 then
+	if nNowDate < 201201050000 or nNowDate >= 201201262400 then
 		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian ®æi th­ëng.")
 		return nil
 	end
@@ -83,14 +83,14 @@ function pActivity:ComposeRedEvelop(strLog, nCount)
 	if nUsedCount + nCurCount > 2 then
 		nCurCount = 2 - nUsedCount
 	end
-	local tbAward = {szName="Bao l× x× ®á",tbProp={6,1,30169,1,0,0}, nCount = nCurCount*5,nExpiredTime=20240127, nBindState = -2,}
+	local tbAward = {szName="Bao l× x× ®á",tbProp={6,1,30169,1,0,0}, nCount = nCurCount*5,nExpiredTime=20120127, nBindState = -2,}
 	PlayerFunLib:AddTaskDaily(2918,nCurCount)
 	tbAwardTemplet:Give(tbAward, 1, {EVENT_LOG_TITLE, strLog})
 end
 
 function pActivity:CheckTimeGetFreeExp()
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
-	if nNowDate < 202311160000 or nNowDate >= 202401172400 then
+	if nNowDate < 201201160000 or nNowDate >= 201201172400 then
 		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian nhËn th­ëng")
 		return nil
 	end
@@ -116,6 +116,6 @@ function pActivity:ComposeDragonMask(nCount)
 	PlayerFunLib:AddTaskDaily(2919,nCurCount)
 	tbAwardTemplet:Give(tbAward, 1, {EVENT_LOG_TITLE, "DoiMatNaRongNhanKinhNghiem"})
 	for i = 1, nCurCount do
-		tbVngTransLog:Write("202401_event_tet/", 22, "DoiMatNaRongNhanKinhNghiem", "10000000 §iÓm kinh nghiÖm", 1)
+		tbVngTransLog:Write("201201_event_tet/", 22, "DoiMatNaRongNhanKinhNghiem", "10000000 §iÓm kinh nghiÖm", 1)
 	end
 end

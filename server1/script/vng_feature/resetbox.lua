@@ -13,7 +13,8 @@ function ResetBox:ShowDialog()
 	self:CheckExpiredDate()
 	
 	if (GetTask(self.TSK_TIME_ASSIGN) <= 0) then
-		tinsert(tbOpt ,"§¨ng ký xãa pass r­¬ng/#ResetBox:AssignResetBox()")
+		tinsert(tbOpt,"§¨ng ký xãa pass r­¬ng/#ResetBox:AssignResetBox()")
+		tinsert(tbOpt,"Xãa Pass R­¬ng Trùc TiÕp/Resetpassbox")
 	end
 	if (GetTask(self.TSK_TIME_ASSIGN) > 0) then
 		if (self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7) == nCurDate) then
@@ -27,12 +28,16 @@ function ResetBox:ShowDialog()
 end
 
 function ResetBox:AssignResetBox()
-	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
-	SetTask(self.TSK_TIME_ASSIGN, nCurDate)
-	local nDate =  self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7)
-	local szDate = mod(nDate, 100) .. "-" .. mod(floor(nDate/100), 100) .. "-" .. floor(nDate/10000)
-	Talk(1, "", "Pass r­¬ng sÏ ®­îc xãa vµo ngµy <color=yellow>" .. szDate  .. "<color>\nNÕu sau 24h ngµy <color=yellow>" .. szDate .. " <color>®¹i hiÖp kh«ng x¸c nhËn th× ®¨ng ký xo¸ pass r­¬ng sÏ bÞ hñy bá!")
-	self:WriteLogResetBox("Reset Pass R­¬ng - §¨ng Ký")
+	if GetBoxLockState() >= 1 then
+		local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+		SetTask(self.TSK_TIME_ASSIGN, nCurDate)
+		local nDate =  self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7)
+		local szDate = mod(nDate, 100) .. "-" .. mod(floor(nDate/100), 100) .. "-" .. floor(nDate/10000)
+		Talk(1,"","Pass r­¬ng sÏ ®­îc xãa vµo ngµy <color=yellow>" .. szDate  .. "<color>\nNÕu sau 24h ngµy <color=yellow>" .. szDate .. " <color>®¹i hiÖp kh«ng x¸c nhËn th× ®¨ng ký xo¸ pass r­¬ng sÏ bÞ hñy bá!")
+		self:WriteLogResetBox("Reset Pass R­¬ng - §¨ng Ký")
+	else
+		Talk(1,"","<color=yellow>Ng­¬i Kh«ng Cã M· R­¬ng Kh«ng ThÓ Xãa")
+	end
 end
 
 function ResetBox:CancelResetBox()
@@ -95,7 +100,29 @@ end
 function nothing()
 
 end
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function Resetpassbox()
+	if GetBoxLockState() >= 1 then
+		Say("<color=yellow>Ng­¬i Muèn Xãa M· R­¬ng Trùc TiÕp §Ó §¶m B¶o Tµi S¶n Yªu CÇu: 300 Kim Nguyªn B¶o",2,"§óng Ta Lµm Míi L¹i M· R­¬ng Ngay LËp Tøc/xoamaruong","Tho¸t/no")
+	else
+		Talk(1,"","<color=yellow>Ng­¬i Kh«ng Cã M· R­¬ng Kh«ng ThÓ Xãa")
+	end
+end
 
+function xoamaruong()
+	if CalcEquiproomItemCount(4,2573,1,1) >= 300 then
+		GMCancleBoxPassword() Say("<color=fire>Chóc Mõng Ng­¬i §· Xãa M· R­ëng Thµnh C«ng Vui Lßng §Æt L¹i M· R­¬ng Míi",2,"§Æt L¹i MËt KhÈu/PassRuong","Th«i/No")
+		ConsumeEquiproomItem(300,4,1496,1,-1)
+	else
+		Talk(1,"", "<color=red>Ng­¬i Kh«ng §ñ 300 Kim Nguyªn B¶o Xin KiÓm Tra L¹i...!<color>")
+	end
+end
+
+function PassRuong()
+OpenBox()
+end
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function ResetBox:WriteLogResetBox(szLogTitle)
 	WriteLog(date("%Y%m%d %H%M%S").."\t".. GetAccount().."\t"..GetName().."\t".. szLogTitle)
 end
+------------------------------------------------------------------------------------------------------------------------------------------

@@ -11,7 +11,7 @@ function BingoMachine:RecvResult(nResult, nRefiningCount, nType, nLevel)
 	if nResult == ROTATE_ERROR_STATUS then
 		Msg2Player("Ng­¬i vÉn ch­a lÜnh th­ëng kh«ng thÓ ®Æt c­îc")
 	elseif nResult == ROTATE_ERROR_PRINING then
-		Msg2Player("TiÒn ®ång cña ng­¬i kh«ng ®ñ") -- Thay B»ng G× Tïy ThÝch
+		Msg2Player("Hçn Nguyªn Linh Lé cña ng­¬i kh«ng ®ñ")
 	end
 	ResultAwardInfo(nResult, nRefiningCount, nType, nLevel);
 end
@@ -31,24 +31,6 @@ function BingoMachine:ApplyAward(nType)
 	ObjBuffer:PushByType(handle, OBJTYPE_STRING, GetSelfName())
 	ObjBuffer:PushByType(handle, OBJTYPE_NUMBER, C2S_OPERATION_AWARD)
 	ObjBuffer:PushByType(handle, OBJTYPE_NUMBER, nType)
-	ScriptProtocol:SendData("emSCRIPT_PROTOCOL_BINGO_MACHINE", handle)
-	OB_Release(handle)
-end
-
-function BingoMachine:ApplyOpenWindon()
-	local handle = OB_Create()
-	ObjBuffer:PushByType(handle, OBJTYPE_STRING, GetSelfName())
-	ObjBuffer:PushByType(handle, OBJTYPE_NUMBER, C2S_OPERATION_OPEN)
-	ObjBuffer:PushByType(handle, OBJTYPE_NUMBER, 0)
-	ScriptProtocol:SendData("emSCRIPT_PROTOCOL_BINGO_MACHINE", handle)
-	OB_Release(handle)
-end
-
-function BingoMachine:ApplyOpenShop()
-	local handle = OB_Create()
-	ObjBuffer:PushByType(handle, OBJTYPE_STRING, GetSelfName())
-	ObjBuffer:PushByType(handle, OBJTYPE_NUMBER, C2S_OPERATION_SHOP)
-	ObjBuffer:PushByType(handle, OBJTYPE_NUMBER, 0)
 	ScriptProtocol:SendData("emSCRIPT_PROTOCOL_BINGO_MACHINE", handle)
 	OB_Release(handle)
 end

@@ -1,6 +1,6 @@
+---------------------------------***Edit*By*Heart*Doldly***------------------------------------
 Include("\\script\\missions\\boss\\bigboss.lua")
 IncludeLib("TASKSYS");
-
 
 function BigBoss:Make_Big_Boss(bossid, bosslvl, series, mapid, posx, posy, bossname, str)
 	local mapidx = SubWorldID2Idx(mapid)

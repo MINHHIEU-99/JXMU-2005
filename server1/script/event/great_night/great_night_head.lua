@@ -3,14 +3,14 @@
 Include("\\script\\missions\\basemission\\lib.lua")
 
 Include("\\script\\misc\\eventsys\\type\\map.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
+
 --Include("\\script\\lib\\gb_taskfuncs.lua");	 				-- By ÁÎÖ¾É½»Ô»ÍÖ®ÖÖ;
 --Include("\\script\\lib\\gb_modulefuncs.lua"); 				-- By ÁÎÖ¾É½»Ô»ÍÖ®ÖÖ;
 
 --ËùÓÐÊý¾Ý·Åµ½Õâ¸ö±íÀï
 tbFruitData = {
 	N_FRUIT_START_DATE = 2011042800,--»î¶¯¿ªÊ¼ÈÕÆÚ
-    N_FRUIT_END_DATE = 2021052900,--»î¶¯½áÊøÈÕÆÚ(º¬)
+    N_FRUIT_END_DATE = 2011052900,--»î¶¯½áÊøÈÕÆÚ(º¬)
     SZ_FRUIT_MAP_NAME = "ChiÕn Long §éng",
     N_FRUIT_MAP_ID = 959,
     --Éú³¤»Æ½ðÖ®¹ûµÄÎ»ÖÃ
@@ -203,6 +203,8 @@ function _ShowSeed(worldidx, mapid, seedlevel, count, tbPos ,szMapName, nBatch)
             	}
 
             	local nNpcIndex = %basemission_CallNpc(tbNpc, nMap, nPosX*32, nPosY*32)
+				--AddTimer(3500* 18, "OnTimeout", nNpcIdx);
+				SetNpcTimer(nNpcIndex, 120*60*18);
             	if nNpcIndex and nNpcIndex > 0 then
             		--nBeginNumber = nBeginNumber + 1
 					--gb_SetTask("»Ô»ÍÖ®ÖÖ",12,nBeginNumber)
@@ -232,11 +234,14 @@ function CheckFruitDate()
 end
 
 --´«ËÍµ½ÐÂÁ½Ë®¶´µØÍ¼£¨²É¼¯»Æ½ðÖ®¹û£©
+Include("\\script\\global\\g7vn\\g7configall.lua")
 function OnGoToNewLiangShuiDong()
-	if ChienLongDong == 0 then
+
+	if chienlongdong == 0 then
 			Say("Chøc n¨ng ChiÕn Long §éng t¹m thêi ch­a më")
 			return
 	end
+
 	if CheckFruitDate() == 1 then
 		local nCount = getn(t.TB_ENTER_POS)
 		local nRand = random(1,nCount)
@@ -290,5 +295,11 @@ function _RegPlayerMapScript()
 	
 	t.nRegIdLeave = EventSys:GetType("LeaveMap"):Reg(t.N_FRUIT_MAP_ID, pPlayer.OnLeaveMap, pPlayer)
 	t.nRegIdEnter = EventSys:GetType("EnterMap"):Reg(t.N_FRUIT_MAP_ID, pPlayer.OnEnterMap, pPlayer)
+end
+
+
+function OnTimeout(nNpcIndex)
+DelNpc(nNpcIndex);
+Msg2SubWorld("<color=white>hÕt thêi gian Tiªu bang héi ®· biÕn mÊt!")
 end
 

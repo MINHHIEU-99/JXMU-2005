@@ -2,7 +2,7 @@
 -- Update: Dan_Deng(2003-08-09)
 -- Update: Dan_Deng(2003-11-04)改为模板方式，全服统一调用一个函数以利于维护、扩展
 
-Include("\\script\\npcmonphai\\vosumocnhan.lua")
+Include("\\script\\global\\各派接引弟子\\轻功_木人模板.lua")
 
 function OnDeath()
 	learn()

@@ -1,6 +1,6 @@
--- TiÓu §Æng Tö ë T­¬ng D­¬ng - Editor by AloneScript (Linh Em)
+--ÖÐÔ­ÄÏÇø ÏåÑô¸® ¢·ÈË3Ð¡µË×Ó¶Ô»°
 
-Include("\\script\\lib\\alonelib.lua");
+
 Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\dailogsys\\g_dialog.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
@@ -14,7 +14,7 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>Ta ®· ¨n ch¸o víi khoai h¬n mét tuÇn råi. Gi¸ mµ ¨n ®­îc mét b÷a c¬m no nª nhØ?"..Note("tieudangtu_tuongduong")
+	tbDailog.szTitleMsg = "<#><npc>TiÓu §Æng Tö:Ta ®· ¨n råi mét lÔ b¸i ®Ých hång thù hi c¬m , nÕu nh­ cã thÓ ¨n mét b÷a ®¹i mÔ c¬m , kh«ng biÕt ®­îc cã mÊy h¶o."
 	
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog)
 	--µ¯³ö¶Ô»°¿ò

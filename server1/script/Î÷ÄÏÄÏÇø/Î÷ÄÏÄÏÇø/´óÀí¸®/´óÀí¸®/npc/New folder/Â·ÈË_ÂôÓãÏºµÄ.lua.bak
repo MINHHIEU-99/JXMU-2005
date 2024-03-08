@@ -1,0 +1,6 @@
+-- ´óµí¡¡¢·ÈË¡¡¢ôÓãÏºµÄ
+-- by£ºDan_Deng(2003-09-16)
+
+function main()
+	Talk(1,"","Cã mÎ c¸ t«m míi n÷a råi, võa míi ®¸nh c¸ vÒ, nhanh vµo mua ®i.")
+end;

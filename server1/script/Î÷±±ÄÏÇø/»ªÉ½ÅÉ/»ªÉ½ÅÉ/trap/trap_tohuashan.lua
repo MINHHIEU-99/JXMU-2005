@@ -1,9 +1,9 @@
---西北南区 华山派to华山
---Trap ID：华山派 7
+-- script viet hoa By http://tranhba.com  t﹜ b綾 nam khu ph竔 Hoa s琻 to Hoa S琻 
+-- script viet hoa By http://tranhba.com Trap ID# ph竔 Hoa s琻 7 
 
-function main(sel)
+function main(sel) 
 
-SetFightState(1);
-NewWorld(2, 2607, 3968);
+SetFightState(1); 
+NewWorld(2, 2607, 3968); 
 
 end;

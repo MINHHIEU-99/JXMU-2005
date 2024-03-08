@@ -43,8 +43,8 @@ tbCurSeason.tbAccList = {
 	["phamtan"]={[1]={{nAwardID=1,nCount=1},{nAwardID=2,nCount=1},{nAwardID=4,nCount=1},{nAwardID=5,nCount=1},{nAwardID=10,nCount=1},{nAwardID=11,nCount=1},{nAwardID=12,nCount=1},},},	
 }
 tbCurSeason.tbPrizeList = {	
-	-- [1] = -- {szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1},
-	-- [2] = -- {szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1},	
+	[1] = {szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1},
+	[2] = {szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1},	
 	[3] = {szName="Phiªn Vò (HSD 6 th¸ng)",tbProp={0,10,7,1,0,0},nCount=1,nExpiredTime = 259200},	
 	[4] = {szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nExpiredTime=43200},
 	[5] = {szName="MÆt n¹ V­¬ng Gi¶",tbProp={0,11,561,1,0,0},nCount=1,nExpiredTime=43200},	
@@ -53,7 +53,7 @@ tbCurSeason.tbPrizeList = {
 	[8] = {szName="Hoµng Ch©n §¬n",tbProp={6,1,2264,1,0,0},nCount=1},
 	[9] = {szName="Tö Kim Ch©n §¬n",tbProp={6,1,2263,1,0,0},nCount=1,tbParam={2000000000}},
 	[10] = {szName="Phiªn Vò (HSD vÜnh viÔn)",tbProp={0,10,7,1,0,0},nCount=1,},	
-	-- [11] = --{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1},
+	[11] = {szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1},
 	[12]={szName="Qu¶ Hoµng Kim (100)",tbProp={6,1,30095,1,0,0},nCount=1},
 }
 --tbCurSeason.tbFreeBagRequire = {

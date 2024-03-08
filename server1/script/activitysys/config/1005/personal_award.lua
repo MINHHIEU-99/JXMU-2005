@@ -8,7 +8,7 @@ Include("\\script\\lib\\log.lua")
 Include("\\script\\vng_lib\\VngTransLog.lua")
 tbPVLB_Award = {}
 tbPVLB_Award.Award = {
-	--Ch­a Relife
+	--Ch­a trïng sinh
 	[0] = {		
 		[1] = { --lv 1-9
 			tbItem = {

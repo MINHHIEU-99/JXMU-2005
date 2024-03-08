@@ -1,9 +1,9 @@
-Include("\\script\\activitysys\\playerfunlib.lua")
+Include("\\script\\activitysys\\\playerfunlib.lua")
 Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\lib\\objbuffer_head.lua")
 function main(nIdx)
 	if tbVngMysticChest:IsActive() ~= 1 then
-		Talk(1, "", "VËt phÈm nµy chØ cã thÓ sö dông vµo thêi gian: <color=red>00h00 ngµy 22 th¸ng 10 n¨m 2023 ®Õn 24h00 ngµy 31 th¸ng 10 n¨m 2024<color>")
+		Talk(1, "", "VËt phÈm nµy chØ cã thÓ sö dông vµo thêi gian: <color=red>00h00 ngµy 22 th¸ng 10 n¨m 2011 ®Õn 24h00 ngµy 31 th¸ng 10 n¨m 2011<color>")
 		return 1
 	end
 	if PlayerFunLib:VnCheckInCity("default") ~= 1 or PlayerFunLib:CheckFreeBagCell(2,"default") ~= 1 then
@@ -29,26 +29,26 @@ end
 tbVngMysticChest = {}
 tbVngMysticChest.tbAward =
 {
-	-- {szName="Tö M·ng LÖnh",tbProp={6,1,2350,1,0,0},nCount=1,nRate=10, CallBack = MysticChestAnnounce},
-	-- {szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.2, CallBack = MysticChestAnnounce},
-	-- {szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=2, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.6, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
-	-- {szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.4, CallBack = MysticChestAnnounce},
+	{szName="Tö M·ng LÖnh",tbProp={6,1,2350,1,0,0},nCount=1,nRate=10, CallBack = MysticChestAnnounce},
+	{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.2, CallBack = MysticChestAnnounce},
+	{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=2, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.6, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.4, CallBack = MysticChestAnnounce},
 	{szName = "§iÓm Kinh NghiÖm", nExp=50000000,nRate=70},
 	{szName = "§iÓm Kinh NghiÖm", nExp=100000000,nRate=13},	
 }
 
 function tbVngMysticChest:IsActive()
 	local nCurDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
-	if nCurDate < 202310220000 or nCurDate > 202410312400 then
+	if nCurDate < 201110220000 or nCurDate > 201110312400 then
 		return 0
 	end
 	return 1

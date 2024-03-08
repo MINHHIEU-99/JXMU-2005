@@ -1,18 +1,17 @@
----------------Youtube PGaming---------------
 -- ¼ÓÔØÖÐÇï»î¶¯NPC½Å±¾
 -- lixin 2005-9-6
 
 --{npcÄ£°å,µÈ¼¶,XPOS,YPOS,ÊÇ·ñÖØÉú,NPCÐÕÃû,ÊÇ·ñboss,¶Ô»°½Å±¾}
 tab_zhongqiunpc = {
---{212,1,1566,3150,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
---{212,1,1566,3257,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
---{212,1,1641,3153,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
---{212,1,1632,3262,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
-{209,1,1556,3150,0,"T©y H¹ Th­¬ng Nh©n",0,"\\\script\\activitysys\\npcdailog.lua"},
-{209,1,1554,3265,0,"T©y H¹ Th­¬ng Nh©n",0,"\\\script\\activitysys\\npcdailog.lua"},
-{209,1,1633,3148,0,"T©y H¹ Th­¬ng Nh©n",0,"\\\script\\activitysys\\npcdailog.lua"},
-{209,1,1645,3273,0,"T©y H¹ Th­¬ng Nh©n",0,"\\\script\\activitysys\\npcdailog.lua"},
---{455,1,1600,3203,0,"Minh NguyÖt l·o nh©n",0,"\\script\\event\\mid_autumn\\mingyuelaoren.lua"},
+{212,1,1566,3150,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
+{212,1,1566,3257,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
+{212,1,1641,3153,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
+{212,1,1632,3262,0,"Thî b¸nh",0,"\\script\\event\\mid_autumn\\zuofanggongren.lua"},
+{209,1,1556,3150,0,"T©y H¹ Th­¬ng Nh©n",0,"\\script\\event\\mid_autumn\\xixiashangren.lua"},
+{209,1,1554,3265,0,"T©y H¹ Th­¬ng Nh©n",0,"\\script\\event\\mid_autumn\\xixiashangren.lua"},
+{209,1,1633,3148,0,"T©y H¹ Th­¬ng Nh©n",0,"\\script\\event\\mid_autumn\\xixiashangren.lua"},
+{209,1,1645,3273,0,"T©y H¹ Th­¬ng Nh©n",0,"\\script\\event\\mid_autumn\\xixiashangren.lua"},
+{455,1,1600,3203,0,"Minh NguyÖt l·o nh©n",0,"\\script\\event\\mid_autumn\\mingyuelaoren.lua"},
 {625,1,1576,3146,0,"R­¬ng chøa ®å",0,"\\script\\event\\mid_autumn\\chuwuxiang.lua"},
 {625,1,1573,3264,0,"R­¬ng chøa ®å",0,"\\script\\event\\mid_autumn\\chuwuxiang.lua"},
 {625,1,1623,3262,0,"R­¬ng chøa ®å",0,"\\script\\event\\mid_autumn\\chuwuxiang.lua"},

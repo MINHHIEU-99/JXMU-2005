@@ -5,7 +5,7 @@
 -- Update: QBJ (2003-10-3) 修改邓单的BUG
 -- Update: Dan_Deng(2003-11-04) 改为模板方式
 
-Include("\\script\\npcmonphai\\detuthuyyen.lua")
+Include("\\script\\global\\各派接引弟子\\峨嵋接引弟子.lua")
 
 function main(sel)
 	default_talk()

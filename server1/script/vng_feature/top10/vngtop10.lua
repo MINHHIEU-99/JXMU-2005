@@ -23,7 +23,7 @@ end
 
 function tbTop10:CheckDay()
 	local nTime = tonumber(date("%Y%m%d"))
-	if nTime < ThoiGianBatDauBXH or nTime > ThoiGianKetThucDuaTop then
+	if nTime < 20110707 or nTime > 20110713 then
 		return 0
 	end
 	return 1
@@ -31,7 +31,7 @@ end
 
 function tbTop10:IsActive()
 	local nTime = tonumber(date("%Y%m%d"))
-	if nTime < ThoiGianBatDauBXH or nTime > ThoiGianKetThucDuaTop then
+	if nTime < 20110707 or nTime > 20110717 then
 		return 0
 	end
 	return 1
@@ -53,41 +53,6 @@ function tbTop10:MainDialog()
 	CreateNewSayEx("Ta phô tr¸ch viÖc tiÕp nhËn ®¨ng ký thËp ®¹i cao thñ, ng­¬i cã muèn ®¨ng ký kh«ng?", tbOpt)
 end
 
-
-function tbTop10:DangKy()
-	if self.CheckDay() == 0 then
-		return
-	end
-	if self.CheckTime() == 1 then
-		return
-	end
-	
-	if not self.tbSubcribers then
-		self:Init()
-	end
-	local nTransLifeCount = ST_GetTransLifeCount()
-	if nTransLifeCount < 3 then
-		return
-	end
-	local strName = GetName()
-	if self.tbSubcribers[strName] then
-		return
-	end
-	self.tbSubcribers[strName] = {}
-	local tbSubcriber = self.tbSubcribers[strName]
-	for i = 1, nTransLifeCount do
-		local nlevel, _ = zhuansheng_get_gre(i);
-		tinsert(tbSubcriber, nlevel)		
-	end
-	--level hiÖn t¹i
-	tinsert(tbSubcriber, GetLevel())
-	--kinh nghiÖm hiÖn t¹i
-	tinsert(tbSubcriber, GetExp()/1e9)
-	tinsert(tbSubcriber, GetExpPercent())
-	if self:Subcribers2File() == 1 then
-		print(strName.."	dang ky xep hang thanh cong ")
-	end
-end
 --=======================Subcribers===========================
 
 function tbTop10:Regist()
@@ -104,10 +69,10 @@ function tbTop10:Regist()
 		self:Init()
 	end
 	local nTransLifeCount = ST_GetTransLifeCount()
-	-- if nTransLifeCount < 3 then
-	-- 	Talk(1, "", "Møc ®é tu luyÖn cña ng­¬i ch­a ®ñ, h·y quay vÒ rÌn luyÖn thªm ®i.")
-	-- 	return
-	-- end
+	if nTransLifeCount < 3 then
+		Talk(1, "", "Møc ®é tu luyÖn cña ng­¬i ch­a ®ñ, h·y quay vÒ rÌn luyÖn thªm ®i.")
+		return
+	end
 	local strName = GetName()
 	if self.tbSubcribers[strName] then
 		Talk(1, "", "Ng­¬i ®· ®¨ng ký råi, kh«ng cÇn ®¨ng ký n÷a. Xin h·y cËp nhËt th«ng tin.")
@@ -150,16 +115,16 @@ function tbTop10:UpdateInfo()
 	
 	--Mçi ngµy chØ ®­îc cËp nhËt 1 lÇn
 	local nTaskDayCount = PlayerFunLib:GetTaskDailyCount(self.nTaskDayLimit)
-	if nTaskDayCount == 5 then
+	if nTaskDayCount == 1 then
 		Talk(1, "", "Mçi ngµy chØ ®­îc cËp nhËt th«ng tin 1 lÇn, ngµy mai råi h·y quay l¹i.")
 		return
 	end
 	
-	-- local nTransLifeCount = ST_GetTransLifeCount()
-	-- if nTransLifeCount < 3 then
-	-- 	Talk(1, "", "Møc ®é tu luyÖn cña ng­¬i ch­a ®ñ, h·y quay vÒ rÌn luyÖn thªm ®i.")
-	-- 	return
-	-- end
+	local nTransLifeCount = ST_GetTransLifeCount()
+	if nTransLifeCount < 3 then
+		Talk(1, "", "Møc ®é tu luyÖn cña ng­¬i ch­a ®ñ, h·y quay vÒ rÌn luyÖn thªm ®i.")
+		return
+	end
 		
 	local tbSubcriber = self.tbSubcribers[strName]
 

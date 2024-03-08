@@ -1,7 +1,10 @@
+--TÝnh n¨ng thÊt thµnh ®¹i chiÕn tiÕp ®Çu seach key "T¹m thêi ch­a më."
 Include("\\script\\missions\\sevencity\\war.lua")
 Include("\\script\\missions\\citywar_global\\infocenter_head.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 Include("\\script\\lib\\log.lua")
+Include("\\script\\global\\g7vn\\g7configall.lua")
+Include("\\script\\lib\\awardtemplet.lua")
+
 --VNG_TSK_AWARD_LIMIT_TIME = 2747
 --VNG_TSK_EXP_LIMIT_TIME = 2743
 tbVngLimitTime = {}
@@ -31,17 +34,25 @@ AWARD_GUARD = {
 -- ²éÑ¯½±ÀøµÄ×´Ì¬±í
 QUERY_TABLE = {}
 
+Include("\\script\\global\\g7vn\\g7configall.lua")
+Include("\\script\\missions\\citywar_global\\citybulletin.lua")
+Include("\\script\\global\\g7vn\\g7quanly.lua")
+
 function main()
-if ThatThanhDaiChien ~= 1 then
-		return Talk(1, "", "<color=Orange>C«ng Thµnh Quan: <color>ThÊt thµnh ®¹i chiÕn t¹m ®ãng, c¸c h¹ h·y quay l¹i sau")	
-	end
+	--dofile("script/missions/sevencity/dialog_npc.lua")
+	--dofile("script/global/g7vn/g7configall.lua")
+	--dofile("script/missions/citywar_global/citybulletin.lua");
+	--dofile("script/global/g7vn/g7quanly.lua")
+
 	Say("§©y lµ n¬i nghÞ sù c«ng thµnh chiÕn, ng­¬i ®Õn cã viÖc g×?",
-		6,
-		"Ta ®Õn giao lÖnh bµi/GiveTiaoZhanLing",
+		8,
+	--	"Th«ng tin, cai qu¶n thµnh thÞ/main123",
+		"Ta ®Õn giao khiªu chiÕn lÖnh/GiveTiaoZhanLing",
 		"Ta muèn xem sè l­îng khiªu chiÕn lÖnh cña bang/ViewTiaoZhanLing",
 		"B¸o danh tham gia thÊt thµnh ®¹i chiÕn/dlg_signup",
 		"Vµo chiÕn tr­êng thÊt thµnh ®¹i chiÕn/dlg_enter",
-		"NhËn phÇn th­ëng thÊt thµnh ®¹i chiÕn/dlg_query",
+	--	"NhËn phÇn th­ëng thÊt thµnh ®¹i chiÕn/dlg_query",
+		--"NhËn phÇn th­ëng ChiÕm lÜnh T­¬ng D­¬ng Thµnh/nhanTDCTLB",
 		"Kh«ng muèn g× c¶ /Cancel")
 end
 
@@ -58,7 +69,7 @@ function dlg_signup()
 	elseif (state == STATE_CLOSEWAR) then
 		Say("ThÊt thµnh ®¹i chiÕn ®· kÕt thóc")
 	elseif (state == STATE_STARTSIGNUP) then
-		Say("ThÊt thµnh ®¹i chiÕn ®ang vµo giai ®o¹n b¸o danh, ch­ vÞ bang chñ h·y ®¹i diÖn bæn bang ®Ó b¸o danh tham gia, phÝ b¸o danh <color=red>2000 v¹n ng©n l­îng<color> vµ<color=red> 2000 khiªu chiÕn lÖnh<color>. \nBang héi chiÕm thµnh kh«ng cÇn b¸o danh vµ cã thÓ trùc tiÕp vµo",
+		Say("ThÊt thµnh ®¹i chiÕn ®ang vµo giai ®o¹n b¸o danh, ch­ vÞ bang chñ h·y ®¹i diÖn bæn bang ®Ó b¸o danh tham gia, phÝ b¸o danh <color=red>2000 v¹n ng©n l­îng<color> vµ<color=red> 200 khiªu chiÕn lÖnh<color>. \nBang héi chiÕm thµnh kh«ng cÇn b¸o danh vµ cã thÓ trùc tiÕp vµo",
 			2,
 			"Ta muèn b¸o danh tham gia/action_signup",
 			"§Ó ta suy nghÜ l¹i/Cancel")
@@ -88,8 +99,12 @@ function dlg_query()
 	--Change request 14/06/2011 - Modified by DinhHQ
 	local nWeekDay = tonumber(GetLocalDate("%w"))
 	local nHour = tonumber(GetLocalDate("%H%M"))
-	if nWeekDay ~= 5  or nHour < 2145 or nHour > 2350 then
-		Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
+	if nWeekDay==5 and (nHour < 2145 or nHour > 2350) then
+	Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
+	end
+	
+	if nWeekDay ~= 5  and nWeekDay ~= 6 and nWeekDay ~= 7 then
+		Talk(1, "", "Thø <color=red>7-CN<color>,míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
 		return
 	end
 	
@@ -99,8 +114,8 @@ function dlg_query()
 	if tbVngLimitTime[name] then
 		local nLastAwardTime = tbVngLimitTime[name]
 		local nRestTime =(nTime - nLastAwardTime)
-		if nRestTime < 60*2  then
-			Talk(1, "", format("Mçi lÇn nhËn th­ëng ph¶i c¸ch nhau <color=red>2<color> phót. VÞ §¹i hiÖp nµy <color=red>%d<color> gi©y n÷a h·y thö l¹i.", (60*2 - nRestTime)))
+		if nRestTime < 30  then
+			Talk(1, "", format("Mçi lÇn nhËn th­ëng ph¶i c¸ch nhau <color=red>30<color> s. VÞ §¹i hiÖp nµy <color=red>%d<color> gi©y n÷a h·y thö l¹i.", (30 - nRestTime)))
 			return
 		end	
 	end	
@@ -196,8 +211,12 @@ function action_expaward(exp)
 	--Change request 14/06/2011 - Modified by DinhHQ
 	local nWeekDay = tonumber(GetLocalDate("%w"))
 	local nHour = tonumber(GetLocalDate("%H%M"))
-	if nWeekDay ~= 5  or nHour < 2145 or nHour > 2350 then
-		Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
+	if nWeekDay==5 and (nHour < 2145 or nHour > 2350) then
+	Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
+	end
+	
+	if nWeekDay ~= 5  and nWeekDay ~= 6 and nWeekDay ~= 7 then
+		Talk(1, "", "Thø <color=red>7-CN<color>,míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
 		return
 	end
 	StackExp(exp)
@@ -229,8 +248,12 @@ function action_awarditem(count, award, max_count)
 --20110318:Fix bug nhËn c«ng thµnh chiÕn lÔ bao	
 	local nWeekDay = tonumber(GetLocalDate("%w"))
 	local nHour = tonumber(GetLocalDate("%H%M"))
-	if nWeekDay ~= 5  or nHour < 2145 or nHour > 2350 then
-		Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
+	if nWeekDay==5 and (nHour < 2145 or nHour > 2350) then
+	Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
+	end
+	
+	if nWeekDay ~= 5  and nWeekDay ~= 6 and nWeekDay ~= 7 then
+		Talk(1, "", "Thø <color=red>7-CN<color>,míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
 		return
 	end
 	if (CalcFreeItemCellCount() < 60) then
@@ -238,6 +261,7 @@ function action_awarditem(count, award, max_count)
 		return
 	end
 	local actual_count = 0
+
 	for i = 1, count do
 		-- add expired time to city and guard award item - Created by TinhPN - 20110421
 		--if (AddItemIntoEquipmentBox(award.ID[1], award.ID[2], award.ID[3], award.ID[4], 0, 0) > 0) then
@@ -247,7 +271,7 @@ function action_awarditem(count, award, max_count)
 			if (award.ID[3] == 2815 or award.ID[3] == 2814) then
 				ITEM_SetExpiredTime(nItemIndex, 43200)
 				SyncItem(nItemIndex)
-			end	
+			end
 			
 			actual_count = actual_count + 1
 		else
@@ -290,4 +314,46 @@ function add_award(call, name, count)
 	buff:Push(count)
 	RemoteExecute(REMOTE_SCRIPT, call, buff.m_Handle)
 	buff:Destroy()
+end
+
+function nhanTDCTLB()
+	
+	if GetName() ~= GetTongMaster() then
+		Talk(1, "", "ChØ cã bang chñ míi cã quyÒn nhËn th­ëng")
+		return
+	end	
+
+	if (CalcFreeItemCellCount() < 50) then
+		Say("Hµnh trang Ýt nhÊt ph¶i cã <color=red>50<color> « trèng míi nhËn ®­îc phÇn th­ëng.")
+		return
+	end
+
+	local szTong = GetTong()
+
+	if GetCityOwner(5) ~= GetTong() then
+		Say("Ng­¬i kh«ng ph¶i th¸i thó thµnh T­¬ng D­¬ng tuÇn nµy")
+		return
+	end
+
+	local szFile = "\\dulieu\\bandbygm.dat"
+	local slLeBao = server_getdata(szFile,"BANGHOI_TDLEBAO",szTong);
+	if not slLeBao or slLeBao == "" or slLeBao=="0" then 
+		Say("Ng­¬i ®· nhËn hÕt T­¬ng D­¬ng c«ng thµnh lÔ bao råi")
+		return
+	end
+
+	local numLeBao = tonumber(slLeBao)
+	
+	local tbAward = 
+	{	
+			{szName = "Tuong duong cong thanh le bao",	tbProp = {6, 1, 4322, 1, 0, 0},nCount=numLeBao,},
+	}
+	tbAwardTemplet:Give(tbAward, 1, {"NhanTDCTLBao", "NhanTDCTLBao"})
+
+	server_setdata(szFile,"BANGHOI_TDLEBAO",szTong,"0")
+	server_savedata(szFile);
+
+	local strmgs = "Chóc mõng bang héi <color=pink>" .. GetTong() .. "<color> ®· nhËn ®­îc phÇn th­ëng chiÕm lÜnh T­¬ng D­¬ng Thµnh"
+	Say(strmgs)
+	AddGlobalCountNews(strmgs,5)
 end

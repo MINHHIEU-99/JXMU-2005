@@ -1,0 +1,37 @@
+
+Include("\\script\\lib\\remoteexc.lua")
+
+tb_rank = {}
+
+function tb_rank:callAray()
+RemoteExc("\\script\\bil4i3n\\bil4i3n_worldrank_hook.lua", "bilRankHook:UpdateRankNew", {GetName(), GetLevel(), GetExpPercent()})
+print("call aray")
+
+print("-------------------------Load file xh-----------------")
+end
+
+function tb_rank:xhTung(_Array)
+
+print("--------Load Rank----------")
+
+if SubWorldID2Idx(999) < 0 then-- khong phai viec cua GS 
+--print("--------deo phai viec cua may----------")
+return
+end
+	
+	Logs_Rank = openfile("dulieu/ranklist1.txt", "w")
+				write(Logs_Rank,"[Rank]\n")	
+	print(getn(_Array))
+	for index = 1, getn(_Array) do
+
+		write(Logs_Rank, _Array[index][1] .. "\t\=" .. index .. "\n")
+
+		
+	end
+	
+	closefile(Logs_Rank)
+	print("Xep hang tu dong gs 1----------------------------------")
+end
+
+--/script/fwcloud/xephangnew/xephangnew.lua
+

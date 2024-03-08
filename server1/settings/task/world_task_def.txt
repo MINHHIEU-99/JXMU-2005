@@ -1,96 +1,102 @@
-TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	VALUE
-B¾t_®Çu_ID(Kh«ng_liªn_tôc_th×_®Ó_trèng)	KÕt_thóc_ID	Tªn_nhiÖm_vô	Gi¸_trŞ
-1		Phôc_vô_sù_kiÖn_bao_z«ng	
-2		HuÊn_luyÖn_chiÕn_tr­êng	
-3		Sù_kiÖn_Olympic	
-4		Sù_kiÖn_Olympic	
-5		Sù_kiÖn_Olympic	
-6		Sù_kiÖn_xæ_sè	
-7		(Kh«ng_lµm_g×)	
-8		(Kh«ng_lµm_g×)	
-9		(Kh«ng_lµm_g×)	
-10		(Kh«ng_lµm_g×)	
-11		(Kh«ng_lµm_g×)	
-12		(Kh«ng_lµm_g×)	
-13		(Kh«ng_lµm_g×)	
-14		(Kh«ng_lµm_g×)	
-15		(Kh«ng_lµm_g×)	
-16		(Kh«ng_lµm_g×)	
-17		(Kh«ng_lµm_g×)	
-18		(Kh«ng_lµm_g×)	
-19		(Kh«ng_lµm_g×)	
-20			
-21			
-22			
-23			
-24			
-25			
-26			
-27			
-28			
-29			
-30		TrËn_chiÕn_Song_Kim	
-31		Cho_phĞp_t¹m_dõng_trËn_chiÕn_Song_Kim	
-32		HÖ_thèng_trang_bŞ_mµu_tİm	
-33		HÖ_thèng_trang_bŞ_mµu_tİm	
-34		HÖ_thèng_trang_bŞ_mµu_tİm	
-35		ChiÕn_tranh_b¶o_vÖ_quèc_gia	
-36		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(Hoa_S¬n)	<=560
-37		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(Thanh_Thµnh_S¬n)	<=1100
-38		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(§iÓm_Th­¬ng_S¬n)	<=660
-39		Sù_kiÖn_ng¾m_tr¨ng_®è_c©u_®Ìn(Ngù_øng_S¬n)	<=680
-40		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
-41		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
-42		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
-43		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
-44		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
-45		Sù_kiÖn_trung_thu_lµm_b¸nh_trung_thu	
-46		Sù_kiÖn_trung_thu	
-47		(Kh«ng_lµm_g×)	
-48		(Kh«ng_lµm_g×)	
-49	800	Ghi_nhËn_d÷_liÖu_trËn_chung_kÕt_TiÓu_khóc_Vâ_l©m	
-801	810	Sù_kiÖn_trung_thu_2005_lµm_b¸nh_trung_thu	
-811		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_boss_Thiªn_ThÓ_Tö_tö_danh(60-89)	
-812		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_boss_Thiªn_ThÓ_Tö_tö_danh(90-119)	
-813		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_boss_Thiªn_ThÓ_Tö_tö_danh(120_trë_lªn)	
-814		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_trém_Kh¶_B¶o_Kho(60-89)	
-815		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_trém_Kh¶_B¶o_Kho(90-119)	
-816		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_trém_Kh¶_B¶o_Kho(120_trë_lªn)	
-817		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_chiÕn_®ao_Tö_tö_danh(60-89)	
-818		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_chiÕn_®ao_Tö_tö_danh(90-119)	
-819		§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_qu¸i_chiÕn_®ao_Tö_tö_danh(120_trë_lªn)	
-820		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
-821		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
-822		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
-823		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
-824		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m	
-825		Tæ_chøc_cuéc_thi_®Êu_Vâ_l©m_Bé_®Õm_thêi_gian_-_TriÖu_V¨n_NguyÔn	
-830		NhiÖm_vô_kŞch_b¶n_®ång_hµnh_-_Th­¬ng_b¶o_s­_-_§iÒu_kiÖn_kiÓm_so¸t_sè_l­îng_BOSS(ChØnh_söa_tïy_thİch)	
-840	847	§·_nhËn_quµ_tÆng_thµnh_ı_chiÕn_tr­êng_(B¶y_thµnh_phè)	
-848		Sù_kiÖn_Giang_sinh	
-849		Sù_kiÖn_TÕt	
-850		NhiÖm_vô_Liªn_®oµn_hµng_®Çu_Vâ_l©m	
-851		NhiÖm_vô_Liªn_®oµn_hµng_®Çu_Vâ_l©m	
-852		Sù_kiÖn_tuyÓn_dông_®å_tö_®Ö	
-853		Sù_kiÖn_chiÕn_tranh_n¨m_thó	
-854		Sù_kiÖn_LÔ_tÕt_D??	
-855		Bé_®Öm_tæng_sè_l­îng_thÎ_®éi_bãng_sù_kiÖn_Cóp_thÕ_giíi	
-856	916	Khu_vùc_dïng_cho_viÖc_x©y_dùng_b¶ng_phÇn_th­ëng_sù_kiÖn_Cóp_thÕ_giíi	
-917		Sè_thø_tù_ng­êi_nhËn_th­ëng_sù_kiÖn_Cóp_thÕ_giíi	
-918		Sù_kiÖn_thu_thËp_vËt_phÈm_Liªn_®oµn	
-919		Chøc_n¨ng_tinh_chÊt_kim_c­¬ng: _Ngµy_gi¶i_phãng_trang_bŞ_cuèi_cïng	
-920		Chøc_n¨ng_tinh_chÊt_kim_c­¬ng: _Sè_lÇn_gi¶i_phãng_trang_bŞ_trong_ngµy	
-921		Chøng_thùc_nhiÖm_vô_®Æc_biÖt	
-930	933	Khu_vùc_cho_gi¶i_th­ëng_nh×_b¶ng_Cóp_thÕ_giíi	
-934	1034	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_nh×_b¶ng_Cóp_thÕ_giíi_100_khãa_(50_ng­êi_×_2)	
-1035	1038	Khu_vùc_cho_gi¶i_th­ëng_ba_b¶ng_Cóp_thÕ_giíi	
-1039	1099	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_ba_b¶ng_Cóp_thÕ_giíi_60_khãa_(30_ng­êi_×_2)	
-1100	1103	Khu_vùc_cho_gi¶i_th­ëng_bèn_b¶ng_Cóp_thÕ_giíi	
-1104	1144	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_bèn_b¶ng_Cóp_thÕ_giíi_40_khãa_(20_ng­êi_×_2)	
-1145	1148	Khu_vùc_cho_gi¶i_th­ëng_n¨m_b¶ng_Cóp_thÕ_giíi	
-1149	1179	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_n¨m_b¶ng_Cóp_thÕ_giíi_30_khãa_(15_ng­êi_×_2)	
-1180	1183	Khu_vùc_cho_gi¶i_th­ëng_s¸u_b¶ng_Cóp_thÕ_giíi	
-1184	1204	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_s¸u_b¶ng_Cóp_thÕ_giíi_20_khãa_(10_ng­êi_×_2)	
-1205	1208	Khu_vùc_cho_gi¶i_th­ëng_b¶y_b¶ng_Cóp_thÕ_giíi	
-1209	1219	Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_b¶y_b¶ng_Cóp_thÕ_giíi_10_khãa_(5_ng­êi_×_2)	
-1230		Khu_vùc_l­u_tr÷_cho_gi¶i_th­ëng_nh×_b¶ng_Cóp_thÕ_giíi		
+TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	VALUE	TASK_DESCRIBE
+¿ªÊ¼ID£¨IDÕ¼ÓÃ²»Á¬ĞøÇë¿ÕĞĞ£©	½áÊøID	ÈÎÎñÃû³Æ	±äÁ¿Öµ	ÈÎÎñÃèÊö
+1		°ü×Ø×Ó»î¶¯		
+2		¹¥³ÇÕ½ÑµÁ·		
+3		°ÂÔË»î¶¯		
+4		°ÂÔË»î¶¯		
+5		°ÂÔË»î¶¯		
+6		²ÊÆ±»î¶¯		
+7		£¨¿ÕÏĞ£©		
+8		£¨¿ÕÏĞ£©		
+9		£¨¿ÕÏĞ£©		
+10		£¨¿ÕÏĞ£©		
+11		£¨¿ÕÏĞ£©		
+12		£¨¿ÕÏĞ£©		
+13		£¨¿ÕÏĞ£©		
+14		£¨¿ÕÏĞ£©		
+15		£¨¿ÕÏĞ£©		
+16		£¨¿ÕÏĞ£©		
+17		£¨¿ÕÏĞ£©		
+18		£¨¿ÕÏĞ£©		
+19		£¨¿ÕÏĞ£©		
+20				
+21				
+22				
+23				
+24				
+25				
+26				
+27				
+28				
+29				
+30		ËÎ½ğÕ½ÒÛ		
+31		ÊÇ·ñÔİÍ£ËÎ½ğÕ½ÒÛ		
+32		×ÏÉ«×°±¸ÏµÍ³		
+33		×ÏÉ«×°±¸ÏµÍ³		
+34		×ÏÉ«×°±¸ÏµÍ³		
+35		ÎÀ¹úÕ½ÕùÖ®·é»ğÁ¬³Ç		
+36		ÉÍÔÂ²Â»¨µÆ(»ªÉ½)	<=560	
+37		ÉÍÔÂ²Â»¨µÆ(Çà³ÇÉ½)	<=1100	
+38		ÉÍÔÂ²Â»¨µÆ(µã²ÔÉ½)	<=660	
+39		ÉÍÔÂ²Â»¨µÆ(ÎäÒÄÉ½)	<=680	
+40		ÖĞÇï»î¶¯ÔÂ±ıÖÆ×÷		
+41		ÖĞÇï»î¶¯ÔÂ±ıÖÆ×÷		
+42		ÖĞÇï»î¶¯ÔÂ±ıÖÆ×÷		
+43		ÖĞÇï»î¶¯ÔÂ±ıÖÆ×÷		
+44		ÖĞÇï»î¶¯ÔÂ±ıÖÆ×÷		
+45		ÖĞÇï»î¶¯ÔÂ±ıÖÆ×÷		
+46		ÖĞÇï»î¶¯		
+47		£¨¿ÕÏĞ£©		
+48		£¨¿ÕÏĞ£©		
+49	800	ÎäÁÖ´ó»á¾öÈüÊ±Õ½¶ÓÊı¾İ¼ÇÂ¼		
+801	810	2005ÖĞÇï»î¶¯ÔÂ±ı		
+811		60-89¼¶·çÖ®Æï»¢±ªÆïµÄË¢³öÊıÁ¿¿ØÖÆ		
+812		90-119¼¶·çÖ®Æï»¢±ªÆïµÄË¢³öÊıÁ¿¿ØÖÆ		
+813		120¼¶ÒÔÉÏ·çÖ®Æï»¢±ªÆïµÄË¢³öÊıÁ¿¿ØÖÆ		
+814		60-89¼¶Ç§±¦¿âµÁÔôË¢³öÊıÁ¿¿ØÖÆ		
+815		90-119¼¶Ç§±¦¿âµÁÔôË¢³öÊıÁ¿¿ØÖÆ		
+816		120¼¶ÒÔÉÏÇ§±¦¿âµÁÔôË¢³öÊıÁ¿¿ØÖÆ		
+817		60-89¼¶µ¶ÑıĞÖµÜÊä³öÊıÁ¿¿ØÖÆ		
+818		90-119¼¶µ¶ÑıĞÖµÜÊä³öÊıÁ¿¿ØÖÆ		
+819		120¼¶ÒÔÉÏµ¶ÑıĞÖµÜÊä³öÊıÁ¿¿ØÖÆ		
+820		ÎäÁÖÁªÈü		
+821		ÎäÁÖÁªÈü		
+822		ÎäÁÖÁªÈü		
+823		ÎäÁÖÁªÈü		
+824		ÎäÁÖÁªÈü		
+825		ÎäÁÖÁªÈü ¼ÆÊ±Æ÷¼ÆÊı - ÕÔÎÄÒ×		
+830		Í¬°é¾çÇéÈÎÎñ - Öé±¦ÉÌÈË - Ë¢³ö BOSS ÊıÁ¿¿ØÖÆ		
+840	847	³ÇÖ÷ÒÑÁì³ÇÊĞºì°ü¼ÇÂ¼(Æß¸ö³ÇÊĞ)		
+848		Ê¥µ®»î¶¯		
+849		´º½Ú»î¶¯		
+850		ÎäÁÖµÚÒ»°ï		
+851		ÎäÁÖµÚÒ»°ï		
+852		°ï»áÕĞÄ¼µÜ×Ó»î¶¯		
+853		°ï»á´òÄêÊŞ»î¶¯		
+854		¶ËÎç½Ú»î¶¯		
+855		ÊÀ½ç±­»î¶¯Çò¶Ó¿¨×ÜÊı»º³åÇø		
+856	916	ÊÀ½ç±­»î¶¯ÓÃÓÚ¹¹Ôì½±Àø»º³å±í¸ñµÄÇøÓò		
+917		ÊÀ½ç±­»î¶¯Áì½±Íæ¼ÒĞòºÅ»º´æ		
+918		°ï»áÊÕ¼¯ÎïÆ·»î¶¯		
+919		»Æ½ğÖØÖı¹¦ÄÜ£º×îºóÒ»´Î×°±¸²ğ·ÖµÄÈÕÆÚ		
+920		»Æ½ğÖØÖı¹¦ÄÜ£ºµ±Ìì×°±¸²ğ·ÖµÄ´ÎÊı		
+921		ÌØÊâÈÎÎñÁîÅÆ		
+930	933	ÊÀ½ç±­»Æ½ğ¿¨²á½±Àø¶şµÈ½±Ë÷ÒıÇø		
+934	1034	ÊÀ½ç±­»Æ½ğ¿¨²á½±Àø¶şµÈ½±ĞòÁĞ´æ´¢Çø100¸ö£¨50¸öÍæ¼Ò X 2£©		
+1035	1038	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÈıµÈ½±Ë÷ÒıÇø		
+1039	1099	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÈıµÈ½±ĞòÁĞ´æ´¢Çø60¸ö£¨30¸öÍæ¼Ò X 2£©		
+1100	1103	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøËÄµÈ½±Ë÷ÒıÇø		
+1104	1144	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøËÄµÈ½±ĞòÁĞ´æ´¢Çø40¸ö£¨20¸öÍæ¼Ò X 2£©		
+1145	1148	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÎåµÈ½±Ë÷ÒıÇø		
+1149	1179	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÎåµÈ½±ĞòÁĞ´æ´¢Çø30¸ö£¨15¸öÍæ¼Ò X 2£©		
+1180	1183	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÁùµÈ½±Ë÷ÒıÇø		
+1184	1204	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÁùµÈ½±ĞòÁĞ´æ´¢Çø20¸ö£¨10¸öÍæ¼Ò X 2£©		
+1205	1208	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÆßµÈ½±Ë÷ÒıÇø		
+1209	1219	ÊÀ½ç±­»Æ½ğ¿¨²á½±ÀøÆßµÈ½±ĞòÁĞ´æ´¢Çø10¸ö£¨5¸öÍæ¼Ò X 2£©		
+1230		ÊÀ½ç±­»Æ½ğ¿¨²á¶şµÈ½±Áì½±Íæ¼ÒÅÅĞò»º´æ		
+1231		ÊÀ½ç±­»Æ½ğ¿¨²áÈıµÈ½±Áì½±Íæ¼ÒÅÅĞò»º´æ		
+1232		ÊÀ½ç±­»Æ½ğ¿¨²áËÄµÈ½±Áì½±Íæ¼ÒÅÅĞò»º´æ		
+1233		ÊÀ½ç±­»Æ½ğ¿¨²áÎåµÈ½±Áì½±Íæ¼ÒÅÅĞò»º´æ		
+1234		ÊÀ½ç±­»Æ½ğ¿¨²áÁùµÈ½±Áì½±Íæ¼ÒÅÅĞò»º´æ		
+1235		ÊÀ½ç±­»Æ½ğ¿¨²áÆßµÈ½±Áì½±Íæ¼ÒÅÅĞò»º´æ		
+1240		×îºóÒ»´Î½øĞĞ×ÏÉ«×°±¸[ºÏ³É]Ïà¹Ø²Ù×÷µÄÊ±ÖÓÊı		

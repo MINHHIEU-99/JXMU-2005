@@ -50,8 +50,8 @@ Ph¸t s¸ng	1		3	112	3	3	-1	-1	0	0	T¨ng ph¹m vi s¸t th­¬ng	0	0	0	0	0	0	0	0	0	0	0
 NhÊp nh¸y	1		4	112	4	4	-1	-1	0	0	T¨ng ph¹m vi s¸t th­¬ng	0	0	0	0	0	0	0	0	0	0	0
 ¸nh s¸ng chãi läi	1		5	112	5	5	-1	-1	0	0	T¨ng ph¹m vi s¸t th­¬ng	0	0	0	0	0	0	0	0	0	0	0
 MÆt trêi	1		6	112	6	6	-1	-1	0	0	T¨ng ph¹m vi s¸t th­¬ng	0	0	0	0	0	0	0	0	0	0	0
-Th¸i S­ 	1		5	139	1	1	-1	-1	0	0	T¨ng kü n¨ng	0	0	0	0	0	0	0	0	0	0	0
-T«ng s­ 	1		10	139	2	2	-1	-1	0	0	T¨ng kü n¨ng	0	0	0	0	0	0	0	0	0	0	0
+Th¸i S­ 	1		5	139	1	1	-1	-1	0	0	T¨ng kü n¨ng	2	0	0	1	0	0	0	0	0	0	0
+T«ng s­ 	1		10	139	2	2	-1	-1	0	0	T¨ng kü n¨ng	2	0	0	1	0	0	0	0	0	0	0
 L¨ng kÝnh	1		1	114	1	2	-1	-1	0	0	t¨ng phßng thñ 	0	0	0	0	10000	0	0	0	0	0	0
 CÇu vång	1		2	114	2	4	-1	-1	0	0	t¨ng phßng thñ 	0	0	0	0	9000	0	0	0	0	0	0
 b¶y mµu	1		3	114	4	6	-1	-1	0	0	t¨ng phßng thñ 	0	0	0	0	8000	0	0	0	0	0	0

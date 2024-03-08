@@ -54,6 +54,6 @@ function OnTimer(nNpcIndex, nTimeOut)
 	DelNpc(nNpcIndex);
 	strPlayerName = pActivity.tbNpc[nNpcIndex]
 	if strPlayerName then
-		WriteLog(date("%d- %m- %Y %H giê %M phót %S Gi©y").."\t".."SinhNhatVoLamTruyenKy".."\tQuanThoiGianThoBienMat".."\tThoCuaNguoiChoi"..strPlayerName)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."SinhNhatVoLamTruyenKy".."\tQuanThoiGianThoBienMat".."\tThoCuaNguoiChoi"..strPlayerName)
 	end
 end

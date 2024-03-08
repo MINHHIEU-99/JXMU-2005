@@ -1,1 +1,1 @@
-Include("\\script\\gm_tool\\lequan.lua")
+Include("\\script\\global\\g7vn\\g7defaultdialog.lua")

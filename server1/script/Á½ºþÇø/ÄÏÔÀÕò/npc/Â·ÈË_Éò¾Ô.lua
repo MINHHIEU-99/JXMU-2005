@@ -1,6 +1,8 @@
--- ThÈm Cöu ë Nam Nh¹c TrÊn - Editor by AloneScript (Linh Em)
+--Tham cau nam nhac tran
+--S?a ng?a BMW ? th?m câu nam nh?c tr?n: edit by mcteam
+-- script viet hoa By http://tranhba.com  ng­êi ®i ®­êng _ trÇm c©u nam nh¹c trÊn b¸n ®Æc thï m· (80 cÊp m· ) ®İch NPC ch©n vèn 
+-- script viet hoa By http://tranhba.com  By Dan_Deng(2003-11-10) 
 
-Include("\\script\\lib\\alonelib.lua");
 Include("\\script\\tong\\tong_header.lua");
 Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\dailogsys\\g_dialog.lua")
@@ -8,87 +10,96 @@ Include("\\script\\activitysys\\playerfunlib.lua")
 Include("\\script\\activitysys\\answer.lua")
 Include("\\script\\activitysys\\npcfunlib.lua")
 
-function main()
-	UWorld97 = GetTask(97)
-	str, result = GetTong()	
---	if (UWorld97 >= 10) then		-- ÒÑ¾­Âò¹ı
---		Talk(1,"","Éò¾Ô£ºÄãÒ»¶¨ÒªºÃºÃ¶Ô´ıÂí¶ù£¬Ã¿ÌìÒª¸øËüÏ´Ôè£¬¶¹±ıÀïÃæÒª²ôÉÏ¾«Ãæ......")
-	if (UWorld97 < 100) and (result == 1) and (GetTongFigure() == TONG_MASTER) then			-- ÊÇ°ïÖ÷£¬Ã»ÓĞÏíÊÜ¹ıÓÅ»İÂòÂí
-		SetTaskTemp(17,1000)
-	else								-- ÆÕÍ¨ÂòÂí
-		SetTaskTemp(17,1500)
---		Talk(1,"","Éò¾Ô£ºÇ§ÀïÂí³£ÓĞ£¬¶ø²®ÀÖ²»³£ÓĞ¡£Í½ºô£¡ÄÎºÎ£¡")
-	end
-	
-	local nNpcIndex = GetLastDiagNpc();
-	local szNpcName = GetNpcName(nNpcIndex);
-	if NpcName2Replace then szNpcName = NpcName2Replace(szNpcName); end
-	local tbDailog = DailogClass:new(szNpcName);
-	tbDailog.szTitleMsg = "<npc>T¹i h¹ nu«i ngùa rÊt nhiÒu n¨m, chØ cÇn xem qua lµ biÕt tèt hay kh«ng!"..Note("thamcuu_namnhactran")
-	
-	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex);
-	-- tbDailog:AddOptEntry("Lóc n·y ng­¬i gäi ta?", horse_get);
+function main() 
 
-	tbDailog:Show();
-end
+dofile("script/Á½ºşÇø/ÄÏÔÀÕò/npc/Â·ÈË_Éò¾Ô.lua")
 
-function horse_get()
-	Talk(4,"sele_color","VŞ anh hïng nµy xin dõng b­íc ®·. ","Huynh ®µi, cã chuyÖn g× cÇn chØ gi¸o? ","T¹i h¹ lµ ThÉm C©u, hiÖn cã mét con ngùa quı, cã thÓ phi ®­îc ngµn dÆm. VŞ anh hïng ®©y phong th¸i bÊt phµm, nhÊt ®Şnh lµ 1 cao thñ. Ngùa quı cña t¹i h¹ kh«ng bao giê chŞu khuÊt phôc kÎ thÊt phu. ","§Ó ta xem thö ngùa quı cña huynh,,, ")
-end
+UWorld97 = GetTask(97) 
+str, result = GetTong() 
+-- script viet hoa By http://tranhba.com  if (UWorld97 >= 10) then -- script viet hoa By http://tranhba.com  ®· mua qua 
+-- script viet hoa By http://tranhba.com  Talk(1,"","TrÇm c©u # ng­¬i nhÊt ®Şnh ph¶i thËt tèt ®èi ®·i con ngùa , mçi ngµy cÊp cho nã t¾m , ®Ëu bİnh bªn trong muèn s¶m th­îng tinh mÆt ......") 
+if (UWorld97 < 100) and (result == 1) and (GetTongFigure() == TONG_MASTER) then -- script viet hoa By http://tranhba.com  lµ bang chñ , kh«ng cã h­ëng thô qu¸ ­u ®·i mua m· 
+SetTaskTemp(17,1000) 
+else -- script viet hoa By http://tranhba.com  b×nh th­êng mua m· 
+SetTaskTemp(17,1500) 
+-- script viet hoa By http://tranhba.com  Talk(1,"","TrÇm c©u # thiªn lı m· th­êng cã , mµ b¸ nh¹c kh«ng th­êng cã . ®å h« # kh«ng biÕt sao #") 
+end 
 
-function sele_color()
-	Say("Anh hïng h·y xem! ",6,"§©y kh«ng ph¶i lµ ¤ V©n §¹p TuyÕt sao! /buy_black","§©y kh«ng ph¶i lµ Xİch Thè B¶o M· sao! /buy_red","§©y kh«ng ph¶i lµ TuyÖt ¶nh sao! /buy_cyan","§©y kh«ng ph¶i lµ §İch L« sao! /buy_yellow","§©y ch¼ng ph¶i lµ ChiÕu D¹ Ngäc S­ Tö sao! /buy_white","§©y lµ ngùa g× vËy? T¹i h¹ hiÓu biÕt cßn kĞm /buy_none")
-end
+local nNpcIndex = GetLastDiagNpc(); 
+local szNpcName = GetNpcName(nNpcIndex); 
+if NpcName2Replace then szNpcName = NpcName2Replace(szNpcName); end 
+local tbDailog = DailogClass:new(szNpcName); 
+tbDailog.szTitleMsg = "<#><npc> ®¹i hiÖp ch¨n ngùa rÊt nhiÒu n¨m , chØ nh×n mét c¸i còng biÕt cã ®­îc hay kh«ng !" 
 
-function buy_black()
-	the_buy(1)
-end
+G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex); 
+tbDailog:AddOptEntry("Khi ®ã lµ ng­¬i kªu ta ?", horse_get); 
 
-function buy_red()
-	the_buy(2)
-end
+tbDailog:Show(); 
+end 
 
-function buy_cyan()
-	the_buy(3)
-end
+function horse_get() 
+Talk(4,"sele_color","Anh hïng xin dõng b­íc . ","Huynh ®µi , cã c¸i g× muèn chØ gi¸o ®İch ","T¹i h¹ lµ ThÈm C©u #, b©y giê cã mét thÊt tuÊn m·, cã thÓ bay ®i ngµn dÆm . vŞ nµy anh hïng phong th¸i bÊt phµm , nhÊt ®Şnh lµ cao thñ . ®¹i hiÖp ®İch tuÊn m· ch­a tõng bŞ thÊt phu thuÇn phôc . ","§Ó cho ta thö nh×n tuÊn m· mét chót  ,,, ") 
+end 
 
-function buy_yellow()
-	the_buy(4)
-end
+function sele_color() 
+Say("Anh hïng nh×n ! ",6,"§©y kh«ng ph¶i lµ ¤ V©n §¹p TuyÕt sao !/buy_black","§©y kh«ng ph¶i lµ ngùa Xİch Thè sao ! /buy_red","§©y kh«ng ph¶i lµ TuyÖt ¶nh sao ! /buy_cyan","§©y kh«ng ph¶i lµ §İch L« sao ! /buy_yellow","§©y kh«ng ph¶i lµ theo ChiÕu D¹ Ngäc S­ Tö sao ! /buy_white","§©y lµ c¸i g× m· ? ta häc thøc cã h¹n /buy_none") 
+end 
 
-function buy_white()
-	the_buy(5)
-end
+function buy_black() 
+the_buy(1) 
+end 
 
-function buy_none()
-	Talk(1,"","NhÊt bang chi chñ, lµ mét nh©n vËt bËc thÇy lµm sao kh«ng biÕt ®©y rèt cuéc lµ ngùa g× chø? Thø lçi, xem ra t¹i h¹ ®· nh×n lÇm ng­êi!")
-end
+function buy_red() 
+the_buy(2) 
+end 
 
-function the_buy(i)
-	SetTaskTemp(49,i)
-	x = GetTaskTemp(17)
-	if (x == 1000) then
-		Say("Kh«ng sai! Ng­êi qu¶ thËt lµ anh hïng. T¹i h¹ vèn ch¼ng muèn b¸n con ngùa nµy ®©u, nh­ng v× ®ang cÇn gÊp 1000 l­îng b¹c, v· l¹i nh×n thÊy anh hïng còng thËt sù thİch nã nªn nĞn lßng mµ b¸n nã cho anh hïng, mong r»ng anh hïng h·y th­¬ng yªu nu«i d­ìng nã ",2,"kh«ng sao ®©u, ta nhÊt ®Şnh sÏ ®èi xö tèt víi nã mµ /buy_yes","NhÊt thêi lµm sao t×m ra ®­îc sè tiÒn nµy /buy_no")
-	else
-		Say("Kh«ng sai! Ng­êi qu¶ thËt lµ anh hïng. T¹i h¹ vèn ch¼ng muèn b¸n con ngùa nµy ®©u, nh­ng v× ®ang cÇn gÊp 1500 l­îng b¹c, v· l¹i nh×n thÊy anh hïng còng thËt sù thİch nã nªn nĞn lßng mµ b¸n nã cho anh hïng, mong r»ng anh hïng h·y th­¬ng yªu nu«i d­ìng nã ",2,"kh«ng sao ®©u, ta nhÊt ®Şnh sÏ ®èi xö tèt víi nã mµ /buy_yes","NhÊt thêi lµm sao t×m ra ®­îc sè tiÒn nµy /buy_no")
-	end
-end
+function buy_cyan() 
+the_buy(3) 
+end 
 
-function buy_yes()
-	x = GetTaskTemp(17)
-	if (GetCash() >= x * 10000) then
-		i = GetTaskTemp(49)
-		if (x == 1000) then			-- ÊÇÓÅ»İ¼ÛÂòµÄ£¬Îª±äÁ¿¸³Öµ£¬²¢ÇÒ¼Ç×¡ÂòµÄÊÇÊ²Ã´ÑÕÉ«Âí
+function buy_yellow() 
+the_buy(4) 
+end 
+
+function buy_white() 
+--if GetCash() < 30000000 then
+--Talk(1,"","cÇn cã 3000 v¹n míi mua ®­îc chiÕu d¹ !")
+--return 
+--end
+--Pay(30000000)
+--AddItem(0,10,5,5,0,0,0)
+the_buy(5) 
+end 
+
+function buy_none() 
+Talk(1,"","§øng ®Çu mét bang , lµ s­ tr­ëng cÊp ng­êi cña vËt cuèi cïng thÕ nµo còng kh«ng biÕt c¸i nµy lµ c¸i g× m· ? thËt kh«ng cã ı , xem ra ng­¬i xem sai lÇm råi !") 
+end 
+
+function the_buy(i) 
+SetTaskTemp(49,i) 
+x = GetTaskTemp(17) 
+if (x == 3000) then 
+Say("Kh«ng sai ! ng­¬i thËt lµ anh hïng . t¹i h¹ vèn lµ kh«ng muèn b¸n con ngùa nµy , nh­ng b©y giê tíi lóc gÊp rót cÇn 3000 v¹n , nh×n anh hïng còng thËt thİch nã v× vËy kh¾c chÕ néi t©m kh«ng th«i b¸n cho anh hïng , hy väng anh hïng cã thÓ ®èi xö tö tÕ nã . ",2,"Ta nhÊt ®Şnh thËt tèt ®èi víi nã /buy_yes","NhÊt thêi ®i ®©u t×m nhiÒu tiÒn nh­ vËy /buy_no") 
+else 
+Say("Kh«ng sai ! ng­¬i thËt lµ anh hïng . t¹i h¹ vèn lµ kh«ng muèn b¸n con ngùa nµy , nh­ng b©y giê tíi lóc gÊp rót cÇn 3000 v¹n , nh×n anh hïng còng thËt thİch nã v× vËy kh¾c chÕ néi t©m kh«ng th«i b¸n cho anh hïng , hy väng anh hïng cã thÓ ®èi xö tö tÕ nã ",2,"Ta nhÊt ®Şnh thËt tèt ®èi víi nã /buy_yes","NhÊt thêi ®i ®©u t×m nhiÒu tiÒn nh­ vËy /buy_no") 
+end 
+end 
+
+function buy_yes() 
+x = GetTaskTemp(17) 
+if (GetCash() >= 3000 * 10000) then 
+i = GetTaskTemp(49) 
+if (x == 3000) then -- script viet hoa By http://tranhba.com  lµ gi¸ ­u ®·i mua , v× thay ®æi l­îng phó trŞ gi¸ , h¬n n÷a nhí mua lµ c¸i g× mµu s¾c m· 
 			SetTask(97,100+i)
-		end
-		Pay(x * 10000)
-		AddItem(0,10,5,i,0,0,0)
-		Talk(1,"","Ngùa ¬i ngùa! Tõ ®©y vÒ sau ng­¬i h·y ®i theo vŞ anh hïng nµy nhĞ, nhÊt ®Şnh ph¶i ngoan ngo·n ®ã!")
-	else
-		Talk(1,"","Ta hiÖn giê trong ng­êi kh«ng mang theo ®ñ ng©n l­îng, huynh t¹m thêi cÇm ®ì sè tiÒn nµy vËy!")
-	end
-end
+end 
+Pay(3000 * 10000) 
+AddItem(0,10,5,i,0,0,0) 
+Talk(1,"","Con ngùa a con ngùa ! tõ nay vÒ sau ng­¬i liÒn theo vŞ nµy anh hïng , nhÊt ®Şnh ph¶i nghe lêi a !") 
+else 
+Talk(1,"","Ta trªn ng­êi b©y giê ng©n l­îng kh«ng ®ñ , ng­¬i cÇm tr­íc sè tiÒn nµy !") 
+end 
+end 
 
-function buy_no()
-	Talk(1,"","Kh«ng lÏ sè tiÒn nµy l¹i lµm khã anh hïng sao")
-end
+function buy_no() 
+Talk(1,"","Ch¼ng lÏ lµ sè tiÒn nµy ®Ó cho anh hïng lµm khã ") 
+end 

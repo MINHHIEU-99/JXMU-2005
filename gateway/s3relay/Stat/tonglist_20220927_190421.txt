@@ -1,0 +1,4 @@
+TongCount=2, MemberCount=2, UnionCount=0
+TongName	MasterName	TongLevel	TongExp	SelfCamp	AllMemberCount	DirectorCount	ManagerCount	MemberCount	BuildLevel	MoneyFund	BuildFund	WarBuildFund	MaintainFund	StoredOffer	StoredBuildFund	UnionNum	UnionName	IsUnionLeader	UnionCamp
+1232	128903091478	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0		0	0
+Kevin	KevinTran	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0		0	0

@@ -1,2 +1,13 @@
-Include("\\script\\global\\mrt\\npc\\thoren\\thon\\chutientran.lua")
---Thî RÌn Chu Tiªn TrÊn
+--ÖÐÔ­±±Çø ÖìÏÉÕò Ìú½³¶Ô»°
+Include("\\script\\global\\global_tiejiang.lua")
+
+TIEJIANG_DIALOG = "<dec><npc>CÇn mãn vò khÝ nµo cø nãi ra, kh«ng cã mãn nµo ta kh«ng lµm ®­îc!"
+
+function main(sel)
+	tiejiang_village()
+end;
+
+
+function yes()
+Sale(86);  			--µ¯³ö½»Ò×¿ò
+end;

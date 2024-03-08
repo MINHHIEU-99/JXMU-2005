@@ -1,9 +1,15 @@
 Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\vng_event\\change_request_baoruong\\exp_award.lua")
-
+local  _Message =  function (nItemIndex)
+	local handle = OB_Create()
+	local msg = format("<color=green>Chóc mõng cao thñ <color=yellow>%s<color=green> ®· nhËn ®­îc <color=yellow><%s><color=green> tõ <color=yellow><B¶o R­¬ng KiÕm Gia><color>" ,GetName(),GetItemName(nItemIndex))
+	ObjBuffer:PushObject(handle, msg)
+	RemoteExecute("\\script\\event\\msg2allworld.lua", "broadcast", handle)
+	OB_Release(handle)
+end
 tbKG_Key_Require = {
 	["chiakhoanhuy"] = {6, 1, 2744},
-	["chiakhoavang"] = {6, 1, 30191},
+	["chiakhoavang"] = {6, 1, 4877},
 }
 tbKG_Box_Award = 
 {
@@ -41,62 +47,33 @@ tbKG_Box_Award =
 		},		
 	},	
 	["chiakhoavang"] = 
-	{
-		-- {szName="§å Phæ B¹ch Hæ Hµi",tbProp={6,1,3175,1,0,0},nCount=1,nRate=0.008},
-		--{szName="B¹ch Hæ §å Phæ H¹ Giíi",tbProp={6,1,3181,1,0,0},nCount=1,nRate=0.008},
-		-- {szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.005},
-		{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.3},
-		{szName="PhØ Thóy Chi B¶o",tbProp={6,1,3003,1,0,0},nCount=1,nRate=0.2},
-		{szName="Phong V©n Chi B¶o",tbProp={6,1,3004,1,0,0},nCount=1,nRate=0.1},
-		-- {szName="B¶o R­¬ng Kim ¤ Kh«i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.003},
-		-- {szName="B¶o R­¬ng Kim ¤ Y",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={6,0,0,0,0,0},nRate=0.003},
-		-- {szName="B¶o R­¬ng Kim ¤ Hµi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.003},
-		-- {szName="B¶o R­¬ng Kim ¤ Yªu §¸i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.003},
-		-- {szName="B¶o R­¬ng Kim ¤ Hé UyÓn",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.003},
-		-- {szName="B¶o R­¬ng Kim ¤ H¹ng Liªn",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={1,0,0,0,0,0},nRate=0.003},
-		-- {szName="B¶o R­¬ng Kim ¤ Béi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={9,0,0,0,0,0}, nRate=0.003},
-		{szName="MËt tÞch kÜ n¨ng 150 (CÊp 19)",tbProp={6,1,30170,1,0,0},nCount=1,nRate=0.02},
-		{szName="MËt tÞch kÜ n¨ng 150 (CÊp 20)",tbProp={6,1,30171,1,0,0},nCount=1,nRate=0.02},
-		{szName="MÆt n¹ - Anh hïng chiÕn tr­êng",tbProp={0,11,482,1,0,0},nCount=1,nRate=0.1,nExpiredTime=10080,nUsageTime=60},
-		{szName="Håi thiªn t¸i t¹o lÔ bao",tbProp={6,1,2527,1,0,0},nCount=1,nRate=1.05,nExpiredTime=43200},
-		{szName="Ch×a Khãa Nh­ ý",tbProp={6,1,2744,1,0,0},nCount=1,nRate=4,nExpiredTime=20160},
-		{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.05,nExpiredTime=43200},
-		{szName="Cèng HiÕn LÔ bao",tbProp={6,1,30214,1,0,0},nCount=1,nRate=0.5,nExpiredTime=1440},
-		{szName="Thanh B×nh L¹c",tbProp={0,3881},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="Håi Xu©n",tbProp={0,3882},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="Kh« Méc",tbProp={0,3883},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="L­u V©n ",tbProp={0,3884},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="Nª Tr¹ch",tbProp={0,3885},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="L«i Háa KiÕp",tbProp={0,3886},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="Mª Tóy Thiªn H­¬ng",tbProp={0,3887},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="§iÖp Vò Hoa Phi",tbProp={0,3888},nCount=1,nRate=0.5,nQuality = 1,nExpiredTime=1440},
-		{szName="§iÓm kinh nghiÖm 1", 
+	{	
+		{szName="B¶o R­¬ng Tinh S­¬ng Kh«i",tbProp={6,1,6021,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.004, CallBack = _Message},
+		{szName="B¶o R­¬ng Tinh S­¬ng Th­îng Giíi",tbProp={6,1,6022,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=0.002, CallBack = _Message},
+		{szName="B¶o R­¬ng Tinh S­¬ng Hµi",tbProp={6,1,6027,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.002, CallBack = _Message},
+		{szName="B¶o R­¬ng Tinh S­¬ng Yªu §¸i",tbProp={6,1,6024,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.002, CallBack = _Message},
+		{szName="B¶o R­¬ng Tinh S­¬ng Hé UyÓn",tbProp={6,1,6023,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.002, CallBack = _Message},		
+		{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.005,nExpiredTime=43200},
+              {szName="Xu  ",tbProp={4,417,1,1,0,0},nCount=50,nRate=35, CallBack = _Message},
+		{szName="Xu  ",tbProp={4,417,1,1,0,0},nCount=100,nRate=20, CallBack = _Message},
+              {szName="Xu  ",tbProp={4,417,1,1,0,0},nCount=500,nRate=10, CallBack = _Message},		
+		{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,4881},nCount=1,nRate=0.15,nQuality = 1,nExpiredTime=10080,},
+		{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,4892},nCount=1,nRate=0.15,nQuality = 1,nExpiredTime=10080,},
+              {szName="§iÓm kinh nghiÖm 1", 
 					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(6000000, "B¶o R­¬ng KiÕm Gia")
+						%tbvng_ChestExpAward:ExpAward(1000000000, "B¶o r­¬ng v­ît ¶i")
 					end,
-					nRate = 81.118,
+					nRate = 35, CallBack = _Message,
 		},
 		{szName="§iÓm kinh nghiÖm 2", 
 					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(12000000, "B¶o R­¬ng KiÕm Gia")
+						%tbvng_ChestExpAward:ExpAward(3000000000, "B¶o r­¬ng v­ît ¶i")
 					end,
-					nRate = 5,
+					nRate = 25, CallBack = _Message,
 		},
-		{szName="§iÓm kinh nghiÖm 3", 
-					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(20000000, "B¶o R­¬ng KiÕm Gia")
-					end,
-					nRate = 3,
-		},
-		{szName="§iÓm kinh nghiÖm 4", 
-					pFun = function (tbItem, nItemCount, szLogTitle)
-						%tbvng_ChestExpAward:ExpAward(50000000, "B¶o R­¬ng KiÕm Gia")
-					end,
-					nRate = 0.5,
-		},	
+
 	},
 }
-
 nWidth = 1
 nHeight = 1
 nFreeItemCellLimit = 1
@@ -143,7 +120,7 @@ function VnKGBoxNewAward(nItemIdx, strKeyType)
 		return
 	end
 	
-	if ConsumeItem(3, 1, 6, 1, 30203, -1) ~= 1 then
+	if ConsumeItem(3, 1, 6, 1, 5055, -1) ~= 1 then
 		Say("Kh«ng t×m thÊy B¶o R­¬ng KiÕm Gia", 1, "§ãng/no")
 		return
 	end	

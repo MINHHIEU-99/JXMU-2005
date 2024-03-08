@@ -541,12 +541,12 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			end
 			strTittle = strTittle..format("\t\t\t\t%-30s%s\n", str0, str1)
 		end	
-		--Relife
+		--trïng sinh
 		if tbRequirement.nTS then
 			local nCurCount = ST_GetTransLifeCount()
 			local nRequire = tbRequirement.nTS
 			local str1 = ""
-			local str0 = "Relife "
+			local str0 = "Trïng sinh "
 			if nCurCount == nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>§· hoµn thµnh<color>"
@@ -619,9 +619,9 @@ function tbPVLB_Quest:HaveNoQuest()
 				if tbRequirement.nTinSu then
 					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "NhiÖm vô TÝn Sø", tbRequirement.nTinSu)
 				end
-				--Relife
+				--trïng sinh
 				if tbRequirement.nTS then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Relife "..tbRequirement.nTS, 1)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Trïng sinh "..tbRequirement.nTS, 1)
 				end
 				--VLMC
 				if tbRequirement.nVLMC then

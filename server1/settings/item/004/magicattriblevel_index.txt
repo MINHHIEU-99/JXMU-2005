@@ -1,10 +1,10 @@
 MAGIC_ID	MAGATTRLVL_START	MAGATTRLVL_END	DESC	FIT_EQUIP	REMARK
-126	1	10	T¨ng s¸t th­¬ng vËt lý hÖ Ngo¹i c«ng 	Vò khÝ 	MAGATTRLVL_START vµ MAGATTRLVL_END ®Òu lµ biÓu thÞ ®¼ng cÊp thuéc tÝnh, gi¶m 1 so víi magicattriblevel. Txt
+126	1	10	T¨ng s¸t th­¬ng vËt lý hÖ Ngo¹i c«ng 	Vò khÝ 	MAGATTRLVL_STARTºÍMAGATTRLVL_END±íÊ¾µÄ¶¼ÊÇµÈ¼¶Ä§·¨ÊôÐÔ±àºÅ£¬¶ÔÓ¦ÓÚmagicattriblevel.txtµÄÐÐºÅ¼õ1
 166	11	20	T¨ng c«ng kÝch chÝnh x¸c 	Vò khÝ 	
 115	21	30	T¨ng tèc ®é xuÊt chiªu hÖ Ngo¹i c«ng	Vò khÝ 	
-58	31	40	Bá qua phßng thñ ®èi ph­¬ng	Vò khÝ 	
+58	31	40	Bá qua tèc ®é di chuyÓn cña ®èi ph­¬ng	Vò khÝ 	
 43	41	50	Kh«ng thÓ ph¸ hñy	Kh«ng thÓ kh¶m n¹m 	
-150	51	60	T¨ng phßng thñ ®èi ®a	Kh«ng thÓ kh¶m n¹m	
+150	51	60	T¨ng phßng thñ vËt lý 	Kh«ng thÓ kh¶m n¹m	
 111	61	70	T¨ng tèc ®é di chuyÓn	hµi	
 117	71	80	T¨ng ph¶n ®ßn cËn chiÕn	Y phôc	
 113	81	90	Gi¶m thêi gian bÞ th­¬ng 	Y phôc	
@@ -24,7 +24,7 @@ MAGIC_ID	MAGATTRLVL_START	MAGATTRLVL_END	DESC	FIT_EQUIP	REMARK
 125	221	230	T¨ng ®éc s¸t hÖ Ngo¹i c«ng 	Vò khÝ 	
 123	231	240	T¨ng b¨ng s¸t hÖ Ngo¹i c«ng 	Vò khÝ 	
 122	241	250	T¨ng b¨ng háa hÖ Ngo¹i c«ng 	Vò khÝ 	
-124	251	260	T¨ng L«i S¸t hÖ Ngo¹i c«ng 	Vò khÝ 	
+124	251	260	T¨ng b¨ng L«i hÖ Ngo¹i c«ng 	Vò khÝ 	
 134	261	270	chuyÓn hãa s¸t th­¬ng thµnh Néi lùc	Y phôc, hµi, Yªu ®¸i, M·o, Hé uyÓn	
 104	271	280	Phßng thñ t¨ng 	Y phôc, hµi, Yªu ®¸i, M·o, Hé uyÓn	
 101	281	290	Phßng ®éc t¨ng 	TÊt c¶ c¸c trang bÞ 	
@@ -32,7 +32,7 @@ MAGIC_ID	MAGATTRLVL_START	MAGATTRLVL_END	DESC	FIT_EQUIP	REMARK
 102	301	310	Phßng háa t¨ng 	TÊt c¶ c¸c trang bÞ 	
 103	311	320	Phßng L«i t¨ng 	TÊt c¶ c¸c trang bÞ 	
 99	321	330	T¨ng Ngo¹i c«ng	TÊt c¶ c¸c trang bÞ 	
-110	331	340	Gi¶m  Thêi Gian cho¸ng 	TÊt c¶ c¸c trang bÞ 	
+110	331	340	Gi¶m cho¸ng 	TÊt c¶ c¸c trang bÞ 	
 135	341	350	T¨ng May m¾n 	NhÉn, §ai th¾t, D©y chuyÒn	
 106	351	360	Gi¶m ®éng t¸c lµm chËm	TÊt c¶ c¸c trang bÞ 	
 98	361	370	T¨ng th©n ph¸p	Y phôc, hµi, Yªu ®¸i, M·o, Hé uyÓn, NhÉn, D©y chuyÒn, §ai th¾t	
@@ -47,4 +47,3 @@ MAGIC_ID	MAGATTRLVL_START	MAGATTRLVL_END	DESC	FIT_EQUIP	REMARK
 170	451	460	T¨ng Ho¶ s¸t hÖ Néi c«ng	Vò khÝ 	
 171	461	470	T¨ng L«i s¸t hÖ Néi c«ng	Vò khÝ 	
 172	471	480	T¨ng s¸t th­¬ng §éc hÖ Néi c«ng	Vò khÝ 	
-

@@ -1,18 +1,6 @@
 --PhÇn th­ëng tõ tÝnh n¨ng B¸ch B¶o R­¬ng - Created By DinhHQ - 20120415
 Include("\\script\\misc\\eventsys\\type\\npc.lua")
 Include("\\script\\lib\\composeex.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua") -- CÊu h×nh m¸y chñ cho MrChuBo 
-Include("\\script\\lib\\awardtemplet.lua")
-Include("\\script\\lib\\objbuffer_head.lua")
-Include("\\script\\lib\\log.lua")
-Include("\\script\\activitysys\\playerfunlib.lua")
-local  _Message =  function (nItemIndex, strBoxName)
-	local handle = OB_Create()
-	local msg = format("<color=green>Chóc mõng cao thñ <color=yellow>%s<color=green> ®· nhËn ®­îc <color=yellow><%s><color=green> tõ ViÖc Sö dông <color=yellow><%s><color>Mua ë LÔ Quan" ,GetName(),GetItemName(nItemIndex), strBoxName)
-	ObjBuffer:PushObject(handle, msg)
-	RemoteExecute("\\script\\event\\msg2allworld.lua", "broadcast", handle)
-	OB_Release(handle)
-end
 tbBBRAward = {}
 tbBBRAward.tbFlag = {
 	["LongLenhKy"] = {szName = "Long LÖnh Kú", tbProp = {6, 1, 3056, 1, 0, 0}},
@@ -20,39 +8,79 @@ tbBBRAward.tbFlag = {
 	["QuyLenhKy"] = {szName = "Quy LÖnh Kú", tbProp = {6, 1, 3059, 1, 0, 0}},
 	["PhungLenhKy"] = {szName = "Phông LÖnh Kú", tbProp = {6, 1, 3058, 1, 0, 0}},
 }
-
-
-tbBBRAward.tbProduct = {--tÊt c¶ ®­îc söa Bëi JXMU.vn 01/08/2023
+tbBBRAward.tbProduct = {
 	["LongLenhKy"] = {
-	-- {tbProduct ={szName="Kim B¶o r­¬ng cÊp 4",  tbProp={6,1,4911,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 20},
-	{tbProduct ={szName="B¶o r­¬ng §å xanh",  tbProp={6,1,4896,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 20},
-	{tbProduct ={szName="S¸t thñ truy n· lÖnh",  tbProp={6,1,4897,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 5},
-	{tbProduct ={szName="HiÒn Tin CÊp mo¹t",  tbProp={6,1,147,1,1,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 1},
-	{tbProduct ={szName="HiÒn Tin CÊp Hoai",  tbProp={6,1,147,1,2,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 2},
+		{tbProduct = {szName = "Kim ¤ Ph¸t Qu¸n - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}}, nFlagRequire = 800},
+		{tbProduct = {szName = "Kim ¤ Hµi - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={8,0,0,0,0,0}}, nFlagRequire = 800},
+		{tbProduct = {szName = "Kim ¤ Kim Kh¶i - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={6,0,0,0,0,0}}, nFlagRequire = 900},
+		{tbProduct = {szName = "Kim ¤ Yªu §¸i - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={5,0,0,0,0,0}}, nFlagRequire = 800},
+		{tbProduct = {szName = "Kim ¤ H¹ng Liªn - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={1,0,0,0,0,0}}, nFlagRequire = 700},
+		{tbProduct = {szName = "Kim ¤ Hé UyÓn - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={4,0,0,0,0,0}}, nFlagRequire = 800},
+		{tbProduct = {szName = "Kim ¤ Ngäc Béi - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={9,0,0,0,0,0}}, nFlagRequire = 750},
+		{tbProduct = {szName = "Kim ¤ Th­îng Giíi ChØ - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={3,0,0,0,0,0}}, nFlagRequire = 1000},
+		{tbProduct = {szName = "Kim ¤ H¹ Giíi ChØ - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={10,0,0,0,0,0}}, nFlagRequire = 1000},
+		{tbProduct = {szName = "Kim ¤ KhÝ Giíi - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={7,0,0,0,0,0}}, nFlagRequire = 3000},
+		{tbProduct = {szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1}, nFlagRequire = 600},
+		{tbProduct = {szName="Vò §· Hµ",tbProp={0,3880},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Thanh B×nh L¹c",tbProp={0,3881},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Håi Xu©n",tbProp={0,3882},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Kh« Méc",tbProp={0,3883},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L­u V©n ",tbProp={0,3884},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Nª Tr¹ch",tbProp={0,3885},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L«i Háa KiÕp",tbProp={0,3886},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Mª Tóy Thiªn H­¬ng",tbProp={0,3887},nCount=1,nQuality = 1,nExpiredTime=10080}, nFlagRequire = 10},
+		{tbProduct = {szName="§iÖp Vò Hoa Phi",tbProp={0,3888},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,}, nFlagRequire = 2},		
 	},
 	["LanLenhKy"] = {
-	-- {tbProduct ={szName="Kim B¶o r­¬ng cÊp 4",  tbProp={6,1,4911,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "L©n LÖnh Kú") end},nFlagRequire = 20},
-	{tbProduct ={szName="B¶o r­¬ng §å xanh",  tbProp={6,1,4896,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "L©n LÖnh Kú") end},nFlagRequire = 20},
-	{tbProduct ={szName="S¸t thñ truy n· lÖnh",  tbProp={6,1,4897,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "L©n LÖnh Kú") end},nFlagRequire = 5},
-	{tbProduct ={szName="HiÒn Tin CÊp mo¹t",  tbProp={6,1,147,1,1,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 1},
-	{tbProduct ={szName="HiÒn Tin CÊp Hoai",  tbProp={6,1,147,1,2,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 2},
+		{tbProduct = {szName="MÆt n¹ V­¬ng Gi¶",tbProp={0,11,561,1,0,0},nCount=1,nExpiredTime=43200}, nFlagRequire = 400},
+		{tbProduct = {szName="MÆt n¹ - Anh hïng chiÕn tr­êng",tbProp={0,11,482,1,0,0},nCount=1,nExpiredTime=10080, nUsageTime=60}, nFlagRequire = 30},
+		{tbProduct = {szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nExpiredTime=43200}, nFlagRequire = 240},
+		{tbProduct = {szName="Phong V©n B¹ch M·",tbProp={0,10,19,1,0,0},nCount=1,nExpiredTime=129600}, nFlagRequire = 100, },
+		{tbProduct = {szName="Phiªn Vò (HSD 1 th¸ng)",tbProp={0,10,7,1,0,0},nCount=1,nExpiredTime=43200}, nFlagRequire = 20},
+		{tbProduct = {szName="Phiªn Vò (HSD 3 th¸ng)",tbProp={0,10,7,1,0,0},nCount=1,nExpiredTime=129600}, nFlagRequire = 60},
+		{tbProduct = {szName="Vò §· Hµ",tbProp={0,3880},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Thanh B×nh L¹c",tbProp={0,3881},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Håi Xu©n",tbProp={0,3882},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Kh« Méc",tbProp={0,3883},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L­u V©n ",tbProp={0,3884},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Nª Tr¹ch",tbProp={0,3885},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L«i Háa KiÕp",tbProp={0,3886},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Mª Tóy Thiªn H­¬ng",tbProp={0,3887},nCount=1,nQuality = 1,nExpiredTime=10080}, nFlagRequire = 10},
+		{tbProduct = {szName="§iÖp Vò Hoa Phi",tbProp={0,3888},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,}, nFlagRequire = 2},		
 	},
 	["QuyLenhKy"] = {
-	-- {tbProduct ={szName="Kim B¶o r­¬ng cÊp 4",  tbProp={6,1,4911,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Quy LÖnh K×") end},nFlagRequire = 20},
-	{tbProduct ={szName="B¶o r­¬ng §å xanh",  tbProp={6,1,4896,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Quy LÖnh K×") end},nFlagRequire = 20},
-	{tbProduct ={szName="S¸t thñ truy n· lÖnh",  tbProp={6,1,4897,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Quy LÖnh K×") end},nFlagRequire = 5},
-	{tbProduct ={szName="HiÒn Tin CÊp mo¹t",  tbProp={6,1,147,1,1,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 1},
-	{tbProduct ={szName="HiÒn Tin CÊp Hoai",  tbProp={6,1,147,1,2,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 2},
-
-	--{tbProduct ={szName="[jxmu] HuyÒn Th¶o Giíi",  tbProp={0,679},nQuality=1,CallBack = function(nParam) %_Message(nParam, "Quy LÖnh K×") end},nFlagRequire = 2000},
+		{tbProduct = {szName="1000 v¹n ng©n l­îng", nJxb = 10000000, nCount = 1}, nFlagRequire = 8},
+		{tbProduct = {szName="5000 v¹n ng©n l­îng", nJxb = 50000000, nCount = 1}, nFlagRequire = 40},
+		{tbProduct = {szName="10000 v¹n ng©n l­îng", nJxb = 100000000, nCount = 1}, nFlagRequire = 80},
+		{tbProduct = {szName="50000 v¹n ng©n l­îng", nJxb = 500000000, nCount = 1}, nFlagRequire = 400},
+		{tbProduct = {szName="Vò §· Hµ",tbProp={0,3880},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Thanh B×nh L¹c",tbProp={0,3881},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Håi Xu©n",tbProp={0,3882},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Kh« Méc",tbProp={0,3883},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L­u V©n ",tbProp={0,3884},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Nª Tr¹ch",tbProp={0,3885},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L«i Háa KiÕp",tbProp={0,3886},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Mª Tóy Thiªn H­¬ng",tbProp={0,3887},nCount=1,nQuality = 1,nExpiredTime=10080}, nFlagRequire = 10},
+		{tbProduct = {szName="§iÖp Vò Hoa Phi",tbProp={0,3888},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,}, nFlagRequire = 2},
 	},
 	["PhungLenhKy"] = {
-	-- {tbProduct ={szName="Kim B¶o r­¬ng cÊp 4",  tbProp={6,1,4911,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Phông LÖnh Kú") end},nFlagRequire = 20},
-	{tbProduct ={szName="B¶o r­¬ng §å xanh",  tbProp={6,1,4896,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Phông LÖnh Kú") end},nFlagRequire = 20},
-	{tbProduct ={szName="S¸t thñ truy n· lÖnh",  tbProp={6,1,4897,1,0,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Phông LÖnh Kú") end},nFlagRequire = 5},
-	{tbProduct ={szName="HiÒn Tin CÊp mo¹t",  tbProp={6,1,147,1,1,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 1},
-	{tbProduct ={szName="HiÒn Tin CÊp Hoai",  tbProp={6,1,147,1,2,0},nCount=1,CallBack = function(nParam) %_Message(nParam, "Long LÖnh Kú") end},nFlagRequire = 2},
-
+		{tbProduct = {szName="Hoµng Kim Ên (C­êng hãa) cÊp 7",tbProp={0,3211},nCount=1,nQuality = 1,}, nFlagRequire = 2000},
+		{tbProduct = {szName="Hoµng Kim Ên (C­êng hãa) cÊp 8",tbProp={0,3212},nCount=1,nQuality = 1,nExpiredTime=129600,}, nFlagRequire = 3000},
+		{tbProduct = {szName="Hoµng Kim Ên (Nh­îc hãa) cÊp 7",tbProp={0,3221},nCount=1,nQuality = 1,}, nFlagRequire = 2000},
+		{tbProduct = {szName="Hoµng Kim Ên (Nh­îc hãa) cÊp 8",tbProp={0,3222},nCount=1,nQuality = 1,nExpiredTime=129600,}, nFlagRequire = 3000},
+		{tbProduct = {szName="Vò §· Hµ",tbProp={0,3880},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Thanh B×nh L¹c",tbProp={0,3881},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Håi Xu©n",tbProp={0,3882},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Kh« Méc",tbProp={0,3883},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L­u V©n ",tbProp={0,3884},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Nª Tr¹ch",tbProp={0,3885},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="L«i Háa KiÕp",tbProp={0,3886},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Mª Tóy Thiªn H­¬ng",tbProp={0,3887},nCount=1,nQuality = 1,nExpiredTime=10080}, nFlagRequire = 10},
+		{tbProduct = {szName="§iÖp Vò Hoa Phi",tbProp={0,3888},nCount=1,nQuality = 1,nExpiredTime=10080,}, nFlagRequire = 10},
+		{tbProduct = {szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,}, nFlagRequire = 2},
 	},
 }
 function tbBBRAward:main()
@@ -103,14 +131,12 @@ function tbBBRAward:MakeCompose(strFlag, nProductID)
 	local tbFormula = {		
 		tbMaterial = tbMat,		
 		tbProduct = tbTemp.tbProduct,	
-		nWidth = 2,
-		nHeight = 1,
+		nWidth = 3,
+		nHeight = 3,
 		nFreeItemCellLimit = 1,
 	}
 	pCompos = tbActivityCompose:new(tbFormula, strFlag.."DoiPhanThuong");
 	pCompos:ComposeDailog(1);
 end
 
-if PhongVanBaoDien.isEnable ~= 0 then
-	pEventType:Reg("LÔ Quan", "PhÇn th­ëng Phong V©n B¶o §iÖn", tbBBRAward.main, {tbBBRAward})
-end
+pEventType:Reg("LÔ Quan", "PhÇn th­ëng Phong V©n B¶o §iÖn", tbBBRAward.main, {tbBBRAward})

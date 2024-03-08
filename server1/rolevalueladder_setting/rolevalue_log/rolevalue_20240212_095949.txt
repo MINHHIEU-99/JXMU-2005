@@ -1,8 +1,0 @@
-[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
-[Normal]Item:  §å phæ Hoµng Kim - An Bang Kª HuyÕt Th¹ch Giíi ChØ (0,1,166,0,3,8), unbind = 0, bind = 100
-[Normal]Item: §éng S¸t B¹ch Kim Tó Phông Giíi(0,1,144,0,0,10), unbind = 0, bind = 100
-[Normal]Item:  §å phæ Hoµng Kim - An Bang B¨ng Tinh Th¹ch H¹ng Liªn(0,1,163,0,4,10), unbind = 0, bind = 100
-[Normal]Item:  §å phæ Hoµng Kim - An Bang B¨ng Tinh Th¹ch H¹ng Liªn(0,1,163,0,4,10), unbind = 0, bind = 100
-[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
-[Normal]Item: Phi §ao(0,0,1,1,0,1), unbind = 0, bind = 0
-[Normal]Item: Phi §ao(0,0,1,1,0,1), unbind = 0, bind = 0

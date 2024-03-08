@@ -2,11 +2,11 @@ Include("\\script\\missions\\fengling_ferry\\fld_head.lua")
 
 function OnDeath(Launcher)
 	Msg2Player("B¹n kh«ng may tö vong trong lóc ®i thuyÒn.")
-	Msg2MSAll(GetName().." kh«ng may tö vong trong lóc ®i thuyÒn.")
+	Msg2MSAll("<color=yellow>"..GetName().."<color> kh«ng may tö vong trong lóc ®i thuyÒn t¹i bÕn thuyÒn Phong L¨ng §é")
 	camp = GetCamp()
 	SetCurCamp(camp)
-	SetCreateTeam(1)
-	SetDeathScript("")
+--	SetCreateTeam(1)
+--	SetDeathScript("")
 	JiluDeathCount(1)		-- Êý¾ÝÂñµãµÚÒ»ÆÚ
 	
 	DelMSPlayer(MISSIONID, 0)	--Ç¿ÖÆ¸ÃÍæ¼ÒÀë¿ªMission
@@ -25,7 +25,6 @@ function OnDeath(Launcher)
 end
 
 function JiluDeathCount(nCount)
-	Msg2Player(nCount)
 	local mapid = SubWorldIdx2ID(SubWorld)
 	if (mapid == 337) then
 		AddStatData("fld_chuan1siwangrenshu", nCount)

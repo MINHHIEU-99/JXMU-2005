@@ -1,26 +1,24 @@
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
---Long M«n TrÊn
-function main(sel)
-local nDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
-if nDate < ThoiGianOpenServer then
-if ( GetFightState() == 0 ) then	
-	SetPos(2034, 4487)	
-	Msg2Player(""..ThoiGianOpenServerText.."")		
-else
-	SetPos(2034, 4487)	
-	Msg2Player(""..ThoiGianOpenServerText.."")
-end;
-	AddStation(10)			
-	SetProtectTime(18*3)
-	AddSkillState(963, 1, 0, 18*3) 
-else
-if ( GetFightState() == 0 ) then	
-	SetPos(2039, 4479)
-	SetFightState(1)		
-else
-	SetPos(2034, 4487)	
-	SetFightState(0)		
-end;
+-- script viet hoa By http://tranhba.com  Trung Nguyªn b¾c khu long m«n tr¹ng th¸i chiÕn ®Êu thiÕt ®æi Trap 
+-- script viet hoa By http://tranhba.com Trap Id 104 
+-- script viet hoa By http://tranhba.com By t« vò 2003 n¨m 10 th¸ng 28 ngµy 
 
-end
+Include("\\script\\global\\g7vn\\g7configall.lua")
+
+function main(sel) 
+
+	--dofile("script/global/g7vn/g7configall.lua")
+	local zDate = tonumber(date("%Y%m%d%H%M"))
+		if zDate <= ThoiGianHetHanDiemTP then
+		Say("§óng vµo lóc <color=yellow>"..ThoiGianOpenStr.."<color> míi b¾t ®Çu chÝnh thøc khai më m¸y chñ");
+		SetPos(2034, 4487)
+		return 1
+	end
+
+if ( GetFightState() == 0 ) then -- script viet hoa By http://tranhba.com  nhµ ch¬i xö vu kh«ng ph¶i lµ tr¹ng th¸i chiÕn ®Êu , tøc ë trong thµnh 
+SetPos(2039, 4479) -- script viet hoa By http://tranhba.com  thiÕt trÝ ®i ra Trap ®iÓm , môc ®Ých ®iÓm ë ngoµi thµnh 
+SetFightState(1) -- script viet hoa By http://tranhba.com  chuyÓn ®æi v× tr¹ng th¸i chiÕn ®Êu 
+else -- script viet hoa By http://tranhba.com  nhµ ch¬i xö vu tr¹ng th¸i chiÕn ®Êu , tøc ë ngoµi thµnh 
+SetPos(2034, 4487) -- script viet hoa By http://tranhba.com  thiÕt trÝ ®i ra Trap ®iÓm , môc ®Ých ®iÓm ë trong thµnh 
+SetFightState(0) -- script viet hoa By http://tranhba.com  chuyÓn ®æi v× kh«ng ph¶i lµ tr¹ng th¸i chiÕn ®Êu 
+end; 
 end;

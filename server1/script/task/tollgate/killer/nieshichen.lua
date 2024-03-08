@@ -7,16 +7,20 @@ Include("\\script\\event\\birthday_jieri\\200905\\chuangguan\\chuangguan.lua");
 Include("\\script\\event\\birthday_jieri\\200905\\class.lua");
 Include("\\script\\lib\\common.lua");
 Include("\\script\\lib\\log.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 -- ´³¹Ø»î¶¯Ã¿ÈÕÅÅĞĞ°ñ
 Include("\\script\\missions\\challengeoftime\\rank_perday.lua");
 ---- DescribÍ¼Æ¬ÃèÊö
+--DescLink_NieShiChen = "<#><link=image[147,167]:\\spr\\npcres\\enemy\\enemy154\\enemy154_pst.spr>Äôß±³¾£º<link>";
+TSKID_KILLTASKID = 1082;	-- ½ÓÊÜµÄÄÄ¸öÈÎÎñ
+TSKID_KILLERDATE	= 1192;	--½ÓÈÎÎñÊ±µÄÈÕÆÚ
+TSKID_KILLERMAXCOUNT	= 1193;	--Ã¿ÌìÉ±ÈË´ÎÊı
+KILLER_MAXCOUNT		= 8;	--Ã¿ÌìÉ±ÈËÉÏÏŞ8ÈË
 
 --Thªm dßng kiÓm tra ®iÒu kiÖn tham gia khiªu chiÕn cña tæ ®éi - Modified by DinhHQ - 20110504
-Include("\\script\\global\\mrt\\configserver\\toan_config.lua")
 Include("\\script\\vng_feature\\challengeoftime\\npcNhiepThiTran.lua")
+
 ContentList = {
-	"<#>NÕu ai cã ®ñ 160  s¸t thñ gi¶n trong tay th× giÊc méng trë thµnh ®Ö nhÊt s¸t thñ ®· xem nh­ hoµn thµnh. Mçi ngµy chØ cÇn hoµn thµnh <color=yellow>"..SoLuongBossSatThuTrongNgay.." nhiÖm vô<color>lµ ®­îc. <enter>H·y tiÕp nhËn nhiÖm vô “th¸ch thøc thêi gian” ®Ó thÓ nghiÖm søc m¹nh ®ång ®éivµ kh¶ n¨ng s¸t thñ cña m×nh.",
+	"<#>NÕu ai cã ®ñ 160  s¸t thñ gi¶n trong tay th× giÊc méng trë thµnh ®Ö nhÊt s¸t thñ ®· xem nh­ hoµn thµnh. Mçi ngµy chØ cÇn hoµn thµnh <color=yellow>8nhiÖm vô<color>lµ ®­îc. <enter>H·y tiÕp nhËn nhiÖm vô “th¸ch thøc thêi gian” ®Ó thÓ nghiÖm søc m¹nh ®ång ®éivµ kh¶ n¨ng s¸t thñ cña m×nh.",
 	"<#> NhiÖm vô s¸t thñ cÊp 20/killer20",
 	"<#> NhiÖm vô s¸t thñ cÊp 30/killer30",
 	"<#> NhiÖm vô s¸t thñ cÊp 40/killer40",
@@ -44,7 +48,7 @@ ContentList = {
 	"<#> S¸t thñ luyÖn thøc tr­íc tiªn ph¶i b¾t ®Çu tõ viÖc tham gia khiªu chiÕn, ng­¬i d¸m tiÕp nhËn nhiÖm vô chø?",
 	"<#> Liªn quan ®Õn khiªu chiÕn/aboutchallenge",
 	"<#> Cø mçi giê hÖ thèng sÏ th«ng b¸o 1 lÇn. Thêi gian b¸o danh lµ 5 phót, thùc hiÖn chØ trong 30 phót. Mçi ng­êi chØ tèi ®a 2 lÇn/ngµy. Ph¶i ®o ®éi tr­ëng ®Õn b¸o danh. <enter>”NhiÖm vô th¸ch thøc thêi gian” gåm 2 khu vùc tham gia. S¬ cÊp: ng­êi ch¬i tõ cÊp 50 ®Õn 89, do ®éi tr­ëng mang 2 s¸t thñ gi¶n d­íi cÊp 90 (ngò hµnh bÊt kú) ®i b¸o danh. Cao cÊp: ng­êi ch¬i tõ cÊp 90, do ®éi tr­ëng mang 2 s¸t thñ gi¶n cÊp 90 (ngò hµnh bÊt kú) ®i b¸o danh. <enter>Néi trong thêi gian quy ®Şnh, nÕu v­ît qua hÕt 28 ¶i sÏ hoµn thµnh. Mçi ¶i phÇn th­ëng kinh nghiÖm sÏ kh¸c nhau. NÕu hoµn thµnh nhiÖm vô tr­íc thêi gian h¹n ®Şnh, phÇn th­ëng kinh nghiÖm sÏ cµng cao <enter>NÕu tr­íc thêi h¹n ®· hoµn thµnh, cã thÓ sÏ xuÊt hiÖn thªm 1 ¶i, trong ®ã cã nhiÒu phÇn th­ëng bÊt ngê (vËt phÈm ngÉu nhiªn, trang bŞ Hoµng Kim…). ChØ nh÷ng ®éi ®· v­ît 28 ¶i ®óng thêi gian quy ®Şnh míi cã tªn trong b¶ng xÕp h¹ng.",
-	"<#> NhiÖm vô \"Qu¸ quan tÇm b¶o\"/guoguan_xunbao",
+	--"<#> NhiÖm vô \"Qu¸ quan tÇm b¶o\"/guoguan_xunbao",
 	"<#> Ta ®Õn nhËn th­ëng/rank_award",
 	"<#> Ta ®Õn xem xÕp h¹ng 5 ®éi cao nhÊt cña h«m nay./get_top5team"
 }
@@ -52,12 +56,8 @@ ContentList = {
 killertabfile = new(KTabFile,"/settings/task/tollgate/killer/killer.txt","KILLER")
 
 function main()
-	if (toan_BossSatThu== 0) then
-		Say("HiÖn t¹i tİnh n¨ng nµy ch­a më ! ! !", 0)
-		return
-	end	
 	UWorld1082 = nt_getTask(1082);
-	local tbDialog = {ContentList[24],ContentList[17],ContentList[9],ContentList[10],ContentList[11],ContentList[30], ContentList[31], ContentList[15]};
+	local tbDialog = {ContentList[24],ContentList[17],ContentList[2],ContentList[3],ContentList[4],ContentList[5],ContentList[6],ContentList[7],ContentList[8],ContentList[9],ContentList[10],ContentList[11],ContentList[30], ContentList[31], ContentList[15]};
 	if (tbBirthday0905:IsActDate() == 1) then
 		tinsert(tbDialog, 12, ContentList[29]);
 	end
@@ -128,34 +128,23 @@ function killer90()
 		return 0;
 	end;
 	showboss( 140 );
+          --LeaveTeam()
 	tbLog:PlayerActionLog("TinhNangKey","NhanNhiemVuBossSatThu")
 end
 
 function cancel()
-	if (nt_getTask(1082) == 0) then
-		Talk(1, "", "Ng­¬i ch­a nhËn nhiÖm vô , Kh«ng ThÓ Lªn Boss!")
-	return end
 	nt_setTask(1082, 0);
 	Describe(DescLink_NieShiChen..ContentList[12], 1,ContentList[15]);
 end
 
 function havetask()
 	if ( UWorld1082 ~= 0 ) then
-		local nTaskKillerBoss = nt_getTask(1082)
-		local nBossPosition = killertabfile:getCell("BossPosition",nTaskKillerBoss)
-		local szMoveToBoss = " Di ChuyÓn §Õn Boss S¸t Thñ/#moveToKillerBoss('"..nBossPosition.."')";
-		Describe(DescLink_NieShiChen..ContentList[13], 2, szMoveToBoss,ContentList[15]);
+		Describe(DescLink_NieShiChen..ContentList[13], 1,ContentList[15]);
 		return 0
 	end
 	return 1
 end
-function moveToKillerBoss(nPosition)
-    local nPosArr = split(nPosition, ":");
-	NewWorld(nPosArr[1],nPosArr[2],nPosArr[3])
-	SetFightState(1);
-	SetProtectTime(18*3) --ÃˆÃ½ÃƒÃ«Â±Â£Â»Â¤ÃŠÂ±Â¼Ã¤
-	AddSkillState(963, 1, 0, 18*3)
-end
+
 function showboss(row)
 	Describe(DescLink_NieShiChen..ContentList[16], 12, killertabfile:getCell("BossName",row+1).."/#givetask("..(row+1)..")", killertabfile:getCell("BossName",row+2).."/#givetask("..(row+2)..")", killertabfile:getCell("BossName",row+3).."/#givetask("..(row+3)..")", killertabfile:getCell("BossName",row+4).."/#givetask("..(row+4)..")", killertabfile:getCell("BossName",row+5).."/#givetask("..(row+5)..")", killertabfile:getCell("BossName",row+6).."/#givetask("..(row+6)..")", killertabfile:getCell("BossName",row+7).."/#givetask("..(row+7)..")", killertabfile:getCell("BossName",row+8).."/#givetask("..(row+8)..")", killertabfile:getCell("BossName",row+9).."/#givetask("..(row+9)..")", killertabfile:getCell("BossName",row+10).."/#givetask("..(row+10)..")", "Trang kÕ /#showbossnext("..row..")", ContentList[15]);
 end
@@ -165,22 +154,8 @@ function showbossnext(row)
 end
 
 function givetask(taskid)
-	if nt_getTask(TSKID_KILLERMAXCOUNT) >= KILLER_MAXCOUNT then
-		local myDatePlus = nt_getTask(TSKID_KILLTASKID_SPE)
-		if myDatePlus > 0 then
-			--mrchubo them so lan san boss sat thu
-			if myDatePlus < 0 then myDatePlus = 0 else myDatePlus = myDatePlus - 1 end
-			nt_setTask(TSKID_KILLTASKID_SPE, myDatePlus);
-			--mrchubo them so lan san boss sat thu
-		else
-			Describe(DescLink_NieShiChen.."B¹n ®· mÊt mét tè chÊt rÊt quan träng gäi lµ khİnh kŞ b¶n th©n. H«m nay b¹n ®· bŞ h¹ "..KILLER_MAXCOUNT.." ng­êi råi, ngµy mai h·y quay l¹i.", 1, ContentList[15]);
-			return
-		end
-	end
 	nt_setTask(1082,taskid);
-	local nBossPosition = killertabfile:getCell("BossPosition",taskid)
-	local szMoveToBoss = " Di ChuyÓn §Õn Boss S¸t Thñ/#moveToKillerBoss('"..nBossPosition.."')";
-	Describe(DescLink_NieShiChen..killertabfile:getCell("BossName",taskid)..killertabfile:getCell("BossInfo",taskid), 2, szMoveToBoss,ContentList[15]);
+	Describe(DescLink_NieShiChen..killertabfile:getCell("BossName",taskid)..killertabfile:getCell("BossInfo",taskid), 1, ContentList[15]);
 end
 
 function compose()
@@ -251,15 +226,8 @@ function killerCoundTakedTask(nLowLevel, nHighLevel)
 	end;
 	local nDate = tonumber(GetLocalDate("%y%m%d"));
 	local myDate = nt_getTask(TSKID_KILLERDATE);
-	local nCountKiller = nt_getTask(TSKID_KILLERMAXCOUNT)
-	if (myDate == nDate and nCountKiller >= SoLuongBossSatThuTrongNgay) then
-		--mrchubo them so lan san boss sat thu
-		local myDatePlus = nt_getTask(TSKID_KILLTASKID_SPE)
-		if myDatePlus > 0 then
-			return 1;
-		end
-		--mrchubo them so lan san boss sat thu
-		Describe(DescLink_NieShiChen.."B¹n ®· mÊt mét tè chÊt rÊt quan träng gäi lµ khİnh kŞ b¶n th©n. H«m nay b¹n ®· bŞ h¹ "..SoLuongBossSatThuTrongNgay.." Tªn råi, ngµy mai h·y quay l¹i.", 1, ContentList[15]);
+	if (myDate == nDate and nt_getTask(TSKID_KILLERMAXCOUNT) >= KILLER_MAXCOUNT) then
+		Describe(DescLink_NieShiChen.."S¸t thñ cã mét tè chÊt rÊt quan träng gäi lµ khinh kÎ b¹i trËn.  H«m nay ng­¬i ®· bŞ h¹"..KILLER_MAXCOUNT.."  ng­êi råi, ngµy mai h·y quay l¹i.", 1, ContentList[15]);
 		return 0;
 	elseif (myDate ~= nDate) then
 		nt_setTask(TSKID_KILLERMAXCOUNT, 0);

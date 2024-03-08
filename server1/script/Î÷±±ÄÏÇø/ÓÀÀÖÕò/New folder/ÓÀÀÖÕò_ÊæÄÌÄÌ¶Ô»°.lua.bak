@@ -1,0 +1,10 @@
+--Î÷±±ÄÏÇø ÓÀÀÖÕò ÊæÄÌÄÌ¶Ô»°
+Include ("\\script\\event\\springfestival08\\allbrother\\findnpctask.lua")
+function main(sel)
+if allbrother_0801_CheckIsDialog(198) == 1 then
+		allbrother_0801_FindNpcTaskDialog(198)
+		return 0;
+	end
+Say("ÂLMT79³ÀÏºÍ¸ğÀÏ¶şÈËÕûÄê¶¼Ïñº¢×ÓÒ»ÑùÏà»¥¶·!",0)
+
+end;

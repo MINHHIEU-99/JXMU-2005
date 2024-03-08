@@ -1,5 +1,4 @@
 Include("\\script\\activitysys\\config\\37\\variables.lua")
-Include("\\script\\global\\mrt\\configserver\\configall.lua")
 tbConfig = {}
 tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
@@ -21,18 +20,18 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "NpcOnDeath",
-	szName = "B¶n ®å ®¸nh qu¸i nhËn ®­îc ¸o Gi¸ng Sinh",
+	szName = "B¶n ®å ®¸no qu¸i nhËn ®­îc ¸o Gi¸ng Sinh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
-		{"NpcFunLib:CheckInMap",	{"321,322,75,227,340,93,995,996,997,998,999,1000,1001,1002,1003,1004,1005,1006,1008,1009,1010,1011,1012,1013,1014,1015,1016,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033,1034,1035,1036,1037,1038,1039,1040,1041,1042,1043,1044,1045,1046,1047"} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
+		{"NpcFunLib:CheckInMap",	{"321,322,75,227,340,93"} },
 	},
 	tbActition = 
 	{
-		{"NpcFunLib:DropSingleItem",	{ITEM_XMAS_CLOTHING,1,"0.5"} },
+		{"NpcFunLib:DropSingleItem",	{ITEM_XMAS_CLOTHING,1,"6"} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -45,13 +44,13 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {-2,"3"},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 		{"PlayerFunLib:CheckTask",	{"751",1000,"",">="} },
 		{"PlayerFunLib:CheckTask",	{"751",3000,"","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,10,EVENT_LOG_TITLE,"TongKim1000BanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,10,EVENT_LOG_TITLE,"TongKim1000NhanTuiNoel"} },
 	},
 }
 tbConfig[4] = --Ò»¸öÏ¸½Ú
@@ -64,12 +63,12 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {-2,"3"},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 		{"PlayerFunLib:CheckTask",	{"751",3000,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,30,EVENT_LOG_TITLE,"TongKim3000BanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,30,EVENT_LOG_TITLE,"TongKim3000NhanTuiNoel"} },
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
@@ -82,11 +81,11 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"17"},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,10,EVENT_LOG_TITLE,"VuotAi17BanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,10,EVENT_LOG_TITLE,"VuotAi17NhanTuiNoel"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
@@ -99,11 +98,11 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"28"},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,10,EVENT_LOG_TITLE,"VuotAi28BanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,10,EVENT_LOG_TITLE,"VuotAi28NhanTuiNoel"} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -116,12 +115,12 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 		{"NpcFunLib:CheckBoatBoss",	{nil} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,10,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinhBanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,10,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinhNhanTuiNoel"} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
@@ -134,12 +133,12 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 		{"NpcFunLib:CheckId",	{"1692"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinhBanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinhNhanTuiNoel"} },
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
@@ -152,7 +151,7 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {10},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 	},
 	tbActition = 
 	{
@@ -169,13 +168,12 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 		{"NpcFunLib:CheckWorldBoss",	{nil} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,50,EVENT_LOG_TITLE,"TieuDietBossTheGioiBanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,50,EVENT_LOG_TITLE,"TieuDietBossTheGioiNhanTuiNoel"} },
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
@@ -188,12 +186,12 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 		{"NpcFunLib:CheckKillerdBoss",	{90} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,3,EVENT_LOG_TITLE,"TieuDietBossSatThuBanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_BAG,3,EVENT_LOG_TITLE,"TieuDietBossSatThuNhanTuiNoel"} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
@@ -206,11 +204,11 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"30"},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_XMAS_CAKE,1,EVENT_LOG_TITLE,"VuotAiTieuDietBossBanhGiangSinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_XMAS_STAR,1,EVENT_LOG_TITLE,"chuangguan30"} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
@@ -253,7 +251,7 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 	szName = "§èi tho¹i nhËn QuÇn Gi¸ng Sinh",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Vµo lóc 0:00-01-12-2022 ®Õn 24:00-31-12-2022, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (Relife kh«ng giíi h¹n) cã thÓ tham gia ho¹t ®éng Gi¸ng Sinh, cø mçi tiÕng ®ång hå oline trªn m¹ng sÏ nhËn ®­îc 10 QuÇn Gi¸ng Sinh vµ 40 B¸nh BÝ §á, mçi ngµy nhiÒu nhÊt chØ nhËn ®­îc 5 lÇn",0},
+	tbMessageParam = {"Vµo lóc 0:00-01-12-2011 ®Õn 24:00-31-12-2011, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (trïng sinh kh«ng giíi h¹n) cã thÓ tham gia ho¹t ®éng Gi¸ng Sinh, cø mçi tiÕng ®ång hå oline trªn m¹ng sÏ nhËn ®­îc 10 QuÇn Gi¸ng Sinh vµ 40 B¸nh BÝ §á, mçi ngµy nhiÒu nhÊt chØ nhËn ®­îc 5 lÇn",0},
 	tbCondition = 
 	{
 	},
@@ -272,7 +270,7 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckTaskDaily",	{TSK_XMAS_TROUSERS_DAILY,50,"H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.","<"} },
 	},
 	tbActition = 
@@ -295,7 +293,7 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 	{
 		{"AddDialogOpt",	{"Hîp thµnh Hép Quµ Gi¸ng Sinh",18} },
 		{"AddDialogOpt",	{"Hîp thµnh ¤ng Giµ Noel (nhá)",19} },
-		--T¹m ®ãng -  - 20111129
+		--T¹m ®ãng - Modified By DinhHQ - 20111129
 	--	{"AddDialogOpt",	{"Hîp thµnh ¤ng Giµ Noel (trung)",20} },
 		{"AddDialogOpt",	{"Hîp thµnh ¤ng Giµ Noel (®¹i)",21} },
 		{"AddDialogOpt",	{"Hîp thµnh B¸nh Gi¸ng Sinh",22} },
@@ -313,8 +311,8 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 	{
 		{"AddOneMaterial",	{"¸o gi¸ng sinh",ITEM_XMAS_CLOTHING,2} },
 		{"AddOneMaterial",	{"QuÇn Gi¸ng Sinh",ITEM_XMAS_TROUSERS,1} },
-		--Change request Event Noel -  - 20111129
-		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},200000} },
+		--Change request Event Noel - Modified by DinhHQ - 20111129
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},50000} },
 	},
 	tbActition = 
 	{
@@ -334,8 +332,8 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 		{"AddOneMaterial",	{"¸o gi¸ng sinh",ITEM_XMAS_CLOTHING,2} },
 		{"AddOneMaterial",	{"QuÇn Gi¸ng Sinh",ITEM_XMAS_TROUSERS,1} },
 		{"AddOneMaterial",	{"Tói Gi¸ng Sinh",ITEM_XMAS_BAG,1} },
-		--Change request Event Noel -  - 20111129
-		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},200000} },
+		--Change request Event Noel - Modified by DinhHQ - 20111129
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},100000} },
 	},
 	tbActition = 
 	{
@@ -357,7 +355,7 @@ tbConfig[20] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3078,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"GhepNguoiTuyet(trung)"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3078,1,0,0},nExpiredTime=20120101,},1,EVENT_LOG_TITLE,"GhepNguoiTuyet(trung)"} },
 	},
 }
 tbConfig[21] = --Ò»¸öÏ¸½Ú
@@ -377,43 +375,25 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3079,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"GhepNguoiTuyet(lon)"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3079,1,0,0},nExpiredTime=20120101,},1,EVENT_LOG_TITLE,"GhepNguoiTuyet(lon)"} },
 	},
 }
--- tbConfig[22] = --Ò»¸öÏ¸½Ú
--- {
--- 	nId = 22,
--- 	szMessageType = "CreateCompose",
--- 	szName = "Hîp thµnh B¸nh Gi¸ng Sinh",
--- 	nStartDate = nil,
--- 	nEndDate  = nil,
--- 	tbMessageParam = {"B¸nh Gi¸ng Sinh",1,1,1,0.02,0,50},
--- 	tbCondition = 
--- 	{
--- 		{"AddOneMaterial",	{"¸o gi¸ng sinh",ITEM_XMAS_CLOTHING,2} },
--- 		{"AddOneMaterial",	{"Tói Gi¸ng Sinh",ITEM_XMAS_BAG,1} },
--- 	},
--- 	tbActition = 
--- 	{
--- 		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3082,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"composeXmasCake"} },
--- 	},
--- }
 tbConfig[22] = --Ò»¸öÏ¸½Ú
 {
 	nId = 22,
 	szMessageType = "CreateCompose",
-	szName = "§æi B¸nh Gi¸ng Sinh",
+	szName = "Hîp thµnh B¸nh Gi¸ng Sinh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"B¸nh Gi¸ng Sinh",1,1,1,0.02,0,50},
 	tbCondition = 
-	{		
-		{"AddOneMaterial",	{"¸o gi¸ng sinh",ITEM_XMAS_CLOTHING,1} },
-		{"AddOneMaterial",	{"Gµ quay",{tbProp={6,1,30167,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1} },
+	{
+		{"AddOneMaterial",	{"¸o gi¸ng sinh",ITEM_XMAS_CLOTHING,2} },
+		{"AddOneMaterial",	{"Tói Gi¸ng Sinh",ITEM_XMAS_BAG,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3082,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"composeXmasCake"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3082,1,0,0},nExpiredTime=20120101,},1,EVENT_LOG_TITLE,"composeXmasCake"} },
 	},
 }
 tbConfig[23] = --Ò»¸öÏ¸½Ú
@@ -429,16 +409,15 @@ tbConfig[23] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"SetDialogTitle",	{"Vµo lóc 0:00-01-12-2022 ®Õn 24:00-31-12-2022, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (Relife kh«ng giíi h¹n) cã thÓ ®Õn ®©y sö dông 300, 400, 500 Ng«i Sao ®Ó ®æi lÊy lÖnh bµi triÖu håi Boss Tr­¬ng Tuyªn, Kim ThÝ L­îng, Mé Dung Toµn, xin hái ng­¬i muèn ®æ lo¹i nµo?"} },		
-		-- {"AddDialogOpt",	{"LÖnh Bµi triÖu håi Boss Tr­¬ng Tuyªn",24} },
-		-- {"AddDialogOpt",	{"LÖnh Bµi triÖu håi Boss Kim ThÝ L­îng",25} },
-		-- {"AddDialogOpt",	{"LÖnh Bµi triÖu håi Mé Dung Toµn",26} },
-		--§Òn bï exp -  - 20111201
+		{"SetDialogTitle",	{"Vµo lóc 0:00-01-12-2011 ®Õn 24:00-31-12-2011, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (trïng sinh kh«ng giíi h¹n) cã thÓ ®Õn ®©y sö dông 300, 400, 500 Ng«i Sao ®Ó ®æi lÊy lÖnh bµi triÖu håi Boss Tr­¬ng Tuyªn, Kim ThÝ L­îng, Mé Dung Toµn, xin hái ng­¬i muèn ®æ lo¹i nµo?"} },		
+		{"AddDialogOpt",	{"LÖnh Bµi triÖu håi Boss Tr­¬ng Tuyªn",24} },
+		{"AddDialogOpt",	{"LÖnh Bµi triÖu håi Boss Kim ThÝ L­îng",25} },
+		{"AddDialogOpt",	{"LÖnh Bµi triÖu håi Mé Dung Toµn",26} },
+		--§Òn bï exp - Modified by DinhHQ - 20111201
 		--{"AddDialogOpt",	{"NhËn ®Òn bï ®iÓm kinh nghiÖm",33} },
-		--Ho¹t ®éng thø 3 -  -20111215
+		--Ho¹t ®éng thø 3 - Modified By DinhHQ -20111215
 		{"AddDialogOpt",	{"Mãn quµ ®ªm gi¸ng sinh",34} },
-		{"AddDialogOpt",	{"§æi B¸nh Gi¸ng Sinh",22} },
-		{"AddDialogOpt",	{"§æi «ng giµ Noel hång",38} },
+		{"AddDialogOpt",	{"Hîp thµnh «ng giµ Noel hång",38} },
 	},
 }
 tbConfig[24] = --Ò»¸öÏ¸½Ú
@@ -451,12 +430,12 @@ tbConfig[24] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"LÖnh bµi Boss - Tr­¬ng Tuyªn",1,1,1,1,0,50},
 	tbCondition = 
 	{
-		--Change request event noel -  - 20111129
+		--Change request event noel - Modified By DinhHQ - 20111129
 		{"AddOneMaterial",	{"Ng«i Sao",ITEM_XMAS_STAR,300} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3083,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"DoiLenhBaiGoiBossTaiNpcOngGiaNoel"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3083,1,0,0},nExpiredTime=20120101,},1,EVENT_LOG_TITLE,"DoiLenhBaiGoiBossTaiNpcOngGiaNoel"} },
 	},
 }
 tbConfig[25] = --Ò»¸öÏ¸½Ú
@@ -469,12 +448,12 @@ tbConfig[25] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"LÖnh bµi Boss - Kim ThÝ L­îng",1,1,1,1,0,50},
 	tbCondition = 
 	{
-		--Change request event noel -  - 20111129
+		--Change request event noel - Modified By DinhHQ - 20111129
 		{"AddOneMaterial",	{"Ng«i Sao",ITEM_XMAS_STAR,400} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3084,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"DoiLenhBaiGoiBossTaiNpcOngGiaNoel"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3084,1,0,0},nExpiredTime=20120101,},1,EVENT_LOG_TITLE,"DoiLenhBaiGoiBossTaiNpcOngGiaNoel"} },
 	},
 }
 tbConfig[26] = --Ò»¸öÏ¸½Ú
@@ -487,12 +466,12 @@ tbConfig[26] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"LÖnh bµi Boss - Mé Dung Toµn",1,1,1,1,0,50},
 	tbCondition = 
 	{
-		--Change request event noel -  - 20111129
+		--Change request event noel - Modified By DinhHQ - 20111129
 		{"AddOneMaterial",	{"Ng«i Sao",ITEM_XMAS_STAR,500} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3085,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"DoiLenhBaiGoiBossTaiNpcOngGiaNoel"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3085,1,0,0},nExpiredTime=20120101,},1,EVENT_LOG_TITLE,"DoiLenhBaiGoiBossTaiNpcOngGiaNoel"} },
 	},
 }
 tbConfig[27] = --Ò»¸öÏ¸½Ú
@@ -505,7 +484,7 @@ tbConfig[27] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,3077,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{3,"default"} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
 		{"ThisActivity:CheckTask",	{TSK_XMAS_PERSON_S_LIMIT,MAX_USED_XMAS_PERSON_S_LIMIT,"Ng­¬i ®· sö dông ®ñ ¤ng Giµ Noel (nhá), kh«ng thÓ sö dông thªm n÷a!","<"} },
@@ -525,7 +504,7 @@ tbConfig[28] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,3078,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{3,"default"} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
 		{"ThisActivity:CheckTask",	{TSK_XMAS_PERSON_M_LIMIT,MAX_USED_XMAS_PERSON_M_LIMIT,"Ng­¬i ®· sö dông ®ñ ¤ng Giµ Noel (trung), kh«ng thÓ sö dông thªm n÷a!","<"} },
@@ -545,7 +524,7 @@ tbConfig[29] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,3079,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{3,"default"} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
 		{"ThisActivity:CheckTask",	{TSK_XMAS_PERSON_L_LIMIT,MAX_USED_XMAS_PERSON_L_LIMIT,"Ng­¬i ®· sö dông ®ñ ¤ng Giµ Noel (®¹i), kh«ng thÓ sö dông thªm n÷a!","<"} },
@@ -565,7 +544,7 @@ tbConfig[30] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,3080,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{3,"default"} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
 		{"ThisActivity:CheckTask",	{TSK_XMAS_GIFT_LIMIT,MAX_USED_XMAS_GIFT_LIMIT,"Ng­¬i ®· sö dông ®ñ Hép Quµ Gi¸ng Sinh, kh«ng thÓ giao thªm ®­îc n÷a!","<"} },
@@ -585,7 +564,7 @@ tbConfig[31] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,3082,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{3,"default"} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
 		{"ThisActivity:CheckTask",	{TSK_XMAS_CAKE_LIMIT,MAX_USED_XMAS_CAKE_LIMIT,"Ng­¬i ®· sö dông ®ñ B¸nh Gi¸ng Sinh råi, kh«ng thÓ giao thªm ®­îc n÷a!","<"} },
@@ -621,7 +600,7 @@ tbConfig[33] =
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckTimeGetCompensation",	{nil} },
 		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {{nTaskID = 2911,nStartBit = 29,nBitCount = 1,nMaxValue = 1}, 0, "Mçi nh©n vËt chØ ®­îc nhËn th­ëng 1 lÇn", "=="}},	
 	},
@@ -638,7 +617,7 @@ tbConfig[34] =
 	szName = "§èi tho¹i nhËn phÇn th­ëng ®ªm gi¸ng sinh",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Vµo lóc 0:00-24-12-2022 ®Õn 24:00-25-12-2022, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (Relife kh«ng giíi h¹n) cã thÓ ®Õn gÆp ta ®Ó nhËn mãn quµ gi¸ng sinh lµ 200 triÖu ®iÓm kinh nghiÖm kh«ng céng dån, mçi nh©n vËt chØ cã thÓ nhËn mét lÇn duy nhÊt.",0},
+	tbMessageParam = {"Vµo lóc 0:00-24-12-2011 ®Õn 24:00-25-12-2011, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (trïng sinh kh«ng giíi h¹n) cã thÓ ®Õn gÆp ta ®Ó nhËn mãn quµ gi¸ng sinh lµ 200 triÖu ®iÓm kinh nghiÖm kh«ng céng dån, mçi nh©n vËt chØ cã thÓ nhËn mét lÇn duy nhÊt.",0},
 	tbCondition = 
 	{		
 	},
@@ -657,7 +636,7 @@ tbConfig[35] =
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckTimeGetFreeExp",	{nil} },
 		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {{nTaskID = 2912,nStartBit = 20,nBitCount = 1,nMaxValue = 1}, 0, "Mçi nh©n vËt chØ ®­îc nhËn th­ëng 1 lÇn", "=="}},	
 	},
@@ -693,30 +672,30 @@ tbConfig[37] =
 	tbMessageParam = {"Gµ quay",1,1,1,0.02,0,50},
 	tbCondition = 
 	{		
-		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},200000} },
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},10000} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{szName="Gµ quay",tbProp={6,1,30167,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1,EVENT_LOG_TITLE,"MuaGaQuay"} },
+		{"PlayerFunLib:GetItem",	{{szName="Gµ quay",tbProp={6,1,30167,1,0,0},nExpiredTime=20120101,},1,EVENT_LOG_TITLE,"MuaGaQuay"} },
 	},
 }
 tbConfig[38] =
 {
 	nId = 38,
 	szMessageType = "CreateCompose",
-	szName = "§æi «ng giµ Noel hång",
+	szName = "Hîp thµnh «ng giµ Noel hång",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"¤ng giµ Noel hång",1,1,1,0.02,0,50},
 	tbCondition = 
 	{		
-		{"AddOneMaterial",	{"Gµ quay",{tbProp={6,1,30167,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1} },		
-		{"AddOneMaterial",	{"¸o gi¸ng sinh",ITEM_XMAS_CLOTHING,1} },
+		{"AddOneMaterial",	{"Gµ quay",{tbProp={6,1,30167,1,0,0},nExpiredTime=20120101,},1} },		
+		{"AddOneMaterial",	{"B¸nh bÝ ®á",{tbProp={6,1,30166,1,0,0},nExpiredTime=20120101,},1} },
 		{"AddOneMaterial",	{"Nãn gi¸ng sinh",ITEM_XMAS_HAT,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30168,1,0,0},nExpiredTime=EventNoel2011.ItemExpiredTime,},1, EVENT_LOG_TITLE, "GhepOngGiaNoelHong"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30168,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepOngGiaNoelHong"} },
 	},
 }
 tbConfig[39] = 
@@ -729,10 +708,10 @@ tbConfig[39] =
 	tbMessageParam = {{tbProp={6,1,30168,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{20,"default",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCellWH",	{3, 3, 1,"default"} },
 		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thÞ vµ c¸c t©n thñ th«n."} },
-		{"PlayerFunLib:CheckTask",	{2916,50000,"Mçi nh©n vËt chØ ®­îc phÐp sö dông tèi ®a 50000 vËt phÈm ¤ng giµ Noel hång","<"} },		
+		{"PlayerFunLib:CheckTask",	{2916,1500,"Mçi nh©n vËt chØ ®­îc phÐp sö dông tèi ®a 1500 vËt phÈm ¤ng giµ Noel hång","<"} },		
 	},
 	tbActition = 
 	{

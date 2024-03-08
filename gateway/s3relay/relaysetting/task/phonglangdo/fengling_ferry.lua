@@ -1,26 +1,22 @@
-INTERVAL_TIME = 60	
-function GetNextTime()
-    local hour = tonumber(date("%H"));
-    if (hour == 23) then
-    	hour = 0;
-    else
-    	hour = hour + 1;
-    end
-    return hour, 0;
-end
-
+----------***Heart*Doldly***-------------
 function TaskShedule()
-	TaskName("PhongLangDo");	
-	TaskInterval(INTERVAL_TIME);
-	local h, m = GetNextTime();
-	TaskTime(h, m);
-	OutputMsg(format("=================Phong Lang Do %d:%d================== ", h, m));
-	TaskCountLimit(0);
+	TaskName("Phong L¨ng §é")
+	local nStartHour = tonumber(date("%H")) + 1;
+	
+	if (nStartHour >= 24) then
+		nStartHour = 0;
+	end;
+	
+	TaskTime(nStartHour, 0);
+	
+	TaskInterval(720)
+	
+	TaskCountLimit(0)
+	OutputMsg("Cuoc Dua Thuyen Phong Lang Do");
 end
 
 function TaskContent()
-	GlobalExecute("dwf \\script\\missions\\fengling_ferry\\fldmap_boat1.lua fenglingdu_main()")
-	OutputMsg("=================Phong Lang Do RUN============== ");
+    GlobalExecute("dwf \\script\\missions\\fengling_ferry\\fldmap_boat1.lua fenglingdu_main()")
 end
 
 function GameSvrConnected(dwGameSvrIP)

@@ -1,1 +1,7 @@
-Include("\\script\\loivao\\trap\\cong3.lua");
+-- script viet hoa By http://tranhba.com  méng c¶nh s¬n ®éng to méng c¶nh 3.lua 
+Include("\\script\\missions\\clearskill\\head.lua")
+Include("\\script\\missions\\clearskill\\testhole.lua")
+
+function main() 
+LeaveGame(3) 
+end 

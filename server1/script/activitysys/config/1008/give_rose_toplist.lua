@@ -19,11 +19,11 @@ tbTop10.strTopListFileName = "toplist.txt"
 tbTop10.nRegisterCount = 0
 tbTop10.nSort_Time = 0005
 tbTop10.tbPhase = {
-	[1] = {202402020000, 202402282400}, --nép hoa
-	[2] = {202402290900, 202402292400}, --nhËn th­ëng
+	[1] = {201202020000, 201202282400}, --nép hoa
+	[2] = {201202290900, 201202292400}, --nhËn th­ëng
 }
-tbTop10.nStartDate = 202402020000
-tbTop10.nEndDate = 202402292400
+tbTop10.nStartDate = 201202020000
+tbTop10.nEndDate = 201202292400
 
 function tbTop10:Init()
 	self.tbSubcribers = {}

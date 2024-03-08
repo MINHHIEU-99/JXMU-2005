@@ -6,7 +6,7 @@
 -- Update: Dan Deng(2003-10-30) 重新打开“根据技能重设任务变量”功能
 -- Update: Dan_Deng(2003-11-04) 改为模板方式
 
-Include("\\script\\npcmonphai\\detuthuyyen.lua")
+Include("\\script\\global\\各派接引弟子\\峨嵋接引弟子.lua")
 
 function main(sel)
 	default_talk()

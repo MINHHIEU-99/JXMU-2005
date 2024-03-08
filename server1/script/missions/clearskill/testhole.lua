@@ -16,11 +16,11 @@ function TeamEnterHole(nTrapId)
 
 	--¶Ó³¤½ø¶´Ç°½øÐÐºÏ·¨ÐÔ¼ì²â
 	-- ·Ç·¨×´Ì¬
-	--if (CSP_CheckValid() == 0) then
-	--	CSP_WriteLog("TiÕn nhËp vµo §¶o TÈy Tñy mét c¸ch kh«ng b×nh th­êng. ");
-	--	Say("GM: <color=red>B¹n kh«ng thÓ vµo ®¶o TÈy Tñy, ®· bÞ hÖ thèng ghi nhí, xin h·y ®i t×m ng­êi phôc vô ®Ó chØnh lý l¹i! <color> ", 0);
-	--	return 0
-	--end
+	if (CSP_CheckValid() == 0) then
+		CSP_WriteLog("TiÕn nhËp vµo §¶o TÈy Tñy mét c¸ch kh«ng b×nh th­êng. ");
+		Say("GM: <color=red>B¹n kh«ng thÓ vµo ®¶o TÈy Tñy, ®· bÞ hÖ thèng ghi nhí, xin h·y ®i t×m ng­êi phôc vô ®Ó chØnh lý l¹i! <color> ", 0);
+		return 0
+	end
 
 	Size = GetTeamSize();
 	if (Size > MAX_MEMBER_COUNT or Size < 2) then

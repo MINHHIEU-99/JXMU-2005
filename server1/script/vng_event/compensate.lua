@@ -184,6 +184,7 @@ tbUserList =
 		{szAccount = "thuthao1985",tbProp = {4,417,1,1,0,0}, nCount =20},	
 		{szAccount = "thuyhuong1976",tbProp = {4,417,1,1,0,0}, nCount =1},	
 		{szAccount = "tieubangchu9000",tbProp = {4,417,1,1,0,0}, nCount =20},	
+		{szAccount = "tieungaogianghotv",tbProp = {4,417,1,1,0,0}, nCount =3},	
 		{szAccount = "toanquan8",tbProp = {4,417,1,1,0,0}, nCount =40},	
 		{szAccount = "toiyeuhnks",tbProp = {4,417,1,1,0,0}, nCount =5},	
 		{szAccount = "topvltk7",tbProp = {4,417,1,1,0,0}, nCount =60},	

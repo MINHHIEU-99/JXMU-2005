@@ -25,5 +25,3 @@ function tbVNGWD2011_AddNpc:AddNpc()
 		SetNpcScript(nNpcIdx, self.strScript)
 	end
 end
-
--- tbVNGWD2011_AddNpc:AddNpc()

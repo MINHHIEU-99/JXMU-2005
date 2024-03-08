@@ -1,641 +1,673 @@
 TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	SYNC_FLAG	CLIENT_FLAG	TASK_DESCRIBE
-B¾T_§ÇU_ID (NÕu c¸c ID kh«ng liªn tôc, h·y ®Ó trèng)	KÕT_THóC_ID	T£N_NHIÖM_Vô	SYNC_FLAG: 0 - Kh«ng ®ång bé, 1 - §ång bé lªn m¸y kh¸ch	CLIENT_FLAG: 0 - Kh«ng thÓ; 1 - M¸y kh¸ch cã thÓ quyÕt ®Şnh	NHIÖM_Vô_MI£U_T¶
-1		NhiÖm vô M«n ph¸i Nga My:			NhiÖm vô nhËp m«n,nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-2		NhiÖm vô M«n ph¸i §­êng M«n: 			NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-3		NhiÖm vô M«n ph¸i Thiªn V­¬ng B¶ng:			 NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-4		NhiÖm vô M«n ph¸i Thiªn NhÉn Gi¸o: 			NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-5					NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-6					NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-7					NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-8					NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-9					NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-10		NhiÖm vô M«n ph¸i Ngò §éc Gi¸o:			 NhiÖm vô nhËp m«n, nhiÖm vô m«n ph¸i vµ nhiÖm vô ra m«n
-11		NhiÖm vô ThÕ giíi: S¨n Lîn rõng t¹i Thµnh §«			
-12		NhiÖm vô ThÕ giíi: Göi Th­			
-13		NhiÖm vô §iÓm kü n¨ng §Æt l¹i			
-14		NhiÖm vô con biÕn sè cÊp 40 cña Thiªn V­¬ng B¶ng			
-15		NhiÖm vô ThÕ giíi: S¨n KhØ v­în t¹i ThÇn N«ng Gi¸			
-16		NhiÖm vô Kü n¨ng "C­íp giµu gióp nghÌo"			
-17		NhiÖm vô con biÕn sè trong nhiÖm vô ra m«n cÊp 50 cña Thiªn NhÉn Gi¸o			
-18		NhiÖm vô míi: Lµng Long QuyÒn: Cha sau cña ta tèt kh«ng?			
-19		NhiÖm vô míi: Lµng Long QuyÒn: Söa Dao			
-20		NhiÖm vô míi: Lµng Long QuyÒn: Linh Chi Tr¾ng TuyÕt			
-21		NhiÖm vô con biÕn sè cÊp 50 cña Thiªn NhÉn Gi¸o			
-22		NhiÖm vô míi: Th¹ch Cæ TrÊn: Giao c¬m			
-23		NhiÖm vô míi: Th¹ch Cæ TrÊn: Tr¶ tiÒn			
-24		NhiÖm vô míi: Th¹ch Cæ TrÊn: T×m nhÉn			
-25		NhiÖm vô míi: Long M«n TrÊn: Giíi thiÖu c«ng viÖc			
-26		NhiÖm vô míi: Long M«n TrÊn: TruyÒn tin			
-27		NhiÖm vô míi: Long M«n TrÊn: Canh TuyÕt Tr¾ng Xu©n			
-28		NhiÖm vô con biÕn sè trong nhiÖm vô ra m«n cña Thiªn NhÉn Gi¸o			
-29		NhiÖm vô con biÕn sè cÊp 40 cña M«n ph¸i Nga My			
-30		(Thiªn NhÉn, §¹i Bµng Gia §Ö tö)			
-31		(V« §­êng, C«n Lu©n Gia §Ö tö)			
-32		NhiÖm vô míi: LuyÖn khinh c«ng ë Lµng Giao C©n			
-33		NhiÖm vô Danh tiÕng qua thêi gian trùc tuyÕn cña Yªu Tö			
-34		NhiÖm vô Yªu Tö tÆng Ngäc Th¹ch			
-35		NhiÖm vô Kh«i phôc Danh tiÕng cña Yªu Tö			
-36		(Nga My, Thñy Yªn Gia §Ö tö)			
-37		(§­êng M«n, Ngò §éc Gia §Ö tö)			
-38		(Thiªn V­¬ng, ThiÕu L©m Gia §Ö tö)			
-39		NhiÖm vô Ph­¬ng h­íng Vò trô			
-40		NhiÖm vô Ph­¬ng h­íng Vò trô			
-41		NhiÖm vô Gi¶i cøu TiÓu Quan			
-42		NhiÖm vô TrÎ em mÊt tİch			
-43		NhiÖm vô Tiªu diÖt trém hoa			
-44		NhiÖm vô Hå Tö gia nhËp M«n ph¸i			
-45		NhiÖm vô Hå Tö sö dông cung tªn			
-46		NhiÖm vô Ng­ nh©n nhá ë Ba L¨ng			
-47		NhiÖm vô Bµ giµ cæ ë Ba L¨ng			
-48		NhiÖm vô ¸ Ph­¬ng ë Ba L¨ng			
-49		NhiÖm vô ¤ng bµ Ng« ë Giao C©n			
-50		NhiÖm vô §¸nh thøc Høa Trung Nguyªn			
-51		NhiÖm vô TÈy trõ oan uæng			
-52		NhiÖm vô QuyÒn Khuynh Thiªn (PhÇn biÕn sè 1)			
-53		NhiÖm vô QuyÒn Khuynh Thiªn (PhÇn biÕn sè 2)			
-54		NhiÖm vô QuyÒn Khuynh Thiªn (PhÇn biÕn sè 3)			
-55		NhiÖm vô QuyÒn Khuynh Thiªn (PhÇn biÕn sè 4)			
-56		NhiÖm vô QuyÒn Khuynh Thiªn (PhÇn biÕn sè 5)			
-57		CËp nhËt kü n¨ng			
-58		
-59		NhiÖm vô ThÕ giíi: Göi th­ ®Õn BiÖn Kinh			
-60		NhiÖm vô ThÕ giíi: Göi th­ ®Õn Thµnh §«			
-61		NhiÖm vô ThÕ giíi: Göi th­ ®Õn Phong Thõa TŞnh			
-62		NhiÖm vô ThÕ giíi: Göi th­ ®Õn B¶n Kinh			
-63		NhiÖm vô ThÕ giíi: Göi th­ ®Õn Hïng §«ng			
-64		NhiÖm vô ThÕ giíi: Xin ¨n ë Phong Thõa TŞnh			
-65		NhiÖm vô míi Yung L¹c: NghÜa Lµm §¹i HiÖp			
-66		NhiÖm vô míi §¹o H­¬ng: NhiÖm vô kÕt hîp thuèc			
-67		NhiÖm vô kÕt h«n			
-68		NhiÖm vô míi Chu Tiªn: T×m vßng tay			
-69		NhiÖm vô míi Yung L¹c: TruyÒn t×nh			
-70		NhiÖm vô míi Yung L¹c: §æi s¸ch			
-71		NhiÖm vô míi §¹o H­¬ng: T« Chó			
-72		NhiÖm vô míi Chu Tiªn: Tin nh¾n			
-73		NhiÖm vô míi §¹o H­¬ng: TiÓu Long			
-74		NhiÖm vô míi Chu Tiªn: L·o Chu			
-75		NhiÖm vô míi (QuyÒn Khuynh Thiªn)			
-76		NhiÖm vô míi (Ngùa Danh Môc Ch¸y)			
+¿ªÊ¼ID£¨IDÕ¼ÓÃ²»Á¬ĞøÇë¿ÕĞĞ£©	½áÊøID	ÈÎÎñÃû³Æ	0£º²»Í¬²½£¬1£ºÍ¬²½µ½¿Í»§¶Ë	0:²»¿É£»1:¿Í»§¶Ë¿É¾ö¶¨	ÈÎÎñÃèÊö
+1		¶ëáÒÅÉÈÎÎñ			ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+2		ÌÆÃÅÈÎÎñ			ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+3		ÌìÍõ°ïÈÎÎñ			ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+4		ÌìÈÌ½ÌÈÎÎñ			ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+5					ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+6					ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+7					ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+8					ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+9					ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+10		Îå¶¾½ÌÈÎÎñ			ÈëÃÅÈÎÎñ¡¢ÃÅÅÉÈÎÎñ¼°³öÊ¦ÈÎÎñ
+11		ÊÀ½çÈÎÎñ£º³É¶¼É±Ò°Öí			
+12		ÊÀ½çÈÎÎñ£ºËÍĞÅ			
+13		¼¼ÄÜµãÏ´µãÈÎÎñ			
+14		ÌìÍõ40¼¶ÈÎÎñ×Ó±äÁ¿			
+15		ÊÀ½çÈÎÎñ£ºÉñÅ©¼ÜÉ±Âíºï			
+16		¡°½Ù¸»¼ÃÆ¶¡±¼¼ÄÜÈÎÎñ			
+17		Îäµ±ÅÉ³öÊ¦ÈÎÎñÖĞµÄ×Ó±äÁ¿			
+18		ĞÂÊÖÈÎÎñ£ºÁúÈª´å£ººóµùºÃ²»ºÃ			
+19		ĞÂÊÖÈÎÎñ£ºÁúÈª´å£ºĞŞµ¶			
+20		ĞÂÊÖÈÎÎñ£ºÁúÈª´å£º°×Ñ©ÁéÖ¥			
+21		ÌìÈÌ½Ì50¼¶ÈÎÎñÖĞµÄ×Ó±äÁ¿			
+22		ĞÂÊÖÈÎÎñ£ºÊ¯¹ÄÕò£ºËÍ·¹			
+23		ĞÂÊÖÈÎÎñ£ºÊ¯¹ÄÕò£º»¹Ç®			
+24		ĞÂÊÖÈÎÎñ£ºÊ¯¹ÄÕò£ºÕÒ½äÖ¸			
+25		ĞÂÊÖÈÎÎñ£ºÁúÃÅÕò£º½éÉÜ¹¤×÷			
+26		ĞÂÊÖÈÎÎñ£ºÁúÃÅÕò£º´«¿ÚĞÅ			
+27		ĞÂÊÖÈÎÎñ£ºÁúÃÅÕò£ºÑô´º°×Ñ©¸ş			
+28		ÌìÈÌ½Ì³öÊ¦ÈÎÎñµÄ×Ó±äÁ¿			
+29		¶ëáÒÅÉ40¼¶ÈÎÎñµÄ×Ó±äÁ¿			
+30		£¨ÌìÈÌ¡¢Ø¤°ï¼ÇÃûµÜ×Ó£©			
+31		£¨Îäµ±¡¢À¥ÂØ¼ÇÃûµÜ×Ó£©			
+32		ĞÂÊÖÈÎÎñ£º½­½ò´åÁ·Çá¹¦			
+33		Ò°ÛÅÔÚÏßÊ±¼äËÍÉùÍûÈÎÎñ			
+34		Ò°ÛÅËÍ±¦Ê¯			
+35		Ò°ÛÅĞŞ¸´ÉùÍû			
+36		£¨¶ëáÒ¡¢´äÑÌ¼ÇÃûµÜ×Ó£©			
+37		£¨ÌÆÃÅ¡¢Îå¶¾¼ÇÃûµÜ×Ó£©			
+38		£¨ÌìÍõ¡¢ÉÙÁÖ¼ÇÃûµÜ×Ó£©			
+39		ÎäÁÖÏò±³ÈÎÎñ			
+40		ÎäÁÖÏò±³ÈÎÎñ			
+41		ÓÂ¾ÈĞ¡¾êÈÎÎñ			
+42		Ğ¡¶ùÊ§×ÙÈÎÎñ			
+43		ÏûÃğ²É»¨ÔôÈÎÎñ			
+44		½­½ò»¢×Ó°İÊ¦ÈÎÎñ			
+45		½­½ò»¢×Óµ¯¹­ÈÎÎñ			
+46		°ÍÁêĞ¡ÓæÈÎÎñ			
+47		°ÍÁê¹ÅÀÏÌ«ÈÎÎñ			
+48		°ÍÁê°¢·¼ÈÎÎñ			
+49		½­½òÎâÀÏµùÈÎÎñ			
+50		µãĞÑĞìÖĞÔ­ÈÎÎñ			
+51		Ï´ÇåÔ©ÇüÈÎÎñ			
+52		È­ÇãÌìÏÂÈÎÎñ£¨×Ó±äÁ¿1£©			
+53		È­ÇãÌìÏÂÈÎÎñ£¨×Ó±äÁ¿2£©			
+54		È­ÇãÌìÏÂÈÎÎñ£¨×Ó±äÁ¿3£©			
+55		È­ÇãÌìÏÂÈÎÎñ£¨×Ó±äÁ¿4£©			
+56		È­ÇãÌìÏÂÈÎÎñ£¨×Ó±äÁ¿5£©			
+57		¼¼ÄÜ¸üĞÂ			
+58					
+59		ÊÀ½çÈÎÎñËÍĞÅ£ºãê¾©To´óÀí			
+60		ÊÀ½çÈÎÎñËÍĞÅ£ºÑïÖİTo³É¶¼			
+61		ÊÀ½çÈÎÎñËÍĞÅ£ºÑïÖİTo·ïÏè			
+62		ÊÀ½çÈÎÎñËÍĞÅ£ºÁÙ°²Toãê¾©			
+63		ÊÀ½çÈÎÎñËÍĞÅ£ºÁÙ°²ToÏåÑô			
+64		ÊÀ½çÈÎÎñ£º·ïÏèÆòØ¤			
+65		ÓÀÀÖÕòĞÂÊÖÈÎÎñ£ºÏëµ±´óÏÀµÄÅ£Å£			
+66		µ¾Ïã´åĞÂÊÖÈÎÎñ£ººÏÒ©ÈÎÎñ			
+67		½á»éÈÎÎñ			
+68		ÖìÏÉÕòĞÂÊÖÈÎÎñ£ºÕÒÊÖ»·			
+69		ÓÀÀÖÕòĞÂÊÖÈÎÎñ£º´«Çé			
+70		ÓÀÀÖÕòĞÂÊÖÈÎÎñ£º»»Êé			
+71		µ¾Ïã´åĞÂÊÖÈÎÎñ£ºËÕÖÒ			
+72		ÖìÏÉÕòĞÂÊÖÈÎÎñ£º¿ÚĞÅ			
+73		µ¾Ïã´åĞÂÊÖÈÎÎñ£ºĞ¡Áú			
+74		ÖìÏÉÕòĞÂÊÖÈÎÎñ£ºÀÏÖì			
+75		È­ÇãÌìÏÂÈÎÎñ£¨Ò°ÇòÈ­£©			
+76		Ãû¾Ô±¼»ğÈÎÎñ£¨»ØÌå¼¼ÄÜ£©			
 77					
-78		NhiÖm vô Röa Tay B»ng Bån Vµng			
-79		NhiÖm vô Röa Tay B»ng Bån Vµng			
-80		Thªm Sè LÇn Thªm Kü N¨ng			
-81		Thªm Sè LÇn Thªm TiÒm N¨ng			
-82		Sö Dông Kü N¨ng "TiÕt La Hµn" Sè LÇn			
+78		½ğÅèÏ´ÊÖÈÎÎñ			
+79		½ğÅèÏ´ÊÖÈÎÎñ			
+80		¼Ó¼¼ÄÜ´ÎÊı			
+81		¼ÓÇ±ÄÜ´ÎÊı			
+82		Ê¹ÓÃ¡°ÌúÂŞºº¡±´ÎÊı			
 83					
 84					
 85					
-86		Ghi §iÓm Th­ëng NhiÖm Vô 1			
-87		Ghi §iÓm Th­ëng NhiÖm Vô 2			
-88		Ghi §iÓm Th­ëng NhiÖm Vô 3			
+86		¼ÇÂ¼ÈÎÎñ½±ÀøµãÊı1			
+87		¼ÇÂ¼ÈÎÎñ½±ÀøµãÊı2			
+88		¼ÇÂ¼ÈÎÎñ½±ÀøµãÊı3			
 89					
 90					
 91					
-92		NhiÖm Vô Röa TiÒm N¨ng			
-93		NhiÖm Vô Röa PK (L­u Täa §é Vµo C¶nh)			
-94		NhiÖm Vô Röa PK L­u Bé §Õm Thêi Gian Ban §Çu			
-95		NhiÖm Vô Röa PK L­u Bé §Õm Thêi Gian Ban §Çu			
-96		NhiÖm Vô Tù Thó Röa PK			
-97		Mua DÊu HiÖu Ngùa CÊp 80			
-98		DÊu HiÖu §¸ Quı			
-99		DÊu HiÖu Bang Ph¸i			
-100		Danh TiÕng Giang Hå (T¹m Thêi)	1		
-121		NhiÖm Vô CÊp 90 ThÇn V­¬ng			
-122		NhiÖm Vô CÊp 90 ThiÕu L©m			
-123		NhiÖm Vô CÊp 90 §­êng M«n			
-124		NhiÖm Vô CÊp 90 Ngò §éc			
-125		NhiÖm Vô CÊp 90 Nga Mi			
-126		NhiÖm Vô CÊp 90 Thóy Yªn			
-127		NhiÖm Vô CÊp 90 Thiªn NhÉn			
-128		NhiÖm Vô CÊp 90 §¹i Bµng			
-129		NhiÖm Vô CÊp 90 Vâ §ang			
-130		NhiÖm Vô CÊp 90 KhÈn Lu©n			
-131		NhiÖm Vô Thu ThËp Kho¸ng S¶n			
-132		NhiÖm vô Thu thËp Th¶o d­îc			
-133		NhiÖm vô Thu thËp Kho¸ng s¶n			
-134		NhiÖm vô ThiÕu L©m cÊp 90: Ng­êi Bİ Èn			
-135		L­u Tr¹ng th¸i Treo m¸y			
-136		Thêi gian cßn l¹i ®Ó Treo m¸y NhËn Kinh nghiÖm			
-137		§· CËp nhËt Kü n¨ng ch­a			
-138		§iÓm Kinh nghiÖm tİch lòy tõ viÖc ¡n b¸nh Zongzi			
-139		Thêi gian ¡n b¸nh Zongzi			
-140		Thêi gian Rêi ®¶o			
-141		NhËn Quµ nhá sau 72 Giê Trùc tuyÕn			
-142		Sù kiÖn Liªn kÕt Thiªn hµ			
-143		Ghi chó Phiªn b¶n miÔn phİ §iÓm Kü n¨ng			
-144		Phiªn b¶n míi cña Chøc n¨ng Reset Kü n¨ng			
-145		Phiªn b¶n míi cña Chøc n¨ng Reset Kü n¨ng			
-150		Dïng cho NhiÖm vô §¶o Tiªu Tö			
-151		BiÕn thÓ HÖ thèng Phóc vËn 1	1		
-152		BiÕn thÓ HÖ thèng Phóc vËn 2			
-153		BiÕn thÓ HÖ thèng Phóc vËn 3			
-154		BiÕn thÓ HÖ thèng Phóc vËn 4			
-155		BiÕn thÓ HÖ thèng Phóc vËn 5			
-156		C¶nh b¸o Khi xãa Trang bŞ			
-157		Sù kiÖn Liªn kÕt Thiªn hµ "Ng­êi S­u tÇm"			
+92		Ï´Ç±ÄÜÈÎÎñ			
+93		Ï´PKÈÎÎñ£¨±£´æ½øÈë×ø±ê£©			
+94		Ï´PKÈÎÎñ±£´æÔ­¼ÆÊ±Æ÷			
+95		Ï´PKÈÎÎñ±£´æÔ­¼ÆÊ±Æ÷			
+96		Í¶°¸×ÔÊ×Ï´PK			
+97		Âò80¼¶Âí±ê¼Ç			
+98		±¦Ê¯±ê¼Ç			
+99		°ïÅÉ±ê¼Ç			
+100		½­ºşÉùÍû£¨Ôİ´æ£©	1		
+121		ÌìÍõ90¼¶ÈÎÎñ			
+122		ÉÙÁÖ90¼¶ÈÎÎñ			
+123		ÌÆÃÅ90¼¶ÈÎÎñ			
+124		Îå¶¾90¼¶ÈÎÎñ			
+125		¶ëáÒ90¼¶ÈÎÎñ			
+126		´äÑÌ90¼¶ÈÎÎñ			
+127		ÌìÈÌ90¼¶ÈÎÎñ			
+128		Ø¤°ï90¼¶ÈÎÎñ			
+129		Îäµ±90¼¶ÈÎÎñ			
+130		À¥ÂØ90¼¶ÈÎÎñ			
+131		¿óÊ¯ÊÕ¼¯ÈÎÎñ			
+132		Ò©²ÄÊÕ¼¯ÈÎÎñ			
+133		¿óÊ¯ÊÕ¼¯ÈÎÎñ			
+134		Ø¤°ï90¼¶ÈÎÎñÉñÃØÈË			
+135		±£´æ¹Ò»ú×´Ì¬			
+136		¹Ò»ú¼Ó¾­ÑéÊ£ÓàÊ±¼ä			
+137		ÊÇ·ñ¸üĞÂ¹ı¼¼ÄÜ			
+138		³ÔôÕ×ÓÀÛ»ı¾­ÑéµãÊı			
+139		³ÔôÕ×ÓÊ±¼ä			
+140		Àë¿ªµºµÄÊ±¼ä			
+141		ÔÚÏß72Ğ¡Ê±ÁìĞ¡ÀñÆ·			
+142		»¥ÁªĞÇ¿Õ»î¶¯			
+143		Ãâ·ÑÏ´µã¼ÇÂ¼			
+144		ĞÂÏ´µã¹¦ÄÜ			
+145		ĞÂÏ´µã¹¦ÄÜ			
+150		ÓÃÓÚÏ´Ëèµº			
+151		¸£ÔµÏµÍ³±äÁ¿1	1		
+152		¸£ÔµÏµÍ³±äÁ¿2			
+153		¸£ÔµÏµÍ³±äÁ¿3			
+154		¸£ÔµÏµÍ³±äÁ¿4			
+155		¸£ÔµÏµÍ³±äÁ¿5			
+156		É¾×°±¸µÄÌáÊ¾¾¯¸æ			
+157		»¥ÁªĞÇ¿Õ¡°ÊÕ²Ø¼Ò¡±»î¶¯			
 
-160		Sù kiÖn ThÊt TŞch			
+160		ÆßÏ¦»î¶¯			
 
-170		Thêi gian Ph¹t Sö dông Tr¸i phĞp PhÇn mÒm			
-180		BiÕn thÓ NhiÖm vô PhÇn th­ëng Gi¸o dôc 1			
-181		BiÕn thÓ NhiÖm vô PhÇn th­ëng Gi¸o dôc 2			
-182		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Gi¸o Dôc 3			
-183		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Chİnh Ph¸i 1			
-184		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Chİnh Ph¸i 2			
-185		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Chİnh Ph¸i 3			
-186		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Trung LËp 1			
-187		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Trung LËp 2			
-188		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Trung LËp 3			
-189		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Tµ Ph¸i 1			
-190		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Tµ Ph¸i 2			
-191		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Tµ Ph¸i 3			
-192		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Hç Trî Chİnh Ph¸i			
-193		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Hç Trî Trung LËp			
-194		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Hç Trî Tµ Ph¸i			
-195		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Hç Trî			
-196		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Toµn Bé Chİnh Ph¸i			
-197		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Toµn Bé Trung LËp			
-198		BiÕn ThÓ NhiÖm Vô PhÇn Th­ëng Toµn Bé Tµ Ph¸i			
-199		BiÕn ThÓ NhiÖm Vô §Õm Sè Qu¸i VËt Chİnh Ph¸i			
+170		Íâ¹Ò´¦·£Ê±¼ä			
+180		½ÌÓı½±ÀøÈÎÎñ±äÁ¿1			
+181		½ÌÓı½±ÀøÈÎÎñ±äÁ¿2			
+182		½ÌÓı½±ÀøÈÎÎñ±äÁ¿3			
+183		ÕıÅÉÖ÷Ïß½±ÀøÈÎÎñ±äÁ¿1			
+184		ÕıÅÉÖ÷Ïß½±ÀøÈÎÎñ±äÁ¿2			
+185		ÕıÅÉÖ÷Ïß½±ÀøÈÎÎñ±äÁ¿3			
+186		ÖĞÁ¢Ö÷Ïß½±ÀøÈÎÎñ±äÁ¿1			
+187		ÖĞÁ¢Ö÷Ïß½±ÀøÈÎÎñ±äÁ¿2			
+188		ÖĞÁ¢Ö÷Ïß½±ÀøÈÎÎñ±äÁ¿3			
+189		Ğ°ÅÉÖ÷Ïß½±ÀøÈÎÎñ±äÁ¿1			
+190		Ğ°ÅÉÖ÷Ïß½±ÀøÈÎÎñ±äÁ¿2			
+191		Ğ°ÅÉÖ÷Ïß½±ÀøÈÎÎñ±äÁ¿3			
+192		ÕıÅÉÖ§Ïß½±ÀøÈÎÎñ±äÁ¿			
+193		ÖĞÁ¢Ö§Ïß½±ÀøÈÎÎñ±äÁ¿			
+194		Ğ°ÅÉÖ§Ïß½±ÀøÈÎÎñ±äÁ¿			
+195		Ö§Ïß½±ÀøÈÎÎñ±äÁ¿			
+196		ÕıÅÉÈ«½±Àø±äÁ¿			
+197		ÖĞÁ¢È«½±Àø±äÁ¿			
+198		Ğ°ÅÉÈ«½±Àø±äÁ¿			
+199		ÕıÅÉÉ±¹Ö¼ÇÊıÆ÷			
 
-204		L­u Tr¹ng th¸i §iÓm Sèng Míi			
-205		L­u Tr¹ng th¸i §iÓm Sèng Míi			
-210	219	Thµnh phè Tr¹m 1 ®Õn 20			
-220		ID NhiÖm vô Thêi Gian			
-221		Thêi Gian Cßn L¹i Cña NhiÖm Vô Thêi Gian			
-228		Thuéc Tİnh ChiÕn §Êu Cña Phe Thø 6 (GM)			
-230		BiÕn ThÓ ChiÕn Tr­êng Song Kim			
-231		BiÕn ThÓ ChiÕn Tr­êng Song Kim			
-232		BiÕn ThÓ ChiÕn Tr­êng Song Kim			
-233		BiÕn ThÓ ChiÕn Tr­êng Song Kim			
-234		BiÕn ThÓ ChiÕn Tr­êng Song Kim			
-235		Sè LÇn Th¾ng C¸c TrËn §Êu Cña Ng­êi Ch¬i Trong C¸c Trß Ch¬i ThÓ Thao			
-236		Sè LÇn Thua C¸c TrËn §Êu Cña Ng­êi Ch¬i Trong C¸c Trß Ch¬i ThÓ Thao			
-240		Ghi NhËn Tæng Sè LÇn PK Cña Ng­êi Ch¬i Trong ChiÕn Tr­êng CS_PK			
-241		Ghi NhËn Tæng Sè LÇn ChÕt Cña Ng­êi Ch¬i Trong ChiÕn Tr­êng CS_PK			
-250		Ghi NhËn Tæng Sè LÇn PK Cña Ng­êi Ch¬i Trong C¸c Lo¹i TrËn §Êu			
-251		Ghi NhËn Tæng Sè LÇn ChÕt Cña Ng­êi Ch¬i Trong C¸c Lo¹i TrËn §Êu			
+204		Ôİ´æÖØÉúµã			
+205		Ôİ´æÖØÉúµã			
+210	219	æäÕ¾³ÇÊĞ(Station)1µ½20			
+220		Ê±¼äÈÎÎñµÄID			
+221		Ê±¼äÈÎÎñµÄÊ£ÓàÊ±¼ä			
+228		µÚ6ÕóÓª£¨GM£©µÄÕ½¶·×´Ì¬¼ÇÂ¼			
+230		ËÎ½ğÕ½³¡±äÁ¿			
+231		ËÎ½ğÕ½³¡±äÁ¿			
+232		ËÎ½ğÕ½³¡±äÁ¿			
+233		ËÎ½ğÕ½³¡±äÁ¿			
+234		ËÎ½ğÕ½³¡±äÁ¿			
+235		Íæ¼ÒÔÚ¸÷ÖÖÓÎÏ·¾º¼¼ÖĞÓ®µÄ´ÎÊı			
+236		Íæ¼ÒÔÚ¸÷ÖÖÓÎÏ·¾º¼¼ÖĞÊ§°ÜµÄ´ÎÊı			
+240		CS_PKÕ½³¡¼ÇÂ¼Íæ¼ÒPK×ÜÊı			
+241		CS_PKÕ½³¡¼ÇÂ¼Íæ¼ÒËÀÍö×ÜÊı			
+250		¼ÇÂ¼¸÷Àà±ÈÈüµÄÍæ¼ÒPK×ÜÊı			
+251		¼ÇÂ¼¸÷Àà±ÈÈüµÄÍæ¼ÒËÀÍö×ÜÊı			
 258					
 
-201	400	Qu¶n lı Nhãm Ch­¬ng Tr×nh			
-401	600	HÖ Thèng Chuçi NhiÖm Vô			
-500		Sù KiÖn LÔ TÕt			
-501		Sù KiÖn LÔ TÕt			
-502		Sù KiÖn LÔ TÕt			
-503		Sù KiÖn LÔ TÕt			
-601		(Tr¹ng th¸i Trèng)			
-602		Tr¹ng th¸i Ghi NhËt Kı Ng­êi Ch¬i			
-605		§¸nh DÊu Tr¹ng Th¸i Offline Trùc TiÕp			
-606		Thêi Gian NhËn Th­ëng Cña Ng­êi Ch¬i NhËn PhÇn Th­ëng ThiÖn H¹nh			
-610		§¸nh DÊu ChuyÓn DŞch Dµnh Cho DŞch Vô T¹i §µi Loan			
-611		Ghi NhËn Ng­êi Ch¬i Hoµn Thµnh Cuéc Trß ChuyÖn Víi Quan Ng÷ T¹i CÊp §é 10 Trong Ho¹t §éng Ng­êi Ch¬i Míi T¹i §µi Loan			
-612		Sù KiÖn TÆng Ngùa CÊp 20 T¹i Malaysia			
-615		BiÕn ThÓ NhiÖm Vô C©y Th«ng Gi¸ng Sinh Cña Sù KiÖn Trùc TuyÕn Th¸ng 12			
+201	400	³ÌĞò×éÕ¼ÓÃ			
+401	600	ÈÎÎñÁ´ÏµÍ³			
+500		´º½Ú»î¶¯			
+501		´º½Ú»î¶¯			
+502		´º½Ú»î¶¯			
+503		´º½Ú»î¶¯			
+601		£¨¿ÕÏĞ£©			
+602		Player Log State			
+605		ÀëÏßÍĞ¹Ü±ê¼Ç			
+606		»ñµÃ»ıÉÆÁî½±ÀøÍæ¼ÒµÄÁì½±Ê±¼ä			
+610		Ì¨Íå×ª·şÓÃµÄ×ª·ş±ê¼Ç			
+611		¼ÇÂ¼Ì¨ÍåĞÂÊÖ»î¶¯½ÇÉ«ÔÚ10¼¶Ê±ÓëÀñ¹Ù¶Ô»°¹ı			
+612		ÂíÀ´Î÷ÑÇ20¼¶ÔùÂí»î¶¯			
+615		12ÔÂÔÚÏß»î¶¯Ê¥µ®Ê÷µÄÈÎÎñ±äÁ¿			
 616					
-620	650	BiÕn ThÓ NhiÖm Vô Toµn S©n Thi §Êu			
-700		B¸nh Trung Thu TÆng NguyÖt			
-701		B¸nh Trung Thu TÆng Cèng			
-702	800	BiÕn ThÓ TrËn §Êu ChiÕn Tranh Song Kim			
-711	752	BiÕn ThÓ TrËn §Êu ChiÕn Tranh Song Kim			
-747		§iÓm Tİch Lòy TrËn §Êu ChiÕn Tranh Song Kim	1		
-760		§Òn Bï Kinh NghiÖm Khu Vùc 1-2 Cho Th¸ng 1 N¨m 2006			
-801	850	Héi Kú Wulin LÇn Thø Hai			
-1000		NhiÖm Vô Gi¸o Dôc			
-1001		NhiÖm Vô Chİnh Ph¸i			
-1002		NhiÖm Vô Trung LËp			
-1003		NhiÖm Vô Chİnh Ph¸i Xa			
-1004	1010	Chuyªn Dông BiÕn ThÓ BiÕn Sè NhiÖm Vô Nhãm KÕ Ho¹ch			
-1011		BiÕn ThÓ Tham Sè NhiÖm Vô S¸t Qu¸i Chİnh Ph¸i			
-1012		BiÕn ThÓ Tham Sè NhiÖm Vô S¸t Qu¸i Trung LËp			
-1013		BiÕn ThÓ Tham Sè NhiÖm Vô S¸t Qu¸i Xa Ph¸i			
-1014		Ghi NhËn Ng­êi Ch¬i §· Nãi ChuyÖn Víi Long Ngò Ch­a			
-1015		Ghi NhËn Kh¶ N¨ng Hoµn Thµnh NhiÖm Vô Song Kim Cña Ng­êi Ch¬i			
-1016		Ghi NhËn Thêi Gian §æi Kinh NghiÖm B»ng Song Kim Cña Ng­êi Ch¬i			
-1017		Ghi NhËn §iÓm Cña Ng­êi Ch¬i §· Dïng §Ó §æi Kinh NghiÖm B»ng Song Kim			
-1018		Ghi NhËn Sè LÇn ChiÕn Th¾ng T¹i §Êu Tr­êng §èi §Êu			
-1019		Ghi NhËn Sè LÇn Thùc HiÖn Chuçi NhiÖm Vô			
-1020		BiÕn Tæng Hîp NhiÖm Vô Ng­êi Th«n			
-1021		BiÕn ID NhiÖm Vô Ng­êi Th«n §ang Thùc HiÖn			
-1022		BiÕn Lo¹i NhiÖm Vô Ng­êi Th«n Lo¹i 1			
-1023		BiÕn Lo¹i NhiÖm Vô Ng­êi Th«n Lo¹i 2			
-1024		BiÕn Lo¹i NhiÖm Vô Ng­êi Th«n Lo¹i 3			
-1025		BiÕn Lo¹i NhiÖm Vô Ng­êi Th«n Lo¹i 4			
-1026		BiÕn Lo¹i NhiÖm Vô Ng­êi Th«n Lo¹i 5			
-1027		BiÕn Lo¹i NhiÖm Vô Ng­êi Th«n Lo¹i 6			
-1028		BiÕn Tr¹ng Th¸i §ang Thùc HiÖn NhiÖm Vô			
-1029		BiÕn L­u Tr÷ Thêi Gian Trùc TuyÕn Cña Ng­êi Ch¬i			
-1030		BiÕn Dßng T­¬ng øng Cña B¶ng D÷ LiÖu §ang Thùc HiÖn NhiÖm Vô			
-1031		BiÕn ID B¶n §å Trong NhiÖm Vô Thu ThËp Lo¹i 4			
-1032		BiÕn Lo¹i B¶n §å Vµ Sè L­îng CÇn Thu ThËp Trong NhiÖm Vô Thu ThËp Lo¹i 4			
-1033		BiÕn L­u Tr÷ CÊp §é Cña Ng­êi Ch¬i Tr­íc Khi Lªn CÊp			
-1034		BiÕn L­u Tr÷ Kinh NghiÖm Cña Ng­êi Ch¬i Tr­íc Khi Lªn CÊp			
-1035		BiÕn L­u Tr÷ Sè LÇn Thùc HiÖn Chuçi NhiÖm Vô T­¬ng øng			
-1036		BiÕn L­u Tr÷ Sè LÇn Hñy NhiÖm Vô Khi Ch­a Cã §iÒu KiÖn			
-1037		Ghi NhËn Thêi Gian Trùc TuyÕn Cña Ng­êi Ch¬i §Ó Ng¨n Ng­êi Ch¬i KhiÓn NgÉu Høng Ghi NhËn M· X¸c SuÊt			
-1038		BiÕn Ghi NhËn PhÇn Tö Cuéc Trß ChuyÖn NhiÖm Vô 1			
-1039		BiÕn Ghi NhËn PhÇn Tö Cuéc Trß ChuyÖn NhiÖm Vô 2			
-1040		BiÕn Ghi NhËn PhÇn Tö Cuéc Trß ChuyÖn NhiÖm Vô 3			
-1041		BiÕn Ghi NhËn PhÇn Tö Cuéc Trß ChuyÖn NhiÖm Vô 4			
-1042		BiÕn Ghi NhËn PhÇn Tö Cuéc Trß ChuyÖn NhiÖm Vô 5			
-1043		BiÕn Ghi NhËn PhÇn Tö Cuéc Trß ChuyÖn NhiÖm Vô 6			
-1044		BiÕn Dïng §Ó Ghi NhËn Sè L­îng Tæng Céng Trong Chuçi NhiÖm Vô (HiÓn ThŞ Thø H¹ng)			
-1045		BiÕn Ng¨n Ng­êi Ch¬i Huû NhiÖm Vô Chuçi NhiÖm Vô Ng­êi Th«n Sö Dông NhiÒu LÇn			
-1046		BiÕn L­u Tr÷ Sè LÇn NhiÖm Vô Cã ThÓ Huû Cña Ng­êi Ch¬i Cßn L¹i			
-1050		NhiÖm Vô Chİnh Ph¸i 20-30 CÊp Hç Trî			
-1051		NhiÖm Vô Chİnh Ph¸i 30-40 CÊp Hç Trî			
-1052		NhiÖm Vô Chİnh Ph¸i 40-50 CÊp Hç Trî			
-1053		NhiÖm Vô Chİnh Ph¸i 50-60 CÊp Hç Trî			
-1054		NhiÖm Vô Trung LËp 20-30 CÊp Hç Trî			
-1055		NhiÖm Vô Trung LËp 30-40 CÊp Hç Trî			
-1056		NhiÖm Vô Trung LËp 40-50 CÊp Hç Trî			
-1057		NhiÖm Vô Trung LËp 50-60 CÊp Hç Trî			
-1058		NhiÖm Vô Xa Ph¸i 20-30 CÊp Hç Trî			
-1059		NhiÖm Vô Xa Ph¸i 30-40 CÊp Hç Trî			
-1060		NhiÖm Vô Xa Ph¸i 40-50 CÊp Hç Trî			
-1061		NhiÖm Vô Xa Ph¸i 50-60 CÊp Hç Trî			
-1062		BiÕn §Õm Sè Qu¸i Trung LËp			
-1063		BiÕn §Õm Sè Qu¸i Xa Ph¸i			
-1064		NhiÖm Vô §¶o Kim S¬n ThŞ TrÊn T©y S¬n			
-1065		BiÕn §Õm Sè LÇn Thu ThËp ThŞt T­¬i			
-1066		BiÕn NhiÖm Vô Thu ThËp ThŞt T­¬i			
-1067		BiÕn Xãa Kü N¨ng Ngò Hµnh Míi Ng­êi Ch¬i			
-1068		BiÕn Ghi NhËn Th­ëng Anh Hïng Cña Lµng Cïng D­íi			
-1069		BiÕn Ghi NhËn Sè LÇn Th­ëng Anh Hïng Cña Lµng Cïng D­íi			
-1070		Ghi NhËn Sè LÇn ChiÕn Th¾ng T¹i §Êu Tr­êng §èi §Êu			
-1071		Ghi NhËn Sè LÇn ThÊt B¹i T¹i §Êu Tr­êng §èi §Êu			
-1072		Ghi NhËn Sè LÇn ChiÕn Th¾ng T¹i ChiÕn Tr­êng Ch©u S¬n Kim			
-1073		Ghi NhËn Sè LÇn ThÊt B¹i T¹i ChiÕn Tr­êng Ch©u S¬n Kim			
-1074		Ghi NhËn Sè LÇn Nép ThÎ Th­ëng Anh Hïng			
-1075		Ghi NhËn Thêi Gian Trùc TuyÕn Khi Ng­êi Ch¬i Vµo Game			
-1076		Ghi NhËn Tæng Thêi Gian Trùc TuyÕn Trong Game Khi Ng­êi Ch¬i Vµo Game			
-1080		BiÕn NhiÖm Vô §ua Top T¹i Mèc CÊp			
-1081		BiÕn NhiÖm Vô §ua Top §¹t CÊp 80			
-1082		BiÕn NhiÖm Vô KÎ S¸t Boss			
-1083		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1084		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1085		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1086		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1087		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1088		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1089		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1090		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1091		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1092		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1093		Vßng Lo¹i Thi §Êu Toµn Khu Toµn M¸y TrËn Hµ Néi			
-1094		Vßng Chung KÕt §Êu TrËn Toµn Khu Toµn M¸y TrËn Hµ Néi (T¸i Sö Dông Cïng ı NghÜa Víi Vßng Lo¹i)			
-1095		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1096		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1097		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1098		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1099		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1100		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1101		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1102		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1103		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1104		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
-1105		Vßng Míi Næi Cña Gi¶i §Êu Vâ L©m			
+620	650	Çó×Ü¾º¼¼³¡Ê¹ÓÃµÄÈÎÎñ±äÁ¿			
+700		·îÔÂ¹ûÈØÔÂ±ı			
+701		¹±ÔÂÜ½ÈØÔÂ±ı			
+702	800	ËÎ½ğ´óÕ½Õ½ÒÛÓÃ±äÁ¿			
+711	752	ËÎ½ğ´óÕ½Õ½ÒÛÓÃ±äÁ¿			
+747		ËÎ½ğ»ı·Ö	1		
+760		2006 Äê 1 ÔÂ·İ 1-2Çø ¾­Ñé²¹³¥ 			
+801	850	µÚ¶ş½ìÎäÁÖ´ó»á			
+1000		½ÌÓıÈÎÎñ			
+1001		ÕıÅÉÖ÷ÏßÈÎÎñ			
+1002		ÖĞÁ¢Ö÷ÏßÈÎÎñ			
+1003		Ğ°ÅÉÖ÷ÏßÈÎÎñ			
+1004	1010	²ß»®×éÖ÷ÏßÈÎÎñ±äÁ¿×¨ÓÃ			
+1011		ÕıÅÉÖ§ÏßÉ±¹ÖµÄ±äÁ¿²ÎÊı			
+1012		ÖĞÁ¢Ö§ÏßÉ±¹ÖµÄ±äÁ¿²ÎÊı			
+1013		Ğ°ÅÉÖ§ÏßÉ±¹ÖµÄ±äÁ¿²ÎÊı			
+1014		¼ÇÂ¼Íæ¼ÒÊÇ·ñÓëÁúÎå¶Ô¹ı»°			
+1015		¼ÇÂ¼Íæ¼ÒÊÇ·ñÄÜÍê³ÉËÎ½ğÈÎÎñ			
+1016		¼ÇÂ¼ËÎ½ğ¶Ò»»¾­ÑéµÄÊ±¼ä			
+1017		¼ÇÂ¼ËÎ½ğ¶Ò»»¾­ÑéÊ¹ÓÃµôµÄ»ı·Ö			
+1018		¼ÇÂ¼±ÈÎäÀŞÌ¨Ê¤Àû´ÎÊı			
+1019		¼ÇÂ¼ÈÎÎñÁ´´ÎÊı			
+1020		Ò°ÛÅÈÎÎñ×Ü±äÁ¿			
+1021		Ò°ÛÅÈÎÎñµ±Ç°ÕıÔÚ½øĞĞµÄ ID			
+1022		Ò°ÛÅÈÎÎñÖĞµÄµÚÒ»ÖÖÀàĞÍ			
+1023		Ò°ÛÅÈÎÎñÖĞµÄµÚ¶şÖÖÀàĞÍ			
+1024		Ò°ÛÅÈÎÎñÖĞµÄµÚÈıÖÖÀàĞÍ			
+1025		Ò°ÛÅÈÎÎñÖĞµÄµÚËÄÖÖÀàĞÍ			
+1026		Ò°ÛÅÈÎÎñÖĞµÄµÚÎåÖÖÀàĞÍ			
+1027		Ò°ÛÅÈÎÎñÖĞµÄµÚÁùÖÖÀàĞÍ			
+1028		Ã¿´ÎÈÎÎñÕıÔÚ½øĞĞµÄ×´Ì¬			
+1029		´¢´æÍæ¼ÒÔÚÏßÊ±¼äµÄ±äÁ¿			
+1030		ÕıÔÚ½øĞĞµÄÈÎÎñµÄ¾ßÌå±í¸ñ¶ÔÓ¦ĞĞÊı			
+1031		´¢´æµÚ4ÖÖµØÍ¼ÊÕ¼¯ÈÎÎñÖĞµÄµØÍ¼ID			
+1032		´¢´æµÚ4ÖÖµØÍ¼ÊÕ¼¯ÈÎÎñÖĞµÄµØÍ¼ÀàĞÍºÍËùÒªÊÕ¼¯µÄ¸öÊı			
+1033		´¢´æÍæ¼ÒÔÚ»¹Ã»ÓĞÉı¼¶Ç°µÄµÈ¼¶			
+1034		´¢´æÍæ¼ÒÔÚ»¹Ã»ÓĞÉı¼¶Ç°µÄ¾­ÑéÖµ			
+1035		´æ´¢Íæ¼ÒÔÚÃ¿Ò»»·µÄÄÄÒ»Á´×öÁË¼¸´Î			
+1036		´¢´æÍæ¼ÒÔÚÃ»ÓĞÈ¡ÏûÌõ¼şµÄÇé¿öÏÂÒÑ¾­È¡ÏûÁË¶àÉÙ´ÎÈÎÎñ			
+1037		¼ÇÂ¼Íæ¼ÒµÄÔÚÏßÊ±¼ä£¬ÓÃÒÔ·ÀÖ¹Íæ¼ÒË¢½±µÄ¼ÇÂ¼Ëæ»úÖÖ×Ó´¦Àí			
+1038		ÈÎÎñ¶Ô»°ÔªËØÒ»¼ÇÂ¼			
+1039		ÈÎÎñ¶Ô»°ÔªËØ¶ş¼ÇÂ¼			
+1040		ÈÎÎñ¶Ô»°ÔªËØÈı¼ÇÂ¼			
+1041		ÈÎÎñ¶Ô»°ÔªËØËÄ¼ÇÂ¼			
+1042		ÈÎÎñ¶Ô»°ÔªËØÎå¼ÇÂ¼			
+1043		ÈÎÎñ¶Ô»°ÔªËØÁù¼ÇÂ¼			
+1044		ÓÃÓÚ¼ÇÂ¼ÈÎÎñÁ´ÖĞ×ÜÊıµÄÊıÖµ£¨ÅÅÃûÏÔÊ¾£©			
+1045		Ò°ÛÅÈÎÎñÁ´·ÀÖ¹¶à´ÎÈ¡ÏûÈÎÎñÊ¹ÓÃ			
+1046		´æ´¢Íæ¼ÒÊ£Óà¿ÉÒÔÈ¡ÏûµÄÈÎÎñ´ÎÊı			
+1050		ÕıÅÉ20-30¼¶Ö§ÏßÈÎÎñ			
+1051		ÕıÅÉ30-40¼¶Ö§ÏßÈÎÎñ			
+1052		ÕıÅÉ40-50¼¶Ö§ÏßÈÎÎñ			
+1053		ÕıÅÉ50-60¼¶Ö§ÏßÈÎÎñ			
+1054		ÖĞÁ¢20-30¼¶Ö§ÏßÈÎÎñ			
+1055		ÖĞÁ¢30-40¼¶Ö§ÏßÈÎÎñ			
+1056		ÖĞÁ¢40-50¼¶Ö§ÏßÈÎÎñ			
+1057		ÖĞÁ¢50-60¼¶Ö§ÏßÈÎÎñ			
+1058		Ğ°ÅÉ20-30¼¶Ö§ÏßÈÎÎñ			
+1059		Ğ°ÅÉ30-40¼¶Ö§ÏßÈÎÎñ			
+1060		Ğ°ÅÉ40-50¼¶Ö§ÏßÈÎÎñ			
+1061		Ğ°ÅÉ50-60¼¶Ö§ÏßÈÎÎñ			
+1062		ÖĞÁ¢É±¹Ö¼ÇÊıÆ÷			
+1063		Ğ°ÅÉÉ±¹Ö¼ÇÊıÆ÷			
+1064		Î÷É½´å½ğÉ½µºÈÎÎñ			
+1065		ĞÂÊÖ´åÏÊÈâµÄ¼ÇÊıÆ÷			
+1066		ĞÂÊÖ´åÊÕ¼¯ÏÊÈâµÄÈÎÎñ±äÁ¿			
+1067		ĞÂÊÖÎåĞĞ¼¼ÄÜÇå³ı±äÁ¿			
+1068		ĞÂÊÖ´åÎäÊ¦½±ÀøÉùÍû±äÁ¿			
+1069		ĞÂÊÖ´åÎäÊ¦½±Àø±äÁ¿´ÎÊı¼ÇÂ¼			
+1070		±ÈÎä³¡Ê¤Àû´ÎÊı			
+1071		±ÈÎä³¡Ê§°Ü´ÎÊı			
+1072		ËÎ½ğ´óÕ½Ê¤Àû´ÎÊı			
+1073		ËÎ½ğ´óÕ½Ê§°Ü´ÎÊı			
+1074		ÉÍÉÆ·£¶ñ_¼ÇÂ¼Íæ¼ÒÌá½»ÉÍÉÆÁî			
+1075		Íæ¼ÒÉÏÏßµÄÓÎÏ·ÊÀ½çÊ±¼ä			
+1076		Íæ¼ÒÉÏÏßÊ±ÔÚÓÎÏ·ÊÀ½çÄÚµÄ×ÜÊ±¼ä			
+1080		ĞÂÊÖ³å¼¶»î¶¯ÈÎÎñ±äÁ¿			
+1081		Íæ¼Ò³å80¼¶»î¶¯ÈÎÎñ±äÁ¿			
+1082		BossÉ±ÊÖÈÎÎñ±äÁ¿			
+1083		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1084		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1085		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1086		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1087		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1088		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1089		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1090		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1091		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1092		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1093		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü			
+1094		È«ÇøÈ«·ş±ÈÎä´ó»áÔ¤Ñ¡Èü£¨ĞÂĞãÈüÖØÓÃÒâÒåÏàÍ¬£©			
+1095		ÎäÁÖ´ó»áĞÂĞãÈü			
+1096		ÎäÁÖ´ó»áĞÂĞãÈü			
+1097		ÎäÁÖ´ó»áĞÂĞãÈü			
+1098		ÎäÁÖ´ó»áĞÂĞãÈü			
+1099		ÎäÁÖ´ó»áĞÂĞãÈü			
+1100		ÎäÁÖ´ó»áĞÂĞãÈü			
+1101		ÎäÁÖ´ó»áĞÂĞãÈü			
+1102		ÎäÁÖ´ó»áĞÂĞãÈü			
+1103		ÎäÁÖ´ó»áĞÂĞãÈü			
+1104		ÎäÁÖ´ó»áĞÂĞãÈü			
+1105		ÎäÁÖ´ó»áĞÂĞãÈü			
 
-1090		Vßng Chung KÕt Gi¶i §Êu Vâ L©m Toµn Khu Toµn M¸y TrËn Hµ Néi (T¸i Sö Dông Cïng ı NghÜa Víi Vßng Lo¹i)			
-1094		Vßng Chung KÕt Gi¶i §Êu Vâ L©m Toµn Khu Toµn M¸y TrËn Hµ Néi (T¸i Sö Dông Cïng ı NghÜa Víi Vßng Lo¹i)			
-1095		Vßng Chung KÕt Gi¶i §Êu Vâ L©m Toµn Khu Toµn M¸y TrËn Hµ Néi (T¸i Sö Dông Cïng ı NghÜa Víi Vßng Lo¹i)			
-1096		Vßng Chung KÕt Gi¶i §Êu Vâ L©m Toµn Khu Toµn M¸y TrËn Hµ Néi (T¸i Sö Dông Cïng ı NghÜa Víi Vßng Lo¹i)			
-1097		Vßng Chung KÕt Gi¶i §Êu Vâ L©m Toµn Khu Toµn M¸y TrËn Hµ Néi (T¸i Sö Dông Cïng ı NghÜa Víi Vßng Lo¹i)			
-1098		Vßng Chung KÕt Gi¶i §Êu Vâ L©m Toµn Khu Toµn M¸y TrËn Hµ Néi (T¸i Sö Dông Cïng ı NghÜa Víi Vßng Lo¹i)			
+1090		È«ÇøÈ«·şÎäÁÖ´ó»á¾öÈü£¨ÓëÔ¤Ñ¡ÈüÖØÓÃ£©			
+1094		È«ÇøÈ«·şÎäÁÖ´ó»á¾öÈü£¨ÓëĞÂĞãÈüÖØÓÃ£©			
+1095		È«ÇøÈ«·şÎäÁÖ´ó»á¾öÈü£¨ÓëĞÂĞãÈüÖØÓÃ£©			
+1096		È«ÇøÈ«·şÎäÁÖ´ó»á¾öÈü£¨ÓëĞÂĞãÈüÖØÓÃ£©			
+1097		È«ÇøÈ«·şÎäÁÖ´ó»á¾öÈü£¨ÓëĞÂĞãÈüÖØÓÃ£©			
+1098		È«ÇøÈ«·şÎäÁÖ´ó»á¾öÈü£¨ÓëĞÂĞãÈüÖØÓÃ£©			
 1099					
 1100					
 
-1111		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1112		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1113		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1114		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1115		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1116		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1117		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1118		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1119		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1120		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1121		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1122		PhÇn Th­ëng Chung KÕt Gi¶i §Êu Vâ L©m			
-1123		L­u Tr÷ ID B¶n §å Minh NguyÖt ThŞ TrÊn			
-1124		L­u Tr÷ Täa §é X Khi Rêi Trß Ch¬i			
-1125		L­u Tr÷ Täa §é Y Khi Rêi Trß Ch¬i			
-1126		Ghi NhËn Ngµy Nµo §ã			
-1127		Ghi NhËn Sè LÇn Ch¬i Trong Ngµy			
-1128		Ghi NhËn Sè LÇn Chän Trong Mçi LÇn Ch¬i			
-1129		Ghi NhËn XÕp H¹ng Mét TrËn			
-1130		Ghi NhËn Nhãm Cña Ng­êi Ch¬i			
-1131		XÕp L¹i Sè Kinh NghiÖm			
-1132		Thêi Gian NhËn §­îc GÊp §«i			
+1111		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1112		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1113		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1114		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1115		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1116		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1117		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1118		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1119		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1120		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1121		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1122		ÎäÁÖ´ó»á¾öÈü½±Àø			
+1123		´æ´¢Ã÷ÔÂÕòµÄmapid			
+1124		´æ´¢Àë¿ªÓÎÏ·µÄx×ø±êµã			
+1125		´æ´¢Àë¿ªÓÎÏ·µÄy×ø±êµã			
+1126		¼ÇÂ¼ÊÇÄÄÒ»Ìì			
+1127		¼ÇÂ¼Ò»ÌìÄÚÍæµÄ´ÎÊı			
+1128		¼ÇÂ¼Ò»³¡µãÁË¶àÉÙ¸ö			
+1129		¼ÇÂ¼Ò»³¡µÄÅÅÃû			
+1130		¼ÇÂ¼Íæ¼ÒµÄGroupºÅ			
+1131		»ñµÃ¾­ÑéµÄ±¶Êı			
+1132		»ñµÃË«±¶µÄÊ±¼ä			
 1133					
 1134					
-1083	1182	Gi¶i §Êu Vâ L©m Toµn Khu Toµn M¸y			
-1183		Cuéc Thi Lªn CÊp T¹i ViÖt Nam			
-1184		Cuéc Thi Lªn CÊp T¹i ViÖt Nam			
-1185		Monster ChiÕm LÜnh Thµnh			
-1186		Monster ChiÕm LÜnh Thµnh			
-1187		Monster ChiÕm LÜnh Thµnh			
-1188		Monster ChiÕm LÜnh Thµnh			
-1189		Monster ChiÕm LÜnh Thµnh			
-1190		N¹p L¹i Trang BŞ Vµng ë ViÖt Nam			
-1191		N¹p L¹i Trang BŞ Vµng ë ViÖt Nam			
-1200		Chuyªn Dông BiÕn NhiÖm Vô Hîp NhÊt (Wang Bin)			
-1201		BiÕn NhiÖm Vô Göi Th­ NhiÖm Vô Ngùa Sãi Giã			
-1202		BiÕn NhiÖm Vô Göi Th­ NhiÖm Vô §Òn Sãng			
-1203		BiÕn NhiÖm Vô Göi Th­ NhiÖm Vô Ngµn B¶o Khè			
-1204		BiÕn NhiÖm Vô Göi Th­ NhiÖm Vô §Şa §iÓm			
-1205		§iÓm Tİch Lòy Cña Ng­êi Göi Th­			
-1206		Danh HiÖu Ng­êi Göi Th­			
-1207		Bé §Õm Sè Qu¸i S¸t Nh©n Trong NhiÖm Vô Göi Th­			
-1208		Bé §Õm Sè Qu¸i S¸t Nh©n Trong NhiÖm Vô Ngùa Sãi Giã			
-1209		Bé §Õm Sè Qu¸i S¸t Nh©n Trong NhiÖm Vô §Òn Sãng			
-1210		Bé §Õm Sè Qu¸i S¸t Nh©n Trong NhiÖm Vô Ngµn B¶o Khè			
-1211		Thêi Gian B¾t §Çu Cña CÊp Bµi NhiÖm Vô Göi Th­			
-1212		Thêi Gian Sö Dông Cña CÊp Bµi NhiÖm Vô Göi Th­			
-1213		Bé §Õm Thêi Gian Kinh NghiÖm GÊp §«i			
-1214		BiÕn NhiÖm Vô §¸nh Qu¸i §Şnh Kú			
-1215		BiÕn NhiÖm Vô Qu¸i Bªn C¹nh Boss			
-1216		Thêi Gian Hoµn Thµnh NhiÖm Vô			
-1217		XÕp H¹ng Thî S¨n TiÒn Th­ëng			
-1218		Sè LÇn Hoµn Thµnh NhiÖm Vô Göi Th­			
-1219		Cuéc Thi Lªn CÊp T¹i §µi Loan			
-1221		Bé §Õm Thêi Gian Cña NhiÖm Vô Göi Th­ Ghi Chó Ngµy			
-1222		Bé §Õm Thêi Gian Mçi Ngµy Cña NhiÖm Vô Göi Th­			
-1223		Bé §Õm Sè §iÓm Tİch Lòy Hµng Ngµy Cña NhiÖm Vô Göi Th­			
-1224		C«ng T¾c §iÓm Tİch Lòy Hµng Ngµy Cña NhiÖm Vô Göi Th­			
+1083	1182	È«ÇøÈ«·ş±ÈÎä´ó»á			
+1183		Ô½ÄÏ°ì³å¼¶»î¶¯			
+1184		Ô½ÄÏ°ì³å¼¶»î¶¯			
+1185		¹ÖÎï¹¥³Ç			
+1186		¹ÖÎï¹¥³Ç			
+1187		¹ÖÎï¹¥³Ç			
+1188		¹ÖÎï¹¥³Ç			
+1189		¹ÖÎï¹¥³Ç			
+1190		Ô½ÄÏ»Æ½ğ×°±¸²¹Áì			
+1191		Ô½ÄÏ»Æ½ğ×°±¸²¹Áì			
+1200		²¢·ş×¨ÓÃÈÎÎñ±äÁ¿£¨Íõ±ó£©			
+1201		ËÍĞÅÈÎÎñ·çÖ®ÆïÈÎÎñ±äÁ¿			
+1202		ËÍĞÅÈÎÎñÉ½ÉñÃíÈÎÎñ±äÁ¿			
+1203		ËÍĞÅÈÎÎñÇ§±¦¿âÈÎÎñ±äÁ¿			
+1204		ËÍĞÅÈÎÎñËùµ½µØµãÈÎÎñ±äÁ¿			
+1205		ĞÅÊ¹»ı·Ö			
+1206		ĞÅÊ¹³ÆºÅ			
+1207		ĞÅÊ¹ÈÎÎñµ±Ç°É±¹Ö¼ÇÊıÆ÷			
+1208		·çÖ®ÆïÉ±¹Ö¼ÇÊıÆ÷			
+1209		É½ÉñÃíÉ±¹Ö¼ÇÊıÆ÷			
+1210		Ç§±¦¿âÉ±¹Ö¼ÇÊıÆ÷			
+1211		ĞÅÊ¹ÈÎÎñ¹Ø¿¨¿ªÊ¼Ê±¼ä			
+1212		ĞÅÊ¹ÈÎÎñ¹Ø¿¨Ê¹ÓÃÊ±¼ä			
+1213		Ë«±¶¾­Ñé¼ÇÊ±Æ÷			
+1214		¶¨µã´ò¹ÖÈÎÎñ±äÁ¿			
+1215		bossÉí±ß´¥·¢¹Ö±äÁ¿			
+1216		ÈÎÎñÍê³ÉÊ±¼ä			
+1217		ÉÍ½ğÁÔÈËÅÅĞĞ±äÁ¿			
+1218		ĞÅÊ¹ÈÎÎñÍê³É´ÎÊı			
+1219		Ì¨Íå³å¼¶»î¶¯			
+1221		ĞÅÊ¹ÈÎÎñ¼ÇÊ±Æ÷ÈÕÆÚ¼ÇÂ¼			
+1222		ĞÅÊ¹ÈÎÎñ¼ÇÊ±Æ÷Ã¿ÈÕÊ±¼ä¼ÇÂ¼			
+1223		ĞÅÊ¹ÈÎÎñÃ¿ÈÕËùµÃ»ı·Ö¼ÇÂ¼			
+1224		ĞÅÊ¹ÈÎÎñÃ¿ÈÕËùµÃ»ı·Ö¿ª¹Ø			
 1225					
-1226		BiÕn NhiÖm Vô §µo T¹o §ång Minh - §å §Ö Cña Cao Nh©n			
-1227		BiÕn NhiÖm Vô §µo T¹o §ång Minh - Lç TŞch			
-1228		BiÕn NhiÖm Vô §µo T¹o §ång Minh - §­êng ¶nh			
-1229		BiÕn NhiÖm Vô §µo T¹o §ång Minh - B¹ch Xµ			
-1230		BiÕn NhiÖm Vô §µo T¹o §ång Minh - H¾c Xµ			
-1231		BiÕn NhiÖm Vô §µo T¹o §ång Minh - Thuú Y Thñy			
-1232		BiÕn NhiÖm Vô §µo T¹o §ång Minh - Lç TŞch Vµ C«ng T¾c Byte Thèng NhÊt			
-1233		Sè LÇn Tr¶ Lêi C©u Hái Trong NhiÖm Vô §µo T¹o §ång Minh			
-1234		Bé §Õm Thêi Gian NhiÖm Vô §µo T¹o §ång Minh			
-1235		C©u Tr¶ Lêi Cña NhiÖm Vô §µo T¹o §ång Minh - H¾c Xµ			
-1236		Bé §Õm Sè Qu¸i VËt §· GiÕt §­îc Göi §Õn Ch­¬ng Tr×nh			
-1237		BiÕn NhiÖm Vô Ghi L¹i Sè Thø Tù Cña NhiÖm Vô Tu LuyÖn			
-1238		BiÕn NhiÖm Vô Ghi L¹i Ngµy Thùc HiÖn Cña NhiÖm Vô Tu LuyÖn			
-1239		BiÕn NhiÖm Vô Ghi L¹i Sè Kinh NghiÖm Th­ëng Cña Ng­êi Ch¬i			
-1240		BiÕn NhiÖm Vô Ghi L¹i Sè Kinh NghiÖm Th­ëng Cña §ång Minh			
-1241		BiÕn NhiÖm Vô Ghi L¹i Sè LÇn Hoµn Thµnh NhiÖm Vô Trong Ngµy Cña Ng­êi Ch¬i			
-1242		BiÕn NhiÖm Vô Ghi L¹i Sè LÇn Hoµn Thµnh NhiÖm Vô Tu LuyÖn Toµn Bé Trong Ngµy			
-1243		Bé §Õm Sè LÇn §¸nh R×u Trªn Gç			
-1244		BiÕn NhiÖm Vô Ghi L¹i T×nh Tr¹ng Hoµn Thµnh NhiÖm Vô Tu LuyÖn			
-1245		BiÕn NhiÖm Vô Ghi L¹i CÊp BËc Danh HiÖu Cña NhiÖm Vô Tu LuyÖn §ång Minh			
-1246		BiÕn NhiÖm Vô Ghi L¹i Sè LÇn Hoµn Thµnh NhiÖm Vô Trong Ngµy §­îc Cho PhĞp			
+1226		Í¬°é½ÌÓıÈÎÎñ½£»ÊµÜ×ÓÈÎÎñ±äÁ¿			
+1227		Í¬°é½ÌÓıÈÎÎñÂ¬Çà±äÁ¿			
+1228		Í¬°é½ÌÓıÈÎÎñÌÆÓ°±äÁ¿			
+1229		Í¬°é½ÌÓıÈÎÎñ°×É·±äÁ¿			
+1230		Í¬°é½ÌÓıÈÎÎñºÚÉ·±äÁ¿			
+1231		Í¬°é½ÌÓıÈÎÎñÇïÒÂË®±äÁ¿			
+1232		Í¬°é½ÌÓıÈÎÎñÂ¬ÇàÍ³Ò»×Ö½ÚÎ»¿ª¹Ø			
+1233		Í¬°é½ÌÓıÎÊ´ğ´ÎÊı¼ÇÊıÆ÷			
+1234		Í¬°é½ÌÓıÈÎÎñ¼ÆÊ±Æ÷			
+1235		Í¬°é½ÌÓıºÚÉ·´¦ÎÊÌâ´ğ°¸			
+1236		´«¸ø³ÌĞò¼ÆÊıÆ÷µÄÈÎÎñ±äÁ¿£¬¼ÇÂ¼Íæ¼Òµ±Ç°É±ËÀÁË¶àÉÙÖ»¹ÖÎï¡£			
+1237		¼ÇÂ¼ĞŞÁ¶ÈÎÎñ±àºÅµÄÈÎÎñ±äÁ¿			
+1238		¼ÇÂ¼ĞŞÁ¶ÈÎÎñ½øĞĞÈÕÆÚµÄÈÎÎñ±äÁ¿			
+1239		¼ÇÂ¼Íæ¼Ò½±Àø¾­ÑéµÄÈÎÎñ±äÁ¿			
+1240		¼ÇÂ¼Íæ¼ÒÍ¬°é¾­Ñé½±ÀøµÄÈÎÎñ±äÁ¿			
+1241		¼ÇÂ¼Íæ¼Òµ±ÌìÒÑ¾­Íê³ÉÈÎÎñ´ÎÊıµÄÈÎÎñ±äÁ¿			
+1242		¼ÇÂ¼Íæ¼ÒĞŞÁ¶ÈÎÎñÃ¿ÌìÈ«Íê³ÉµÄ´ÎÊı			
+1243		¼ÇÂ¼´òÄ¾×®´ÎÊı			
+1244		¼ÇÂ¼ĞŞÁ¶ÈÎÎñÍê³É×´¿ö			
+1245		¼ÇÂ¼Í¬°éĞŞÁ¶ÈÎÎñµÄ³ÆºÅµÈ¼¶			
+1246		¼ÇÂ¼Í¬°éĞŞÁ¶ÈÎÎñÃ¿ÌìÔÊĞíÍê³ÉµÄ´ÎÊı			
 1247					
 1248					
 1249					
-1250		BiÕn Th­ëng Cña Cè VÊn ChÕt			
-1251		BiÕn NhiÖm Vô Ghi L¹i Qu¸ Tr×nh NhiÖm Vô §ång Minh Kh«ng ThÓ LÆp L¹i			
+1250		ÊÌÀÉÖ®ËÀµÄ¾çÇé·¢·Å½±Àø±äÁ¿			
+1251		Í¬°é¾çÇéÈÎÎñ²»¿ÉÖØ¸´¼ÇÂ¼¹ı³Ì			
 1252					
 1253					
-1254		BiÕn NhiÖm Vô Ghi L¹i Ngµy Cña NhiÖm Vô LÆp L¹i §ång Minh			
-1255		BiÕn NhiÖm Vô Ghi L¹i Sè LÇn Hoµn Thµnh Trong Ngµy Cña NhiÖm Vô LÆp L¹i §ång Minh			
-1256		BiÕn NhiÖm Vô Ghi L¹i Qu¸ Tr×nh Cã ThÓ LÆp L¹i 1 §ång Minh			
-1257		BiÕn NhiÖm Vô Ghi L¹i Qu¸ Tr×nh Cã ThÓ LÆp L¹i 2 §ång Minh			
-1258		BiÕn NhiÖm Vô Ghi L¹i Qu¸ Tr×nh Cã ThÓ LÆp L¹i 3 §ång Minh			
-1259		Bé §Õm Sè L­îng Cá Vµng			
-1260		Bé §Õm Sè L­îng L¸ Phİ Linh			
-1261		BiÕn Ghi L¹i C«ng T¾c Qu¸i VËt Boss			
-1262		BiÕn Ghi L¹i Hoµn Thµnh NhiÖm Vô Ng­êi Göi Th­ Trong NhiÖm Vô §µo T¹o §ång Minh			
-1269		ChuyÓn §æi CÊp BËc NhiÖm Vô Tu LuyÖn §ång Minh Cã §· N©ng CÊp Ch­a			
-1270		ChuyÓn §æi BËt C«ng T¾c §iÓm Tİch Lòy Cña Ng­êi Göi Th­			
-1271		ChuyÓn §æi NhËn §ång Minh Trong NhiÖm Vô §µo T¹o §ång Minh			
-1272		BiÕn Ghi L¹i Ngµy NhËn §ång Minh			
-1273		§iÓm Kinh NghiÖm Tæng Hîp Mçi Ngµy Tõ NhiÖm Vô Ng­êi Göi Th­			
-1274		§iÓm Kinh NghiÖm Tæng Hîp Mçi Ngµy Tõ NhiÖm Vô Ng­êi Göi Th­			
-1275		Ph¸t TriÓn NhiÖm Vô Cña Xiao Yang			
-1276	1277	H­íng dÉn bang héi 1	 1		
-1278	1300	TiÕp tôc ph¸t triÓn sau thiÕt kÕ nhiÖm vô cña TiÓu D­¬ng			
-1301		L­u tr÷ nhiÖm vô ngÉu nhiªn hiÖn t¹i mµ ng­êi ch¬i ®· nhËn			
-1302		L­u tr÷ nhiÖm vô ngÉu nhiªn ®ang chê ng­êi ch¬i nhËn			
-1303		L­u tr÷ tiÕn tr×nh cña nhiÖm vô ngÉu nhiªn			
-1304		L­u tr÷ nhiÖm vô cuèn hiÖn t¹i cña ng­êi ch¬i (tÇng hai)			
-1305		L­u tr÷ sè ngµy ng­êi ch¬i ®· sö dông cuèn nhiÖm vô			
-1306		L­u tr÷ sè lÇn ng­êi ch¬i ®· sö dông cuèn nhiÖm vô			
-1307		L­u tr÷ chØ sè t¹m thêi khi ng­êi ch¬i sö dông cuèn nhiÖm vô			
-1308		L­u tr÷ ngµy ng­êi ch¬i nhËn nhiÖm vô ngÉu nhiªn			
-1309		L­u tr÷ sè lÇn ng­êi ch¬i ®· nhËn nhiÖm vô ngÉu nhiªn			
-1310		Kinh nghiÖm sau khi ¨n b¸nh ch­ng chuèi vµo ngµy TÕt ViÖt Nam			
-1311		Kinh nghiÖm sau khi ¨n b¸nh ch­ng tæ hîp vµo ngµy TÕt ViÖt Nam			
-1312		Kinh nghiÖm sau khi ¨n b¸nh ch­ng pha lª vµo ngµy TÕt ViÖt Nam			
-1313		Sù kiÖn Ngµy LÔ T×nh Nh©n t¹i ViÖt Nam			
+1254		Í¬°éÖØ¸´ĞÔ¾çÇéÈÎÎñÈÕÆÚ			
+1255		Í¬°éÖØ¸´ĞÔ¾çÇéÈÎÎñÃ¿ÈÕ´ÎÊı¼ÇÂ¼			
+1256		Í¬°é¾çÇéÈÎÎñ¿ÉÖØ¸´¼ÇÂ¼¹ı³Ì±äÁ¿1			
+1257		Í¬°é¾çÇéÈÎÎñ¿ÉÖØ¸´¼ÇÂ¼¹ı³Ì±äÁ¿2			
+1258		Í¬°é¾çÇéÈÎÎñ¿ÉÖØ¸´¼ÇÂ¼¹ı³Ì±äÁ¿3			
+1259		¼ÇÂ¼µØ»Æ²İµÄÊıÁ¿			
+1260		¼ÇÂ¼·ÑÒ¶µÄÊıÁ¿			
+1261		¼ÇÂ¼É±µô¾çÇébossµÄ¿ª¹Ø			
+1262		¼ÇÂ¼Íæ¼ÒÔÚ¿ØÉßÈËµÄÍ¬°éÈÎÎñÖĞµÄĞÅÊ¹Íê³ÉÇé¿ö			
+1269		ÉèÖÃÍ¬°éĞŞÁ¶ÈÎÎñµÈ¼¶ÊÇ·ñÒÑÌáÉıµÄ¿ª¹Ø			
+1270		ÉèÖÃĞÅÊ¹»ı·Ö¿ª¹Ø´ò¿ªµÄ¿ª¹Ø			
+1271		Í¬°é½ÌÓıÈÎÎñÁìÈ¡Í¬°é¿ª¹Ø			
+1272		¼ÇÂ¼Íæ¼ÒÁìÈ¡Í¬°éµÄÈÕÆÚ			
+1273		 ĞÅÊ¹ÈÎÎñÃ¿ÈÕ»ñµÃµÄ×Ü¾­Ñé			
+1274		ĞÅÊ¹ÈÎÎñÃ¿ÈÕ»ñµÃµÄ×Ü»ı·Ö			
+1275		Ğ¤ÑïÈÎÎñÉè¼ÆºóĞø¿ª·¢			
+1276	1277	°ï»áµ¼Òı	1	1	
+1278	1300	Ğ¤ÑïÈÎÎñÉè¼ÆºóĞø¿ª·¢			
+1301		´æ´¢µ±Ç°Íæ¼Ò½Óµ½µÄËæ»úÈÎÎñ			
+1302		´æ´¢µ±Ç°´ı½ÓµÄËæ»úÈÎÎñ			
+1303		´æ´¢Ëæ»úÈÎÎñµÄ½øÕ¹Çé¿ö			
+1304		´æ´¢Íæ¼Òµ±Ç°µÄ¾íÖáÈÎÎñ£¨µÚ¶ş²ã£©			
+1305		´æ´¢Íæ¼ÒÊ¹ÓÃÈÎÎñ¾íÖáµÄÌìÊı			
+1306		´æ´¢Íæ¼ÒÊ¹ÓÃÈÎÎñ¾íÖáµÄ´ÎÊı			
+1307		´æ´¢Íæ¼ÒÊ¹ÓÃÈÎÎñ¾íÖáµÄÁÙÊ± INDEX			
+1308		´æ´¢Íæ¼Ò½ÓËæ»úÈÎÎñÊ±µÄÈÕÆÚ			
+1309		´æ´¢Íæ¼Ò½ÓÊÜËæ»úÈÎÎñµÄ´ÎÊı			
+1310		Ô½ÄÏ´º½ÚÏã½¶´º±ıÊ³ÓÃºó¾­Ñé			
+1311		Ô½ÄÏ´º½ÚÊ²½õ´º±ıÊ³ÓÃºó¾­Ñé			
+1312		Ô½ÄÏ´º½ÚË®¾§´º±ıÊ³ÓÃºó¾­Ñé			
+1313		Ô½ÄÏÇéÈË½Ú»î¶¯			
 
-1398
-1399		Thµnh viªn hÖ thèng ng­êi qu¶ng c¸o trß ch¬i			
-1400	1499	ThÎ §å ®Ö Vµng			
-		Sö dông hÖ thèng S­ ®å			
-1501
-1502		§iÓm kinh nghiÖm tİch luü khi ¨n b¸nh zongzi			
-1505		Thêi gian ¨n b¸nh zongzi			
-1506		Ghi nhí nÕu ng­êi ch¬i tù ®éng hñy chøc n¨ng cÊm sö dông biÓu t­îng trë vÒ thµnh phè khi ®¨ng nhËp lÇn sau			
-		NÕu ®· nhËn 500.000 kinh nghiÖm			
-1507		NhËn th­ëng xÕp h¹ng ®ua thuyÒn rång cÊp ®é c¬ b¶n			
-1508		NhËn th­ëng xÕp h¹ng ®ua thuyÒn rång cÊp ®é cao			
-1509		NhËn th­ëng xÕp h¹ng ®ua thuyÒn rång cÊp ®é c¬ b¶n sù kiÖn ®æi tªn vïng 20-1			
-1550		Thö th¸ch thêi gian S¸t thñ			
-1551		Thö th¸ch thêi gian S¸t thñ			
-1552		Sù kiÖn Ngµy LÔ T×nh Nh©n n¨m 2006			
-1553		Sù kiÖn Ngµy LÔ T×nh Nh©n n¨m 2006			
-1560		Sù kiÖn Ng­êi ®am mª S­u tÇm §µi Loan			
-1561		Sù kiÖn Ng­êi ®am mª S­u tÇm §µi Loan			
-1562		Sù kiÖn ThÊt tŞch Trung Quèc lôc ®Şa			
-1563		Sù kiÖn ThÊt tŞch Trung Quèc lôc ®Şa			
-1564		Sù kiÖn ThÊt tŞch Trung Quèc lôc ®Şa			
-1565		Sù kiÖn ThÊt tŞch Trung Quèc lôc ®Şa			
-1566	1569	Sù kiÖn Trung Thu n¨m 2005			
-1570		Gi¶i ®Êu vâ l©m lÇn thø hai			
-1571		HÖ thèng truyÒn c«ng			
-1572		HÖ thèng truyÒn c«ng			
-1573		HÖ thèng truyÒn c«ng			
-1575		BiÕn sè båi th­êng cho viÖc b¶o tr× m¸y chñ ngµy 22 th¸ng 3 n¨m 2006 trong vïng 18 khu			
-1576		BiÕn h»ng cho sù kiÖn båi th­êng ng­êi ch¬i			
-1577		Kİch ho¹t/T¾t chøc n¨ng "Tham Can" trong Bang héi			
-1578		Thêi gian cßn l¹i ®Ó sö dông chøc n¨ng "Tham Can" trong Bang héi			
-1579		NhËn xem ng­êi ch¬i ®· nhËn th­ëng trong Thµnh phè trong thêi gian b¶o tr×			
-1580		Thêi gian nhËn th­ëng chøc n¨ng trong Bang héi			
-1581		Thêi gian nhËn th­ëng chøc n¨ng trong Thµnh phè			
-1582		Sù kiÖn Ngµy ThÊt TŞch n¨m 2006			
-1583		Sù kiÖn Ngµy ThÊt TŞch n¨m 2007			
-1584		Sù kiÖn Ngµy ThÊt TŞch n¨m 2008			
-1585		Sù kiÖn Ngµy ThÊt TŞch n¨m 2009			
-1586		Sù kiÖn Ngµy ThÊt TŞch n¨m 2010			
+1398					
+1399		ÓÎÏ·ÍÆ¹ãÔ±ÏµÍ³³ÉÔ±			
+1400	1499	»Æ½ğÊ¦Í½¿¨			
+		Ê¦Í½ÏµÍ³Ê¹ÓÃ			
+1501					
+1502		³ÔôÕ×ÓÀÛ»ı¾­ÑéµãÊı			
+1505		³ÔôÕ×ÓÊ±¼ä			
+1506		¼ÇÂ¼Íæ¼ÒÏÂ´ÎµÈÈëÊ±£¬ÊÇ·ñ×Ô¶¯È¡Ïû½ûÖ¹Ê¹ÓÃ»Ø³Ç·ûµÄ¹¦ÄÜ			
+		ÊÇ·ñÁìÈ¡¹ı50W¾­Ñé			
+1507		³õ¼¶ÈüÁúÖÛÅÅĞĞ°ñÁì½±			
+1508		¸ß¼¶ÈüÁúÖÛÅÅĞĞ°ñÁì½±			
+1509		20-1¸ÄÃû»î¶¯³õ¼¶ÈüÁúÖÛÅÅĞĞ°ñÁì½±			
+1550		É±ÊÖµÄÊÔÁ¶Ö®Ê±¼äµÄÌôÕ½			
+1551		É±ÊÖµÄÊÔÁ¶Ö®Ê±¼äµÄÌôÕ½			
+1552		2006ÇéÈË½Ú»î¶¯			
+1553		2006ÇéÈË½Ú»î¶¯			
+1560		Ì¨ÍåÊÕ¼¯´ïÈË»î¶¯			
+1561		Ì¨ÍåÊÕ¼¯´ïÈË»î¶¯			
+1562		´óÂ½ÆßÏ¦»î¶¯			
+1563		´óÂ½ÆßÏ¦»î¶¯			
+1564		´óÂ½ÆßÏ¦»î¶¯			
+1565		´óÂ½ÆßÏ¦»î¶¯			
+1566	1569	2005ÖĞÇï»î¶¯			
+1570		µÚ¶ş½ìÎäÁÖ´ó»á			
+1571		´«¹¦ÏµÍ³			
+1572		´«¹¦ÏµÍ³			
+1573		´«¹¦ÏµÍ³			
+1575		18Çø2 2006 Äê3 ÔÂ22 ÈÕÍ£»úÎ¬»¤²¹³¥±äÁ¿			
+1576		Íæ¼Ò²¹³¥»î¶¯Àà¹Ì¶¨±äÁ¿			
+1577		°ï»áÌØ¼¼¡ª¡ª²Î¹Ş¿ªÆô¹Ø±Õ			
+1578		°ï»áÌØ¼¼¡ª¡ª²Î¹ŞÊ¹ÓÃÊ£ÓàÊ±¼ä			
+1579		³ÇÊĞÌØ¼¼¡ª¡ªÎ¬»¤ÆÚÄÚÊÇ·ñÁìÈ¡			
+1580		°ï»áÌØ¼¼ÁìÈ¡Ê±¼ä			
+1581		³ÇÊĞÌØ¼¼ÁìÈ¡Ê±¼ä			
+1582		2006ÄêÆßÏ¦»î¶¯			
+1583		2007ÄêÆßÏ¦»î¶¯			
+1584		2008ÄêÆßÏ¦»î¶¯			
+1585		2009ÄêÆßÏ¦»î¶¯			
+1586		2010ÄêÆßÏ¦»î¶¯			
 
-1600		Sù kiÖn PhiÕu Vµo s©n Vâ L©m §¹i Héi			
-1601		Sù kiÖn PhiÕu Vµo s©n Vâ L©m §¹i Héi			
-1602		Sù kiÖn PhiÕu Vµo s©n Vâ L©m §¹i Héi			
-1603		Sù kiÖn Vâ L©m §¹i Héi			
-1604		Hoa ®Ìn Trung Thu			
-1605		Hoa ®Ìn Trung Thu			
-1606		(Ch­¬ng tr×nh t­ëng niÖm) Ghi nhí ph¹m vi cÊp ®é cña ng­êi ch¬i			
-1607		(Ch­¬ng tr×nh t­ëng niÖm) Ghi nhí ph¹m vi cÊp ®é cña ng­êi ch¬i			
-1608		(Ch­¬ng tr×nh t­ëng niÖm) Ghi nhí ph¹m vi cÊp ®é cña ng­êi ch¬i			
-1609		(Ch­¬ng tr×nh t­ëng niÖm) Ghi nhí ng«i mé ng­êi ch¬i nªn thê cóng			
-1610		(Ch­¬ng tr×nh t­ëng niÖm) Ghi nhí ngµy ng­êi ch¬i thê cóng			
-1611	1660	§Õm giê cho ng­êi ch¬i			
-1661	1711	HÖ thèng tİnh ®iÓm			
-1712		Ghi nhí thêi gian ng­êi ch¬i ®· trùc tuyÕn			
-1713		Ghi nhí thêi gian ng­êi ch¬i ®· ng¾t kÕt nèi			
-1714		Ghi nhí thêi gian ng­êi ch¬i ®· ng¾t kÕt nèi lÇn tr­íc			
-1715	1735	Tæ chøc Liªn Minh Vâ L©m			
-1736		Ghi nhí xem ng­êi ch¬i ®· nhËn cuèn nhiÖm vô ngµy ®ã hay ch­a trong (Ch­¬ng tr×nh t­ëng niÖm) Qingming			
-1737		NhËn ¸nh s¸ng cho Bang héi ®øng ®Çu trong sù kiÖn Bang héi			
-1738		Ghi nhí sè lÇn ng­êi ch¬i ®· ®µo kho b¸u			
-1739		Thêi gian cßn l¹i ®Ó sö dông G¸o Tö Kim			
-1740		§¸nh dÊu ng­êi ch¬i ®· sö dông Gç Nh©n hay ch­a			
-1741		Th­ëng kinh nghiÖm mçi lÇn sö dông §¹i Hoµn §an			
-1742		Thêi gian cßn l¹i ®Ó sö dông §¹i Hoµn §an			
-1743		L­îng kinh nghiÖm tèi ®a tõ b¸nh kû niÖm mét n¨m cña Vâ L©m TruyÒn Kú t¹i ViÖt Nam			
-1744	1756	ChÊt liÖu ®Æc biÖt trong Bang héi			
-1757		Cã cÇn ¸nh s¸ng Bang héi hay kh«ng			
-1758		§ang sö dông kü n¨ng V« Song ThÊt Thñ hay kh«ng			
-1759		Lo¹i mÆt n¹ ng­êi ch¬i sö dông trong kü n¨ng V« Song ThÊt Thñ			
-1760	1775	Ch­¬ng tr×nh Mïng 6 n¨m 2006 t¹i ViÖt Nam			
-2000	2300	300 biÕn sè cho hÖ thèng nhiÖm vô			
-2301		Sù kiÖn mua ®ång tiÒn vµng (peres) t¹i ViÖt Nam			
-2302		Sù kiÖn Mïng 10 Th¸ng 3 (peres) t¹i Malaysia			
-2305		Thay ®æi thuËt to¸n tİnh ®iÓm ®èi kh¸ng trong trËn ®Êu, l­u tr÷ gi¸ trŞ liªn c¾t thùc tÕ cña ng­êi ch¬i			
-2306	2307	Sù kiÖn Gäi vÒ ng­êi ch¬i cò			
-2308	2309	L­u sè lÇn nh¾c nhë ng­êi ch¬i vÒ sù kiÖn			
-2310	2311	Sè lÇn nh¾c nhë ng­êi ch¬i khi sù kiÖn míi ®­îc ph¸t hµnh			
-2312	2313	Sö dông trong sù kiÖn §Ìn Mª			
-2314		Ghi nhí tæng sè l­îng h¹t Vµng Hoµn H¶o ng­êi ch¬i ®· ¨n			
-2315		Ghi nhí thêi gian cßn l¹i cña kü n¨ng treo offline			
-2316		Ghi nhí ID cña kü n¨ng treo offline			
-2320		D÷ liÖu vµ m¸y chñ - Cã cÇn thay ®æi tªn hay kh«ng			
-2321		Thêi gian h¹t Vµng Hoµn H¶o			
-2322		Sè l­îng h¹t Vµng Hoµn H¶o			
-2323		Ghi nhí mapid cña ThŞ trÊn Minh NguyÖt			
-2324		Ghi nhí täa ®é x khi ng­êi ch¬i rêi game			
-2325		Ghi nhí täa ®é y khi ng­êi ch¬i rêi game			
-2326		Ghi nhí ngµy			
-2327		Ghi nhí sè lÇn ch¬i trong ngµy			
-2328		Ghi nhí sè l­îng ®iÓm ®· chän trong mçi trËn			
-2329		Ghi nhí xÕp h¹ng trong trËn			
-2330		Ghi nhí sè nhãm cña ng­êi ch¬i			
-2331		Béi sè thÎ kinh nghiÖm			
-2332		Thêi gian thÎ kinh nghiÖm			
-2333		Ghi nhí xem ng­êi ch¬i ®· nhËn båi th­êng kÕt nèi ngµy 12 th¸ng 2005 hay ch­a			
-2334		Ghi nhí ngµy ng­êi ch¬i nhËn th­ëng gÊp ®«i trong sù kiÖn N¨m Míi n¨m 2006			
-2335		Ghi nhí sè lÇn ng­êi ch¬i nhËn th­ëng gÊp ®«i trong sù kiÖn N¨m Míi n¨m 2006			
-2336		Ghi nhí ngµy ng­êi ch¬i nhËn cuèn nhiÖm vô trong sù kiÖn N¨m Míi n¨m 2006			
-2337		Ghi nhí sè lÇn ng­êi ch¬i nhËn cuèn nhiÖm vô trong sù kiÖn N¨m Míi n¨m 2006			
-2338		Ghi nhí thêi gian tr«i qua kÓ tõ lÇn cuèi ng­êi ch¬i nhËn th­ëng			
-2339		Ghi nhí ngµy ng­êi ch¬i nhËn th­ëng lÇn cuèi			
-2340		Ghi nhí sè lÇn ng­êi ch¬i nhËn th­ëng			
-2341		Ghi nhí tæng ®ãng gãp h¹ng tuÇn khi rêi khái Bang héi			
-2342		Ghi nhí ngµy ng­êi ch¬i nhËn th­ëng gÊp ®«i trong sù kiÖn TÕt Nguyªn §¸n n¨m 2006			
-2343		Ghi nhí ngµy ng­êi ch¬i nhËn cuèn nhiÖm vô trong sù kiÖn TÕt Nguyªn §¸n n¨m 2006			
-2344		NhËn th­ëng kinh nghiÖm TÕt Nguyªn §¸n - Thêi gian tr«i qua kÓ tõ lÇn cuèi nhËn th­ëng			
-2345		NhËn th­ëng kinh nghiÖm TÕt Nguyªn §¸n - Ngµy lÇn cuèi nhËn th­ëng			
-2346		Ghi nhí tæng sè lÇn tham gia sù kiÖn míi n¨m 2006 - L­u d­íi d¹ng byte			
-2347		Ghi nhí sè lÇn nhËn th­ëng gÊp ®«i trong phßng thö th¸ch cña Bang héi			
-2348		ba l« b¹n ®ång hµnh	1		
-2349	2360		Dµnh cho Bang héi			
-2349	2350		Bang héi - §Æc s¶n			
-2361		Ghi nhí gi¸ trŞ ®ãng gãp cña ng­êi ch¬i trong Bang héi			
-2362		ID cña Bang héi hiÖn t¹i mµ ng­êi ch¬i ®· tham gia (vÉn gi÷ nguyªn sau khi rêi Bang héi)			
-2363		Bang héi - §­îc l­u gi÷			
-2364		Bang héi - §­îc l­u gi÷			
-2365		Bang héi - §­îc l­u gi÷			
-2366		Bang héi - §­îc l­u gi÷			
-2367		Bang héi - §­îc l­u gi÷			
-2368		H¹ng 1 bang héi vâ l©m			
-2370		H¹ng 1 bang héi vâ l©m			
-2371		H¹ng 1 bang héi vâ l©m			
-2372		H¹ng 1 bang héi vâ l©m			
-2373		H¹ng 1 bang héi vâ l©m			
-2374		H¹ng 1 bang héi vâ l©m			
-2375		H¹ng 1 bang héi vâ l©m			
-2376		H¹ng 1 bang héi vâ l©m			
-2377		H¹ng 1 bang héi vâ l©m			
-2378		H¹ng 1 bang héi vâ l©m			
-2379		H¹ng 1 bang héi vâ l©m			
-2380		H¹ng 1 bang héi vâ l©m			
-2381		H¹ng 1 bang héi vâ l©m			
-2382		H¹ng 1 bang héi vâ l©m			
-2383		H¹ng 1 bang héi vâ l©m			
-2384		H¹ng 1 bang héi vâ l©m			
-2385		H¹ng 1 bang héi vâ l©m			
-2386		H¹ng 1 bang héi vâ l©m			
-2387		H¹ng 1 bang héi vâ l©m			
-2388		H¹ng 1 bang héi vâ l©m			
-2389		Mang Theo §iÓm Cãng HiÕn Khi Rêi Khái Bang	1		
-2390		Ghi nhí ngµy nhËn th­ëng hµng ngµy tõ bµn thê			
-2391		Ghi nhí sè thø tù t¹m thêi cña vËt phÈm thÎ nhiÖm vô ngÉu nhiªn cña Bang héi			
-2392	2403	Sù kiÖn TuyÓn mé §Ö tö cña Bang héi			
-2404	2413	Sù kiÖn §¸nh con Yªu n¨m míi cña Bang héi		
-2414	2416	Sù kiÖn LÔ 1 th¸ng 5		
-2414	2416	Sù kiÖn LÔ 1 th¸ng 5		
-2414	2416	Sù kiÖn LÔ 1 th¸ng 5		
-2417		Ghi nhí ngµy giíi h¹n cña hÖ thèng S­ ®å trong phiªn b¶n ViÖt Nam			
-2418		Ghi nhí sè lÇn giíi h¹n cña hÖ thèng S­ ®å trong phiªn b¶n ViÖt Nam			
-2419		Ghi nhí ngµy giíi h¹n nhiÖm vô Ng«i lµng cña phiªn b¶n ViÖt Nam			
-2420		Ghi nhí sè lÇn giíi h¹n nhiÖm vô Ng«i lµng cña phiªn b¶n ViÖt Nam			
-2421		Ghi nhí ngµy ®æi vËt phÈm cña nhiÖm vô n©ng cÊp trang bŞ tõ §¹i ViÖt sang Kim			
-2422		Ghi nhí sè l­îng ®æi vËt phÈm cña nhiÖm vô n©ng cÊp trang bŞ tõ §¹i ViÖt sang Kim			
-2423	2433	Sù kiÖn LÔ Du©n NguyÖt			
-2434		Sù kiÖn Vâ L©m §¹i Héi lÇn thø 2			
-2435		Ghi nhí gi¸ trŞ ®ãng gãp cña ng­êi ch¬i trong Bang héi			
-2436		Ghi nhí sè l­îng thÎ bãng ®¸ mµ ng­êi ch¬i ®· nhËn h«m nay trong sù kiÖn World Cup			
-2437		Ghi nhí ngµy nhËn thÎ bãng ®¸ cña ng­êi ch¬i trong sù kiÖn World Cup			
-2438		Ghi nhí xem ng­êi ch¬i ®· nhËn th­ëng gãi thÎ bãng ®¸ ch­a trong sù kiÖn World Cup			
-2439		Ghi nhí gi¸ trŞ ®ãng gãp nhiÖm vô Ng«i lµng trong sù kiÖn World Cup			
-2440		Ghi nhí sè lÇn v­ît ¶i trong sù kiÖn World Cup			
-2441		Ghi nhí ngµy nhiÖm vô Ng«i lµng trong sù kiÖn World Cup				
-2442		Ghi nhí ngµy v­ît ¶i trong sù kiÖn World Cup			
-2443		Ghi nhí thêi ®iÓm kÕt thóc chu kú nhËn kü n¨ng ®Æc biÖt cña Bang héi			
-2444		Ghi nhí xem ng­êi ch¬i ®· nhËn kü n¨ng ®Æc biÖt cña Bang héi ch­a			
-2445		Phiªn b¶n §µi Loan - Ng­êi ch¬i ®­îc nhËn mét hép më réng miÔn phİ mçi ng­êi			
-2446		Thêi gian hiÖu lùc cña Tµo Ch©u TiÒn §¹o cho Bang héi			
-2447		Phiªn b¶n §µi Loan - Ngµy nhËn th­ëng hµng ngµy			
-2448		Phiªn b¶n §µi Loan - Sè lÇn nhËn th­ëng hµng ngµy			
-2449	2450	Sù kiÖn World Cup			
-2462	2465	Dµnh cho nhiÖm vô kü n¨ng cÊp 120			
-2501		§iÓm danh dŞch vô			
-2881		Cã cho phĞp ng­êi kh¸c xem th«ng tin chi tiÕt cña m×nh hay kh«ng			
-2884		§iÓm Binh cöa nhËt cña ng­êi ch¬i tuÇn tr­íc			
-2885		NhiÖm vô kü n¨ng cÊp 150			
-2862		Sè l­îng lÇn giÕt boss vµng hµng ngµy (®¸p øng ®iÒu kiÖn céng ®iÓm ho¹t ®éng)			
-2863		Sè l­îng lÇn tham gia Phong Linh §é hµng ngµy			
-2864		Sè l­îng lÇn v­ît qua tÇng 17 thö th¸ch t¹i môc cao cÊp hµng ngµy			
-2865		Sè l­îng lÇn tham gia Phong Linh §é cã sè ®iÓm tõ 1000 trë lªn hµng ngµy			
-2866		Sè l­îng lÇn v­ît qua tÇng 10 PhÇn Hoµng B¶o Tµng hµng ngµy			
-2867		Sè l­îng lÇn tham gia trËn ®Êu ChiÕn Tr­êng ThÊt Thñ víi İt nhÊt 10 ®iÓm hµng ngµy			
-2868		Sè l­îng lÇn th¾ng trong trËn ®Êu Liªn Minh Vâ L©m hµng ngµy			
-2869		Thu thËp qu¶ Hoµng H¹c tõ hµng ngµy			
-2870		Hoµn thµnh nhiÖm vô v« §iÒu Phæ th«ng hµng ngµy			
-2871		Hoµn thµnh nhiÖm vô v« S			
-3001	3008	D÷ liÖu b¹n bÌ cïng hµnh tr×nh	1		
-3151		Hoµn thµnh sè lÇn thö th¸ch ®µi hµng ngµy	1		
-3152		Hoµn thµnh sè lÇn cê h¶o h¸n hµng ngµy	1		
-3153		Hoµn thµnh sè lÇn phó quı kim h¹c hµng ngµy	1		
-3154		Hoµn thµnh sè lÇn danh m«n hµng ngµy	1		
-3155		Hoµn thµnh sè lÇn T©y S¬n èc hµng ngµy	1		
-3156		Hoµn thµnh sè lÇn lo¹n chiÕn cöu ch©u cèc hµng ngµy	1		
-3157		Hoµn thµnh sè lÇn b¸ch nh©n l·nh ®µi hµng ngµy	1		
-3167		Hoµn thµnh sè lÇn §o¹n - Hoµnh S¬n ®Ìn bİ hµng ngµy	1		
-3168		Hoµn thµnh sè lÇn yªu s­ nhiÖm vô hµng ngµy	1		
-3160		Hoµn thµnh sè lÇn hoµng thµnh t­ huÊn y qu©n hµng ngµy	1		
-3172	3178	NhiÖm vô ®Êu tr­êng ®¬n	1		
-3182	3185	Ngh×n Trïng L©u	1		
-4000	4008	HÖ thèng kinh m¹ch	1		
-4010	4014	D÷ liÖu b¹n bÌ cïng hµnh tr×nh	1		
-4030	4031	Tham gia chøc n¨ng nhËn th­ëng	1		
-4032	4034	NhËn th­ëng thêi gian tİch luü	1		
-3450		G«ng TuÖ T«ng	1		
-3494		Tr¹ng th¸i nhiÖm vô Long M«n BiÓu Côc	1		
-3496		Sè lÇn hµng ngµy Long M«n BiÓu Côc	1		
-3497		Thêi gian b¾t ®Çu nhiÖm vô Long M«n BiÓu Côc	1		
-3457	3472	TrËn ®Êu t­¬ng l× xung	1		
-4078		H­íng dÉn ng­êi ch¬i míi	1		
-3481		NhiÖm vô m«n ph¸i Hoa S¬n	1		
-4101		NhiÖm vô 7 chuyÓn	1		
-4112	4122	Ghi l¹i c¸c biÕn liªn quan ®Õn tİch cùc	1		
-4123		§iÓm thµnh tùu	1		
-4126	4150	D÷ liÖu hÖ thèng thµnh tùu	1		
-4164		§iÓm c¸ nh©n th¸p cæ	1		
-4165	4168	PhÇn th­ëng hµng ngµy	1		
-5010		NhiÖm vô m«n ph¸i Hoa S¬n	1
+1600		ÎäÁÖ´ó»áÈë³¡È¯»î¶¯			
+1601		ÎäÁÖ´ó»áÈë³¡È¯»î¶¯			
+1602		ÎäÁÖ´ó»áÈë³¡È¯»î¶¯			
+1603		ÎäÁÖ´ó»á»î¶¯			
+1604		ÖĞÇï»¨µÆ			
+1605		ÖĞÇï»¨µÆ			
+1606		£¨ÇåÃ÷»î¶¯£©¼ÇÂ¼Íæ¼Ò¼ÀµìÄ¹±®µÈ¼¶Çø¼äÒ»			
+1607		£¨ÇåÃ÷»î¶¯£©¼ÇÂ¼Íæ¼Ò¼ÀµìÄ¹±®µÈ¼¶Çø¼ä¶ş			
+1608		£¨ÇåÃ÷»î¶¯£©¼ÇÂ¼Íæ¼Ò¼ÀµìÄ¹±®µÈ¼¶Çø¼äÈı			
+1609		£¨ÇåÃ÷»î¶¯£©¼ÇÂ¼ÇåÃ÷½ÚÍæ¼ÒÓ¦¸Ã°İµÄÄ¹±®			
+1610		£¨ÇåÃ÷»î¶¯£©¼ÇÂ¼ÇåÃ÷½ÚÍæ¼Ò°İÄ¹±®µÄÈÕÆÚ			
+1611	1660	Íæ¼Ò¼ÆÊ±Æ÷			
+1661	1711	¼Æ·ÖÏµÍ³			
+1712		Íæ¼ÒÀÛ¼ÆÔÚÏßÊ±¼ä			
+1713		Íæ¼ÒÀÛ¼ÆÏÂÏßÊ±¼ä			
+1714		Íæ¼ÒÉÏÒ»´ÎÍË³öÓÎÏ·Ê±¼ä			
+1715	1735	ÎäÁÖÁªÈü			
+1736		£¨ÇåÃ÷»î¶¯£©¼ÇÂ¼µ±ÌìÊÇ·ñÒÑ¾­ÁìÈ¡ÁËÈÎÎñ¾íÖá			
+1737		ÎäÁÖµÚÒ»°ïÁìÈ¡¹â»·±äÁ¿			
+1738		¼ÇÂ¼Íæ¼ÒÍÚ±¦µÄ´ÎÊı			
+1739		×Ï½ğ¸äµÄÊ£ÓàÊ¹ÓÃÊ±¼ä			
+1740		Ä¾ÈËµÄÊÇÓÃÕß±ê¼Ç			
+1741		´ó»¹µ¤Ã¿´Î¸øÓë¾­ÑéÖµ			
+1742		´ó»¹µ¤Ê£ÓàÊ¹ÓÃÊ±¼ä			
+1743		Ô½ÄÏ½£ÍøÒ»ÖÜÄê»î¶¯µ°¸â¾­ÑéÉÏÏŞ			
+1744	1756	°ï»áÌØ²ú¡ªÌØÊâÈÎÎñÁîÅÆ			
+1757		ÊÇ·ñĞèÒª°ï»áÌØ²ú¹â»·			
+1758		ÊÇ·ñÕıÔÚÊ¹ÓÃÎŞË«É±Õó			
+1759		ÎŞË«É±ÕóÊ¹ÓÃµÄÃæ¾ß			
+1760	1775	06ÄêÔ½ÄÏÃÏÀ¼½Ú»î¶¯			
+2000	2300	ÈÎÎñÒıÇæÕ¼ÓÃ 300 ¸öÈÎÎñ±äÁ¿			
+2301		Ô½ÄÏÂòĞÉºì»î¶¯ - peres			
+2302		ÂíÀ´Î÷ÑÇÇåÃ÷½Ú»î¶¯Õ¼ÓÃ - peres			
+2305		ËÎ½ğ»ı·ÖËã·¨ĞŞ¸Ä¡£¡£´æÍæ¼ÒÊµ¼ÊÁ¬Õ¶Öµ			
+2306	2307	ÕÙ»ØÀÏÍæ¼Ò			
+2308	2309	»î¶¯ÉÏÏßÌáÊ¾¼ÇÂ¼´ÎÊı			
+2310	2311	»Ô»ÍÖ®ÖÖ»î¶¯ÓÃ			
+2312	2313	µÆÃÔ»î¶¯ÓÃ			
+2314		¼ÇÂ¼Íæ¼ÒÒ»¹²³ÔÁË¶àÉÙ»Æ½ğ»Ô»ÍÖ®ÖÖ			
+2315		¼ÇÂ¼ÀëÏß¹Ò¼¼ÄÜÊ£ÓàÊ±¼ä			
+2316		¼ÇÂ¼ÀëÏß¹Ò¼¼ÄÜID			
+2320		Êı¾İ²¢·ş-ÊÇ·ñĞèÒª¸ÄÃûµÈ			
+2321		»Æ½ğÖÖ×ÓÊ±¼ä			
+2322		»Æ½ğÖÖ×Ó¸öÊı			
+2323		´æ´¢Ã÷ÔÂÕòµÄmapid			
+2324		´æ´¢Àë¿ªÓÎÏ·µÄx×ø±êµã			
+2325		´æ´¢Àë¿ªÓÎÏ·µÄy×ø±êµã			
+2326		¼ÇÂ¼ÊÇÄÄÒ»Ìì			
+2327		¼ÇÂ¼Ò»ÌìÄÚÍæµÄ´ÎÊı			
+2328		¼ÇÂ¼Ò»³¡µãÁË¶àÉÙ¸ö			
+2329		¼ÇÂ¼Ò»³¡µÄÅÅÃû			
+2330		¼ÇÂ¼Íæ¼ÒµÄGroupºÅ			
+2331		¾­ÑéÁîÅÆ±¶Êı			
+2332		¾­ÑéÁîÅÆÊ±¼ä			
+2333		¼ÇÂ¼ 2005Äê12ÔÂ·İÍ£»ú¾­Ñé²¹³¥ÊÇ·ñÁìÈ¡			
+2334		¼ÇÂ¼ 2006 Ôªµ©»î¶¯ÁìÈ¡Ë«±¶µÄÈÕÆÚ			
+2335		¼ÇÂ¼ 2006 Ôªµ©»î¶¯ÁìÈ¡Ë«±¶µÄ´ÎÊı			
+2336		¼ÇÂ¼ 2006 Ôªµ©»î¶¯ÁìÈ¡¾íÖáµÄÈÕÆÚ			
+2337		¼ÇÂ¼ 2006 Ôªµ©»î¶¯ÁìÈ¡¾íÖáµÄ´ÎÊı			
+2338		ÁìÈ¡¾­Ñé - ¼ÇÂ¼Íæ¼ÒÔÚÏßÊ±¼ä¼ä¸ô			
+2339		ÁìÈ¡¾­Ñé - ¼ÇÂ¼Íæ¼ÒÉÏ´ÎÁìÈ¡µÄÈÕÆÚ			
+2340		ÁìÈ¡¾­Ñé - ¼ÇÂ¼Íæ¼ÒÁìÈ¡µÄ´ÎÊı			
+2341		Íæ¼ÒÀë°ïÊ±ÖÜÀÛ»ı¹±Ï×¶È			
+2342		¼ÇÂ¼ 2006 Å©ÀúĞÂÄê»î¶¯ÁìÈ¡Ë«±¶µÄÈÕÆÚ			
+2343		¼ÇÂ¼ 2006 Å©ÀúĞÂÄêÁìÈ¡¾íÖáµÄÈÕÆÚ			
+2344		Å©ÀúĞÂÄêÁìÈ¡¾­Ñé - Íæ¼ÒÔÚÏßÊ±¼ä¼ä¸ô			
+2345		Å©ÀúĞÂÄêÁìÈ¡¾­Ñé - Íæ¼ÒÉÏ´ÎÁìÈ¡µÄÈÕÆÚ			
+2346		ĞÂÄê»î¶¯´ÎÊı¼ÇÂ¼×Ü±äÁ¿£¬ÒÔ byte ´æ			
+2347		°ï»áÊÔÁ¶·»ÁìÈ¡Ë«±¶´ÎÊı			
+2348		Í¬°é±³°ü	1		
+2349	2360	°ï»á×÷·»×¨ÓÃ			
+2349	2350	°ï»áÌØ²ú¡ª¹â»·			
+2361		´æ´¢Íæ¼Ò¹±Ï×µÄ¼ÛÖµÁ¿			
+2362		Íæ¼Òµ±Ç°¼ÓÈëµÄ°ï»áID£¨Àë°ïÈÔ±£Áô£©			
+2363		°ï»á±£Áô			
+2364		°ï»á±£Áô			
+2365		°ï»á±£Áô			
+2366		°ï»á±£Áô			
+2367		°ï»á±£Áô			
+2368		°ï»á±£Áô			
+2369		ÎäÁÖµÚÒ»°ï			
+2370		ÎäÁÖµÚÒ»°ï			
+2371		ÎäÁÖµÚÒ»°ï			
+2372		ÎäÁÖµÚÒ»°ï			
+2373		ÎäÁÖµÚÒ»°ï			
+2374		ÎäÁÖµÚÒ»°ï			
+2375		ÎäÁÖµÚÒ»°ï			
+2376		ÎäÁÖµÚÒ»°ï			
+2377		ÎäÁÖµÚÒ»°ï			
+2378		ÎäÁÖµÚÒ»°ï			
+2379		ÎäÁÖµÚÒ»°ï			
+2380		ÎäÁÖµÚÒ»°ï			
+2381		ÎäÁÖµÚÒ»°ï			
+2382		ÎäÁÖµÚÒ»°ï			
+2383		ÎäÁÖµÚÒ»°ï			
+2384		ÎäÁÖµÚÒ»°ï			
+2385		ÎäÁÖµÚÒ»°ï			
+2386		ÎäÁÖµÚÒ»°ï			
+2387		ÎäÁÖµÚÒ»°ï			
+2388		ÎäÁÖµÚÒ»°ï			
+2389		Íæ¼ÒÀë°ïÊ±´ø³ö¹±Ï×¶È	1		
+2390		¼ÀÌ³Ã¿ÈÕÁì½±¼ÇÂ¼			
+2391		°ï»áËæ»úÈÎÎñÁîÅÆÎïÆ·ÁÙÊ±±àºÅ			
+2392	2403	°ï»áÕĞÄ¼µÜ×Ó»î¶¯			
+2404	2413	°ï»á´òÄêÊŞ»î¶¯			
+2414		ÎåÒ»»î¶¯			
+2415		ÎåÒ»»î¶¯			
+2416		ÎåÒ»»î¶¯			
+2417		Ô½ÄÏÊ¦Í½ÏµÍ³¼ÇÂ¼ÏŞÖÆÈÕÆÚ			
+2418		Ô½ÄÏÊ¦Í½ÏµÍ³¼ÇÂ¼ÏŞÖÆÊıÁ¿			
+2419		Ô½ÄÏÒ°ÛÅÈÎÎñÏŞÖÆÈÕÆÚ			
+2420		Ô½ÄÏÒ°ÛÅÈÎÎñÏŞÖÆ´ÎÊı			
+2421		×°±¸Éı¼¶ÈÎÎñ - ¼ÇÂ¼ËÎ½ğ»»ÎïÆ·ÈÕÆÚ			
+2422		×°±¸Éı¼¶ÈÎÎñ - ¼ÇÂ¼ËÎ½ğ»»ÎïÆ·ÊıÁ¿			
+2423	2433	¶ËÎç½Ú»î¶¯			
+2434		µÚ¶ş½ìÎäÁÖ´ó»á			
+2435		°ï»áËÎ½ğ¹±Ï×¶È			
+2436		ÊÀ½ç±­»î¶¯ - ¼ÇÂ¼Íæ¼Ò½ñÌìÁìÁË¶àÉÙÇò¿¨			
+2437		ÊÀ½ç±­»î¶¯ - ¼ÇÂ¼Íæ¼ÒÁì¿¨µÄÈÕÆÚ			
+2438		ÊÀ½ç±­»î¶¯ - ¼ÇÂ¼Íæ¼ÒÊÇ·ñÁì¹ıÁËÌ×¿¨½±Àø			
+2439		ÊÀ½ç±­»î¶¯ - Ò°ÛÅÈÎÎñ¼ÛÖµÁ¿¼ÇÂ¼			
+2440		ÊÀ½ç±­»î¶¯ - ´³¹Ø´ÎÊı¼ÇÂ¼			
+2441		ÊÀ½ç±­»î¶¯ - Ò°ÛÅÈÎÎñÈÕÆÚ¼ÇÂ¼			
+2442		ÊÀ½ç±­»î¶¯ - ´³¹ØÈÕÆÚ¼ÇÂ¼			
+2443		°ï»áÌØ¼¼ ¡ª ÁìÈ¡ÌØ¼¼Ê±¼äµÄÖÜÆÚ½ØÖ¹Ê±¼ä			
+2444		°ï»áÌØ¼¼ ¡ª ÊÇ·ñÁìÈ¡ÌØ¼¼			
+2445		Ì¨Íå°æ - Íæ¼ÒÃ¿ÈËÃâ·ÑÁìÈ¡Ò»¸öÀ©Õ¹Ïä			
+2446		°ï»áÌØ¼¼¡ªÌÕÖìÇ®´üĞ§Á¦½ØÖ¹Ê±¼ä			
+2447		Ì¨Íå°æ - ÁìÈ¡Ã¿ÈÕ½±ÀøµÄÈÕÆÚ			
+2448		Ì¨Íå°æ - ÁìÈ¡Ã¿ÈÕ½±ÀøµÄ´ÎÊı			
+2449		ÊÀ½ç±­»î¶¯			
+2450	2462	120¼¶¼¼ÄÜÈÎÎñÓÃ			
+2463		120¼¶¼¼ÄÜÉı¼¶ÓÃ			
+2464		121¼¶¼¼ÄÜÉı¼¶ÓÃ			
+2465		122¼¶¼¼ÄÜÉı¼¶ÓÃ			
+2501		ÈÙÓşµãÊı	1		
+2881		ÊÇ·ñÔÊĞíËûÈË²é¿´×Ô¼ºµÄÏêÏ¸ĞÅÏ¢	1	1	
+2884		Íæ¼ÒÉÏÖÜ±ø¼×Öµ	1		¼ÇÂ¼Íæ¼ÒÉÏÖÜµÄ±ø¼×Öµ
+2885		150¼¶¼¼ÄÜÈÎÎñ	1		150¼¶¼¼ÄÜÈÎÎñµ±Ç°²½ÖèID
+2862		Ã¿Ìì»÷É±Ê®´ó»Æ½ğBOSS¡¢²ÔåâåË¡¢ÁúÀÏ»¢¡¢»ô¿Ë¡¢¶À¹ÂÌì·å¡¢ÍêÑÕ¹ãÑôµÄ×Ü´ÎÊı(Âú×ã¼Ó»îÔ¾¶ÈÌõ¼ş)	1		
+2863		Ã¿Ìì·çÁê¶É²Î¼Ó´ÎÊı	1		
+2864		Ã¿Ìì´³¹ı¸ß¼¶Ê±¼äµÄÌôÕ½17¹ØµÄ´ÎÊı	1		
+2865		Ã¿Ìì²Î¼Ó¸ß¼¶ËÎ½ğ»ı·Ö¹ı1000µÄ´ÎÊı	1		
+2866		Ã¿Ìì´³¹ıÑ×µÛ±¦²ØµÚ10¹ØµÄ´ÎÊı	1		
+2867		Ã¿Ìì²Î¼ÓÆß³Ç´óÕ½»ñµÃ»ı·Ö>=10µÄ´ÎÊı	1		
+2868		Ã¿ÌìÎäÁÖÁªÈüÊ¤ÀûµÄ´ÎÊı	1		
+2869		Ã¿Ìì²É¼¯»Ô»ÍÖ®¹û¸öÊı	1		
+2870		Ã¿ÌìÍê³ÉĞÅÊ¹ÈÎÎñ´ÎÊı	1		
+2871		Ã¿ÌìÍê³ÉÆÕÍ¨90¼¶ºÍ¸ß¼¶É±ÊÖÈÎÎñµÄ´ÎÊı	1		
+2872		Ã¿Ìì²Î¼Ó·é»ğÁ¬³Ç´ÎÊı	1		
+2873		Ã¿Ìì²Î¼ÓÌì×Ó¹úÕ½Õû³¡µÄ´ÎÊı	1		
+2874		Ã¿Ìì´ğ¶ÔÃûÈËÌÃÌâÄ¿´ÎÊı	1		
+2822		Ã¿ÌìÉÏÏßÁìÈ¡ĞĞÏÀÁî´ÎÊı	1		
+2326	2327	Ã¿Ìì³É¹¦²Î¼Ó¿şÀÜÄ¾ÈËÑµÁ·µÄ´ÎÊı	1		
+2879		Ã¿ÌìÍê³ÉÈÕ³£ÈÎÎñµÄ´ÎÊı	1		
+2877		Ã¿ÌìÓÃÈıËÄÎå²ÊÈıÖÖ½á¾§¶Ò»»½±ÀøµÄ´ÎÊı	1		
+2876		Íæ¼ÒÃ¿Ìì½øÈëÌì³ØÃØ¾³µÚÈı²ã´ÎÊı	1		
+2875		Íæ¼ÒÃ¿ÌìÓÃ²É¼¯À´µÄÒ©²Ä½øĞĞºÏ³ÉµÄ´ÎÊı	1		
+2880		Íæ¼ÒÃ¿Ìì»ñµÃµÄ×Ü»îÔ¾¶È	1		
+2882		Íæ¼ÒÃ¿ÌìÁì»îÔ¾¶ÈµÄ½±Àø	1	1	
+2883		Íæ¼ÒÃ¿ÌìÍê³ÉÈ«²¿20´ÎÁúÂöÈÎÎñ	1		
+3151		Íæ¼ÒÃ¿ÌìÍê³ÉÊÔÁ¶ÌÃ´ÎÊı	1		
+3152		Íæ¼ÒÃ¿ÌìÍê³ÉĞĞÏÀÆì´ÎÊı	1		
+3153		Íæ¼ÒÃ¿ÌìÍê³É¸»¹ó½õºĞ´ÎÊı	1		
+3154		Íæ¼ÒÃ¿ÌìÍê³ÉÃûÃÅ´ÎÊı	1		
+3155		Íæ¼ÒÃ¿ÌìÍê³ÉÎ÷É½Óì´ÎÊı	1		
+3156		Íæ¼ÒÃ¿ÌìÍê³ÉÂÒÕ½¾ÅÖİ¹È´ÎÊı	1		
+3157		Íæ¼ÒÃ¿ÌìÍê³É°ÙÈËÀŞÌ¨´ÎÊı	1		
+3167		Íæ¼ÒÃ¿ÌìÍê³É»ÔÖ®ÕÂ-»ªÉ½µÆÃÕ´ÎÊı	1		
+3168		Íæ¼ÒÃ¿ÌìÍê³ÉÒ°ÛÅÈÎÎñ´ÎÊı	1		
+3160		Íæ¼ÒÃ¿ÌìÍê³É»Ê³ÇË¾ÑµÁ·Óª´ÎÊı	1		
+3172	3178	µ¥ÈË¾º¼¼³¡ÈÎÎñ	1		
+3182	3185	Ç§ÖØÂ¥	1		
+3204	Task UsedDay cua map train
+3205		Event 26/3	1		
+3206	Task HWID 1
+3207		Task HWID 2		
+3208		Task Event 30-4		
+3209		Task Event 30-4	
+3210		Task Event 2044
+3211		Task Event 2044	
+3212		Reset event 2044
+3213,14,15,16		Event 2045 Tho Duong
+3217,3218 		Task nhËn gép sv
+3219,3220		Task Event 2046 Ruoc den Trung Thu
+3005 		Task Event 2015 TET 2019
+3006		Task Event 2016 - 8/3/2019
+3007		Task Event 2017 - Gio to Hung Vuong 2019
+3008		Task Event 2018 - 30/4 2019
+3009		Task Event 2019 - 1/6 2019
+3010		Task Event 2020 - Tra 2019
+3011		3012	Task tien don, huyet don.
+3013		Task Event 2021 - Hao Huu Tuong Phung
+3014		Task Event 2022 - Chao He
+3015		Task Event 2021 - Hao Huu Tuong Phung lan 2
+3016		Task Event 2019 - 1/6 2019 lan 2
+3017		Task Event 2019 Lan 3
+3018		Task Event 2019 Lan 4
+3019		Task Event 2024 Lan 1
+3020		Task Event 2025 Lan 1 - WorldCup
+3021		Task Event 2025 Lan 2 - WorldCup
+3022		Task Event 2026 Lan 1 - Phu nu Viet Nam
+3023		Task Event 2025 Lan 3 - WorldCup
+3024		Task Giang Sinh 2019
+3025		Task Event Tet tay 2020
+3026		Task Event Tet ta 2020
+3027		Task Event Tet ta 2020 1
+3028		Task Event 8/3 2020

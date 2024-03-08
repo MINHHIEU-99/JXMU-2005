@@ -6,11 +6,11 @@ Include( "\\script\\task\\system\\task_string.lua" );
 NewYear2008_cailu = {}
 NewYear2008_cailu.tbdate = 
 {
-	nstart = 080202,
-	nend = 200302,
+	nstart = 80202,
+	nend = 80302,
 	ndate = { 
-		nstart = 080205,
-		nend = 200211,
+		nstart = 80205,
+		nend = 80211,
 		common =
 		{
 			{2,3},

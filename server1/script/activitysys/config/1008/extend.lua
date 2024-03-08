@@ -80,7 +80,7 @@ function pActivity:UseCoolTea()
 	local tbAward = {
 		[1] = {nExp=6000000,},
 		[2] = {
-			{szName = "Hoa hång", tbProp = {6,1,30172,1,0,0}, nCount = 1, nRate = 50, nExpiredTime = 20240301},
+			{szName = "Hoa hång", tbProp = {6,1,30172,1,0,0}, nCount = 1, nRate = 50, nExpiredTime = 20120301},
 		}
 	}
 	local tbExtAward = {
@@ -148,7 +148,7 @@ function pActivity:GiveRose(nCount)
 		%tbTop10:GiveRose(GetName(), GetAccount(), nCurCount)
 	end
 	if nWhiteGiftCount > 0 then
-		local tbAward = {szName = "Hép quµ tr¾ng", tbProp = {6,1,30175,1,0,0}, nCount = nWhiteGiftCount, nExpiredTime = 20240301}
+		local tbAward = {szName = "Hép quµ tr¾ng", tbProp = {6,1,30175,1,0,0}, nCount = nWhiteGiftCount, nExpiredTime = 20120301}
 		tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "PhanThuongNop10HoaHong"})
 	end	
 end

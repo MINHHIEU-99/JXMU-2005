@@ -29,10 +29,10 @@ function OnTimer()
 				for i = 1, WLLS_MAX_COUNT, 2 do
 					local count_org = GetMSPlayerCount( WLLS_MSID_COMBAT, i )
 					local count_emy = GetMSPlayerCount( WLLS_MSID_COMBAT, i + 1 )
-					-- if (count_org > 0 or count_emy > 0) then --²»ÊÇË«·½¶¼Îª¿Õ
-						-- Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>Tin tøc chiÕn sù: §èi ph­¬ng cßn"..count_emy.." ng­êi", i)
-						-- Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>Tin tøc chiÕn sù: §èi ph­¬ng cßn"..count_org.." ng­êi", i + 1)
-					-- end
+					if (count_org > 0 or count_emy > 0) then --²»ÊÇË«·½¶¼Îª¿Õ
+						Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>Tin tøc chiÕn sù: §èi ph­¬ng cßn"..count_emy.." ng­êi", i)
+						Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>Tin tøc chiÕn sù: §èi ph­¬ng cßn"..count_org.." ng­êi", i + 1)
+					end
 				end
 				--±¨¸æÉËº¦Á¿
 				local tb_camp	= wlls_get_ms_troop()

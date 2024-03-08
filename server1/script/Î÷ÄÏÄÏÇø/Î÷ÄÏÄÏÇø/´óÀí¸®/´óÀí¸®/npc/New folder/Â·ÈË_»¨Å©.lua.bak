@@ -1,0 +1,41 @@
+-- ´óµí¡¡¢·ÈË¡¡»¨Å©
+-- by£ºDan_Deng(2003-09-16)
+-- Update: Dan_Deng(2004-05-24) È­ÇãÌìÏ¢ÈÎÎñ
+
+function main(sel)
+	Uworld75 = GetTask(75)
+	U75_sub2 = GetTask(53)
+	if (Uworld75 == 10) and (U75_sub2 < 10) then		-- ÈÎÎñÖĞ£¬½ÓÈ¡×ÓÈÎÎñ
+		if (HaveItem(384) == 1) then
+			SetTask(53,10)
+			AddNote("È­ÇãÌìÏ¢ÈÎÎñ£ºÈ¥Ò©İõ¹È°ï»¨Å©Õª3¶ä½õÜïŞ£. ")
+			Msg2Player("È­ÇãÌìÏ¢ÈÎÎñ£ºÈ¥Ò©İõ¹È°ï»¨Å©Õª3¶ä½õÜïŞ£. ")
+			Talk(1,"","¢äÊ¦ĞÖÓÖµ´¿¼ÑéÄã£¿Ì«º·¸Ë£¬´óµíËÄ¼¾»¨Ïã£¬»¹ÉïÒ©İõ¹ÈµÄ¼«Æ·×ÏÜïŞ££¬ÄãÈ¥°ïÎÒÕª3¶ä»Øµ´")
+		else
+		 	Talk(1,"","Ò»·âĞÅÒ²·»ÓĞ£¬ÎŞÆ¾ÎŞ¾İ£¬½ĞÎÒÔõ·´ÏµĞÅÄã?")
+		end
+	elseif (Uworld75 == 10) and (U75_sub2 == 10) then		-- ×ÓÈÎÎñİê³ÉÅĞ¶Ï
+		if (GetItemCount(112) >= 3) then
+			DelItem(112)
+			DelItem(112)
+			DelItem(112)
+			SetTask(53,20)
+			AddNote("È­ÇãÌìÏ¢ÈÎÎñ£ºİê³ÉÕª½õÜïŞ£. ")
+			Msg2Player("È­ÇãÌìÏ¢ÈÎÎñ£ºİê³ÉÕª½õÜïŞ£. ")
+			Talk(1,"","ÕæÊÇº·£¬ÕæÊÇÒ»Æ·£¬ÎÒ»áÅÉÈËÈ¥İ¨±¨¢äÊ¦ĞÖ£¬ËµÎÒİ¬Òâ¸Ë.")
+		else
+			Talk(1,"","»¹·»ÕÒµ½°¡?")
+		end
+	else
+		i = random(0,99)
+		if (i < 25) then
+			Talk(1,"","¤ng l·o hä §oµn nµy c¶ ®êi yªu hoa nh­ thµnh c¸i bÖnh, hoa trµ mµ «ng Êy chØ b¸n cho ng­êi cã duyªn víi «ng Êy, cßn ng­êi kh¸c th× dï cho cã ®em nói vµng nói b¹c ®Õn «ng Êy còng kh«ng b¸n.")
+		elseif (i < 50) then
+			Talk(1,"","Hoa trµ ®Ñp nhÊt toµn §¹i Lı lµ do «ng l·o hä §oµn trång, «ng Êy sèng ë mét ng«i nhµ nhá bªn bê NhÜ H¶i. Hoa trµ cña l·o b¸n hä §oµn mçi n¨m ®Õn mïa béi hoa lu«n ®­îc chän lµ hoa ®Ñp nhÊt.")
+		elseif (i < 75) then
+			Talk(1,"","Nhµ nhµ ë §¹i Lı ®Òu trång hoa trµ, mçi n¨m ®Òu tæ chøc triÓn l·m héi hoa.")
+		else
+			Talk(1,"","V©n Nam trµ hoa nhÊt thiªn h¹, §¹i Lı trµ hoa nhÊt V©n Nam, hoa trµ trong m¾t ng­êi §¹i Lı chóng ta lµ hoa ®Ñp nhÊt thiªn h¹, ngay c¶ MÉu §¬n còng kh«ng s¸nh b»ng.")
+		end
+	end
+end;

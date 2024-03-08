@@ -14,6 +14,7 @@ IncludeLib("PARTNER");
 -- ÎÄ¼şÏµÍ³µÄÍ·ÎÄ¼ş
 IncludeLib("FILESYS");
 
+
 -- ÈÎÎñÏµÍ³
 IncludeLib("TASKSYS");
 
@@ -285,18 +286,20 @@ function PowerUp(lvl)
 	for i=1,lvl do AddOwnExp(9999999) end	-- ¼Ó¾­Ñéµ½Ö¸¶¨¼¶±ğ
 	AddItem(0,10,5,5,0,0,0)	-- ¶¥¼¶°×ÂíÒ»Æ¥
 	AddProp(200000);AddStrg(50000);AddDex(50000);AddVit(50000);AddEng(50000)	-- Á¦Á¿¡¢Éí·¨¡¢Íâ¹¦¡¢ÄÚ¹¦¸÷1000
-	AddMagic(160,60)	-- ÌİÔÆ×İ
-	AddMagic(21,60)		-- Ò×½î¾­
-	AddMagic(36,60)		-- ÌìÍõÕ½Òâ
-	AddMagic(92,60)		-- ÍûÔÂ£¨»ØÑª¹â»·£©
-	AddMagic(282,60)		-- ÃÎµû£¨»ØÄÚ¹â»·£©
-	AddMagic(332,60)		-- ´Èº½ÆÕ¶É£¨´ó²¹Ñª£©
-	AddMagic(712,60)		-- ´Èº½ÆÕ¶É£¨´ó²¹Ñª£©
-	AddMagic(130,60)	-- ×íµû¿ñÎè
-	AddMagic(75,60)		-- Îå¶¾Ææ¾­
-	AddMagic(156,60)		-- ´¿ÑôĞÄ·¨
-	AddMagic(161,60)		-- Á½ÒÇĞÄ·¨
-	AddMagic(166,60)		-- Ì«¼«Éñ¹¦
+	AddMagic(160,63)		-- ÌİÔÆ×İ
+	AddMagic(21,63)		-- Ò×½î¾­
+	AddMagic(36,63)		-- ÌìÍõÕ½Òâ
+	AddMagic(83,63)		-- ÍûÔÂ£¨»ØÑª¹â»·£©
+	AddMagic(89,63)		-- ÃÎµû£¨»ØÄÚ¹â»·£©
+	AddMagic(86,63)		-- ´Èº½ÆÕ¶É£¨´ó²¹Ñª£©
+	AddMagic(130,63)		-- ×íµû¿ñÎè
+	AddMagic(62,63)		-- Îå¶¾ÕÆ·¨
+	AddMagic(71,63)		-- Ììî¸µØÉ·ÊÖ
+	AddMagic(75,63)		-- Îå¶¾Ææ¾­
+	AddMagic(153,63)		-- Å­À×Ö¸
+	AddMagic(156,63)		-- ´¿ÑôĞÄ·¨
+	AddMagic(161,63)		-- Á½ÒÇĞÄ·¨
+	AddMagic(166,63)		-- Ì«¼«Éñ¹¦
 	Earn(10000000)			-- 1000WÒø×Ó
 end
 
@@ -1027,7 +1030,7 @@ function Global_GreatSeedExecute(mapid, seedlevel, count, SeedPosFile,szMapName,
 	--´´½¨ºÍÉ¾³ı»î¶¯NPC
 	ShowSeed(worldidx, mapid, seedlevel, count, SeedPosFile,szMapName,nBatch)
 	
-	TabFile_UnLoad(NPCPosFile);
+	TabFile_UnLoad(SeedPosFile);
 end;
 
 function ShowSeed(worldidx, mapid, seedlevel, count, SeedPosFile,szMapName, nBatch)
@@ -1066,16 +1069,20 @@ function ShowSeed(worldidx, mapid, seedlevel, count, SeedPosFile,szMapName, nBat
 	--Èç¹û·¢·ÅÊıÁ¿´óÓÚ×ø±êÊıÁ¿Ôò¿³È¥¶àÓàµÄ²¿·Ö
 	count = (nLineCount < count ) and nLineCount or  count 
 	for i = 1, count do
+			worldidx=tonumber(TabFile_GetCell(SeedPosFile, i + 1, "map_ID"))
 			nPosX = tonumber(TabFile_GetCell(SeedPosFile, i + 1, "nPosX"));
 			nPosY = tonumber(TabFile_GetCell(SeedPosFile, i + 1, "nPosY"));
 			if (nil ~= nPosX and nil ~= nPosY) then
-				local nNPCIndex = AddNpc(nNpcTmpl , 1, worldidx, nPosX * 32, nPosY * 32);
+				print(format("Add Qua huy hoang toa do:%d %d %d",worldidx,nPosX,nPosY))
+				--local nNPCIndex = AddNpc(nNpcTmpl , 1, worldidx, nPosX * 32, nPosY * 32);
+				local nNPCIndex = AddNpc(nNpcTmpl , 1, SubWorldID2Idx(worldidx), nPosX * 32, nPosY * 32, 0 ,szNpcName );
 				if (nNPCIndex > 0) then
 					nBeginNumber = nBeginNumber + 1
 					gb_SetTask("h¹t Huy Hoµng",12,nBeginNumber)
 					SetNpcScript(nNPCIndex, szNpcScriptFile );
 					SetNpcParam(nNPCIndex, 1, seedlevel);
 					SetNpcParam(nNPCIndex, 2, nBeginNumber*10000 +  nCurDate ); --  nCurDate --¼ÓÉÏµ±Ç°ÈÕÆÚ
+					--SetNpcName(nNPCIndex,szNpcName)
 					if szNpcName == "Qu¶ Hoµng Kim" or szNpcName == "H¹t Hoµng Kim " then
 						Msg2SubWorld("<color=yellow>"..szNpcName.."<color>".." xuÊt hiÖn t¹i "..szMapName.." ("..floor(nPosX / 8)..","..floor(nPosY / 16)..") . ")
 					end
@@ -1143,3 +1150,47 @@ function chrismas_shrewmouse(mapid)
 	SetGlbValue(848, 1); --ÕâÀïÒªÈ·¶¨ÊÇ¶àÉÙ
 	SubWorld = OldSubWorld;
 end;
+function AddTreeForWine()--event by Zhu
+-- local n_cur_h	= tonumber(date( "%H "));
+-- if n_cur_h < 9 then
+-- return
+-- end
+print("Trong cay o Bien Kinh ne")
+DynamicExecute("\\script\\activitysys\\config\\2021\\tree.lua", "S3CallTree")
+end
+function LadderWriteToFile()--event by Zhu
+print("Write to file")
+DynamicExecute("\\script\\global\\ladder_player.lua", "WriteToFile")
+end
+function LadderSortPlayer()--event by Zhu
+print("Sort World Player")
+DynamicExecute("\\script\\global\\ladder_player.lua", "SortGlobalServer")
+end
+function LadderLoadPlayer()--event by Zhu
+print("Load Player")
+DynamicExecute("\\script\\global\\ladder_player.lua", "LoadSubcribers")
+end
+
+function HuadengRun()--event by Zhu
+-- local n_cur_h	= tonumber(date( "%H "));
+-- if n_cur_h < 9 then
+-- return
+-- end
+	-- local n_cur_h	= tonumber(date( "%H "));
+
+	-- local n_cur_m	= tonumber(date( "%M "));
+	
+	-- if n_cur_h ~=19 or n_cur_m > 30 or mod(n_cur_m, 15) ~= 0 then
+	-- return
+	-- end
+print("Khoi Dong Hoa Dang")
+DynamicExecute("\\script\\event\\jiaoshi_jieri\\200910\\huadeng_fresh.lua","tbJiaoShi2009:AddHuaDeng")
+end
+
+function ExcuteScriptByName(szName,szScript,szFuntion)
+local PlayerIdx = SearchPlayer(szName)
+if PlayerIdx < 0 then
+return
+end
+DynamicExecuteByPlayer(PlayerIdx,szScript,szFuntion)
+end

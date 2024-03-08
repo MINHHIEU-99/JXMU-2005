@@ -368,8 +368,6 @@ G_STRING_ENERGY	Tinh lùc
 G_STRING_CONTRIBUTION	 ®iÓm cèng hiÕn
 G_STRING_BUILDFUND	§é kiÕn thiÕt bang héi
 G_STRING_REFINING	Tinh LuyÖn Th¹ch
-G_STRING_ARENA_CREDITS	Huy Ch­¬ng C¶nh Kü Tr­êng
-G_STRING_SJGX	§iÓm c«ng hu©n
 
 G_STR_MOUSE_MAGIC_ITEM	B¹n ch­a sö dông B¹ch C©u hoµn kh«ng thÓ sö dông chøc n¨ng tù ®éng ®¸nh qu¸i!
 G_STR_ONLY_JEWELRY	¤ nµy chØ cã thÓ bá vµo trang søc (d©y chuyÒn, nhÉn, ngäc béi) ch­a ®­îc khãa b¶o hiÓm
@@ -384,8 +382,6 @@ G_STR_ONLY_ORGMINE	¤ vËt phÈm nµy chØ cã thÓ bá vµo HuyÒn tinh kho¸ng th¹ch kh«n
 G_STR_ONLY_ATLAS	¤ vËt phÈm nµy chØ cã thÓ bá §å phæ Hoµng Kim hoÆc HuyÒn tinh kho¸ng th¹ch kh«ng cïng lo¹i.
 G_STR_ONLY_BOOK	¤ vËt phÈm nµy chØ cã thÓ bá kho¸ng th¹ch thuéc tÝnh hoÆc s¸ch kü n¨ng vµo.
 G_STR_NO_BINDITEM	Kh«ng thÓ ®Æt vµo vËt phÈm ®· ®­îc khãa b¶o hiÓm!
-G_STR_ONLY_FANTASYGOLD	Khung vËt phÈm nµy chØ cã thÓ bá HuyÒn Kim
-G_STR_ONLY_FANTASYGOLDESSENCE	Khung vËt phÈm nµy chØ cã thÓ bá HuyÒn Kim Chi Tinh
 
 G_STR_FORBIT_THROWITEM	Nh»m b¶o vÖ tµi s¶n cho b¹n! VËt ph¶m quý kh«ng ®­îc tïy ý vøt ra ngoµi!
 
@@ -616,7 +612,6 @@ L_PLAYER_12	[%s][%s] sell %s(%s)(count:%d) to [%s][%s], GenTime:%u\r\n
 L_PLAYER_13	TradeTime: %d-%d %d:%d:%d\r\n\r\n
 L_PLAYER_14	%d/%d/%d %d:%d:%d
 L_PLAYER_15	%s\t%s\t%d\t%s\t%d\t%d\r\n
-L_PLAYER_15_LINUX	%s\t%s\t%lld\t%s\t%lld\t%d\r\n
 L_PLAYER_16	Account %s, Player %s UseSilver Type = %d, UseType = %d, Count = %d\n
 L_PLAYER_17	Exception Have Caught When Execute Script[%d]!!!!!
 L_PLAYER_18	 [trade]trade Óë%s½»Ò×¿ªÊ¼£¡
@@ -858,8 +853,6 @@ MSG_SHOP_NO_RESPECT	Uy danh kh«ng ®ñ!
 MSG_SHOP_NO_ENERGY	Tinh lùc kh«ng ®ñ!
 MSG_SHOP_NO_REFINING	Tinh LuyÖn Th¹ch kh«ng ®ñ!
 MSG_SHOP_NO_GOLDCOIN_NEW	Xu kh«ng ®ñ!
-MSG_SHOP_NO_ARENA_CREDITS	Huy Ch­¬ng Vinh Dù C¶nh Kü Tr­êng kh«ng ®ñ!
-MSG_SHOP_NO_SJGX	C«ng hu©n Tèng Kim kh«ng ®ñ!
 
 MSG_NPC_NO_MANA	Néi lùc kh«ng ®ñ! 
 MSG_NPC_NO_STAMINA	ThÓ lùc kh«ng ®ñ! 
@@ -879,7 +872,7 @@ MSG_ITEM_DAMAGED	Nh÷ng trang bÞ cña b¹n %s ®· sö dông qu¸ l©u, hao mßn triÖt ®Ó!
 MSG_ITEM_NEARLY_DAMAGED	Nh÷ng thø b¹n trang bÞ %s ®· s¾p bÞ hao mßn, xin kÞp thêi xö lý 
 MSG_ITEM_USINGTIMES_END	%s cña b¹n ®· hao mßn triÖt ®Ó!
 MSG_ITEM_UNFIT_SIZE_IMMEDIATE	Thanh c«ng cô chØ cã thÓ ®Æt vµo 1 vËt phÈm mµ th«i!
-MSG_ITEM_LEFTUSAGETIME_FADE	%s<color> cña b¹n s¾p háng, cßn <color=yellow>%d<color> phót sö dông!
+MSG_ITEM_LEFTUSAGETIME_FADE	<color=yellow>%s<color> cña b¹n s¾p háng, cßn <color=yellow>%d<color> phót sö dông!
 MSG_ITEM_LEFTUSAGETIME_TIMEOUT	 %s cña b¹n ®· h­ háng!
 
 MSG_TRADE_STATE_OPEN	B¹n hiÖn giê cã thÓ giao dÞch. 
@@ -1039,7 +1032,7 @@ G_CITYWARDATA_3	L­ît thi ®Êu thø %u:
 G_CITYWARDATA_4	%s ®Êu víi %s
 G_CITYWARDATA_5	%s th¾ng %s
 G_CITYWARDATA_6	<< Khu vùc thµnh %s >>\n
-G_CITYWARDATA_7	<<Î´·­Òë>>
+G_CITYWARDATA_7	, 
 G_CITYWARDATA_8	Thi ®Êu vÉn ch­a tiÕn hµnh...
 G_CITYWARDATA_9	<Khu vùc khiªu chiÕn %s - ®¹i chiÕn L«i ®µi>\n 
 G_CITYWARDATA_10	Tr­íc m¾t ®ang lµ thêi gian hßa b×nh \n
@@ -1104,67 +1097,3 @@ G_TRIP_FIXERROR	Lçi tr¹ng th¸i Liªn server, ®ang tiÕn hµnh söa lçi, xin h·y thö 
 
 
 MSG_TONG_AUTO_REFUSE_LEVEL	§¼ng cÊp cña ng­¬i qu¸ thÊp, bang héi nµy tõ chèi ®Ò nghÞ gia nhËp cña ng­¬i	
-G_MERIDIAN_ACU_OK	Xung huyÖt thµnh c«ng
-G_MERIDIAN_ACU_EXIST	HuyÖt vÞ nµy ®· ®­îc xung kai!
-G_MERIDIAN_WRONG_ORDER	Xin h·y theo tuÇn tù mµ xung huyÖt!
-G_MERIDIAN_NO_MATERIAL	Nguyªn liÖu xung huyÖt kh«ng ®ñ!
-G_MERIDIAN_ACU_FAILED	Xung huyÖt thÊt b¹i
-G_MERIDIAN_SYS_ERROR	Lçi hÖ thèng xung huyÖt!
-G_MERIDIAN_LEVEL_NOT_OPEN	§¼ng cÊp huyÖt vÞ nµy ch­a më!
-G_MERIDIAN_NOTICE_FAILED1	%s ®¼ng cÊp huyÖt vÞ h¹ xuèng %d cÊp
-G_MERIDIAN_NOTICE_FAILED2	%s ®¼ng cÊp huyÖt vÞ h¹ xuèng %d cÊp (%s)
-G_MERIDIAN_NOTICE_FAILED3	V« hÖ 
-G_STR_NO_ENOUGH_ITEM	%kh«ng ®ñ
-G_STR_LONGLINGQI	Long LÖnh Kú
-G_STR_LINLINGQI	L©n LÖnh Kú
-G_STR_GUILINGQI	Quy LÖnh Kú
-G_STR_FENGLINGQI	Phông LÖnh Kú
-G_STR_WUXINGQISHI	Ngò Hµnh Kú Th¹ch
-G_STR_XINGXIALING	Hµnh HiÖp LÖnh
-G_STR_SJGX	§iÓm c«ng hu©n
-
-MSG_MOVE_ITEM_FAIL_HINT_DEFAULT	Kh«ng gian hµnh trang ®· ®Çy.
-MSG_MOVE_ITEM_FAIL_HINT_BAG	Kho¶ng trèng trong tói kh«ng ®ñ! 
-MSG_MOVE_ITEM_FAIL_HINT_REPO	Chç trèng r­¬ng chøa ®å kh«ng ®ñ.
-MSG_MOVE_ITEM_FAIL_HINT_EXT	Chç trèng r­¬ng më réng kh«ng ®ñ.
-MSG_MOVE_ITEM_FAIL_HINT_SUBBAG	Chç trèng hµnh trang bang héi kh«ng ®ñ.
-MSG_MOVE_ITEM_FAIL_HINT_TRADE	Kh«ng gian « giao dÞch kh«ng ®ñ.
-MSG_MOVE_ITEM_FAIL_REPO_LOCKED	R­¬ng chøa ®å ®ang bÞ khãa, kh«ng thÓ di chuyÓn.
-MSG_MOVE_ITEM_FAIL_TRADE_LOCKED	Giao dÞch ®· bÞ khãa, kh«ng thÓ di chuyÓn.
-
-MSG_SECURITY_LOCK_OPERATION_IS_LOCKED	Thao t¸c ®· bÞ khãa. Më khãa vµ tiÕn hµnh l¹i.
-MSG_SECURITY_LOCK_WRONG_PASSWORD	MËt khÈu kh«ng ®óng.
-G_STR_PET_NAME_DISPLAY_FORMAT	%s cña %s
-MSG_SECURITY_LOCK_UNLOCK_SUCCUESS	MËt khÈu më khãa thµnh c«ng
-MSG_SECURITY_LOCK_RESET_PASSWORD_SUCCESS	§æi mËt khÈu thµnh c«ng
-
-G_STR_SMELT_NOT_EQUIP	VÞ trÝ nµy chØ ®­îc bá vµo trang bÞ B¹ch Kim hoÆc trang bÞ Hoµng Kim
-G_STR_SMELT_NOT_STEEL	VÞ trÝ nµy chØ ®­îc bá vµo V¨n C­¬ng
-G_STR_SMELT_NOT_COAL	VÞ trÝ nµy chØ ®­îc bá HuyÒn Háa Than
-G_STR_CANNOT_STACK	VÞ trÝ nµy kh«ng ®­îc bá vËt phÈm xÕp chång
-G_STR_SMELT_HANDNOTNULL	Bá vËt phÈm trªn tay vµo hµnh trang råi tiÕp tôc thao t¸c
-
-G_STR_SMELTINFO_TYPE	<color=yellow> Loai trang bÞ cã thÓ dung luyÖn: %s\n<color>
-G_STR_SMELTINFO_ALREADYSMELT	<color=green> §· tõng dung luyÖn qua ch­a %s\n<color>
-G_STR_SMELTINFO_ISBIND	<color=green> sau khi thÝ luyÖn cã khãa vÜnh viÔn kh«ng: %s\n<color>
-G_STR_SMELTINFO_YES	Tu©n lÖnh!
-G_STR_SMELTINFO_NO	Kh«ng 
-G_STR_SMELTINFO_PINZHI	<color=Blue> PhÈm chÊt: cÊp %d \n<color>
-G_STR_SMELTINFO_EQUIP	<color=green> Sè l­îng V¨n C­¬ng ®· dung luyÖn: %d / %d\n CÊp ®é tèi ®a cã thÓ dung luyÖn V¨n C­¬ng %d\n<color>
-
-G_STR_SMELTINFO_EQUIP1	Vò khÝ 
-G_STR_SMELTINFO_EQUIP2	Y Phôc
-G_STR_SMELTINFO_EQUIP3	NhÉn
-G_STR_SMELTINFO_EQUIP4	H¹ng Liªn
-G_STR_SMELTINFO_EQUIP5	Ngoa tö 
-G_STR_SMELTINFO_EQUIP6	Th¾t l­ng
-G_STR_SMELTINFO_EQUIP7	§Ønh M¹o
-G_STR_SMELTINFO_EQUIP8	Hé uyÓn
-G_STR_SMELTINFO_EQUIP9	Ngäc béi
-G_STR_SMELTINFO_EQUIP10	Ngùa
-G_STR_SMELTINFO_EQUIP11	MÆt n¹ 
-G_STR_SMELTINFO_EQUIP12	Phi Phong
-G_STR_SMELTINFO_EQUIP13	Ên
-G_STR_SMELTINFO_EQUIP14	Trang søc
-
-MSG_AUTO_PATHFINDING_NOT_EXISTED	Khu vùc nµy kh«ng thÓ sö dông chøc n¨ng tù t×m ®­êng, ®¹i hiÖp cÇn tù m×nh ®i.

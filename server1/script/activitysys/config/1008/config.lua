@@ -201,8 +201,8 @@ tbConfig[11] = --boss s¸t thñ
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,3,EVENT_LOTrG_TITLE,"TieuDietBossSatThu"} },				
-		{"tbVngTransLog:Write", {stranLogFolder, nPromotionID, "TieuDietBossSatThu", "3 Qu¶ Song Tö", 1}},				
+		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,3,EVENT_LOG_TITLE,"TieuDietBossSatThu"} },				
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietBossSatThu", "3 Qu¶ Song Tö", 1}},				
 	},
 }
 
@@ -306,9 +306,9 @@ tbConfig[17] =
 	nId = 17,
 	szMessageType = "CreateDialog",
 	szName = "§èi tho¹i nhËn NÕn §á",
-	nStartDate = 202402130000,
-	nEndDate  = 202402232400,
-	tbMessageParam = {"Trong thêi gian diÔn ra sù kiÖn, c¸c ®¹i hiÖp cÊp 150 trë lªn (Relife kh«ng giíi h¹n) cã thÓ tham gia ho¹t ®éng online nhËn th­ëng, cø mçi tiÕng ®ång hå oline trªn m¹ng sÏ nhËn ®­îc 1 NÕn §á, mçi ngµy nhiÒu nhÊt chØ nhËn ®­îc 3 lÇn",0},
+	nStartDate = 201202130000,
+	nEndDate  = 201202232400,
+	tbMessageParam = {"Trong thêi gian diÔn ra sù kiÖn, c¸c ®¹i hiÖp cÊp 150 trë lªn (trïng sinh kh«ng giíi h¹n) cã thÓ tham gia ho¹t ®éng online nhËn th­ëng, cø mçi tiÕng ®ång hå oline trªn m¹ng sÏ nhËn ®­îc 1 NÕn §á, mçi ngµy nhiÒu nhÊt chØ nhËn ®­îc 3 lÇn",0},
 	tbCondition = 
 	{
 	},
@@ -405,7 +405,7 @@ tbConfig[22] =
 	szName = "§èi tho¹i sù kiÖn hoa hång",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"NÕu c¸c h¹ cã vËt phÈm Hoa Hång cã thÓ giao nép cho ta ®Ó tham gia sù kiÖn Hoa Hång. Néi dung sù kiÖn nh­ sau:<enter>- Thêi gian nép vËt phÈm: <color=red>0h ngµy 2-2-12 ®Õn 24h ngµy 28-2-2024<color><enter>- Thêi gian tæng kÕt cuèi cïng: <color=red>0h20 ngµy 29-2-2024<color><enter>- Thêi gian nhËn th­ëng: <color=red>9h ngµy 29-2-12 ®Õn 24h ngµy 29-2-2024<color>",0},
+	tbMessageParam = {"NÕu c¸c h¹ cã vËt phÈm Hoa Hång cã thÓ giao nép cho ta ®Ó tham gia sù kiÖn Hoa Hång. Néi dung sù kiÖn nh­ sau:<enter>- Thêi gian nép vËt phÈm: <color=red>0h ngµy 2-2-12 ®Õn 24h ngµy 28-2-2012<color><enter>- Thêi gian tæng kÕt cuèi cïng: <color=red>0h20 ngµy 29-2-12<color><enter>- Thêi gian nhËn th­ëng: <color=red>9h ngµy 29-2-12 ®Õn 24h ngµy 29-2-2012<color>",0},
 	tbCondition = 
 	{
 	},

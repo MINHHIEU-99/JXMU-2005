@@ -26,7 +26,7 @@ szStationOp =
 		"§i ®¶o TÈy Tñy/GotoClearSkillMap",	-- 7
 		"§i ®Õn n¬i lµm nhiÖm vô D· TÈu/tl_moveToTaskMap",			-- 8
 		"§i n¬i ®Æc biÖt lµm NhiÖm vô TÝn Sø /messenger_wagoner",      -- 9
-		--"§i V« Danh Cèc/GotoAnonymVale",			--10
+		--"È¥ÎÞÃû¹È/GotoAnonymVale"			--10
 	};
 
 function return_1()
@@ -72,11 +72,16 @@ szStationOp_Cancel = "Kh«ng cÇn ®©u/StationOnCancel";
 function go_HSBattle()
 	Msg2Player("Ngåi ch¾c nhÐ! Chóng ta ®i ®Õn Hoa s¬n c¶nh kü tr­êng")
 	NewWorld(2,2605,3592)
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 	
 end
 
-function WayPointFun()			-- ¼Ó·µ»ØÒª800Á½Òø×Ó£¨¶´¿Ú£©¡¡¡¡¡¡£¨BY£º Dan_Deng 2004-04-30£©
+function WayPointFun()
+	--PK 10 ko duoc di edit by MC Team 20160922
+	--local PK_value = GetPK()
+	--if PK_value == 10 then
+	--	Say("Ng­êi hai tay dÝnh ®Çy m¸u trÞ sè <color=red>PK 10<color> ®i ®Õn ch©n trêi gãc bÓ th× còng kh«ng thÓ tho¸t khái luËt ph¸p! <enter>Mau mau ®Õn nhµ lao ®Çu thó ®Ó gi¶m bít trÞ PK", 0);
+	--	return 1
+	--end
+
 	p1 = GetWayPoint(1);
 	p2 = GetWayPoint(2);
 	p3 = GetWayPoint(3);
@@ -148,8 +153,6 @@ if (PrePay(nPrice) == 1 or GetCamp() == 6 ) then
 Msg2Player("Ngåi yªn ch­a? Chóng ta ®i "..GetWharfName(nWharfId))
 nW , nX, nY = GetWharfPos(nWharfId);
 nResult = NewWorld(nW, nX , nY );
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 	
 if (nResult == 2) then
 Msg2Player("§ang chuyÓn ®æi Server...")
 end
@@ -198,8 +201,6 @@ function SelStation(nSel)
 	if (PrePay(nPrice) == 1 or GetCamp() == 6) then
 		nW, nX, nY = GetStationPos(nStation);
 		nResult = NewWorld(nW, nX , nY );
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 		Msg2Player("Ngåi yªn ch­a? Chóng ta ®i "..GetStationName(nStation))
 		if (nResult == 2) then
 			--Msg2Player("·þÎñÆ÷×ª»»ÖÐ...")
@@ -218,7 +219,21 @@ function SelStation(nSel)
 	end
 end
 
-function TownPortalFun()			-- ·µ»ØÒª2000Á½Òø×Ó£¨Ô­µØµã£©¡¡¡¡£¨BY: Dan_Deng 2004-04-30£©
+function TownPortalFun()	
+if GetTask(5859)> 0  then
+		Say("VËn Tiªu §i Råi H·y SD Th©n Hµnh Phï")
+		return 1
+	end;
+        --  if GetTask(3920)> 0  then
+	--	Say("Ng­¬i ®ang vËn chuyÓn Bao L­¬ng . Mau di chuyÓn ®Õn §iÓm tËp kÕt ®i.")
+	--	return 1
+	--end;
+	--local PK_value = GetPK()
+	--if PK_value == 10 then
+	--	Say("Ng­êi hai tay dÝnh ®Çy m¸u trÞ sè <color=red>PK 10<color> ®i ®Õn ch©n trêi gãc bÓ th× còng kh«ng thÓ tho¸t khái luËt ph¸p! <enter>Mau mau ®Õn nhµ lao ®Çu thó ®Ó gi¶m bít trÞ PK", 0);
+	--	return 1
+	--end
+	
 --	if (PrePay(2000) == 1 or GetCamp() == 6) then
 		ReturnFromPortal()
 --	else
@@ -233,8 +248,8 @@ function SelWayPoint(nSel)			-- ·µ»ØÒª1000Á½Òø×Ó£¨¶´¿Ú£©¡¡¡¡¡¡£¨BY£ºDan_Deng 200
 			nW, nX, nY = GetWayPointPos(nWayPoint)
 			nFightState = GetTerminiFState(nWayPoint)
 			nResult = NewWorld(nW, nX, nY)
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
+			SetProtectTime(18*3) --ÈuAë±£»¤Ê±¼ä
+			AddSkillState(963, 1, 0, 18*3)
 			SetFightState(nFightState)
 --			Msg2Player("Goto"..GetWayPointName(nWayPoint)..nW..nX..nY);
 			if (nResult == 2) then
@@ -290,12 +305,8 @@ function GoCityWarDefend()
 	
 	if (random(0,1) == 1) then
 		NewWorld(222, 1614, 3172);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 	else
 		NewWorld(222, 1629, 3193);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 	end;
 end;
 
@@ -317,12 +328,8 @@ function GoCityWarAttack()
 	
 	if (random(0,1) == 1) then
 		NewWorld(223, 1614, 3172);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 	else
 		NewWorld(223, 1629, 3193);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 	end;
 
 end;
@@ -334,24 +341,16 @@ end;
 function GotoDefend()
 if (random(0,1) == 1) then
 	NewWorld(222, 1614, 3172);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 else
 	NewWorld(222, 1629, 3193);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 end;
 end;
 
 function GotoAttack()
 	if (random(0,1) == 1) then
 		NewWorld(223, 1614, 3172);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 	else
 		NewWorld(223, 1629, 3193);
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 	end;
 end;
 
@@ -377,8 +376,6 @@ end;
 
 function goto_shijiangu()
 	NewWorld(949, floor(51264 / 32), floor(102368 / 32))
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
 end
 
 function _GoELangGu()
@@ -388,8 +385,6 @@ function _GoELangGu()
 	local nMapId = GetWorldPos()
 	if tbTargetMapList[nMapId] then
  		NewWorld(tbTargetMapList[nMapId], 1592, 3195)
-	SetProtectTime(18*3) --ÈýÃë±£»¤Ê±¼ä
-	AddSkillState(963, 1, 0, 18*3) 
  	end
 end
 
@@ -404,10 +399,10 @@ CITY_OPTIONS =
 	{"§i ®¶o TÈy Tñy",				GotoClearSkillMap},		-- 7
 	{"§i ®Õn n¬i lµm nhiÖm vô D· TÈu",		tl_moveToTaskMap},		-- 8
 	{"§i n¬i ®Æc biÖt lµm NhiÖm vô TÝn Sø ",	messenger_wagoner},     -- 9
-	--{"§i V« Danh C«c",				GotoAnonymVale},			--10
+	--"È¥ÎÞÃû¹È",				GotoAnonymVale"			--10
 	{"Xin h·y ®­a ta ®Õn ChiÕn Long §éng",		OnGoToNewLiangShuiDong},-- 10
-	--{"§i KiÕm Gia Mª Cung",				goto_shijiangu},		-- 11
-	-- {"§i ¸c Lang Cèc",				_GoELangGu},
+	{"§i ThÝ LuyÖn Cèc(KiÕm Gia Mª Cung)",				goto_shijiangu},		-- 11
+	--{"§i ¸c Lang Cèc",				_GoELangGu},
 }
 
 -- ³ÇÊÐ³µ·òÍ¨ÓÃ½Å±¾
@@ -437,6 +432,9 @@ end;
 
 -- ÐÂÊÖ´å³µ·òÍ¨ÓÃ½Å±¾ (×¢Òâ£ºÄÏÔÀÕò²»ÊÇÐÂÊÖ´å£¬²»µ÷´Ëº¯Êý)
 function NewcomerStationCommon(szMsg)
+if GetTask(5859)==1 then
+return Say("§ang VËn Tiªu Xin §?ng GÆp Ta")
+end
 --	check_update()					-- ¼¼ÄÜ¸üÐÂ¡¢ÃÅÅÉ¼Ó±êÊ¶£¨2004-05-31£©
 	if (GetLevel() >= 5) then
 		if (WhichWarBegin() ~= 0) then

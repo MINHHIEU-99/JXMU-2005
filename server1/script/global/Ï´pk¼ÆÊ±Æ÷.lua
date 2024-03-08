@@ -1,23 +1,25 @@
--- Ï´PK¼ÆÊ±Æ÷.lua
--- Update: Dan_Deng(2003-11-27)
--- Timer: 9
+-- script viet hoa By http://tranhba.com  t¾m PK tÝnh giê khÝ .lua 
+-- script viet hoa By http://tranhba.com  Update: Dan_Deng(2003-11-27) 
+-- script viet hoa By http://tranhba.com  Timer: 9 
 
 Include("\\Script\\Global\\TimerHead.lua")
 
-function OnTimer()
-	Uworld96 = GetTask(96)
-	PK_value = GetPK()
-	StopTimer()
-	if (Uworld96 > 0) then			-- Ö»ÓÐÔÚÀÎ·¿ÖÐ²ÅÔÊÐí¼õPKÖµ
-		if (PK_value > 1) then		-- ÉÐÎ´Ï´ÍêPKÖµ
-			Msg2Player("Sau thêi gian thµnh t©m hèi c¶i, téi nghiÖt cña ng­¬i ®· ®­îc gi¶m nhÑ!")
-			SetPK(PK_value - 1)
-			SetTask(96,Uworld96 - 1)
-			SetTimer(12 * CTime * FramePerSec, 9)						--ÖØÐÂ¿ªÊ¼¼ÆÊ±£¨12¸öÊ±³½==120·ÖÖÓ£©
-		else							-- Ï´ÍêPKÁË
-			Msg2Player("Sau thêi gian thµnh t©m hèi c¶i, ng­¬i rèt cuéc ®· röa s¹ch téi lçi cña m×nh!")
-			SetPK(0)
-			SetTask(96,100)
-		end
-	end
-end;
+function OnTimer() 
+local Uworld96 = GetTask(96) 
+local PK_value = GetPK(); 
+local nMapId = GetWorldPos(); 
+StopTimer(); 
+
+if (nMapId == 208) then -- script viet hoa By http://tranhba.com  chØ cã ë phßng giam trung míi cho phÐp gi¶m PK trÞ gi¸ 
+if (PK_value > 1) then -- script viet hoa By http://tranhba.com  ch­a giÆt xong PK trÞ gi¸ 
+Msg2Player("Th«ng qua tÜnh t©m hèi c·i , téi cña ng­¬i nghiÖt gi¶m bít . ") 
+SetPK(PK_value - 1) 
+			SetTask(96,100 + (PK_value - 1));
+SetTimer(12 * CTime * FramePerSec, 9) -- script viet hoa By http://tranhba.com  lÇn n÷a b¾t ®Çu tÝnh giê #12 c¸ canh giê ==120 phót # 
+else -- script viet hoa By http://tranhba.com  giÆt xong PK liÔu 
+Msg2Player(" ë kh¾c s©u tØnh l¹i tù th©n téi sau , ng­¬i rèt côc röa s¹ch téi lçi cña m×nh . ") 
+SetPK(0) 
+SetTask(96,100) 
+end 
+end 
+end; 

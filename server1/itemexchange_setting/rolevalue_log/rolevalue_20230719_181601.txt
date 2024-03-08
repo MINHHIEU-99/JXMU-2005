@@ -1,1 +1,0 @@
-[Normal]Item: Tuy’t Hoa L≠Óng Ng©n ßao(0,0,0,5,0,5), unbind = 0, bind = 0

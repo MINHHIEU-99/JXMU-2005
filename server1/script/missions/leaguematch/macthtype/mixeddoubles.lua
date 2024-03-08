@@ -1,16 +1,12 @@
 Include("\\script\\missions\\leaguematch\\tb_head.lua")
---==============»ìºÏË«ÈËÈüÏà¹ØÊı¾İ===============
 
 if (not tmp_process_data) then
 	return
 end
 
---È«²¿»ìºÏË«ÈËÈüÏà¹ØÊı¾İ
 WLLS_DATA = {
 	
 	name = "Song ®Êu",
-	
-	--µØÍ¼ĞÅÏ¢
 	match_type = {
 		{
 			name = "",
@@ -33,53 +29,51 @@ WLLS_DATA = {
 			ladder = 10249,
 			map = {
 				{540, 570, 541, "(1)"},
-				{542, 571, 543, "(2)"},
-				{544, 572, 545, "(3)"},
-				{546, 573, 547, "(4)"},
-				{548, 574, 549, "(5)"},
-				{550, 575, 551, "(6)"},
-				{552, 576, 553, "(7)"},
-				{554, 577, 555, "(8)"},
+				{540, 570, 541, "(2)"},
+				{540, 570, 541, "(3)"},
+				{540, 570, 541, "(4)"},
+				{540, 570, 541, "(5)"},
+				{540, 570, 541, "(6)"},
+				{540, 570, 541, "(7)"},
+				{540, 570, 541, "(8)"},
 			},
 		},
 	},
 	
 	award_rank = {
-		{	--ÅÅĞĞ½±Àø£¬Ğ¢Ğã
-			{1, 1500},	--µÚ1Ãû
-			{2, 1200},	--µÚ2Ãû
-			{3, 1000},	--µÚ3Ãû
-			{4, 800},	--µÚ4Ãû
-			{8, 500},	--µÚ5-8Ãû
-			{16, 300},	--µÚ9-16Ãû
-			{32, 200},	--µÚ17-32Ãû
-			{64, 50},	--µÚ33-64Ãû
-			{128, 10},	--µÚ65-128Ãû
-		}, {	--ÁªÈü
-			{1, 1500},	--µÚ1Ãû
-			{2, 1200},	--µÚ2Ãû
-			{3, 1000},	--µÚ3Ãû
-			{4, 800},	--µÚ4Ãû
-			{8, 500},	--µÚ5-8Ãû
-			{16, 300},	--µÚ9-16Ãû
-			{32, 200},	--µÚ17-32Ãû
-			{64, 50},	--µÚ33-64Ãû
-			{128, 10},	--µÚ65-128Ãû
+		{
+			{1, 5000},	--µÚ1Ãû
+			{2, 4000},	--µÚ2Ãû
+			{3, 3500},	--µÚ3Ãû
+			{4, 3000},	--µÚ4Ãû
+			{8, 2000},	--µÚ5-8Ãû
+			{16, 1500},	--µÚ9-16Ãû
+			{32, 1000},	--µÚ17-32Ãû
+			{64, 500},	--µÚ33-64Ãû
+			{128, 250},	--µÚ65-128Ãû
+		},
+		{
+			{1, 10000},	--µÚ1Ãû
+			{2, 8000},	--µÚ2Ãû
+			{3, 7000},	--µÚ3Ãû
+			{4, 6000},	--µÚ4Ãû
+			{8, 4000},	--µÚ5-8Ãû
+			{16, 3000},	--µÚ9-16Ãû
+			{32, 2000},	--µÚ17-32Ãû
+			{64, 1000},	--µÚ33-64Ãû
+			{128, 500},	--µÚ65-128Ãû
 		}
 	},
 	
-	max_member = 2,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
+	max_member = 2,
 	
-	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
+	text_main = {
 		"Liªn ®Êu kiÖt xuÊt kú nµy sÏ theo thÓ thøc song ®Êu. Mäi ng­êi cã thÓ tù do thµnh lËp chiÕn ®éi. H·y nç lùc luyÖn tËp ®Ó sù phèi hîp ¨n ı",
 		"Vâ l©m liªn ®Êu kú nµy sÏ theo thÓ thøc song ®Êu. Mäi ng­êi cã thÓ tù do thµnh lËp chiÕn ®éi, h·y nç lùc luyÖn tËp ®Ó sù phèi hîp ¨n ı!",
 	},
 	
-	addmem_ex	= ", yªu cÇu <color=red>nam vµ n÷<color>",	--×é½¨Õ½¶Ó¶îÍâÒªÇó£¨¿ÉÑ¡£©
+	addmem_ex	= ", yªu cÇu <color=red>nam vµ n÷<color>",
 
-	--====Functions====
-	
-	--ÎÒµÄÕ½¶Ó
 	npc_mylg = function()
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
@@ -115,7 +109,6 @@ WLLS_DATA = {
 		wlls_descript(str, tb_option)
 	end,
 	
-	--¼ì²éµ±Ç°½ÇÉ«ÊÇ·ñ¿ÉÒÔ¼ÓÈëÖ¸¶¨µÄÕ½¶Ó
 	check_addmem = function(nCapIdx, nLGID, nMType)
 		print(nMType, wlls_player_type())
 		if (nMType ~= wlls_player_type()) then
@@ -129,7 +122,7 @@ WLLS_DATA = {
 			return "Tû vâ lÇn nµy theo thÓ thøc “Nam-N÷ song ®Êu”. Ng­¬i ph¶i t×m mét ®ång ®éi kh¸c giíi!"
 		end
 	end,
-}	--WLLS_DATA
+}
 
 tmp_process_data(WLLS_DATA)	
 wllstab_additem(7,WLLS_DATA)
