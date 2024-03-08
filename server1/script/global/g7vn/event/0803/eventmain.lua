@@ -118,23 +118,31 @@ end
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function NhanMoc()
-	local tbSay = {}
+	local tbSay = {
+		{"NhËn mèc 600", Moc500},
+		{"NhËn mèc 1200", Moc1000},
+		{"Tho¸t", no},
+	}
 
-		tinsert(tbSay,"NhÉn m«c 600./Moc500")
-		tinsert(tbSay,"NhËn mèc 1200./Moc1000")
+		-- tinsert(tbSay,"NhÉn m«c 600./Moc500")
+		-- tinsert(tbSay,"NhËn mèc 1200./Moc1000")
 		
-		tinsert(tbSay,"Tho¸t/no")
+		-- tinsert(tbSay,"Tho¸t/no")
 		Say(" HiÖn B¹n §ang Sö Dông <color=green>"..GetTask(task_eventxu).." <color>Lä N­íc Hoa", getn(tbSay), tbSay)
 	
 end
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function NhanMocBanhThapCam()
-	local tbSay = {}
+	local tbSay = {
+		{"Nh?n m?c 600", Moc600ThapCam},
+		{"NhËn mèc 1200", Moc1200ThapCam},
+		{"Tho¸t", no},
+	}
 
-		tinsert(tbSay,"NhÉn m«c 600 ./Moc600ThapCam")
-		tinsert(tbSay,"NhËn mèc 1200./Moc1200ThapCam")
+		-- tinsert(tbSay,"NhÉn m«c 600 ./Moc600ThapCam")
+		-- tinsert(tbSay,"NhËn mèc 1200./Moc1200ThapCam")
 		
-		tinsert(tbSay,"Tho¸t/no")
+		-- tinsert(tbSay,"Tho¸t/no")
 		Say(" HiÖn B¹n §ang Sö Dông <color=green>"..GetTask(task_event_tienvan).." <color>Hép Trang Søc", getn(tbSay), tbSay)
 	
 end
