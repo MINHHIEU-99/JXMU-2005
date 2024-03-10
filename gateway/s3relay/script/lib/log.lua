@@ -39,16 +39,16 @@ function getItemInfo(nItemIdx)
 		nDetailType = GetGlodEqIndex(nItemIdx) - 1;
 	end
 	local szPlatinaLvl = "nil";
-	if (nQuality == 4) then
+		if (nQuality == 4) then
 		szPlatinaLvl = tostring(GetPlatinaLevel(nItemIdx));
 		nDetailType = GetPlatinaEquipIndex(nItemIdx) - 1;
 	end;
 	local arynMagLvl = GetItemAllParams(nItemIdx);
 	local szDes = format("{4,%0.0f,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d}:%s,GET_TIME:%0.0f,PLA_LVL:%s", 
-							ITEM_GetItemRandSeed(nItemIdx), nQuality, 
-							nGenre, nDetailType, nParticular, nLevel, nSeries, nLuck, 
-							arynMagLvl[1], arynMagLvl[2], arynMagLvl[3], arynMagLvl[4], arynMagLvl[5], arynMagLvl[6],
-							GetItemName(nItemIdx),GetItemGenTime(nItemIdx),szPlatinaLvl);
+	ITEM_GetItemRandSeed(nItemIdx), nQuality, 
+	nGenre, nDetailType, nParticular, nLevel, nSeries, nLuck, 
+	arynMagLvl[1], arynMagLvl[2], arynMagLvl[3], arynMagLvl[4], arynMagLvl[5], arynMagLvl[6],
+	GetItemName(nItemIdx),GetItemGenTime(nItemIdx),szPlatinaLvl);
 	return szDes;
 end;
 
