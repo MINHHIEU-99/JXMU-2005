@@ -327,34 +327,34 @@ end
 
 end
 function ThamGiaOanTuTi()
-tbAloneScriptGame:DialogMain();
+	tbAloneScriptGame:DialogMain();
 end
 function NhanDoHoTro()
-local szTitle =  "Vâ L©m T¹i Thiªn webside www.volamtestvinhvien.com chia sÎ ngay tõ h«m nay ®Ó nhËn core vip.!"
-local tbOpt = 
-{
-{"NhËn C¸c Lo¹i Ngùa", nhancacloaingua},
-{"NhËn Trang BÞ §å Xanh ",trangbixanh},
-{"NhËn Trang BÞ HKMP", hkmpvip1},
-{"NhËn AB, §Q, NT, HC", HoangKimTanThu},
-{"Tho¸t"},
-}
-CreateNewSayEx(szTitle, tbOpt)
+	local szTitle =  "Vâ L©m T¹i Thiªn webside www.volamtestvinhvien.com chia sÎ ngay tõ h«m nay ®Ó nhËn core vip.!"
+	local tbOpt = 
+	{
+	{"NhËn C¸c Lo¹i Ngùa", nhancacloaingua},
+	{"NhËn Trang BÞ §å Xanh ",trangbixanh},
+	{"NhËn Trang BÞ HKMP", hkmpvip1},
+	{"NhËn AB, §Q, NT, HC", HoangKimTanThu},
+	{"Tho¸t"},
+	}
+	CreateNewSayEx(szTitle, tbOpt)
 end
 function MuaTuiTichLuyTongKim()
-local tbAwardcc={
---{szName="ChiÕn cæ ", tbProp={6,1,156,1,0,0},nCount = 50,nBindState = -2},
-{szName="Cµn Kh«n T¹o Hãa §an", tbProp={6,1,4361,1,0,0},nCount = 1},
-}
-if CalcFreeItemCellCount() < 3 then
-		return Talk(1,"","H·y S¾p XÕp L¹i Hµnh Trang")
+	local tbAwardcc={
+	--{szName="ChiÕn cæ ", tbProp={6,1,156,1,0,0},nCount = 50,nBindState = -2},
+		{szName="Cµn Kh«n T¹o Hãa §an", tbProp={6,1,4361,1,0,0},nCount = 1},
+	}
+	if CalcFreeItemCellCount() < 3 then
+			return Talk(1,"","H·y S¾p XÕp L¹i Hµnh Trang")
+		end
+	if GetTask(747)>=11000 then
+		tbAwardTemplet:GiveAwardByList(tbAwardcc, "PhÇn Th­ëng");
+		SetTask(747,GetTask(747)-11000)
+		else
+		Say("B¹n Kh«ng §ñ 11000 §iÓm TÝch Lòy")
 	end
-if GetTask(747)>=11000 then
-	tbAwardTemplet:GiveAwardByList(tbAwardcc, "PhÇn Th­ëng");
-	SetTask(747,GetTask(747)-11000)
-	else
-	Say("B¹n Kh«ng §ñ 11000 §iÓm TÝch Lòy")
-end
 end
 
 function MuaCanKhonTaoHoaDan()

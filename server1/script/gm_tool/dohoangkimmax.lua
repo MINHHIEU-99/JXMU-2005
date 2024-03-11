@@ -1,24 +1,22 @@
 
 
 function dohoangkimmax()
-if (CalcFreeItemCellCount() < 40) then
-		return Talk(1,"","H·y S¾p XÕp L¹i Hµnh Trang")
-end
-local tab_Content =
-{
-"Trang BÞ Kim ¤./kimomax",
-"Trang BÞ B¹ch Hæ./bachhomax",
-"Trang BÞ XÝch L©n./xichlanmax",
-"Trang BÞ Minh Ph­îng./minhphuongmax",
-"Trang BÞ §»ng Long/danglongmax",
-"Trang BÞ Tinh S­¬ng/tinhsuongmax",
-"Trang BÞ NguyÖt KhuyÕt/nguyetkhuyetmax",
-"Tho¸t./no",
-"Trë l¹i"
-}
-
-
-Say(" Muèn lÊy trang bÞ g× ? ", getn(tab_Content), tab_Content);
+	if (CalcFreeItemCellCount() < 40) then
+			return Talk(1,"","H·y S¾p XÕp L¹i Hµnh Trang")
+	end
+	local tab_Content =
+		{
+			"Trang BÞ Kim ¤./kimomax",
+			"Trang BÞ B¹ch Hæ./bachhomax",
+			"Trang BÞ XÝch L©n./xichlanmax",
+			"Trang BÞ Minh Ph­îng./minhphuongmax",
+			"Trang BÞ §»ng Long/danglongmax",
+			"Trang BÞ Tinh S­¬ng/tinhsuongmax",
+			"Trang BÞ NguyÖt KhuyÕt/nguyetkhuyetmax",
+			"Tho¸t./no",
+			"Trë l¹i"
+		}
+	Say(" Muèn lÊy trang bÞ g× ? ", getn(tab_Content), tab_Content);
 end
 -------------------------------------------------------------------------------------------------------------------------------
 function nguyetkhuyetmax()

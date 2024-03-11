@@ -31,41 +31,41 @@ function DoHoangKim()
 end
 -----------------------------------------------------------------------------
 function ThanhCau()
-Say("H·y Chän M«n Ph¸i",16,
-	"Chän: <Thiªu L©m QuyÒn>/#SetThanhCau(1)",
-	"Chän: <Thiªu L©m Bæng>/#SetThanhCau(2)",
-	"Chän: <Thiªu L©m §ao>/#SetThanhCau(3)",
-	"Chän: <Thiªn V­¬ng Chïy>/#SetThanhCau(4)",
-	"Chän: <Thiªn V­¬ng Th­¬ng>/#SetThanhCau(5)",
-	"Chän: <Thiªn V­¬ng §ao>/#SetThanhCau(6)",
-	"Chän: <Nga My KiÕm>/#SetThanhCau(7)",
-	"Chän: <Nga My Ch­ëng>/#SetThanhCau(8)",
-	"Chän: <Thóy Yªn §ao>/#SetThanhCau(9)",
-	"Chän: <Thóy Yªn Néi>/#SetThanhCau(10)",
-	"Chän: <Ngò §éc Ch­ëng>/#SetThanhCau(11)",
-	"Chän: <Ngò §éc §ao>/#SetThanhCau(12)",
-	"Chän: <§­êng M«n Phi §ao>/#SetThanhCau(13)",
-	"Chän: <§­êng M«n Ná TiÔn>/#SetThanhCau(14)",
-	"Chän: <§­êng M«n Phi Tiªu>/#SetThanhCau(15)",
-	"Trang KÕ/ThanhCaus")
+	Say("H·y Chän M«n Ph¸i",16,
+		"Chän: <Thiªu L©m QuyÒn>/#SetThanhCau(1)",
+		"Chän: <Thiªu L©m Bæng>/#SetThanhCau(2)",
+		"Chän: <Thiªu L©m §ao>/#SetThanhCau(3)",
+		"Chän: <Thiªn V­¬ng Chïy>/#SetThanhCau(4)",
+		"Chän: <Thiªn V­¬ng Th­¬ng>/#SetThanhCau(5)",
+		"Chän: <Thiªn V­¬ng §ao>/#SetThanhCau(6)",
+		"Chän: <Nga My KiÕm>/#SetThanhCau(7)",
+		"Chän: <Nga My Ch­ëng>/#SetThanhCau(8)",
+		"Chän: <Thóy Yªn §ao>/#SetThanhCau(9)",
+		"Chän: <Thóy Yªn Néi>/#SetThanhCau(10)",
+		"Chän: <Ngò §éc Ch­ëng>/#SetThanhCau(11)",
+		"Chän: <Ngò §éc §ao>/#SetThanhCau(12)",
+		"Chän: <§­êng M«n Phi §ao>/#SetThanhCau(13)",
+		"Chän: <§­êng M«n Ná TiÔn>/#SetThanhCau(14)",
+		"Chän: <§­êng M«n Phi Tiªu>/#SetThanhCau(15)",
+		"Trang KÕ/ThanhCaus")
 end
 
 function ThanhCaus()
-Say("H·y Chän M«n Ph¸i",12,
-	"Chän: <C¸i Bang Ch­ëng>/#SetThanhCau(16)",
-	"Chän: <C¸i Bang Bæng>/#SetThanhCau(17)",
-	"Chän: <Thiªn NhÉn KÝch>/#SetThanhCau(18)",
-	"Chän: <Thiªn NhÉn §ao>/#SetThanhCau(19)",
-	"Chän: <Vâ §ang QuyÒn>/#SetThanhCau(20)",
-	"Chän: <Vâ §ang KiÕm>/#SetThanhCau(21)",
-	"Chän: <C«n L«n §ao>/#SetThanhCau(22)",
-	"Chän: <C«n L«n KiÕm>/#SetThanhCau(23)",
-	--"Chän: <Hoa S¬n KhÝ>/#SetThanhCau(24)",
-	--"Chän: <Hoa S¬n KiÕm>/#SetThanhCau(25)",
-	--"Chän: <Vò Hån ThuÉn>/#SetThanhCau(26)",
-	--"Chän: <Vò Hån §ao>/#SetThanhCau(27)",
-	"Quay L¹i/ThanhCau",
-	"KÕt Thóc/No")
+	Say("H·y Chän M«n Ph¸i",12,
+		"Chän: <C¸i Bang Ch­ëng>/#SetThanhCau(16)",
+		"Chän: <C¸i Bang Bæng>/#SetThanhCau(17)",
+		"Chän: <Thiªn NhÉn KÝch>/#SetThanhCau(18)",
+		"Chän: <Thiªn NhÉn §ao>/#SetThanhCau(19)",
+		"Chän: <Vâ §ang QuyÒn>/#SetThanhCau(20)",
+		"Chän: <Vâ §ang KiÕm>/#SetThanhCau(21)",
+		"Chän: <C«n L«n §ao>/#SetThanhCau(22)",
+		"Chän: <C«n L«n KiÕm>/#SetThanhCau(23)",
+		--"Chän: <Hoa S¬n KhÝ>/#SetThanhCau(24)",
+		--"Chän: <Hoa S¬n KiÕm>/#SetThanhCau(25)",
+		--"Chän: <Vò Hån ThuÉn>/#SetThanhCau(26)",
+		--"Chän: <Vò Hån §ao>/#SetThanhCau(27)",
+		"Quay L¹i/ThanhCau",
+		"KÕt Thóc/No")
 end
 
 function SetThanhCau(nId)
@@ -75,23 +75,23 @@ function SetThanhCau(nId)
 end
 ----------------------------------------------------------------------
 function VanLoc()
-Say("H·y Chän M«n Ph¸i",16,
-	"Chän: <Thiªu L©m QuyÒn>/#SetVanLoc(1)",
-	"Chän: <Thiªu L©m Bæng>/#SetVanLoc(2)",
-	"Chän: <Thiªu L©m §ao>/#SetVanLoc(3)",
-	"Chän: <Thiªn V­¬ng Chïy>/#SetVanLoc(4)",
-	"Chän: <Thiªn V­¬ng Th­¬ng>/#SetVanLoc(5)",
-	"Chän: <Thiªn V­¬ng §ao>/#SetVanLoc(6)",
-	"Chän: <Nga My KiÕm>/#SetVanLoc(7)",
-	"Chän: <Nga My Ch­ëng>/#SetVanLoc(8)",
-	"Chän: <Thóy Yªn §ao>/#SetVanLoc(9)",
-	"Chän: <Thóy Yªn Néi>/#SetVanLoc(10)",
-	"Chän: <Ngò §éc Ch­ëng>/#SetVanLoc(11)",
-	"Chän: <Ngò §éc §ao>/#SetVanLoc(12)",
-	"Chän: <§­êng M«n Phi §ao>/#SetVanLoc(13)",
-	"Chän: <§­êng M«n Ná TiÔn>/#SetVanLoc(14)",
-	"Chän: <§­êng M«n Phi Tiªu>/#SetVanLoc(15)",
-	"Trang KÕ/VanLocs")
+	Say("H·y Chän M«n Ph¸i",16,
+		"Chän: <Thiªu L©m QuyÒn>/#SetVanLoc(1)",
+		"Chän: <Thiªu L©m Bæng>/#SetVanLoc(2)",
+		"Chän: <Thiªu L©m §ao>/#SetVanLoc(3)",
+		"Chän: <Thiªn V­¬ng Chïy>/#SetVanLoc(4)",
+		"Chän: <Thiªn V­¬ng Th­¬ng>/#SetVanLoc(5)",
+		"Chän: <Thiªn V­¬ng §ao>/#SetVanLoc(6)",
+		"Chän: <Nga My KiÕm>/#SetVanLoc(7)",
+		"Chän: <Nga My Ch­ëng>/#SetVanLoc(8)",
+		"Chän: <Thóy Yªn §ao>/#SetVanLoc(9)",
+		"Chän: <Thóy Yªn Néi>/#SetVanLoc(10)",
+		"Chän: <Ngò §éc Ch­ëng>/#SetVanLoc(11)",
+		"Chän: <Ngò §éc §ao>/#SetVanLoc(12)",
+		"Chän: <§­êng M«n Phi §ao>/#SetVanLoc(13)",
+		"Chän: <§­êng M«n Ná TiÔn>/#SetVanLoc(14)",
+		"Chän: <§­êng M«n Phi Tiªu>/#SetVanLoc(15)",
+		"Trang KÕ/VanLocs")
 end
 
 function VanLocs()

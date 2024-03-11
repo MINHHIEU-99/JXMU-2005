@@ -13,6 +13,7 @@ Include("\\script\\gm_tool\\dohoangkim.lua")
 Include("\\script\\gm_tool\\dohoangkimmax.lua")
 Include("\\script\\global\\g7vn\\npc_monphai.lua")
 Include("\\script\\global\\g7vn\\g7hotrotanthu.lua")
+Include("\\script\\doldly\\codetanthu\\lbtanthu.lua")
 
 OpenGame = 0
 function myplayersex()
@@ -34,8 +35,8 @@ function main()
 	local nStartDate = 202208191900 --N¨m th¸ng ngµy giê phót gi©y
 	if nCurDate < nStartDate then
 		Talk(1, "", "HiÖn ch­a tíi thêi gian Khai më m¸y chñ vui lßng chê tíi <color=green>19h00 - Ngµy: 19/08/2022<color>.\nB©y giê lµ: <color=metal>"..nNgay.."/"..nThang.."/"..nNam.."<color> - <color=orange>"..nGio..":"..nPhut..":"..nGiay.."<color>")
-	return 1
-end
+		return 1
+	end
 	local nNam = tonumber(GetLocalDate("%Y"));
    	local nThang = tonumber(GetLocalDate("%m"));
    	local nNgay = tonumber(GetLocalDate("%d"));
@@ -98,12 +99,13 @@ end
 		--{"§çi FF HuyÒn Kim LÊy V« Cùc T­¬ng øng",DoiNguyenLieu567},
 		-- {"Lay FF Vo Cuc 5 sao", LangTuyet},
 		{"Chøc N¨ng Qu¶n Lý GM", ChucNangGM},
-		{"NhËn Trang BÞ",mattich},
+		-- {"NhËn Trang BÞ",mattich},
 		-- {"Tr·i NghiÖm Game",HoTroTest},   
 		{"§çi Tªn Nh©n VËt",DoiTenNV},
 		{"NhËn Code T©n Thñ",nhapcode},
 		-- {"NhËn §iÓm Hç Trî.",testgame1},
 		{"Mµu PK", doimau},
+		{"NhËn Trang BÞ Hoµng Kim", DoHoangKim},
 		--{"LËp Bang Héi Nhanh.", Lap_Bang},
    		{"KÕt thóc ®èi tho¹i."},
 
@@ -482,29 +484,29 @@ end
 function mattich()
 	if (CalcFreeItemCellCount() < 40) then
 		return Talk(1,"","H·y S¾p XÕp L¹i Hµnh Trang")
-end
-local tab_Content =
-{
---"Trang BÞ Thanh C©u/settc",
---"Trang BÞ V©n Léc/setvl",
---"Trang BÞ Th­¬ng Lang/settl",
---"Trang BÞ HuyÒn Viªn/sethv",
---"Trang BÞ Tö M·ng/tumang",
---"Trang BÞ Kim ¤/kimo",
---"Trang BÞ B¹ch Hæ/bachho",
--- "Trang BÞ XÝch L©n/xichlan",
-"Trang BÞ XÝch L©n Max/xichlanmax",
---"Trang BÞ Minh Ph­îng/minhphuong",
--- "NhËn Vò KhÝ XÝch L©n Max./vkdanglongmax",
--- "Trang BÞ Minh Ph­îng MAX/minhphuongmax",
--- "Trang BÞ Dieu duong /danglong",
---"NhËn Vò KhÝ §»ng Long Max./vkdanglongmax",
---"Trang BÞ Tinh S­¬ng/tinhsuong",
---"Trang BÞ NguyÖt KhuyÕt/nguyetkhuyet",
-"Tho¸t./no",
--- "Trë l¹i"
-}
-Say(" Muèn lÊy trang bÞ g× ? ", getn(tab_Content), tab_Content);
+	end
+	local tab_Content =
+		{
+		"Trang BÞ Thanh C©u/settc",
+		"Trang BÞ V©n Léc/setvl",
+		"Trang BÞ Th­¬ng Lang/settl",
+		"Trang BÞ HuyÒn Viªn/sethv",
+		"Trang BÞ Tö M·ng/tumang",
+		"Trang BÞ Kim ¤/kimo",
+		"Trang BÞ B¹ch Hæ/bachho",
+		"Trang BÞ XÝch L©n/xichlan",
+		-- "Trang BÞ XÝch L©n Max/xichlanmax",
+		"Trang BÞ Minh Ph­îng/minhphuong",
+		-- "NhËn Vò KhÝ XÝch L©n Max./vkdanglongmax",
+		-- "Trang BÞ Minh Ph­îng MAX/minhphuongmax",
+		"Trang BÞ Dieu duong /danglong",
+		--"NhËn Vò KhÝ §»ng Long Max./vkdanglongmax",
+		"Trang BÞ Tinh S­¬ng/tinhsuong",
+		"Trang BÞ NguyÖt KhuyÕt/nguyetkhuyet",
+		"Tho¸t./no",
+		-- "Trë l¹i"
+		}
+	Say(" Muèn lÊy trang bÞ g× ? ", getn(tab_Content), tab_Content);
 end
 function danglong()
 local tab_Content = {
@@ -599,13 +601,14 @@ SKILLTASK	 = 5989
 MAXCOUNT	 = 5825
 TSK_NEWMAXCOUNT = 5828
 function hotrotanthumoi()
-local nTranlife = ST_GetTransLifeCount() 
-local nCureLevel = GetLevel();
-local nAddLevel = 200 - nCureLevel
-local tbAddLevel = 141 - nCureLevel
+	local nTranlife = ST_GetTransLifeCount() 
+	local nCureLevel = GetLevel();
+	local nAddLevel = 200 - nCureLevel
+	local tbAddLevel = 141 - nCureLevel
 		if (nCureLevel < 150 and nTranlife == 0) then
 			if CalcFreeItemCellCount() >= 40 then
-				local tbAward = {
+				local tbAward = 
+					{
 						-- {szName="Tö mÉu lÖnh",tbProp={6,1,1427,1,0,0},nCount=1},
 						{szName="Long ChiÕn Vu D· - KiÕm DiÖu",tbProp={0,9352},nQuality=1,nCount=1},  --Long ChiÕn Vu D· - KiÕm DiÖu cÊp 1
 						{szName="Ngò Hµnh Ên",tbProp={0,9339},nQuality=1,nCount=1},  -- cÊp 1
@@ -637,19 +640,19 @@ end
 
 ----------------------------------------------------------------------------
 function nlcamnangtanthu()
-local index = AddItem(6,1,4265,0,0,0,0)
-SetItemBindState(index,-2)
-Msg2Player("B¹n nhËn ®­îc <color=yellow>CÈm nang T©n Thñ<color>")
+	local index = AddItem(6,1,4265,0,0,0,0)
+	SetItemBindState(index,-2)
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>CÈm nang T©n Thñ<color>")
 end
 ----
 function nltuimautanthu()
-local index = AddItem(6,1,4825,0,0,0,0)
-SetItemBindState(index,-2)
-Msg2Player("B¹n nhËn ®­îc <color=yellow>CÈm nang T©n Thñ<color>")
+	local index = AddItem(6,1,4825,0,0,0,0)
+	SetItemBindState(index,-2)
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>CÈm nang T©n Thñ<color>")
 end
 function dkgm9()
-local songuoi= random(100,500)
-Msg2Player("<color=yellow>HiÖn t¹i ®ang cã<color><color=green> "..songuoi.."<color> ng­êi ch¬i ®ang trªn m¹ng!.")
+	local songuoi= random(100,500)
+	Msg2Player("<color=yellow>HiÖn t¹i ®ang cã<color><color=green> "..songuoi.."<color> ng­êi ch¬i ®ang trªn m¹ng!.")
 end
 ----------------------------DOI TEN------------------------
 function DoiTenNV()
