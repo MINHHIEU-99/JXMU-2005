@@ -86,6 +86,7 @@ function layabdq()
 	setdq();
 	setab();
 end 
+
 function abcxyz(nindex) 
 	Title_AddTitle(nindex, 1, 4302359); 
 	Title_ActiveTitle(nindex); 
@@ -1854,6 +1855,15 @@ function setabkphcnt()
 		"3. Set HiÖp Cèt Nhu T×nh Cùc PhÈm /sethcntcp",
 		"4. Set §éng s¸t /setds",
 		"5. Rêi khái/no",
+	}
+	Say("Xin chµo <color=yellow>"..GetName().."<color>, h·y chän chøc n¨ng mµ b¹n muèn", getn(tab_Content), tab_Content);
+end
+
+function setabdq()
+	local tab_Content = {
+		"1. Set §Þnh Quèc Cùc PhÈm/setdqcp",
+		"2. Set An Bang Cùc PhÈm/setabcp",
+		"3. Rêi khái/no",
 	}
 	Say("Xin chµo <color=yellow>"..GetName().."<color>, h·y chän chøc n¨ng mµ b¹n muèn", getn(tab_Content), tab_Content);
 end

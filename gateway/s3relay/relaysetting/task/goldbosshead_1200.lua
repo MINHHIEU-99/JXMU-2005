@@ -1,56 +1,42 @@
+function GameSvrConnected(dwGameSvrIP)
+end
 
+function GameSvrReady(dwGameSvrIP)
+end
 
-	function GameSvrConnected(dwGameSvrIP)
+function TaskShedule()
+    -- thiÕt trÝ ph­¬ng ¸n tªn gäi
 
-	end
+    TaskName("Boss tiÓu hoµng kim 1200 ")
 
-	function GameSvrReady(dwGameSvrIP)
+    -- thiÕt trÝ kho¶ng c¸ch thêi gian, ®¬n vÞ vi phót
 
-	end
+    TaskInterval(1440)
 
-	function TaskShedule()
+    -- thiÕt trÝ g©y ra sè lÇn, 0 biÓu thÞ v« h¹n sè lÇn
 
-	-- thiÕt trÝ ph­¬ng ¸n tªn gäi
+    TaskCountLimit(0)
 
-	TaskName( "Boss tiÓu hoµng kim 1200 ")
+    -- ®Æt ra ®óng giê kú khëi ®éng thêi gian
 
-	-- thiÕt trÝ kho¶ng c¸ch thêi gian, ®¬n vÞ vi phót
+    TaskTime(12, 05)
 
-	TaskInterval(1440)
+    -- c¾t bá tõ tr­íc sè liÖu
 
-	-- thiÕt trÝ g©y ra sè lÇn, 0 biÓu thÞ v« h¹n sè lÇn
+    for i = 1, getn(tb_goldboss) do
+        success = ClearRecordOnShareDB("GoldBoss", tb_goldboss[i].Sid, 0, 1, 0)
 
-	TaskCountLimit(0)
+        OutputMsg("Du lieu Boss hoang kim database " .. tb_goldboss[i].Sid)
+        OutputMsg("Boss tiÓu hoµng kim 1205 ")
+    end
+end
 
-	-- ®Æt ra ®óng giê kú khëi ®éng thêi gian
+function TaskContent()
+    for i = 1, getn(tb_goldboss) do
+        str = tb_goldboss[i].str
 
-	TaskTime(12, 05);
+        GlobalExecute(format("dw AddLocalNews([[%s]])", str))
+    end
 
-	-- c¾t bá tõ tr­íc sè liÖu
-
-	for i = 1, getn(tb_goldboss) do
-
-	success = ClearRecordOnShareDB( "GoldBoss", tb_goldboss[i]. Sid, 0, 1, 0);
-
-	OutputMsg( "Du lieu Boss hoang kim database ".. tb_goldboss[i]. Sid);
-	OutputMsg( "Boss tiÓu hoµng kim 1205 ")
-
-	end
-
-	end
-
-	function TaskContent()
-
-	for i = 1, getn(tb_goldboss) do
-
-	str = tb_goldboss[i]. str;
-
-	GlobalExecute(format( "dw AddLocalNews([[%s]])", str));
-
-	end
-
-	GlobalExecute( "dwf \\script\\missions\\boss\\callboss_incity.lua CallBossDown_Fixure() ");
-
-	end
-
-
+    GlobalExecute("dwf \\script\\missions\\boss\\callboss_incity.lua CallBossDown_Fixure() ")
+end

@@ -3957,9 +3957,9 @@ function moruong()
 local szTitle = "<color=orange>§¹i hiÖp muèn më réng r­¬ng nµo<color>.<enter><color=yellow><pic=104><color> "
 	local tbOpt =
 	{
-		{"Ta muèn më réng r­¬ng 1 ( 300 xu )", moruong1},
-		{"Ta muèn më réng r­¬ng 2 ( 500 xu )", moruong2},
-        {"Ta muèn më réng r­¬ng 3 ( 500 xu )", moruong3},
+		{"Ta muèn më réng r­¬ng 1 ( 20 xu )", moruong1},
+		{"Ta muèn më réng r­¬ng 2 ( 20 xu )", moruong2},
+        {"Ta muèn më réng r­¬ng 3 ( 20 xu )", moruong3},
 		{"Tho¸t"},
 	}
 	CreateNewSayEx(szTitle, tbOpt)
@@ -3967,31 +3967,31 @@ end
 
 function moruong1()
 	local nCount = CalcEquiproomItemCount(4,417,1,-1)
-	if nCount < 300 then
-		Say("<color=green>CÇn 300 tiÒn ®ång míi më ®­îc r­¬ng <color>1",0)
+	if nCount < 20 then
+		Say("<color=green>CÇn 20 tiÒn ®ång míi më ®­îc r­¬ng <color>1",0)
 		return
 	end
-	ConsumeEquiproomItem(300,4,417,1,1)	
+	ConsumeEquiproomItem(20,4,417,1,1)	
 	OpenStoreBox(1)
 end
 
 function moruong2()
 	local nCount = CalcEquiproomItemCount(4,417,1,-1)
-	if nCount < 500 then
-		Say("<color=green>CÇn 500 tiÒn ®ång míi më ®­îc r­¬ng <color>2",0)
+	if nCount < 20 then
+		Say("<color=green>CÇn 20 tiÒn ®ång míi më ®­îc r­¬ng <color>2",0)
 		return
 	end
-	ConsumeEquiproomItem(500,4,417,1,1)
+	ConsumeEquiproomItem(20,4,417,1,1)
 	OpenStoreBox(2)
 end
 
 function moruong3()
 	local nCount = CalcEquiproomItemCount(4,417,1,-1)
-	if nCount < 500 then
-		Say("<color=green>CÇn 500 tiÒn ®ång míi më ®­îc r­¬ng <color>3",0)
+	if nCount < 20 then
+		Say("<color=green>CÇn 20 tiÒn ®ång míi më ®­îc r­¬ng <color>3",0)
 		return
 	end
-	ConsumeEquiproomItem(500,4,417,1,1)
+	ConsumeEquiproomItem(20,4,417,1,1)
 	OpenStoreBox(3)
 end
 

@@ -2592,7 +2592,7 @@ end
 function tbTrangBiJX()
 	local tbEquipSelect = tbTrangBi[1][1]
 	local nSeries = tbTrangBi[1][3]
-	  AddItem(tbEquipSelect[2], tbEquipSelect[3], tbEquipSelect[4],10, nSeries, 100, 10) 
+		AddItem(tbEquipSelect[2], tbEquipSelect[3], tbEquipSelect[4],10, nSeries, 100, 10) 
 end
 -----------------------------------------------------------------------------------------------------------------------------------------------
 function anbang()

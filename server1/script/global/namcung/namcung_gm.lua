@@ -360,17 +360,17 @@ Include("\\script\\global\\repute_head.lua")
 Include("\\script\\misc\\league_cityinfo.lua")
 
 function dmcreattongtest()
-local strTongName = GetTongName()
-local tszTitle = "Chµo mong b¹n ®· tham gia hÖ thèng <color=yellow>Bang Héi<color>"
-if (strTongName == nil or strTongName == "") then
-	Say(tszTitle,4," NhËn ®i?u kiÖn t¹o bang héi/dmcreatetong","Gia nhËp bang héi/dmjointong","T¹o bang héi/dmcreateit","KOt thóc ®èi tho¹i")
-else
-	Say(tszTitle,0)
-end	
+	local strTongName = GetTongName()
+	local tszTitle = "Chµo mong b¹n ®· tham gia hÖ thèng <color=yellow>Bang Héi<color>"
+	if (strTongName == nil or strTongName == "") then
+		Say(tszTitle,4," NhËn ®i?u kiÖn t¹o bang héi/dmcreatetong","Gia nhËp bang héi/dmjointong","T¹o bang héi/dmcreateit","KOt thóc ®èi tho¹i")
+	else
+		Say(tszTitle,0)
+	end	
 end
 
 function dmcreatetong()	
-if  GetCamp() ~= 4 then
+	if  GetCamp() ~= 4 then
 		SetCamp(4)
 		SetCurCamp(4)
 		AddRepute(100000)
@@ -386,25 +386,23 @@ if  GetCamp() ~= 4 then
 				AddOwnExp(100000000)
 			end
 		end
-Msg2Player("<color=yellow>Ng­êi ®· héi ®ñ tÊt c¶ ®iªu kiÖn ®Ó t¹o Bang Héi!<color>")
-else
-end
+	Msg2Player("<color=yellow>Ng­êi ®· héi ®ñ tÊt c¶ ®iªu kiÖn ®Ó t¹o Bang Héi!<color>")
+	else
+	end
 end
 
 function dmjointong()
-if  GetCamp() ~= 4 then
-
+	if  GetCamp() ~= 4 then
 		if GetLevel() <= 100 then
 			for i=1,100 do
 				AddOwnExp(100000000)
 			end
 		end
-
 		SetCamp(4)
 		SetCurCamp(4)
-Msg2Player("<color=yellow>Gia nhËp Bang héi thµnh c«ng!<color>")
-else
-end
+	Msg2Player("<color=yellow>Gia nhËp Bang héi thµnh c«ng!<color>")
+	else
+	end
 end
 
 function dmcreateit()
@@ -462,7 +460,7 @@ function dialog_main()
 		{"Trang bÞ hiÕm", fifong},
 		{"LÊy ngùa", layngua},
 		{"N÷ TVB", nukim},
-              {"NhËn Skill 180", nhanskill180},
+        {"NhËn Skill 180", nhanskill180},
 		{"Trang bÞ Cùc PhÈm", cucphkhac},
 		{"N©ng §ªn 150 cÊp", level_up_to150},
 		{"Mµu PK", trangthai},	
@@ -502,7 +500,7 @@ function nhanskill180()
 	end
 end
 function cucphkhac()
-dohoangkim()
+	dohoangkim()
 end
 function bachkim()
 	local tbOpt =
@@ -523,46 +521,46 @@ function bachkim()
 	CreateNewSayEx("<npc>Chän m«n ph¸i?", tbOpt)
 end
 function bktl()
-AddGoldItem(0, 11)
-AddGoldItem(0, 6)
+	AddGoldItem(0, 11)
+	AddGoldItem(0, 6)
 end
 function bktv()
-AddGoldItem(0, 16)
-AddGoldItem(0, 21)
-AddGoldItem(0, 26)
+	AddGoldItem(0, 16)
+	AddGoldItem(0, 21)
+	AddGoldItem(0, 26)
 end
 function bknm()
-AddGoldItem(0, 31)
+	AddGoldItem(0, 31)
 end
 function bkty()
-AddGoldItem(0, 46)
+	AddGoldItem(0, 46)
 end
 function bk5d()
-AddGoldItem(0, 61)
+	AddGoldItem(0, 61)
 end
 function bkdm()
-AddGoldItem(0, 71)
-AddGoldItem(0, 76)
-AddGoldItem(0, 81)
+	AddGoldItem(0, 71)
+	AddGoldItem(0, 76)
+	AddGoldItem(0, 81)
 end
 function bkcb()
-AddGoldItem(0, 96)
+	AddGoldItem(0, 96)
 end
 function bktn()
-AddGoldItem(0, 101)
+	AddGoldItem(0, 101)
 end
 function bkvd()
-for i=4346,4355 do
-AddPlatinaItem(3, i)
-end
+	for i=4346,4355 do
+		AddPlatinaItem(3, i)
+	end
 end
 function bkcl()
-AddGoldItem(0, 126)
+	AddGoldItem(0, 126)
 end
 function hacthan()
-for i=3890,3894 do
-AddGoldItem(0, i)
-end
+	for i=3890,3894 do
+		AddGoldItem(0, i)
+	end
 end
 function matna1()
 for i=4493,4523 do

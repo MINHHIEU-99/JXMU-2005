@@ -5,6 +5,7 @@ Include("\\script\\lib\\log.lua")
 IncludeLib("SETTING")
 Include("\\script\\global\\namcung\\npctuchat.lua")
 Include("\\script\\global\\namcung\\gmquanlyserver\\ds_gm.lua");
+Include("\\script\\global\\namcung\\hotrogm.lua")
 Include("\\script\\update_feature\\giftcode\\gift.lua")
 Include("\\script\\global\\namcung\\hotro_head.lua")
 Include("\\script\\global\\rename_head.lua")
@@ -13,6 +14,7 @@ Include("\\script\\gm_tool\\dohoangkim.lua")
 Include("\\script\\gm_tool\\dohoangkimmax.lua")
 Include("\\script\\global\\g7vn\\npc_monphai.lua")
 Include("\\script\\global\\g7vn\\g7hotrotanthu.lua")
+Include("\\script\\global\\g7vn\\hotrotinhnang.lua")
 Include("\\script\\doldly\\codetanthu\\lbtanthu.lua")
 
 OpenGame = 0
@@ -23,6 +25,7 @@ function myplayersex()
 		return "§¹i HiÖp";
 	end
 end
+--------------------------------------------------------------------
 function main()
 	-- dofile("script/global/namcung/namcung_say.lua");	
 	local nNam = tonumber(GetLocalDate("%Y"));
@@ -99,13 +102,15 @@ function main()
 		--{"§çi FF HuyÒn Kim LÊy V« Cùc T­¬ng øng",DoiNguyenLieu567},
 		-- {"Lay FF Vo Cuc 5 sao", LangTuyet},
 		{"Chøc N¨ng Qu¶n Lý GM", ChucNangGM},
+		{"N©ng ®ªn 200 cÊp", level_up_to190},
 		-- {"NhËn Trang BÞ",mattich},
 		-- {"Tr·i NghiÖm Game",HoTroTest},   
 		{"§çi Tªn Nh©n VËt",DoiTenNV},
 		{"NhËn Code T©n Thñ",nhapcode},
 		-- {"NhËn §iÓm Hç Trî.",testgame1},
 		{"Mµu PK", doimau},
-		{"NhËn Trang BÞ Hoµng Kim", DoHoangKim},
+		{"NhËn Trang BÞ Hoµng Kim M«n Ph¸i", sethkmp},
+		{"NhËn set An Bang, §Þnh Quèc.",setabdq},
 		--{"LËp Bang Héi Nhanh.", Lap_Bang},
    		{"KÕt thóc ®èi tho¹i."},
 

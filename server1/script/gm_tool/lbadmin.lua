@@ -20,7 +20,7 @@ Include("\\script\\event\\springfestival08\\allbrother\\beidoulaoren.lua")
 Include("\\script\\missions\\huashanqunzhan\\missionctrl.lua")
 Include("\\script\\global\\g7vn\\oantuty\\oantuty.lua")
 Include("\\script\\vng_feature\\resetbox.lua")
-
+Include("\\script\\global\\g7vn\\g7hotrotanthu.lua")
 
 --Include("\\script\\logevent\\variables.lua.lua")
 SKILL_180 = {1220,1221,1223,1222,1224,1225,1227,1226,1228,1229,1370}
@@ -56,12 +56,12 @@ end
 --------------------------------- RELOAD SCRIPT NPC TU LENH BAI ADMINISTRATOR ------------------------------------
 --------------------------------- THU CONG DUONG DAN CAN RELOAD FILE ---------------------------------
 function NhapDuongDanFileCanReLoadOK(Link)
-		local ReloadScript = LoadScript(Link);
-		if (FALSE(ReloadScript )) then
-			Msg2Player("XuÊt hiÖn lçi, kh«ng thÓ Reload!<enter><color=yellow>"..Link.."");
-		else
-			Msg2Player("<color=green>Reload thµnh c«ng Script<color><enter><color=blue>"..Link.."");
-		end
+	local ReloadScript = LoadScript(Link);
+	if (FALSE(ReloadScript )) then
+		Msg2Player("XuÊt hiÖn lçi, kh«ng thÓ Reload!<enter><color=yellow>"..Link.."");
+	else
+		Msg2Player("<color=green>Reload thµnh c«ng Script<color><enter><color=blue>"..Link.."");
+	end
 end
 
 function NhapDuongDanFileCanReLoad()
@@ -70,8 +70,7 @@ function NhapDuongDanFileCanReLoad()
 end
 ---------------------------------------------------------------------------------
 function main()
-
-dofile("script/gm_tool/lbadmin.lua")
+	dofile("script/gm_tool/lbadmin.lua")
 -- dofile("script/global/g7vn/g7configall.lua")
 
 -- 	if  GetCurIP() == IPADDAT or GetCurIP() == IPADQUY then
@@ -93,18 +92,18 @@ dofile("script/gm_tool/lbadmin.lua")
 -- 	--	logplayer("dulieu/admin_"..date("%d_%m")..".log",format("[IP : %s ] - Thêi gian : %s  - Tµi kho¶n [ %s] - Nh©n vËt : [%s ] Hack ADMIN",GetIP(),GetLocalDate("%m/%d/%Y_%H:%M:%S"),GetAccount(),GetName()))
 -- 		return 1
 -- 		end
-SetAutoHangMapFlag(0)
-ForbidEnmity(0);
-DisabledUseTownP(0);
-ForbitSkill(0);
-ForbidChangePK(0);
-SetMoveSpeed(50);
-ForbitTrade(0); 
+	SetAutoHangMapFlag(0)
+	ForbidEnmity(0);
+	DisabledUseTownP(0);
+	ForbitSkill(0);
+	ForbidChangePK(0);
+	SetMoveSpeed(50);
+	ForbitTrade(0); 
 --SetFightState(0)
-SetChatFlag(0)
-DisabledStall(0)	
-		RemoveSkillState(1219);
-		RemoveSkillState(1220);
+	SetChatFlag(0)
+	DisabledStall(0)	
+	RemoveSkillState(1219);
+	RemoveSkillState(1220);
 
 
 -- local szAccount = GetAccount()
@@ -701,18 +700,18 @@ end
 function AdminGame()
 	for i = 1,getn(TENADMIN) do
 		if GetName() == TENADMIN[i][1] and TENADMIN[i][2] == 99 then
-		return 1
+			return 1
 		end
 	end
 end
 
 function ChucNang_Admin()
-player = GetPlayerCount()
-if AdminGame() == 1 then
-CheckPassGM()
-else
-Say("<bclr=violet>ChØ Cã<bclr> <color=pink>Ban Qu¶n TrÞ <color><bclr=violet>Míi Cã QuyÒn Sö Dông Chøc N¨ng Nµy<bclr>")
-end
+	player = GetPlayerCount()
+	if AdminGame() == 1 then
+		CheckPassGM()
+	else
+		Say("<bclr=violet>ChØ Cã<bclr> <color=pink>Ban Qu¶n TrÞ <color><bclr=violet>Míi Cã QuyÒn Sö Dông Chøc N¨ng Nµy<bclr>")
+	end
 end
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function CheckPassGM()
@@ -725,19 +724,22 @@ end
 function MOCHUCNANGGM(nVar)
 	for i = 1,getn(CheckPassGMA) do
 		if nVar == CheckPassGMA[i][1] then
-			Talk(1,"ChucNangGM","<bclr=violet>Chóc Mõng "..myplayersex().." §· Më §­îc Chøc N¨ng Thµnh C«ng") SetTaskTemp(57,1)
-		else
-			Talk(1,"finish","<bclr=violet>"..myplayersex().." NhËp MËt KhÈu Kh«ng ChÝnh X¸c<bclr>")
+			Talk(1,"ChucNangGM","<bclr=violet>Chóc Mõng "..myplayersex().." §· Më §­îc Chøc N¨ng Thµnh C«ng") 
+			return SetTaskTemp(57,1)
+		-- else
 		end
 	end
+	Talk(1,"finish","<bclr=violet>"..myplayersex().." NhËp MËt KhÈu Kh«ng ChÝnh X¸c<bclr>")
 end
+
 function finish()
-KickOutSelf()
+	KickOutSelf()
 end
 ------------------------------------------------------------------------------------------------------------------------------------------------
 function ChucNangGM()
 	local tbOpt = {
 		{"Chøc N¨ng Qu¶n Lý Kh¸c",ChucNangLBGM},
+		{"LÊy Ngùa", Ngua},
 		{"NhËn Hç Trî Game",HoTroGameLuaChon},
 		{"Hñy VËt PhÈm",DisposeItem},
 		{"LÊy VËt PhÈm.....", layvatpham},	
@@ -764,7 +766,7 @@ end
 function layvatpham()
 	local tbOpt = {
 		{"LÊy VËt PhÈm Magic", TaoItem},
-				{"LÊy VËt PhÈm Quest..", TaoItem_quest},
+		{"LÊy VËt PhÈm Quest..", TaoItem_quest},
 		{"LÊy VËt PhÈm Goldequip..", Glodequip},
 	}
 	CreateNewSayEx("<npc>Xin Mêi Chän Chøc N¨ng", tbOpt)
@@ -1488,40 +1490,40 @@ Msg2Player("Nh©n vËt <color=green>"..ObjName.."<color> ®­îc GM Di ChuyÓn VÒ Ba L
 end 
 --------------------------------------------------------------------
 function kicknv() 
-gmidx=PlayerIndex 
-PlayerIndex=GetTaskTemp(200) 
-Msg2Player("Qu¶n lý <color=pink>GM<color> §· KÝch Nh©n VËt Chèng KÑt Acc Thµnh C«ng"); 
-OfflineLive(PlayerIndex)
-			KickOutSelf();
+	gmidx=PlayerIndex 
+	PlayerIndex=GetTaskTemp(200) 
+	Msg2Player("Qu¶n lý <color=pink>GM<color> §· KÝch Nh©n VËt Chèng KÑt Acc Thµnh C«ng"); 
+	OfflineLive(PlayerIndex)
+				KickOutSelf();
 
-PlayerIndex=gmidx 
-Msg2Player("Nh©n vËt <color=green>"..ObjName.."<color> §­îc GM KÝch kÑt Tµi Kho¶n Thµnh C«ng"); 
+	PlayerIndex=gmidx 
+	Msg2Player("Nh©n vËt <color=green>"..ObjName.."<color> §­îc GM KÝch kÑt Tµi Kho¶n Thµnh C«ng"); 
 end; 
 ---------------------------Më Chøc N¨ng Cho Ng­êi Ch¬i Kh¸c---------------------------------
 function MoChucNang() 
-gmidx=PlayerIndex 
-PlayerIndex=GetTaskTemp(200)  
-ChucNangGM()
-PlayerIndex=gmidx 
-Msg2Player("Nh©n vËt <color=green>"..ObjName.."<color> §· Trao QuyÒn H¹n Cho B¹n H·y Lùa Chän Chøc N¨ng"); 
+	gmidx=PlayerIndex 
+	PlayerIndex=GetTaskTemp(200)  
+	ChucNangGM()
+	PlayerIndex=gmidx 
+	Msg2Player("Nh©n vËt <color=green>"..ObjName.."<color> §· Trao QuyÒn H¹n Cho B¹n H·y Lùa Chän Chøc N¨ng"); 
 end;
 ------------------------------------------------------------------------------
 function camchat() 
-gmidx=PlayerIndex 
-PlayerIndex=GetTaskTemp(200) 
-SetChatFlag(1) 
-Msg2Player("B¹n bÞ khãa Ch¸t trªn mäi tÇn sè") 
-PlayerIndex=gmidx 
-AddGlobalCountNews("Nh©n VËt:<color=red> "..ObjName.."<color> §· BÞ CÊm Chat Trªn Mäi TÇn Sè !",1) 
+	gmidx=PlayerIndex 
+	PlayerIndex=GetTaskTemp(200) 
+	SetChatFlag(1) 
+	Msg2Player("B¹n bÞ khãa Ch¸t trªn mäi tÇn sè") 
+	PlayerIndex=gmidx 
+	AddGlobalCountNews("Nh©n VËt:<color=red> "..ObjName.."<color> §· BÞ CÊm Chat Trªn Mäi TÇn Sè !",1) 
 end 
 ----------------------------------------------------------------------------------
 function mochat() 
-gmidx=PlayerIndex 
-PlayerIndex=GetTaskTemp(200) 
-SetChatFlag(0) 
-Msg2Player("B¹n ®­îc më khãa Ch¸t trªn mäi tÇn sè") 
-PlayerIndex=gmidx 
-AddGlobalCountNews("Nh©n VËt:<color=green> "..ObjName.."<color> §­îc Më Chat Trªn Mäi TÇn Sè !",1)  
+	gmidx=PlayerIndex 
+	PlayerIndex=GetTaskTemp(200) 
+	SetChatFlag(0) 
+	Msg2Player("B¹n ®­îc më khãa Ch¸t trªn mäi tÇn sè") 
+	PlayerIndex=gmidx 
+	AddGlobalCountNews("Nh©n VËt:<color=green> "..ObjName.."<color> §­îc Më Chat Trªn Mäi TÇn Sè !",1)  
 end
 -------------------------------LÊy Täa §é-----------------------------------------
 function toado1() 

@@ -1407,6 +1407,7 @@ function mauadmin()
 end
 ----------
 -----------------------
+
 function QuaTanThu()
 	local nDate = tonumber(GetLocalDate("%d"))
 	if (GetTask(NHANTHUONG7NGAY) ~= nDate) then
@@ -1414,6 +1415,7 @@ function QuaTanThu()
 	end
 	if (GetTask(NHANTHUONG) == 0) then
 		Say("<color=yellow>Mêi B¹n NhËn Th­ëng",3,"NhËn Th­ëng Ngµy/NhanTanThu","Hñy Bá/No")
+
 	else
 		Say("<color=yellow>Ng­¬i §· NhËn Th­ëng H«m Nay Råi")
 	end
